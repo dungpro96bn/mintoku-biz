@@ -1,0 +1,560 @@
+# Translation of Plugins - Post Views Counter - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Post Views Counter - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-04-14 14:02:02+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Post Views Counter - Stable (latest release)\n"
+
+#: includes/class-settings.php:101 includes/class-settings.php:338
+msgid "Post Views Counter Settings"
+msgstr "Post Views Counter 設定"
+
+#: includes/class-settings-api.php:620
+msgid "Settings restored to defaults."
+msgstr "設定を初期化しました。"
+
+#: includes/class-settings-api.php:594
+msgid "Settings saved."
+msgstr "設定を保存しました。"
+
+#: includes/class-settings.php:319
+msgid "The post views chart will be displayed for the post types that are being counted."
+msgstr "集計対象の投稿タイプについて、投稿表示数のグラフが表示されます。"
+
+#: includes/class-settings.php:320
+msgid "Enable to display the post views chart at the toolbar."
+msgstr "表示数の表をツールバーにも表示できるようにします。"
+
+#: includes/class-settings.php:316
+msgid "Toolbar Chart"
+msgstr "ツールバーチャート"
+
+#: includes/class-dashboard.php:527
+msgid "Post"
+msgstr "投稿"
+
+#: includes/class-dashboard.php:108
+msgid "Displays the list of most viewed posts and pages on your website."
+msgstr "サイトで最も表示されている投稿やページの一覧を表示します。"
+
+#: includes/class-dashboard.php:107
+msgid "Top Posts"
+msgstr "人気記事"
+
+#: includes/class-dashboard.php:102
+msgid "Displays the chart of most viewed post types for a selected time period."
+msgstr "選択した期間で最も表示された投稿タイプのグラフを表示します。"
+
+#: includes/class-dashboard.php:566 includes/class-widgets.php:72
+msgid "No most viewed posts found"
+msgstr "最も表示された投稿がありません"
+
+#: includes/class-columns.php:461
+msgid "%s post view"
+msgid_plural "%s post views"
+msgstr[0] "%s回の投稿表示"
+
+#: post-views-counter.php:286
+msgid "<a href=\"%s\" class=\"pvc-dismissible-notice\" target=\"_blank\" rel=\"noopener\">Ok, you deserve it</a><br /><a href=\"javascript:void(0);\" class=\"pvc-dismissible-notice pvc-delay-notice\" rel=\"noopener\">Nope, maybe later</a><br /><a href=\"javascript:void(0);\" class=\"pvc-dismissible-notice\" rel=\"noopener\">I already did</a>"
+msgstr "<a href=\"%s\" class=\"pvc-dismissible-notice\" target=\"_blank\" rel=\"noopener\">レビューを残します。</a><br /><a href=\"javascript:void(0);\" class=\"pvc-dismissible-notice pvc-delay-notice\" rel=\"noopener\">今は、しません。</a><br /><a href=\"javascript:void(0);\" class=\"pvc-dismissible-notice\" rel=\"noopener\">既にやりました。</a>"
+
+#: post-views-counter.php:286
+msgid "founder of <a href=\"%s\" target=\"_blank\">Digital Factory</a> plugins."
+msgstr "<a href=\"%s\" target=\"_blank\">Digital Factory</a> プラグインの創設者。"
+
+#: post-views-counter.php:286
+msgid "Your help is much appreciated. Thank you very much"
+msgstr "あなたの支援に感謝します。ありがとうございます。"
+
+#: post-views-counter.php:286
+msgid "Could you please do me a BIG favor and give it a 5-star rating on WordPress to help us spread the word and boost our motivation."
+msgstr "もしよろしければ、WordPress で良い評価を付けてください。あなたの評価が、私たちのモチベーションを高め、次の有益な開発につながります。"
+
+#: post-views-counter.php:286
+msgid "Hey, you've been using <strong>Post Views Counter</strong> for more than %s."
+msgstr "<strong>Post Views Counter</strong> を%s以上ご利用いただいているようです。"
+
+#. Author of the plugin
+msgid "Digital Factory"
+msgstr "Digital Factory"
+
+#: includes/class-admin.php:75 includes/class-admin.php:79
+#: includes/class-admin.php:109 includes/class-admin.php:113
+msgid "You are not allowed to edit this item."
+msgstr "この項目を編集する権限がありません。"
+
+#: includes/class-widgets.php:179
+msgid "Display post author?"
+msgstr "投稿者を表示しますか ?"
+
+#: includes/class-widgets.php:84
+msgid "Ordered list"
+msgstr "番号つきのリスト"
+
+#: includes/class-widgets.php:83
+msgid "Unordered list"
+msgstr "番号なしリスト"
+
+#: includes/class-settings.php:213
+msgid "Enable to prevent bypassing the counts interval (for e.g. using incognito browser window or by clearing cookies)."
+msgstr "カウントの間隔をバイパスしないようにします (たとえば、シークレットブラウザの使用や Cookie のクリア)。"
+
+#: includes/class-settings.php:209
+msgid "Strict counts"
+msgstr "より厳正なカウント"
+
+#: post-views-counter.php:635
+msgid "Are you sure you want to delete all existing data?"
+msgstr "本当に全ての存在するカウントデータを削除してもよいですか ?"
+
+#: includes/class-update.php:128
+msgid "Thank you! Datebase was succesfully updated."
+msgstr "ありがとうございました。データベースを更新しました。"
+
+#: includes/class-update.php:83
+msgid "Run the Update"
+msgstr "更新を実行"
+
+#: includes/class-update.php:82
+msgid "<strong>Post Views Counter</strong> - this version requires a database update. Make sure to back up your database first."
+msgstr "<strong>Post Views Counter</strong> - このバージョンにはデータベースの更新が必要です。最初に必ずデータベースをバックアップするようにしてください。"
+
+#: includes/class-settings.php:410
+msgid "Error occurred. All existing data were not deleted."
+msgstr "エラーが発生しました。既存のデータは削除されませんでした。"
+
+#: includes/class-settings.php:408
+msgid "All existing data deleted succesfully."
+msgstr "既存のデータはすべて正常に削除されました。"
+
+#: includes/class-settings.php:818
+msgid "Delete all the existing post views data."
+msgstr "既存の表示数データをすべて削除します。"
+
+#: includes/class-settings.php:817
+msgid "Delete views"
+msgstr "表示数を削除"
+
+#: includes/class-settings.php:815
+msgid "Override existing views data."
+msgstr "既存の表示数データを上書きします。"
+
+#: includes/class-settings.php:815
+msgid "Import views"
+msgstr "表示数をインポート"
+
+#: includes/class-settings.php:217
+msgid "Tools"
+msgstr "ツール"
+
+#: includes/class-settings-api.php:207
+msgid "Check out our other <a href=\"%s\" target=\"_blank\">WordPress plugins</a>."
+msgstr "私たちの他の <a href=\"%s\" target=\"_blank\">WordPress プラグイン</a>をチェックしてみてください。"
+
+#: includes/class-settings-api.php:206
+msgid "Blog about it & link to the <a href=\"%s\" target=\"_blank\">plugin page</a>."
+msgstr "このプラグインについて記事を書いたり、<a href=\"%s\" target=\"_blank\">プラグインページ</a>へリンクしてください。"
+
+#: includes/class-settings-api.php:205
+msgid "<a href=\"%s\" target=\"_blank\">Rate it 5</a> on WordPress.org"
+msgstr "WordPress.org で<a href=\"%s\" target=\"_blank\">星5つの評価</a>をしてください。"
+
+#: includes/class-settings-api.php:202
+msgid "If you are having problems with this plugin, please browse it's <a href=\"%s\" target=\"_blank\">Documentation</a> or talk about them in the <a href=\"%s\" target=\"_blank\">Support forum</a>"
+msgstr "もしこのプラグインについてわからないことがあった場合、<a href=\"%s\" target=\"_blank\">ドキュメンテーション</a>に目を通すか、その問題について<a href=\"%s\" target=\"_blank\">サポートフォーラム</a>で聞いてみてください。"
+
+#: includes/class-settings.php:60
+msgid "REST API"
+msgstr "REST API"
+
+#: includes/class-counter.php:375
+msgid "Post type excluded."
+msgstr "除外する投稿タイプ"
+
+#: includes/class-admin.php:105 includes/class-counter.php:368
+msgid "Invalid post ID."
+msgstr "無効な投稿 ID です。"
+
+#: includes/class-counter.php:361
+msgid "REST API method is disabled."
+msgstr "REST API メソッドが無効になっています。"
+
+#: includes/class-settings.php:151
+msgid "Count Interval"
+msgstr "カウント間隔"
+
+#: includes/class-settings.php:257
+msgid "Select page types where the views count will be displayed."
+msgstr "表示数を表示するページタイプを選択してください。"
+
+#: includes/class-settings.php:270
+msgid "User Type"
+msgstr "ユーザーの種類"
+
+#: includes/class-settings.php:253
+msgid "Page Type"
+msgstr "投稿の種類"
+
+#: includes/class-settings.php:244
+msgid "Post Type"
+msgstr "投稿タイプ"
+
+#: includes/class-settings.php:264
+msgid "Search results"
+msgstr "検索結果"
+
+#: includes/class-settings.php:263
+msgid "Single pages"
+msgstr "単一の記事"
+
+#: includes/class-settings.php:262
+msgid "Archives"
+msgstr "アーカイブ別"
+
+#: includes/class-settings.php:261
+msgid "Home"
+msgstr "トップページ"
+
+#: includes/class-dashboard.php:311 includes/class-dashboard.php:400
+msgid "Total Views"
+msgstr "合計表示数"
+
+#: includes/class-dashboard.php:228 includes/class-dashboard.php:231
+#: includes/class-dashboard.php:481 includes/class-dashboard.php:484
+#: includes/class-dashboard.php:617
+msgid "You do not have permission to access this page."
+msgstr "このページへのアクセス権がありません。"
+
+#: includes/class-settings.php:401
+msgid "There was no post views data to import."
+msgstr "インポートする投稿表示数データはありませんでした。"
+
+#: includes/class-settings.php:853
+msgid "Use it to hide the post views counter from selected user roles."
+msgstr "この機能を使うと、特定の権限グループに対して投稿表示カウンターを非表示にできます。"
+
+#. Author URI of the plugin
+msgid "http://www.dfactory.co/"
+msgstr "http://www.dfactory.co/"
+
+#. Description of the plugin
+msgid "Post Views Counter allows you to display how many times a post, page or custom post type had been viewed in a simple, fast and reliable way."
+msgstr "Post Views Counter を使用すると、投稿、固定ページ、カスタム投稿タイプを何回表示したかを、シンプルで高速で信頼性の高い方法で表示できます。"
+
+#. Plugin URI of the plugin
+msgid "http://www.dfactory.co/plugins/post-views-counter/"
+msgstr "http://www.dfactory.co/plugins/post-views-counter/"
+
+#: post-views-counter.php:708
+msgid "Settings"
+msgstr "設定"
+
+#: post-views-counter.php:688
+msgid "Support"
+msgstr "サポート"
+
+#: post-views-counter.php:634
+msgid "Are you sure you want to reset these settings to defaults?"
+msgstr "本当にこれらの設定を初期化してもよいですか ?"
+
+#: includes/class-widgets.php:184
+msgid "Thumbnail size"
+msgstr "サムネイルのサイズ"
+
+#: includes/class-widgets.php:181
+msgid "Display post thumbnail?"
+msgstr "投稿のサムネイルを表示しますか?"
+
+#: includes/class-widgets.php:177
+msgid "Display post excerpt?"
+msgstr "投稿の抜粋を表示しますか?"
+
+#: includes/class-widgets.php:175
+msgid "Display post views?"
+msgstr "閲覧数を表示しますか ?"
+
+#: includes/class-widgets.php:149
+msgid "Order"
+msgstr "注文"
+
+#: includes/class-widgets.php:145
+msgid "No posts message"
+msgstr "投稿が無い時に表示するメッセージ"
+
+#: includes/class-widgets.php:141
+msgid "Number of posts to show"
+msgstr "表示する投稿数"
+
+#: includes/class-widgets.php:128
+msgid "Post Types"
+msgstr "投稿タイプ"
+
+#: includes/class-widgets.php:124
+msgid "Title"
+msgstr "タイトル"
+
+#: includes/class-widgets.php:78
+msgid "Descending"
+msgstr "降順"
+
+#: includes/class-widgets.php:77
+msgid "Ascending"
+msgstr "昇順"
+
+#: includes/class-widgets.php:56
+msgid "Displays a list of the most viewed posts"
+msgstr "最も表示されている投稿の一覧を表示"
+
+#: includes/class-widgets.php:54 includes/class-widgets.php:62
+msgid "Most Viewed Posts"
+msgstr "最も表示数の多い投稿"
+
+#: includes/class-settings.php:399
+msgid "Post views data imported succesfully."
+msgstr "投稿表示数データをインポートしました。"
+
+#: includes/class-settings.php:844
+msgid "Use it to hide the post views counter from selected type of visitors."
+msgstr "この機能を使うと、特定のタイプの訪問者に対して投稿表示カウンターを非表示にできます。"
+
+#: includes/class-settings.php:311
+msgid "Enter the post views icon class. Any of the <a href=\"%s\" target=\"_blank\">Dashicons</a> classes are available."
+msgstr "投稿表示のアイコン class を入力してください。<a href=\"%s\" target=\"_blank\">Dashicons</a> の class が利用できます。"
+
+#: includes/class-settings.php:298
+msgid "Choose how to display the post views counter."
+msgstr "表示数カウンターの表示方法を選択します。"
+
+#: includes/class-settings.php:230
+msgid "Enable to delete all plugin data on deactivation."
+msgstr "プラグイン無効化時にすべてのプラグインデータを削除できるようにします。"
+
+#: includes/class-settings.php:147
+msgid "Enable to restrict post views editing to admins only."
+msgstr "表示数編集を管理者のみに制限するには有効化してください。"
+
+#: includes/class-settings.php:816
+msgid "Import post views data from WP-PostViews plugin."
+msgstr "WP-PostViews プラグインから表示数データをインポートします。"
+
+#: includes/class-settings.php:775
+msgid "Enter the IP addresses to be excluded from post views count."
+msgstr "表示数から除外する IP アドレスを入力してください。"
+
+#: includes/class-settings.php:774
+msgid "Add my current IP"
+msgstr "現在 IP アドレスを追加"
+
+#: includes/class-settings.php:774
+msgid "Add new"
+msgstr "新規追加"
+
+#: includes/class-settings.php:763 includes/class-settings.php:769
+msgid "Remove"
+msgstr "削除"
+
+#: includes/class-settings.php:535
+msgid "Enter the time between single user visit count."
+msgstr "ユーザーの再訪問をカウントする時間間隔を入力します。"
+
+#: includes/class-settings.php:139
+msgid "Enable to display post views count column for each of the selected post types."
+msgstr "選択した投稿タイプごとに投稿の表示数カラムを表示できるようにします。"
+
+#: includes/class-settings.php:248
+msgid "Select post types for which the views count will be displayed."
+msgstr "表示数を表示する投稿タイプを選択してください。"
+
+#: includes/class-settings.php:122
+msgid "Select post types for which post views will be counted."
+msgstr "表示数をカウントする投稿タイプを選択してください。"
+
+#: includes/class-settings.php:237
+msgid "Enter the label for the post views counter field."
+msgstr "表示数カウンター表示欄のラベルを入力してください。"
+
+#: includes/class-settings.php:308
+msgid "Icon Class"
+msgstr "アイコンクラス"
+
+#: includes/class-settings.php:295 includes/class-widgets.php:162
+msgid "Display Style"
+msgstr "表示形式"
+
+#: includes/class-settings.php:283
+msgid "Position"
+msgstr "位置"
+
+#: includes/class-settings.php:234
+msgid "Post Views Label"
+msgstr "表示数ラベル"
+
+#: includes/class-settings.php:226
+msgid "Deactivation"
+msgstr "無効化"
+
+#: includes/class-settings.php:200
+msgid "Exclude IPs"
+msgstr "除外するIPアドレス"
+
+#: includes/class-settings.php:187
+msgid "Exclude Visitors"
+msgstr "除外する訪問者"
+
+#: includes/class-settings.php:175
+msgid "Flush Object Cache Interval"
+msgstr "オブジェクトキャッシュフラッシュ間隔"
+
+#: includes/class-settings.php:163
+msgid "Reset Data Interval"
+msgstr "データリセット間隔"
+
+#: includes/class-settings.php:143
+msgid "Restrict Edit"
+msgstr "編集の制限"
+
+#: includes/class-settings.php:135
+msgid "Post Views Column"
+msgstr "投稿表示数カラム"
+
+#: includes/class-settings.php:127
+msgid "Counter Mode"
+msgstr "カウントモード"
+
+#: includes/class-settings.php:118
+msgid "Post Types Count"
+msgstr "カウントする投稿タイプ"
+
+#: includes/class-settings-api.php:249
+msgid "Reset to defaults"
+msgstr "初期設定に戻す"
+
+#: includes/class-settings-api.php:204
+msgid "Do you like this plugin?"
+msgstr "このプラグインは気に入って頂けましたか?"
+
+#: includes/class-settings-api.php:201
+msgid "Need support?"
+msgstr "サポートが必要ですか ?"
+
+#. Plugin Name of the plugin
+#: includes/class-dashboard.php:61 includes/class-settings.php:339
+msgid "Post Views Counter"
+msgstr "Post Views Counter"
+
+#: includes/class-settings.php:348
+msgid "Display"
+msgstr "表示"
+
+#: includes/class-settings.php:344
+msgid "General"
+msgstr "一般"
+
+#: includes/class-settings.php:303
+msgid "label"
+msgstr "ラベル"
+
+#: includes/class-settings.php:302
+msgid "icon"
+msgstr "アイコン"
+
+#: includes/class-settings.php:290
+msgid "manual"
+msgstr "手動"
+
+#: includes/class-settings.php:289
+msgid "after the content"
+msgstr "コンテンツの後"
+
+#: includes/class-settings.php:288
+msgid "before the content"
+msgstr "コンテンツの前"
+
+#: includes/class-settings.php:90
+msgid "selected user roles"
+msgstr "ユーザー属性の選択"
+
+#: includes/class-settings.php:89
+msgid "guests"
+msgstr "ゲスト"
+
+#: includes/class-settings.php:88
+msgid "logged in users"
+msgstr "ログイン中のユーザー"
+
+#: includes/class-settings.php:87
+msgid "robots"
+msgstr "robots"
+
+#: includes/class-settings.php:82
+msgid "years"
+msgstr "年"
+
+#: includes/class-settings.php:81
+msgid "months"
+msgstr "ヶ月"
+
+#: includes/class-settings.php:80
+msgid "weeks"
+msgstr "週間"
+
+#: includes/class-settings.php:79
+msgid "days"
+msgstr "日"
+
+#: includes/class-settings.php:78
+msgid "hours"
+msgstr "時間"
+
+#: includes/class-settings.php:77
+msgid "minutes"
+msgstr "分"
+
+#: includes/class-settings.php:55
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: includes/class-settings.php:54
+msgid "PHP"
+msgstr "PHP"
+
+#: includes/functions.php:489
+msgid "No Posts"
+msgstr "投稿がありません"
+
+#: includes/class-cron.php:83
+msgid "Post Views Counter cache flush interval"
+msgstr "Post Views Counter のキャッシュ削除間隔"
+
+#: includes/class-cron.php:78
+msgid "Post Views Counter reset daily counts interval"
+msgstr "Post Views Counter の日別カウントのリセット間隔"
+
+#: includes/class-admin.php:155 includes/class-columns.php:78
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: includes/class-columns.php:77
+msgid "OK"
+msgstr "OK"
+
+#: includes/class-admin.php:154 includes/class-columns.php:73
+msgid "Adjust the views count for this post."
+msgstr "この投稿の表示数を調整します。"
+
+#: includes/class-columns.php:69
+msgid "Edit"
+msgstr "編集"
+
+#: includes/class-admin.php:153 includes/class-columns.php:60
+#: includes/class-columns.php:232 includes/class-columns.php:295
+#: includes/class-dashboard.php:101 includes/class-dashboard.php:265
+#: includes/class-dashboard.php:528
+msgid "Post Views"
+msgstr "投稿表示数"

@@ -1,0 +1,1145 @@
+:root {
+    --yellow: #ffff05;
+    --base-text: #000000;
+    --bg-color: #ef4a46;
+    --red: #e11936;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#present * {
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#present .inner {
+    width: calc(100% - 30px);
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+#present img {
+    width: 100%;
+}
+
+#present a {
+    text-decoration: none;
+    display: block;
+}
+
+#present .row {
+    display: flex;
+    flex-flow: wrap;
+}
+#present .on-pc {
+    display: none;
+}
+
+/* header */
+
+#present #header .header-inner {
+    height: 80px;
+    background-image: url("../images/present-header-bg.png");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: 35%;
+}
+
+#present #header .header-logo {
+    max-width: 247px;
+    padding-top: 4px;
+    margin-right: 15px;
+}
+
+#present #header .header-btn {
+    display: none;
+    background-color: var(--yellow);
+    min-width: 228px;
+    max-width: 228px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 999px;
+    color: var(--base-text);
+    font-size: 15px;
+    font-weight: 700;
+    position: absolute;
+    right: 35px;
+}
+
+/* banner */
+
+#present #banner {
+    background-color: var(--bg-color);
+    padding-bottom: 13px;
+}
+#present #banner .banner-box {
+    padding: 21px 12px 0 12px;
+    z-index: 2;
+}
+#present #banner .banner-img {
+    margin-bottom: 14px;
+}
+#present #banner .banner-content {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+#present #banner .banner-content-desc {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    min-height: 78px;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+#present #banner .banner-content-desc p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.8px;
+    left: -4px;
+    top: -3px;
+}
+#present #banner .banner-content-img {
+    margin-bottom: 15px;
+}
+
+/* flag */
+#present #flag .inner{
+    z-index: 2;
+}
+#present #flag .flag-text p {
+    font-size: 20px;
+    color: var(--red);
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.7px;
+}
+#present #flag {
+    padding-top: 14px;
+    padding-bottom: 4px;
+    background-image: url('../images/present-flag-bg-1.png');
+    background-color: #fff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#present #flag .flag-img {
+    padding: 5px;
+    max-width: 854px;
+    margin: 0 auto;
+}
+
+#present #flag .flag-text {
+    margin-top: -7px;
+    left: 1px;
+}
+
+/* image */
+#present #image{
+    z-index: 2;
+}
+#present #image .col {
+    width: 100%;
+}
+
+#present #image .image-img {
+    font-size: 0;
+}
+
+/* about */
+
+#present #about {
+    background-color: var(--bg-color);
+    padding-top: 14px;
+    padding-bottom: 45px;
+}
+#present #about::before{
+    content:'' ;
+    position: absolute;
+    min-height: 606px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('../images/present-about-bg-1.png');
+    top: 311px;
+    z-index: 1;
+}
+#present #about::after{
+    content:'' ;
+    position: absolute;
+    min-height: 606px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/present-about-bg-2.png');
+    bottom: -376px;
+    z-index: 1;
+}
+#present #about .inner{
+    z-index: 2;
+}
+#present #about .about-img {
+    padding: 9px 12px 9px 9px;
+}
+#present #about .about-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.16);
+    margin-top: 14px;
+    padding: 20px 8px 8px 8px;
+}
+#present #about .about-title {
+    height: 59px;
+    background-color: var(--red);
+    border-radius: 999px;
+    margin-bottom: 12px;
+    text-align: center;
+    max-width: 675px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+#present #about .about-title-main {
+    font-size: 24px;
+    font-weight: 700;
+    left: 3px;
+    top: -1px;
+    letter-spacing: 0.7px;
+    color: #fff;
+}
+#present #about .about-title .about-title-sub {
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    top: -1px;
+    letter-spacing: 1.4px;
+    left: 1px;
+}
+#present #about .about-content-text {
+    padding-left: 9px;
+    padding-right: 3px;
+}
+#present #about .about-content-text .text-red {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 900;
+    color: var(--red);
+    font-family: "M PLUS 1p", sans-serif;
+    margin-bottom: 10px;
+    letter-spacing: 0.6px;
+}
+#present #about .about-content-text .text-nor {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: var(--base-text);
+    padding-right: 6px;
+    margin-bottom: 16px;
+}
+#present #about .about-content-img {
+    max-width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#present #about .col {
+    width: 100%;
+}
+
+/* contact */
+
+#present #contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    z-index: 2;
+}
+#present #contact .contact-box {
+    background-color: var(--bg-color);
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.47);
+    padding: 16px 23px 23px 21px;
+}
+#present #contact .contact-desc {
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 1px;
+    left: 2px;
+    margin-bottom: 13px;
+}
+#present #contact .contact-btn {
+    font-size: 15px;
+    color: var(--base-text);
+    font-weight: 700;
+    background-color: #ffff05;
+    border-radius: 99px;
+    max-width: 228px;
+    min-width: 228px;
+    height: 47px;
+    text-align: center;
+    line-height: 47px;
+    margin: 0 auto;
+    left: -1px;
+}
+#present #contact .contact-content {
+    margin-top: 8px;
+}
+#present #contact .btn-link{
+	display: block;
+	max-width: 675px;
+	background-color: var(--yellow);
+	color: var(--base-text);
+	text-align: center;
+	border-radius: 999px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.16);
+	font-weight: 700;
+	margin: 0 auto;
+	height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+}
+
+/* merit */
+
+#present #merit {
+    background-color: var(--bg-color);
+    padding-top: 20px;
+    padding-bottom: 17px;
+}
+#present #merit .merit-title {
+    margin-bottom: 10.5px;
+}
+#present #merit .merit-title-sub {
+    font-family: "din-2014", sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+    left: 1px;
+    margin-bottom: 10px;
+}
+#present #merit .merit-content{
+    max-width: 1014px;
+    margin: 0 auto;
+}
+#present #merit .merit-title-main {
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 900;
+    font-family: "M PLUS 1p", sans-serif;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.7px;
+    left: 1px;
+}
+#present #merit .merit-item {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 21px;
+    margin-left: 1px;
+}
+#present #merit .merit-item-num{
+    margin-bottom: 1px;
+}
+#present #merit .merit-item-2 .merit-item-num{
+    margin-bottom: 2px;
+}
+#present #merit .merit-item-num p {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "din-2014", sans-serif;
+    text-align: center;
+    line-height: 47px;
+    letter-spacing: 3px;
+    left: -11px;
+    top: -1px;
+}
+#present #merit .merit-item-num p span {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "din-2014", sans-serif;
+    top: 6px;
+    left: 9px;
+}
+#present #merit .merit-item .merit-item-title {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 900;
+    font-family: "M PLUS 1p", sans-serif;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+}
+#present #merit .merit-item .merit-item-text {
+    font-size: 16px;
+    color: #fff;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
+#present #merit .merit-item .merit-item-desc {
+    border-top: 3px solid #fff;
+    padding: 10px 14px;
+}
+#present #merit .merit-item-3 .merit-item-desc {
+    padding-bottom: 18px;
+}
+
+/* plan */
+
+#present #plan{
+    padding-top: 29px;
+    padding-bottom: 21px;
+    background-color: #fff;
+}
+#present #plan .plan-title{
+    margin-bottom: 30px;
+}
+#present #plan .plan-title-sub{
+    font-size: 20px;
+    color: #EF4A46;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "din-2014", sans-serif;
+    left: 1px;
+    margin-bottom: 7px;
+}
+#present #plan .plan-title-main{
+    font-size: 24px;
+    color: #000;
+    font-weight: 900;
+    line-height: 33px;
+    text-align: center;
+    font-family: "M PLUS 1p", sans-serif;
+    letter-spacing: 0.7px;
+    left: 1px;
+}
+#present #plan .plan-content{
+    max-width: 1014px;
+    margin: 0 auto;
+}
+#present #plan .plan-item{
+    border: 3px solid var(--bg-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#present #plan .plan-num{
+    border-bottom: 3px solid var(--bg-color);
+}
+#present #plan .plan-num p{
+    font-size: 40px;
+    font-family: "din-2014", sans-serif;
+    color: var(--bg-color);
+    text-align: center;
+    line-height: 56px;
+    letter-spacing: 2px;
+    left: 1px;
+}
+#present #plan .plan-prop-sub{
+    font-size: 30px;
+    line-height: 34px;
+    font-family: "din-2014", sans-serif;
+    color: var(--bg-color);
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 7px;
+}
+#present #plan .plan-prop-title{
+    font-size: 45px;
+    line-height: 34px;
+    font-weight: 600;
+    color: var(--bg-color);
+    font-family: "din-2014", sans-serif;
+    letter-spacing: 2.3px;
+    margin-bottom: 6px;
+}
+#present #plan .plan-prop-desc{
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+    color: var(--bg-color);
+    letter-spacing: 1.4px;
+}
+#present #plan .plan-value-title{
+    font-size: 26px;
+    line-height: 34px;
+    color: var(--bg-color);
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    margin-bottom: 10px;
+}
+#present #plan .plan-item-2 .plan-value-title{
+    margin-bottom: 5px;
+}
+#present #plan .plan-value-desc p{
+    font-size: 17px;
+    line-height: 28px;
+    padding-left: 25px;
+    margin-bottom: 2px;
+}
+#present #plan .plan-value-desc p::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 99px;
+    background-color: var(--bg-color);
+    top: 6px;
+    left: 1px;
+}
+#present #plan .plan-prop{
+    padding: 17px 17px 11px 19px;
+}
+#present #plan .plan-value{
+    padding: 0 17px 14px 18px;
+}
+#present #plan .plan-illus{
+    padding: 3px 15px 12px 15px;
+}
+#present #plan .plan-illus-text{
+    color: #fff;
+    background-color: var(--bg-color);
+    display: inline-block;
+    border-radius: 99px;
+    height: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "din-2014", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    white-space: nowrap;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+#present #plan .plan-illus-text span{
+    font-size: 18px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    top: 2px;
+    left: 3px;
+    margin-right: 4px
+}
+#present #plan .plan-illus-col-1{
+    margin-bottom: 17px;
+}
+#present #plan .plan-illus-col-1 .plan-illus-text{
+    margin-bottom: 8px;
+}
+#present #plan .plan-illus-col-2{
+    margin-bottom: 15px;
+}
+#present #plan .btn-link {
+    display: block;
+    max-width: 675px;
+    background-color: var(--yellow);
+    color: var(--base-text);
+    text-align: center;
+    border-radius: 999px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.16);
+    font-weight: 700;
+    margin: 0 auto;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+}
+#present #plan .online{
+	margin-bottom: 30px;
+}
+
+/* footer */
+#present #footer{
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 31px;
+}
+#present #footer .footer-inner{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+#present #footer .footer-logo{
+    max-width: 202px;
+    margin-bottom: 14px;
+}
+#present #footer .footer-menu ul{
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+#present #footer .footer-menu ul li{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+#present #footer .footer-menu ul li a{
+	color: #fff;
+}
+#present #footer .copyright{
+    color: #fff;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+@media print, screen and (min-width: 768px) {
+    #present .on-mb {
+        display: none;
+    }
+
+    /* banner */
+    #present #banner .banner-content {
+        display: flex;
+        align-items: center;
+    }
+    #present #banner .banner-content-desc {
+        min-width: 420px;
+        max-width: 610px;
+    }
+    #present #banner .banner-content-desc p {
+        left: -3;
+        top: 0;
+        letter-spacing: 1px;
+    }
+    #present #banner .banner-content-img {
+        margin-bottom: 0px;
+    }
+    #present #banner .banner-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #present #banner .banner-content-desc {
+        min-height: 75px;
+    }
+    #present #banner .banner-content-img {
+        margin-right: 20px;
+    }
+
+    /* flag */
+    #present #flag .flag-img {
+        padding: 0;
+    }
+    #present #flag {
+        padding-top: 15px;
+        padding-bottom: 13px;
+    }
+    #present #flag .flag-text {
+        margin-top: 0;
+        left: -13px;
+    }
+    #present #flag .flag-text p {
+        font-size: 53px;
+        letter-spacing: 1.7px;
+    }
+
+    /* about */
+    #present #about .about-title {
+        margin-left: 0;
+        margin-right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #present #about::after{
+        display: none;
+    }
+	
+    /* image */
+    #present #image .col {
+        width: 50%;
+    }
+	
+    /* contact */
+    #present #contact .contact-desc br {
+        display: none;
+    }
+
+    /* merit */
+    #present #merit .merit-item{
+        display: flex;
+        margin-bottom: 20.5px;
+    }
+    #present #merit .merit-item-num{
+        min-width: 165px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #present #merit .merit-item .merit-item-desc{
+        border-top: 0;
+        border-left: 3px solid #fff;
+    }
+    #present #merit .merit-item .merit-item-title{
+        text-align: left;
+    }
+    #present #merit .merit-item-num p{
+        left: 0;
+    }
+    #present #merit .merit-item-num p span{
+        display: block;
+        left: 0;
+    }
+
+}
+
+@media print, screen and (min-width: 1024px) {
+    #present .on-pc {
+        display: block;
+    }
+
+    /* header */
+    #present #header .header-inner {
+        background-position: center;
+    }
+    #present #header .header-logo {
+        margin-right: 0;
+        max-width: 297px;
+    }
+
+    #present #header .header-btn {
+        display: block;
+    }
+
+    /* banner */
+    #present #banner {
+        padding-top: 57px;
+        padding-bottom: 49px;
+    }
+    #present #banner .banner-box {
+        padding: 0;
+    }
+    #present #banner .banner-img {
+        margin-bottom: 37px;
+    }
+    #present #banner .banner-content-img {
+        margin-right: 43px;
+    }
+
+    /* flag */
+    #present #flag{
+        background-image: none;
+    }
+    #present #flag::before{
+        content: '';
+        width: 276px;
+        height: 368px;
+        position: absolute;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../images/present-flag-before.png');
+        left: 34px;
+        top: -89px;
+        z-index: 1;
+    }
+    #present #flag::after{
+        content: '';
+        width: 276px;
+        height: 368px;
+        position: absolute;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../images/present-flag-after.png');
+        top: -89px;
+        right: 17px;
+        z-index: 1;
+    }
+
+    /* about */
+    #present #about .about-img {
+        padding: 0;
+    }
+    #present #about {
+        padding-top: 39px;
+        padding-bottom: 57px;
+    }
+    #present #about::before{
+        min-height: 673px;
+        background-image: url('../images/present-about-bg-3.png');
+        bottom: 0;
+        top: auto;
+    }
+    #present #about .about-box {
+        margin-top: 34px;
+        padding: 22px 24px 8px 60px;
+    }
+    #present #about .about-title {
+        margin-left: -17px;
+        margin-right: 0;
+        height: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    #present #about .about-title-main {
+        font-size: 40px;
+        top: -3px;
+        left: 0;
+        margin-right: 25px;
+        letter-spacing: 1.2px;
+    }
+    #present #about .about-title .about-title-sub {
+        font-size: 20px;
+        top: -2px;
+        left: 0;
+        letter-spacing: 2px;
+    }
+    #present #about .about-content .row {
+        flex-flow: nowrap;
+        align-items: center;
+    }
+    #present #about .about-content-text {
+        padding-left: 0px;
+        padding-right: 0px;
+        top: 11px;
+    }
+    #present #about .about-content-text .text-red {
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 0.7px;
+    }
+    #present #about .about-content-text .text-nor {
+        font-size: 18px;
+        line-height: 35px;
+        letter-spacing: 0.55px;
+        padding-right: 10px;
+    }
+    #present #about .about-content .col-1 {
+        width: 47%;
+    }
+    #present #about .about-content .col-2 {
+        width: 53%;
+    }
+
+    /* contact */
+    #present #contact {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #present #contact .contact-box {
+        border-radius: 20px;
+        padding: 30px 37px 14px 35px;
+    }
+    #present #contact .contact-desc {
+        font-size: 24.5px;
+        line-height: 40px;
+        letter-spacing: 0.3px;
+        left: 0;
+    }
+    #present #contact .contact-btn {
+        left: 2px;
+        top: -2px;
+    }
+    #present #contact .contact-content {
+        margin-top: 14px;
+    }
+	#present #contact .btn-link{
+		height: 85px;
+		line-height: 85px;
+		font-size: 30px;
+	}
+
+    /* merit */
+    #present #merit .merit-title-sub{
+        font-size: 28px;
+        letter-spacing: 2.8px;
+        margin-bottom: 20px;
+    }
+    #present #merit{
+        padding-top: 65px;
+        padding-bottom: 33px;
+    }
+    #present #merit .merit-title-main{
+        font-size: 45px;
+        line-height: 55px;
+        letter-spacing: 1.5px;
+    }
+    #present #merit .merit-title {
+        margin-bottom: 43px;
+    }
+    #present #merit .merit-item .merit-item-title{
+        font-size: 45px;
+        line-height: 65px;
+        letter-spacing: 1.4px;
+        left: -2px;
+        margin-bottom: 4px;
+    }
+    #present #merit .merit-item .merit-item-desc{
+        padding: 17px 35px 15px 34px;
+    }
+    #present #merit .merit-item .merit-item-text{
+        font-size: 17px;
+        line-height: 30px;
+        left: -2px;
+    }
+    #present #merit .merit-item-2 .merit-item-title,
+    #present #merit .merit-item-3 .merit-item-title{
+        top: -5px;
+    }
+    #present #merit .merit-item-2 .merit-item-text,
+    #present #merit .merit-item-3 .merit-item-text{
+        top: -6px;
+    }
+    #present #merit .merit-item-3 .merit-item-text{
+        margin-bottom: 3px;
+    }    
+    #present #merit .merit-item-num p span{
+        font-size: 100px;
+    }   
+    
+    #present #merit .merit-item-1 .merit-item-num p,
+    #present #merit .merit-item-2 .merit-item-num p{
+        top: -26px;
+    }
+    #present #merit .merit-item-1 .merit-item-num p span,
+    #present #merit .merit-item-2 .merit-item-num p span,
+    #present #merit .merit-item-3 .merit-item-num p span{
+        top: 21px;
+    }
+    #present #merit .merit-item-3 .merit-item-num p{
+        top: -29px;
+    }
+
+    /* plan */
+    #present #plan{
+        padding-top: 41px;
+        padding-bottom: 50px;
+    }
+    #present #plan .plan-title-sub{
+        font-size: 28px;
+        letter-spacing: 2.8px;
+        margin-bottom: 15px;
+    }
+    #present #plan .plan-title-main{
+        font-size: 45px;
+        line-height: 55px;
+        letter-spacing: 1.4px;
+    }
+    #present #plan .plan-title {
+        margin-bottom: 42px;
+    }
+    #present #plan .plan-item{
+        display: flex;
+        margin-bottom: 30px;
+        flex-flow: wrap;
+    }
+    #present #plan .plan-num{
+        border-bottom: 0;
+        min-width: 95px;
+        max-width: 95px;
+    }
+    #present #plan .plan-num p{
+        transform: rotate(90deg);
+        font-size: 50px;
+        line-height: 129px;
+        left: -3px;
+    }
+    #present #plan .plan-item-2 .plan-num p {
+        line-height: 131px;
+    }
+    #present #plan .plan-prop {
+        padding: 15px 9px 21px 8px;
+        min-width: 276px;
+    }
+    #present #plan .plan-prop-sub{
+        left: 3px;
+        margin-bottom: 6px;
+    }
+    #present #plan .plan-prop-title{
+        margin-bottom: 10px;
+    }
+    #present #plan .plan-value-title{
+        font-size: 31px;
+        letter-spacing: 1.5px;
+        line-height: 44px;
+        margin-bottom: 5px;
+    }
+    #present #plan .plan-value {
+        padding: 23px 17px 14px 18px;
+    }
+    #present #plan .plan-item-2 .plan-value{
+        padding: 9px 17px 14px 18px;
+    }
+    #present #plan .plan-item-2 .plan-value-title {
+        margin-bottom: 10px;
+    }
+    #present #plan .plan-illus{
+        display: flex;
+    }
+    #present #plan .plan-illus {
+        padding: 1px 17px 17px 20px;
+    }
+    #present #plan .plan-illus-col-1,
+    #present #plan .plan-illus-col-2{
+        margin-right: 17px;
+        margin-bottom: 0;
+    }
+    #present #plan .plan-illus-col-1 .plan-illus-text {
+        margin-bottom: 10px;
+    }
+    #present #plan .plan-illus-text{
+        padding: 0 7px;
+        top: 1px;
+    }
+	#present #plan .btn-link{
+		height: 85px;
+		line-height: 85px;
+		font-size: 30px;
+	}
+    
+    /* footer */
+    #present #footer .footer-inner{
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    #present #footer .footer-menu ul{
+        flex-flow: row;
+    }
+    #present #footer .copyright{
+        margin-top: 0;
+        top: -1px;
+    }
+    #present #footer .footer-menu ul li{
+        margin-bottom: 0;
+        padding: 0 20px;
+    }
+    #present #footer .footer-menu ul li::after{
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 21px;
+        background-color: #fff;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #present #footer .footer-menu ul li:last-child:after{
+        display: none;
+    }
+    #present #footer .footer-logo{
+        margin-bottom: 0;
+        max-width: 179px;
+    }
+    #present #footer{
+        padding-top: 11px;
+        padding-bottom: 12px;
+    }
+    #present #footer .footer-menu{
+        top: -3px;
+        left: -10px;
+    }
+}
+
+@media print, screen and (min-width: 1200px) {
+    /* banner */
+    #present #banner .banner-content-desc {
+        min-width: 610px;
+    }
+    #present #banner .banner-content-desc p {
+        font-size: 36px;
+    }
+
+    /* contact */
+    #present #contact .contact-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    #present #contact .contact-btn {
+        margin: 0;
+    }
+    #present #contact .contact-desc {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+/* form */
+
+#present #form{
+    background-color: var(--bg-color);
+	padding-top: 39px;
+	padding-bottom: 43px;
+}
+#present #form .form-title{
+	margin-bottom: 28px;
+}
+#present #form .form-title p{
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #797979;
+	text-align: center;
+	letter-spacing: 1px;
+    left: 1px;
+}
+#present #form .form-title p::before{
+	content: '';
+	position: absolute;
+	width: 150px;
+	height: 1px;
+	background-color: #707070;
+	top: 50%;
+	transform: translatey(-50%);
+	left: 0;
+	display: none;
+}
+#present #form .form-title p::after{
+	content: '';
+	position: absolute;
+	width: 150px;
+	height: 1px;
+	background-color: #707070;
+	top: 50%;
+	transform: translatey(-50%);
+	right: 0;
+	display: none;
+}
+
+@media print, screen and (min-width: 768px){
+	
+}
+@media print, screen and (min-width: 1024px) {
+    #present #form{
+		padding-top: 66px;
+		padding-bottom: 93px;
+    }
+	#present #form .form-title p{
+		font-size: 20px;
+	}
+	#present #form .form-title p::before,
+	#present #form .form-title p::after{
+		display: block;
+	}
+	#present #form .form-title {
+		margin-bottom: 41px;
+	}
+}
+
+
+.page-template-lp-cam-mess-present #header-menu{
+	display: none !important;
+}

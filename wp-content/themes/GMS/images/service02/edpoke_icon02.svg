@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="55" viewBox="0 0 55 55">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3916" data-name="Rectangle 3916" width="39.03" height="39.028" fill="none" stroke="#fff" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_14837" data-name="Group 14837" transform="translate(-390 -1921)">
+    <circle id="Ellipse_27" data-name="Ellipse 27" cx="27.5" cy="27.5" r="27.5" transform="translate(390 1921)" fill="#0b54f7"/>
+    <g id="Group_14633" data-name="Group 14633" transform="translate(398 1929)">
+      <g id="Group_14632" data-name="Group 14632" clip-path="url(#clip-path)">
+        <path id="Path_827" data-name="Path 827" d="M69.629,66.714A19.43,19.43,0,0,1,40.067,88.17" transform="translate(-31.766 -52.892)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Path_828" data-name="Path 828" d="M2.751,26.791A19.43,19.43,0,0,1,32.313,5.334" transform="translate(-1.586 -1.586)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+        <circle id="Ellipse_40" data-name="Ellipse 40" cx="3.238" cy="3.238" r="3.238" transform="translate(2.542 30.01)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+        <circle id="Ellipse_41" data-name="Ellipse 41" cx="3.238" cy="3.238" r="3.238" transform="translate(30.011 2.542)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+        <circle id="Ellipse_42" data-name="Ellipse 42" cx="9.713" cy="9.713" r="9.713" transform="translate(9.801 9.801)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+        <line id="Line_209" data-name="Line 209" x2="19.426" transform="translate(9.801 19.514)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+        <ellipse id="Ellipse_43" data-name="Ellipse 43" cx="3.236" cy="9.713" rx="3.236" ry="9.713" transform="translate(16.278 9.801)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

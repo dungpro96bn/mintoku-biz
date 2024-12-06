@@ -1,0 +1,1924 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+common
+------------------------------------------------------------*/
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+nav ul {
+    list-style: none;
+}
+
+ul,ol{
+    list-style:none;
+    list-style-type:none;
+}
+ul,li{
+    list-style: none outside none;
+}
+
+a {
+    color:#0978c5;
+    text-decoration:none;
+    transition: .3s;
+}
+
+body{
+    font-family: 'Noto Sans CJK JP', 'Century Gothic', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 游ゴシック体, YuGothic, "Yu Gothic Medium", 游ゴシック, 'Yu Gothic', メイリオ, Meiryo, sans-serif;
+    color: #000;
+}
+
+input, textarea, button, select{
+    font-family: 'Noto Sans CJK JP',sans-serif !important;
+}
+
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+footer, header{
+    display: none !important;
+}
+#mintokumesse .mw_wp_form_confirm .contact-submitBtn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+    max-width: 680px;
+    margin: auto;
+}
+#mintokumesse .contact-form .mw_wp_form_confirm .privacy{
+    display: none;
+}
+#mintokumesse .contact-form .mw_wp_form_confirm .field-group .title{
+    padding-top: 0;
+}
+#mintokumesse .contact-form p.input-field {
+    font-size: 18px;
+    line-height: 30px;
+}
+#mintokumesse .contact-form .mw_wp_form_confirm .field-group .title .required{
+    display: none;
+}
+#mintokumesse .contact-form .mw_wp_form_confirm .contact-submit {
+    padding-top: 30px;
+}
+#mintokumesse .contact-form .mw_wp_form_confirm .field-group{
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+#mintokumesse .contact-form .mw_wp_form_confirm .field-group .container-input.half-item{
+    display: flex;
+    column-gap: 5px;
+}
+
+#mintokumesse {
+    font-size: 16px;
+    line-height:1.6;
+    font-weight: 400;
+    color: #333;
+    overflow: hidden;
+    background: #F1F1F0;
+    position: relative;
+}
+#mintokumesse * {
+    box-sizing: border-box;
+}
+
+#mintokumesse a {
+    transition: opacity .3s;
+}
+
+#mintokumesse a[href^="tel:"] {
+    display: inline-block;
+    transition: none;
+}
+
+#mintokumesse a:hover {
+    text-decoration: none;
+}
+
+#mintokumesse a:focus-visible {
+    outline: none;
+}
+
+#mintokumesse img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+#mintokumesse .inner {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 18px;
+    margin: 0 auto;
+}
+
+#mintokumesse .sp-br{
+    display: none;
+}
+
+
+#mintokumesse #header{
+    text-align: center;
+    background: linear-gradient(90deg, rgba(52,52,106,1) 0%, rgba(42,104,148,1) 32%, rgba(51,54,107,1) 67%, rgba(145,165,204,1) 87%, rgba(93,77,160,1) 100%);
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mintokumesse #header .logo-header img{
+    width: auto;
+}
+#mintokumesse #header .logo-header{
+    display: inline-block;
+}
+#mintokumesse #header .logo-header:hover{
+    opacity: .7;
+}
+
+
+#mintokumesse .description{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background: #fff;
+}
+#mintokumesse .description .title{
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 4px;
+    letter-spacing: 3.5px;
+    text-align: center;
+}
+#mintokumesse .description .description-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+#mintokumesse .description .left-info{
+    width: calc(100% - 218px);
+    margin-right: 38px;
+}
+#mintokumesse .description .right-info{
+    width: 180px;
+    position: relative;
+    padding-top: 19px;
+}
+#mintokumesse .description .left-info svg{
+    width: 100%;
+    height: auto;
+}
+#mintokumesse .description .left-info .text-img{
+    margin-bottom: 4px;
+}
+#mintokumesse .description .left-info svg #Group_103 tspan{
+    stroke: #fff;
+}
+#mintokumesse .description .address{
+    font-family: "din-2014", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #fff;
+    font-size: 98px;
+    line-height: 100px;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    text-align: center;
+}
+#mintokumesse .description .address span{
+    padding-left: 10px;
+}
+#mintokumesse .description .address span:first-child{
+    padding-left: 0;
+}
+
+
+
+#mintokumesse .lpContent{
+    background-color: #F1F1F0;
+    padding-top: 35px;
+    padding-bottom: 163px;
+    position: relative;
+    background-image: url("../images/mintokumesse/mintokumesse_bg01_pc.png");
+    background-size: calc(100% + 48px);
+    background-repeat: no-repeat;
+    background-position: -20px bottom;
+    margin-bottom: 10px;
+}
+
+#mintokumesse .about-block{
+    border: 3px solid #5A5758;
+    border-radius: 20px;
+    position: relative;
+    padding: 27px 33px 32px 37px;
+    background: #FFFFFF;
+}
+#mintokumesse .about-block:before{
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25.829' height='375.726' viewBox='0 0 25.829 375.726'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_84' data-name='Rectangle 84' width='375.726' height='25.829' transform='translate(0 0)' fill='%235a5758'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_155' data-name='Group 155' transform='translate(25.829) rotate(90)'%3E%3Cpath id='Path_198' data-name='Path 198' d='M10.568,5.241h.067l3.591,11.206H6.977ZM9.02,0,0,25.618H3.982l1.906-5.73H15.3l1.923,5.73h3.965L12.167,0Z' fill='%235a5758'/%3E%3Cg id='Group_154' data-name='Group 154'%3E%3Cg id='Group_153' data-name='Group 153' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_199' data-name='Path 199' d='M27.185,0h3.546V9.312a8.926,8.926,0,0,1,2.126-1.581,5.024,5.024,0,0,1,2.432-.58A5.437,5.437,0,0,1,40.034,9.54a4.855,4.855,0,0,1,1,2.267,29.416,29.416,0,0,1,.255,4.674,29.29,29.29,0,0,1-.255,4.638,4.91,4.91,0,0,1-1,2.337,5.36,5.36,0,0,1-1.921,1.687,6.032,6.032,0,0,1-2.824.685,5.955,5.955,0,0,1-4.556-2.114v1.9H27.185ZM34.22,10.8a3.136,3.136,0,0,0-1.89.511,2.994,2.994,0,0,0-1.072,1.34,6.937,6.937,0,0,0-.426,1.8,19.694,19.694,0,0,0-.1,2.028q0,.969.1,1.974a7,7,0,0,0,.426,1.851,2.989,2.989,0,0,0,1.072,1.34,3.058,3.058,0,0,0,1.89.529,3.512,3.512,0,0,0,1.992-.494,2.8,2.8,0,0,0,1.039-1.3,6.974,6.974,0,0,0,.459-1.869q.035-.987.034-2.027,0-1.094-.034-2.134a6.926,6.926,0,0,0-.459-1.8,2.6,2.6,0,0,0-1.039-1.3,3.86,3.86,0,0,0-1.992-.44' fill='%235a5758'/%3E%3Cpath id='Path_200' data-name='Path 200' d='M47.57,16.481a16.463,16.463,0,0,1,.46-4.436,6.453,6.453,0,0,1,1.463-2.552,6.706,6.706,0,0,1,2.043-1.625,7.366,7.366,0,0,1,3.319-.717,7.519,7.519,0,0,1,3.387.72,6.389,6.389,0,0,1,1.974,1.634,5.8,5.8,0,0,1,1.493,2.548,17.736,17.736,0,0,1,.424,4.428,17.232,17.232,0,0,1-.425,4.392,6.3,6.3,0,0,1-1.5,2.619,5.632,5.632,0,0,1-.834.79,3.863,3.863,0,0,1-1.14.756,6.912,6.912,0,0,1-3.385.791,7.263,7.263,0,0,1-5.359-2.337,7.081,7.081,0,0,1-1.464-2.619,16.033,16.033,0,0,1-.459-4.392m11.017.035a17.081,17.081,0,0,0-.17-2.856,3.423,3.423,0,0,0-.7-1.516,2.629,2.629,0,0,0-1.159-.97,3.753,3.753,0,0,0-1.706-.37,3.806,3.806,0,0,0-1.672.37,3.185,3.185,0,0,0-1.194.97,4.321,4.321,0,0,0-.665,1.516,14,14,0,0,0-.2,2.821,13.582,13.582,0,0,0,.2,2.785,4.679,4.679,0,0,0,.665,1.587,4.34,4.34,0,0,0,1.194.934,3.647,3.647,0,0,0,1.672.388,3.6,3.6,0,0,0,1.706-.388,3.359,3.359,0,0,0,1.159-.934,3.7,3.7,0,0,0,.7-1.587,16,16,0,0,0,.17-2.75' fill='%235a5758'/%3E%3Cpath id='Path_201' data-name='Path 201' d='M68.813,7.379h3.545V18.252a3.971,3.971,0,0,0,1,2.885,3.323,3.323,0,0,0,2.519,1.038,3.268,3.268,0,0,0,2.5-1.038,4.019,4.019,0,0,0,.988-2.885V7.379h3.545V25.617H79.372v-1.95H79.3a5.607,5.607,0,0,1-4.574,2.161,5.883,5.883,0,0,1-3.961-1.649,5.769,5.769,0,0,1-1.955-4.664Z' fill='%235a5758'/%3E%3Cpath id='Path_202' data-name='Path 202' d='M90.823,1.827h3.546V7.379h2.587v2.81H94.369V20.822q-.038,1.389,1.259,1.353h1.328v3.443H95.1a4.131,4.131,0,0,1-3.058-1.194,4.292,4.292,0,0,1-1.223-3.3V10.189H89.042V7.379h1.781Z' fill='%235a5758'/%3E%3Cpath id='Path_203' data-name='Path 203' d='M114.85,7.379H118.4V9.312h.068a5.907,5.907,0,0,1,4.762-2.162,6.813,6.813,0,0,1,3.057.651,9.1,9.1,0,0,1,2.092,1.739,7.192,7.192,0,0,1,5.746-2.39,6.259,6.259,0,0,1,4.147,1.6,6.131,6.131,0,0,1,1.932,4.744V25.617h-3.548V14.745a3.918,3.918,0,0,0-1.02-2.921,3.553,3.553,0,0,0-2.627-1.02,3.615,3.615,0,0,0-2.646,1.02,3.843,3.843,0,0,0-1.055,2.921V25.617h-3.546V14.745a3.921,3.921,0,0,0-1.019-2.921A3.618,3.618,0,0,0,122.1,10.8a3.557,3.557,0,0,0-2.628,1.02,3.806,3.806,0,0,0-1.072,2.921V25.617h-3.55Z' fill='%235a5758'/%3E%3Cpath id='Path_204' data-name='Path 204' d='M147.891,0h3.546V3.653h-3.546Zm0,7.379h3.546V25.617h-3.546Z' fill='%235a5758'/%3E%3Cpath id='Path_205' data-name='Path 205' d='M158.852,7.379H162.4V9.312h.067a5.627,5.627,0,0,1,4.592-2.162,5.946,5.946,0,0,1,4.013,1.6,6.287,6.287,0,0,1,1.887,4.744V25.617h-3.545V14.745a4,4,0,0,0-.988-2.921,3.3,3.3,0,0,0-2.5-1.02,3.354,3.354,0,0,0-2.519,1.02,3.952,3.952,0,0,0-1,2.921V25.617h-3.546Z' fill='%235a5758'/%3E%3Cpath id='Path_206' data-name='Path 206' d='M180.6,1.827h3.546V7.379h2.587v2.81h-2.587V20.822q-.037,1.389,1.259,1.353h1.328v3.443h-1.852a4.131,4.131,0,0,1-3.058-1.194,4.292,4.292,0,0,1-1.223-3.3V10.189h-1.781V7.379H180.6Z' fill='%235a5758'/%3E%3Cpath id='Path_207' data-name='Path 207' d='M192.041,16.481a16.463,16.463,0,0,1,.46-4.436,6.453,6.453,0,0,1,1.463-2.552,6.706,6.706,0,0,1,2.043-1.625,7.366,7.366,0,0,1,3.319-.717,7.519,7.519,0,0,1,3.387.72,6.389,6.389,0,0,1,1.974,1.634,5.8,5.8,0,0,1,1.493,2.548,17.735,17.735,0,0,1,.424,4.428,17.231,17.231,0,0,1-.425,4.392,6.3,6.3,0,0,1-1.5,2.619,5.633,5.633,0,0,1-.834.79,3.863,3.863,0,0,1-1.14.756,6.912,6.912,0,0,1-3.385.791,7.263,7.263,0,0,1-5.359-2.337,7.081,7.081,0,0,1-1.464-2.619,16.034,16.034,0,0,1-.459-4.392m11.017.035a17.08,17.08,0,0,0-.17-2.856,3.423,3.423,0,0,0-.7-1.516,2.629,2.629,0,0,0-1.159-.97,3.753,3.753,0,0,0-1.706-.37,3.806,3.806,0,0,0-1.672.37,3.185,3.185,0,0,0-1.194.97,4.32,4.32,0,0,0-.665,1.516,14,14,0,0,0-.205,2.821,13.582,13.582,0,0,0,.205,2.785,4.678,4.678,0,0,0,.665,1.587,4.34,4.34,0,0,0,1.194.934,3.647,3.647,0,0,0,1.672.388,3.6,3.6,0,0,0,1.706-.388,3.359,3.359,0,0,0,1.159-.934,3.7,3.7,0,0,0,.7-1.587,16,16,0,0,0,.17-2.75' fill='%235a5758'/%3E%3Cpath id='Path_208' data-name='Path 208' d='M213.388,0h3.546V15.935h.074L223.8,7.379h4.256l-6.1,7.117,6.93,11.122h-4.463l-4.7-8.521-2.793,3.268v5.253h-3.546Z' fill='%235a5758'/%3E%3Cpath id='Path_209' data-name='Path 209' d='M234.332,7.379h3.546V18.252a3.974,3.974,0,0,0,1,2.885,3.325,3.325,0,0,0,2.519,1.038,3.272,3.272,0,0,0,2.5-1.038,4.019,4.019,0,0,0,.988-2.885V7.379h3.545V25.617h-3.545v-1.95h-.069a5.607,5.607,0,0,1-4.574,2.161,5.883,5.883,0,0,1-3.962-1.649,5.769,5.769,0,0,1-1.955-4.664Z' fill='%235a5758'/%3E%3Cpath id='Path_210' data-name='Path 210' d='M267.9,7.379h3.553V9.312h.068a5.907,5.907,0,0,1,4.762-2.162,6.813,6.813,0,0,1,3.057.651,9.1,9.1,0,0,1,2.092,1.739,7.192,7.192,0,0,1,5.746-2.39,6.259,6.259,0,0,1,4.147,1.6,6.131,6.131,0,0,1,1.932,4.744V25.617h-3.548V14.745a3.917,3.917,0,0,0-1.02-2.921,3.553,3.553,0,0,0-2.627-1.02,3.615,3.615,0,0,0-2.646,1.02,3.843,3.843,0,0,0-1.055,2.921V25.617h-3.546V14.745a3.921,3.921,0,0,0-1.019-2.921,3.618,3.618,0,0,0-2.646-1.02,3.557,3.557,0,0,0-2.628,1.02,3.806,3.806,0,0,0-1.072,2.921V25.617H267.9Z' fill='%235a5758'/%3E%3Cpath id='Path_211' data-name='Path 211' d='M303.555,17.885a4.345,4.345,0,0,0,1.227,3.341,4.015,4.015,0,0,0,3,1.16,5.23,5.23,0,0,0,3.865-1.776l2.571,2.268a8.211,8.211,0,0,1-6.362,2.95,8.941,8.941,0,0,1-2.723-.421,6.481,6.481,0,0,1-1.292-.615,6.26,6.26,0,0,1-1.243-.826,7.265,7.265,0,0,1-1.82-2.847,11.533,11.533,0,0,1-.766-4.568,13.069,13.069,0,0,1,.664-4.5,7.863,7.863,0,0,1,1.7-2.881,6.317,6.317,0,0,1,2.365-1.547,7.377,7.377,0,0,1,2.552-.474,7.228,7.228,0,0,1,5.121,2.056,7.614,7.614,0,0,1,2.16,5.659v3.019Zm7.471-3.019a4.761,4.761,0,0,0-1.108-3.231,3.832,3.832,0,0,0-5.254,0,5,5,0,0,0-1.109,3.231Z' fill='%235a5758'/%3E%3Cpath id='Path_212' data-name='Path 212' d='M322.353,20.047a7.282,7.282,0,0,0,5.6,2.339,4.621,4.621,0,0,0,2.507-.615,1.931,1.931,0,0,0,.973-1.722,1.527,1.527,0,0,0-.579-1.371,2.98,2.98,0,0,0-1.586-.439l-3.138-.281a5.875,5.875,0,0,1-3.631-1.547,4.755,4.755,0,0,1-1.467-3.637,5,5,0,0,1,1.925-4.217,7.458,7.458,0,0,1,4.667-1.406,13.682,13.682,0,0,1,2.2.158,10.69,10.69,0,0,1,1.823.491,10.4,10.4,0,0,1,2.93,1.844l-2.2,2.652a10.933,10.933,0,0,0-2.167-1.26,7.05,7.05,0,0,0-2.592-.443,3.44,3.44,0,0,0-2.337.616,2.013,2.013,0,0,0-.7,1.583,1.248,1.248,0,0,0,.528,1.073,3.013,3.013,0,0,0,1.808.651l2.932.229a5.41,5.41,0,0,1,3.991,1.724,5.943,5.943,0,0,1,1.142,3.747,4.787,4.787,0,0,1-2.094,4.1,8.876,8.876,0,0,1-5.226,1.513,11.05,11.05,0,0,1-7.781-3.266Z' fill='%235a5758'/%3E%3Cpath id='Path_213' data-name='Path 213' d='M342.7,20.047a7.282,7.282,0,0,0,5.6,2.339,4.621,4.621,0,0,0,2.507-.615,1.931,1.931,0,0,0,.973-1.722,1.527,1.527,0,0,0-.579-1.371,2.98,2.98,0,0,0-1.586-.439l-3.138-.281a5.875,5.875,0,0,1-3.631-1.547,4.755,4.755,0,0,1-1.467-3.637A5,5,0,0,1,343.3,8.557a7.458,7.458,0,0,1,4.667-1.406,13.682,13.682,0,0,1,2.2.158,10.69,10.69,0,0,1,1.823.491,10.4,10.4,0,0,1,2.93,1.844l-2.2,2.652a10.932,10.932,0,0,0-2.167-1.26,7.05,7.05,0,0,0-2.592-.443,3.44,3.44,0,0,0-2.337.616,2.013,2.013,0,0,0-.7,1.583,1.248,1.248,0,0,0,.528,1.073,3.013,3.013,0,0,0,1.808.651l2.932.229a5.41,5.41,0,0,1,3.991,1.724,5.943,5.943,0,0,1,1.142,3.747,4.787,4.787,0,0,1-2.094,4.1A8.876,8.876,0,0,1,348,25.828a11.05,11.05,0,0,1-7.781-3.266Z' fill='%235a5758'/%3E%3Cpath id='Path_214' data-name='Path 214' d='M364.709,17.885a4.345,4.345,0,0,0,1.227,3.341,4.015,4.015,0,0,0,3,1.16A5.23,5.23,0,0,0,372.8,20.61l2.571,2.268a8.211,8.211,0,0,1-6.362,2.95,8.941,8.941,0,0,1-2.723-.421,6.483,6.483,0,0,1-1.292-.615,6.262,6.262,0,0,1-1.243-.826,7.266,7.266,0,0,1-1.82-2.847,11.533,11.533,0,0,1-.766-4.568,13.069,13.069,0,0,1,.664-4.5,7.863,7.863,0,0,1,1.7-2.881,6.317,6.317,0,0,1,2.365-1.547,7.377,7.377,0,0,1,2.552-.474,7.228,7.228,0,0,1,5.121,2.056,7.614,7.614,0,0,1,2.16,5.659v3.019Zm7.471-3.019a4.761,4.761,0,0,0-1.108-3.231,3.832,3.832,0,0,0-5.254,0,5,5,0,0,0-1.109,3.231Z' fill='%235a5758'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    width: 26px;
+    height: 380px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 4px;
+    left: -54px;
+    pointer-events: none;
+}
+#mintokumesse .about-block .aboutTitle{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3px;
+    margin-bottom: 17px;
+}
+#mintokumesse .about-block .aboutTitle .title_left{
+    width: 37.3%;
+}
+#mintokumesse .about-block .aboutTitle .title_left svg{
+    width: 100%;
+    height: auto;
+}
+#mintokumesse .about-block .aboutTitle .title_right{
+    width: calc(100% - 37.3%);
+    padding-left: 30px;
+}
+#mintokumesse .about-block .aboutTitle .t1{
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+    margin-bottom: 13px;
+}
+#mintokumesse .about-block .about-description .text{
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+	text-align: center;
+}
+#mintokumesse .about-block .about-description{
+    margin-bottom: 17px;
+}
+#mintokumesse .about-block .about-description .text span{
+    font-weight: 400;
+}
+#mintokumesse .about-block .aboutList .ttl-box{
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 194px;
+    border-radius: 30px;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+    margin-bottom: 14px;
+}
+#mintokumesse .about-block .aboutList .item02 .ttl-box{
+    background: linear-gradient(90deg, rgba(101,182,235,1) 0%, rgba(0,107,180,1) 100%);
+}
+#mintokumesse .about-block .aboutList{
+    display: flex;
+    flex-wrap: wrap;
+}
+#mintokumesse .about-block .aboutList .textItem{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    position: relative;
+    letter-spacing: 0.8px;
+    padding-left: 32px;
+}
+#mintokumesse .about-block .aboutList .textItem:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+    top: 6px;
+    left: 0;
+}
+#mintokumesse .about-block .aboutList .item02 .textItem:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(101,182,235,1) 0%, rgba(0,107,180,1) 100%);
+}
+#mintokumesse .about-block .aboutList .item01{
+    width: 37.2%;
+}
+#mintokumesse .about-block .aboutList .item02{
+    width: calc(100% - 37.2% - 164px);
+    margin-right: -10px;
+}
+#mintokumesse .about-block .aboutList .item03{
+    width: 174px;
+    position: relative;
+    top: -8px;
+}
+#mintokumesse .about-block .aboutList .item03 p{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 174px;
+    height: 174px;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+}
+
+
+#mintokumesse .contactBox{
+    position: relative;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 23px 0 38px;
+}
+#mintokumesse .contactBox a{
+    display: block;
+}
+#mintokumesse .contactBox a:hover{
+    opacity: .7;
+}
+
+
+#mintokumesse .online-exhibition{
+    border: 3px solid #65B6EB;
+    border-radius: 20px;
+    position: relative;
+    background: #fff;
+    padding: 27px 26px 35px 29px;
+}
+#mintokumesse .online-exhibition:before{
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='30.208' height='348.253' viewBox='0 0 30.208 348.253'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_82' data-name='Rectangle 82' width='348.253' height='30.208' fill='%2365b6eb'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_147' data-name='Group 147' transform='translate(30.208) rotate(90)'%3E%3Cg id='Group_146' data-name='Group 146' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_165' data-name='Path 165' d='M0,15.1A51.27,51.27,0,0,1,.3,8.159,8.409,8.409,0,0,1,1.264,5.32,10.14,10.14,0,0,1,4.618,1.665,9.7,9.7,0,0,1,10.282,0a9.884,9.884,0,0,1,9,5.34,6.958,6.958,0,0,1,1,2.833,58.928,58.928,0,0,1,.256,6.93,59.029,59.029,0,0,1-.256,6.889,6.972,6.972,0,0,1-1.008,2.874A9.56,9.56,0,0,1,16,28.5a10.031,10.031,0,0,1-5.722,1.712A9.875,9.875,0,0,1,4.618,28.5a9.86,9.86,0,0,1-3.355-3.628c-.21-.449-.4-.877-.571-1.284a8.387,8.387,0,0,1-.4-1.59A51.158,51.158,0,0,1,0,15.1m4.359,0a35.743,35.743,0,0,0,.317,5.945A5.015,5.015,0,0,0,5.8,23.56a5.127,5.127,0,0,0,1.82,1.491,4.994,4.994,0,0,0,2.65.674,5.249,5.249,0,0,0,2.708-.674,4.873,4.873,0,0,0,1.741-1.491,5.314,5.314,0,0,0,1.168-2.511,38.739,38.739,0,0,0,.294-5.945,39.632,39.632,0,0,0-.294-5.985,5.282,5.282,0,0,0-1.168-2.471,5.262,5.262,0,0,0-1.741-1.531,6.176,6.176,0,0,0-2.708-.634,5.863,5.863,0,0,0-2.65.634A5.535,5.535,0,0,0,5.8,6.647,4.976,4.976,0,0,0,4.676,9.118,36.565,36.565,0,0,0,4.359,15.1' transform='translate(0 0)' fill='%2365b6eb'/%3E%3Cpath id='Path_166' data-name='Path 166' d='M2.079,11.821H0V8.561H2.079V5.768A5.62,5.62,0,0,1,3.7,1.325,5.95,5.95,0,0,1,7.664,0h2.662V3.993H7.973q-1.861-.06-1.779,1.762V8.561h4.132v3.26H6.194v17.9H2.079Z' transform='translate(28.125 0.245)' fill='%2365b6eb'/%3E%3Cpath id='Path_167' data-name='Path 167' d='M2.076,11.821H0V8.561H2.076V5.768A5.629,5.629,0,0,1,3.7,1.325,5.95,5.95,0,0,1,7.661,0h2.665V3.993H7.973q-1.865-.06-1.782,1.762V8.561h4.135v3.26H6.191v17.9H2.076Z' transform='translate(44.397 0.245)' fill='%2365b6eb'/%3E%3Cpath id='Path_168' data-name='Path 168' d='M0,0H4.115V24.276c0,.967.512,1.448,1.543,1.448H7.082v3.994H5.247a5.792,5.792,0,0,1-3.71-1.157A4.68,4.68,0,0,1,0,24.6Z' transform='translate(61.356 0.245)' fill='%2365b6eb'/%3E%3Cpath id='Path_169' data-name='Path 169' d='M0,0H4.115V4.238H0ZM0,8.56H4.115V29.718H0Z' transform='translate(75.633 0.245)' fill='%2365b6eb'/%3E%3Cpath id='Path_170' data-name='Path 170' d='M0,.265H4.115V2.507h.078A6.526,6.526,0,0,1,9.519,0a6.907,6.907,0,0,1,4.656,1.855,7.31,7.31,0,0,1,2.19,5.5V21.423H12.25V8.81A4.624,4.624,0,0,0,11.1,5.422,3.822,3.822,0,0,0,8.2,4.238,3.89,3.89,0,0,0,5.279,5.422,4.58,4.58,0,0,0,4.115,8.81V21.423H0Z' transform='translate(88.663 8.541)' fill='%2365b6eb'/%3E%3Cpath id='Path_171' data-name='Path 171' d='M4.115,12.453a5.039,5.039,0,0,0,1.421,3.876,4.66,4.66,0,0,0,3.477,1.345,6.059,6.059,0,0,0,4.484-2.06l2.985,2.631A9.535,9.535,0,0,1,9.1,21.667a10.355,10.355,0,0,1-3.159-.489,7.576,7.576,0,0,1-1.5-.713A7.3,7.3,0,0,1,3,19.507,8.413,8.413,0,0,1,.888,16.2,13.421,13.421,0,0,1,0,10.905,15.2,15.2,0,0,1,.769,5.687,9.1,9.1,0,0,1,2.744,2.345,7.327,7.327,0,0,1,5.486.551,8.551,8.551,0,0,1,8.448,0a8.388,8.388,0,0,1,5.94,2.385A8.832,8.832,0,0,1,16.9,8.95v3.5Zm8.666-3.5A5.5,5.5,0,0,0,11.494,5.2,4.082,4.082,0,0,0,8.448,3.994,4.086,4.086,0,0,0,5.4,5.2,5.787,5.787,0,0,0,4.115,8.95Z' transform='translate(113.067 8.541)' fill='%2365b6eb'/%3E%3Cpath id='Path_172' data-name='Path 172' d='M0,0H18.392V4.238H4.359v8.5H16.335v3.993H4.359V25.48H18.392v4.238H0Z' transform='translate(152.011 0.245)' fill='%2365b6eb'/%3E%3Cpath id='Path_173' data-name='Path 173' d='M.3,0h4.93L9.291,6.84,13.377,0H18.31l-6.93,10.355,7.207,10.8H13.671l-4.38-7.044L4.933,21.158H0l7-10.8Z' transform='translate(177.041 8.806)' fill='%2365b6eb'/%3E%3Cpath id='Path_174' data-name='Path 174' d='M0,0H4.115V10.8h.078A6.524,6.524,0,0,1,9.519,8.3a6.9,6.9,0,0,1,4.656,1.854,7.3,7.3,0,0,1,2.191,5.5V29.718H12.251V17.106a4.633,4.633,0,0,0-1.145-3.388,3.827,3.827,0,0,0-2.9-1.184A3.89,3.89,0,0,0,5.28,13.718a4.581,4.581,0,0,0-1.165,3.388V29.718H0Z' transform='translate(202.77 0.245)' fill='%2365b6eb'/%3E%3Cpath id='Path_175' data-name='Path 175' d='M0,0H4.115V4.238H0ZM0,8.56H4.115V29.718H0Z' transform='translate(228.255 0.245)' fill='%2365b6eb'/%3E%3Cpath id='Path_176' data-name='Path 176' d='M0,0H4.115V10.8A10.477,10.477,0,0,1,6.581,8.969,5.841,5.841,0,0,1,9.4,8.3a6.312,6.312,0,0,1,5.507,2.772A5.628,5.628,0,0,1,16.071,13.7a34.462,34.462,0,0,1,.294,5.422,33.871,33.871,0,0,1-.3,5.381,5.707,5.707,0,0,1-1.162,2.711,6.213,6.213,0,0,1-2.231,1.957A7,7,0,0,1,4.115,27.51v2.208H0ZM8.162,12.534a3.634,3.634,0,0,0-2.19.593,3.469,3.469,0,0,0-1.246,1.555,8,8,0,0,0-.493,2.086,22.657,22.657,0,0,0,0,4.641,8.075,8.075,0,0,0,.493,2.148,3.471,3.471,0,0,0,1.246,1.554,3.538,3.538,0,0,0,2.19.613,4.088,4.088,0,0,0,2.312-.572,3.26,3.26,0,0,0,1.206-1.514,8.2,8.2,0,0,0,.533-2.168q.039-1.144.038-2.351,0-1.269-.038-2.475a8.164,8.164,0,0,0-.533-2.086,3.02,3.02,0,0,0-1.206-1.513,4.475,4.475,0,0,0-2.312-.511' transform='translate(241.282 0.245)' fill='%2365b6eb'/%3E%3Cpath id='Path_177' data-name='Path 177' d='M0,0H4.115V4.238H0ZM0,8.56H4.115V29.718H0Z' transform='translate(266.191 0.245)' fill='%2365b6eb'/%3E%3Cpath id='Path_178' data-name='Path 178' d='M2.064,0H6.179V6.441h3V9.7h-3V22.036c-.029,1.074.46,1.6,1.459,1.569h1.54V27.6H7.032a4.794,4.794,0,0,1-3.55-1.384,4.978,4.978,0,0,1-1.419-3.828V9.7H0V6.441H2.064Z' transform='translate(277.625 2.364)' fill='%2365b6eb'/%3E%3Cpath id='Path_179' data-name='Path 179' d='M0,0H4.115V4.238H0ZM0,8.56H4.115V29.718H0Z' transform='translate(294.61 0.245)' fill='%2365b6eb'/%3E%3Cpath id='Path_180' data-name='Path 180' d='M0,10.823A18.949,18.949,0,0,1,.536,5.678a7.445,7.445,0,0,1,1.7-2.962A7.743,7.743,0,0,1,4.6.832,8.569,8.569,0,0,1,8.451,0a8.722,8.722,0,0,1,3.931.836,7.39,7.39,0,0,1,2.289,1.9A6.685,6.685,0,0,1,16.4,5.687a20.453,20.453,0,0,1,.493,5.136,19.959,19.959,0,0,1-.493,5.1,7.325,7.325,0,0,1-1.738,3.037,6.393,6.393,0,0,1-.967.917,4.487,4.487,0,0,1-1.322.877,8.015,8.015,0,0,1-3.928.917A7.835,7.835,0,0,1,4.6,20.75a7.85,7.85,0,0,1-2.37-1.794,8.223,8.223,0,0,1-1.7-3.037A18.535,18.535,0,0,1,0,10.823m12.78.041a19.5,19.5,0,0,0-.2-3.314,3.971,3.971,0,0,0-.81-1.759,3.034,3.034,0,0,0-1.345-1.124,4.345,4.345,0,0,0-1.98-.43,4.4,4.4,0,0,0-1.939.43A3.662,3.662,0,0,0,5.125,5.792a4.967,4.967,0,0,0-.772,1.759,16.05,16.05,0,0,0-.239,3.273,15.571,15.571,0,0,0,.239,3.231A5.385,5.385,0,0,0,5.125,15.9a5,5,0,0,0,1.383,1.083,4.24,4.24,0,0,0,1.939.45,4.184,4.184,0,0,0,1.98-.45A3.887,3.887,0,0,0,11.773,15.9a4.3,4.3,0,0,0,.81-1.842,18.272,18.272,0,0,0,.2-3.19' transform='translate(306.813 8.541)' fill='%2365b6eb'/%3E%3Cpath id='Path_181' data-name='Path 181' d='M0,.265H4.115V2.507h.078A6.526,6.526,0,0,1,9.519,0a6.907,6.907,0,0,1,4.656,1.855,7.309,7.309,0,0,1,2.19,5.5V21.423H12.25V8.81A4.624,4.624,0,0,0,11.1,5.422,3.822,3.822,0,0,0,8.2,4.238,3.89,3.89,0,0,0,5.279,5.422,4.58,4.58,0,0,0,4.115,8.81V21.423H0Z' transform='translate(331.888 8.541)' fill='%2365b6eb'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    width: 30px;
+    height: 350px;
+    background-repeat: no-repeat;
+    top: -5px;
+    left: -58px;
+    pointer-events: none;
+}
+#mintokumesse .exhibition-title{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 19px;
+}
+#mintokumesse .exhibition-title:nth-child(2){
+    margin-bottom: 15px;
+}
+#mintokumesse .exhibition-title .ttl-box{
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 185px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(101,182,235,1) 0%, rgba(0,107,180,1) 100%);
+}
+#mintokumesse .exhibition-title .txt{
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: bold;
+    padding-left: 16px;
+    letter-spacing: 1.6px;
+}
+#mintokumesse .exhibition-title .txt.txt-big{
+    font-size: 28px;
+}
+
+#mintokumesse .online-exhibition .info{
+    background: #EDEDED;
+    border-radius: 5px;
+    padding: 18px 16px 14px 18px;
+    margin-bottom: 28px;
+}
+#mintokumesse .online-exhibition .danang-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 9px;
+}
+#mintokumesse .online-exhibition .danang-info .image-info{
+    width: 37%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#mintokumesse .online-exhibition .danang-info .image-info picture{
+    display: block;
+    width: 85px;
+}
+#mintokumesse .online-exhibition .danang-info .image-info .imgText{
+    width: calc(100% - 85px);
+    padding-left: 12px;
+    padding-top: 10px;
+}
+#mintokumesse .online-exhibition .danang-info .image-info .t1{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+#mintokumesse .online-exhibition .danang-info .image-info .t2{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#mintokumesse .online-exhibition .danang-info .danang-description{
+    width: calc(100% - 37% - 158px);
+    padding-left: 6px;
+    margin-top: -3px;
+}
+#mintokumesse .online-exhibition .danang-info .image-last{
+    width: 158px;
+}
+#mintokumesse .online-exhibition .danang-info .danang-description .text{
+    font-size: 9px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+}
+#mintokumesse .online-exhibition .address-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+#mintokumesse .online-exhibition .address-info .ttl{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    letter-spacing: 0.65px;
+    width: 120px;
+}
+#mintokumesse .online-exhibition .address-info .address-text{
+    width: calc(100% - 120px);
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-top: 6px;
+    column-gap: 10px;
+}
+#mintokumesse .online-exhibition .address-info .address-text .text{
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.35px;
+}
+#mintokumesse .online-exhibition .address-info .address-text .txtBox{
+    display: flex;
+    width: 36px;
+    line-height: 20px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+    letter-spacing: 0;
+    min-width: 36px;
+}
+#mintokumesse .online-exhibition .address-info .address-text a{
+    color: #000;
+    text-decoration: underline;
+}
+#mintokumesse .online-exhibition .exhibition-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 14px;
+}
+#mintokumesse .online-exhibition .exhibition-bottom .ttl-box{
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 142px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(101,182,235,1) 0%, rgba(0,107,180,1) 100%);
+}
+#mintokumesse .online-exhibition .exhibition-bottom .exhibition-fee{
+    width: 142px;
+    text-align: center;
+}
+#mintokumesse .online-exhibition .exhibition-bottom .exhibition-fee .ttl-box{
+    margin-bottom: 22px;
+}
+#mintokumesse .online-exhibition .exhibition-bottom .exhibition-fee .title{
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+#mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support{
+    width: 47.5%;
+    padding-left: 35px;
+}
+#mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support .ttl-box{
+    width: 132px;
+    margin-bottom: 12px;
+}
+#mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support picture{
+    display: block;
+    padding-left: 4px;
+    margin-bottom: 14px;
+}
+#mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support .exhibitor-support_itemText{
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    padding-left: 28px;
+    letter-spacing: 0.8px;
+    margin-bottom: 13px;
+    position: relative;
+}
+#mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support .exhibitor-support_itemText:last-child{
+    margin-bottom: 0;
+}
+#mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support .exhibitor-support_itemText:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(101,182,235,1) 0%, rgba(0,107,180,1) 100%);
+    top: -3px;
+    left: 3px;
+}
+#mintokumesse .online-exhibition .exhibition-bottom .exhibition-bottom-image{
+    width: calc(100% - 142px - 47.5%);
+    padding-top: 3px;
+}
+
+
+#mintokumesse .online-exhibition-02{
+    border: 3px solid #DD9611;
+    border-radius: 20px;
+    background: #fff;
+    position: relative;
+    padding: 26px 32px 26px 29px;
+}
+#mintokumesse .online-exhibition-02:before{
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='30.208' height='341.595' viewBox='0 0 30.208 341.595'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_83' data-name='Rectangle 83' width='341.595' height='30.208' fill='%23dd9611'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_149' data-name='Group 149' transform='translate(30.208) rotate(90)'%3E%3Cg id='Group_148' data-name='Group 148' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_182' data-name='Path 182' d='M0,15.1A51.27,51.27,0,0,1,.3,8.159,8.382,8.382,0,0,1,1.264,5.32,10.118,10.118,0,0,1,4.618,1.665,9.7,9.7,0,0,1,10.282,0a9.886,9.886,0,0,1,9,5.34,6.994,6.994,0,0,1,1.006,2.833,59.21,59.21,0,0,1,.256,6.93,59.315,59.315,0,0,1-.256,6.889,7.025,7.025,0,0,1-1.008,2.874A9.58,9.58,0,0,1,16,28.5a10.031,10.031,0,0,1-5.722,1.712A9.872,9.872,0,0,1,4.618,28.5a9.84,9.84,0,0,1-3.355-3.628q-.316-.673-.572-1.284A8.489,8.489,0,0,1,.3,21.993,51.158,51.158,0,0,1,0,15.1m4.359,0a35.926,35.926,0,0,0,.316,5.945A5.04,5.04,0,0,0,5.8,23.56a5.14,5.14,0,0,0,1.82,1.491,5,5,0,0,0,2.649.674,5.251,5.251,0,0,0,2.709-.674,4.859,4.859,0,0,0,1.74-1.491,5.3,5.3,0,0,0,1.168-2.511,38.526,38.526,0,0,0,.3-5.945,39.414,39.414,0,0,0-.3-5.985,5.27,5.27,0,0,0-1.168-2.471,5.246,5.246,0,0,0-1.74-1.531,6.178,6.178,0,0,0-2.709-.634,5.866,5.866,0,0,0-2.649.634A5.55,5.55,0,0,0,5.8,6.647,5,5,0,0,0,4.675,9.118,36.752,36.752,0,0,0,4.359,15.1' transform='translate(0 0)' fill='%23dd9611'/%3E%3Cpath id='Path_183' data-name='Path 183' d='M0,.265H4.115V2.507h.078A6.526,6.526,0,0,1,9.519,0a6.9,6.9,0,0,1,4.656,1.855,7.305,7.305,0,0,1,2.19,5.5V21.423H12.25V8.81A4.629,4.629,0,0,0,11.1,5.422,3.825,3.825,0,0,0,8.2,4.238,3.89,3.89,0,0,0,5.279,5.422,4.58,4.58,0,0,0,4.115,8.81V21.423H0Z' transform='translate(29.368 8.541)' fill='%23dd9611'/%3E%3Cpath id='Path_184' data-name='Path 184' d='M0,0H4.115V24.276q0,1.45,1.543,1.448H7.083v3.994H5.249a5.788,5.788,0,0,1-3.71-1.157A4.679,4.679,0,0,1,0,24.6Z' transform='translate(54.699 0.245)' fill='%23dd9611'/%3E%3Cpath id='Path_185' data-name='Path 185' d='M0,0H4.115V4.238H0ZM0,8.56H4.115V29.718H0Z' transform='translate(68.977 0.245)' fill='%23dd9611'/%3E%3Cpath id='Path_186' data-name='Path 186' d='M0,.265H4.115V2.507h.078A6.526,6.526,0,0,1,9.519,0a6.9,6.9,0,0,1,4.656,1.855,7.305,7.305,0,0,1,2.19,5.5V21.423H12.25V8.81A4.629,4.629,0,0,0,11.1,5.422,3.825,3.825,0,0,0,8.2,4.238,3.89,3.89,0,0,0,5.279,5.422,4.58,4.58,0,0,0,4.115,8.81V21.423H0Z' transform='translate(82.007 8.541)' fill='%23dd9611'/%3E%3Cpath id='Path_187' data-name='Path 187' d='M4.115,12.453a5.04,5.04,0,0,0,1.422,3.876,4.661,4.661,0,0,0,3.477,1.345,6.065,6.065,0,0,0,4.484-2.06l2.983,2.631A9.532,9.532,0,0,1,9.1,21.667a10.358,10.358,0,0,1-3.158-.489,7.544,7.544,0,0,1-1.5-.713A7.228,7.228,0,0,1,3,19.507,8.414,8.414,0,0,1,.888,16.2,13.421,13.421,0,0,1,0,10.905,15.165,15.165,0,0,1,.771,5.687,9.131,9.131,0,0,1,2.744,2.345,7.346,7.346,0,0,1,5.488.551,8.55,8.55,0,0,1,8.448,0a8.388,8.388,0,0,1,5.94,2.385A8.832,8.832,0,0,1,16.9,8.95v3.5Zm8.666-3.5A5.507,5.507,0,0,0,11.495,5.2,4.083,4.083,0,0,0,8.448,3.994,4.083,4.083,0,0,0,5.4,5.2,5.781,5.781,0,0,0,4.115,8.95Z' transform='translate(106.409 8.541)' fill='%23dd9611'/%3E%3Cpath id='Path_188' data-name='Path 188' d='M0,0H18.39V4.238H4.359v8.5H16.335v3.993H4.359V25.48H18.39v4.238H0Z' transform='translate(145.356 0.245)' fill='%23dd9611'/%3E%3Cpath id='Path_189' data-name='Path 189' d='M.3,0H5.228L9.293,6.84,13.377,0H18.31l-6.93,10.355,7.207,10.8H13.673L9.293,14.114l-4.36,7.044H0l7-10.8Z' transform='translate(170.383 8.806)' fill='%23dd9611'/%3E%3Cpath id='Path_190' data-name='Path 190' d='M0,0H4.115V10.8h.078A6.524,6.524,0,0,1,9.519,8.3a6.9,6.9,0,0,1,4.656,1.854,7.31,7.31,0,0,1,2.191,5.5V29.718H12.25V17.106A4.63,4.63,0,0,0,11.1,13.718a3.826,3.826,0,0,0-2.9-1.184,3.892,3.892,0,0,0-2.923,1.184,4.581,4.581,0,0,0-1.165,3.388V29.718H0Z' transform='translate(196.114 0.245)' fill='%23dd9611'/%3E%3Cpath id='Path_191' data-name='Path 191' d='M0,0H4.115V4.238H0ZM0,8.56H4.115V29.718H0Z' transform='translate(221.597 0.245)' fill='%23dd9611'/%3E%3Cpath id='Path_192' data-name='Path 192' d='M0,0H4.115V10.8A10.366,10.366,0,0,1,6.581,8.969,5.825,5.825,0,0,1,9.4,8.3a6.3,6.3,0,0,1,5.5,2.772A5.629,5.629,0,0,1,16.068,13.7a33.987,33.987,0,0,1,.3,5.422,33.871,33.871,0,0,1-.3,5.381A5.7,5.7,0,0,1,14.9,27.211a6.2,6.2,0,0,1-2.228,1.957,7,7,0,0,1-3.276.795A6.913,6.913,0,0,1,4.115,27.51v2.208H0ZM8.162,12.534a3.634,3.634,0,0,0-2.192.593,3.464,3.464,0,0,0-1.243,1.555,7.974,7.974,0,0,0-.495,2.086,23.126,23.126,0,0,0,0,4.641,8.051,8.051,0,0,0,.495,2.148A3.466,3.466,0,0,0,5.97,25.112a3.538,3.538,0,0,0,2.192.613,4.077,4.077,0,0,0,2.309-.572,3.222,3.222,0,0,0,1.206-1.514,7.972,7.972,0,0,0,.533-2.168q.039-1.144.041-2.351,0-1.269-.041-2.475a7.919,7.919,0,0,0-.533-2.086,2.989,2.989,0,0,0-1.206-1.513,4.463,4.463,0,0,0-2.309-.511' transform='translate(234.627 0.245)' fill='%23dd9611'/%3E%3Cpath id='Path_193' data-name='Path 193' d='M0,0H4.115V4.238H0ZM0,8.56H4.115V29.718H0Z' transform='translate(259.533 0.245)' fill='%23dd9611'/%3E%3Cpath id='Path_194' data-name='Path 194' d='M2.065,0H6.179V6.441h3V9.7h-3V22.036Q6.14,23.647,7.641,23.6h1.54V27.6H7.032a4.792,4.792,0,0,1-3.546-1.384,4.979,4.979,0,0,1-1.421-3.828V9.7H0V6.441H2.065Z' transform='translate(270.967 2.364)' fill='%23dd9611'/%3E%3Cpath id='Path_195' data-name='Path 195' d='M0,0H4.115V4.238H0ZM0,8.56H4.115V29.718H0Z' transform='translate(287.952 0.245)' fill='%23dd9611'/%3E%3Cpath id='Path_196' data-name='Path 196' d='M0,10.823A19.066,19.066,0,0,1,.533,5.678a7.51,7.51,0,0,1,1.7-2.962A7.758,7.758,0,0,1,4.6.832,8.549,8.549,0,0,1,8.451,0a8.7,8.7,0,0,1,3.928.836,7.44,7.44,0,0,1,2.292,1.9A6.742,6.742,0,0,1,16.4,5.687a20.6,20.6,0,0,1,.493,5.136,19.934,19.934,0,0,1-.5,5.1,7.286,7.286,0,0,1-1.735,3.037,6.512,6.512,0,0,1-.967.917,4.5,4.5,0,0,1-1.325.877,8.011,8.011,0,0,1-3.925.917A7.84,7.84,0,0,1,4.6,20.75a7.8,7.8,0,0,1-2.367-1.794,8.18,8.18,0,0,1-1.7-3.037A18.535,18.535,0,0,1,0,10.823m12.78.041a19.837,19.837,0,0,0-.2-3.314,3.943,3.943,0,0,0-.813-1.759,3.034,3.034,0,0,0-1.345-1.124,4.333,4.333,0,0,0-1.977-.43,4.4,4.4,0,0,0-1.939.43A3.672,3.672,0,0,0,5.122,5.792a5.022,5.022,0,0,0-.772,1.759,16.328,16.328,0,0,0-.236,3.273,15.841,15.841,0,0,0,.236,3.231A5.445,5.445,0,0,0,5.122,15.9a5.02,5.02,0,0,0,1.386,1.083,4.24,4.24,0,0,0,1.939.45,4.171,4.171,0,0,0,1.977-.45A3.888,3.888,0,0,0,11.77,15.9a4.267,4.267,0,0,0,.813-1.842,18.59,18.59,0,0,0,.2-3.19' transform='translate(300.159 8.541)' fill='%23dd9611'/%3E%3Cpath id='Path_197' data-name='Path 197' d='M0,.265H4.115V2.507h.078A6.526,6.526,0,0,1,9.519,0a6.9,6.9,0,0,1,4.656,1.855,7.3,7.3,0,0,1,2.19,5.5V21.423H12.25V8.81a4.633,4.633,0,0,0-1.144-3.388A3.826,3.826,0,0,0,8.2,4.238,3.89,3.89,0,0,0,5.279,5.422,4.58,4.58,0,0,0,4.115,8.81V21.423H0Z' transform='translate(325.23 8.541)' fill='%23dd9611'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    width: 30px;
+    height: 344px;
+    background-repeat: no-repeat;
+    top: -2px;
+    left: -60px;
+}
+
+
+#mintokumesse .online-exhibition-02 .exhibition-title .ttl-box{
+    background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+}
+#mintokumesse .online-exhibition-02 .webTitle{
+    width: calc(100% - 185px);
+    padding-left: 16px;
+}
+#mintokumesse .online-exhibition-02 .webTitle .text{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 1.1px;
+}
+#mintokumesse .online-exhibition-02 .webTitle .linkWeb{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#mintokumesse .online-exhibition-02 .webTitle .ttlBox{
+    display: flex;
+    width: 58px;
+    height: 58px;
+    border: 1px solid #DD9611;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 30px;
+    color: #DD9611;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+#mintokumesse .online-exhibition-02 .webTitle a{
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-left: 14px;
+    letter-spacing: 1.2px;
+    padding-bottom: 6px;
+}
+#mintokumesse .online-exhibition-02 .exhibition-fee .exhibition-title .ttl{
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 122px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+}
+#mintokumesse .online-exhibition-02 .exhibition-title:nth-child(2) {
+    margin-bottom: 18px;
+}
+#mintokumesse .online-exhibition-02 .exhibition-fee .exhibition-title .txt{
+    font-size: 19px;
+    padding-left: 47px;
+    letter-spacing: 1px;
+    padding-top: 3px;
+    position: relative;
+}
+#mintokumesse .online-exhibition-02 .exhibition-fee .exhibition-title .txt:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+    top: 7px;
+    left: 18px;
+}
+#mintokumesse .online-exhibition-02 .price{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 2px;
+    margin-bottom: 22px;
+}
+#mintokumesse .online-exhibition-02 .price .ttl{
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-right: 9px;
+}
+#mintokumesse .online-exhibition-02 .price .textNote{
+    background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+    font-size: 49px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 352px;
+    padding: 8.5px 0;
+    text-align: center;
+    letter-spacing: 3px;
+}
+#mintokumesse .online-exhibition-02 .price .price-img{
+    display: block;
+    padding-right: 27px;
+    position: relative;
+    padding-top: 6px;
+}
+#mintokumesse .online-exhibition-02 .exhibition-fee .exhibition-title{
+    margin-bottom: 12px;
+}
+
+
+#mintokumesse .contactBox.contactBox-bottom{
+    padding-bottom: 18px;
+}
+
+
+#mintokumesse .contact-form{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.40);
+    padding: 41px 40px 36px;
+    margin-bottom: 60px;
+}
+#mintokumesse .contact-form .heading-block{
+    font-size: 20px;
+    line-height: 29px;
+    color: #797979;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 40px;
+}
+#mintokumesse .contact-form .heading-block:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: 1px solid #707070;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 1px;
+}
+#mintokumesse .contact-form .heading-block span{
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    padding: 0 18px;
+}
+#mintokumesse .contact-form .field-group{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+#mintokumesse .contact-form .field-group .title{
+    width: 240px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+    font-weight: bold;
+    padding-top: 9px;
+}
+#mintokumesse .contact-form .field-group .title .required{
+    font-size: 15px;
+    line-height: 20px;
+    background: #E11936;
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 0px 6px 3px;
+    font-weight: 400;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    position: relative;
+    top: -3px;
+}
+#mintokumesse .contact-form .field-group .title .required.note{
+    background: #B1B1B1;
+}
+#mintokumesse .contact-form .field-group .container-input{
+    width: calc(100% - 240px);
+}
+#mintokumesse .contact-form .field-group .container-input.half-item{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+}
+#mintokumesse .contact-form .field-group .container-input input{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    background: #F2F2F2;
+    border: 0;
+    font-size: 16px;
+    height: 45px;
+    font-weight: 500;
+    padding: 10px 16px;
+    letter-spacing: 0.5px;
+    color: #000;
+    transition: .3s;
+}
+#mintokumesse .contact-form .field-group .container-input textarea{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    background: #F2F2F2;
+    border: 0;
+    font-size: 16px;
+    line-height: 30px;
+    height: 110px;
+    font-weight: 500;
+    padding: 10px 16px;
+    letter-spacing: 0.5px;
+    color: #000;
+    transition: .3s;
+}
+#mintokumesse .contact-form .btn-submit{
+    text-align: center;
+}
+#mintokumesse .contact-form .btn-submit input{
+    background: linear-gradient(180deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+    border-radius: 50px;
+    border: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+    color: #fff;
+}
+#mintokumesse .contact-form .btn-submit input:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,.30);
+}
+#mintokumesse .contact-form .box-policy .mwform-checkbox-field-text{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    font-size: 0;
+    height: 100%;
+    cursor: pointer;
+}
+#mintokumesse .mw_wp_form .error{
+	font-size: 16px;
+}
+#mintokumesse .contact-form .box-policy .error{
+	position: absolute;
+    bottom: -26px;
+    font-size: 16px;
+}
+#mintokumesse .contact-form .box-policy .mwform-checkbox-field-text:before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border: 2px solid #CECECE;
+    border-radius: 5px;
+    top: -3px;
+    right: -20px;
+    transition: .3s;
+}
+#mintokumesse .contact-form .box-policy .mwform-checkbox-field-text:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    border: solid #000;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 1px;
+    right: -7px;
+    opacity: 0;
+    transition: .3s;
+}
+#mintokumesse .contact-form .box-policy input:checked ~ .mwform-checkbox-field-text:after{
+    opacity: 1;
+}
+#mintokumesse .contact-form .box-policy input{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+#mintokumesse .contact-form .box-policy{
+    position: relative;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    display: inline-block;
+    padding-right: 36px;
+}
+#mintokumesse .contact-form .box-policy>p{
+    display: flex;
+}
+#mintokumesse .contact-form .box-policy a {
+    text-decoration: underline;
+    color: #0062FF;
+    position: relative;
+    z-index: 5;
+}
+#mintokumesse .contact-form .privacy{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#mintokumesse .contact-form .contact-submit{
+    padding-top: 5px;
+}
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+    color: #A5A5A5;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder{
+    color: #A5A5A5;
+}
+input::placeholder,
+textarea::placeholder{
+    color: #A5A5A5;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0px 3px 6px rgba(0,0,0,.30);
+}
+
+
+
+#mintokumesse #footer{
+    background: #000000;
+    padding: 10px 0px;
+}
+#mintokumesse #footer .footer-inner{
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+#mintokumesse #footer .footer-top{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#mintokumesse #footer .footer-top .logo-footer{
+    width: 200px;
+}
+#mintokumesse #footer .footer-top .menuList-footer{
+    width: calc(100% - 410px);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+#mintokumesse #footer .footer-top .copyright{
+    width: 210px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+#mintokumesse #footer .menuItem-footer a{
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+}
+#mintokumesse #footer .menuItem-footer a:hover{
+    opacity: .7;
+}
+#mintokumesse #footer .menuItem-footer{
+    position: relative;
+    padding-right: 41px;
+}
+#mintokumesse #footer .menuItem-footer:after{
+    content: "";
+    position: absolute;
+    height: 21px;
+    width: 1px;
+    border-left: 1px solid #fff;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+#mintokumesse #footer .menuItem-footer:last-child{
+    padding-right: 0;
+}
+#mintokumesse #footer .menuItem-footer:last-child:after{
+    display: none;
+}
+
+
+
+@media (max-width: 1280px) {
+
+    #mintokumesse .inner{
+        max-width: 900px;
+    }
+
+    #mintokumesse .description .title{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    #mintokumesse .about-block .aboutTitle .t1{
+        font-size: 24px;
+    }
+    #mintokumesse .about-block .aboutList .item02 {
+        width: calc(100% - 37.2% - 140px);
+    }
+    #mintokumesse .about-block .aboutList .textItem{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    #mintokumesse .about-block .aboutList .item03 p{
+        width: 150px;
+        height: 150px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    #mintokumesse .about-block .aboutList .item03{
+        width: 150px;
+    }
+    #mintokumesse .online-exhibition .danang-info .image-info .t1{
+        font-size: 10px;
+        line-height: 16px;
+    }
+    #mintokumesse .online-exhibition .danang-info .image-info .t2{
+        font-size: 15px;
+    }
+    #mintokumesse .online-exhibition .danang-info .danang-description .text{
+        font-size: 10px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support .exhibitor-support_itemText{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    #mintokumesse .online-exhibition-02 .price .textNote{
+        font-size: 40px;
+        line-height: 60px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 280px;
+    }
+    #mintokumesse .online-exhibition-02 .price .price-img{
+        max-width: 320px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
+
+    #mintokumesse .inner{
+        max-width: 800px;
+        padding: 0 50px;
+    }
+
+    #mintokumesse .about-block:before{
+        left: -40px;
+    }
+    #mintokumesse .online-exhibition:before{
+        left: -40px;
+        width: 26px;
+        background-size: 100%;
+    }
+    #mintokumesse .online-exhibition-02:before{
+        left: -40px;
+        width: 26px;
+        background-size: 100%;
+    }
+
+
+
+    #mintokumesse .description .title{
+        font-size: 23px;
+        line-height: 36px;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+    #mintokumesse .description .address{
+        font-size: 69px;
+        line-height: 66px;
+    }
+    #mintokumesse .description .calendar .month {
+        font-size: 90px;
+        line-height: 90px;
+        letter-spacing: -4px;
+        padding-right: 8px;
+    }
+    #mintokumesse .description .calendar .month span {
+        font-size: 40px;
+        line-height: 56px;
+        padding-left: 10px;
+    }
+    #mintokumesse .description .calendar .year {
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: 4px;
+        text-align: center;
+        padding-left: 5px;
+        padding-bottom: 2px;
+    }
+    #mintokumesse .description .calendar .text {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    #mintokumesse .description .right-info{
+        width: 150px;
+        padding: 0;
+    }
+    #mintokumesse .description .left-info {
+        width: calc(100% - 180px);
+        margin-right: 30px;
+    }
+
+
+    #mintokumesse .about-block{
+        padding: 20px;
+    }
+    #mintokumesse .about-block .aboutTitle .t1 {
+        font-size: 20px;
+        letter-spacing: 0.5px;
+    }
+    #mintokumesse .about-block .aboutList .ttl-box{
+        font-size: 14px;
+        line-height: 24px;
+        width: 170px;
+    }
+    #mintokumesse .about-block .aboutList .textItem {
+        font-size: 13px;
+        line-height: 21px;
+        margin-bottom: 6px;
+        padding-left: 26px;
+    }
+    #mintokumesse .about-block .aboutList .textItem:before,
+    #mintokumesse .about-block .aboutList .item02 .textItem:before{
+        width: 16px;
+        height: 16px;
+        top: 4px;
+    }
+    #mintokumesse .about-block .aboutList .item02{
+        margin-right: 0;
+    }
+    #mintokumesse .about-block .aboutList .item03 {
+        width: 140px;
+        padding-left: 10px;
+        top: 0;
+    }
+    #mintokumesse .about-block .aboutList .item03 p {
+        width: 130px;
+        height: 130px;
+        font-size: 14px;
+        line-height: 23px;
+        padding: 0;
+        letter-spacing: 1.5px;
+    }
+
+    #mintokumesse .exhibition-title .ttl-box{
+        font-size: 14px;
+        width: 170px;
+    }
+    #mintokumesse .exhibition-title .txt {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        padding-left: 16px;
+        letter-spacing: 1px;
+        width: calc(100% - 170px);
+    }
+    #mintokumesse .exhibition-title .txt.txt-big {
+        font-size: 22px;
+    }
+    #mintokumesse .online-exhibition .danang-info .image-info .imgText{
+        padding-left: 8px;
+        padding-top: 0;
+    }
+    #mintokumesse .online-exhibition .danang-info .image-info .t2 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    #mintokumesse .online-exhibition .danang-info .image-info .t1{
+        line-height: 14px;
+        margin-bottom: 5px;
+    }
+    #mintokumesse .online-exhibition .danang-info .danang-description .text{
+        padding-right: 10px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support .exhibitor-support_itemText:before{
+        width: 16px;
+        height: 16px;
+        top: 0px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .ttl-box{
+        font-size: 14px;
+    }
+    #mintokumesse .online-exhibition-02 .webTitle{
+        width: calc(100% - 170px);
+    }
+    #mintokumesse .online-exhibition-02 .webTitle .text{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    #mintokumesse .online-exhibition-02 .webTitle a{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    #mintokumesse .online-exhibition-02 .exhibition-fee .exhibition-title .txt{
+        font-size: 16px;
+    }
+    #mintokumesse .online-exhibition-02 .exhibition-fee .exhibition-title .txt:before{
+        width: 16px;
+        height: 16px;
+        top: 11px;
+        left: 22px;
+    }
+    #mintokumesse .online-exhibition-02 .price{
+        padding-left: 0;
+    }
+    #mintokumesse .online-exhibition-02 .price .ttl{
+        font-size: 22px;
+    }
+    #mintokumesse .online-exhibition-02 .price .price-img {
+        max-width: 270px;
+        padding-right: 20px;
+    }
+    #mintokumesse .online-exhibition-02 .price .textNote {
+        font-size: 30px;
+        line-height: 40px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 220px;
+    }
+    #mintokumesse .online-exhibition-02,
+    #mintokumesse .online-exhibition{
+        padding: 20px;
+    }
+    #mintokumesse .lpContent{
+        padding-bottom: 100px;
+    }
+
+
+
+    #mintokumesse .contact-form{
+        padding: 41px 30px 36px;
+    }
+    #mintokumesse .contact-form .heading-block{
+        font-size: 16px;
+    }
+    #mintokumesse .contact-form .field-group .title .required{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    #mintokumesse .contact-form .field-group .title {
+        width: 200px;
+        font-size: 16px;
+        line-height: 29px;
+        padding-top: 8px;
+    }
+    #mintokumesse .contact-form .field-group .container-input {
+        width: calc(100% - 200px);
+    }
+    #mintokumesse .contact-form .field-group .container-input input{
+        font-size: 14px;
+    }
+    #mintokumesse .contact-form .field-group .container-input textarea{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    #mintokumesse .contact-form .box-policy{
+        font-size: 16px;
+    }
+    #mintokumesse .contact-form .box-policy .mwform-checkbox-field-text:before{
+        width: 26px;
+        height: 26px;
+        top: 0px;
+        right: -10px;
+    }
+    #mintokumesse .contact-form .box-policy .mwform-checkbox-field-text:after{
+        width: 8px;
+        height: 16px;
+        top: 3px;
+        right: -1px;
+        border-width: 0 3px 3px 0;
+    }
+
+
+    #mintokumesse #footer{
+        padding: 15px 0px;
+    }
+    #mintokumesse #footer .footer-top .copyright{
+        text-align: center;
+        padding: 10px 0;
+    }
+    #mintokumesse #footer .footer-top .menuList-footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+    #mintokumesse #footer .menuItem-footer a{
+        font-size: 14px;
+    }
+    #mintokumesse #footer .menuItem-footer:after{
+        opacity: 0;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    #mintokumesse .inner{
+        padding: 0 16px;
+        max-width: 550px;
+    }
+
+    #mintokumesse .sp-br{
+        display: block;
+    }
+
+    #mintokumesse .pc-br{
+        display: none;
+    }
+
+    #mintokumesse #header{
+        background: linear-gradient(90deg, rgba(52,52,106,1) 0%, rgba(42,104,148,1) 35%, rgba(51,54,107,1) 70%, rgba(93,77,160,1) 100%);
+        height: 82px;
+        padding: 0 16px;
+    }
+    #mintokumesse #header .logo-header img {
+        width: 327px;
+    }
+
+
+    #mintokumesse .description .title {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        max-width: 400px;
+        margin: 0 auto 29px;
+    }
+    #mintokumesse .description .left-info {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 12px;
+    }
+    #mintokumesse .description .address {
+        font-size: 42px;
+        line-height: 44px;
+    }
+    #mintokumesse .description .left-info .text-img {
+        margin-bottom: 6px;
+    }
+    #mintokumesse .description .right-info {
+        width: calc(100% + 32px);
+        padding: 0 16px;
+        margin-right: -16px;
+        margin-left: -16px;
+        text-align: center;
+        background: linear-gradient(180deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 64px;
+    }
+    #mintokumesse .description {
+        padding-top: 26px;
+        padding-bottom: 13px;
+    }
+
+
+    #mintokumesse .about-block:before,
+    #mintokumesse .online-exhibition:before,
+    #mintokumesse .online-exhibition-02:before{
+        display: none;
+    }
+
+
+    #mintokumesse .lpContent{
+        padding-top: 12px;
+    }
+    #mintokumesse .mintokumesse_title{
+        margin-bottom: 6px;
+    }
+
+    #mintokumesse .about-block{
+        border-width: 2px;
+        border-radius: 10px;
+        padding: 23px 16px 16px 16px;
+    }
+    #mintokumesse .about-block .aboutTitle .title_left {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 3px;
+        justify-content: center;
+    }
+    #mintokumesse .about-block .aboutTitle .title_right {
+        width: 100%;
+        padding-left: 0;
+    }
+    #mintokumesse .about-block .aboutTitle .title_left svg{
+        max-width: 294px;
+    }
+    #mintokumesse .about-block .aboutTitle .t1 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    #mintokumesse .about-block .aboutTitle{
+        padding-left: 0;
+        margin-bottom: 12.5px;
+    }
+    #mintokumesse .about-block .aboutTitle .title_right picture{
+        max-width: 308px;
+        margin: auto;
+        display: block;
+    }
+    #mintokumesse .about-block .about-description .text {
+        font-size: 17px;
+        line-height: 28px;
+        letter-spacing: 0.7px;
+        position: relative;
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+    #mintokumesse .about-block .aboutList .item01 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #mintokumesse .about-block .aboutList .ttl-box {
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+    }
+    #mintokumesse .about-block .aboutList .textItem {
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 0;
+        letter-spacing: 0.7px;
+        padding-left: 18px;
+        font-weight: bold;
+    }
+    #mintokumesse .about-block .aboutList .textItem:before,
+    #mintokumesse .about-block .aboutList .item02 .textItem:before {
+        width: 14px;
+        height: 14px;
+        top: 6px;
+    }
+    #mintokumesse .about-block .aboutList .item02 .ttl-box{
+        margin-bottom: 11px;
+    }
+    #mintokumesse .about-block .aboutList .item02 {
+        width: 100%;
+        margin-bottom: 9px;
+    }
+    #mintokumesse .about-block .aboutList .item03 {
+        width: 100%;
+        padding-left: 0;
+        top: 0;
+    }
+    #mintokumesse .about-block .aboutList .item03 p {
+        width: 100%;
+        height: 46px;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0;
+        letter-spacing: 1px;
+        border-radius: 40px;
+        font-weight: bold;
+    }
+    #mintokumesse .about-block .aboutList .textList{
+        padding: 0 20px;
+    }
+    #mintokumesse .about-block .aboutList{
+        max-width: 320px;
+        margin: auto;
+    }
+
+
+    #mintokumesse .contactBox{
+        margin-left: -6px;
+        margin-right: -6px;
+        padding: 11px 0 24px;
+    }
+
+
+    #mintokumesse .online-exhibition{
+        border-width: 2px;
+        border-radius: 10px;
+    }
+    #mintokumesse .exhibition-title{
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    #mintokumesse .exhibition-title .ttl-box{
+        background: linear-gradient(180deg, rgba(101,182,235,1) 0%, rgba(0,107,180,1) 100%);
+        width: 156px;
+        font-size: 14px;
+        height: 32px;
+        letter-spacing: 0.8px;
+        margin-bottom: 9px;
+    }
+    #mintokumesse .exhibition-title .txt {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: bold;
+        padding-left: 0;
+        letter-spacing: 1.4px;
+        width: 100%;
+        text-align: center;
+    }
+    #mintokumesse .online-exhibition{
+        padding: 13px 16px 16px;
+    }
+    #mintokumesse .exhibition-title:nth-child(2) {
+        margin-bottom: 8px;
+    }
+    #mintokumesse .online-exhibition .danang-info .image-info {
+        width: 100%;
+        margin-bottom: 9px;
+    }
+    #mintokumesse .online-exhibition .danang-info .image-info picture {
+        display: block;
+        width: 65px;
+    }
+    #mintokumesse .online-exhibition .danang-info .image-info .t1 {
+        line-height: 18px;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+    #mintokumesse .online-exhibition .danang-info .image-info .t2 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #mintokumesse .online-exhibition .danang-info .danang-description .text {
+        padding-right: 0;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.6px;
+    }
+    #mintokumesse .online-exhibition .danang-info .danang-description .text br{
+        display: none;
+    }
+    #mintokumesse .online-exhibition .danang-info .danang-description {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    #mintokumesse .online-exhibition .danang-info .image-last {
+        width: 100%;
+    }
+    #mintokumesse .online-exhibition .danang-info .image-last img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    #mintokumesse .online-exhibition .danang-info .image-info .imgText {
+        padding-left: 11px;
+        padding-top: 0;
+        width: calc(100% - 65px);
+    }
+    #mintokumesse .online-exhibition .info{
+        padding: 10px 10px 25px 6px;
+        margin-bottom: 20px;
+    }
+    #mintokumesse .online-exhibition .address-info .ttl {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        letter-spacing: 0.65px;
+        width: 100%;
+    }
+    #mintokumesse .online-exhibition .address-info .address-text{
+        width: 100%;
+        padding: 0;
+        row-gap: 7px;
+        max-width: 320px;
+    }
+    #mintokumesse .online-exhibition .address-info .address-text .text{
+        font-size: 12px;
+        line-height: 22px;
+        align-items: flex-start;
+    }
+    #mintokumesse .online-exhibition .danang-info{
+        margin-bottom: 8px;
+    }
+    #mintokumesse .online-exhibition .address-info .address-text .txtBox{
+        margin-right: 10px;
+    }
+    #mintokumesse .online-exhibition .address-info .address-text .address .txtBox{
+        margin-top: 5px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibition-fee {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .ttl-box{
+        background: linear-gradient(180deg, rgba(101,182,235,1) 0%, rgba(0,107,180,1) 100%);
+        width: 156px;
+        margin: auto;
+        height: 32px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom{
+        padding: 0;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibition-feeTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 11px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibition-fee .ttl-box {
+        margin-bottom: 10px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibition-fee .title{
+        margin-right: 12px;
+        padding-top: 22px;
+        margin-bottom: 0;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 13px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support .ttl-box {
+        width: 156px;
+        margin-bottom: 15px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support picture {
+        display: block;
+        margin-bottom: 9px;
+        text-align: center;
+        padding-left: 5px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support .exhibitor-support_itemText {
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 20px;
+        letter-spacing: 0.6px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support .exhibitor-support_itemText strong{
+        font-size: 15px;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibitor-support .exhibitor-support_itemText:before{
+        top: 2px;
+        left: 0;
+    }
+    #mintokumesse .online-exhibition .exhibition-bottom .exhibition-bottom-image {
+        width: 100%;
+        padding-top: 0;
+    }
+
+
+    #mintokumesse .online-exhibition-02{
+        border-width: 2px;
+        border-radius: 10px;
+        padding: 13px 16px 16px;
+    }
+    #mintokumesse .online-exhibition-02 .exhibition-title .ttl-box {
+        background: linear-gradient(180deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+        width: 189px;
+        margin-bottom: 11px;
+        height: 32px;
+    }
+    #mintokumesse .online-exhibition-02 .webTitle {
+        width: 100%;
+        padding: 0;
+    }
+    #mintokumesse .online-exhibition-02 .webTitle .text {
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.9px;
+        padding-left: 5px;
+        margin-bottom: 18px;
+    }
+    #mintokumesse .online-exhibition-02 .webTitle a {
+        font-size: 16px;
+        line-height: 22px;
+        width: calc(100% - 58px);
+        word-wrap: break-word;
+        margin-left: 0;
+        padding-left: 13px;
+    }
+    #mintokumesse .online-exhibition-02 .exhibition-title:nth-child(2) {
+        margin-bottom: 13px;
+    }
+    #mintokumesse .online-exhibition-02 .exhibition-fee .exhibition-title .ttl{
+        width: 156px;
+        font-size: 14px;
+    }
+    #mintokumesse .online-exhibition-02 .exhibition-fee .exhibition-title .txt{
+        display: none;
+    }
+    #mintokumesse .online-exhibition-02 .price .ttl {
+        font-size: 28px;
+        line-height: 30px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 12px;
+    }
+    #mintokumesse .online-exhibition-02 .exhibition-fee .exhibition-title {
+        margin-bottom: 15px;
+    }
+    #mintokumesse .online-exhibition-02 .price .price-img {
+        max-width: 313px;
+        padding-right: 0;
+        margin: 0 auto 9px;
+    }
+    #mintokumesse .online-exhibition-02 .price .txtDots{
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: bold;
+        position: relative;
+        padding-left: 27px;
+        letter-spacing: 0.8px;
+        margin-bottom: 16px;
+    }
+    #mintokumesse .online-exhibition-02 .price .txtDots:before{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+        top: 0px;
+        left: -1px;
+    }
+    #mintokumesse .online-exhibition-02 .price .textNote {
+        font-size: 45px;
+        line-height: 60px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 100%;
+        padding: 4.5px 0;
+    }
+    #mintokumesse .online-exhibition-02 .price{
+        margin-bottom: 15px;
+    }
+    #mintokumesse .lpContent{
+        padding-bottom: 176px;
+        background-image: url("../images/mintokumesse/mintokumesse_bg01_sp.png");
+        background-size: 100%;
+        background-position: bottom;
+    }
+    #mintokumesse .contactBox.contactBox-bottom{
+        padding-bottom: 10px;
+    }
+    #mintokumesse .contactBox img{
+        width: 100%;
+    }
+    #mintokumesse .description .left-info .text-img img{
+        width: 100%;
+    }
+
+
+
+    #mintokumesse .contact-form{
+        padding: 20px 15px 28px;
+        margin-bottom: 50px;
+    }
+    #mintokumesse .contact-form .contact-submit {
+        padding-top: 0;
+    }
+    #mintokumesse .contact-form .heading-block span{
+        padding: 0;
+    }
+    #mintokumesse .contact-form .heading-block:before{
+        display: none;
+    }
+    #mintokumesse .contact-form .heading-block {
+        line-height: 26px;
+        margin-bottom: 29px;
+    }
+    #mintokumesse .contact-form .field-group .title {
+        width: 100%;
+        font-size: 20px;
+        line-height: 29px;
+        padding-top: 0;
+        letter-spacing: 0.5px;
+        margin-bottom: 9px;
+    }
+    #mintokumesse .contact-form .field-group .title .required {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    #mintokumesse .contact-form .field-group .container-input{
+        width: 100%;
+    }
+    #mintokumesse .contact-form .field-group .container-input.half-item{
+        column-gap: 10px;
+    }
+    #mintokumesse .contact-form .field-group{
+        margin-bottom: 15px;
+    }
+    #mintokumesse .contact-form .field-group .container-input input {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+    #mintokumesse .contact-form .field-group .container-input textarea {
+        font-size: 16px;
+        line-height: 30px;
+        height: 230px;
+    }
+    #mintokumesse .contact-form .box-policy>p {
+        display: block;
+    }
+    #mintokumesse .contact-form .box-policy {
+        font-size: 20px;
+        line-height: 40px;
+        max-width: 240px;
+        margin: auto;
+        padding-right: 0;
+        padding-bottom: 60px;
+    }
+    #mintokumesse .contact-form .box-policy br{
+        display: none;
+    }
+    #mintokumesse .contact-form .box-policy .mwform-checkbox-field-text:before{
+        top: unset;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 38px;
+        height: 38px;
+    }
+    #mintokumesse .contact-form .box-policy .mwform-checkbox-field-text:after{
+        width: 10px;
+        height: 20px;
+        border: solid #000;
+        border-width: 0 4px 4px 0;
+        top: unset;
+        bottom: 12px;
+        right: unset;
+        left: 49.5%;
+        transform: rotate(45deg) translateX(-50%);
+    }
+
+
+
+    #mintokumesse #footer {
+        padding: 20px 0px 25px;
+    }
+    #mintokumesse #footer .footer-top .logo-footer {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #mintokumesse #footer .footer-top .menuList-footer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    #mintokumesse #footer .footer-top .logo-footer img{
+        width: 202px;
+    }
+    #mintokumesse #footer .menuItem-footer {
+        padding-right: 0;
+    }
+    #mintokumesse #footer .menuItem-footer a {
+        font-size: 15px;
+    }
+    #mintokumesse #footer .menuItem-footer {
+        margin-bottom: 6px;
+    }
+    #mintokumesse #footer .menuItem-footer:after{
+        display: none;
+    }
+    #mintokumesse #footer .footer-top .copyright{
+        width: 100%;
+    }
+
+
+
+
+}
+

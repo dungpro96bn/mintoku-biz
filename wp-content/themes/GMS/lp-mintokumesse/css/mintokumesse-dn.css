@@ -1,0 +1,1795 @@
+body {
+	font-family: "Noto Sans JP", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+#mintokumesse-danang {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #000;
+	overflow: hidden;
+	background: #F1F1F0;
+	position: relative;
+}
+#mintokumesse-danang * {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+#mintokumesse-danang img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+#mintokumesse-danang a{
+	color: #65B6EB;
+}
+#mintokumesse-danang .js-fadein {
+	opacity: 0;
+	transform: translate(0, 20px);
+	transition-property: opacity, transform;
+	transition-duration: 1s;
+}
+
+#mintokumesse-danang .scroll-in {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+#mintokumesse-danang .pc-br {
+	display: none;
+}
+#mintokumesse-danang .sp-br {
+	display: inline;
+}
+
+#mintokumesse-danang .inner {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 17px;
+}
+
+/* header */
+#mintokumesse-danang .bl-head{
+	height: 82px;
+	background-image: url('../images/mintokumesse-dn/head_bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#mintokumesse-danang .bl-head .img{
+	max-width: 328px;
+}
+
+
+/* main */
+#mintokumesse-danang .bl-main .img-hr{
+	max-width: 400px;
+	margin: 0 auto;
+	box-shadow:  0 3px 6px rgba(0,0,0,0.16);
+	border-radius: 999px;
+}
+#mintokumesse-danang .bl-main .box{
+	border: 2px solid #5A5758;
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 22px 15px 22px 15px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	max-width: 400px;
+}
+#mintokumesse-danang .bl-main .box .box-tag{
+	position: absolute;
+	left: -2px;
+	display: block;
+	height: 18.5px;
+	top: -30px;
+}
+#mintokumesse-danang .bl-main .box .box-tag img{
+	width: auto;
+	height: 100%;
+}
+
+/* banner */
+#mintokumesse-danang .bl-banner{
+	padding-top: 25.5px;
+	padding-bottom: 26px;
+	background-color: #fff;
+}
+#mintokumesse-danang .bl-banner::before{
+	content: '';
+	background: linear-gradient(180deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+	width: 100%;
+	height: 64px;
+	position: absolute;
+	bottom: 14px;
+	left: 0;
+}
+#mintokumesse-danang .bl-banner .text{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 2px;
+	left: 1px;
+	margin-bottom: 29px;
+}
+#mintokumesse-danang .bl-banner .img{
+	max-width: 345px;
+	margin: 0 auto;
+}
+
+/* about */
+#mintokumesse-danang .bl-about{
+	padding-top: 43px;
+	padding-bottom: 69px;
+}
+#mintokumesse-danang .bl-about .title .title-img{
+	max-width: 294px;
+	margin: 0 auto;
+}
+#mintokumesse-danang .bl-about .title .title-text .text{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	letter-spacing: 1px;
+	left: 1px;
+}
+#mintokumesse-danang .bl-about .title .title-text .img{
+	max-width: 512px;
+	margin: 0 auto;
+}
+#mintokumesse-danang .bl-about .desc{
+	padding-top: 8px;
+	padding-bottom: 9px;
+}
+#mintokumesse-danang .bl-about .desc .text{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 17px;
+	line-height: 28px;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 0.9px;
+}
+#mintokumesse-danang .bl-about .content .onl{
+	margin-bottom: 17px;
+}
+#mintokumesse-danang .bl-about .content .off{
+	margin-bottom: 10px;
+}
+#mintokumesse-danang .bl-about .content .text-title{
+	font-family: "Noto Sans JP", sans-serif;
+	background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+	font-size: 16px;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 99px;
+	height: 34px;
+	line-height: 34px;
+	letter-spacing: 0.9px;
+	margin-bottom: 3px;
+}
+#mintokumesse-danang .bl-about .content .off .text-title{
+	background: linear-gradient(90deg, rgba(101,182,235,1) 0%, rgba(0,107,180,1) 100%);
+	margin-bottom: 10px;
+}
+#mintokumesse-danang .bl-about .content .text-li{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 28px;
+	padding-left: 38px;
+	letter-spacing: 0.7px;
+	list-style: none;
+}
+#mintokumesse-danang .bl-about .content .text-li:before {
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	border-radius: 99px;
+	background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+	top: 8px;
+	left: 19px;
+	display: block;
+}
+#mintokumesse-danang .bl-about .content .off .text-li:before{
+	background: linear-gradient(90deg, rgba(101,182,235,1) 0%, rgba(0,107,180,1) 100%);
+}
+#mintokumesse-danang .bl-about .content .note .text{
+	font-family: "Noto Sans JP", sans-serif;
+	background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+	font-size: 20px;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 999px;
+	height: 46px;
+	line-height: 44px;
+	letter-spacing: 0.6px;
+}
+
+/* exhibi */
+#mintokumesse-danang .bl-exhibi .box{
+	padding: 11px 11px 18px 11px;
+}
+#mintokumesse-danang .bl-exhibi .box .box-tag {
+	position: absolute;
+	left: 0px;
+	display: block;
+	height: 15.5px;
+	top: -35px;
+}
+#mintokumesse-danang .bl-exhibi .box-title{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #65B6EB;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 14px;
+}
+#mintokumesse-danang .bl-exhibi .col-text{
+	width: 100%;
+}
+#mintokumesse-danang .bl-exhibi .col-text .title{
+	display: flex;
+	margin-bottom: -3px;
+}
+#mintokumesse-danang .bl-exhibi .col-text .title-tag{
+	font-family: "Noto Sans JP", sans-serif;
+	color: #fff;
+	background-color: #084891;
+	text-align: center;
+	height: 35px;
+	width: 63px;
+	line-height: 35px;
+	font-size: 18px;
+	font-weight: 700;
+}
+#mintokumesse-danang .bl-exhibi .col-text .title-tag:before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 18px solid transparent;
+	border-left: 10px solid #084891;
+	border-bottom: 17px solid transparent;
+	position: absolute;
+	right: -9.5px;
+	top: 0;
+}
+#mintokumesse-danang .bl-exhibi .col-text .title-text{
+	padding-left: 19px;
+	top: -5px;
+}
+#mintokumesse-danang .bl-exhibi .col-text .title .text{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	color: #074891;
+	letter-spacing: 0.45px;
+}
+#mintokumesse-danang .bl-exhibi .col-text .title .text-bold{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	color: #074891;
+	letter-spacing: 3.7px;
+}
+#mintokumesse-danang .bl-exhibi .donga .col-text .title .text-bold{
+	left: -5px;
+}
+#mintokumesse-danang .bl-exhibi .col-text .desc{
+	margin-bottom: 12px;
+}
+#mintokumesse-danang .bl-exhibi .col-text .desc-img{
+	display: none;
+}
+#mintokumesse-danang .bl-exhibi .col-text .desc .text-bold{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: #074891;
+	letter-spacing: 1.7px;
+	margin-bottom: 7px;
+}
+#mintokumesse-danang .bl-exhibi .col-text .desc .text{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: 0.8px;
+}
+#mintokumesse-danang .bl-exhibi .col-text .area{
+	display: none;
+}
+#mintokumesse-danang .bl-exhibi .area-title{
+	font-family: "Noto Sans JP", sans-serif;
+	color: #074891;
+	font-size: 15px;
+	font-weight: 700;
+	margin-top: 9px;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+}
+#mintokumesse-danang .bl-exhibi .area-title span{
+	display: inline-block;
+	background-color: #fff;
+	padding-left: 2px;
+	padding-right: 8px;
+}
+#mintokumesse-danang .bl-exhibi .area-title::before{
+	content: '';
+	width: 100%;
+	border-top: 1px solid #074891;
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 12px;
+}
+#mintokumesse-danang .bl-exhibi .area-row{
+	display: flex;
+	gap: 0 5px;
+	margin-bottom: 13px;
+}
+#mintokumesse-danang .bl-exhibi .area .col{
+	height: 73px;
+	width: 100%;
+	background-color: rgba(7, 72, 145, 0.1);
+	border-radius: 5px;
+	padding: 7px;
+	display: flex;
+	justify-content: center;
+}
+#mintokumesse-danang .bl-exhibi .donga .area .col{
+	background-color: rgba(44, 115, 78, 0.1);
+}
+#mintokumesse-danang .bl-exhibi .area .col .img{
+	margin: 0 auto;
+}
+#mintokumesse-danang .bl-exhibi .col-img > .img{
+	border-radius: 3px;
+	overflow: hidden;
+}
+#mintokumesse-danang .bl-exhibi .col-img .area .col-1{
+	min-width: 88px;
+}
+#mintokumesse-danang .bl-exhibi .area .col-1 .img{
+	max-width: 75px;
+}
+#mintokumesse-danang .bl-exhibi .area .col-2 .img{
+	max-width: 37px;
+}
+#mintokumesse-danang .bl-exhibi .area .col-3 .img{
+	max-width: 41px;
+}
+#mintokumesse-danang .bl-exhibi .area .col-4 .img{
+	max-width: 33px;
+}
+#mintokumesse-danang .bl-exhibi .area .col-5 .img{
+	max-width: 39px;
+}
+#mintokumesse-danang .bl-exhibi .area .col-6 .img{
+	max-width: 32px;
+}
+#mintokumesse-danang .bl-exhibi .area .col-7 .img{
+	max-width: 38px;
+}
+#mintokumesse-danang .bl-exhibi .area .col-8 .img{
+	max-width: 40px;
+}
+#mintokumesse-danang .bl-exhibi .area .col .text{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	color: #074891;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 7px;
+	left: 0;
+	letter-spacing: 0.5px;
+}
+#mintokumesse-danang .bl-exhibi .col-img .address{
+	display: flex;
+}
+#mintokumesse-danang .bl-exhibi .col-img .address-img{
+	max-width: 74px;
+	margin-right: 9px;
+}
+#mintokumesse-danang .bl-exhibi .col-img .address-text .text{
+	font-family: "Noto Sans JP", sans-serif;
+	display: flex;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 18px;
+	margin-bottom: 6px;
+}
+#mintokumesse-danang .bl-exhibi .col-img .address-text .text a{
+	font-size: 13px;
+}
+#mintokumesse-danang .bl-exhibi .col-img .address-text .text span{
+	display: block;
+	border-radius: 3px;
+	background-color: #EBEBEB;
+	font-size: 10px;
+	flex-shrink: 0;
+	width: 34px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 7px;
+}
+#mintokumesse-danang .bl-exhibi .date{
+	padding-top: 15px;
+}
+#mintokumesse-danang .bl-exhibi .date .text{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 19px;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 11px;
+}
+#mintokumesse-danang .bl-exhibi .date .text-26{
+	font-size: 26px;
+}
+#mintokumesse-danang .bl-exhibi .date .text span{
+	background: linear-gradient(90deg, rgba(101,182,235,1) 0%, rgba(0,107,180,1) 100%);
+	display: block;
+	border-radius: 99px;
+	color: #fff;
+	height: 34px;
+	max-width: 185px;
+	margin: 0 auto;
+	line-height: 34px;
+	font-size: 16px;
+	letter-spacing: 0.8px;
+	margin-bottom: 7px;
+}
+#mintokumesse-danang .bl-exhibi .date .text-2 span{
+	background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+}
+#mintokumesse-danang .bl-exhibi .date .text-note{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: -5px;
+	letter-spacing: 0.6px;
+}
+#mintokumesse-danang .bl-exhibi  .line{
+	margin: 28px 0;
+}
+#mintokumesse-danang .bl-main  .line{
+	border: 0;
+}
+#mintokumesse-danang .bl-main  .line:before{
+	content: '';
+	background-image: url('../images/mintokumesse-dn/line_dot_sp.png');
+	background-repeat: repeat-x;
+	background-size: contain;
+	width: 100%;
+	height: 4px;
+	display: block;
+}
+
+#mintokumesse-danang .bl-exhibi .danang .col-text .title .text-bold{
+	display: none;
+}
+#mintokumesse-danang .bl-exhibi .donga .col-text .title-tag{
+	background-color: #2C734E;
+}
+#mintokumesse-danang .bl-exhibi .donga .col-text .title-tag:before{
+	border-left-color: #2C734E;
+}
+#mintokumesse-danang .bl-exhibi .donga .col-text .title .text,
+#mintokumesse-danang .bl-exhibi .donga .col-text .title .text-bold,
+#mintokumesse-danang .bl-exhibi .donga .area-title,
+#mintokumesse-danang .bl-exhibi .donga .area .col .text{
+	color: #2C734E;
+}
+#mintokumesse-danang .bl-exhibi .donga .area-title::before{
+	border-top: 1px solid #2C734E;
+}
+
+/* onoff */
+#mintokumesse-danang .bl-onoff{
+	background-image: url('../images/mintokumesse-dn/mintokumesse_bg01_sp.png');
+	background-size: 100%;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	padding-top: 65px;
+	padding-bottom: 130px;
+}
+#mintokumesse-danang .bl-onoff .box{
+	padding: 22px 13px 22px 16px;
+}
+#mintokumesse-danang .bl-onoff .box .box-tag {
+	left: 0;
+	height: 15.5px;
+	top: -35px;
+}
+#mintokumesse-danang .bl-onoff .title{
+	color: #fff;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	background: linear-gradient(90deg, rgba(101,182,235,1) 0%, rgba(0,107,180,1) 100%);
+	height: 47px;
+	max-width: 221px;
+	line-height: 47px;
+	border-radius: 99px;
+	margin: 0 auto;
+	letter-spacing: 0.8px;
+}
+#mintokumesse-danang .bl-onoff .title-2{
+	max-width: 152px;
+}
+#mintokumesse-danang .bl-onoff  .booth{
+	margin-bottom: 28px;
+}
+#mintokumesse-danang .bl-onoff  .booth-row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#mintokumesse-danang .bl-onoff  .booth-row .text{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	left: 6px;
+	top: 12px;
+	letter-spacing: 2px;
+}
+#mintokumesse-danang .bl-onoff  .booth .title{
+	margin-bottom: 10px;
+}
+#mintokumesse-danang .bl-onoff  .booth .text-left .title{
+	display: none;
+}
+#mintokumesse-danang .bl-onoff  .booth .img{
+	max-width: 159px;
+}
+#mintokumesse-danang .bl-onoff  .support{
+	margin-bottom: 8px;
+}
+#mintokumesse-danang .bl-onoff  .support .title{
+	margin-bottom: 23px;
+}
+#mintokumesse-danang .bl-onoff  .support .img{
+	max-width: 303px;
+	left: 2px;
+	margin: 0 auto;
+}
+#mintokumesse-danang .bl-onoff .text-li{
+	margin-bottom: 17px;
+}
+#mintokumesse-danang .bl-onoff .text-li .text{  
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0.65px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+#mintokumesse-danang .bl-onoff .text-li .text:before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 99px;
+	background: linear-gradient(90deg, rgba(101,182,235,1) 0%, rgba(0,107,180,1) 100%);
+	top: 4px;
+	left: 0;
+	display: block;
+}
+#mintokumesse-danang .bl-onoff .text-li .text span{
+	font-size: 15px;
+	font-weight: 700;
+}
+#mintokumesse-danang .bl-onoff .line{
+	margin: 19px 0 24px 0;
+}
+#mintokumesse-danang .bl-onoff .title-150 .title {
+	background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+	margin-bottom: 5px
+}
+#mintokumesse-danang .bl-onoff .title-150 .text{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-align: center;
+}
+#mintokumesse-danang .bl-onoff .img-150{
+	max-width: 305px;
+	margin-bottom: 12px;
+}
+#mintokumesse-danang .bl-onoff .text-box{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 33px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+	height: 52px;
+	line-height: 47px;
+	margin: 0 5px 0 2px;
+	letter-spacing: 2px;
+	margin-bottom: 7px;
+}
+#mintokumesse-danang .bl-onoff .text-box span{
+	font-size: 19px;
+	border: 1px solid #fff;
+	width: 74px;
+	height: 35px;
+	display: inline-block;
+	line-height: 30px;
+	top: -6px;
+	letter-spacing: 1px;
+	margin-right: 6px;
+}
+#mintokumesse-danang .bl-onoff .text-note{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	padding-left: 32px;
+	letter-spacing: 0.8px;
+	margin-bottom: 15px;
+}
+#mintokumesse-danang .bl-onoff .text-note:before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 99px;
+	background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+	top: 3px;
+	left: 3px;
+	display: block;
+}
+#mintokumesse-danang .bl-onoff .box-flow{
+	display: none;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow{
+	display: flex;
+	padding-right: 20px;
+	padding-left: 50px;
+	margin-bottom: 15px;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text-abs{
+	position: absolute;
+	width: 110px;
+	height: 110px;
+	background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+	font-family: "Noto Sans JP", sans-serif; 
+	font-weight: 700;
+	font-size: 21px;
+	color: #fff;
+	text-align: center;
+	border-radius: 999px;
+	z-index: 2;
+	left: 0;
+	top: -11px;
+	line-height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.5px;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	height: 47px;
+	background-color: #E7AD00;
+	line-height: 47px;
+	color: #fff;
+	white-space: nowrap;
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 5px;
+	letter-spacing: 0.5px;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text:before,
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text-5:after{
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 23.5px solid transparent;
+	border-left: 20px solid #E7AD00;
+	border-bottom: 23.5px solid transparent;
+	position: absolute;
+	top:0;
+	left: 0
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text-1{
+	color: #000;
+	padding-left: 70px;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text-2{
+	background-color: #DB7D00;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text-2:before{
+	border-left-color: #E7AD00;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text-3{
+	background-color: #D35B0D;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text-3:before{
+	border-left-color: #DB7D00;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text-4{
+	background-color: #CE3A12;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text-4:before{
+	border-left-color: #D35B0D;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text-5{
+	background-color: #C22611;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text-5:before{
+	border-left-color: #CE3A12;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-flow .text-5:after{
+	left: auto;
+	right: -20px;
+	border-left-color: #C22611;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-li{
+	font-size: 19px;
+	letter-spacing: 1px;
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: 700;
+	padding-left: 157px;
+}
+#mintokumesse-danang .bl-onoff .box-flow .text-li span:before{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 99px;
+	background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+	top: 5px;
+	left: -29px;
+	display: block;
+}
+#mintokumesse-danang .bl-onoff .links{
+	padding-top: 26px;
+}
+#mintokumesse-danang .bl-onoff .links .text{
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 18px;
+}
+#mintokumesse-danang .bl-onoff .links .text span{
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px; 
+	text-align: center;
+	display: block;
+	max-width: 182px;
+	height: 34px;
+	border-radius: 99px;
+	background: linear-gradient(90deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+	line-height: 34px;
+	margin: 0 auto;
+	margin-bottom: 8px;
+}
+#mintokumesse-danang .bl-onoff .links .link-text{
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 500;
+	color: #000;
+	letter-spacing: 0.8px;
+	text-decoration: none;
+}
+#mintokumesse-danang .bl-onoff .links .link-text p{
+	text-decoration: underline;
+}
+#mintokumesse-danang .bl-onoff .links .link-text span{
+	display: block;
+	width: 58px;
+	height: 58px;
+	border: 1px solid #DD9611;
+	line-height: 58px;
+	text-align: center;
+	color: #DD9611;
+	border-radius: 99px;
+	font-size: 18px;
+	margin-right: 6px;
+}
+
+
+/* form */
+#mintokumesse-danang .bl-form{
+	padding-top: 30px;
+}
+#mintokumesse-danang .bl-form .img-hr{
+	margin-bottom: 21px;
+}
+
+/* footer */
+#mintokumesse-danang .bl-foot{
+	background-color: #000;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+#mintokumesse-danang .bl-foot .img{
+	max-width: 202px;
+	margin: 0 auto;
+	margin-bottom: 19px;
+	display: block;
+}
+#mintokumesse-danang .bl-foot .menu-foot{
+	margin-bottom: 24px; 
+}
+#mintokumesse-danang .bl-foot a{
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 15px; 
+	font-weight: 400;
+	text-decoration: none;
+	margin-bottom: 14px;
+}
+#mintokumesse-danang .bl-foot .copyright p{
+	font-size: 12px;
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: 400;
+	text-align: center;
+	color: #fff;
+}
+
+@media print, screen and (min-width: 768px) {
+	#mintokumesse-danang .sp-br {
+		display: none;
+	}
+	#mintokumesse-danang .pc-br {
+		display: inline;
+	}
+	#mintokumesse-danang .inner {
+		padding: 0 68px;
+	}
+
+	/* header */
+	#mintokumesse-danang .bl-head{
+		height: 95px;
+	}
+	#mintokumesse-danang .bl-head .img{
+		max-width: 500px;
+	}
+
+	/* main */
+	#mintokumesse-danang .bl-main .img-hr {
+		max-width: 100%;
+	}
+	#mintokumesse-danang .bl-main .box{
+		max-width: 100%;
+		border-width: 3px;
+		border-radius: 20px;
+		box-shadow:  0 3px 6px rgba(0,0,0,0.16);
+	}
+	#mintokumesse-danang .bl-main .box .box-tag {
+		left: -54px;
+		width: 26px;
+		height: auto;
+		top: 5px;
+	}
+	#mintokumesse-danang .bl-main .box .box-tag img {
+		width: 100%;
+		height: auto;
+	}
+
+	/* banner */
+	#mintokumesse-danang .bl-banner {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}    
+	#mintokumesse-danang .bl-banner::before{
+		display: none;
+	}
+	#mintokumesse-danang .bl-banner .text{
+		font-size: 35px;
+		letter-spacing: 3.5px;
+		margin-bottom: 14px;
+		line-height: 45px;
+	}
+	#mintokumesse-danang .bl-banner .img{
+		max-width: 100%;
+	}
+
+	/* about */
+	#mintokumesse-danang .bl-about {
+		padding-top: 36px;
+		padding-bottom: 49px;
+	}
+	#mintokumesse-danang .bl-about .box{
+		padding: 27px 34px 25px 38px;
+		margin-bottom: 51px;
+	}
+	#mintokumesse-danang .bl-about .title{
+		display: flex;
+	}
+	#mintokumesse-danang .bl-about .title .title-img{
+		margin: 0;
+		max-width: 330px;
+	}
+	#mintokumesse-danang .bl-about .title .title-text{
+		padding-left: 30px;
+		top: -7px;
+	}
+	#mintokumesse-danang .bl-about .title .title-text .text{
+		font-size: 28px;
+		margin-top: 0;
+		letter-spacing: 1.7px;
+		margin-bottom: 9px;
+	}
+	#mintokumesse-danang .bl-about .desc{
+		padding-top: 18px;
+		padding-bottom: 23px;
+	}
+	#mintokumesse-danang .bl-about .desc .text{
+		font-size: 24px;
+		line-height: 35px;
+		font-weight: 700;
+		letter-spacing: 1.2px;
+	}
+	#mintokumesse-danang .bl-about .content {
+		display: flex;
+		justify-content: space-between;
+	}
+	#mintokumesse-danang .bl-about .content .text-title{
+		max-width: 194px;
+		left: 2px;
+		margin-bottom: 15px;
+	}
+	#mintokumesse-danang .bl-about .content .text-li {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 30px;
+		padding-left: 32px;
+		letter-spacing: 0.7px;
+	}
+	#mintokumesse-danang .bl-about .content .text-li:before {
+		width: 20px;
+		height: 20px;
+		top: 5px;
+		left: 0px;
+	}
+	#mintokumesse-danang .bl-about .content .onl{
+		margin-bottom: 0;
+	}
+	#mintokumesse-danang .bl-about .content .off{
+		padding-left: 29px;
+		margin-bottom: 0;
+	}
+	#mintokumesse-danang .bl-about .content .off .text-title{
+		margin-bottom: 15px;
+	}
+	#mintokumesse-danang .bl-about .content .note .text{
+		width: 174px;
+		height: 174px;
+		top: -9px;
+		font-size: 22px;
+		line-height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		letter-spacing: 2px;
+		left: 1px;
+	}
+
+	/* exhibi */
+	#mintokumesse-danang .bl-exhibi .box {
+		padding: 12px 35px 18px 30px;
+	}
+	#mintokumesse-danang .bl-exhibi .box .box-tag {
+		left: -52px;
+		width: 24px;
+		top: -1px;
+	}
+	#mintokumesse-danang .bl-exhibi .box-title{
+		font-size: 24px;
+		letter-spacing: 1.5px;
+		margin-bottom: 27px;
+	}
+	#mintokumesse-danang .bl-exhibi .row{
+		display: flex;
+		gap: 0 30px;
+	}
+	#mintokumesse-danang .bl-exhibi .col-img {
+		width: 29.5%;
+		flex-shrink: 0;
+	}
+	#mintokumesse-danang .bl-exhibi .col-img .area,
+	#mintokumesse-danang .bl-exhibi .col-img .address-img,
+	#mintokumesse-danang .bl-exhibi .col-text .desc .text-bold{
+		display: none;
+	}
+	#mintokumesse-danang .bl-exhibi .danang .col-text .title .text-bold{
+		display: block;
+	}
+	#mintokumesse-danang .bl-exhibi .col-text .desc{
+		display: flex;
+		gap: 0 17px;
+		margin-bottom: 11px;
+	}
+	#mintokumesse-danang .bl-exhibi .col-text .desc-img{
+		display: block;
+		width: 21%;
+		flex-shrink: 0;
+	}
+	#mintokumesse-danang .bl-exhibi .col-img .address{
+		padding-top: 10px;
+	}
+	#mintokumesse-danang .bl-exhibi .col-img .address-text .text{
+		letter-spacing: 0.1px;
+		margin-bottom: 5px;
+	}
+	/* #mintokumesse-danang .bl-exhibi .date {
+	padding-top: 24px;
+} */
+	#mintokumesse-danang .bl-exhibi .date .text{
+		text-align: left;
+		font-size: 30px;
+		letter-spacing: 1.8px;
+		margin-bottom: 12px;
+	}
+	#mintokumesse-danang .bl-exhibi .date .text span{
+		display: inline-block;
+		text-align: center;
+		min-width: 185px;
+		margin-bottom: 0;
+		margin-right: 17px;
+		top: -4px;
+	}
+	#mintokumesse-danang .bl-exhibi .date .text-note{
+		font-size: 12px;
+		margin-top: -4px;
+		letter-spacing: 0.7px;
+		text-align: left;
+		padding-left: 202px;
+	}
+	#mintokumesse-danang .bl-exhibi .col-text .desc-text{
+		margin-top: -7px;
+	}
+	#mintokumesse-danang .bl-exhibi .col-text .desc .text{
+		font-size: 16px;
+		line-height: 28px;
+	}
+	#mintokumesse-danang .bl-exhibi .col-text .title{
+		margin-bottom: 8px;
+	}
+	#mintokumesse-danang .bl-exhibi .col-text .title-tag {
+		height: 56px;
+		width: 109px;
+		line-height: 57px;
+		font-size: 20px;
+	}
+	#mintokumesse-danang .bl-exhibi .col-text .title-tag:before {
+		border-top-width: 28px;
+		border-left-width: 16px;
+		border-bottom-width: 28px;
+		right: -15.5px;
+	}
+	#mintokumesse-danang .bl-exhibi .col-text .area{
+		display: block;
+	}
+	#mintokumesse-danang .bl-exhibi .area-title{
+		margin-top: 0;
+	}
+	#mintokumesse-danang .bl-exhibi .area-title::before{
+		top: 11px;
+	}
+	#mintokumesse-danang .bl-exhibi .area-title span{
+		padding-right: 18px;
+	}
+	#mintokumesse-danang .bl-exhibi .area .col{
+		height: 91px;
+	}
+	#mintokumesse-danang .bl-exhibi .col-text .title-text {
+		padding-left: 33px;
+		top: -8px ;
+	}
+	#mintokumesse-danang .bl-exhibi .col-text .title .text{
+		font-size: 16px;
+		line-height: 25px;
+		letter-spacing: 0.5px;
+	}
+	#mintokumesse-danang .bl-exhibi .col-text .title .text-bold{
+		font-size: 30px;
+		letter-spacing: 1.6px;
+	}
+	#mintokumesse-danang .bl-exhibi .area .col{
+		padding: 9px;
+	}
+	#mintokumesse-danang .bl-exhibi .area .col-1 .img{
+		max-width: 105px;
+	}
+	#mintokumesse-danang .bl-exhibi .area .col-2 .img{
+		max-width: 52px;
+	}
+	#mintokumesse-danang .bl-exhibi .area .col-3 .img{
+		max-width: 52px;
+	}
+	#mintokumesse-danang .bl-exhibi .area .col-4 .img{
+		max-width: 43px;
+	}
+	#mintokumesse-danang .bl-exhibi .area .col-5 .img{
+		max-width: 53px;
+	}
+	#mintokumesse-danang .bl-exhibi .area .col-6 .img{
+		max-width: 43px;
+	}
+	#mintokumesse-danang .bl-exhibi .area .col-7 .img{
+		max-width: 52px;
+	}
+	#mintokumesse-danang .bl-exhibi .area .col-8 .img{
+		max-width: 53px;
+	}
+	#mintokumesse-danang .bl-exhibi .area .col .text{
+		font-size: 14px;
+	}
+
+	/* 	onoff */
+	#mintokumesse-danang .bl-onoff{
+		background-image: url('../images/mintokumesse-dn/mintokumesse_bg01_pc.png');
+		background-size: calc(100% + 48px);
+		padding-top: 65px;
+		padding-bottom: 130px;
+	}
+	#mintokumesse-danang .bl-onoff .box{
+		padding: 32px 30px 32px 30px;
+	}
+	#mintokumesse-danang .bl-onoff .row{
+		display: flex;
+		gap: 0 35px;
+	}
+	#mintokumesse-danang .bl-onoff .row .col-text{
+		width: 54%;
+	}
+	#mintokumesse-danang .bl-onoff .row .col-img{
+		flex-shrink: 0;
+		width: 46%;
+	}
+	#mintokumesse-danang .bl-onoff .booth-row{
+		justify-content: left;
+	}
+	#mintokumesse-danang .bl-onoff .booth-row .text{
+		font-size: 40px;
+		left: 0;
+		top: 5px;
+		text-align: center;
+	}
+	#mintokumesse-danang .bl-onoff .title-top{
+		display: none;
+	}
+	#mintokumesse-danang .bl-onoff .booth .text-left{
+		margin-right: 20px;
+	}
+	#mintokumesse-danang .bl-onoff .booth .text-left .title{
+		display: block;
+		min-width: 221px;
+		margin-bottom: 0;
+	}
+	#mintokumesse-danang .bl-onoff .support{
+		display: flex;
+		align-items: center;
+	}
+	#mintokumesse-danang .bl-onoff .title-2{
+		min-width: 152px;
+		margin-bottom: 0 !important;
+		margin-right: 14px;
+	}
+	#mintokumesse-danang .bl-onoff .support .img{
+		max-width: 282px;
+	}
+	#mintokumesse-danang .bl-onoff .booth {
+		margin-bottom: 10px;
+	}
+	#mintokumesse-danang .bl-onoff .text-li .text{
+		font-size: 15px;
+		padding-left: 32px;
+		margin-bottom: 11px;
+	}
+	#mintokumesse-danang .bl-onoff .text-li .text:before{
+		width: 20px; 
+		height: 20px;
+		top: 1px;
+		left: 6px;
+	}
+	#mintokumesse-danang .bl-onoff .support {
+		margin-bottom: 3px;
+	}
+	#mintokumesse-danang .bl-onoff .line {
+		margin: 11px 0 24px 0;
+	}
+	#mintokumesse-danang .bl-onoff .title-150{
+		display: flex;
+		align-items: center;
+		margin-bottom: 6px;
+	}
+	#mintokumesse-danang .bl-onoff .title-150 .title{
+		min-width: 221px;
+		margin-bottom: 0;
+		margin-right: 23px;
+		margin-left: 0;
+	}
+	#mintokumesse-danang .bl-onoff .title-150 .text{
+		font-size: 40px;
+	}
+	#mintokumesse-danang .bl-onoff .img-150 {
+		max-width: 436px;
+		margin-bottom: 12px;
+		left: 7px;
+	}
+	#mintokumesse-danang .bl-onoff .text-box {
+		font-size: 49px;
+		border-radius: 5px;
+		height: 77px;
+		line-height: 77px;
+		margin: 0 5px 0 2px;
+		letter-spacing: 2px;
+		margin-bottom: 7px;
+	}
+	#mintokumesse-danang .bl-onoff .text-box span{
+		font-size: 28px;
+		width: 109px;
+		height: 51px;
+		line-height :51px;
+	}
+	#mintokumesse-danang .bl-onoff .text-note{
+		font-size: 19px;
+	}
+	#mintokumesse-danang .bl-onoff .text-note:before{
+		top: 6px;
+	}
+	#mintokumesse-danang .bl-onoff .links .text span{
+		display: inline-block;
+		min-width: 182px;
+		margin-right: 20px;
+	}
+	#mintokumesse-danang .bl-onoff .links .text{
+		text-align: left;
+	}
+	#mintokumesse-danang .bl-onoff .links .link-text{
+		font-size: 20px;
+		text-align: center;
+		justify-content: center;
+	}
+	#mintokumesse-danang .bl-onoff .links .link-text span{
+		margin-right: 20px;
+	}
+
+	/* form */
+	#mintokumesse-danang .bl-form .img-hr{
+		margin-bottom: 35px;
+	}
+
+
+}
+
+@media print, screen and (min-width: 1024px){
+	#mintokumesse-danang .bl-onoff .box-flow{
+		display: block;
+		padding: 24px 30px 10px 30px;
+	}
+
+	/* footer	 */
+	#mintokumesse-danang .bl-foot{
+		padding: 0;
+	}
+	#mintokumesse-danang .bl-foot .inner{
+		display: flex;
+		height: 64px;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#mintokumesse-danang .bl-foot .img{
+		margin: 0;
+	}
+	#mintokumesse-danang .bl-foot .menu-foot{
+		display: flex;
+		margin-bottom: 0;
+		align-items: center;
+		gap: 0 30px;
+	}
+	#mintokumesse-danang .bl-foot .menu-foot a{
+		margin-bottom: 0;
+	}
+}
+@media print, screen and (min-width: 1200px){
+	#mintokumesse-danang .bl-onoff .box-flow .text-flow .text{
+		font-size: 19px;
+	}
+}
+
+
+
+input, textarea, button, select{
+	font-family: "Noto Sans JP", sans-serif !important;
+}
+
+input{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+#mintokumesse-danang .contact-form .mwform-checkbox-field,
+#mintokumesse-danang .contact-form .mwform-checkbox-field > label{
+	position: static;
+}
+#mintokumesse-danang .contact-form .mw_wp_form_confirm .privacy{
+	display: none;
+}
+#mintokumesse-danang .contact-form .mw_wp_form_confirm .field-group .title{
+	padding-top: 0;
+}
+#mintokumesse-danang .contact-form p.input-field {
+	font-size: 18px;
+	line-height: 30px;
+}
+#mintokumesse-danang .contact-form .mw_wp_form_confirm .field-group .title .required{
+	display: none;
+}
+#mintokumesse-danang .contact-form .mw_wp_form_confirm .contact-submit {
+	padding-top: 30px;
+}
+#mintokumesse-danang .contact-form .mw_wp_form_confirm .field-group{
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+}
+#mintokumesse-danang .contact-form .mw_wp_form_confirm .field-group .container-input.half-item{
+	display: flex;
+	column-gap: 5px;
+}
+#mintokumesse-danang .contact-form{
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.40);
+	padding: 41px 40px 36px;
+	margin-bottom: 60px;
+}
+#mintokumesse-danang .contact-form .heading-block{
+	font-size: 20px;
+	line-height: 29px;
+	color: #797979;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1px;
+	position: relative;
+	margin-bottom: 40px;
+}
+#mintokumesse-danang .contact-form .heading-block:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	border-top: 1px solid #707070;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	height: 1px;
+}
+#mintokumesse-danang .contact-form .heading-block span{
+	background: #fff;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	padding: 0 18px;
+}
+#mintokumesse-danang .contact-form .field-group{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+#mintokumesse-danang .contact-form .field-group .title{
+	width: 240px;
+	font-size: 20px;
+	line-height: 29px;
+	color: #000000;
+	font-weight: bold;
+	padding-top: 9px;
+}
+#mintokumesse-danang .contact-form .field-group .title .required{
+	font-size: 15px;
+	line-height: 20px;
+	background: #E11936;
+	color: #fff;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 0px 6px 3px;
+	font-weight: 400;
+	margin-left: 10px;
+	letter-spacing: 1px;
+	position: relative;
+	top: -3px;
+}
+#mintokumesse-danang .contact-form .field-group .title .required.note{
+	background: #B1B1B1;
+}
+#mintokumesse-danang .contact-form .field-group .container-input{
+	width: calc(100% - 240px);
+}
+#mintokumesse-danang .contact-form .field-group .container-input.half-item{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	column-gap: 20px;
+}
+#mintokumesse-danang .contact-form .field-group .container-input input{
+	width: 100%;
+	max-width: 100%;
+	border-radius: 5px;
+	background: #F2F2F2;
+	border: 0;
+	font-size: 16px;
+	height: 45px;
+	font-weight: 500;
+	padding: 10px 16px;
+	letter-spacing: 0.5px;
+	color: #000;
+	transition: .3s;
+}
+#mintokumesse-danang .contact-form .field-group .container-input textarea{
+	width: 100%;
+	max-width: 100%;
+	border-radius: 5px;
+	background: #F2F2F2;
+	border: 0;
+	font-size: 16px;
+	line-height: 30px;
+	height: 110px;
+	font-weight: 500;
+	padding: 10px 16px;
+	letter-spacing: 0.5px;
+	color: #000;
+	transition: .3s;
+}
+#mintokumesse-danang .contact-form .btn-submit{
+	text-align: center;
+}
+#mintokumesse-danang .contact-form .btn-submit input{
+	background: linear-gradient(180deg, rgba(221,150,17,1) 0%, rgba(199,59,25,1) 100%);
+	border-radius: 50px;
+	border: 0;
+	width: 100%;
+	max-width: 300px;
+	height: 60px;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .3s;
+	color: #fff;
+}
+#mintokumesse-danang .contact-form .btn-submit input:hover{
+	box-shadow: 0 5px 10px rgba(0,0,0,.30);
+}
+#mintokumesse-danang .contact-form .box-policy .mwform-checkbox-field-text{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	right: 0;
+	font-size: 0;
+	height: 100%;
+	cursor: pointer;
+}
+#mintokumesse-danang .mw_wp_form .error{
+	font-size: 16px;
+}
+#mintokumesse-danang .contact-form .box-policy .error{
+	position: absolute;
+	bottom: -26px;
+	font-size: 16px;
+}
+#mintokumesse-danang .contact-form .box-policy .mwform-checkbox-field-text:before {
+	content: "";
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	background: #fff;
+	border: 2px solid #CECECE;
+	border-radius: 5px;
+	top: -3px;
+	right: -20px;
+	transition: .3s;
+}
+#mintokumesse-danang .contact-form .box-policy .mwform-checkbox-field-text:after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 20px;
+	border: solid #000;
+	border-width: 0 4px 4px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 1px;
+	right: -7px;
+	opacity: 0;
+	transition: .3s;
+}
+#mintokumesse-danang .contact-form .box-policy input:checked ~ .mwform-checkbox-field-text:after{
+	opacity: 1;
+}
+#mintokumesse-danang .contact-form .box-policy input{
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+}
+#mintokumesse-danang .mw_wp_form_confirm .contact-submitBtn {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	column-gap: 50px;
+	max-width: 680px;
+	margin: auto;
+}
+#mintokumesse-danang .contact-form .box-policy{
+	position: relative;
+	font-size: 20px;
+	line-height: 30px;
+	color: #000;
+	display: inline-block;
+	padding-right: 36px;
+}
+#mintokumesse-danang .contact-form .box-policy>p{
+	display: flex;
+	position: static;
+}
+#mintokumesse-danang .contact-form .box-policy a {
+	text-decoration: underline;
+	color: #0062FF;
+	position: relative;
+	z-index: 5;
+}
+#mintokumesse-danang .contact-form .privacy{
+	text-align: center;
+	margin-bottom: 30px;
+}
+#mintokumesse-danang .contact-form .contact-submit{
+	padding-top: 5px;
+}
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+	color: #A5A5A5;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder{
+	color: #A5A5A5;
+}
+input::placeholder,
+textarea::placeholder{
+	color: #A5A5A5;
+}
+input:focus,
+textarea:focus{
+	outline: none;
+	box-shadow: 0px 3px 6px rgba(0,0,0,.30);
+}
+@media (max-width: 1023px){
+	#mintokumesse-danang .contact-form{
+		padding: 41px 30px 36px;
+	}
+	#mintokumesse-danang .contact-form .heading-block{
+		font-size: 16px;
+	}
+	#mintokumesse-danang .contact-form .field-group .title .required{
+		font-size: 12px;
+		line-height: 17px;
+	}
+	#mintokumesse-danang .contact-form .field-group .title {
+		width: 200px;
+		font-size: 16px;
+		line-height: 29px;
+		padding-top: 8px;
+	}
+	#mintokumesse-danang .contact-form .field-group .container-input {
+		width: calc(100% - 200px);
+	}
+	#mintokumesse-danang .contact-form .field-group .container-input input{
+		font-size: 14px;
+	}
+	#mintokumesse-danang .contact-form .field-group .container-input textarea{
+		font-size: 14px;
+		line-height: 26px;
+	}
+	#mintokumesse-danang .contact-form .box-policy{
+		font-size: 16px;
+	}
+	#mintokumesse-danang .contact-form .box-policy .mwform-checkbox-field-text:before{
+		width: 26px;
+		height: 26px;
+		top: 0px;
+		right: -10px;
+	}
+	#mintokumesse-danang .contact-form .box-policy .mwform-checkbox-field-text:after{
+		width: 8px;
+		height: 16px;
+		top: 3px;
+		right: -1px;
+		border-width: 0 3px 3px 0;
+	}
+
+}
+@media (max-width: 767px){
+	#mintokumesse-danang .contact-form{
+		padding: 20px 15px 28px;
+		margin-bottom: 50px;
+	}
+	#mintokumesse-danang .contact-form .contact-submit {
+		padding-top: 0;
+	}
+	#mintokumesse-danang .contact-form .heading-block span{
+		padding: 0;
+	}
+	#mintokumesse-danang .contact-form .heading-block:before{
+		display: none;
+	}
+	#mintokumesse-danang .contact-form .heading-block {
+		line-height: 26px;
+		margin-bottom: 29px;
+	}
+	#mintokumesse-danang .contact-form .field-group .title {
+		width: 100%;
+		font-size: 20px;
+		line-height: 29px;
+		padding-top: 0;
+		letter-spacing: 0.5px;
+		margin-bottom: 9px;
+	}
+	#mintokumesse-danang .contact-form .field-group .title .required {
+		font-size: 15px;
+		line-height: 19px;
+	}
+	#mintokumesse-danang .contact-form .field-group .container-input{
+		width: 100%;
+	}
+	#mintokumesse-danang .contact-form .field-group .container-input.half-item{
+		column-gap: 10px;
+	}
+	#mintokumesse-danang .contact-form .field-group{
+		margin-bottom: 15px;
+	}
+	#mintokumesse-danang .contact-form .field-group .container-input input {
+		font-size: 16px;
+		padding: 10px 18px;
+	}
+	#mintokumesse-danang .contact-form .field-group .container-input textarea {
+		font-size: 16px;
+		line-height: 30px;
+		height: 230px;
+	}
+	#mintokumesse-danang .contact-form .box-policy>p {
+		display: block;
+	}
+	#mintokumesse-danang .contact-form .box-policy {
+		font-size: 20px;
+		line-height: 40px;
+		max-width: 240px;
+		margin: auto;
+		padding-right: 0;
+		padding-bottom: 60px;
+	}
+	#mintokumesse-danang .contact-form .box-policy br{
+		display: none;
+	}
+	#mintokumesse-danang .contact-form .box-policy .mwform-checkbox-field-text:before{
+		top: unset;
+		bottom: 5px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 38px;
+		height: 38px;
+	}
+	#mintokumesse-danang .contact-form .box-policy .mwform-checkbox-field-text:after{
+		width: 10px;
+		height: 20px;
+		border: solid #000;
+		border-width: 0 4px 4px 0;
+		top: unset;
+		bottom: 12px;
+		right: unset;
+		left: 49.5%;
+		transform: rotate(45deg) translateX(-50%);
+	}
+
+}
+
+
+
+
+/* hanoi */
+#mintokumesse-danang.hanoi .bl-exhibi .col-text .title{
+	margin-bottom: 5px;
+}
+#mintokumesse-danang.hanoi .bl-exhibi .danang .col-text .title .text-bold{
+	display: block;
+}
+#mintokumesse-danang.hanoi .bl-exhibi .col-img .address{
+	padding-top: 10px;
+}
+#mintokumesse-danang.hanoi .btn-apply{
+	background: linear-gradient(180deg, rgba(221, 150, 17, 1) 0%, rgba(199, 59, 25, 1) 100%);
+    border-radius: 99px;
+    width: 100%;
+    max-width: 350px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    margin: 0 auto;
+	margin-top: 20px;
+}
+#mintokumesse-danang.hanoi .btn-apply:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,.30);
+}
+
+@media print, screen and (min-width: 768px){
+	#mintokumesse-danang.hanoi .bl-about .title{
+		align-items: center;
+	}
+	#mintokumesse-danang.hanoi .bl-about .title .title-text{
+		width: 100%;
+		top: 0;
+	}
+	#mintokumesse-danang.hanoi .bl-exhibi .col-text .title{
+		margin-bottom: 8px;
+	}
+	#mintokumesse-danang.hanoi .bl-exhibi .col-text .title-text{
+		top: 3px;
+	}
+}
+@media print, screen and (min-width: 1024px){
+	#mintokumesse-danang.hanoi .bl-about .desc{
+		padding-bottom: 0;
+	}
+	#mintokumesse-danang.hanoi .bl-about .content{
+		align-items: center;
+	}
+	#mintokumesse-danang.hanoi .bl-about .content .onl .ul-content{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0 20px;
+	}
+	#mintokumesse-danang.hanoi .bl-about .content .text-li{
+		width: calc(50% - 10px);
+	}
+}
+
+#mintokumesse-danang .g-recaptcha{
+	display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}

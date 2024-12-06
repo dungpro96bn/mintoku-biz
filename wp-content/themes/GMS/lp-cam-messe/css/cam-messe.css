@@ -1,0 +1,2191 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+common
+------------------------------------------------------------*/
+@font-face {
+	font-family: 'DIN Condensed Bold';
+	src: url('../fonts/DIN Condensed Bold.ttf')  format('truetype');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'DIN Alternate Bold';
+	src: url('../fonts/DIN Alternate Bold.ttf')  format('truetype');
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+nav ul {
+	list-style: none;
+}
+
+ul,ol{
+	list-style:none;
+	list-style-type:none;
+}
+ul,li{
+	list-style: none outside none;
+}
+
+a {
+	color:#0978c5;
+	text-decoration:none;
+	transition: .3s;
+}
+
+body #cam-messe{
+	font-family: 'Noto Sans CJK JP', sans-serif;
+}
+
+input, textarea, button, select{
+	font-family: 'Noto Sans CJK JP',sans-serif !important;
+}
+
+input{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+footer, header{
+	display: none !important;
+}
+#cam-messe .mw_wp_form .error{
+	font-size: 14px;
+	color: #EF0017;
+	display: block;
+}
+#cam-messe .contact-form .privacy .error{
+	position: absolute;
+	bottom: -26px;
+	width: 100%;
+	text-align: center;
+}
+#cam-messe .mw_wp_form_confirm .contact-submitBtn{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	column-gap: 50px;
+	max-width: 680px;
+	margin: auto;
+}
+#cam-messe .contact-form .heading-complete{
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+#cam-messe .contact-form .mw_wp_form_confirm .privacy{
+	display: none;
+}
+#cam-messe .contact-form .mw_wp_form_confirm .field-group .title{
+	padding-top: 0;
+}
+#cam-messe .contact-form p.input-field {
+	font-size: 18px;
+	line-height: 30px;
+}
+#cam-messe .contact-form .mw_wp_form_confirm .field-group .title .required{
+	display: none;
+}
+#cam-messe .contact-form .mw_wp_form_confirm .contact-submit {
+	padding-top: 30px;
+}
+#cam-messe .contact-form .mw_wp_form_confirm .field-group{
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+}
+#cam-messe .contact-form .mw_wp_form_confirm .field-group .container-input.half-item{
+	display: flex;
+	column-gap: 5px;
+}
+
+#cam-messe .contact-form .btn-disable{
+	background: #c3c4c7;
+	pointer-events: none;
+	border: 1px solid #c3c4c7;
+	color: #f0f0f1;
+	text-align: center;
+	padding: 15px 0;
+	max-width: 300px;
+	margin: auto;
+	border-radius: 60px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#cam-messe {
+	font-size: 16px;
+	line-height:1.6;
+	font-weight: 400;
+	color: #333;
+	overflow: hidden;
+	background: #E11836;
+	position: relative;
+}
+#cam-messe * {
+	box-sizing: border-box;
+}
+
+#cam-messe a {
+	transition: opacity .3s;
+}
+
+#cam-messe a[href^="tel:"] {
+	display: inline-block;
+	transition: none;
+}
+
+#cam-messe a:hover {
+	text-decoration: none;
+}
+
+#cam-messe a:focus-visible {
+	outline: none;
+}
+
+#cam-messe img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+#cam-messe #main {
+	width: 100%;
+	max-width: 1000px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+#cam-messe .sp-br{
+	display: none;
+}
+
+
+#cam-messe #header{
+	text-align: center;
+	background: linear-gradient(90deg, rgba(52,52,106,1) 0%, rgba(42,104,148,1) 32%, rgba(51,54,107,1) 67%, rgba(145,165,204,1) 87%, rgba(93,77,160,1) 100%);
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#cam-messe #header .logo-header img{
+	height: 60px;
+	width: auto;
+}
+#cam-messe #header .logo-header{
+	display: inline-block;
+}
+#cam-messe #header .logo-header:hover{
+	opacity: .7;
+}
+
+
+#cam-messe .description{
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+#cam-messe .description .title{
+	font-size: 34px;
+	line-height: 46px;
+	font-family: 'M PLUS 1p', sans-serif;
+	font-weight: 900;
+	letter-spacing: 4px;
+	text-align: center;
+	font-style: italic;
+	color: #FFF200;
+	margin-bottom: 40px;
+}
+#cam-messe .description .description-item{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+#cam-messe .description .left-info{
+	width: calc(100% - 240px);
+	margin-right: 40px;
+}
+#cam-messe .description .right-info{
+	background: #FFFF01;
+	width: 200px;
+	border-radius: 14px;
+	font-weight: bold;
+	font-family: "din-2014", sans-serif;
+	padding: 15px 0 5px;
+	position: relative;
+	color: #E11836;
+}
+#cam-messe .description .left-info svg{
+	width: 100%;
+	height: auto;
+}
+#cam-messe .description .left-info svg #Group_103 tspan{
+	stroke: #fff;
+}
+#cam-messe .description .address{
+	font-family: "din-2014", sans-serif;
+	font-style: italic;
+	font-weight: 600;
+	color: #fff;
+	font-size: 98px;
+	line-height: 100px;
+	letter-spacing: 2px;
+	padding-top: 10px;
+	text-align: center;
+}
+#cam-messe .description .address span{
+	padding-left: 10px;
+}
+#cam-messe .description .address span:first-child{
+	padding-left: 0;
+}
+#cam-messe .description .calendar .year{
+	font-size: 66px;
+	line-height: 60px;
+	letter-spacing: 4px;
+	text-align: center;
+	padding-left: 5px;
+	padding-bottom: 2px;
+}
+#cam-messe .description .calendar .month{
+	font-size: 112px;
+	line-height: 100px;
+	letter-spacing: -4px;
+	text-align: center;
+	padding-right: 12px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+#cam-messe .description .calendar .month span{
+	font-size: 50px;
+	line-height: 56px;
+	font-family: "din-2014", sans-serif;
+	padding-left: 12px;
+}
+#cam-messe .description .calendar .text{
+	font-size: 40px;
+	line-height: 60px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+#cam-messe .description .calendar-border:after,
+#cam-messe .description .calendar-border:before{
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 20px;
+	background: #fff;
+	border-radius: 20px;
+	top: -11px;
+}
+#cam-messe .description .calendar-border.border-01:after{
+	left: calc(38% - 4px);
+}
+#cam-messe .description .calendar-border.border-01:before{
+	left: calc(15% - 4px);
+}
+#cam-messe .description .calendar-border.border-02:after{
+	left: calc(85% - 4px);
+}
+#cam-messe .description .calendar-border.border-02:before{
+	left: calc(62% - 4px);
+}
+
+
+#cam-messe .info-offline{
+	border: 3px solid #FFFF01;
+	border-radius: 20px;
+	background: rgba(0,0,0,.50);
+	padding: 20px 30px 30px;
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 5;
+}
+#cam-messe .info-offline .title{
+	font-family: 'DIN Condensed Bold';
+	font-size: 120px;
+	line-height: 120px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF200;
+}
+#cam-messe .info-offline .sub-ttl{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+#cam-messe .info-offline .sub-ttl .ttl{
+	font-size: 26px;
+	line-height: 30px;
+	font-family: 'M PLUS 1p', sans-serif;
+	color: #FFF200;
+	font-weight: 900;
+	font-style: italic;
+	letter-spacing: 4px;
+}
+#cam-messe .info-offline .sub-ttl .icon{
+	font-family: 'DIN Alternate Bold';
+	font-size: 24px;
+	border: 2px solid #FFF200;
+	border-radius: 30px;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	text-align: center;
+	letter-spacing: 2px;
+	width: 250px;
+	margin-left: 18px;
+}
+#cam-messe .info-offline .sub-ttl .icon .online{
+	background: #FFF200;
+	border-radius: 16px 0 0 16px;
+	color: #7A282B;
+	position: relative;
+	z-index: 5;
+}
+#cam-messe .info-offline .sub-ttl .icon .online:after{
+	content: "";
+	position: absolute;
+	background-color: #FFF200;
+	transform: skew(20deg, 0deg);
+	width: 20px;
+	height: 100%;
+	right: 0;
+	z-index: -1;
+}
+#cam-messe .info-offline .sub-ttl .icon .offline{
+	color: #FFF200;
+	position: relative;
+	z-index: 5;
+}
+#cam-messe .info-offline .sub-ttl .icon .offline:before{
+	content: "";
+	position: absolute;
+	background-color: #700c1b;
+	transform: skew(20deg, 0deg);
+	width: 20px;
+	height: 100%;
+	left: 0;
+	z-index: -1;
+}
+#cam-messe .info-offline .text{
+	font-size: 20px;
+	line-height: 1.8;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+#cam-messe .info-offline .info-content{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 20px;
+}
+#cam-messe .info-offline .info-content .ttl-info{
+	width: 130px;
+	height: 130px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	font-size: 18px;
+	line-height: 1.6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: 500;
+}
+#cam-messe .info-offline .info-content .exhibit-inner{
+	width: calc(100% - 130px);
+}
+#cam-messe .info-offline .info-content .online-exhibit{
+	width: 100%;
+	padding-left: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+#cam-messe .info-offline .info-content .ttl-box{
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 600;
+	width: 200px;
+	color: #fff;
+}
+#cam-messe .info-offline .info-content ul{
+	width: calc(100% - 200px);
+}
+#cam-messe .info-offline .info-content .offline-exhibit{
+	width: 100%;
+	padding-left: 40px;
+	display: flex;
+	flex-wrap: wrap;
+}
+#cam-messe .info-offline .info-content ul li{
+	font-size: 16px;
+	line-height: 30px;
+	color: #fff;
+	font-weight: 500;
+/* 	padding-left: 25px; */
+	position: relative;
+}
+/* #cam-messe .info-offline .info-content ul li:before{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #fff;
+	top: 10px;
+	left: 0;
+} */
+
+
+#cam-messe .schedule-block{
+	position: relative;
+}
+#cam-messe .schedule-block .bg-main{
+	position: absolute;
+	width: 100vw;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -35px;
+	pointer-events: none;
+}
+#cam-messe .schedule{
+	border: 3px solid #FFFF01;
+	border-radius: 20px;
+	background: rgba(0,0,0,.50);
+	padding: 20px 30px 30px;
+	color: #fff;
+	margin-bottom: 60px;
+	position: relative;
+	z-index: 5;
+}
+#cam-messe .schedule .ttl-box{
+	display: flex;
+	width: 150px;
+	color: #5E0001;
+	background: #FFF200;
+	font-size: 22px;
+	line-height: 30px;
+	justify-content: center;
+	height: 40px;
+	align-items: center;
+	border-radius: 50px;
+	font-weight: bold;
+	margin: -42px auto 15px;
+	position: relative;
+}
+#cam-messe .schedule .schedule-item{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+#cam-messe .schedule .schedule-item:last-child{
+	margin-bottom: 0;
+}
+#cam-messe .schedule .left-item{
+	width: 130px;
+}
+#cam-messe .schedule .right-item{
+	width: calc(100% - 130px);
+	padding-left: 30px;
+}
+#cam-messe .schedule .left-item .ttl{
+	border: 2px solid #FFFF01;
+	border-right: 0;
+	width: calc(100% - 20px);
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 32px;
+	justify-content: center;
+	font-size: 16px;
+	font-weight: 500;
+	color: #FFFF01;
+}
+#cam-messe .schedule .left-item .ttl:after,
+#cam-messe .schedule .left-item .ttl:before{
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+#cam-messe .schedule .left-item .ttl:before{
+	content: "";
+	position: absolute;
+	border-color: rgba(255, 255, 1, 0);
+	border-left-color: #FFFF01;
+	border-width: 16px;
+	margin-top: -16px;
+}
+#cam-messe .schedule .left-item .ttl:after{
+	content: "";
+	position: absolute;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #700c1b;
+	border-width: 15px;
+	margin-top: -14px;
+}
+#cam-messe .schedule .right-item .text{
+	font-size: 30px;
+	line-height: 38px;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+#cam-messe .schedule .right-item .text small{
+	font-size: 22px;
+}
+#cam-messe .schedule .right-item .t1-a{
+	font-size: 24px;
+	line-height: 1.6;
+	margin-bottom: 6px;
+}
+#cam-messe .schedule .right-item .t1-a span{
+	font-size: 18px;
+}
+#cam-messe .schedule .right-item .address{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+#cam-messe .schedule .right-item .address .address-item{
+	font-size: 16px;
+}
+#cam-messe .schedule .right-item .address .address-item span{
+	border: 1px solid #FFFFFF;
+	display: inline-block;
+	padding: 0 8px 1px;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 21px;
+	margin-right: 8px;
+}
+#cam-messe .schedule .right-item .address .tel-item{
+	font-size: 16px;
+	width: 100%;
+	padding-top: 10px;
+}
+#cam-messe .schedule .right-item .address .tel-item span{
+	border: 1px solid #FFFFFF;
+	display: inline-block;
+	padding: 0 8px 1px;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 21px;
+	margin-right: 8px;
+}
+#cam-messe .schedule .right-item .venue-item{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 20px;
+}
+#cam-messe .schedule .right-item .venue-item .icon,
+#cam-messe .schedule .right-item .venue-url .icon{
+	width: 74px;
+}
+#cam-messe .schedule .right-item .venue-item .venue-text{
+	width: calc(100% - 74px)
+}
+#cam-messe .schedule .right-item .venue-item .venue-text{
+	font-size: 16px;
+	line-height: 1.6;
+	padding-left: 18px;
+}
+#cam-messe .schedule .right-item .venue-url .venue-text{
+	font-size: 16px;
+	line-height: 1.6;
+}
+#cam-messe .schedule .right-item .venue-url .venue-text .url span{
+	border: 1px solid #FFFFFF;
+	display: inline-block;
+	padding: 0 8px 1px;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 21px;
+	margin-right: 8px;
+}
+#cam-messe .schedule .right-item .venue-url .venue-text .url a{
+	font-size: 17px;
+	color: #fff;
+}
+#cam-messe .schedule .right-item .venue-url .venue-text .url a:hover{
+	text-decoration: underline  ;
+}
+#cam-messe .schedule .right-item .coming-soon{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#cam-messe .schedule .right-item .coming-soon .icon{
+	width: 74px;
+}
+#cam-messe .schedule .right-item .coming-soon .t2{
+	width: 100%;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+#cam-messe .schedule .item-bg .left-item .ttl{
+	background: #FFFF01;
+	color: #5E0001;
+}
+#cam-messe .schedule .schedule-item.item-bg{
+	align-items: center;
+}
+#cam-messe .schedule .item-bg .left-item .ttl:after{
+	display: none;
+}
+#cam-messe .schedule .item-bg .left-item .ttl:before {
+	content: "";
+	position: absolute;
+	border-color: rgba(255, 255, 1, 0);
+	border-left-color: #FFFF01;
+	border-width: 16px;
+	margin-top: -16px;
+}
+
+
+#cam-messe .exhibit-content .heading-block{
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	margin-bottom: 20px;
+}
+#cam-messe .exhibit-content .heading-block:before{
+	content: "";
+	position: absolute;
+	width: 100vw;
+	border-top: 8px solid #FFFF01;
+	top: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#cam-messe .exhibit-content .heading-block:after{
+	content: "";
+	position: absolute;
+	width: 100vw;
+	border-top: 8px solid #FFFF01;
+	top: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#cam-messe .exhibit-content .heading-block .ttl-ja{
+	font-family: 'M PLUS 1p', sans-serif;
+	font-size: 30px;
+	line-height: 40px;
+	letter-spacing: 3px;
+	font-weight: 900;
+	font-style: italic;
+	padding-right: 20px;
+}
+#cam-messe .exhibit-content .heading-block .ttl-en{
+	font-size: 18px;
+	line-height: 30px;
+	font-family: "din-2014", sans-serif;
+	font-weight: 500;
+}
+#cam-messe .exhibit-content .heading-block .h-bg{
+	background: #E11836;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 5;
+}
+#cam-messe .exhibit-content .heading-block .h-bg:before{
+	content: "";
+	position: absolute;
+	transform: skew(-20deg, 0deg);
+	background: #E11836;
+	width: 30px;
+	height: 100%;
+	top: 0;
+	left: -20px;
+	z-index: -1;
+}
+#cam-messe .exhibit-content .heading-block .h-bg:after{
+	content: "";
+	position: absolute;
+	transform: skew(-20deg, 0deg);
+	background: #E11836;
+	width: 30px;
+	height: 100%;
+	top: 0;
+	right: -20px;
+	z-index: -1;
+}
+#cam-messe .exhibit-content .exhibit-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+#cam-messe .exhibit-content .exhibit-item{
+	background: #fff;
+	border-radius: 8px;
+	color: #E11836;
+	padding: 10px 25px 15px;
+}
+#cam-messe .exhibit-content .exhibit-item.exhibit-ja{
+	width: 45%;
+	margin-right: 2%;
+}
+#cam-messe .exhibit-content .exhibit-item.exhibit-vi{
+	width: 53%;
+}
+#cam-messe .exhibit-content .exhibit-item .t1{
+	font-size: 19px;
+	line-height: 30px;
+	font-family: "din-2014", sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 6px;
+}
+#cam-messe .exhibit-content .exhibit-item .ttl{
+	display: flex;
+	align-items: center;
+	font-family: 'M PLUS 1p', sans-serif;
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 900;
+	letter-spacing: 4px;
+	margin-bottom: 10px;
+}
+#cam-messe .exhibit-content .exhibit-item .ttl img{
+	width: 60px;
+	margin-right: 20px;
+}
+#cam-messe .exhibit-content .exhibit-item ul li{
+	font-size: 16px;
+	line-height: 1.6;
+	font-weight: 600;
+	padding-left: 25px;
+	position: relative;
+}
+#cam-messe .exhibit-content .exhibit-item ul li:before{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #E11836;
+	top: 6px;
+	left: 0;
+}
+#cam-messe .exhibit-content .exhibition-contents .title{
+	font-family: 'M PLUS 1p', sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 800;
+	color: #fff;
+	letter-spacing: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 25px 0;
+}
+#cam-messe .exhibit-content .exhibition-contents .title .icon-plus{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	background: #fff;
+	border-radius: 50%;
+	color: #E11836;
+	font-weight: 900;
+	letter-spacing: 0;
+	margin: 0 10px;
+	font-size: 30px;
+	line-height: 30px;
+	padding-bottom: 4px;
+}
+#cam-messe .exhibit-content .exhibition-itemInfo{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background: #fff;
+	padding: 10px 25px;
+	border-radius: 60px;
+	margin-bottom: 12px;
+}
+#cam-messe .exhibit-content .exhibition-itemInfo .icon-plus{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	background: #E11836;
+	border-radius: 50%;
+	color: #fff;
+	font-weight: 900;
+	letter-spacing: 0;
+	font-size: 24px;
+	line-height: 30px;
+}
+#cam-messe .exhibit-content .exhibition-itemInfo .ttl{
+	font-family: 'M PLUS 1p', sans-serif;
+	font-size: 26px;
+	line-height: 30px;
+	color: #EF0017;
+	font-weight: 900;
+	letter-spacing: 2px;
+	width: 35%;
+}
+#cam-messe .exhibit-content .exhibition-itemInfo .text{
+	width: 65%;
+	display: flex;
+	font-size: 20px;
+	line-height: 26px;
+	align-items: center;
+	color: #EF0017;
+	font-weight: 600;
+}
+#cam-messe .exhibit-content .exhibition-itemInfo .text span{
+	display: flex;
+	width: 32px;
+	height: 32px;
+	border: 1px solid #EF0017;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	margin-right: 12px;
+}
+#cam-messe .exhibit-content{
+	margin-bottom: 30px;
+}
+
+
+#cam-messe .booth-exhibition-fees .heading-block{
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	margin-bottom: 20px;
+}
+#cam-messe .booth-exhibition-fees .heading-block:before{
+	content: "";
+	position: absolute;
+	width: 100vw;
+	border-top: 8px solid #FFFF01;
+	top: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#cam-messe .booth-exhibition-fees .heading-block:after{
+	content: "";
+	position: absolute;
+	width: 100vw;
+	border-top: 8px solid #FFFF01;
+	top: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#cam-messe .booth-exhibition-fees .heading-block .ttl-ja{
+	font-family: 'M PLUS 1p', sans-serif;
+	font-size: 30px;
+	line-height: 40px;
+	letter-spacing: 3px;
+	font-weight: 900;
+	font-style: italic;
+	padding-right: 20px;
+}
+#cam-messe .booth-exhibition-fees .heading-block .ttl-en{
+	font-size: 18px;
+	line-height: 30px;
+	font-family: "din-2014", sans-serif;
+	font-weight: 500;
+}
+#cam-messe .booth-exhibition-fees .heading-block .h-bg{
+	background: #E11836;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 5;
+}
+#cam-messe .booth-exhibition-fees .heading-block .h-bg:before{
+	content: "";
+	position: absolute;
+	transform: skew(-20deg, 0deg);
+	background: #E11836;
+	width: 30px;
+	height: 100%;
+	top: 0;
+	left: -20px;
+	z-index: -1;
+}
+#cam-messe .booth-exhibition-fees .heading-block .h-bg:after{
+	content: "";
+	position: absolute;
+	transform: skew(-20deg, 0deg);
+	background: #E11836;
+	width: 30px;
+	height: 100%;
+	top: 0;
+	right: -20px;
+	z-index: -1;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-list{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	column-gap: 50px;
+	position: relative;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-list:after{
+	content: "";
+	position: absolute;
+	height: 100%;
+	border-left: 2px dotted #fff;
+	top: 0;
+	left: 50%;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .ttl-box{
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 600;
+	background: #FFFF01;
+	border: 2px solid #FFFF01;
+	width: 260px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+	height: 40px;
+	color: #e11836;
+	margin: 0 auto -18px;
+	position: relative;
+	z-index: 5;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(1) .ttl-box{
+	background: #E11836;
+	color: #FFF200;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .img-exhibition{
+	border-radius: 8px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .img-exhibition img{
+	width: 100%;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .price-item{
+	position: relative;
+	padding-left: 25px;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .price-item:after{
+	content: "";
+	position: absolute;
+	border-left: 8px solid #fff;
+	height: calc(100% - 10px);
+	top: 0;
+	left: 0;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .price-item .t1{
+	font-size: 28px;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(2) .price-item .t1{
+	font-size: 24px;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .price-item .t1 span{
+	font-size: 20px;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .num-price{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+	align-items: center;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .num-price .num{
+	font-size: 56px;
+	line-height: 60px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 2px;
+	font-family: 'M PLUS 1p', sans-serif;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .num-price .num span{
+	font-size: 28px;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .note{
+	font-size: 17px;
+	line-height: 28px;
+	color: #fff;
+	margin-top: 15px;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .text-border{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #fff;
+	border-radius: 4px;
+	font-size: 20px;
+	line-height: 30px;
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	position: relative;
+	padding: 10px 0;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(2) .text-border{
+	padding: 3px 0;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .text-border .text-01{
+	width: 35%;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .text-border .text-02{
+	width: 65%;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(1) .text-border:after{
+	content: "";
+	position: absolute;
+	height: 100%;
+	border-left: 2px solid #fff;
+	top: 0;
+	left: 35%;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .price-item.after:after{
+	border-color: #AF8243;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .tax{
+	font-size: 18px;
+	line-height: 25px;
+	font-family: 'M PLUS 1p', sans-serif;
+	font-weight: 500;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	padding: 0 20px;
+	margin-left: 5px;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .tax:before{
+	content: "[";
+	position: absolute;
+	top: 46%;
+	left: 0;
+	font-size: 40px;
+	transform: translateY(-50%);
+	font-weight: 200;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item .tax:after{
+	content: "]";
+	position: absolute;
+	top: 46%;
+	right: 0;
+	font-size: 40px;
+	transform: translateY(-50%);
+	font-weight: 200;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(1) .tax{
+	padding: 0 24px;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(1) .tax:before{
+	font-size: 58px;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(1) .tax:after{
+	font-size: 58px;
+}
+#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(2) .num-price .num {
+	font-size: 46px;
+	line-height: 50px;
+}
+#cam-messe .booth-exhibition-fees{
+	padding-bottom: 60px;
+}
+
+#cam-messe .contact-link{
+	margin-bottom: 50px;
+	text-align: center;
+}
+#cam-messe .contact-link .contact-btn{
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 600;
+	background: #FFFF01;
+	border: 2px solid #FFFF01;
+	width: 100%;
+	max-width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+	height: 60px;
+	color: #5E0001;
+	margin: auto;
+	transition: .3s;
+}
+#cam-messe .contact-link .contact-btn:hover{
+	box-shadow: 0 5px 10px rgba(0,0,0,.30);
+}
+#cam-messe .booth-exhibition-fees .text-bottom p{
+	font-size: 18px;
+	line-height: 30px;
+	color: #fff;
+	margin-top: 30px;
+	text-align: center;
+}
+
+
+#cam-messe .contact-form{
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.40);
+	padding: 41px 40px 36px;
+	margin-bottom: 94px;
+}
+#cam-messe .contact-form .heading-block{
+	font-size: 20px;
+	line-height: 29px;
+	color: #797979;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1px;
+	position: relative;
+	margin-bottom: 40px;
+}
+#cam-messe .contact-form .heading-block:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	border-top: 1px solid #707070;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	height: 1px;
+}
+#cam-messe .contact-form .heading-block span{
+	background: #fff;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	padding: 0 18px;
+}
+#cam-messe .contact-form .field-group{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+#cam-messe .contact-form .field-group .title{
+	width: 240px;
+	font-size: 20px;
+	line-height: 29px;
+	color: #000000;
+	font-weight: bold;
+	padding-top: 9px;
+}
+#cam-messe .contact-form .field-group .title .required{
+	font-size: 15px;
+	line-height: 20px;
+	background: #E11936;
+	color: #fff;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 0px 6px 3px;
+	font-weight: 400;
+	margin-left: 10px;
+	letter-spacing: 1px;
+	position: relative;
+	top: -3px;
+}
+#cam-messe .contact-form .field-group .container-input{
+	width: calc(100% - 240px);
+}
+#cam-messe .contact-form .field-group .container-input.half-item{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	column-gap: 20px;
+}
+#cam-messe .contact-form .field-group .container-input input{
+	width: 100%;
+	max-width: 100%;
+	border-radius: 5px;
+	background: #F2F2F2;
+	border: 0;
+	font-size: 16px;
+	height: 45px;
+	font-weight: 500;
+	padding: 10px 16px;
+	letter-spacing: 0.5px;
+	color: #000;
+	transition: .3s;
+}
+#cam-messe .contact-form .field-group .container-input textarea{
+	width: 100%;
+	max-width: 100%;
+	border-radius: 5px;
+	background: #F2F2F2;
+	border: 0;
+	font-size: 16px;
+	line-height: 30px;
+	height: 110px;
+	font-weight: 500;
+	padding: 10px 16px;
+	letter-spacing: 0.5px;
+	color: #000;
+	transition: .3s;
+}
+#cam-messe .contact-form .btn-submit{
+	text-align: center;
+}
+#cam-messe .contact-form .btn-submit input{
+	background: #FFFF05;
+	border-radius: 50px;
+	border: 0;
+	width: 100%;
+	max-width: 300px;
+	height: 60px;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .3s;
+	color: #5E0001;
+}
+#cam-messe .contact-form .btn-submit input:hover{
+	box-shadow: 0 5px 10px rgba(0,0,0,.30);
+}
+#cam-messe .contact-form .box-policy .mwform-checkbox-field-text{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	right: 0;
+	font-size: 0;
+	height: 100%;
+	cursor: pointer;
+}
+#cam-messe .contact-form .box-policy .mwform-checkbox-field-text:before {
+	content: "";
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	background: #fff;
+	border: 2px solid #CECECE;
+	border-radius: 5px;
+	top: -3px;
+	right: -20px;
+	transition: .3s;
+}
+#cam-messe .contact-form .box-policy .mwform-checkbox-field-text:after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 20px;
+	border: solid #000;
+	border-width: 0 4px 4px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 1px;
+	right: -7px;
+	opacity: 0;
+	transition: .3s;
+}
+#cam-messe .contact-form .box-policy input:checked ~ .mwform-checkbox-field-text:after{
+	opacity: 1;
+}
+#cam-messe .contact-form .box-policy input{
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+}
+#cam-messe .contact-form .box-policy{
+	position: relative;
+	font-size: 20px;
+	line-height: 30px;
+	color: #000;
+	display: inline-block;
+	padding-right: 36px;
+}
+#cam-messe .contact-form .box-policy>p{
+	display: flex;
+}
+#cam-messe .contact-form .box-policy a {
+	text-decoration: underline;
+	color: #0062FF;
+	position: relative;
+	z-index: 5;
+}
+#cam-messe .contact-form .privacy{
+	text-align: center;
+	margin-bottom: 30px;
+}
+#cam-messe .contact-form .contact-submit{
+	padding-top: 5px;
+}
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+	color: #A5A5A5;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder{
+	color: #A5A5A5;
+}
+input::placeholder,
+textarea::placeholder{
+	color: #A5A5A5;
+}
+input:focus,
+textarea:focus{
+	outline: none;
+	box-shadow: 0px 3px 6px rgba(0,0,0,.30);
+}
+
+
+
+#cam-messe #footer{
+	background: #000000;
+	padding: 10px 0px;
+}
+#cam-messe #footer .footer-inner{
+	width: 100%;
+	max-width: 1000px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+#cam-messe #footer .footer-top{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#cam-messe #footer .footer-top .logo-footer{
+	width: 200px;
+}
+#cam-messe #footer .footer-top .menuList-footer{
+	width: calc(100% - 410px);
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 15px;
+}
+#cam-messe #footer .footer-top .copyright{
+	width: 210px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+#cam-messe #footer .menuItem-footer a{
+	font-size: 15px;
+	line-height: 30px;
+	color: #fff;
+}
+#cam-messe #footer .menuItem-footer a:hover{
+	opacity: .7;
+}
+#cam-messe #footer .menuItem-footer{
+	position: relative;
+	padding-right: 41px;
+}
+#cam-messe #footer .menuItem-footer:after{
+	content: "";
+	position: absolute;
+	height: 21px;
+	width: 1px;
+	border-left: 1px solid #fff;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+}
+#cam-messe #footer .menuItem-footer:last-child{
+	padding-right: 0;
+}
+#cam-messe #footer .menuItem-footer:last-child:after{
+	display: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
+
+	#cam-messe #main{
+		max-width: 800px;
+	}
+
+
+	#cam-messe .description .title{
+		font-size: 24px;
+		line-height: 36px;
+		letter-spacing: 3px;
+	}
+	#cam-messe .description .address{
+		font-size: 69px;
+		line-height: 66px;
+	}
+	#cam-messe .description .calendar .month {
+		font-size: 90px;
+		line-height: 90px;
+		letter-spacing: -4px;
+		padding-right: 8px;
+	}
+	#cam-messe .description .calendar .month span {
+		font-size: 40px;
+		line-height: 56px;
+		padding-left: 10px;
+	}
+	#cam-messe .description .calendar .year {
+		font-size: 50px;
+		line-height: 50px;
+		letter-spacing: 4px;
+		text-align: center;
+		padding-left: 5px;
+		padding-bottom: 2px;
+	}
+	#cam-messe .description .calendar .text {
+		font-size: 30px;
+		line-height: 40px;
+		letter-spacing: 2px;
+		text-align: center;
+	}
+	#cam-messe .description .right-info{
+		width: 170px;
+	}
+	#cam-messe .description .left-info {
+		width: calc(100% - 210px);
+		margin-right: 40px;
+	}
+
+	#cam-messe .info-offline .title{
+		font-size: 90px;
+		line-height: 100px;
+	}
+	#cam-messe .info-offline .sub-ttl .ttl{
+		font-size: 18px;
+	}
+	#cam-messe .info-offline .sub-ttl .icon{
+		font-size: 18px;
+		width: 210px;
+	}
+	#cam-messe .info-offline .sub-ttl .icon .online{
+		border-radius: 12px 0 0 12px;
+	}
+	#cam-messe .info-offline .text{
+		font-size: 16px;
+	}
+	#cam-messe .info-offline .info-content .exhibit-inner{
+		width: calc(100% - 100px);
+	}
+	#cam-messe .info-offline .info-content .ttl-info{
+		width: 100px;
+		height: 100px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	#cam-messe .info-offline .info-content ul li {
+		color: #fff;
+		font-weight: 500;
+		position: relative;
+	}
+	#cam-messe .info-offline .info-content .ttl-box{
+		width: 180px;
+	}
+	#cam-messe .info-offline .info-content ul {
+		width: calc(100% - 180px);
+	}
+	#cam-messe .info-offline .info-content ul li:before{
+		top: 7px;
+	}
+	#cam-messe .schedule .right-item .text{
+		font-size: 22px;
+		line-height: 34px;
+	}
+	#cam-messe .schedule .right-item .text small {
+		font-size: 15px;
+	}
+	#cam-messe .schedule .right-item .t1-a{
+		font-size: 18px;
+	}
+	#cam-messe .schedule .right-item .t1-a span {
+		font-size: 14px;
+	}
+	#cam-messe .schedule .right-item .address .address-item{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		font-size: 14px;
+	}
+	#cam-messe .schedule .right-item .address .address-item span{
+		width: 45px;
+		padding: 0;
+		text-align: center;
+	}
+	#cam-messe .schedule .right-item .address .address-item small{
+		width: calc(100% - 53px);
+	}
+	#cam-messe .schedule .right-item .address .tel-item{
+		font-size: 14px;
+	}
+	#cam-messe .schedule .right-item .venue-item .icon,
+	#cam-messe .schedule .right-item .venue-url .icon {
+		width: 60px;
+	}
+	#cam-messe .schedule .right-item .venue-item .venue-text{
+		width: calc(100% - 60px);
+	}
+	#cam-messe .schedule .right-item .venue-item .venue-text {
+		font-size: 14px;
+		line-height: 1.6;
+		padding-left: 14px;
+	}
+	#cam-messe .schedule .right-item .venue-url .venue-text {
+		font-size: 14px;
+		line-height: 1.6;
+	}
+	#cam-messe .schedule .right-item .venue-url .venue-text .url a {
+		font-size: 12px;
+		color: #fff;
+	}
+	#cam-messe .schedule .right-item .venue-url .venue-text .url span{
+		font-size: 12px;
+		line-height: 19px;
+	}
+	#cam-messe .schedule .right-item .coming-soon .icon {
+		width: 60px;
+	}
+	#cam-messe .schedule .right-item .coming-soon .t2 {
+		font-size: 14px;
+		line-height: 1.6;
+	}
+	#cam-messe .schedule .right-item{
+		padding-left: 20px;
+	}
+
+	#cam-messe .exhibit-content .exhibit-item .ttl img {
+		width: 50px;
+		margin-right: 14px;
+	}
+	#cam-messe .exhibit-content .exhibit-item .ttl {
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: 2px;
+		margin-bottom: 10px;
+	}
+	#cam-messe .exhibit-content .exhibit-item ul li{
+		font-size: 14px;
+		line-height: 1.8;
+	}
+	#cam-messe .exhibit-content .exhibit-item .t1{
+		font-size: 16px;
+	}
+	#cam-messe .exhibit-content .exhibition-itemInfo .ttl{
+		font-size: 20px;
+	}
+	#cam-messe .exhibit-content .exhibition-itemInfo .text{
+		font-size: 16px;
+		line-height: 23px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-list{
+		grid-template-columns: repeat(1,1fr);
+		column-gap: 0px;
+		row-gap: 40px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-list:after{
+		display: none;
+	}
+
+	#cam-messe .contact-form .heading-block{
+		font-size: 18px;
+	}
+	#cam-messe .contact-form .field-group .title .required{
+		font-size: 12px;
+		line-height: 17px;
+	}
+	#cam-messe .contact-form .field-group .title {
+		width: 200px;
+		font-size: 16px;
+		line-height: 29px;
+		padding-top: 8px;
+	}
+	#cam-messe .contact-form .field-group .container-input {
+		width: calc(100% - 200px);
+	}
+	#cam-messe .contact-form .field-group .container-input input{
+		font-size: 14px;
+	}
+	#cam-messe .contact-form .field-group .container-input textarea{
+		font-size: 14px;
+		line-height: 26px;
+	}
+	#cam-messe .contact-form .box-policy{
+		font-size: 16px;
+	}
+	#cam-messe .contact-form .box-policy .mwform-checkbox-field-text:before{
+		width: 26px;
+		height: 26px;
+		top: 0px;
+		right: -10px;
+	}
+	#cam-messe .contact-form .box-policy .mwform-checkbox-field-text:after{
+		width: 8px;
+		height: 16px;
+		top: 3px;
+		right: -1px;
+		border-width: 0 3px 3px 0;
+	}
+
+
+	#cam-messe #footer{
+		padding: 15px 0px;
+	}
+	#cam-messe #footer .footer-top .copyright{
+		text-align: center;
+		padding: 10px 0;
+	}
+	#cam-messe #footer .footer-top .menuList-footer {
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 15px;
+	}
+	#cam-messe #footer .menuItem-footer a{
+		font-size: 14px;
+	}
+
+
+}
+
+
+@media (max-width: 767px) {
+
+	#cam-messe #main{
+		padding: 0 15px;
+		max-width: 550px;
+	}
+
+	#cam-messe .sp-br{
+		display: block;
+	}
+
+	#cam-messe .pc-br{
+		display: none;
+	}
+
+	#cam-messe #header{
+		background: linear-gradient(90deg, rgba(52,52,106,1) 0%, rgba(42,104,148,1) 35%, rgba(51,54,107,1) 70%, rgba(93,77,160,1) 100%);
+		height: 80px;
+		padding: 0 10px;
+	}
+	#cam-messe #header .logo-header img {
+		height: 40px;
+		width: auto;
+	}
+
+
+	#cam-messe .description .title {
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: 3px;
+		max-width: 400px;
+		margin: 0 auto 30px;
+	}
+	#cam-messe .description .left-info {
+		width: 100%;
+		max-width: 400px;
+		margin: 0 auto 30px;
+	}
+	#cam-messe .description .address {
+		font-size: 42px;
+		line-height: 44px;
+	}
+	#cam-messe .description .right-info {
+		width: 170px;
+		margin: auto;
+	}
+	#cam-messe .description {
+		padding-top: 40px;
+		margin-bottom: 40px;
+	}
+
+
+	#cam-messe .info-offline {
+		border: 2px solid #FFFF01;
+		border-radius: 10px;
+		background: rgba(0,0,0,.50);
+		padding: 20px 15px 20px;
+		margin-bottom: 40px;
+	}
+	#cam-messe .info-offline .title {
+		font-size: 40px;
+		line-height: 50px;
+		margin-bottom: 10px;
+	}
+	#cam-messe .info-offline .sub-ttl{
+		flex-wrap: wrap;
+	}
+	#cam-messe .info-offline .sub-ttl .ttl {
+		font-size: 18px;
+		width: 100%;
+		letter-spacing: 2px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	#cam-messe .info-offline .text br{
+		display: none;
+	}
+	#cam-messe .info-offline .info-content .online-exhibit {
+		width: 100%;
+		padding-left: 0;
+		margin-bottom: 25px;
+	}
+	#cam-messe .info-offline .info-content .offline-exhibit {
+		width: 100%;
+		padding-left: 0;
+	}
+	#cam-messe .info-offline .info-content .ttl-info{
+		margin: 20px auto 30px;
+		width: 110px;
+		height: 110px;
+	}
+	#cam-messe .info-offline .info-content .exhibit-inner {
+		width: 100%;
+		flex-direction: column;
+	}
+	#cam-messe .info-offline .info-content .ttl-box {
+		width: 100%;
+		margin-bottom: 8px;
+	}
+	#cam-messe .info-offline .info-content ul {
+		width: 100%;
+	}
+
+
+	#cam-messe .schedule {
+		border: 2px solid #FFFF01;
+		border-radius: 20px;
+		background: rgba(0,0,0,.50);
+		padding: 20px 15px 20px;
+		color: #fff;
+		margin-bottom: 60px;
+		position: relative;
+		z-index: 5;
+	}
+	#cam-messe .schedule .left-item .ttl{
+		border-right: 2px solid #FFFF01;
+		width: 100%;
+		height: 32px;
+		font-size: 15px;
+		margin: 0;
+	}
+	#cam-messe .schedule .left-item .ttl:after, #cam-messe .schedule .left-item .ttl:before{
+		opacity: 0;
+	}
+	#cam-messe .schedule .left-item {
+		width: 100%;
+		margin-bottom: 12px;
+	}
+	#cam-messe .schedule .schedule-item{
+		margin-bottom: 30px;
+	}
+	#cam-messe .schedule .right-item {
+		padding-left: 0;
+		width: 100%;
+	}
+	#cam-messe .schedule .right-item .text {
+		font-size: 20px;
+		line-height: 28px;
+	}
+	#cam-messe .schedule .right-item .text small {
+		font-size: 13px;
+	}
+	#cam-messe .schedule .right-item .t1-a {
+		font-size: 16px;
+		line-height: 1.6;
+		margin-bottom: 20px;
+	}
+	#cam-messe .schedule .right-item .t1-a span {
+		font-size: 13px;
+		padding-left: 0;
+		display: block;
+		text-indent: -8px;
+	}
+	#cam-messe .schedule .right-item .address .address-item {
+		font-size: 15px;
+		width: 100%;
+		margin-bottom: 12px;
+	}
+	#cam-messe .schedule .right-item .address .tel-item {
+		width: 100%;
+		padding-left: 0;
+		font-size: 15px;
+		padding-top: 0;
+	}
+	#cam-messe .schedule .right-item .venue {
+
+	}
+	#cam-messe .schedule .right-item .venue-item .icon, #cam-messe .schedule .right-item .venue-url .icon {
+		width: 70px;
+		order: 1;
+	}
+	#cam-messe .schedule .right-item .venue-item .venue-text{
+		width: calc(100% - 70px);
+		order: 2;
+		padding-left: 10px !important;
+	}
+	#cam-messe .schedule .right-item .venue-item, #cam-messe .schedule .right-item .venue-url{
+		align-items: center;
+	}
+	#cam-messe .schedule .right-item .coming-soon .icon {
+		width: 70px;
+	}
+	#cam-messe .schedule .schedule-item:last-child{
+		margin-bottom: 0;
+	}
+	#cam-messe .schedule-block .bg-main{
+		bottom: -20px;
+	}
+
+
+	#cam-messe .exhibit-content .heading-block .h-bg{
+		display: inline-block;
+		text-align: center;
+	}
+	#cam-messe .exhibit-content .heading-block .ttl-ja {
+		font-size: 22px;
+		line-height: 30px;
+		letter-spacing: 2px;
+		padding-right: 0px;
+		display: block;
+	}
+	#cam-messe .exhibit-content .heading-block .ttl-en {
+		font-size: 14px;
+		line-height: 20px;
+		display: block;
+	}
+	#cam-messe .exhibit-content .heading-block:before{
+		top: 12px;
+	}
+	#cam-messe .exhibit-content .heading-block:after{
+		top: 30px;
+	}
+	#cam-messe .exhibit-content .exhibit-item.exhibit-ja {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 12px;
+	}
+	#cam-messe .exhibit-content .exhibit-item.exhibit-vi {
+		width: 100%;
+	}
+	#cam-messe .exhibit-content .exhibit-item{
+		padding: 10px 15px 15px;
+	}
+	#cam-messe .exhibit-content .exhibit-item .ttl{
+		font-size: 22px;
+		line-height: 30px;
+	}
+	#cam-messe .exhibit-content .exhibit-item .t1 {
+		font-size: 14px;
+		line-height: 24px;
+		margin-bottom: 10px;
+	}
+	#cam-messe .exhibit-content .exhibition-contents .title{
+		font-size: 16px;
+		line-height: 28px;
+		letter-spacing: 2px;
+		margin: 20px 0;
+	}
+	#cam-messe .exhibit-content .exhibition-contents .title .icon-plus{
+		width: 30px;
+		height: 30px;
+		font-size: 24px;
+		line-height: 16px;
+		padding-bottom: 4px;
+		margin: 0 6px;
+	}
+	#cam-messe .exhibit-content .exhibition-itemInfo .text{
+		font-size: 16px;
+		line-height: 23px;
+		width: 100%;
+	}
+	#cam-messe .exhibit-content .exhibition-itemInfo .icon-plus{
+		width: 30px;
+		height: 30px;
+		font-size: 20px;
+		line-height: 20px;
+	}
+	#cam-messe .exhibit-content .exhibition-itemInfo .ttl {
+		font-size: 20px;
+		width: 100%;
+	}
+	#cam-messe .exhibit-content .exhibition-itemInfo .text {
+		font-size: 16px;
+		line-height: 23px;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		margin-top: 6px;
+	}
+	#cam-messe .exhibit-content .exhibition-itemInfo .text span{
+		width: 30px;
+		height: 30px;
+		margin-right: 15px;
+	}
+	#cam-messe .exhibit-content .exhibition-itemInfo{
+		border-radius: 8px;
+		padding: 14px 15px 10px;
+	}
+	#cam-messe .exhibit-content .exhibition-itemInfo .text p{
+		width: calc(100% - 45px);
+		padding-top: 4px;
+	}
+	#cam-messe .exhibit-content .exhibition-itemInfo .text p br{
+		display: none;
+	}
+
+	#cam-messe .booth-exhibition-fees .heading-block .ttl-ja{
+		font-size: 22px;
+		line-height: 30px;
+		letter-spacing: 2px;
+		padding-right: 0px;
+		display: block;
+	}
+	#cam-messe .booth-exhibition-fees .heading-block .ttl-en{
+		font-size: 14px;
+		line-height: 20px;
+		display: block;
+	}
+	#cam-messe .booth-exhibition-fees .heading-block .h-bg{
+		display: block;
+		text-align: center;
+	}
+	#cam-messe .booth-exhibition-fees .heading-block:before{
+		top: 12px;
+	}
+	#cam-messe .booth-exhibition-fees .heading-block:after{
+		top: 30px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item .ttl-box{
+		font-size: 16px;
+		line-height: 30px;
+		height: 36px;
+		margin: 0 auto -16px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item .price-item .t1 {
+		font-size: 24px;
+		line-height: 30px;
+		color: #fff;
+		font-weight: bold;
+		margin-bottom: 6px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item .num-price .num{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item .tax{
+		font-size: 14px;
+		line-height: 22px;
+		margin-left: 0;
+		padding: 0 16px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item .price-item:after{
+		border-left: 6px solid #fff;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item .price-item{
+		padding-left: 18px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item .num-price{
+		margin-bottom: 16px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item .text-border{
+		font-size: 16px;
+		line-height: 24px;
+		padding: 8px 0;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item .note {
+		font-size: 13px;
+		line-height: 20px;
+		margin-top: 15px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(2) .price-item .t1 {
+		font-size: 20px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item .price-item .t1 span {
+		font-size: 16px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(2) .num-price .num {
+		font-size: 34px;
+		line-height: 50px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(1) .tax:before {
+		font-size: 50px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(1) .tax:after {
+		font-size: 50px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(1) .tax {
+		padding: 0 22px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item .tax:before,
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item .tax:after{
+		font-size: 34px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-item:nth-child(2) .text-border {
+		padding: 5px 0;
+	}
+	#cam-messe .schedule .right-item .venue-url .venue-text .url a{
+		font-size: 14px;
+	}
+	#cam-messe .booth-exhibition-fees .booth-exhibition-list{
+		row-gap: 30px;
+	}
+
+
+	#cam-messe .contact-form{
+		padding: 20px 15px 28px;
+		margin-bottom: 50px;
+	}
+	#cam-messe .contact-form .contact-submit {
+		padding-top: 0;
+	}
+	#cam-messe .contact-form .heading-block span{
+		padding: 0;
+	}
+	#cam-messe .contact-form .heading-block:before{
+		display: none;
+	}
+	#cam-messe .contact-form .heading-block {
+		line-height: 26px;
+		margin-bottom: 29px;
+	}
+	#cam-messe .contact-form .field-group .title {
+		width: 100%;
+		font-size: 20px;
+		line-height: 29px;
+		padding-top: 0;
+		letter-spacing: 0.5px;
+		margin-bottom: 9px;
+	}
+	#cam-messe .contact-form .field-group .title .required {
+		font-size: 15px;
+		line-height: 19px;
+	}
+	#cam-messe .contact-form .field-group .container-input{
+		width: 100%;
+	}
+	#cam-messe .contact-form .field-group .container-input.half-item{
+		column-gap: 10px;
+	}
+	#cam-messe .contact-form .field-group{
+		margin-bottom: 15px;
+	}
+	#cam-messe .contact-form .field-group .container-input input {
+		font-size: 16px;
+		padding: 10px 18px;
+	}
+	#cam-messe .contact-form .field-group .container-input textarea {
+		font-size: 16px;
+		line-height: 30px;
+		height: 230px;
+	}
+	#cam-messe .contact-form .box-policy>p {
+		display: block;
+	}
+	#cam-messe .contact-form .box-policy {
+		font-size: 20px;
+		line-height: 40px;
+		max-width: 240px;
+		margin: auto;
+		padding-right: 0;
+		padding-bottom: 60px;
+	}
+	#cam-messe .contact-form .box-policy br{
+		display: none;
+	}
+	#cam-messe .contact-form .box-policy .mwform-checkbox-field-text:before{
+		top: unset;
+		bottom: 5px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 38px;
+		height: 38px;
+	}
+	#cam-messe .contact-form .box-policy .mwform-checkbox-field-text:after{
+		width: 10px;
+		height: 20px;
+		border: solid #000;
+		border-width: 0 4px 4px 0;
+		top: unset;
+		bottom: 12px;
+		right: unset;
+		left: 49.5%;
+		transform: rotate(45deg) translateX(-50%);
+	}
+	#cam-messe .contact-form .heading-complete{
+		font-size: 16px;
+		padding: 0 15px;
+	}
+	#cam-messe .contact-form .privacy .error{
+		padding-left: 10px;
+	}
+
+
+
+	#cam-messe #footer {
+		padding: 20px 0px 25px;
+	}
+	#cam-messe #footer .footer-top .logo-footer {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	#cam-messe #footer .footer-top .menuList-footer {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
+	#cam-messe #footer .footer-top .logo-footer img{
+		width: 202px;
+	}
+	#cam-messe #footer .menuItem-footer {
+		padding-right: 0;
+	}
+	#cam-messe #footer .menuItem-footer a {
+		font-size: 15px;
+	}
+	#cam-messe #footer .menuItem-footer {
+		margin-bottom: 6px;
+	}
+	#cam-messe #footer .menuItem-footer:after{
+		display: none;
+	}
+	#cam-messe #footer .footer-top .copyright{
+		width: 100%;
+	}
+
+
+
+
+}
+
