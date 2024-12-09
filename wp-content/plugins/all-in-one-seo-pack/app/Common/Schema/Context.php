@@ -19,7 +19,7 @@ class Context {
 	 *
 	 * @var Breadcrumb
 	 */
-	private $breadcrumb = null;
+	public $breadcrumb = null;
 
 	/**
 	 * Class constructor.
@@ -28,6 +28,22 @@ class Context {
 	 */
 	public function __construct() {
 		$this->breadcrumb = new Breadcrumb();
+	}
+
+	/**
+	 * Returns the default context data.
+	 *
+	 * @since 4.3.0
+	 *
+	 * @return array The context data.
+	 */
+	public function defaults() {
+		return [
+			'name'        => aioseo()->meta->title->getTitle(),
+			'description' => aioseo()->meta->description->getDescription(),
+			'url'         => aioseo()->helpers->getUrl(),
+			'breadcrumb'  => []
+		];
 	}
 
 	/**
@@ -207,7 +223,7 @@ class Context {
 			'url'         => aioseo()->helpers->getUrl()
 		];
 
-		$context['breadcrumb'] = $this->breadcrumb->date( $context );
+		$context['breadcrumb'] = $this->breadcrumb->date();
 
 		return $context;
 	}

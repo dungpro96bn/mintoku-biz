@@ -19,7 +19,7 @@ class Divi extends Base {
 	 *
 	 * @var array
 	 */
-	public $themes = [ 'Divi' ];
+	public $themes = [ 'Divi', 'Extra' ];
 
 	/**
 	 * The plugin files.
@@ -75,7 +75,7 @@ class Divi extends Base {
 		add_action( 'wp_footer', [ $this, 'addContainers' ] );
 		add_action( 'wp_footer', [ $this, 'addIframeWatcher' ] );
 		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue' ] );
-		add_filter( 'script_loader_tag', [ $this, 'addEtTag' ], 10, 3 );
+		add_filter( 'script_loader_tag', [ $this, 'addEtTag' ], 10, 2 );
 	}
 
 	/**
@@ -90,7 +90,7 @@ class Divi extends Base {
 			return;
 		}
 
-		aioseo()->core->assets->load( 'src/vue/standalone/divi-admin/main.js', [], aioseo()->helpers->getVueData() );
+		aioseo()->core->assets->load( 'src/vue/standalone/page-builders/divi-admin/main.js', [], aioseo()->helpers->getVueData() );
 
 		aioseo()->main->enqueueTranslations();
 	}
@@ -102,12 +102,11 @@ class Divi extends Base {
 	 *
 	 * @param  string $tag    The <script> tag for the enqueued script.
 	 * @param  string $handle The script's registered handle.
-	 * @param  string $src    The script's source URL.
 	 * @return string         The tag.
 	 */
-	public function addEtTag( $tag, $handle ) {
+	public function addEtTag( $tag, $handle = '' ) {
 		$scriptHandles = [
-			'aioseo/js/src/vue/standalone/divi/main.js',
+			'aioseo/js/src/vue/standalone/page-builders/divi/main.js',
 			'aioseo/js/src/vue/standalone/app/main.js'
 		];
 
@@ -166,5 +165,60 @@ class Divi extends Base {
 		}
 
 		return et_pb_is_pagebuilder_used( $postId );
+	}
+
+	/**
+	 * Returns the Divi edit url for the given Post ID.
+	 *
+	 * @since 4.3.1
+	 *
+	 * @param  int    $postId The Post ID.
+	 * @return string         The Edit URL.
+	 */
+	public function getEditUrl( $postId ) {
+		if ( ! function_exists( 'et_fb_get_vb_url' ) ) {
+			return '';
+		}
+
+		$isDiviLibrary = 'et_pb_layout' === get_post_type( $postId );
+		$editUrl       = $isDiviLibrary ? get_edit_post_link( $postId, 'raw' ) : get_permalink( $postId );
+
+		if ( et_pb_is_pagebuilder_used( $postId ) ) {
+			$editUrl = et_fb_get_vb_url( $editUrl );
+		} else {
+			if ( ! et_pb_is_allowed( 'divi_builder_control' ) ) {
+				// Prevent link when user lacks `Toggle Divi Builder` capability.
+				return '';
+			}
+
+			$editUrl = add_query_arg(
+				[ 'et_fb_activation_nonce' => wp_create_nonce( 'et_fb_activation_nonce_' . $postId ) ],
+				$editUrl
+			);
+		}
+
+		return $editUrl;
+	}
+
+	/**
+	 * Checks whether or not we should prevent the date from being modified.
+	 *
+	 * @since 4.5.2
+	 *
+	 * @param  int  $postId The Post ID.
+	 * @return bool         Whether or not we should prevent the date from being modified.
+	 */
+	public function limitModifiedDate( $postId ) {
+		// This method is supposed to be used in the `wp_ajax_et_fb_ajax_save` action.
+		if ( empty( $_REQUEST['et_fb_save_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_REQUEST['et_fb_save_nonce'] ) ), 'et_fb_save_nonce' ) ) {
+			return false;
+		}
+
+		$editorPostId = ! empty( $_REQUEST['post_id'] ) ? intval( $_REQUEST['post_id'] ) : 0;
+		if ( $editorPostId !== $postId ) {
+			return false;
+		}
+
+		return ! empty( $_REQUEST['options']['conditional_tags']['aioseo_limit_modified_date'] );
 	}
 }

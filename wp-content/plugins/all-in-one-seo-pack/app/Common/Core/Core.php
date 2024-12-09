@@ -16,23 +16,28 @@ use AIOSEO\Plugin\Common\Utils;
  */
 class Core {
 	/**
-	 * AIOSEO Tables.
+	 * List of AIOSEO tables.
 	 *
 	 * @since 4.2.5
 	 *
 	 * @var array
 	 */
 	private $aioseoTables = [
+		'aioseo_cache',
+		'aioseo_crawl_cleanup_blocked_args',
+		'aioseo_crawl_cleanup_logs',
+		'aioseo_links',
+		'aioseo_links_suggestions',
 		'aioseo_notifications',
 		'aioseo_posts',
-		'aioseo_terms',
 		'aioseo_redirects',
+		'aioseo_redirects_404',
 		'aioseo_redirects_404_logs',
 		'aioseo_redirects_hits',
 		'aioseo_redirects_logs',
-		'aioseo_cache',
-		'aioseo_links',
-		'aioseo_links_suggestions'
+		'aioseo_terms',
+		'aioseo_search_statistics_objects',
+		'aioseo_revisions'
 	];
 
 	/**
@@ -45,16 +50,16 @@ class Core {
 	public $fs = null;
 
 	/**
-	 * Filesystem class instance.
+	 * Assets class instance.
 	 *
 	 * @since 4.2.7
 	 *
-	 * @var Utils\Filesystem
+	 * @var Utils\Assets
 	 */
 	public $assets = null;
 
 	/**
-	 * Assets class instance.
+	 * DB class instance.
 	 *
 	 * @since 4.2.7
 	 *
@@ -90,7 +95,7 @@ class Core {
 	public $cachePrune = null;
 
 	/**
-	 * Cache class instance.
+	 * Options Cache class instance.
 	 *
 	 * @since 4.2.7
 	 *
@@ -122,31 +127,41 @@ class Core {
 	 * @return void
 	 */
 	public function uninstallDb( $force = false ) {
+		// Don't call `aioseo()->options` as it's not loaded during uninstall.
+		$aioseoOptions = get_option( 'aioseo_options', '' );
+		$aioseoOptions = json_decode( $aioseoOptions, true );
+
 		// Confirm that user has decided to remove all data, otherwise stop.
-		if ( ! $force && ! aioseo()->options->advanced->uninstall ) {
+		if (
+			! $force &&
+			empty( $aioseoOptions['advanced']['uninstall'] )
+		) {
 			return;
 		}
 
 		// Delete all our custom tables.
 		global $wpdb;
+
+		// phpcs:disable WordPress.DB.DirectDatabaseQuery
 		foreach ( $this->getDbTables() as $tableName ) {
-			$wpdb->query( 'DROP TABLE IF EXISTS ' . $tableName ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
+			$wpdb->query( $wpdb->prepare( 'DROP TABLE IF EXISTS %s', $tableName ) );
 		}
 
 		// Delete all AIOSEO Locations and Location Categories.
-		$wpdb->query( "DELETE FROM {$wpdb->posts} WHERE post_type = 'aioseo-location'" );
-		$wpdb->query( "DELETE FROM {$wpdb->term_taxonomy} WHERE taxonomy = 'aioseo-location-category'" );
+		$wpdb->delete( $wpdb->posts, [ 'post_type' => 'aioseo-location' ], [ '%s' ] );
+		$wpdb->delete( $wpdb->term_taxonomy, [ 'taxonomy' => 'aioseo-location-category' ], [ '%s' ] );
 
 		// Delete all the plugin settings.
-		$wpdb->query( "DELETE FROM {$wpdb->options} WHERE option_name LIKE 'aioseo\_%'" );
+		$wpdb->query( $wpdb->prepare( "DELETE FROM {$wpdb->options} WHERE option_name LIKE %s", 'aioseo\_%' ) );
 
 		// Remove any transients we've left behind.
-		$wpdb->query( "DELETE FROM {$wpdb->options} WHERE option_name LIKE '\_aioseo\_%'" );
-		$wpdb->query( "DELETE FROM {$wpdb->options} WHERE option_name LIKE 'aioseo\_%'" );
+		$wpdb->query( $wpdb->prepare( "DELETE FROM {$wpdb->options} WHERE option_name LIKE %s", '\_aioseo\_%' ) );
+		$wpdb->query( $wpdb->prepare( "DELETE FROM {$wpdb->options} WHERE option_name LIKE %s", 'aioseo\_%' ) );
 
 		// Delete all entries from the action scheduler table.
-		$wpdb->query( "DELETE FROM {$wpdb->prefix}actionscheduler_actions WHERE hook LIKE 'aioseo\_%'" );
-		$wpdb->query( "DELETE FROM {$wpdb->prefix}actionscheduler_groups WHERE slug = 'aioseo'" );
+		$wpdb->query( $wpdb->prepare( "DELETE FROM {$wpdb->prefix}actionscheduler_actions WHERE hook LIKE %s", 'aioseo\_%' ) );
+		$wpdb->query( $wpdb->prepare( "DELETE FROM {$wpdb->prefix}actionscheduler_groups WHERE slug = %s", 'aioseo' ) );
+		// phpcs:enable
 	}
 
 	/**
@@ -165,5 +180,26 @@ class Core {
 		}
 
 		return $tables;
+	}
+
+	/**
+	 * Check if the current request is uninstalling (deleting) AIOSEO.
+	 *
+	 * @since 4.3.7
+	 *
+	 * @return bool Whether AIOSEO is being uninstalled/deleted or not.
+	 */
+	public function isUninstalling() {
+		if (
+			defined( 'AIOSEO_FILE' ) &&
+			defined( 'WP_UNINSTALL_PLUGIN' )
+		) {
+			// Make sure `plugin_basename()` exists.
+			include_once ABSPATH . 'wp-admin/includes/plugin.php';
+
+			return WP_UNINSTALL_PLUGIN === plugin_basename( AIOSEO_FILE );
+		}
+
+		return false;
 	}
 }

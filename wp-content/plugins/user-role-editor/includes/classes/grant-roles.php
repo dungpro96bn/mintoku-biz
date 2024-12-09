@@ -359,7 +359,7 @@ class URE_Grant_Roles {
         $other_roles = array_values($user->roles);
         $primary_role = array_shift($other_roles);
         
-        $answer = array('result'=>'success', 'primary_role'=>$primary_role, 'other_roles'=>$other_roles);
+        $answer = array('result'=>'success', 'primary_role'=>$primary_role, 'other_roles'=>$other_roles, 'message'=>'User roles were sent');
         
         return $answer;
     }
@@ -375,13 +375,13 @@ class URE_Grant_Roles {
         }
 ?>        
         <span style="font-weight: bold;">
-            <?php esc_html_e('Primary Role: ', 'role-editor');?> 
+            <?php esc_html_e('Primary Role: ', 'user-role-editor');?> 
         </span>
         <select name="primary_role" id="primary_role">
 <?php            
         // print the full list of roles with the primary one selected.
         wp_dropdown_roles('');
-        echo '<option value="'. self::NO_ROLE_FOR_THIS_SITE .'">' . esc_html__('&mdash; No role for this site &mdash;') . '</option>'. PHP_EOL;
+        echo '<option value="'. self::NO_ROLE_FOR_THIS_SITE .'">' . esc_html__('&mdash; No role for this site &mdash;', 'user-role-editor') . '</option>'. PHP_EOL;
 ?>        
         </select>
         <hr/>
@@ -395,19 +395,23 @@ class URE_Grant_Roles {
         <div id="other_roles_container">
             <span style="font-weight: bold;">
 <?php          
-        esc_html_e('Other Roles: ', 'role-editor');
+        esc_html_e('Other Roles: ', 'user-role-editor');
 ?>        
         </span><br>
 <?php        
+        // Is PolyLang plugin active?
+        $use_pll = function_exists('pll__');    
+        
         $show_admin_role = $this->lib->show_admin_role_allowed();        
         $roles = $this->lib->get_all_editable_roles(); 
         foreach ($roles as $role_id => $role) {
             if (!$show_admin_role && $role_id=='administrator') {
                 continue;
             }
+            $role_name = $use_pll ? pll__( $role['name'] ) : $role['name'];
             echo '<label for="wp_role_' . $role_id . '"><input type="checkbox"	id="wp_role_' . $role_id .
                  '" name="ure_roles[]" value="' . $role_id . '" />&nbsp;' .
-            esc_html__($role['name'], 'user-role-editor') .' ('. $role_id .')</label><br />'. PHP_EOL;            
+            esc_html( $role_name ) .' ('. $role_id .')</label><br />'. PHP_EOL;
         }
 ?>
         </div>
@@ -478,9 +482,9 @@ class URE_Grant_Roles {
 
         $show_wp_change_role = apply_filters('ure_users_show_wp_change_role', true);
         
-        wp_enqueue_script('jquery-ui-dialog', '', array('jquery-ui-core','jquery-ui-button', 'jquery') );
-        wp_register_script('ure-users-grant-roles', plugins_url('/js/users-grant-roles.js', URE_PLUGIN_FULL_PATH ), array(), URE_VERSION );
-        wp_enqueue_script('ure-users-grant-roles', '', array(), false, true);
+        wp_enqueue_script('jquery-ui-dialog', '', array('jquery-ui-core','jquery-ui-button', 'jquery'), false, true );
+        wp_register_script('ure-users-grant-roles', plugins_url('/js/users-grant-roles.js', URE_PLUGIN_FULL_PATH ), array(), URE_VERSION, true );
+        wp_enqueue_script('ure-users-grant-roles');
         wp_localize_script('ure-users-grant-roles', 'ure_users_grant_roles_data', array(
             'wp_nonce' => wp_create_nonce('user-role-editor'),
             'dialog_title'=> esc_html__('Grant roles to selected users', 'user-role-editor'),

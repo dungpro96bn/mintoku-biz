@@ -80,7 +80,7 @@ class Image {
 			return;
 		}
 		// Action Scheduler hooks.
-		add_filter( 'init', [ $this, 'scheduleScan' ], 3001 );
+		add_action( 'init', [ $this, 'scheduleScan' ], 3001 );
 	}
 
 	/**
@@ -124,7 +124,7 @@ class Image {
 			->select( '`p`.`ID`, `p`.`post_type`, `p`.`post_content`, `p`.`post_excerpt`, `p`.`post_modified_gmt`' )
 			->leftJoin( 'aioseo_posts as ap', '`ap`.`post_id` = `p`.`ID`' )
 			->whereRaw( '( `ap`.`id` IS NULL OR `p`.`post_modified_gmt` > `ap`.`image_scan_date` OR `ap`.`image_scan_date` IS NULL )' )
-			->where( 'p.post_status', 'publish' )
+			->whereRaw( "`p`.`post_status` IN ( 'publish', 'inherit' )" )
 			->whereRaw( "`p`.`post_type` IN ( '$postTypes' )" )
 			->limit( $postsPerScan )
 			->run()
@@ -148,7 +148,7 @@ class Image {
 	 *
 	 * @since 4.0.0
 	 *
-	 * @param  WP_Post|int $post The post object or ID.
+	 * @param  \WP_Post|int $post The post object or ID.
 	 * @return void
 	 */
 	public function scanPost( $post ) {
@@ -165,7 +165,7 @@ class Image {
 		}
 
 		if ( 'attachment' === $post->post_type ) {
-			if ( ! wp_attachment_is( 'image', $post ) ) {
+			if ( ! wp_attachment_is( 'image', $post->ID ) ) {
 				$this->updatePost( $post->ID );
 
 				return;
@@ -192,8 +192,8 @@ class Image {
 	 *
 	 * @since 4.0.0
 	 *
-	 * @param  WP_Term $term The term object.
-	 * @return array         The image entries.
+	 * @param  \WP_Term $term The term object.
+	 * @return array          The image entries.
 	 */
 	public function term( $term ) {
 		if ( aioseo()->sitemap->helpers->excludeImages() ) {
@@ -226,10 +226,10 @@ class Image {
 				continue;
 			}
 
-			$entries[] = [ 'image:loc' => $imageUrl ];
+			$entries[ $idOrUrl ] = [ 'image:loc' => $imageUrl ];
 		}
 
-		return $entries;
+		return array_values( $entries );
 	}
 
 	/**
@@ -272,7 +272,7 @@ class Image {
 		$images = array_merge( $images, $this->getPostGalleryImages() );
 
 		// Now, get the remaining images from image tags in the post content.
-		$parsedPostContent = function_exists( 'do_blocks' ) ? do_blocks( $this->post->post_content ) : $this->post->post_content; // phpcs:disable AIOSEO.WpFunctionUse.NewFunctions
+		$parsedPostContent = do_blocks( $this->post->post_content );
 		$parsedPostContent = aioseo()->helpers->doShortcodes( $parsedPostContent, true, $this->post->ID );
 		$parsedPostContent = preg_replace( '/\s\s+/u', ' ', trim( $parsedPostContent ) ); // Trim both internal and external whitespace.
 
@@ -280,8 +280,8 @@ class Image {
 		$thirdParty = new ThirdParty( $this->post, $parsedPostContent );
 		$images     = array_merge( $images, $thirdParty->extract() );
 
-		preg_match_all( '#<img[^>]+src="([^">]+)"#', $parsedPostContent, $matches );
-		foreach ( $matches[1] as $url ) {
+		preg_match_all( '#<(amp-)?img[^>]+src="([^">]+)"#', (string) $parsedPostContent, $matches );
+		foreach ( $matches[2] as $url ) {
 			$images[] = aioseo()->helpers->makeUrlAbsolute( $url );
 		}
 

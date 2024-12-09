@@ -1,9 +1,9 @@
 === User Role Editor ===
 Contributors: shinephp
-Tags: user, role, editor, security, access, permission, capability
+Tags: user, role, editor, security, access
 Requires at least: 4.4
-Tested up to: 6.1.1
-Stable tag: 4.63.2
+Tested up to: 6.7.1
+Stable tag: 4.64.3
 Requires PHP: 7.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -82,20 +82,29 @@ https://translate.wordpress.org/projects/wp-plugins/user-role-editor/
 
 == Changelog =
 
-= [4.63.2] 16.12.2022 =
-* Update: symbols '{}$' are removed from capability name before use it for internal purpose, to exclude cases like when one of plugins broke URE work adding capability like 'edit_{$type}s'.
-* Update: array_merge() function is replaced with wrapper ure_array_merge(), to exclude fatal error: Argument #2 must be of type array.
+= [4.64.3] 03.12.2024 =
+* Update: Marked as compatible with WordPress 6.7.1
+* Fix: PHP Notice:  "Function _load_textdomain_just_in_time was called incorrectly. Translation loading for the <code>user-role-editor</code> domain was triggered too early." was fixed (shown only for those who used own .mo translation file installed).
+* Fix: Miscellaneous translation functionality (l18n) usage enhancements were applied.
 
-= [4.63.1] 20.09.2022 =
-* Marked as compatible with WordPress version 6.0.2
-* Fix: PHP Warning: Attempt to read property “ID” on null in /wp-content/plugins/user-role-editor/includes/classes/user-role-editor.php on line 369
-* Fix: Deprecated: Automatic conversion of false to array is deprecated in ./includes/classes/base-lib.php on line 212
+= [4.64.2] 19.02.2024 =
+* Update: Marked as compatible with WordPress 6.4.3
+* Update: URE_Advertisement: rand() is replaced with wp_rand().
+* Update: URE_Ajax_Proccessor: json_encode() is replaced with wp_json_encode().
+* Update: User_Role_Editor::load_translation(): load_plugin_textdomain() is called with the 2nd parameter value false, instead of deprecated ''.
+* Update: URE_Lib::is_right_admin_path(): parse_url() is replaced with wp_parse_url().
+* Update: URE_Lib::user_is_admin() does not call WP_User::has_cap() to enhance performance.
+* Update: Plugin version was added to CSS loaded to the "Users", "Users->User Role Editor", "Settings->User Role Editor" pages.
+* Update: All JavaScript files are loaded in footer now.
+* Fix: "Users->Add New Users". Unneeded extra '<table></table>' HTML tags was removed (thanks to Alejandro A. for this bug report). 
 
-= [4.63] 11.07.2022 =
-* Update: Marked as compatible with WordPress 6.0.1
-* Update: Few notices (e.g. "Constant FILTER_SANITIZE_STRING is deprecated") was fixed for better compatibility with PHP 8.1.
-* Update: URE does not try to deactivate itself in case another instance is active, just shows notice and stops execution. 
- 
+= [4.64.1] 24.10.2023 =
+* Update: Marked as compatible with WordPress 6.4
+* Fix: Notice shown by PHP 8.3 is removed: PHP Deprecated: Creation of dynamic property URE_Editor::$hide_pro_banner is deprecated in /wp-content/plugins/user-role-editor/includes/classes/editor.php on line 166
+* Fix: Notice shown by PHP 8.3 is removed: PHP Deprecated: Creation of dynamic property URE_Role_View::$caps_to_remove is deprecated in /wp-content/plugins/user-role-editor/includes/classes/role-view.php on line 23
+* Fix: Notice shown by PHP 8.3 is removed: PHP Deprecated: Function utf8_decode() is deprecated in /wp-content/plugins/user-role-editor-pro/includes/classes/editor.php on line 984
+
+
 File changelog.txt contains the full list of changes.
 
 == Additional Documentation ==
@@ -106,10 +115,12 @@ I am ready to answer on your questions about plugin usage. Use [plugin page comm
 
 == Upgrade Notice ==
 
-= [4.63.1] 19.09.2022 =
-* Marked as compatible with WordPress version 6.0.2
-* Fix: PHP Warning: Attempt to read property “ID” on null in /wp-content/plugins/user-role-editor/includes/classes/user-role-editor.php on line 369
-* Fix: Deprecated: Automatic conversion of false to array is deprecated in ./includes/classes/base-lib.php on line 212
-
-
-
+= [4.64.2] 19.02.2023 =
+* Update: URE_Advertisement: rand() is replaced with wp_rand().
+* Update: URE_Ajax_Proccessor: json_encode() is replaced with wp_json_encode().
+* Update: User_Role_Editor::load_translation(): load_plugin_textdomain() is called with the 2nd parameter value false, instead of deprecated ''.
+* Update: URE_Lib::is_right_admin_path(): parse_url() is replaced with wp_parse_url().
+* Update: URE_Lib::user_is_admin() does not call WP_User::has_cap() to enhance performance.
+* Update: Plugin version was added to CSS loaded to the "Users", "Users->User Role Editor", "Settings->User Role Editor" pages.
+* Update: All JavaScript files are loaded in footer now.
+* Fix: "Users->Add New Users". Unneeded extra '<table></table>' HTML tags was removed (thanks to Alejandro A. for this bug report). 

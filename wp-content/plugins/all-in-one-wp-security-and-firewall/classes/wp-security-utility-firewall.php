@@ -24,12 +24,25 @@ class AIOWPSecurity_Utility_Firewall {
 	/**
 	 * Returns the firewall rules path.
 	 *
+	 * @param boolean $mkdir - whether or not to create the directory if it doesn't exist
+	 *
 	 * @return string
 	 */
-	public static function get_firewall_rules_path() {
+	public static function get_firewall_rules_path($mkdir = false) {
 		$upload_dir_info = wp_get_upload_dir();
-		$firewall_rules_path = trailingslashit($upload_dir_info['basedir'].'/aios/firewall-rules');
-		wp_mkdir_p($firewall_rules_path);
+		$base = $upload_dir_info['basedir'];
+
+		// We want the base to always point to the main site's upload directory and not the subsite's.
+		if (!is_main_site()) {
+			$base = preg_replace('#/sites/'.get_current_blog_id().'/?$#', '', $base);
+		}
+
+		$firewall_rules_path = trailingslashit("{$base}/aios/firewall-rules");
+
+		if ($mkdir) {
+			wp_mkdir_p($firewall_rules_path);
+		}
+
 		return wp_normalize_path($firewall_rules_path);
 	}
 
@@ -95,15 +108,22 @@ class AIOWPSecurity_Utility_Firewall {
 	 * @return string - returns the directive if set, or empty string if not set
 	 */
 	public static function get_already_set_directive($source = '') {
-
+		global $aio_wp_security;
 		if (!empty($source)) {
 			clearstatcache();
 			if (file_exists($source) && is_readable($source)) {
-					
-				$vals = @parse_ini_file($source); // phpcs:ignore Generic.PHP.NoSilencedErrors.Discouraged -- ignore this
-	
-				if (false !== $vals && isset($vals['auto_prepend_file'])) {
-					return $vals['auto_prepend_file'];
+				try {
+					$vals = @parse_ini_file($source); // phpcs:ignore Generic.PHP.NoSilencedErrors.Discouraged -- ignore this
+
+					if (false !== $vals && isset($vals['auto_prepend_file'])) {
+						return $vals['auto_prepend_file'];
+					}
+				} catch (Exception $exception) {
+					$aio_wp_security->debug_logger->log_debug($exception->getMessage(), 4);
+					return '';
+				} catch (Error $error) {
+					$aio_wp_security->debug_logger->log_debug($error->getMessage(), 4);
+					return '';
 				}
 			}
 		} else {
@@ -165,6 +185,8 @@ class AIOWPSecurity_Utility_Firewall {
 		);
 
 		foreach ($files as $file) {
+			if (AIOWPSecurity_Utility_Firewall::MANUAL_SETUP === $file) continue;
+			
 			if ($is_in_bootstrap && (true === $file->contains_contents())) return true;
 		}
 
@@ -194,7 +216,7 @@ class AIOWPSecurity_Utility_Firewall {
 			if (true === $file->contains_contents()) {
 
 				$removed = $file->remove_contents();
-				
+
 				if (is_wp_error($removed)) {
 					$error_message = $removed->get_error_message();
 					$error_message .= ' - ';
@@ -211,8 +233,7 @@ class AIOWPSecurity_Utility_Firewall {
 			@unlink($muplugin_path); // phpcs:ignore Generic.PHP.NoSilencedErrors.Discouraged -- ignore this
 		}
 
-		$aio_wp_security->configs->set_value('aios_firewall_dismiss', false);
-		$aio_wp_security->configs->save_config();
+		$aio_wp_security->configs->set_value('aios_firewall_dismiss', false, true);
 	}
 
 }

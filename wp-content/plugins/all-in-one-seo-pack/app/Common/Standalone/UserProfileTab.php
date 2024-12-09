@@ -20,7 +20,7 @@ class UserProfileTab {
 		}
 
 		add_action( 'admin_enqueue_scripts', [ $this, 'enqueueScript' ] );
-		add_action( 'profile_update', [ $this, 'updateUserSocialProfiles' ], 10, 1 );
+		add_action( 'profile_update', [ $this, 'updateUserSocialProfiles' ] );
 	}
 
 	/**
@@ -35,7 +35,11 @@ class UserProfileTab {
 			return;
 		}
 
-		$screen = get_current_screen();
+		$screen = aioseo()->helpers->getCurrentScreen();
+		if ( empty( $screen->id ) ) {
+			return;
+		}
+
 		if ( ! in_array( $screen->id, [ 'user-edit', 'profile' ], true ) ) {
 			if ( 'follow-up_page_followup-emails-reports' === $screen->id ) {
 				aioseo()->core->assets->load( 'src/vue/standalone/user-profile-tab/follow-up-emails-nav-bar.js' );
@@ -59,7 +63,7 @@ class UserProfileTab {
 	 *
 	 * @return array
 	 */
-	private function getVueData() {
+	public function getVueData() {
 		global $user_id;
 
 		$socialProfiles = $this->getSocialProfiles();
@@ -73,7 +77,7 @@ class UserProfileTab {
 			$sameUsername = [
 				'enable'   => false,
 				'username' => '',
-				'included' => [ 'facebookPageUrl', 'twitterUrl', 'pinterestUrl', 'instagramUrl', 'youtubeUrl', 'linkedinUrl' ] // Same as in Options.php.
+				'included' => [ 'facebookPageUrl', 'twitterUrl', 'tiktokUrl', 'pinterestUrl', 'instagramUrl', 'youtubeUrl', 'linkedinUrl' ] // Same as in Options.php.
 			];
 		}
 
@@ -106,7 +110,7 @@ class UserProfileTab {
 	 * @return void
 	 */
 	public function updateUserSocialProfiles( $userId ) {
-		if ( empty( $_POST['_wpnonce'] ) || ! wp_verify_nonce( $_POST['_wpnonce'], 'update-user_' . $userId ) ) {
+		if ( empty( $_POST['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['_wpnonce'] ) ), 'update-user_' . $userId ) ) {
 			return;
 		}
 
@@ -155,6 +159,7 @@ class UserProfileTab {
 			'facebookPageUrl' => '',
 			'twitterUrl'      => '',
 			'instagramUrl'    => '',
+			'tiktokUrl'       => '',
 			'pinterestUrl'    => '',
 			'youtubeUrl'      => '',
 			'linkedinUrl'     => '',
@@ -162,7 +167,8 @@ class UserProfileTab {
 			'yelpPageUrl'     => '',
 			'soundCloudUrl'   => '',
 			'wikipediaUrl'    => '',
-			'myspaceUrl'      => ''
+			'myspaceUrl'      => '',
+			'wordPressUrl'    => '',
 		];
 	}
 }

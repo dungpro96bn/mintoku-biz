@@ -18,7 +18,7 @@ namespace AIOSEO\Plugin {
 		 *
 		 * @since 4.0.0
 		 *
-		 * @var AIOSEO\Plugin\AIOSEO
+		 * @var AIOSEO
 		 */
 		private static $instance;
 
@@ -93,7 +93,9 @@ namespace AIOSEO\Plugin {
 			$this->constants();
 			$this->includes();
 			$this->preLoad();
-			$this->load();
+			if ( ! $this->core->isUninstalling() ) {
+				$this->load();
+			}
 		}
 
 		/**
@@ -154,7 +156,7 @@ namespace AIOSEO\Plugin {
 				}
 
 				if ( $shouldRequire ) {
-					require AIOSEO_DIR . $path;
+					require_once AIOSEO_DIR . $path;
 				}
 			}
 
@@ -184,7 +186,9 @@ namespace AIOSEO\Plugin {
 			$dotenv = \Dotenv\Dotenv::createUnsafeImmutable( AIOSEO_DIR, '/build/.env' );
 			$dotenv->load();
 
-			$version = strtolower( getenv( 'VITE_VERSION' ) );
+			$version = defined( 'AIOSEO_DEV_VERSION' )
+				? strtolower( AIOSEO_DEV_VERSION )
+				: strtolower( getenv( 'VITE_VERSION' ) );
 			if ( ! empty( $version ) ) {
 				$this->isDev = true;
 
@@ -261,20 +265,20 @@ namespace AIOSEO\Plugin {
 				$translations = new Pro\Main\Translations(
 					'plugin',
 					'all-in-one-seo-pack',
-					'https://packages.translationspress.com/aioseo/all-in-one-seo-pack/packages.json'
+					'https://aioseo.com/aioseo-plugin/all-in-one-seo-pack/packages.json'
 				);
 				$translations->init();
 
 				$translations = new Pro\Main\Translations(
 					'plugin',
 					'aioseo-pro',
-					'https://packages.translationspress.com/aioseo/aioseo-pro/packages.json'
+					'https://aioseo.com/aioseo-plugin/aioseo-pro/packages.json'
 				);
 				$translations->init();
 			}
 
-			$this->thirdParty         = new Common\ThirdParty\ThirdParty();
 			$this->addons             = $this->pro ? new Pro\Utils\Addons() : new Common\Utils\Addons();
+			$this->features           = $this->pro ? new Pro\Utils\Features() : new Common\Utils\Features();
 			$this->tags               = $this->pro ? new Pro\Utils\Tags() : new Common\Utils\Tags();
 			$this->blocks             = new Common\Utils\Blocks();
 			$this->badBotBlocker      = new Common\Tools\BadBotBlocker();
@@ -307,18 +311,25 @@ namespace AIOSEO\Plugin {
 			$this->sitemap            = $this->pro ? new Pro\Sitemap\Sitemap() : new Common\Sitemap\Sitemap();
 			$this->htmlSitemap        = new Common\Sitemap\Html\Sitemap();
 			$this->templates          = $this->pro ? new Pro\Utils\Templates() : new Common\Utils\Templates();
-			$this->categoryBase       = $this->pro ? new Pro\Main\CategoryBase() : null;
+			$this->categoryBase       = new Common\Main\CategoryBase();
 			$this->postSettings       = $this->pro ? new Pro\Admin\PostSettings() : new Lite\Admin\PostSettings();
 			$this->standalone         = new Common\Standalone\Standalone();
+			$this->searchStatistics   = $this->pro ? new Pro\SearchStatistics\SearchStatistics() : new Common\SearchStatistics\SearchStatistics();
 			$this->slugMonitor        = new Common\Admin\SlugMonitor();
 			$this->schema             = $this->pro ? new Pro\Schema\Schema() : new Common\Schema\Schema();
 			$this->actionScheduler    = new Common\Utils\ActionScheduler();
+			$this->seoRevisions       = $this->pro ? new Pro\SeoRevisions\SeoRevisions() : new Common\SeoRevisions\SeoRevisions();
+			$this->ai                 = $this->pro ? new Pro\Ai\Ai() : null;
+			$this->filters            = $this->pro ? new Pro\Main\Filters() : new Lite\Main\Filters();
+			$this->crawlCleanup       = new Common\QueryArgs\CrawlCleanup();
+			$this->emailReports       = new Common\EmailReports\EmailReports();
+			$this->thirdParty         = new Common\ThirdParty\ThirdParty();
+			$this->writingAssistant   = new Common\WritingAssistant\WritingAssistant();
 
 			if ( ! wp_doing_ajax() && ! wp_doing_cron() ) {
 				$this->rss       = new Common\Rss();
 				$this->main      = $this->pro ? new Pro\Main\Main() : new Common\Main\Main();
 				$this->head      = $this->pro ? new Pro\Main\Head() : new Common\Main\Head();
-				$this->filters   = $this->pro ? new Pro\Main\Filters() : new Lite\Main\Filters();
 				$this->dashboard = $this->pro ? new Pro\Admin\Dashboard() : new Common\Admin\Dashboard();
 				$this->api       = $this->pro ? new Pro\Api\Api() : new Lite\Api\Api();
 				$this->help      = new Common\Help\Help();
@@ -326,28 +337,7 @@ namespace AIOSEO\Plugin {
 
 			$this->backwardsCompatibilityLoad();
 
-			if ( wp_doing_ajax() ) {
-				add_action( 'init', [ $this, 'loadAjaxInit' ], 999 );
-
-				return;
-			}
-
-			if ( wp_doing_cron() ) {
-				return;
-			}
-
 			add_action( 'init', [ $this, 'loadInit' ], 999 );
-		}
-
-		/**
-		 * Things that need to load after init, on AJAX requests.
-		 *
-		 * @since 4.2.4
-		 *
-		 * @return void
-		 */
-		public function loadAjaxInit() {
-			$this->addons->registerUpdateCheck();
 		}
 
 		/**
@@ -360,18 +350,11 @@ namespace AIOSEO\Plugin {
 		public function loadInit() {
 			$this->settings = new Common\Utils\VueSettings( '_aioseo_settings' );
 			$this->sitemap->init();
-			$this->sitemap->ping->init();
 
 			$this->badBotBlocker->init();
 
 			// We call this again to reset any post types/taxonomies that have not yet been set up.
 			$this->dynamicOptions->refresh();
-
-			if ( ! $this->pro ) {
-				return;
-			}
-
-			$this->addons->registerUpdateCheck();
 		}
 
 		/**

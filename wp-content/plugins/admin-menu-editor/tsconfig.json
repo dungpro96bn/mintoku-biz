@@ -1,8 +1,9 @@
 {
 	"compilerOptions": {
 		"module": "none",
-		"target": "es5",
-		"sourceMap": true
+		"target": "es2015",
+		"sourceMap": true,
+		"strict": true
 	},
 	"exclude": []
 }

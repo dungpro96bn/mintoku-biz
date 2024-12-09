@@ -1,6 +1,8 @@
 <?php
 namespace AIOSEO\Plugin\Common;
 
+use AIOSEO\Plugin\Common\Integrations\BuddyPress as BuddyPressIntegration;
+
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -35,11 +37,11 @@ class Rss {
 		add_action( 'wp_head', [ $this, 'rssFeedLinks' ], 3 );
 
 		if ( ! aioseo()->options->searchAppearance->advanced->crawlCleanup->feeds->global ) {
-			add_action( 'feed_links_show_posts_feed', '__return_false' );
+			add_filter( 'feed_links_show_posts_feed', '__return_false' );
 		}
 
 		if ( ! aioseo()->options->searchAppearance->advanced->crawlCleanup->feeds->globalComments ) {
-			add_action( 'feed_links_show_comments_feed', '__return_false' );
+			add_filter( 'feed_links_show_comments_feed', '__return_false' );
 		}
 
 		// Disable feeds that we no longer want on this site.
@@ -52,7 +54,7 @@ class Rss {
 	 * @since 4.0.0
 	 *
 	 * @param  string $content The post excerpt.
-	 * @return void
+	 * @return string          The post excerpt with prepended/appended content.
 	 */
 	public function addRssContentExcerpt( $content ) {
 		return $this->addRssContent( $content, 'excerpt' );
@@ -107,7 +109,20 @@ class Rss {
 	 * @return void
 	 */
 	public function disableFeeds() {
-		// This should only run if we are trying to parse a feed.
+		$archives = aioseo()->options->searchAppearance->advanced->crawlCleanup->feeds->archives->included;
+
+		if ( BuddyPressIntegration::isComponentPage() ) {
+			list( $postType, $suffix ) = explode( '_', aioseo()->standalone->buddyPress->component->templateType );
+
+			if (
+				'feed' === $suffix &&
+				! aioseo()->options->searchAppearance->advanced->crawlCleanup->feeds->archives->all &&
+				! in_array( $postType, $archives, true )
+			) {
+				$this->redirectRssFeed( BuddyPressIntegration::getComponentArchiveUrl( 'activity' ) );
+			}
+		}
+
 		if ( ! is_feed() ) {
 			return;
 		}
@@ -191,7 +206,6 @@ class Rss {
 		}
 
 		// All post types.
-		$archives = aioseo()->options->searchAppearance->advanced->crawlCleanup->feeds->archives->included;
 		$postType = $this->getTheQueriedPostType();
 		if (
 			! aioseo()->options->searchAppearance->advanced->crawlCleanup->feeds->archives->all &&
@@ -205,7 +219,7 @@ class Rss {
 		$taxonomies = aioseo()->options->searchAppearance->advanced->crawlCleanup->feeds->taxonomies->included;
 		$term       = get_queried_object();
 		if (
-			$term &&
+			is_a( $term, 'WP_Term' ) &&
 			! aioseo()->options->searchAppearance->advanced->crawlCleanup->feeds->taxonomies->all &&
 			! in_array( $term->taxonomy, $taxonomies, true ) &&
 			(
@@ -222,10 +236,14 @@ class Rss {
 			$this->redirectRssFeed( $termUrl );
 		}
 
+		if ( ! isset( $_SERVER['REQUEST_URI'] ) ) {
+			return;
+		}
+
 		// Paginated feed pages. This one is last since we are using a regular expression to validate.
 		if (
 			! aioseo()->options->searchAppearance->advanced->crawlCleanup->feeds->paginated &&
-			preg_match( '/(\d+\/|(?<=\/)page\/\d+\/)$/', $_SERVER['REQUEST_URI'] )
+			preg_match( '/(\d+\/|(?<=\/)page\/\d+\/)$/', sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) )
 		) {
 			$this->redirectRssFeed( $homeUrl );
 		}
@@ -424,9 +442,9 @@ class Rss {
 	 *
 	 * @since 4.2.1
 	 *
-	 * @param  array $args   An array of arguments.
-	 * @param  WP_Term $term The term.
-	 * @return array         An array of attributes.
+	 * @param  array $args    An array of arguments.
+	 * @param  \WP_Term $term The term.
+	 * @return array          An array of attributes.
 	 */
 	private function getTaxonomiesAttributes( $args, $term ) {
 		$title = null;

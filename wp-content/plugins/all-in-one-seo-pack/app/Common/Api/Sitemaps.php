@@ -77,8 +77,7 @@ class Sitemaps {
 	 *
 	 * @since 4.0.0
 	 *
-	 * @param  \WP_REST_Request  $request The REST Request
-	 * @return \WP_REST_Response          The response.
+	 * @return \WP_REST_Response The response.
 	 */
 	public static function deactivateConflictingPlugins() {
 		$error = esc_html__( 'Deactivation failed. Please check permissions and try again.', 'all-in-one-seo-pack' );
@@ -89,18 +88,7 @@ class Sitemaps {
 			], 400 );
 		}
 
-		$plugins = array_merge(
-			aioseo()->conflictingPlugins->getConflictingPlugins( 'seo' ),
-			aioseo()->conflictingPlugins->getConflictingPlugins( 'sitemap' )
-		);
-
-		require_once ABSPATH . 'wp-admin/includes/plugin.php';
-
-		foreach ( $plugins as $pluginPath ) {
-			if ( is_plugin_active( $pluginPath ) ) {
-				deactivate_plugins( $pluginPath );
-			}
-		}
+		aioseo()->conflictingPlugins->deactivateConflictingPlugins( [ 'seo', 'sitemap' ] );
 
 		Models\Notification::deleteNotificationByName( 'conflicting-plugins' );
 
@@ -146,7 +134,7 @@ class Sitemaps {
 			], 400 );
 		}
 
-		$pathExists = self::pathExists( $parsedPageUrl['path'], $isUrl );
+		$pathExists = self::pathExists( $parsedPageUrl['path'], false );
 
 		return new \WP_REST_Response( [
 			'exists' => $pathExists
@@ -164,8 +152,9 @@ class Sitemaps {
 	 * @return boolean       Whether the path exists.
 	 */
 	private static function pathExists( $path, $isUrl ) {
-		$path = trim( $path, '/' );
+		$path = trim( aioseo()->helpers->excludeHomePath( $path ), '/' );
 		$url  = $isUrl ? $path : trailingslashit( home_url() ) . $path;
+		$url  = user_trailingslashit( $url );
 
 		// Let's do another check here, just to be sure that the domain matches.
 		if ( ! aioseo()->helpers->isInternalUrl( $url ) ) {
@@ -174,6 +163,7 @@ class Sitemaps {
 
 		$response = wp_safe_remote_head( $url );
 		$status   = wp_remote_retrieve_response_code( $response );
+
 		if ( ! $status ) {
 			// If there is no status code, we might be in a local environment with CURL misconfigured.
 			// In that case we can still check if a post exists for the path by quering the DB.

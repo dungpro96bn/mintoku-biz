@@ -31,7 +31,8 @@ trait Image {
 		];
 
 		if ( $graphId ) {
-			$data['@id'] = trailingslashit( home_url() ) . '#' . $graphId;
+			$baseUrl     = aioseo()->schema->context['url'] ?? aioseo()->helpers->getUrl();
+			$data['@id'] = trailingslashit( $baseUrl ) . '#' . $graphId;
 		}
 
 		if ( ! $attachmentId ) {
@@ -39,7 +40,7 @@ trait Image {
 		}
 
 		$metaData = wp_get_attachment_metadata( $attachmentId );
-		if ( $metaData && ! empty( $metaData['width'] && ! empty( $metaData['height'] ) ) ) {
+		if ( $metaData && ! empty( $metaData['width'] ) && ! empty( $metaData['height'] ) ) {
 			$data['width']  = (int) $metaData['width'];
 			$data['height'] = (int) $metaData['height'];
 		}

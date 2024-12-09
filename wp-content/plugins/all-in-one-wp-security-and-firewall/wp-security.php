@@ -2,10 +2,10 @@
 // @codingStandardsIgnoreStart
 /*
 Plugin Name: All In One WP Security
-Version: 5.1.4
+Version: 5.3.7
 Plugin URI: https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/
 Update URI: https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/
-Author: All In One WP Security & Firewall Team
+Author: TeamUpdraft, DavidAnderson
 Author URI: https://aiosplugin.com/
 Description: All round best WordPress security plugin!
 Text Domain: all-in-one-wp-security-and-firewall
@@ -59,7 +59,7 @@ register_uninstall_hook(__FILE__, array('AIO_WP_Security', 'uninstall_handler'))
 
 function aiowps_show_plugin_settings_link($links, $file) {
 	if (plugin_basename(__FILE__) == $file) {
-		$settings_link = '<a href="admin.php?page=aiowpsec_settings">' . __('Settings') . '</a>';
+		$settings_link = '<a href="admin.php?page=aiowpsec_settings">' . __('Settings', 'all-in-one-wp-security-and-firewall') . '</a>';
 		array_unshift($links, $settings_link);
 	}
 	return $links;

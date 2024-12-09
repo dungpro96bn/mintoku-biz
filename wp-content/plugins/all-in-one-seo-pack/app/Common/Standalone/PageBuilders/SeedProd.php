@@ -88,7 +88,7 @@ class SeedProd extends Base {
 	 * @param  string $handle The style's registered handle.
 	 * @return string         The tag.
 	 */
-	public function replaceStyleTag( $tag, $handle ) {
+	public function replaceStyleTag( $tag, $handle = '' ) {
 		if ( ! $this->isBuilderScreen() ) {
 			return $tag;
 		}
@@ -119,5 +119,32 @@ class SeedProd extends Base {
 		}
 
 		return false;
+	}
+
+	/**
+	 * Checks whether or not we should prevent the date from being modified.
+	 *
+	 * @since 4.5.2
+	 *
+	 * @param  int  $postId The Post ID.
+	 * @return bool         Whether or not we should prevent the date from being modified.
+	 */
+	public function limitModifiedDate( $postId ) {
+		// This method is supposed to be used in the `wp_ajax_seedprod_pro_save_lpage` action.
+		if ( wp_doing_ajax() && ! check_ajax_referer( 'seedprod_nonce', false, false ) ) {
+			return false;
+		}
+
+		$landingPageId = ! empty( $_REQUEST['lpage_id'] ) ? (int) $_REQUEST['lpage_id'] : false;
+		if ( $landingPageId !== $postId ) {
+			return false;
+		}
+
+		$settings = ! empty( $_REQUEST['settings'] ) ? json_decode( sanitize_text_field( wp_unslash( $_REQUEST['settings'] ) ) ) : false;
+		if ( empty( $settings ) || empty( $settings->aioseo_limit_modified_date ) ) {
+			return false;
+		}
+
+		return true;
 	}
 }

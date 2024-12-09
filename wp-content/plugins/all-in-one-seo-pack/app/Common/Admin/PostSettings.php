@@ -15,6 +15,15 @@ use AIOSEO\Plugin\Common\Models;
  */
 class PostSettings {
 	/**
+	 * The integrations instance.
+	 *
+	 * @since 4.4.3
+	 *
+	 * @var array[object]
+	 */
+	public $integrations;
+
+	/**
 	 * Initialize the admin.
 	 *
 	 * @since 4.0.0
@@ -78,10 +87,13 @@ class PostSettings {
 
 			aioseo()->core->assets->load( 'src/vue/standalone/post-settings/main.js', [], aioseo()->helpers->getVueData( $page ) );
 			aioseo()->core->assets->load( 'src/vue/standalone/link-format/main.js', [], aioseo()->helpers->getVueData( $page ) );
-			aioseo()->admin->enqueueAioseoModalPortal();
 		}
 
-		$screen = get_current_screen();
+		$screen = aioseo()->helpers->getCurrentScreen();
+		if ( empty( $screen->id ) ) {
+			return;
+		}
+
 		if ( 'attachment' === $screen->id ) {
 			wp_enqueue_media();
 		}
@@ -105,6 +117,7 @@ class PostSettings {
 		$linkAssistantCapability        = aioseo()->access->hasCapability( 'aioseo_page_link_assistant_settings' );
 		$redirectsCapability            = aioseo()->access->hasCapability( 'aioseo_page_redirects_manage' );
 		$advancedSettingsCapability     = aioseo()->access->hasCapability( 'aioseo_page_advanced_settings' );
+		$seoRevisionsSettingsCapability = aioseo()->access->hasCapability( 'aioseo_page_seo_revisions_settings' );
 
 		if (
 			$dynamicOptions->searchAppearance->postTypes->has( $postType ) &&
@@ -116,7 +129,8 @@ class PostSettings {
 				empty( $schemaSettingsCapability ) &&
 				empty( $linkAssistantCapability ) &&
 				empty( $redirectsCapability ) &&
-				empty( $advancedSettingsCapability )
+				empty( $advancedSettingsCapability ) &&
+				empty( $seoRevisionsSettingsCapability )
 			)
 		) {
 			return true;
@@ -133,9 +147,12 @@ class PostSettings {
 	 * @return void
 	 */
 	public function addPostSettingsMetabox() {
-		$screen   = get_current_screen();
-		$postType = $screen->post_type;
+		$screen = aioseo()->helpers->getCurrentScreen();
+		if ( empty( $screen->post_type ) ) {
+			return;
+		}
 
+		$postType = $screen->post_type;
 		if ( $this->canAddPostSettingsMetabox( $postType ) ) {
 			// Translators: 1 - The plugin short name ("AIOSEO").
 			$aioseoMetaboxTitle = sprintf( esc_html__( '%1$s Settings', 'all-in-one-seo-pack' ), AIOSEO_PLUGIN_SHORT_NAME );
@@ -156,7 +173,6 @@ class PostSettings {
 	 *
 	 * @since 4.0.0
 	 *
-	 * @param  WP_Post $post The current post.
 	 * @return void
 	 */
 	public function postSettingsMetabox() {
@@ -205,7 +221,7 @@ class PostSettings {
 		}
 
 		// Security check.
-		if ( ! isset( $_POST['PostSettingsNonce'] ) || ! wp_verify_nonce( $_POST['PostSettingsNonce'], 'aioseoPostSettingsNonce' ) ) {
+		if ( ! isset( $_POST['PostSettingsNonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['PostSettingsNonce'] ) ), 'aioseoPostSettingsNonce' ) ) {
 			return;
 		}
 
@@ -219,7 +235,7 @@ class PostSettings {
 			return;
 		}
 
-		$currentPost = json_decode( stripslashes( $_POST['aioseo-post-settings'] ), true ); // phpcs:ignore HM.Security.ValidatedSanitizedInput
+		$currentPost = json_decode( sanitize_text_field( wp_unslash( ( $_POST['aioseo-post-settings'] ) ) ), true );
 
 		// If there is no data, there likely was an error, e.g. if the hidden field wasn't populated on load and the user saved the post without making changes in the metabox.
 		// In that case we should return to prevent a complete reset of the data.
@@ -255,24 +271,17 @@ class PostSettings {
 	 * @return array The list of post types with the overview.
 	 */
 	public function getPostTypesOverview() {
-		$postTypes      = [];
-		$dynamicOptions = aioseo()->dynamicOptions->noConflict();
-
+		$overviewData      = [];
+		$eligiblePostTypes = aioseo()->helpers->getTruSeoEligiblePostTypes();
 		foreach ( aioseo()->helpers->getPublicPostTypes( true ) as $postType ) {
-			if (
-				! $dynamicOptions->searchAppearance->postTypes->has( $postType ) ||
-				! $dynamicOptions->searchAppearance->postTypes->$postType->show ||
-				! $dynamicOptions->searchAppearance->postTypes->$postType->advanced->showMetaBox ||
-				'attachment' === $postType ||
-				aioseo()->helpers->isBBPressPostType( $postType )
-			) {
+			if ( ! in_array( $postType, $eligiblePostTypes, true ) ) {
 				continue;
 			}
 
-			$postTypes[ $postType ] = $this->getPostTypeOverview( $postType );
+			$overviewData[ $postType ] = $this->getPostTypeOverview( $postType );
 		}
 
-		return $postTypes;
+		return $overviewData;
 	}
 
 	/**
@@ -281,56 +290,64 @@ class PostSettings {
 	 * @since 4.2.0
 	 *
 	 * @param  string $postType The post type name.
-	 * @return array            The overview for the given post type.
+	 * @return array            The overview data for the given post type.
 	 */
 	public function getPostTypeOverview( $postType ) {
-		$overview = aioseo()->core->cache->get( $postType . '_overview_data' );
-		if ( null !== $overview ) {
-			return $overview;
+		$overviewData = aioseo()->core->cache->get( $postType . '_overview_data' );
+		if ( null !== $overviewData ) {
+			return $overviewData;
 		}
 
-		$posts = aioseo()->core->db->start( 'posts as p' )
-			->select( 'ap.seo_score, ap.keyphrases' )
-			->leftJoin( 'aioseo_posts as ap', 'ap.post_id = p.ID' )
-			->where( 'p.post_status', 'publish' )
-			->where( 'p.post_type', $postType )
-			->run()
-			->result();
-
-		$overview = [
-			'total'                 => count( $posts ),
-			'needsImprovement'      => 0,
-			'okay'                  => 0,
-			'good'                  => 0,
-			'withoutFocusKeyphrase' => 0,
-		];
-
-		foreach ( $posts as $post ) {
-			if ( empty( $post->keyphrases ) || strpos( $post->keyphrases, '{"focus":[]' ) === 0 ) {
-				$overview['withoutFocusKeyphrase']++;
-
-				// We skip to the next since we will just consider posts with focus keyphrase in the counts.
-				continue;
-			}
-
-			if ( 50 > $post->seo_score ) {
-				$overview['needsImprovement']++;
-				continue;
-			}
-
-			if ( 50 <= $post->seo_score && 80 >= $post->seo_score ) {
-				$overview['okay']++;
-				continue;
-			}
-
-			if ( 80 < $post->seo_score ) {
-				$overview['good']++;
-			}
+		$eligiblePostTypes = aioseo()->helpers->getTruSeoEligiblePostTypes();
+		if ( ! in_array( $postType, $eligiblePostTypes, true ) ) {
+			return [
+				'total'                 => 0,
+				'withoutFocusKeyphrase' => 0,
+				'needsImprovement'      => 0,
+				'okay'                  => 0,
+				'good'                  => 0
+			];
 		}
 
-		aioseo()->core->cache->update( $postType . '_overview_data', $overview, WEEK_IN_SECONDS );
+		$specialPageIds             = aioseo()->helpers->getSpecialPageIds();
+		$implodedPageIdPlaceholders = array_fill( 0, count( $specialPageIds ), '%d' );
+		$implodedPageIdPlaceholders = implode( ', ', $implodedPageIdPlaceholders );
 
-		return $overview;
+		global $wpdb;
+		$overviewData = $wpdb->get_row(
+			// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.PreparedSQLPlaceholders.ReplacementsWrongNumber
+			$wpdb->prepare(
+				"SELECT 
+					COUNT(*) as total,
+					COALESCE( SUM(CASE WHEN ap.keyphrases = '' OR ap.keyphrases IS NULL OR ap.keyphrases LIKE %s THEN 1 ELSE 0 END), 0) as withoutFocusKeyphrase,
+					COALESCE( SUM(CASE WHEN ap.seo_score < 50 AND NOT (ap.keyphrases = '' OR ap.keyphrases IS NULL OR ap.keyphrases LIKE %s) THEN 1 ELSE 0 END), 0) as needsImprovement,
+					COALESCE( SUM(CASE WHEN ap.seo_score BETWEEN 50 AND 79 AND NOT (ap.keyphrases = '' OR ap.keyphrases IS NULL OR ap.keyphrases LIKE %s) THEN 1 ELSE 0 END), 0) as okay,
+					COALESCE( SUM(CASE WHEN ap.seo_score >= 80 AND NOT (ap.keyphrases = '' OR ap.keyphrases IS NULL OR ap.keyphrases LIKE %s) THEN 1 ELSE 0 END), 0) as good
+				FROM {$wpdb->posts} as p
+				LEFT JOIN {$wpdb->prefix}aioseo_posts as ap ON ap.post_id = p.ID
+				WHERE p.post_status = 'publish'
+				AND p.post_type = %s
+				AND p.ID NOT IN ( $implodedPageIdPlaceholders )",
+				// phpcs:enable
+				'{"focus":{"keyphrase":""%',
+				'{"focus":{"keyphrase":""%',
+				'{"focus":{"keyphrase":""%',
+				'{"focus":{"keyphrase":""%',
+				$postType,
+				...array_values( $specialPageIds )
+			),
+			ARRAY_A
+		);
+
+		// Ensure sure all the values are integers.
+		foreach ( $overviewData as $key => $value ) {
+			$overviewData[ $key ] = (int) $value;
+		}
+
+		// Give me the raw SQL of the query.
+		aioseo()->core->cache->update( $postType . '_overview_data', $overviewData, HOUR_IN_SECONDS );
+
+		return $overviewData;
 	}
 
 	/**
@@ -338,11 +355,11 @@ class PostSettings {
 	 *
 	 * @since 4.2.0
 	 *
-	 * @param  array    $clauses Associative array of the clauses for the query.
-	 * @param  WP_Query $query   The WP_Query instance (passed by reference).
-	 * @return array             The clauses array updated.
+	 * @param  array     $clauses Associative array of the clauses for the query.
+	 * @param  \WP_Query $query   The WP_Query instance (passed by reference).
+	 * @return array              The clauses array updated.
 	 */
-	public function changeClausesToFilterPosts( $clauses, $query ) {
+	public function changeClausesToFilterPosts( $clauses, $query = null ) {
 		if ( ! is_admin() || ! $query->is_main_query() ) {
 			return $clauses;
 		}
@@ -353,7 +370,7 @@ class PostSettings {
 		}
 
 		$whereClause        = '';
-		$noKeyphrasesClause = " (aioseo_p.keyphrases = '' OR aioseo_p.keyphrases IS NULL OR aioseo_p.keyphrases LIKE '{\"focus\":[]%') ";
+		$noKeyphrasesClause = "(aioseo_p.keyphrases = '' OR aioseo_p.keyphrases IS NULL OR aioseo_p.keyphrases LIKE '{\"focus\":{\"keyphrase\":\"\"%')";
 		switch ( $filter ) {
 			case 'withoutFocusKeyphrase':
 				$whereClause = " AND $noKeyphrasesClause ";
@@ -374,6 +391,32 @@ class PostSettings {
 		$clauses['join']  .= " LEFT JOIN {$prefix}aioseo_posts AS aioseo_p ON ({$postsTable}.ID = aioseo_p.post_id) ";
 		$clauses['where'] .= $whereClause;
 
+		add_action( 'wp', [ $this, 'filterPostsAfterChangingClauses' ] );
+
 		return $clauses;
+	}
+
+	/**
+	 * Filter the posts array to remove the ones that are not eligible for page analysis.
+	 * Hooked into `wp` action hook.
+	 *
+	 * @since 4.7.1
+	 *
+	 * @return void
+	 */
+	public function filterPostsAfterChangingClauses() {
+		remove_action( 'wp', [ $this, 'filterPostsAfterChangingClauses' ] );
+
+		global $wp_query;
+		if ( ! empty( $wp_query->posts ) && is_array( $wp_query->posts ) ) {
+			$wp_query->posts = array_filter( $wp_query->posts, function ( $post ) {
+				return aioseo()->helpers->isTruSeoEligible( $post->ID );
+			} );
+
+			// Update `post_count` for pagination.
+			if ( isset( $wp_query->post_count ) ) {
+				$wp_query->post_count = count( $wp_query->posts );
+			}
+		}
 	}
 }

@@ -1,5 +1,4 @@
 <?php
-
 namespace AIOSEO\Plugin\Common\Traits\Helpers;
 
 /**
@@ -160,8 +159,7 @@ trait Constants {
 			'KZ' => 'Kazakhstan',
 			'KE' => 'Kenya',
 			'KI' => 'Kiribati',
-			'KP' => 'South Korea',
-			'KR' => 'North Korea',
+			'KR' => 'South Korea',
 			'KW' => 'Kuwait',
 			'KG' => 'Kyrgyzstan',
 			'LA' => 'Lao People\'s Democratic Republic',
@@ -294,5 +292,4 @@ trait Constants {
 			'AX' => 'Åland Islands'
 		];
 	}
-
 }

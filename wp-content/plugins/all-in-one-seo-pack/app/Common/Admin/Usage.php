@@ -144,14 +144,14 @@ abstract class Usage {
 			'theme_version'                 => $themeData->version,
 			'user_count'                    => function_exists( 'get_user_count' ) ? get_user_count() : null,
 			'locale'                        => get_locale(),
-			'timezone_offset'               => aioseo()->helpers->getTimeZoneOffset(),
+			'timezone_offset'               => wp_timezone_string(),
 			'email'                         => get_bloginfo( 'admin_email' ),
 			// AIOSEO specific data.
 			'aioseo_version'                => AIOSEO_VERSION,
 			'aioseo_license_key'            => null,
 			'aioseo_license_type'           => null,
 			'aioseo_is_pro'                 => false,
-			"aioseo_${type}_installed_date" => aioseo()->internalOptions->internal->installed,
+			"aioseo_{$type}_installed_date" => aioseo()->internalOptions->internal->installed,
 			'aioseo_settings'               => $this->getSettings()
 		];
 	}
@@ -170,6 +170,8 @@ abstract class Usage {
 				$v = str_replace( '&quot', '&#x5c;&quot', $v );
 			}
 		});
+
+		$settings = $this->filterPrivateSettings( $settings );
 
 		$internal = aioseo()->internalOptions->all();
 		array_walk_recursive( $internal, function( &$v ) {
@@ -226,5 +228,25 @@ abstract class Usage {
 		];
 
 		return strtotime( 'next sunday' ) + array_sum( $tracking );
+	}
+
+	/**
+	 * Anonimizes or obfuscates the value of certain settings.
+	 *
+	 * @since 4.3.2
+	 *
+	 * @param  array $settings The settings.
+	 * @return array           The altered settings.
+	 */
+	private function filterPrivateSettings( $settings ) {
+		if ( ! empty( $settings['advanced']['openAiKey'] ) ) {
+			$settings['advanced']['openAiKey'] = true;
+		}
+
+		if ( ! empty( $settings['localBusiness']['maps']['apiKey'] ) ) {
+			$settings['localBusiness']['maps']['apiKey'] = true;
+		}
+
+		return $settings;
 	}
 }

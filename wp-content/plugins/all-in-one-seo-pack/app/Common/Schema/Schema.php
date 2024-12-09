@@ -1,6 +1,8 @@
 <?php
 namespace AIOSEO\Plugin\Common\Schema;
 
+use AIOSEO\Plugin\Common\Integrations\BuddyPress as BuddyPressIntegration;
+
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -81,8 +83,11 @@ class Schema {
 	 * @var array
 	 */
 	public $nullableFields = [
-		'price', // Needs to be 0 if free for Software Application.
-		'value' // Needs to be 0 if free for product shipping details.
+		'price',       // Needs to be 0 if free for Software Application.
+		'ratingValue', // Needs to be 0 for 0 star ratings.
+		'value',       // Needs to be 0 if free for product shipping details.
+		'minValue',    // Needs to be 0 for product delivery time.
+		'maxValue'     // Needs to be 0 for product delivery time.
 	];
 
 	/**
@@ -92,12 +97,21 @@ class Schema {
 	 *
 	 * @var array
 	 */
-	private $htmlAllowedFields = [
+	public $htmlAllowedFields = [
 		// FAQPage
 		'acceptedAnswer' => [
 			'text'
 		]
 	];
+
+	/**
+	 * Whether we are generating the validator output.
+	 *
+	 * @since 4.6.3
+	 *
+	 * @var bool
+	 */
+	public $generatingValidatorOutput = false;
 
 	/**
 	 * Class constructor.
@@ -108,7 +122,7 @@ class Schema {
 			return;
 		}
 
-		$this->helpers = new Helpers;
+		$this->helpers = new Helpers();
 	}
 
 	/**
@@ -116,8 +130,7 @@ class Schema {
 	 *
 	 * @since 4.0.0
 	 *
-	 * @param  array  $graphs The graphs to output (optional - used for REST API).
-	 * @return string         The JSON schema output.
+	 * @return string The JSON schema output.
 	 */
 	public function get() {
 		// First, check if the schema is disabled.
@@ -169,10 +182,11 @@ class Schema {
 
 		// By determining the length of the array after every iteration, we are able to add additional graphs during runtime.
 		// e.g. The Article graph may require a Person graph to be output for the author.
+		$this->graphs = array_values( $this->graphs );
 		for ( $i = 0; $i < count( $this->graphs ); $i++ ) {
 			$namespace = $this->getGraphNamespace( $this->graphs[ $i ] );
 			if ( $namespace ) {
-				$schema['@graph'][] = ( new $namespace )->get();
+				$schema['@graph'][] = ( new $namespace() )->get();
 			}
 		}
 
@@ -209,12 +223,19 @@ class Schema {
 	 *
 	 * @since 4.2.5
 	 *
-	 * @param  bool $isValidator Whether the current call is for the validator.
 	 * @return void
 	 */
-	protected function determineSmartGraphsAndContext( $isValidator = false ) {
-		$contextInstance = new Context;
-		$this->graphs    = array_merge( $this->graphs, $this->getDefaultGraphs() );
+	protected function determineSmartGraphsAndContext() {
+		$this->graphs = array_merge( $this->graphs, $this->getDefaultGraphs() );
+
+		$contextInstance = new Context();
+		$this->context   = $contextInstance->defaults();
+
+		if ( BuddyPressIntegration::isComponentPage() ) {
+			aioseo()->standalone->buddyPress->component->determineSchemaGraphsAndContext( $contextInstance );
+
+			return;
+		}
 
 		if ( aioseo()->helpers->isDynamicHomePage() ) {
 			$this->graphs[] = 'CollectionPage';
@@ -231,7 +252,11 @@ class Schema {
 		}
 
 		if ( is_singular() ) {
-			$this->determineContextSingular( $contextInstance, $isValidator );
+			$this->determineContextSingular( $contextInstance );
+
+			if ( is_singular( 'web-story' ) ) {
+				$this->graphs[] = 'AmpStory';
+			}
 		}
 
 		if ( is_category() || is_tag() || is_tax() ) {
@@ -242,7 +267,7 @@ class Schema {
 		}
 
 		if ( is_author() ) {
-			$this->graphs[] = 'CollectionPage';
+			$this->graphs[] = 'ProfilePage';
 			$this->graphs[] = 'PersonAuthor';
 			$this->context  = $contextInstance->author();
 		}
@@ -279,19 +304,13 @@ class Schema {
 	 * @since 4.2.6
 	 *
 	 * @param  Context $contextInstance The Context class instance.
-	 * @param  bool    $isValidator     Whether we're getting the output for the validator.
 	 * @return void
 	 */
-	protected function determineContextSingular( $contextInstance, $isValidator ) {
-		// Check if we're on a BuddyPress member page.
-		if ( function_exists( 'bp_is_user' ) && bp_is_user() ) {
-			$this->graphs[] = 'ProfilePage';
-		}
-
+	protected function determineContextSingular( $contextInstance ) {
 		// If the current request is for the validator, we can't include the default graph here.
 		// We need to include the default graph that the validator sent.
 		// Don't do this if we're in Pro since we then need to get it from the post meta.
-		if ( ! $isValidator ) {
+		if ( ! $this->generatingValidatorOutput ) {
 			$this->graphs[] = $this->getDefaultPostGraph();
 		}
 
@@ -305,7 +324,7 @@ class Schema {
 	 *
 	 * @return string The default graph.
 	 */
-	protected function getDefaultPostGraph() {
+	public function getDefaultPostGraph() {
 		return $this->getDefaultPostTypeGraph();
 	}
 
@@ -314,8 +333,8 @@ class Schema {
 	 *
 	 * @since 4.2.5
 	 *
-	 * @param  null|WP_Post $post The post object.
-	 * @return string             The default graph.
+	 * @param  \WP_Post $post The post object.
+	 * @return string         The default graph.
 	 */
 	public function getDefaultPostTypeGraph( $post = null ) {
 		$post = $post ? $post : aioseo()->helpers->getPost();

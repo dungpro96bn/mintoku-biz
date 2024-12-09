@@ -1,3 +1,4 @@
+"use strict";
 /// <reference path="../../js/jquery.d.ts" />
 /// <reference path="../../js/actor-manager.ts" />
 class AmeActorSelector {
@@ -9,6 +10,8 @@ class AmeActorSelector {
         this.isProVersion = false;
         this.allOptionEnabled = true;
         this.cachedVisibleActors = null;
+        this.specialActors = [];
+        this.selectorNode = null;
         this.isDomInitStarted = false;
         this.actorManager = actorManager;
         if (typeof isProVersion !== 'undefined') {
@@ -80,7 +83,13 @@ class AmeActorSelector {
         this.selectedActor = actorId;
         this.highlightSelectedActor();
         if (actorId !== null) {
-            this.selectedDisplayName = this.actorManager.getActor(actorId).getDisplayName();
+            const actor = this.actorManager.getActor(actorId);
+            if (actor !== null) {
+                this.selectedDisplayName = actor.getDisplayName();
+            }
+            else {
+                this.selectedDisplayName = '[' + actorId + ']';
+            }
         }
         else {
             this.selectedDisplayName = 'All';
@@ -100,6 +109,9 @@ class AmeActorSelector {
         if (!this.isDomInitStarted) {
             this.initDOM();
         }
+        if (this.selectorNode === null) {
+            return; //Should never happen since initDOM() should have set this.
+        }
         //Deselect the previous item.
         this.selectorNode.find('.current').removeClass('current');
         //Select the new one or "All".
@@ -113,6 +125,9 @@ class AmeActorSelector {
         this.selectorNode.find(selector).addClass('current');
     }
     populateActorSelector() {
+        if (this.selectorNode === null) {
+            return; //Not initialized yet.
+        }
         const actorSelector = this.selectorNode, $ = jQuery;
         let isSelectedActorVisible = false;
         //Build the list of available actors.
@@ -148,7 +163,13 @@ class AmeActorSelector {
             }
             else {
                 const availableActors = this.getVisibleActors();
-                this.setSelectedActor(AmeActorSelector._.first(availableActors).getId());
+                const firstActor = AmeActorSelector._.head(availableActors);
+                if (firstActor) {
+                    this.setSelectedActor(firstActor.getId());
+                }
+                else {
+                    this.setSelectedActor(null);
+                }
             }
         }
         this.highlightSelectedActor();
@@ -163,28 +184,41 @@ class AmeActorSelector {
         }
         const _ = AmeActorSelector._;
         let actors = [];
+        //Include special actors, if any. Note that these must also be added to the actor manager;
+        //the actor selector doesn't do that automatically.
+        _.forEach(this.specialActors, function (actor) {
+            actors.push(actor);
+        });
         //Include all roles.
         //Idea: Sort roles either alphabetically or by typical privilege level (admin, editor, author, ...).
         _.forEach(this.actorManager.getRoles(), function (role) {
             actors.push(role);
         });
         //Include the Super Admin (multisite only).
-        if (this.actorManager.getUser(this.currentUserLogin).isSuperAdmin) {
+        const user = this.actorManager.getUser(this.currentUserLogin);
+        if (user && user.isSuperAdmin) {
             actors.push(this.actorManager.getSuperAdmin());
         }
         //Include the current user.
-        actors.push(this.actorManager.getUser(this.currentUserLogin));
+        const currentUser = this.actorManager.getUser(this.currentUserLogin);
+        if (currentUser) {
+            actors.push(currentUser);
+        }
         //Include other visible users.
         _(this.visibleUsers)
             .without(this.currentUserLogin)
             .sortBy()
             .forEach((login) => {
             const user = this.actorManager.getUser(login);
-            actors.push(user);
-        })
-            .value();
+            if (user) {
+                actors.push(user);
+            }
+        });
         this.cachedVisibleActors = actors;
         return actors;
+    }
+    addSpecialActor(actor) {
+        this.specialActors.push(actor);
     }
     saveVisibleUsers() {
         jQuery.post(this.ajaxParams.adminAjaxUrl, {
@@ -251,6 +285,22 @@ class AmeActorSelector {
             }
         });
         return publicObservable;
+    }
+    /**
+     * Select an actor based on the "selected_actor" URL parameter.
+     *
+     * Does nothing if the parameter is not set or the actor ID is invalid.
+     */
+    setSelectedActorFromUrl() {
+        if (!URLSearchParams) {
+            return;
+        }
+        //Select an actor based on the "selected_actor" URL parameter.
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedActor = urlParams.get('selected_actor');
+        if (selectedActor !== null) {
+            this.setSelectedActor(selectedActor);
+        }
     }
 }
 AmeActorSelector._ = wsAmeLodash;

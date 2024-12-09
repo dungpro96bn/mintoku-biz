@@ -1,11 +1,11 @@
 /// <reference path="../../js/knockout.d.ts" />
 /// <reference path="../../js/jquery.d.ts" />
 /// <reference path="../../js/jqueryui.d.ts" />
-/// <reference path="../../js/lodash-3.10.d.ts" />
+/// <reference types="@types/lodash" />
 /// <reference path="../../modules/actor-selector/actor-selector.ts" />
-/// <reference path="../../ajax-wrapper/ajax-action-wrapper.d.ts" />
+/// <reference path="../../vendor/yahnis-elsts/ajax-wrapper/ajax-action-wrapper.d.ts" />
 
-declare let amePluginVisibility: AmePluginVisibilityModule;
+let amePluginVisibility: AmePluginVisibilityModule;
 declare const wsPluginVisibilityData: PluginVisibilityScriptData;
 
 interface PluginVisibilityScriptData {
@@ -56,7 +56,7 @@ class AmePluginVisibilityModule {
 	private readonly isMultisite: boolean;
 
 	actorSelector: AmeActorSelector;
-	selectedActor: KnockoutComputed<string>;
+	selectedActor: KnockoutComputed<string|null>;
 	settingsData: KnockoutObservable<string>;
 
 	areAllPluginsChecked: KnockoutComputed<boolean>;
@@ -75,7 +75,7 @@ class AmePluginVisibilityModule {
 
 		//Wrap the selected actor in a computed observable so that it can be used with Knockout.
 		let _selectedActor = ko.observable(this.actorSelector.selectedActor);
-		this.selectedActor = ko.computed<string>({
+		this.selectedActor = ko.computed({
 			read: function () {
 				return _selectedActor();
 			},
@@ -83,7 +83,7 @@ class AmePluginVisibilityModule {
 				this.actorSelector.setSelectedActor(newActor);
 			}
 		});
-		this.actorSelector.onChange((newSelectedActor: string) => {
+		this.actorSelector.onChange((newSelectedActor: string|null) => {
 			_selectedActor(newSelectedActor);
 		});
 
@@ -94,9 +94,9 @@ class AmePluginVisibilityModule {
 		this.isMultisite = scriptData.isMultisite;
 
 		this.grantAccessByDefault = {};
-		_.forEach(this.actorSelector.getVisibleActors(), (actor: AmeBaseActor) => {
-			this.grantAccessByDefault[actor.id] = ko.observable<boolean>(
-				_.get(scriptData.settings.grantAccessByDefault, actor.id, this.canManagePlugins(actor))
+		_.forEach(this.actorSelector.getVisibleActors(), (actor: IAmeActor) => {
+			this.grantAccessByDefault[actor.getId()] = ko.observable<boolean>(
+				_.get(scriptData.settings.grantAccessByDefault, actor.getId(), this.canManagePlugins(actor))
 			);
 		});
 
@@ -108,15 +108,20 @@ class AmePluginVisibilityModule {
 			return a.name().localeCompare(b.name());
 		});
 
-		this.privilegedActors = [this.actorSelector.getCurrentUserActor()];
+		this.privilegedActors = [];
+		const currentUser = this.actorSelector.getCurrentUserActor();
+		if (currentUser) {
+			this.privilegedActors.push(currentUser);
+		}
 		if (this.isMultisite) {
 			this.privilegedActors.push(AmeActors.getSuperAdmin());
 		}
 
 		this.areNewPluginsVisible = ko.computed({
 			read: () => {
-				if (this.selectedActor() !== null) {
-					let canSeePluginsByDefault = this.getGrantAccessByDefault(this.selectedActor());
+				const selectedActor = this.selectedActor();
+				if (selectedActor !== null) {
+					let canSeePluginsByDefault = this.getGrantAccessByDefault(selectedActor);
 					return canSeePluginsByDefault();
 				}
 
@@ -130,14 +135,15 @@ class AmePluginVisibilityModule {
 				});
 			},
 			write: (isChecked) => {
-				if (this.selectedActor() !== null) {
-					let canSeePluginsByDefault = this.getGrantAccessByDefault(this.selectedActor());
+				const selectedActor = this.selectedActor();
+				if (selectedActor !== null) {
+					let canSeePluginsByDefault = this.getGrantAccessByDefault(selectedActor);
 					canSeePluginsByDefault(isChecked);
 					return;
 				}
 
 				//Update everyone except the current user and Super Admin.
-				_.forEach(this.actorSelector.getVisibleActors(), (actor: AmeBaseActor) => {
+				_.forEach(this.actorSelector.getVisibleActors(), (actor: IAmeActor) => {
 					let isAllowed = this.getGrantAccessByDefault(actor.getId());
 					if (!this.canManagePlugins(actor)) {
 						isAllowed(false);
@@ -187,8 +193,8 @@ class AmePluginVisibilityModule {
 			//Show/hide from everyone except the current user and Super Admin.
 			//However, don't enable plugins for roles that can't access the "Plugins" page in the first place.
 			const _ = AmePluginVisibilityModule._;
-			_.forEach(this.actorSelector.getVisibleActors(), (actor: AmeBaseActor) => {
-				let allowAccess = plugin.getGrantObservable(actor.id, isVisible);
+			_.forEach(this.actorSelector.getVisibleActors(), (actor: IAmeActor) => {
+				let allowAccess = plugin.getGrantObservable(actor.getId(), isVisible);
 				if (!this.canManagePlugins(actor)) {
 					allowAccess(false);
 				} else if (_.includes(this.privilegedActors, actor)) {
@@ -204,7 +210,7 @@ class AmePluginVisibilityModule {
 		}
 	}
 
-	private canManagePlugins(actor: AmeBaseActor) {
+	private canManagePlugins(actor: IAmeActor|null): boolean {
 		const _ = AmePluginVisibilityModule._;
 		if ((actor instanceof AmeRole) && _.has(this.canRoleManagePlugins, actor.name)) {
 			return this.canRoleManagePlugins[actor.name];
@@ -222,7 +228,7 @@ class AmePluginVisibilityModule {
 					return false;
 				}
 			});
-			return (result || AmeActors.hasCap(actor.id, 'activate_plugins'));
+			return (result || (!!AmeActors.hasCap(actor.id, 'activate_plugins')));
 		}
 
 		return false;
@@ -252,13 +258,20 @@ class AmePluginVisibilityModule {
 			};
 
 			//Filter out grants that match the default settings.
-			result.plugins[plugin.fileName].grantAccess = _.pick(
-				result.plugins[plugin.fileName].grantAccess,
-				(allowed, actorId) => {
-					const defaultState = this.getGrantAccessByDefault(actorId)() && plugin.isVisibleByDefault();
-					return (allowed !== defaultState);
-				}
-			);
+			const grantAccess = result.plugins[plugin.fileName].grantAccess;
+			if (typeof grantAccess !== 'undefined') {
+				result.plugins[plugin.fileName].grantAccess = _.pickBy(
+					grantAccess,
+					(allowed, actorId) => {
+						if (typeof actorId === 'undefined') {
+							return false;
+						}
+
+						const defaultState = this.getGrantAccessByDefault(actorId)() && plugin.isVisibleByDefault();
+						return (allowed !== defaultState);
+					}
+				);
+			}
 
 			//Don't store the "grantAccess" map if it's empty.
 			if (_.isEmpty(result.plugins[plugin.fileName].grantAccess)) {
@@ -275,7 +288,7 @@ class AmePluginVisibilityModule {
 					upperKey = key.substring(0, 1).toUpperCase() + key.substring(1),
 					value = plugin.customProperties[key]();
 				if (value !== '') {
-					result.plugins[plugin.fileName]['custom' + upperKey] = value;
+					(result.plugins[plugin.fileName] as Record<string,any>)['custom' + upperKey] = value;
 				}
 			}
 		});
@@ -289,15 +302,15 @@ class AmePluginVisibilityModule {
 
 		//Remove settings associated with roles and users that no longer exist or are not visible.
 		const _ = AmePluginVisibilityModule._,
-			visibleActorIds = _.pluck(this.actorSelector.getVisibleActors(), 'id');
+			visibleActorIds: string[] = _.invokeMap(this.actorSelector.getVisibleActors(), 'getId');
 		_.forEach(settings.plugins, (plugin) => {
 			if (plugin.grantAccess) {
-				plugin.grantAccess = _.pick<GrantAccessMap, GrantAccessMap>(plugin.grantAccess, visibleActorIds);
+				plugin.grantAccess = _.pick(plugin.grantAccess, visibleActorIds);
 			}
 		});
 
 		//Remove plugins that don't have any custom settings.
-		settings.plugins = _.pick(settings.plugins, (value) => {
+		settings.plugins = _.pickBy(settings.plugins, (value) => {
 			return !_.isEmpty(value);
 		});
 
@@ -424,7 +437,7 @@ class AmePlugin {
 		this.isBeingEdited(false);
 	}
 
-	static stripAllTags(input): string {
+	static stripAllTags(input: string): string {
 		//Based on: http://phpjs.org/functions/strip_tags/
 		const tags = /<\/?([a-z][a-z0-9]*)\b[^>]*>/gi,
 			commentsAndPhpTags = /<!--[\s\S]*?-->|<\?(?:php)?[\s\S]*?\?>/gi;
@@ -437,7 +450,7 @@ jQuery(function ($) {
 	ko.applyBindings(amePluginVisibility, document.getElementById('ame-plugin-visibility-editor'));
 
 	//Permanently dismiss the usage hint via AJAX.
-	$('#ame-pv-usage-notice').on('click', '.notice-dismiss', function() {
+	jQuery('#ame-pv-usage-notice').on('click', '.notice-dismiss', function() {
 		AjawV1.getAction('ws_ame_dismiss_pv_usage_notice').request();
 	});
 });

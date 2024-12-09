@@ -10,9 +10,9 @@
 
 __Requires:__ 5.6
 
-__Tested up to:__ 5.9
+__Tested up to:__ 6.3
 
-__Requires PHP:__ 7.1
+__Requires PHP:__ 7.2
 
 __License:__ [GPL-2.0+](https://www.gnu.org/licenses/gpl-2.0.html)
 
@@ -31,6 +31,7 @@ The plugin tracks the pages, posts and custom post types that visitors click thr
 ### Key features
 
 * __Automatic__: The plugin will start displaying visited posts on your posts and pages automatically after the content when you activate the plugin
+* __Block editor support__: Easy to use block for the block editor. Find it under widgets or using "followed posts" or "where did they go from here"
 * __Shortcode__: Use `[wherego]` to display the followed posts
 * __Multi-Widget support__: Find the __Followed posts__ widget to display the posts in your theme's sidebar or any other area that supports widgets. You can use the widget multiple times with different settings for each
 * __Manual install__: Want more control over placement? Check the [FAQ](https://wordpress.org/plugins/where-did-they-go-from-here/#faq) on which functions are available for manual install

@@ -48,7 +48,11 @@ class DetailsColumn {
 	 * @return void
 	 */
 	public function registerColumnHooks() {
-		$screen = get_current_screen();
+		$screen = aioseo()->helpers->getCurrentScreen();
+		if ( empty( $screen->base ) || empty( $screen->post_type ) ) {
+			return;
+		}
+
 		if ( ! $this->shouldRegisterColumn( $screen->base, $screen->post_type ) ) {
 			return;
 		}
@@ -87,8 +91,8 @@ class DetailsColumn {
 	 */
 	public function addPostColumnsAjax() {
 		if (
-			! isset( $_POST['_inline_edit'], $_POST['post_ID'] ) ||
-			! wp_verify_nonce( $_POST['_inline_edit'], 'inlineeditnonce' )
+			! isset( $_POST['_inline_edit'], $_POST['post_ID'], $_POST['aioseo-has-details-column'] ) ||
+			! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['_inline_edit'] ) ), 'inlineeditnonce' )
 		) {
 			return;
 		}
@@ -155,7 +159,7 @@ class DetailsColumn {
 	 * @param  int    $postId     The current rows, post id.
 	 * @return void
 	 */
-	public function renderColumn( $columnName, $postId ) {
+	public function renderColumn( $columnName, $postId = 0 ) {
 		if ( ! current_user_can( 'edit_post', $postId ) && ! current_user_can( 'aioseo_manage_seo' ) ) {
 			return;
 		}
@@ -166,37 +170,44 @@ class DetailsColumn {
 
 		// Add this column/post to the localized array.
 		global $wp_scripts;
+		if (
+			! is_object( $wp_scripts ) ||
+			! method_exists( $wp_scripts, 'get_data' ) ||
+			! method_exists( $wp_scripts, 'add_data' )
+		) {
+			return;
+		}
 
-		$data = $wp_scripts->get_data( 'aioseo/js/' . $this->scriptSlug, 'data' );
+		$data = null;
+		if ( is_object( $wp_scripts ) ) {
+			$data = $wp_scripts->get_data( 'aioseo/js/' . $this->scriptSlug, 'data' );
+		}
 
 		if ( ! is_array( $data ) ) {
 			$data = json_decode( str_replace( 'var aioseo = ', '', substr( $data, 0, -1 ) ), true );
 		}
 
-		$nonce    = wp_create_nonce( "aioseo_meta_{$columnName}_{$postId}" );
-		$posts    = ! empty( $data['posts'] ) ? $data['posts'] : [];
-		$thePost  = Models\Post::getPost( $postId );
-		$postType = get_post_type( $postId );
-		$postData = [
-			'id'                 => $postId,
-			'columnName'         => $columnName,
-			'nonce'              => $nonce,
-			'title'              => $thePost->title,
-			'titleParsed'        => aioseo()->meta->title->getPostTitle( $postId ),
-			'defaultTitle'       => aioseo()->meta->title->getPostTypeTitle( $postType ),
-			'description'        => $thePost->description,
-			'descriptionParsed'  => aioseo()->meta->description->getPostDescription( $postId ),
-			'defaultDescription' => aioseo()->meta->description->getPostTypeDescription( $postType ),
-			'value'              => (int) $thePost->seo_score,
-			'showMedia'          => false,
-			'isSpecialPage'      => aioseo()->helpers->isSpecialPage( $postId ),
-			'postType'           => $postType
-		];
+		// We have to temporarily modify the query here since the query incorrectly identifies
+		// the current page as a category page when posts are filtered by a specific category.
+		global $wp_query;
+		$originalQuery         = clone $wp_query;
+		$wp_query->is_category = false;
+		$wp_query->is_tag      = false;
+		$wp_query->is_tax      = false;
 
-		foreach ( aioseo()->addons->getLoadedAddons() as $loadedAddon ) {
-			if ( isset( $loadedAddon->admin ) && method_exists( $loadedAddon->admin, 'renderColumnData' ) ) {
-				$postData = array_merge( $postData, $loadedAddon->admin->renderColumnData( $columnName, $postId, $postData ) );
-			}
+		$posts    = ! empty( $data['posts'] ) ? $data['posts'] : [];
+		$postData = $this->getPostData( $postId, $columnName );
+
+		$addonsColumnData = array_filter( aioseo()->addons->doAddonFunction( 'admin', 'renderColumnData', [
+			$columnName,
+			$postId,
+			$postData
+		] ) );
+
+		$wp_query = $originalQuery;
+
+		foreach ( $addonsColumnData as $addonColumnData ) {
+			$postData = array_merge( $postData, $addonColumnData );
 		}
 
 		$posts[]       = $postData;
@@ -206,6 +217,39 @@ class DetailsColumn {
 		wp_localize_script( 'aioseo/js/' . $this->scriptSlug, 'aioseo', $data );
 
 		require AIOSEO_DIR . '/app/Common/Views/admin/posts/columns.php';
+	}
+
+	/**
+	 * Gets the post data for the column.
+	 *
+	 * @since 4.5.0
+	 *
+	 * @param  int    $postId     The Post ID.
+	 * @param  string $columnName The column name.
+	 * @return array              The post data.
+	 */
+	protected function getPostData( $postId, $columnName ) {
+		$nonce    = wp_create_nonce( "aioseo_meta_{$columnName}_{$postId}" );
+		$thePost  = Models\Post::getPost( $postId );
+		$postType = get_post_type( $postId );
+		$postData = [
+			'id'                 => $postId,
+			'columnName'         => $columnName,
+			'nonce'              => $nonce,
+			'title'              => $thePost->title,
+			'defaultTitle'       => aioseo()->meta->title->getPostTypeTitle( $postType ),
+			'showTitle'          => apply_filters( 'aioseo_details_column_post_show_title', true, $postId ),
+			'description'        => $thePost->description,
+			'defaultDescription' => aioseo()->meta->description->getPostTypeDescription( $postType ),
+			'showDescription'    => apply_filters( 'aioseo_details_column_post_show_description', true, $postId ),
+			'value'              => ! empty( $thePost->seo_score ) ? (int) $thePost->seo_score : 0,
+			'showMedia'          => false,
+			'isSpecialPage'      => aioseo()->helpers->isSpecialPage( $postId ),
+			'postType'           => $postType,
+			'isPostVisible'      => aioseo()->helpers->isPostPubliclyViewable( $postId )
+		];
+
+		return $postData;
 	}
 
 	/**

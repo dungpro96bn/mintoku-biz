@@ -32,7 +32,7 @@ class SlugMonitor {
 			return;
 		}
 
-		add_action( 'pre_post_update', [ $this, 'prePostUpdate' ], 10, 2 );
+		add_action( 'pre_post_update', [ $this, 'prePostUpdate' ] );
 
 		// WP 5.6+.
 		if ( function_exists( 'wp_after_insert_post' ) ) {
@@ -65,7 +65,7 @@ class SlugMonitor {
 	 * @param  null|\WP_Post $postBefore The post object before changes were made.
 	 * @return void
 	 */
-	public function afterInsertPost( $postId, $post, $update, $postBefore ) {
+	public function afterInsertPost( $postId, $post = null, $update = false, $postBefore = null ) {
 		if ( ! $update ) {
 			return;
 		}
@@ -83,7 +83,7 @@ class SlugMonitor {
 	 * @param  \WP_Post $postBefore The post object before changes were made.
 	 * @return void
 	 */
-	public function postUpdated( $postId, $post, $postBefore ) {
+	public function postUpdated( $postId, $post = null, $postBefore = null ) {
 		if ( ! isset( $this->updatedPosts[ $postId ] ) ) {
 			return;
 		}

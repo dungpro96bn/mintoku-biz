@@ -11,9 +11,10 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 4.0.0
  */
+#[\AllowDynamicProperties]
 class Model implements \JsonSerializable {
 	/**
-	 * Fields that should be null when saving to the database.
+	 * Fields that can be null when saving to the database.
 	 *
 	 * @since 4.0.0
 	 *
@@ -40,13 +41,23 @@ class Model implements \JsonSerializable {
 	protected $booleanFields = [];
 
 	/**
-	 * Fields that should be numeric values.
+	 * Fields that should be integer values.
 	 *
-	 * @since 4.1.0
+	 * @since   4.1.0
+	 * @version 4.7.3 Renamed from numericFields to integerFields.
 	 *
 	 * @var array
 	 */
-	protected $numericFields = [];
+	protected $integerFields = [];
+
+	/**
+	 * Fields that should be float values.
+	 *
+	 * @since 4.7.3
+	 *
+	 * @var array
+	 */
+	protected $floatFields = [];
 
 	/**
 	 * Fields that should be hidden when serialized.
@@ -77,12 +88,13 @@ class Model implements \JsonSerializable {
 
 	/**
 	 * The ID of the model.
+	 * This needs to be null in order for MySQL to auto-increment correctly if the NO_AUTO_VALUE_ON_ZERO SQL mode is enabled.
 	 *
 	 * @since 4.2.7
 	 *
-	 * @var int
+	 * @var int|null
 	 */
-	public $id = 0;
+	public $id = null;
 
 	/**
 	 * An array of columns from the DB that we can use.
@@ -131,9 +143,8 @@ class Model implements \JsonSerializable {
 	 *
 	 * @since 4.0.0
 	 *
-	 * @param  mixed $var Generally the primary key to load up the model from the DB.
-	 *
-	 * @return BaseModelResource|bool        Returns the current object.
+	 * @param  mixed      $var Generally the primary key to load up the model from the DB.
+	 * @return Model|bool      Returns the current object.
 	 */
 	protected function loadData( $var = null ) {
 		// Return false if var is invalid or not supplied.
@@ -191,8 +202,13 @@ class Model implements \JsonSerializable {
 				continue;
 			}
 
-			if ( in_array( $key, $this->numericFields, true ) ) {
+			if ( in_array( $key, $this->integerFields, true ) ) {
 				$this->$key = (int) $value;
+				continue;
+			}
+
+			if ( in_array( $key, $this->floatFields, true ) ) {
+				$this->$key = (float) $value;
 				continue;
 			}
 		}
@@ -203,9 +219,8 @@ class Model implements \JsonSerializable {
 	 *
 	 * @since 4.0.0
 	 *
-	 * @param  string $key   The table column.
-	 * @param  string $table The table we are looking in.
-	 * @return array         The array of valid columns for the database query.
+	 * @param  string $key The table column.
+	 * @return array       The array of valid columns for the database query.
 	 */
 	protected function filter( $key ) {
 		$table   = aioseo()->core->db->prefix . $this->table;
@@ -234,6 +249,11 @@ class Model implements \JsonSerializable {
 	protected function transform( $data, $set = false ) {
 		foreach ( $this->nullFields as $field ) {
 			if ( isset( $data[ $field ] ) && empty( $data[ $field ] ) ) {
+				// Because sitemap prio can both be 0 and null, we need to make sure it's 0 if it's set.
+				if ( 'priority' === $field && 0.0 === $data[ $field ] ) {
+					continue;
+				}
+
 				$data[ $field ] = null;
 			}
 		}
@@ -250,7 +270,7 @@ class Model implements \JsonSerializable {
 			return $data;
 		}
 
-		foreach ( $this->numericFields as $field ) {
+		foreach ( $this->integerFields as $field ) {
 			if ( isset( $data[ $field ] ) ) {
 				$data[ $field ] = (int) $data[ $field ];
 			}
@@ -423,7 +443,7 @@ class Model implements \JsonSerializable {
 	 */
 	#[\ReturnTypeWillChange]
 	// The attribute above omits a deprecation notice from PHP 8.1 that is thrown because the return type of jsonSerialize() isn't "mixed".
-	// Once PHP 5.6 is our minimum supported version, this can be removed in favour of overriding the return type in the method signature like this -
+	// Once PHP 7.x is our minimum supported version, this can be removed in favour of overriding the return type in the method signature like this -
 	// public function jsonSerialize() : array
 	public function jsonSerialize() {
 		$array = [];
@@ -452,9 +472,12 @@ class Model implements \JsonSerializable {
 
 			// Let's set the columns that are available by default.
 			$table   = aioseo()->core->db->prefix . $this->table;
-			$results = aioseo()->core->db->execute( 'SHOW COLUMNS FROM `' . $table . '`', true );
+			$results = aioseo()->core->db->start( $table )
+				->output( 'OBJECT' )
+				->execute( 'SHOW COLUMNS FROM `' . $table . '`', true )
+				->result();
 
-			foreach ( $results->result() as $col ) {
+			foreach ( $results as $col ) {
 				self::$columns[ get_called_class() ][ $col->Field ] = $col->Default;
 			}
 
@@ -466,55 +489,5 @@ class Model implements \JsonSerializable {
 		}
 
 		return self::$columns[ get_called_class() ];
-	}
-
-	/**
-	 * Returns a JSON object with default schema options.
-	 *
-	 * @since 4.0.0
-	 *
-	 * @param  string $existingOptions The existing options in JSON.
-	 * @return string                  The existing options with defaults added in JSON.
-	 */
-	public static function getDefaultSchemaOptions( $existingOptions = '' ) {
-		// If the root level value for a graph needs to be an object, we need to set at least one property inside of it so that PHP doesn't convert it to an empty array.
-
-		$defaults = [
-			'article'  => [
-				'articleType' => 'BlogPosting'
-			],
-			'course'   => [
-				'name'        => '',
-				'description' => '',
-				'provider'    => ''
-			],
-			'faq'      => [
-				'pages' => []
-			],
-			'product'  => [
-				'reviews' => []
-			],
-			'recipe'   => [
-				'ingredients'  => [],
-				'instructions' => [],
-				'keywords'     => []
-			],
-			'software' => [
-				'reviews'          => [],
-				'operatingSystems' => []
-			],
-			'webPage'  => [
-				'webPageType' => 'WebPage'
-			]
-		];
-
-		if ( empty( $existingOptions ) ) {
-			return wp_json_encode( $defaults );
-		}
-
-		$existingOptions = json_decode( $existingOptions, true );
-		$existingOptions = array_replace_recursive( $defaults, $existingOptions );
-
-		return wp_json_encode( $existingOptions );
 	}
 }

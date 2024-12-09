@@ -1,6 +1,7 @@
 <?php
-
 namespace AIOSEO\Plugin\Common\Social;
+
+use AIOSEO\Plugin\Common\Integrations\BuddyPress as BuddyPressIntegration;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -22,6 +23,10 @@ class Output {
 	 * @return bool Whether or not the page should have social meta.
 	 */
 	public function isAllowed() {
+		if ( BuddyPressIntegration::isComponentPage() ) {
+			return false;
+		}
+
 		if (
 			! is_front_page() &&
 			! is_home() &&

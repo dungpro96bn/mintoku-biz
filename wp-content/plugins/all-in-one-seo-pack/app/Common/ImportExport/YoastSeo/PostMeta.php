@@ -46,7 +46,7 @@ class PostMeta {
 	 * @return void
 	 */
 	public function importPostMeta() {
-		$postsPerAction  = 100;
+		$postsPerAction  = apply_filters( 'aioseo_import_yoast_seo_posts_per_action', 100 );
 		$publicPostTypes = implode( "', '", aioseo()->helpers->getPublicPostTypes( true ) );
 		$timeStarted     = gmdate( 'Y-m-d H:i:s', aioseo()->core->cache->get( 'import_post_meta_yoast_seo' ) );
 
@@ -84,7 +84,7 @@ class PostMeta {
 			'_yoast_wpseo_twitter-image'         => 'twitter_image_custom_url',
 			'_yoast_wpseo_schema_page_type'      => '',
 			'_yoast_wpseo_schema_article_type'   => '',
-			'_yoast_wpseo_primary_category'      => 'og_article_section'
+			'_yoast_wpseo_is_cornerstone'        => 'pillar_content'
 		];
 
 		foreach ( $posts as $post ) {
@@ -96,13 +96,29 @@ class PostMeta {
 				->run()
 				->result();
 
-			$categories    = aioseo()->helpers->getAllCategories( $post->ID );
 			$featuredImage = get_the_post_thumbnail_url( $post->ID );
 			$meta          = [
-				'post_id'            => (int) $post->ID,
-				'twitter_use_og'     => true,
-				'og_image_type'      => $featuredImage ? 'featured' : 'content',
-				'og_article_section' => ! empty( $categories ) ? $categories[0] : null
+				'post_id'                  => (int) $post->ID,
+				'twitter_use_og'           => true,
+				'og_image_type'            => $featuredImage ? 'featured' : 'content',
+				'pillar_content'           => 0,
+				'canonical_url'            => '',
+				'robots_default'           => true,
+				'robots_noarchive'         => false,
+				'robots_nofollow'          => false,
+				'robots_noimageindex'      => false,
+				'robots_noindex'           => false,
+				'robots_noodp'             => false,
+				'robots_nosnippet'         => false,
+				'title'                    => '',
+				'description'              => '',
+				'og_title'                 => '',
+				'og_description'           => '',
+				'og_image_custom_url'      => '',
+				'twitter_title'            => '',
+				'twitter_description'      => '',
+				'twitter_image_custom_url' => '',
+				'twitter_image_type'       => 'default'
 			];
 
 			if ( ! $postMeta || ! count( $postMeta ) ) {
@@ -119,32 +135,46 @@ class PostMeta {
 				$name  = $record->meta_key;
 				$value = $record->meta_value;
 
+				// Handles primary taxonomy terms.
+				// We need to handle it separately because it's stored in a different format.
+				if ( false !== stripos( $name, '_yoast_wpseo_primary_' ) ) {
+					sscanf( $name, '_yoast_wpseo_primary_%s', $taxonomy );
+					if ( null === $taxonomy ) {
+						continue;
+					}
+
+					$options = new \stdClass();
+					if ( isset( $meta['primary_term'] ) ) {
+						$options = json_decode( $meta['primary_term'] );
+					}
+
+					$options->$taxonomy   = (int) $value;
+					$meta['primary_term'] = wp_json_encode( $options );
+				}
+
 				if ( ! in_array( $name, array_keys( $mappedMeta ), true ) ) {
 					continue;
 				}
 
 				switch ( $name ) {
-					case '_yoast_wpseo_primary_category':
-						$primaryCategory = get_cat_name( $value );
-						foreach ( $categories as $category ) {
-							if ( aioseo()->helpers->toLowerCase( $primaryCategory ) === aioseo()->helpers->toLowerCase( $category ) ) {
-								$meta[ $mappedMeta[ $name ] ] = $category;
-								break 2;
-							}
-						}
-
-						$meta[ $mappedMeta[ $name ] ] = ! empty( $categories ) ? $categories[0] : ( ! empty( $primaryCategory ) ? $primaryCategory : '' );
-						break;
 					case '_yoast_wpseo_meta-robots-noindex':
 					case '_yoast_wpseo_meta-robots-nofollow':
 						if ( (bool) $value ) {
-							$meta[ $mappedMeta[ $name ] ]       = ! empty( $value );
-							$meta['robots_default'] = false;
+							$meta[ $mappedMeta[ $name ] ] = (bool) $value;
+							$meta['robots_default']       = false;
 						}
 						break;
 					case '_yoast_wpseo_meta-robots-adv':
+						$supportedValues = [ 'index', 'noarchive', 'noimageindex', 'nosnippet' ];
+						foreach ( $supportedValues as $val ) {
+							$meta[ "robots_$val" ] = false;
+						}
+
+						// This is a separated foreach so we can import any and all values.
 						$values = explode( ',', $value );
 						if ( $values ) {
+							$meta['robots_default'] = false;
+
 							foreach ( $values as $value ) {
 								$meta[ "robots_$value" ] = true;
 							}
@@ -223,15 +253,19 @@ class PostMeta {
 							$keyphrases = (array) json_decode( $meta[ $mappedMeta[ $name ] ] );
 						}
 
-						$yoastKeyphrases = json_decode( $value );
-						for ( $i = 0; $i < count( $yoastKeyphrases ); $i++ ) {
-							$keyphrase = [ 'keyphrase' => aioseo()->helpers->sanitizeOption( $yoastKeyphrases[ $i ]->keyword ) ];
+						$yoastKeyphrases = json_decode( $value, true );
+						if ( is_array( $yoastKeyphrases ) ) {
+							foreach ( $yoastKeyphrases as $yoastKeyphrase ) {
+								if ( ! empty( $yoastKeyphrase['keyword'] ) ) {
+									$keyphrase = [ 'keyphrase' => aioseo()->helpers->sanitizeOption( $yoastKeyphrase['keyword'] ) ];
 
-							if ( ! isset( $keyphrases['additional'] ) ) {
-								$keyphrases['additional'] = [];
+									if ( ! isset( $keyphrases['additional'] ) ) {
+										$keyphrases['additional'] = [];
+									}
+
+									$keyphrases['additional'][] = $keyphrase;
+								}
 							}
-
-							$keyphrases['additional'][ $i ] = $keyphrase;
 						}
 
 						if ( ! empty( $keyphrases ) ) {
@@ -263,6 +297,12 @@ class PostMeta {
 						if ( '_yoast_wpseo_title' === $name ) {
 							$title = $value;
 						}
+
+						$meta[ $mappedMeta[ $name ] ] = esc_html( wp_strip_all_tags( strval( $value ) ) );
+						break;
+					case '_yoast_wpseo_is_cornerstone':
+						$meta['pillar_content'] = (bool) $value ? 1 : 0;
+						break;
 					default:
 						$meta[ $mappedMeta[ $name ] ] = esc_html( wp_strip_all_tags( strval( $value ) ) );
 						break;
@@ -275,15 +315,14 @@ class PostMeta {
 				$meta['twitter_title']  = $title;
 			}
 
-			if ( ! empty( $meta['keyphrases'] ) && is_array( $meta['keyphrases'] ) ) {
-				$meta['keyphrases'] = wp_json_encode( $meta['keyphrases'] );
-			}
-
 			$aioseoPost = Models\Post::getPost( (int) $post->ID );
 			$aioseoPost->set( $meta );
 			$aioseoPost->save();
 
 			aioseo()->migration->meta->migrateAdditionalPostMeta( $post->ID );
+
+			// Clear the Overview cache.
+			aioseo()->postSettings->clearPostTypeOverviewCache( $post->ID );
 		}
 
 		if ( count( $posts ) === $postsPerAction ) {

@@ -25,10 +25,14 @@ class Xsl {
 		$charset     = aioseo()->helpers->getCharset();
 		$sitemapUrl  = wp_get_referer();
 		$sitemapPath = aioseo()->helpers->getPermalinkPath( $sitemapUrl );
-		$sitemapName = strtoupper( pathinfo( $sitemapPath, PATHINFO_EXTENSION ) );
 
-		// Get Sitemap info by URL.
+		// Figure out which sitemap we're serving.
 		preg_match( '/\/(.*?)-?sitemap([0-9]*)\.xml/', $sitemapPath, $sitemapInfo );
+		$sitemapName = ! empty( $sitemapInfo[1] ) ? strtoupper( $sitemapInfo[1] ) : '';
+
+		// Remove everything after ? from sitemapPath to avoid caching issues.
+		$sitemapPath = wp_parse_url( $sitemapPath, PHP_URL_PATH ) ?: '';
+
 		if ( ! empty( $sitemapInfo[1] ) ) {
 			switch ( $sitemapInfo[1] ) {
 				case 'addl':
@@ -36,6 +40,13 @@ class Xsl {
 					break;
 				case 'post-archive':
 					$sitemapName = __( 'Post Archive', 'all-in-one-seo-pack' );
+					break;
+				case 'bp-activity':
+				case 'bp-group':
+				case 'bp-member':
+					$bpFakePostTypes = aioseo()->standalone->buddyPress->getFakePostTypes();
+					$labels          = array_column( wp_list_filter( $bpFakePostTypes, [ 'name' => $sitemapInfo[1] ] ), 'label' );
+					$sitemapName     = ! empty( $labels[0] ) ? $labels[0] : $sitemapName;
 					break;
 				default:
 					if ( post_type_exists( $sitemapInfo[1] ) ) {
@@ -84,6 +95,8 @@ class Xsl {
 		$datetime   = [];
 		$dateFormat = get_option( 'date_format' );
 		$timeFormat = get_option( 'time_format' );
+
+		$entries = aioseo()->sitemap->helpers->decodeSitemapEntries( $entries );
 
 		foreach ( $entries as $index ) {
 			$url = ! empty( $index['guid'] ) ? $index['guid'] : $index['loc'];

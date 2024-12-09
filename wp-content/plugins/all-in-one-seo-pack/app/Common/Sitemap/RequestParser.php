@@ -48,14 +48,19 @@ class RequestParser {
 	 *
 	 * @since 4.2.1
 	 *
-	 * @param  WP   $wp The main WordPress environment instance.
+	 * @param  \WP  $wp The main WordPress environment instance.
 	 * @return void
 	 */
 	public function checkRequest( $wp ) {
-		$this->slug = $wp->request
-			? $this->cleanSlug( $wp->request )
+		$this->slug = $wp->request ?? $this->cleanSlug( $wp->request );
+		if ( ! $this->slug && isset( $_SERVER['REQUEST_URI'] ) ) {
 			// We must fallback to the REQUEST URI in case the site uses plain permalinks.
-			: $this->cleanSlug( $_SERVER['REQUEST_URI'] );
+			$this->slug = $this->cleanSlug( sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) );
+		}
+
+		if ( ! $this->slug ) {
+			return;
+		}
 
 		// Check if we need to remove the trailing slash or redirect another sitemap URL like "wp-sitemap.xml".
 		$this->maybeRedirect();
@@ -153,7 +158,7 @@ class RequestParser {
 	protected function checkForXsl() {
 		// Trim off the URL params.
 		$newSlug = preg_replace( '/\?.*$/', '', $this->slug );
-		if ( preg_match( '/^default\.xsl$/i', $newSlug ) ) {
+		if ( preg_match( '/^default-sitemap\.xsl$/i', $newSlug ) ) {
 			aioseo()->sitemap->xsl->generate();
 		}
 	}
@@ -196,23 +201,28 @@ class RequestParser {
 			return;
 		}
 
+		$requestUri = isset( $_SERVER['REQUEST_URI'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '';
+		if ( ! $requestUri ) {
+			return;
+		}
+
 		$this->checkedForRedirects = true;
 
 		// The request includes our deprecated "aiosp_sitemap_path" URL param.
-		if ( preg_match( '/^\/\?aiosp_sitemap_path=root/i', $_SERVER['REQUEST_URI'] ) ) {
+		if ( preg_match( '/^\/\?aiosp_sitemap_path=root/i', $requestUri ) ) {
 			wp_safe_redirect( home_url( 'sitemap.xml' ) );
 			exit;
 		}
 
 		// The request is for one of our sitemaps, but has a trailing slash.
-		if ( preg_match( '/\/(.*sitemap[0-9]*?\.xml(\.gz)?|.*sitemap(\.latest)?\.rss)\/$/i', $_SERVER['REQUEST_URI'] ) ) {
-			wp_safe_redirect( home_url() . untrailingslashit( $_SERVER['REQUEST_URI'] ) );
+		if ( preg_match( '/\/(.*sitemap[0-9]*?\.xml(\.gz)?|.*sitemap(\.latest)?\.rss)\/$/i', $requestUri ) ) {
+			wp_safe_redirect( home_url() . untrailingslashit( $requestUri ) );
 			exit;
 		}
 
 		// The request is for the first index of a type, but has a page number.
-		if ( preg_match( '/.*sitemap(0|1){1}?\.xml(\.gz)?$/i', $_SERVER['REQUEST_URI'] ) ) {
-			$pathWithoutNumber = preg_replace( '/(.*sitemap)(0|1){1}?(\.xml(\.gz)?)$/i', '$1$3', $_SERVER['REQUEST_URI'] );
+		if ( preg_match( '/.*sitemap(0|1){1}?\.xml(\.gz)?$/i', $requestUri ) ) {
+			$pathWithoutNumber = preg_replace( '/(.*sitemap)(0|1){1}?(\.xml(\.gz)?)$/i', '$1$3', $requestUri );
 			wp_safe_redirect( home_url() . $pathWithoutNumber );
 			exit;
 		}
@@ -236,10 +246,9 @@ class RequestParser {
 			]
 		];
 
-		foreach ( aioseo()->addons->getLoadedAddons() as $addonName => $loadedAddon ) {
-			if ( ! empty( $loadedAddon->helpers ) && method_exists( $loadedAddon->helpers, 'getOtherSitemapPatterns' ) ) {
-				$sitemapPatterns[ $addonName ] = $loadedAddon->helpers->getOtherSitemapPatterns();
-			}
+		$addonSitemapPatterns = aioseo()->addons->doAddonFunction( 'helpers', 'getOtherSitemapPatterns' );
+		if ( ! empty( $addonSitemapPatterns ) ) {
+			$sitemapPatterns = array_merge( $sitemapPatterns, $addonSitemapPatterns );
 		}
 
 		foreach ( $sitemapPatterns as $type => $patterns ) {

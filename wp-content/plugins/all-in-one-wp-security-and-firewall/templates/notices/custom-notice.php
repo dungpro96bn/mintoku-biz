@@ -7,7 +7,7 @@
 				<?php echo $title; ?>
 				<div class="aiowps_advert_dismiss">
 				<?php if (!empty($dismiss_time)) { ?>
-					<a href="#" onclick="jQuery(this).closest('.aiowps_ad_container').slideUp(); jQuery.post(ajaxurl, {action: 'aiowps_ajax', subaction: '<?php echo $dismiss_time;?>', nonce: '<?php echo wp_create_nonce('wp-security-ajax-nonce');?>' });"><?php _e('Dismiss', 'all-in-one-wp-security-and-firewall'); ?></a>
+					<a href="#" onclick="jQuery(this).closest('.aiowps_ad_container').slideUp(); jQuery.post(ajaxurl, {action: 'aios_ajax', subaction: 'dismiss_notice', nonce: '<?php echo wp_create_nonce('wp-security-ajax-nonce'); ?>', data: { notice: '<?php echo $dismiss_time;?>'}});"><?php _e('Dismiss', 'all-in-one-wp-security-and-firewall'); ?></a>
 				<?php } else { ?>
 					<a href="#" onclick="jQuery(this).closest('.aiowps_ad_container').slideUp();"><?php _e('Dismiss', 'all-in-one-wp-security-and-firewall'); ?></a>
 				<?php } ?>
@@ -20,10 +20,10 @@
 			if (!empty($button_link) && !empty($button_meta)) {
 			?>
 			<p>
-				<a class="aiowps_notice_link button button-primary" href="<?php esc_attr_e($button_link);?>">
+				<a class="aiowps_notice_link button button-primary" href="<?php esc_attr_e($button_link, 'all-in-one-wp-security-and-firewall');?>">
 					<?php echo $button_meta; ?>
 				</a>
-				<a class="aiowps_notice_link button button-secondary" style="margin-left: 8px;" href="#" onclick="jQuery(this).closest('.aiowps_ad_container').slideUp(); jQuery.post(ajaxurl, {action: 'aiowps_ajax', subaction: '<?php echo $dismiss_time;?>', nonce: '<?php echo wp_create_nonce('wp-security-ajax-nonce');?>', dismiss_forever: '1' });">
+				<a class="aiowps_notice_link button button-secondary" style="margin-left: 8px;" href="#" onclick="jQuery(this).closest('.aiowps_ad_container').slideUp(); jQuery.post(ajaxurl, {action: 'aios_ajax', subaction: 'dismiss_notice', nonce: '<?php echo wp_create_nonce('wp-security-ajax-nonce'); ?>', data: { notice: '<?php echo $dismiss_time;?>', dismiss_forever: '1'}});">
 					<?php _e('No', 'all-in-one-wp-security-and-firewall'); ?>
 				</a>
 			</p>

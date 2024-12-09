@@ -74,7 +74,7 @@ class Meta {
 		new Amp();
 		new Links();
 
-		add_action( 'delete_post', [ $this, 'deletePostMeta' ], 1000, 2 );
+		add_action( 'delete_post', [ $this, 'deletePostMeta' ], 1000 );
 	}
 
 	/**
@@ -83,7 +83,6 @@ class Meta {
 	 * @since 4.0.1
 	 *
 	 * @param  integer $postId The ID of the post.
-	 * @param  WP_Post $post   The post object.
 	 * @return void
 	 */
 	public function deletePostMeta( $postId ) {

@@ -14,6 +14,11 @@ add_shortcode('uploadPath', 'uploadPath');
 function homePath() { return home_url() . '/'; }
 add_shortcode('homePath', 'homePath');
 
+function enqueue_styles() {
+    wp_enqueue_style('style main.min', get_template_directory_uri() . '/assets/css/main.min.css', true, rand());
+}
+add_action('wp_enqueue_scripts', 'enqueue_styles');
+
 //ウィジェット
 function my_theme_widgets_init() {
 	register_sidebar( array(
@@ -301,7 +306,7 @@ function aioseo_disable_term_output( $disabled ) {
 }
 
 // Short Code Download Contact Form 7
-wpcf7_add_shortcode('get_title_download', 'custom_get_title_download_shortcode_handler');
+wpcf7_add_form_tag('get_title_download', 'custom_get_title_download_shortcode_handler');
 function custom_get_title_download_shortcode_handler() {	
 	ob_start();               
 	$args = array(
@@ -320,7 +325,7 @@ function custom_get_title_download_shortcode_handler() {
 
 
 // Short Code Download Contact Form 7 - get link download video
-wpcf7_add_shortcode('get_url_video_download', 'custom_get_url_download_video_shortcode_handler');
+wpcf7_add_form_tag('get_url_video_download', 'custom_get_url_download_video_shortcode_handler');
 function custom_get_url_download_video_shortcode_handler() {	
 	ob_start();               
 	$args = array(
@@ -340,7 +345,7 @@ function custom_get_url_download_video_shortcode_handler() {
 
 
 
-wpcf7_add_shortcode('download_item', 'custom_download_item_shortcode_handler');
+wpcf7_add_form_tag('download_item', 'custom_download_item_shortcode_handler');
 
 function custom_download_item_shortcode_handler() {
 	ob_start();
@@ -397,7 +402,7 @@ function custom_download_item_shortcode_handler() {
 	return ob_get_clean();
 }
 
-wpcf7_add_shortcode('download_item_upgrade', 'custom_download_item_upgrade_shortcode_handler');
+wpcf7_add_form_tag('download_item_upgrade', 'custom_download_item_upgrade_shortcode_handler');
 
 function custom_download_item_upgrade_shortcode_handler() {
 	ob_start();

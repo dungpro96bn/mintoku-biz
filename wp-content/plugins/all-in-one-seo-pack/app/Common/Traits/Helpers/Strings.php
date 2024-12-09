@@ -53,9 +53,9 @@ trait Strings {
 	 *
 	 * @since 4.0.0
 	 *
-	 * @param  string $string     The string to convert.
-	 * @param  bool   $capitalize Whether or not to capitalize the first letter.
-	 * @return string             The converted string.
+	 * @param  string $string                   The string to convert.
+	 * @param  bool   $capitalizeFirstCharacter Whether to capitalize the first letter.
+	 * @return string                           The converted string.
 	 */
 	public function dashesToCamelCase( $string, $capitalizeFirstCharacter = false ) {
 		$string = str_replace( ' ', '', ucwords( str_replace( '-', ' ', $string ) ) );
@@ -74,7 +74,7 @@ trait Strings {
 	 * @param  string  $string             The string.
 	 * @param  int     $maxCharacters      The max. amount of characters.
 	 * @param  boolean $shouldHaveEllipsis Whether the string should have a trailing ellipsis (defaults to true).
-	 * @return string  $string             The string.
+	 * @return string                      The string.
 	 */
 	public function truncate( $string, $maxCharacters, $shouldHaveEllipsis = true ) {
 		$length       = strlen( $string );
@@ -280,6 +280,10 @@ trait Strings {
 	 * @return string         The encoded string.
 	 */
 	public function encodeOutputHtml( $string ) {
+		if ( ! is_string( $string ) ) {
+			return '';
+		}
+
 		return htmlspecialchars( $string, ENT_COMPAT | ENT_HTML401, $this->getCharset(), false );
 	}
 
@@ -351,15 +355,15 @@ trait Strings {
 	 *
 	 * @since 4.1.0
 	 *
-	 * @param  string $tags The JSON formatted data tags.
-	 * @return string       The comma separated values.
+	 * @param  string|array $tags The Array or JSON formatted data tags.
+	 * @return string             The comma separated values.
 	 */
 	public function jsonTagsToCommaSeparatedList( $tags ) {
-		$tags = json_decode( $tags );
+		$tags = is_string( $tags ) ? json_decode( $tags ) : $tags;
 
 		$values = [];
 		foreach ( $tags as $k => $tag ) {
-			$values[ $k ] = $tag->value;
+			$values[ $k ] = is_object( $tag ) ? $tag->value : $tag['value'];
 		}
 
 		return implode( ',', $values );
@@ -475,7 +479,7 @@ trait Strings {
 
 		$isValid = true;
 
-		if ( false === preg_match( $pattern, null ) ) {
+		if ( false === preg_match( $pattern, '' ) ) {
 			$isValid = false;
 		}
 
@@ -601,5 +605,34 @@ trait Strings {
 	 */
 	public function substring( $string, $startIndex, $length ) {
 		return function_exists( 'mb_substr' ) ? mb_substr( $string, $startIndex, $length, $this->getCharset() ) : substr( $string, $startIndex, $length );
+	}
+
+	/**
+	 * Strips emoji characters from a given string.
+	 *
+	 * @since 4.7.3
+	 *
+	 * @param  string $string The string.
+	 * @return string         The string without emoji characters.
+	 */
+	public function stripEmoji( $string ) {
+		// First, decode HTML entities to convert them to actual Unicode characters.
+		$string = $this->decodeHtmlEntities( $string );
+
+		// Pattern to match emoji characters.
+		$emojiPattern = '/[\x{1F600}-\x{1F64F}' . // Emoticons
+						'\x{1F300}-\x{1F5FF}' . // Misc Symbols and Pictographs
+						'\x{1F680}-\x{1F6FF}' . // Transport and Map Symbols
+						'\x{1F1E0}-\x{1F1FF}' . // Flags (iOS)
+						'\x{2600}-\x{26FF}' . // Misc symbols
+						'\x{2700}-\x{27BF}' . // Dingbats
+						'\x{FE00}-\x{FE0F}' . // Variation Selectors
+						'\x{1F900}-\x{1F9FF}' . // Supplemental Symbols and Pictographs
+						']/u';
+
+		$filteredString = preg_replace( $emojiPattern, '', $string );
+
+		// Re-encode special characters to HTML entities.
+		return $this->encodeOutputHtml( $filteredString );
 	}
 }

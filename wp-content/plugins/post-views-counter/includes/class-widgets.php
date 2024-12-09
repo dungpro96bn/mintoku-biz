@@ -39,6 +39,7 @@ class Post_Views_Counter_List_Widget extends WP_Widget {
 
 	private $pvc_defaults;
 	private $pvc_order_types;
+	public $pvc_periods;
 	private $pvc_list_types;
 	private $pvc_image_sizes;
 
@@ -61,6 +62,7 @@ class Post_Views_Counter_List_Widget extends WP_Widget {
 		$this->pvc_defaults = [
 			'title'					=> __( 'Most Viewed Posts', 'post-views-counter' ),
 			'number_of_posts'		=> 5,
+			'period'				=> 'total',
 			'thumbnail_size'		=> 'thumbnail',
 			'post_type'				=> [],
 			'order'					=> 'desc',
@@ -76,6 +78,11 @@ class Post_Views_Counter_List_Widget extends WP_Widget {
 		$this->pvc_order_types = [
 			'asc'	 => __( 'Ascending', 'post-views-counter' ),
 			'desc'	 => __( 'Descending', 'post-views-counter' )
+		];
+
+		// periods
+		$this->pvc_periods = [
+			'total' => __( 'Total Views', 'post-views-counter' )
 		];
 
 		// list types
@@ -121,33 +128,46 @@ class Post_Views_Counter_List_Widget extends WP_Widget {
 	public function form( $instance ) {
 		$html = '
 		<p>
-			<label for="' . $this->get_field_id( 'title' ) . '">' . __( 'Title', 'post-views-counter' ) . ':</label>
-			<input id="' . $this->get_field_id( 'title' ) . '" class="widefat" name="' . $this->get_field_name( 'title' ) . '" type="text" value="' . esc_attr( isset( $instance['title'] ) ? $instance['title'] : $this->pvc_defaults['title'] ) . '" />
+			<label for="' . esc_attr( $this->get_field_id( 'title' ) ) . '">' . esc_html__( 'Title', 'post-views-counter' ) . ':</label>
+			<input id="' . esc_attr( $this->get_field_id( 'title' ) ) . '" class="widefat" name="' . esc_attr( $this->get_field_name( 'title' ) ) . '" type="text" value="' . esc_attr( isset( $instance['title'] ) ? $instance['title'] : $this->pvc_defaults['title'] ) . '" />
 		</p>
 		<p>
-			<label>' . __( 'Post Types', 'post-views-counter' ) . ':</label><br />';
+			<label>' . esc_html__( 'Post Types', 'post-views-counter' ) . ':</label><br />';
 
 		// post types
 		foreach ( Post_Views_Counter()->functions->get_post_types() as $post_type => $post_type_name ) {
 			$html .= '
-			<input id="' . $this->get_field_id( 'post_type' ) . '-' . $post_type . '" type="checkbox" name="' . $this->get_field_name( 'post_type' ) . '[]" value="' . $post_type . '" ' . checked( ( ! isset( $instance['post_type'] ) ? true : in_array( $post_type, $instance['post_type'], true ) ), true, false ) . '><label for="' . $this->get_field_id( 'post_type' ) . '-' . $post_type . '">' . esc_html( $post_type_name ) . '</label>';
+			<input id="' . esc_attr( $this->get_field_id( 'post_type' ) . '-' . $post_type ) . '" type="checkbox" name="' . esc_attr( $this->get_field_name( 'post_type' ) ) . '[]" value="' . esc_attr( $post_type ) . '" ' . checked( ( ! isset( $instance['post_type'] ) ? true : in_array( $post_type, $instance['post_type'], true ) ), true, false ) . '><label for="' . esc_attr( $this->get_field_id( 'post_type' ) . '-' . $post_type ) . '">' . esc_html( $post_type_name ) . '</label>';
+		}
+
+		$html .= '
+		</p>
+		<p>
+			<label for="' . esc_attr( $this->get_field_id( 'period' ) ) . '">' . esc_html__( 'Views Period', 'post-views-counter' ) . ':</label>
+			<select id="' . esc_attr( $this->get_field_id( 'period' ) ) . '" name="' . esc_attr( $this->get_field_name( 'period' ) ) . '">';
+
+		// periods
+		foreach ( $this->pvc_periods as $period => $label ) {
+			$html .= '
+				<option value="' . esc_attr( $period ) . '" ' . selected( $period, ( isset( $instance['period'] ) ? $instance['period'] : $this->pvc_defaults['period'] ), false ) . '>' . esc_html( $label ) . '</option>';
 		}
 
 		$show_post_thumbnail = isset( $instance['show_post_thumbnail'] ) ? $instance['show_post_thumbnail'] : $this->pvc_defaults['show_post_thumbnail'];
 
 		$html .= '
+			</select>
 		</p>
 		<p>
-			<label for="' . $this->get_field_id( 'number_of_posts' ) . '">' . __( 'Number of posts to show', 'post-views-counter' ) . ':</label>
-			<input id="' . $this->get_field_id( 'number_of_posts' ) . '" name="' . $this->get_field_name( 'number_of_posts' ) . '" type="number" size="3" min="0" max="100" value="' . esc_attr( isset( $instance['number_of_posts'] ) ? $instance['number_of_posts'] : $this->pvc_defaults['number_of_posts'] ) . '" />
+			<label for="' . esc_attr( $this->get_field_id( 'number_of_posts' ) ) . '">' . esc_html__( 'Number of posts to show', 'post-views-counter' ) . ':</label>
+			<input id="' . esc_attr( $this->get_field_id( 'number_of_posts' ) ) . '" name="' . esc_attr( $this->get_field_name( 'number_of_posts' ) ) . '" type="number" size="3" min="0" max="100" value="' . esc_attr( isset( $instance['number_of_posts'] ) ? $instance['number_of_posts'] : $this->pvc_defaults['number_of_posts'] ) . '" />
 		</p>
 		<p>
-			<label for="' . $this->get_field_id( 'no_posts_message' ) . '">' . __( 'No posts message', 'post-views-counter' ) . ':</label>
-			<input id="' . $this->get_field_id( 'no_posts_message' ) . '" class="widefat" type="text" name="' . $this->get_field_name( 'no_posts_message' ) . '" value="' . esc_attr( isset( $instance['no_posts_message'] ) ? $instance['no_posts_message'] : $this->pvc_defaults['no_posts_message'] ) . '" />
+			<label for="' . esc_attr( $this->get_field_id( 'no_posts_message' ) ) . '">' . esc_html__( 'No posts message', 'post-views-counter' ) . ':</label>
+			<input id="' . esc_attr( $this->get_field_id( 'no_posts_message' ) ) . '" class="widefat" type="text" name="' . esc_attr( $this->get_field_name( 'no_posts_message' ) ) . '" value="' . esc_attr( isset( $instance['no_posts_message'] ) ? $instance['no_posts_message'] : $this->pvc_defaults['no_posts_message'] ) . '" />
 		</p>
 		<p>
-			<label for="' . $this->get_field_id( 'order' ) . '">' . __( 'Order', 'post-views-counter' ) . ':</label>
-			<select id="' . $this->get_field_id( 'order' ) . '" name="' . $this->get_field_name( 'order' ) . '">';
+			<label for="' . esc_attr( $this->get_field_id( 'order' ) ) . '">' . esc_html__( 'Order', 'post-views-counter' ) . ':</label>
+			<select id="' . esc_attr( $this->get_field_id( 'order' ) ) . '" name="' . esc_attr( $this->get_field_name( 'order' ) ) . '">';
 
 		// order types
 		foreach ( $this->pvc_order_types as $id => $order ) {
@@ -159,8 +179,8 @@ class Post_Views_Counter_List_Widget extends WP_Widget {
 			</select>
 		</p>
 		<p>
-			<label for="' . $this->get_field_id( 'list_type' ) . '">' . __( 'Display Style', 'post-views-counter' ) . ':</label>
-			<select id="' . $this->get_field_id( 'list_type' ) . '" name="' . $this->get_field_name( 'list_type' ) . '">';
+			<label for="' . esc_attr( $this->get_field_id( 'list_type' ) ) . '">' . esc_html__( 'Display Style', 'post-views-counter' ) . ':</label>
+			<select id="' . esc_attr( $this->get_field_id( 'list_type' ) ) . '" name="' . esc_attr( $this->get_field_name( 'list_type' ) ) . '">';
 
 		// list types
 		foreach ( $this->pvc_list_types as $id => $list_type ) {
@@ -172,17 +192,17 @@ class Post_Views_Counter_List_Widget extends WP_Widget {
 			</select>
 		</p>
 		<p>
-			<input id="' . $this->get_field_id( 'show_post_views' ) . '" type="checkbox" name="' . $this->get_field_name( 'show_post_views' ) . '" value="show_post_views" ' . checked( true, ( isset( $instance['show_post_views'] ) ? $instance['show_post_views'] : $this->pvc_defaults['show_post_views'] ), false ) . ' /> <label for="' . $this->get_field_id( 'show_post_views' ) . '">' . __( 'Display post views?', 'post-views-counter' ) . '</label>
+			<input id="' . esc_attr( $this->get_field_id( 'show_post_views' ) ) . '" type="checkbox" name="' . esc_attr( $this->get_field_name( 'show_post_views' ) ) . '" value="show_post_views" ' . checked( true, ( isset( $instance['show_post_views'] ) ? $instance['show_post_views'] : $this->pvc_defaults['show_post_views'] ), false ) . ' /> <label for="' . esc_attr( $this->get_field_id( 'show_post_views' ) ) . '">' . esc_html__( 'Display post views?', 'post-views-counter' ) . '</label>
 			<br />
-			<input id="' . $this->get_field_id( 'show_post_excerpt' ) . '" type="checkbox" name="' . $this->get_field_name( 'show_post_excerpt' ) . '" value="show_post_excerpt" ' . checked( true, ( isset( $instance['show_post_excerpt'] ) ? $instance['show_post_excerpt'] : $this->pvc_defaults['show_post_excerpt'] ), false ) . ' /> <label for="' . $this->get_field_id( 'show_post_excerpt' ) . '">' . __( 'Display post excerpt?', 'post-views-counter' ) . '</label>
+			<input id="' . esc_attr( $this->get_field_id( 'show_post_excerpt' ) ) . '" type="checkbox" name="' . esc_attr( $this->get_field_name( 'show_post_excerpt' ) ) . '" value="show_post_excerpt" ' . checked( true, ( isset( $instance['show_post_excerpt'] ) ? $instance['show_post_excerpt'] : $this->pvc_defaults['show_post_excerpt'] ), false ) . ' /> <label for="' . esc_attr( $this->get_field_id( 'show_post_excerpt' ) ) . '">' . esc_html__( 'Display post excerpt?', 'post-views-counter' ) . '</label>
 			<br />
-			<input id="' . $this->get_field_id( 'show_post_author' ) . '" type="checkbox" name="' . $this->get_field_name( 'show_post_author' ) . '" value="show_post_author" ' . checked( true, ( isset( $instance['show_post_author'] ) ? $instance['show_post_author'] : $this->pvc_defaults['show_post_author'] ), false ) . ' /> <label for="' . $this->get_field_id( 'show_post_author' ) . '">' . __( 'Display post author?', 'post-views-counter' ) . '</label>
+			<input id="' . esc_attr( $this->get_field_id( 'show_post_author' ) ) . '" type="checkbox" name="' . esc_attr( $this->get_field_name( 'show_post_author' ) ) . '" value="show_post_author" ' . checked( true, ( isset( $instance['show_post_author'] ) ? $instance['show_post_author'] : $this->pvc_defaults['show_post_author'] ), false ) . ' /> <label for="' . esc_attr( $this->get_field_id( 'show_post_author' ) ) . '">' . esc_html__( 'Display post author?', 'post-views-counter' ) . '</label>
 			<br />
-			<input id="' . $this->get_field_id( 'show_post_thumbnail' ) . '" class="pvc-show-post-thumbnail" type="checkbox" name="' . $this->get_field_name( 'show_post_thumbnail' ) . '" value="show_post_thumbnail" ' . checked( true, $show_post_thumbnail, false ) . ' /> <label for="' . $this->get_field_id( 'show_post_thumbnail' ) . '">' . __( 'Display post thumbnail?', 'post-views-counter' ) . '</label>
+			<input id="' . esc_attr( $this->get_field_id( 'show_post_thumbnail' ) ) . '" class="pvc-show-post-thumbnail" type="checkbox" name="' . esc_attr( $this->get_field_name( 'show_post_thumbnail' ) ) . '" value="show_post_thumbnail" ' . checked( true, $show_post_thumbnail, false ) . ' /> <label for="' . esc_attr( $this->get_field_id( 'show_post_thumbnail' ) ) . '">' . esc_html__( 'Display post thumbnail?', 'post-views-counter' ) . '</label>
 		</p>
 		<p class="pvc-post-thumbnail-size"' . ( $show_post_thumbnail ? '' : ' style="display: none;"' ) . '>
-			<label for="' . $this->get_field_id( 'thumbnail_size' ) . '">' . __( 'Thumbnail size', 'post-views-counter' ) . ':</label>
-			<select id="' . $this->get_field_id( 'thumbnail_size' ) . '" name="' . $this->get_field_name( 'thumbnail_size' ) . '">';
+			<label for="' . esc_attr( $this->get_field_id( 'thumbnail_size' ) ) . '">' . esc_html__( 'Thumbnail size', 'post-views-counter' ) . ':</label>
+			<select id="' . esc_attr( $this->get_field_id( 'thumbnail_size' ) ) . '" name="' . esc_attr( $this->get_field_name( 'thumbnail_size' ) ) . '">';
 
 		$size_type = isset( $instance['thumbnail_size'] ) ? $instance['thumbnail_size'] : $this->pvc_defaults['thumbnail_size'];
 
@@ -212,6 +232,9 @@ class Post_Views_Counter_List_Widget extends WP_Widget {
 
 		// order
 		$old_instance['order'] = isset( $new_instance['order'] ) && in_array( $new_instance['order'], array_keys( $this->pvc_order_types ), true ) ? $new_instance['order'] : $this->pvc_defaults['order'];
+
+		// period
+		$old_instance['period'] = isset( $new_instance['period'] ) && in_array( $new_instance['period'], array_keys( $this->pvc_periods ), true ) ? $new_instance['period'] : $this->pvc_defaults['period'];
 
 		// list type
 		$old_instance['list_type'] = isset( $new_instance['list_type'] ) && in_array( $new_instance['list_type'], array_keys( $this->pvc_list_types ), true ) ? $new_instance['list_type'] : $this->pvc_defaults['list_type'];
