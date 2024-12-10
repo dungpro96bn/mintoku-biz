@@ -93,10 +93,10 @@ CommonStyle
 body {
 	display: flex;
 	flex-direction: column;
-	color: #2E2E2E;
+	color: #000;
 	font-style: normal;
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 14px;
+	font-weight: 600;
 	line-height: 1.5;
 	overflow-x: hidden;
 }
@@ -242,19 +242,15 @@ body::-webkit-scrollbar-thumb {
 
 .inner {
 	width: 100%;
-	max-width: 1040px;
+	max-width: 1204px;
 	margin: auto;
 	padding: 0 20px;
 }
 
 .en, .ttl-en, .number{
-	font-family: "Roboto", sans-serif;
+	font-family: "Josefin Sans", serif;
 }
 
-body{
-	margin-top: 64px;
-	background: #F7F7F7;
-}
 
 input[type="search"]::-webkit-search-decoration:hover,
 input[type="search"]::-webkit-search-cancel-button:hover {

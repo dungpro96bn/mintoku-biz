@@ -1,0 +1,95 @@
+@charset "UTF-8";
+.en,
+.ttl-en {
+  font-family: "Josefin Sans", serif;
+}
+
+#header-menu {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 99;
+  background: #fff;
+}
+#header-menu .header-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+#header-menu .header-inner .header-logo {
+  width: 30%;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+}
+#header-menu .header-inner .right-header {
+  width: calc(70% - 304px);
+  padding-right: 22px;
+}
+#header-menu .header-inner #navList-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#header-menu .header-inner #navList-menu .menu-item.menu-item-has-children > a:before {
+  width: calc(100% - 46px);
+}
+#header-menu .header-inner #navList-menu .menu-item.menu-item-has-children > a:after {
+  content: "＞";
+  position: relative;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #0F3745;
+  transform: rotate(90deg);
+  margin-left: 4px;
+}
+#header-menu .header-inner #navList-menu .menu-item a {
+  font-size: 14px;
+  line-height: 21px;
+  color: #0F3745;
+  font-weight: 600;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  position: relative;
+}
+#header-menu .header-inner #navList-menu .menu-item a:before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 3px;
+  left: 16px;
+  top: 63%;
+  background: #E48121;
+  opacity: 0;
+  transition: 0.3s;
+}
+#header-menu .header-inner #navList-menu .menu-item > a:hover:before {
+  opacity: 1;
+}
+#header-menu .header-inner #navList-menu .sub-menu {
+  display: none;
+}
+#header-menu .header-inner .header-action-right {
+  width: 304px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#header-menu .header-inner .header-action-right a {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  font-weight: 600;
+}
+#header-menu .header-inner .header-action-right a.download-btn {
+  background: #E48121;
+}
+#header-menu .header-inner .header-action-right a.contact-btn {
+  background: #1AA1D5;
+}

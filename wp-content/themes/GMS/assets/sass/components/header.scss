@@ -1,0 +1,122 @@
+@use "../_var";
+
+#header-menu{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 99;
+  background: #fff;
+
+
+  .header-inner{
+    display: flex;
+    flex-wrap: wrap;
+
+    .header-logo{
+      width: 30%;
+      padding-left: 32px;
+      display: flex;
+      align-items: center;
+    }
+
+    .right-header{
+      width: calc(70% - 304px);
+      padding-right: 22px;
+    }
+
+    #navList-menu{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+
+      .menu-item{
+
+        &.menu-item-has-children{
+          > a{
+
+            &:before{
+              width: calc(100% - 46px);
+            }
+
+            &:after{
+              content: "＞";
+              position: relative;
+              font-size: 13px;
+              line-height: 20px;
+              font-weight: 600;
+              color: #0F3745;
+              transform: rotate(90deg);
+              margin-left: 4px;
+            }
+          }
+        }
+
+        a{
+          font-size: 14px;
+          line-height: 21px;
+          color: #0F3745;
+          font-weight: 600;
+          display: flex;
+          height: 80px;
+          align-items: center;
+          justify-content: center;
+          padding: 0 16px;
+          position: relative;
+
+          &:before{
+            content: "";
+            position: absolute;
+            width: calc(100% - 32px);
+            height: 3px;
+            left: 16px;
+            top: 63%;
+            background: #E48121;
+            opacity: 0;
+            transition: .3s;
+          }
+
+        }
+
+        >a:hover{
+          &:before{
+            opacity: 1;
+          }
+        }
+
+      }
+
+      .sub-menu{
+        display: none;
+      }
+
+    }
+
+    .header-action-right{
+      width: 304px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+
+      a{
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: 21px;
+        color: #fff;
+        font-weight: 600;
+
+        &.download-btn{
+          background: #E48121;
+        }
+
+        &.contact-btn{
+          background: #1AA1D5;
+        }
+
+      }
+
+    }
+  }
+}
+

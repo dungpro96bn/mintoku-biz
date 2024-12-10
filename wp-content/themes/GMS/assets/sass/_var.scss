@@ -3,6 +3,11 @@ $md: 1280px;
 $sm: 1023px;
 $xs: 767px;
 
+.en,
+.ttl-en {
+  font-family: "Josefin Sans", serif;
+}
+
 @mixin md { //max 1280px
   @media (max-width: ($md)) {
     @content;

@@ -39,7 +39,7 @@
       })(document);
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
     <!-- css file-->
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/all.min.css">
@@ -112,6 +112,35 @@
 
     <div class="outer">
         <header id="header-menu" class="header-menu">
-
+            <div class="header-nav">
+                <div class="header-inner">
+                    <div class="header-logo">
+                        <a class="link-logo" href="<?php echo home_url(); ?>">
+                            <picture class="logo">
+                                <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo.svg">
+                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/logo.svg" alt="<?php bloginfo('name'); ?>">
+                            </picture>
+                        </a>
+                    </div><!-- .header-logo -->
+                    <div class="right-header header-megamenu">
+                        <?php wp_nav_menu(
+                            array(
+                                'menu_class' => 'navMenu',
+                                'menu_id' => 'navList-menu',
+                                'container' => 'div',
+                                'container_id' => 'nav-container'
+                            )
+                        ); ?>
+                    </div>
+                    <div class="header-action-right">
+                        <div class="download">
+                            <a class="download-btn" href="#">資料ダウンロード</a>
+                        </div>
+                        <div class="contact">
+                            <a class="contact-btn" href="#">お問い合わせ</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .header-nav -->
         </header><!-- #header-menu -->
         <main role="main">
