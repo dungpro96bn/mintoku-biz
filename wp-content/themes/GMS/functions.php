@@ -19,6 +19,32 @@ function enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_styles');
 
+//add icon to menu item
+add_filter('wp_nav_menu_objects', 'add_acf_fields_to_menu_items', 10, 2);
+
+function add_acf_fields_to_menu_items($items, $args) {
+    foreach ($items as $item) {
+        // Lấy giá trị của custom field `icon_menu`
+        $icon = get_field('icon_menu', $item);
+
+        if (is_array($icon) && isset($icon['url'])) {
+            // Nếu $icon là mảng, lấy URL của ảnh
+            $icon_url = esc_url($icon['url']);
+        } elseif (is_string($icon)) {
+            // Nếu $icon là chuỗi, sử dụng trực tiếp
+            $icon_url = esc_url($icon);
+        } else {
+            $icon_url = '';
+        }
+
+        if ($icon_url) {
+            // Thêm HTML chứa hình ảnh vào title
+            $item->title = '<span class="icon"><img src="' . $icon_url . '" alt="' . esc_attr($item->title) . '" class="menu-icon" /></span>' . '<span class="t-link">'.$item->title.'</span>';
+        }
+    }
+    return $items;
+}
+
 //ウィジェット
 function my_theme_widgets_init() {
 	register_sidebar( array(

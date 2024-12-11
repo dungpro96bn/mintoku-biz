@@ -1,12 +1,36 @@
 @use "../_var";
 
 #header-menu{
-  position: fixed;
+  position: absolute;
   width: 100%;
+  top: 0;
   left: 0;
+  right: 0;
   z-index: 99;
-  background: #fff;
+  background: #FFF;
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
 
+  .header-nav {
+    width: 100%;
+    background: #fff;
+
+    &.scroll-header{
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      transform: translate3d(0,-100%,0);
+      transition: none;
+      width: 100%;
+      box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    }
+
+    &.site-header--opening{
+      transform: translateZ(0);
+      transition: transform .5s cubic-bezier(.165, .84, .44, 1);
+    }
+
+  }
 
   .header-inner{
     display: flex;
@@ -78,15 +102,77 @@
         }
 
         >a:hover{
+          opacity: .8;
+
           &:before{
             opacity: 1;
           }
         }
 
+        &:hover{
+          .sub-menu{
+            display: flex;
+          }
+        }
+
+
       }
 
       .sub-menu{
         display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        width: calc(100% - 85px);
+        top: 100%;
+        left: 42.5px;
+        background: #fff;
+        box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+
+        .menu-item{
+          a{
+            height: 78px;
+            display: flex;
+            flex-direction: column;
+            padding: 4px 20px 0;
+
+            .icon{
+              width: 100%;
+              display: block;
+              text-align: center;
+              margin-bottom: 5px;
+            }
+
+            .t-link{
+              width: 100%;
+              display: block;
+              line-height: 20px;
+              text-align: center;
+            }
+
+            img{
+              width: 30px;
+              height: auto;
+            }
+
+            &:before{
+              display: none !important;
+            }
+          }
+        }
+
+
+        &:before{
+          content: "";
+          position: absolute;
+          width: 100vw;
+          left: 50%;
+          top: 0;
+          transform: translateX(-50%);
+          height: 3px;
+          background: #0F3745;
+        }
+
       }
 
     }

@@ -25,6 +25,8 @@
 /wp-content/themes/gms/assets/sass/*.css.map
 /wp-content/themes/gms/assets/sass/components/.sass-cache/
 
+/wp-content/webp-express/
+
 /wp-content/uploads/wpcf7_uploads/
 /wp-content/temp-write-test-**
 

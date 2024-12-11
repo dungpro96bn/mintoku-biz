@@ -1,7 +1,85 @@
     </main>
 
     <footer id="footer" class="footer">
-
+        <div class="inner">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo-footer">
+                        <a href="<?php echo home_url(); ?>">
+                            <picture class="logo">
+                                <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo-footer.svg">
+                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/logo-footer.svg" alt="<?php bloginfo('name'); ?>">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="info-company">
+                        <h4 class="ttl">株式会社キャムグローバル</h4>
+                        <div class="address">
+                            <p>〒163-0638<br/>東京都新宿区西新宿1-25-1</p>
+                        </div>
+                        <div class="privacy">
+                            <p>プライバシーポリシー</p>
+                            <p>運営会社</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-link-page">
+                        <ul class="footer-menu-list">
+                            <li class="footer-menu-item">
+                                <a href="#">外国人材Q&A</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">セミナー情報</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">お知らせ</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">お問い合わせ</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-menu-list">
+                            <li class="footer-menu-item">
+                                <a href="#">オンライン展示会</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">海外人材タイムズ</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">動画コンテンツ一覧</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-service">
+                        <h4 class="title en">SERVICE</h4>
+                        <ul class="menu-service-list">
+                            <li class="menu-service-item">
+                                <a href="#">mintoku work</a>
+                            </li>
+                            <li class="menu-service-item">
+                                <a href="#">労務代行サービス</a>
+                            </li>
+                            <li class="menu-service-item">
+                                <a href="#">生活支援サービス</a>
+                            </li>
+                            <li class="menu-service-item">
+                                <a href="#">mintoku study</a>
+                            </li>
+                            <li class="menu-service-item">
+                                <a href="#">前トレ</a>
+                            </li>
+                            <li class="menu-service-item">
+                                <a href="#">エデュックアカデミー</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© CAM GLOBAL INC.All Rights Reserved.</p>
+            </div>
+        </div>
     </footer><!-- #footer -->
 </div><!-- .outer -->
 

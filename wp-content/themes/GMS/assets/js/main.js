@@ -3,11 +3,11 @@ jQuery(function ($) {
 
 
     //fade
-    AOS.init({
-        once: true,
-        duration: 1000,
-        delay: 0,
-    });
+    // AOS.init({
+    //     once: true,
+    //     duration: 1000,
+    //     delay: 0,
+    // });
 
 
     //scroll

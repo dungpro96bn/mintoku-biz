@@ -20,11 +20,8 @@
 
         <div class="partners">
             <div class="partners-logo">
-                <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_partners_pc.png">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_partners_pc.png">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_partners_pc.png" alt="">
-                </picture>
+                <div class="partners-slider">
+                </div>
             </div>
         </div>
 
@@ -266,9 +263,37 @@
                     <div class="qa-list">
                         <div class="qa-item">
                             <div class="qa-question">
+                                <div class="title is-active">
+                                    <span class="en">Q.</span>
+                                    <p class="ttl">鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
+                                    <span class="icon-toggle">
+                                        <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                            <line id="Line_3" data-name="Line 3" x2="30" transform="translate(0 15)" fill="none" stroke="#0f3745" stroke-width="3"/>
+                                            <line id="Line_4" data-name="Line 4" x2="30" transform="translate(15) rotate(90)" fill="none" stroke="#0f3745" stroke-width="3"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="answer-content is-active">
+                                <div class="qa-answer">
+                                    <span class="en">A.</span>
+                                    <div class="info">
+                                        <p class="text">鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa-item">
+                            <div class="qa-question">
                                 <div class="title">
                                     <span class="en">Q.</span>
                                     <p class="ttl">鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
+                                    <span class="icon-toggle">
+                                        <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                            <line id="Line_3" data-name="Line 3" x2="30" transform="translate(0 15)" fill="none" stroke="#0f3745" stroke-width="3"/>
+                                            <line id="Line_4" data-name="Line 4" x2="30" transform="translate(15) rotate(90)" fill="none" stroke="#0f3745" stroke-width="3"/>
+                                        </svg>
+                                    </span>
                                 </div>
                             </div>
                             <div class="answer-content">
@@ -285,6 +310,12 @@
                                 <div class="title">
                                     <span class="en">Q.</span>
                                     <p class="ttl">鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
+                                    <span class="icon-toggle">
+                                        <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                            <line id="Line_3" data-name="Line 3" x2="30" transform="translate(0 15)" fill="none" stroke="#0f3745" stroke-width="3"/>
+                                            <line id="Line_4" data-name="Line 4" x2="30" transform="translate(15) rotate(90)" fill="none" stroke="#0f3745" stroke-width="3"/>
+                                        </svg>
+                                    </span>
                                 </div>
                             </div>
                             <div class="answer-content">
@@ -301,6 +332,12 @@
                                 <div class="title">
                                     <span class="en">Q.</span>
                                     <p class="ttl">鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
+                                    <span class="icon-toggle">
+                                        <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                            <line id="Line_3" data-name="Line 3" x2="30" transform="translate(0 15)" fill="none" stroke="#0f3745" stroke-width="3"/>
+                                            <line id="Line_4" data-name="Line 4" x2="30" transform="translate(15) rotate(90)" fill="none" stroke="#0f3745" stroke-width="3"/>
+                                        </svg>
+                                    </span>
                                 </div>
                             </div>
                             <div class="answer-content">
@@ -317,22 +354,12 @@
                                 <div class="title">
                                     <span class="en">Q.</span>
                                     <p class="ttl">鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
-                                </div>
-                            </div>
-                            <div class="answer-content">
-                                <div class="qa-answer">
-                                    <span class="en">A.</span>
-                                    <div class="info">
-                                        <p class="text">鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="qa-item">
-                            <div class="qa-question">
-                                <div class="title">
-                                    <span class="en">Q.</span>
-                                    <p class="ttl">鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
+                                    <span class="icon-toggle">
+                                        <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                            <line id="Line_3" data-name="Line 3" x2="30" transform="translate(0 15)" fill="none" stroke="#0f3745" stroke-width="3"/>
+                                            <line id="Line_4" data-name="Line 4" x2="30" transform="translate(15) rotate(90)" fill="none" stroke="#0f3745" stroke-width="3"/>
+                                        </svg>
+                                    </span>
                                 </div>
                             </div>
                             <div class="answer-content">
@@ -346,21 +373,97 @@
                         </div>
                     </div>
                     <div class="link-page">
-                        <a href="#">Q&A一覧を見る</a>
+                        <a href="#">Q&A一覧を見る<span class="icon-arrow">＞</span></a>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="banner-other">
-            <div class="">
-
+            <div class="inner">
+                <div class="banner-list">
+                    <div class="banner-item">
+                        <div class="image-banner">
+                            <picture class="image">
+                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image15_pc.png">
+                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image15_pc.png">
+                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image15_pc.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="info">
+                            <h4 class="title"><span>お役立ち資料</span></h4>
+                            <p>外国人材に関するサービス活用方法や、<br/>特定技能在留外国人推移などの資料が無料でダウンロード可能。</p>
+                        </div>
+                        <div class="link-page">
+                            <a href="#">詳しく見る ＞</a>
+                        </div>
+                    </div>
+                    <div class="banner-item">
+                        <div class="image-banner">
+                            <picture class="image">
+                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image16_pc.png">
+                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image16_pc.png">
+                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image16_pc.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="info">
+                            <h4 class="title"><span>セミナー</span></h4>
+                            <p>外国人採用に関するセミナーを<br/>
+                                様々なテーマで開催<br/>
+                                過去セミナーの動画もダウンロード可能</p>
+                        </div>
+                        <div class="link-page">
+                            <a href="#">詳しく見る ＞</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
 
+        <div class="contact-bottom">
+            <div class="contact-info">
+                <div class="info-inner">
+                    <div class="info-text">
+                        <p>お悩み・課題に合わせて<br/>
+                            活用方法をご案内いたします。<br/>
+                            お気軽にお問い合わせください。</p>
+                    </div>
+                    <p class="tel">03-6738-9686</p>
+                    <p class="time">（平日：10時〜18時）</p>
+                </div>
+            </div>
+            <div class="box-btn">
+                <a href="#">
+                    <picture class="image">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image17_pc.png">
+                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image17_pc.png">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image17_pc.png" alt="">
+                    </picture>
+                    <h4 class="title"><span class="orange">資料ダウンロード</span></h4>
+                </a>
+            </div>
+            <div class="box-btn">
+                <a href="#"><picture class="image">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image18_pc.png">
+                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image18_pc.png">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image18_pc.png" alt="">
+                    </picture>
+                    <h4 class="title"><span class="blue">お問い合わせ</span></h4>
+                </a>
+            </div>
+        </div>
+
 
     </div>
 
+<script type="text/javascript">
+    $(document).ready(function (){
+        $(".qa-item .qa-question .title").click(function (){
+            $(this).toggleClass("is-active");
+            $(this).parents(".qa-item").find(".answer-content").toggleClass("is-active");
+        });
+    })
+</script>
 
 <?php get_footer(); ?>
