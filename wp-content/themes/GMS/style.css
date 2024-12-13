@@ -265,6 +265,18 @@ body.search-focus footer{
 	filter: blur(4px);
 }
 
+body:not(.home){
+	/*margin-top: 80px;*/
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.center{
+	text-align: center;
+}
+
 #wpadminbar{
 	position: fixed !important;
 }
