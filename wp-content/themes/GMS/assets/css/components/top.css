@@ -603,6 +603,9 @@
   background: rgba(42, 72, 82, 0.5);
   margin-bottom: 0;
 }
+.banner-other.immigration {
+  margin-bottom: 130px;
+}
 .banner-other .banner-list {
   max-width: 1040px;
   margin: auto;
@@ -668,6 +671,7 @@
   border-radius: 40px;
   font-size: 16px;
   line-height: 26px;
+  color: #173C49;
 }
 
 body:not(.home) .contact-bottom {

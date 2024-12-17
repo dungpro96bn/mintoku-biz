@@ -24,6 +24,7 @@
 /wp-content/themes/gms/assets/sass/*.css
 /wp-content/themes/gms/assets/sass/*.css.map
 /wp-content/themes/gms/assets/sass/components/.sass-cache/
+/wp-content/uploads/mw-wp-form_uploads/.htaccess
 
 /wp-content/webp-express/*
 /wp-content/webp-express/webp-images/
@@ -37,6 +38,7 @@ wp-config.php
 
 # Example themes
 /wp-content/themes/twenty*/
+
 
 # Example plugin
 /wp-content/plugins/hello.php
