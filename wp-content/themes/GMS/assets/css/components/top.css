@@ -606,6 +606,9 @@
 .banner-other.immigration {
   margin-bottom: 130px;
 }
+.banner-other.camcat {
+  margin-bottom: 0;
+}
 .banner-other .banner-list {
   max-width: 1040px;
   margin: auto;
