@@ -6,6 +6,20 @@
 .banner-service {
   position: relative;
 }
+.banner-service.banner-item02 .banner-info {
+  top: 65%;
+}
+.banner-service.banner-item02 .banner-info .logo-job-support {
+  margin-bottom: 20px;
+}
+.banner-service.banner-item02 .banner-info .sub-title {
+  margin-bottom: 12px;
+  line-height: 60px;
+}
+.banner-service.banner-item02 .banner-info .heading {
+  font-size: 60px;
+  line-height: 89px;
+}
 .banner-service .image-content {
   position: relative;
   height: 650px;
@@ -84,6 +98,34 @@
 .banner-top.camcat .about-info .info {
   padding-right: 10px;
 }
+.banner-top.life-support {
+  padding-bottom: 126px;
+  background-color: #AA9E09;
+  background-image: url("../images/life_support_bg-aboutUs.jpg");
+}
+.banner-top.life-support .about-info .title {
+  padding-right: 10px;
+}
+.banner-top.life-support .about-info .info {
+  padding-right: 10px;
+}
+.banner-top.life-support .about-image {
+  padding-top: 15px;
+}
+.banner-top.edpoke {
+  padding-bottom: 126px;
+  background-color: #B95E05;
+  background-image: url("../images/edpoke_bg_aboutUs.jpg");
+}
+.banner-top.edpoke .about-info .title {
+  padding-right: 10px;
+}
+.banner-top.edpoke .about-info .info {
+  padding-right: 10px;
+}
+.banner-top.edpoke .about-image {
+  padding-top: 15px;
+}
 .banner-top .about-content {
   max-width: 990px;
   margin: auto;
@@ -139,6 +181,16 @@ body:not(.home) .partners {
   position: relative;
   z-index: 3;
   margin-bottom: 130px;
+}
+.support.item02 .reason-content {
+  max-width: 1000px;
+  padding-left: 10px;
+}
+.support.item02 .reason-info {
+  width: 52%;
+}
+.support.item02 .reason-image {
+  width: 48%;
 }
 .support .reason-content {
   max-width: 980px;
@@ -646,6 +698,34 @@ body:not(.home) .partners {
 }
 .plan-price.camcat {
   padding-bottom: 62px;
+}
+.plan-price.price-item02 {
+  padding-bottom: 147px;
+}
+.plan-price.price-item02 .header-entry {
+  margin-bottom: 52px;
+}
+.plan-price.price-item02 .price-table {
+  max-width: 1000px;
+}
+.plan-price.price-item02 .price-table .price-list {
+  margin-bottom: 0;
+}
+.plan-price.price-item02 .description {
+  margin-top: 58px;
+}
+.plan-price.price-item02 .description .t1 {
+  font-size: 32px;
+  line-height: 48px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.plan-price.price-item02 .description .t2 {
+  font-size: 23px;
+  line-height: 38px;
+  color: #fff;
+  text-align: center;
 }
 .plan-price .header-entry {
   margin-bottom: 67px;

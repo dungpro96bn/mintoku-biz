@@ -3,7 +3,7 @@ $post = get_post();
 $slug = $post->post_name;
 ?>
 
-<div class="support <?php echo $slug; ?>">
+<div class="support <?php echo $slug; ?> <?php if($slug == "life-support" || $slug == "edpoke"){echo 'item02';} ?>">
     <div class="inner">
         <div class="reason-content">
             <div class="reason-info">
@@ -19,11 +19,19 @@ $slug = $post->post_name;
                 </div>
             </div>
             <div class="reason-image">
-                <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png 2x">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png 2x">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png" alt="">
-                </picture>
+                <?php if($slug == "life-support" || $slug == "edpoke"): ?>
+                    <picture class="image">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/support_image02_pc.png 2x">
+                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/support_image02_pc.png 2x">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/support_image02_pc.png" alt="">
+                    </picture>
+                <?php else: ?>
+                    <picture class="image">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png 2x">
+                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png 2x">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png" alt="">
+                    </picture>
+                <?php endif; ?>
             </div>
         </div>
     </div>

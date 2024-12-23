@@ -30,6 +30,7 @@
 /wp-content/webp-express/webp-images/
 wp-content/themes/.htaccess
 
+/wp-content/uploads/
 /wp-content/uploads/wpcf7_uploads/
 /wp-content/temp-write-test-**
 

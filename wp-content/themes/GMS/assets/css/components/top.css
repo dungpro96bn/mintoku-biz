@@ -606,7 +606,7 @@
 .banner-other.immigration {
   margin-bottom: 130px;
 }
-.banner-other.camcat {
+.banner-other.camcat, .banner-other.life-support, .banner-other.edpoke {
   margin-bottom: 0;
 }
 .banner-other .banner-list {
