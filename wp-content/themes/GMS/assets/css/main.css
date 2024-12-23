@@ -2268,11 +2268,8 @@ body:not(.home) .partners {
 }
 
 .serviceCloudMaetra picture {
-  display: grid;
+  display: block;
   width: 100%;
-}
-.serviceCloudMaetra .contact-bottom .box-btn a picture {
-  display: unset;
 }
 .serviceCloudMaetra .fl {
   display: flex;
