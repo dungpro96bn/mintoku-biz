@@ -7,7 +7,7 @@
 <?php get_header();?>
 
     <div id="serviceCloudVideostep" class="serviceCloudMaetra">
-<!--        BANNER SERVICE-->
+        <!--        BANNER SERVICE-->
         <div class="banner-service">
             <div class="image-content">
                 <picture class="image">
@@ -33,30 +33,8 @@
         <?php get_template_part("template-parts/partners"); ?>
 
         <?php get_template_part("template-parts/service-aboutUs"); ?>
-<!--        BANNER TOP-->
-        <div class="banner-top blue assistant">
-            <div class="about-content">
-                <div class="about-info">
-                    <h2 class="heading-block en">
-                        <span class="uppercase">Immigration support</span>
-                    </h2>
-                    <h3 class="title">私たちの「前トレ with Video Step」<br>
-                        サービスとは？</h3>
-                    <div class="info"><p>伝わらなかった業務は終わりです。<br>
-                            何度も繰り返す説明を、母国語による動画で見せることで、<br>
-                            より理解度とコミュニケーションの質を高めます。</p>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <picture class="image">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep-immigration-support.png">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep-immigration-support.png">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/videostep-immigration-support.png" alt="">
-                    </picture>
-                </div>
-            </div>
-        </div>
-<!--        SOLUTION-->
+
+        <!--        SOLUTION-->
         <div class="solution">
             <div class="inner">
                 <div class="heading-entry">
@@ -68,7 +46,7 @@
                 </div>
                 <div class="solution-content">
                     <div class="solution-list">
-<!--                        1-->
+                        <!--                        1-->
                         <div class="solution-item">
                             <div class="box-number">
                                 <p class="t1">Feature</p>
@@ -93,7 +71,7 @@
                                 </div>
                             </div>
                         </div>
-<!--                        2-->
+                        <!--                        2-->
                         <div class="solution-item">
                             <div class="box-number">
                                 <p class="t1">Feature</p>
@@ -119,7 +97,7 @@
                                 </div>
                             </div>
                         </div>
-<!--                        3-->
+                        <!--                        3-->
                         <div class="solution-item col-style">
                             <div class="box-number">
                                 <p class="t1">Feature</p>
@@ -179,7 +157,7 @@
                                 </dl>
                             </div>
                         </div>
-<!--                        4-->
+                        <!--                        4-->
                         <div class="solution-item col-style">
                             <div class="box-number">
                                 <p class="t1">Feature</p>
@@ -250,7 +228,7 @@
             </div>
         </div>
 
-<!--        STEP-->
+        <!--        STEP-->
         <div class="step">
             <div class="inner">
                 <div class="heading-entry">

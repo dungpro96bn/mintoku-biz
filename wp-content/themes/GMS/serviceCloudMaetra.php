@@ -33,30 +33,9 @@
         <?php get_template_part("template-parts/partners"); ?>
 
         <?php get_template_part("template-parts/service-aboutUs"); ?>
-        <!--        BANNER TOP-->
-        <div class="banner-top blue assistant">
-            <div class="about-content">
-                <div class="about-info">
-                    <h2 class="heading-block en">
-                        <span class="uppercase">Immigration support</span>
-                    </h2>
-                    <h3 class="title">私たちの「前トレ」サービスとは？
-                     </h3>
-                    <div class="info"><p>多言語に対応した動画マニュアルが誰でもカンタンに作成でき、都度発生する修正も驚くほどスピーディーに編集できます。外国人とのコミュニケーションが驚くほど改善されます！<br>
-                            またベテラン社員のノウハウも若手社員に財産として伝えることができます！</p>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <picture class="image">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_immigration.png">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_immigration.png">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_immigration.png" alt="">
-                    </picture>
-                </div>
-
-            </div>
-            <!--                CAU HOI THUONG GAP-->
-            <div class="normal-qa">
+        <!--                CAU HOI THUONG GAP-->
+        <div class="normal-qa">
+            <div class="normal-qa-inner">
                 <h2 class="heading-block en">
                     <span class="uppercase">Frequently asked questions</span>
                 </h2>
