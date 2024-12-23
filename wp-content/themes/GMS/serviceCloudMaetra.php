@@ -165,22 +165,7 @@
             </div>
         </div>
 
-        <!--        STEP-->
-        <div class="step">
-            <div class="inner">
-                <div class="heading-entry">
-                    <h2 class="heading-block">
-                        <span class="uppercase">STEP</span>
-                    </h2>
-                    <p class="sub-ttl">依頼は簡単、3ステップで作成します。</p>
-                </div>
-                <picture>
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep_step.png">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep_step.png">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/videostep_step.png" alt="">
-                </picture>
-            </div>
-        </div>
+      
 
         <?php get_template_part("template-parts/banner-other"); ?>
         <?php get_template_part("template-parts/service-cloud-support"); ?>
