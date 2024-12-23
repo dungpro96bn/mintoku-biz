@@ -375,15 +375,54 @@
   }
 }
 
-//TRANG PARENT MAETRA
+//page PARENT MAETRA
 #serviceCloudMaetramain{
   .banner-top{
+    padding-bottom: 222px;
+    background-image: url(../images/serviceCloudMaetramain_rec.jpg);
     .about-content{
       .title{
         margin-bottom: 8px;
       }
-      .normal-qa{
-        margin-top:194px;
+
+    }
+    .normal-qa{
+      max-width: 1072px;
+      margin: 191px auto 0 auto;
+      .heading-block{
+        text-align: center;
+        margin-bottom: -4px;
+        span{
+          letter-spacing: -1.35px;
+          line-height: 1.4;
+        }
+      }
+      .title{
+        text-align: center;
+        font-size:40px;
+      }
+      .asked-question{
+        margin-top: 108px;
+      }
+    }
+  }
+  .solution{
+    padding-top: 51px;
+    padding-bottom: 22px;
+    .heading-entry{
+      margin-bottom: 104px;
+      .sub-ttl{
+        margin-top: 11px;
+        padding-left: 0;
+        padding-right: 16px;
+      }
+    }
+    .solution-item{
+      .info-content{
+        padding-right: 9px;
+        .title{
+          margin-bottom:19px;
+        }
       }
     }
   }

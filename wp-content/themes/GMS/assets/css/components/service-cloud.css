@@ -342,11 +342,49 @@
   left: 10px;
 }
 
+#serviceCloudMaetramain .banner-top {
+  padding-bottom: 222px;
+  background-image: url(../images/serviceCloudMaetramain_rec.jpg);
+}
 #serviceCloudMaetramain .banner-top .about-content .title {
   margin-bottom: 8px;
 }
-#serviceCloudMaetramain .banner-top .about-content .normal-qa {
-  margin-top: 194px;
+#serviceCloudMaetramain .banner-top .normal-qa {
+  max-width: 1072px;
+  margin: 191px auto 0 auto;
+}
+#serviceCloudMaetramain .banner-top .normal-qa .heading-block {
+  text-align: center;
+  margin-bottom: -4px;
+}
+#serviceCloudMaetramain .banner-top .normal-qa .heading-block span {
+  letter-spacing: -1.35px;
+  line-height: 1.4;
+}
+#serviceCloudMaetramain .banner-top .normal-qa .title {
+  text-align: center;
+  font-size: 40px;
+}
+#serviceCloudMaetramain .banner-top .normal-qa .asked-question {
+  margin-top: 108px;
+}
+#serviceCloudMaetramain .solution {
+  padding-top: 51px;
+  padding-bottom: 22px;
+}
+#serviceCloudMaetramain .solution .heading-entry {
+  margin-bottom: 104px;
+}
+#serviceCloudMaetramain .solution .heading-entry .sub-ttl {
+  margin-top: 11px;
+  padding-left: 0;
+  padding-right: 16px;
+}
+#serviceCloudMaetramain .solution .solution-item .info-content {
+  padding-right: 9px;
+}
+#serviceCloudMaetramain .solution .solution-item .info-content .title {
+  margin-bottom: 19px;
 }
 
 @media (max-width: 1281px) {
