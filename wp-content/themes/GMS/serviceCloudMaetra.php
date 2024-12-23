@@ -103,7 +103,7 @@
                                     伝わらなかった業務は終わりです。何度も繰り返す説明を、母国語による動画で見せることで、より理解度とコミュニケーションの質を高めます。
                                 </p>
                                 <div class="link-page">
-                                    <a href="#">詳しく見る ＞</a>
+                                    <a href="/service/cloud/maetra/videostep/">詳しく見る ＞</a>
                                 </div>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                                     日本語教育に加え、業界初となる【Employability(雇用可能力、雇用されうる力）】を習得させるプログラムを提供し、本当に職場で活躍できる人材育成のお手伝いをします。
                                 </p>
                                 <div class="link-page">
-                                    <a href="#">詳しく見る ＞</a>
+                                    <a href="/service/cloud/maetra/edupoke/">詳しく見る ＞</a>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +153,7 @@
                                     360度VRコンテンツを、誰でも手軽に、簡単に制作、編集ができるクラウドソフトウェアです。
                                 </p>
                                 <div class="link-page">
-                                    <a href="#">詳しく見る ＞</a>
+                                    <a href="/service/cloud/maetra/vr/">詳しく見る ＞</a>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +165,7 @@
             </div>
         </div>
 
-      
+
 
         <?php get_template_part("template-parts/banner-other"); ?>
         <?php get_template_part("template-parts/service-cloud-support"); ?>
