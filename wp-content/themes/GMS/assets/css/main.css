@@ -2615,6 +2615,7 @@ body:not(.home) .partners {
   background-repeat: no-repeat;
   background-image: url(../images/serviceCloudMaetramain_rec.jpg);
   background-position: 100% 100%;
+  background-size: 100%;
   padding-top: 191px;
   padding-bottom: 222px;
 }
