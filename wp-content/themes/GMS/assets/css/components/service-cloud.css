@@ -7,6 +7,9 @@
   display: grid;
   width: 100%;
 }
+.serviceCloudMaetra .contact-bottom .box-btn a picture {
+  display: unset;
+}
 .serviceCloudMaetra .fl {
   display: flex;
   flex-wrap: wrap;

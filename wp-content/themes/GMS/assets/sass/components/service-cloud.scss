@@ -6,6 +6,9 @@
     display: grid;
     width: 100%;
   }
+  .contact-bottom .box-btn a picture{
+    display: unset;
+  }
   .fl{
     display: flex;
     flex-wrap: wrap;
@@ -375,6 +378,7 @@
 
 //page PARENT MAETRA
 #serviceCloudMaetramain{
+
   .banner-top{
     padding-bottom: 0px;
     background-image: unset;
