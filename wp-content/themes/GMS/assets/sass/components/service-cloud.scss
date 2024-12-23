@@ -3,9 +3,10 @@
 //DUNG CHUNG - MAC DINH LA TRANG VIDEO STEP
 .serviceCloudMaetra{
   picture{
-    display: grid;
+    display: block;
     width: 100%;
   }
+  
   .fl{
     display: flex;
     flex-wrap: wrap;
@@ -375,6 +376,7 @@
 
 //page PARENT MAETRA
 #serviceCloudMaetramain{
+
   .banner-top{
     padding-bottom: 0px;
     background-image: unset;

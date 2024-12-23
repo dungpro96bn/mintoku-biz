@@ -2348,7 +2348,7 @@ body:not(.home) .partners {
 }
 
 .serviceCloudMaetra picture {
-  display: grid;
+  display: block;
   width: 100%;
 }
 .serviceCloudMaetra .fl {
