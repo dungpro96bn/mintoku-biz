@@ -43,6 +43,12 @@ wp-config.php
 # Example plugin
 /wp-content/plugins/hello.php
 
+/wp-content/uploads/mw-wp-form_uploads/
+
+/wp-content/themes/GMS/package-lock.json
+
+/wp-content/themes/GMS/package.json
+
 
 # Log files
 *.log

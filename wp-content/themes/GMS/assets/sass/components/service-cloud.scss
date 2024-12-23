@@ -1,0 +1,397 @@
+@use "../_var";
+//SERVICE CLOUD TEMPLATE
+//DUNG CHUNG - MAC DINH LA TRANG VIDEO STEP
+.serviceCloudMaetra{
+  picture{
+    display: grid;
+    width: 100%;
+  }
+  .fl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .banner-service{
+    overflow: hidden;
+    picture{
+      height: 100%;
+    }
+    .banner-info{
+      .banner-inner{
+        .sub-title{
+          font-size: 40px;
+          margin-bottom: 0;
+        }
+        .banner-logo{
+          max-width: 413px;
+          margin:13px 0 85px 0;
+        }
+        .heading{
+          font-size: 60px;
+          line-height: 1.48;
+          position: relative;
+          left: -11px;
+        }
+        position: relative;
+        top: 0px;
+      }
+    }
+  }
+  .banner-top{
+    background-color: #1c264d;
+    background-image: url(../images/service-cloud-bgt.jpg);
+    background-position: 100% 100%;
+    padding-bottom: 124px;
+    padding-top: 76px;
+    .about-content{
+      max-width: 999px;
+      position: relative;
+      left: 6px;
+      .about-info{
+        .heading-block span{
+          letter-spacing: -1.35px;
+          margin-bottom: 3px;
+        }
+        .title{
+          margin-bottom: 23px;
+          margin-top: -9px;
+        }
+      }
+    }
+  }
+  .solution {
+    padding-top: 73px;
+    padding-bottom: 40px;
+    .link-page a {
+      display: flex;
+      width: 146px;
+      height: 38px;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 40px;
+      font-size: 16px;
+      line-height: 26px;
+      color: #173c49;
+    }
+    .link-page {
+      position: absolute;
+      bottom: 26px;
+      left: 42px;
+    }
+    .heading-entry{
+      margin-bottom: 114px;
+      .sub-ttl{
+        letter-spacing: normal;
+        margin-top: 4px;
+        font-size: 40px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+    }
+    .solution-item{
+      a:hover{
+        opacity: .8;
+      }
+      flex-direction: row-reverse;
+      background: #1c264d;
+      border-radius: 20px;
+      margin-left: 0px;
+      min-height: 449px;
+      margin-bottom: 80px;
+      .box-number{
+        background: #1c264d;
+      }
+      .image-content{
+        border-radius: 0px 20px 20px 0px;
+        width: 50%;
+        position: relative;
+        .play-button{
+          position: absolute;
+          width: 120px;
+          height: 60px;
+          display: block;
+          left:50%;
+          bottom:155px;
+          transform: translateX(-50%);
+          z-index: 1;
+        }
+      }
+      .info-content{
+        width: 50%;
+        padding-top: 82px;
+        padding-left: 40px;
+        padding-bottom: 27px;
+        padding-right: 0px;
+        position: relative;
+        .title{
+          font-size: 40px;
+          line-height: 1.1;
+          letter-spacing: normal;
+        }
+        .t1{
+          font-size: 24px;
+          line-height: 1.42;
+          margin-bottom:14px;
+        }
+        .text {
+          font-size: 18px;
+          line-height: 1.56;
+          font-weight: normal;
+        }
+      }
+    }
+    .solution-item.col-style{
+      .info-content{
+        width: 100%;
+        padding:84px 40.5px 37px;
+        .training-list{
+          margin-top:42.5px;
+          .training-item:first-child{
+            padding: 37.5px 0 38.5px 0;
+          }
+          .training-item{
+            border-top:1px solid #fff;
+            padding:37.5px 0 0 0;
+            align-items: center;
+            .box-text{
+              width: 46.09%;
+            }
+            .box-img{
+              width: calc(100% - 46.09% - 155px);
+              picture{
+                max-width: 286px;
+              }
+            }
+          }
+        }
+        .edu-list{
+          margin-top:33.5px;
+          .edu-item{
+            position: relative;
+            width: 50%;
+            padding-top: 33.5px;
+            min-height: 457px;
+            .edu-item-inner{
+              position: relative;
+              left: 10px;
+            }
+            .label{
+              padding: 3px 11px 0px 19px;
+              background-color: #fff;
+              color: #212e62;
+              width: fit-content;
+              display: block;
+              margin: 14px 0 4px;
+              font-weight: 600;
+            }
+            .text.fl{
+              justify-content: flex-start;
+              column-gap: 25px;
+              span{
+                max-width: 53%;
+              }
+            }
+            .link-page{
+              bottom: 33px;
+            }
+          }
+          .edu-item:first-child{
+            border-right:1px solid #fff;
+            .link-page{
+              left: 10px;
+            }
+          }
+          .edu-item:last-child{
+            .edu-item-inner{
+              position: relative;
+              left: 42px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .step{
+    background-color: #95a4a9;
+    padding:83px 0 144px 0;
+    .inner{
+      .heading-entry{
+        text-align: center;
+        margin-bottom: 34px;
+        .heading-block{
+          color:#fff;
+          margin-bottom: 9px;
+        }
+        .sub-ttl{
+          color: #fff;
+          font-weight: 600;
+          letter-spacing: normal;
+        }
+      }
+      picture{
+        max-width: 947px;
+        margin:0 auto;
+      }
+    }
+  }
+  .banner-other{
+    margin-bottom: 0;
+  }
+  .support{
+    padding-top: 74px;
+    padding-bottom: 42px;
+    margin-bottom: 118px;
+    .reason-info {
+      width: 44%;
+    }
+    .reason-image {
+      width: 48%;
+    }
+  }
+}
+
+//TRANG VR
+#serviceCloudVR{
+  //BANNER
+  .banner-service{
+    .banner-logo {
+      margin: 0px 0 52px 0;
+    }
+  }
+  //SOLUTION
+  .solution{
+    padding-bottom: 56px;
+    .heading-entry {
+      margin-bottom: 120px;
+    }
+    .solution-item{
+      .image-content{
+        background: #F0F4FA;
+        .image{
+          max-width: 450px;
+          margin:auto;
+        }
+      }
+      .info-content{
+        padding-right:40px;
+      }
+    }
+  }
+  //VIDEO
+  .step.video{
+    padding: 83px 0 81px 0;
+    .inner{
+      .heading-entry{
+        margin-bottom: 42px;
+        .sub-ttl {
+          font-size: 36px;
+          position: relative;
+          left: 11px;
+        }
+      }
+      picture {
+        max-width: 1040px;
+        position: relative;
+        left: 0px;
+      }
+    }
+
+  }
+
+  //WHY
+  .support.why{
+    background: #fff;
+    padding-top: 97px;
+    margin-bottom: 0;
+    padding-bottom: 54px;
+    .reason-content{
+      max-width: 1045px;
+      justify-content: space-between;
+      .reason-info{
+        width: calc(100% - 56.27% - 105px);
+        padding-right:0;
+        padding-top: 35px;
+        .title{
+          color: #000;
+          letter-spacing: normal;
+          margin-bottom: 0px;
+        }
+        .text{
+          color:black;
+          font-size:18px;
+          letter-spacing: normal;
+          margin: 11px 0 0 0;
+        }
+      }
+      .reason-image{
+        width: 56.27%;
+        .why-list{
+          .why-item{
+            align-items: center;
+            padding: 12.5px 0 12.5px 0;
+            border-top: solid 1px #707070;
+            .box-img{
+              width: 118px;
+            }
+            .box-text{
+              width: calc(100% - 118px - 20px);
+              .ttl{
+                font-size: 24px;
+                line-height: 1.83;
+                letter-spacing: normal;
+                margin-bottom: 9px;
+              }
+              .text{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 1.56;
+
+              }
+            }
+          }
+          .why-item:last-child{
+            border-bottom: solid 1px #707070;
+          }
+        }
+      }
+    }
+
+  }
+
+  //STEP
+  .step{
+    padding: 83px 0 80px 0;
+    .inner{
+      .heading-entry{
+        margin-bottom: 22px;
+      }
+      picture{
+        max-width: 805px;
+        position: relative;
+        left: 10px;
+      }
+    }
+  }
+}
+
+//TRANG PARENT MAETRA
+#serviceCloudMaetramain{
+  .banner-top{
+    .about-content{
+      .title{
+        margin-bottom: 8px;
+      }
+      .normal-qa{
+        margin-top:194px;
+      }
+    }
+  }
+}
+
+
+@media(max-width:1281px){
+  .serviceCloudMaetra .banner-service .banner-info {
+    top: calc(50% + 99px);
+  }
+}

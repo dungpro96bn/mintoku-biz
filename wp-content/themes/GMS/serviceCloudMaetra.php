@@ -1,31 +1,31 @@
 <?php
 /**
- * Template Name: hehe
+ * Template Name: Service Cloud Maetra
  * Template Post Type: page
  **/
 ?>
 <?php get_header();?>
 
-    <div id="serviceCloudVideostep" class="serviceCloudMaetra">
+    <div id="serviceCloudMaetramain" class="serviceCloudMaetra">
         <!--        BANNER SERVICE-->
         <div class="banner-service">
             <div class="image-content">
                 <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudvideostep_banner_pc.png">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudvideostep_banner_pc.png">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudvideostep_banner_pc.png" alt="">
+                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-pc.png">
+                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-pc.png">
+                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-pc.png" alt="">
                 </picture>
             </div>
             <div class="banner-info">
                 <div class="banner-inner">
                     <h3 class="sub-title">クラウドサービス</h3>
                     <picture class="banner-logo">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png" alt="">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-logo.png">
+                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-logo.png">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-logo.png" alt="">
                     </picture>
-                    <h2 class="heading">母国語の動画で、<br>
-                        “伝える”から“伝わる”へ</h2>
+                    <h2 class="heading">動画とAI翻訳で外国人との<br>
+                        コミュニケーションをカンタンに！</h2>
                 </div>
             </div>
         </div>
@@ -40,21 +40,35 @@
                     <h2 class="heading-block en">
                         <span class="uppercase">Immigration support</span>
                     </h2>
-                    <h3 class="title">私たちの「前トレ with Video Step」<br>
-                        サービスとは？</h3>
-                    <div class="info"><p>伝わらなかった業務は終わりです。<br>
-                            何度も繰り返す説明を、母国語による動画で見せることで、<br>
-                            より理解度とコミュニケーションの質を高めます。</p>
+                    <h3 class="title">私たちの「前トレ」サービスとは？
+                     </h3>
+                    <div class="info"><p>多言語に対応した動画マニュアルが誰でもカンタンに作成でき、都度発生する修正も驚くほどスピーディーに編集できます。外国人とのコミュニケーションが驚くほど改善されます！<br>
+                            またベテラン社員のノウハウも若手社員に財産として伝えることができます！</p>
                     </div>
                 </div>
                 <div class="about-image">
                     <picture class="image">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep-immigration-support.png">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep-immigration-support.png">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/videostep-immigration-support.png" alt="">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_immigration.png">
+                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_immigration.png">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_immigration.png" alt="">
                     </picture>
                 </div>
+<!--                CAU HOI THUONG GAP-->
+                <div class="normal-qa">
+                    <h2 class="heading-block en">
+                        <span class="uppercase">Frequently asked questions</span>
+                    </h2>
+                    <h3 class="title">よくあるお悩み</h3>
+                    <div class="">
+                        <picture class="image">
+                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_asked.png">
+                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_asked.png">
+                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_asked.png" alt="">
+                        </picture>
+                    </div>
+                </div>
             </div>
+
         </div>
         <!--        SOLUTION-->
         <div class="solution">
