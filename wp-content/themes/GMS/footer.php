@@ -64,13 +64,13 @@
                                 <a href="/service/life-support/">生活支援サービス</a>
                             </li>
                             <li class="menu-service-item">
-                                <a href="#">mintoku study</a>
+                                <a target="_blank" href="https://edu-poke.jp/global">mintoku study</a>
                             </li>
                             <li class="menu-service-item">
                                 <a href="/service/cloud/maetra/">前トレ</a>
                             </li>
                             <li class="menu-service-item">
-                                <a href="/service/cloud/maetra/edpoke/">エデュックアカデミー</a>
+                                <a target="_blank" href="https://camtech-ea.net/">エデュックアカデミー</a>
                             </li>
                         </ul>
                     </div>

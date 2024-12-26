@@ -73,7 +73,7 @@ $slug = $post->post_name;
                             試験対策もバッチリ</p>
                     </div>
                     <div class="link-info">
-                        <a href="#">詳しく見る ＞</a>
+                        <a target="_blank" href="https://edu-poke.jp/global">詳しく見る ＞</a>
                     </div>
                 </li>
                 <li class="lineUp-item">
@@ -104,7 +104,7 @@ $slug = $post->post_name;
                             専門資格の取得もご相談ください。</p>
                     </div>
                     <div class="link-info">
-                        <a href="/service/cloud/maetra/edpoke/">詳しく見る ＞</a>
+                        <a target="_blank" href="https://camtech-ea.net/">詳しく見る ＞</a>
                     </div>
                 </li>
             </ul>
