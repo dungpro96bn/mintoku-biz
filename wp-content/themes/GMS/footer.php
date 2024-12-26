@@ -55,22 +55,22 @@
                         <h4 class="title en">SERVICE</h4>
                         <ul class="menu-service-list">
                             <li class="menu-service-item">
-                                <a href="#">mintoku work</a>
+                                <a target="_blank" href="https://mintoku.work/">mintoku work</a>
                             </li>
                             <li class="menu-service-item">
-                                <a href="#">労務代行サービス</a>
+                                <a href="/service/assistant/">労務代行サービス</a>
                             </li>
                             <li class="menu-service-item">
-                                <a href="#">生活支援サービス</a>
+                                <a href="/service/life-support/">生活支援サービス</a>
                             </li>
                             <li class="menu-service-item">
                                 <a href="#">mintoku study</a>
                             </li>
                             <li class="menu-service-item">
-                                <a href="#">前トレ</a>
+                                <a href="/service/cloud/maetra/">前トレ</a>
                             </li>
                             <li class="menu-service-item">
-                                <a href="#">エデュックアカデミー</a>
+                                <a href="/service/cloud/maetra/edpoke/">エデュックアカデミー</a>
                             </li>
                         </ul>
                     </div>

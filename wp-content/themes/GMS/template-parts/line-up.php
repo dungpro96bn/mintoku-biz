@@ -27,7 +27,7 @@ $slug = $post->post_name;
                             完全成果報酬制で余計なコストはかかりません。</p>
                     </div>
                     <div class="link-info">
-                        <a href="#">詳しく見る ＞</a>
+                        <a target="_blank" href="https://mintoku.work/">詳しく見る ＞</a>
                     </div>
                 </li>
                 <li class="lineUp-item">
@@ -41,7 +41,7 @@ $slug = $post->post_name;
                         <p class="text">そのほか勤怠管理/年末調整/翻訳/通訳など煩雑な作業を依頼できます。</p>
                     </div>
                     <div class="link-info">
-                        <a href="#">詳しく見る ＞</a>
+                        <a href="/service/assistant/">詳しく見る ＞</a>
                     </div>
                 </li>
                 <li class="lineUp-item">
@@ -58,7 +58,7 @@ $slug = $post->post_name;
                             要望に応じて幅広く対応できます！完全成果報酬制で余計なコストはかかりません。</p>
                     </div>
                     <div class="link-info">
-                        <a href="#">詳しく見る ＞</a>
+                        <a href="/service/life-support/">詳しく見る ＞</a>
                     </div>
                 </li>
                 <li class="lineUp-item">
@@ -88,7 +88,7 @@ $slug = $post->post_name;
                             多言語対応のカンタン動画でわかりやすく伝わります！</p>
                     </div>
                     <div class="link-info">
-                        <a href="#">詳しく見る ＞</a>
+                        <a href="/service/cloud/maetra/">詳しく見る ＞</a>
                     </div>
                 </li>
                 <li class="lineUp-item">
@@ -104,7 +104,7 @@ $slug = $post->post_name;
                             専門資格の取得もご相談ください。</p>
                     </div>
                     <div class="link-info">
-                        <a href="#">詳しく見る ＞</a>
+                        <a href="/service/cloud/maetra/edpoke/">詳しく見る ＞</a>
                     </div>
                 </li>
             </ul>

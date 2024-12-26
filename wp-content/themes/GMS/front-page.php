@@ -82,7 +82,7 @@
                         </a>
                     </div>
                     <div class="banner-item">
-                        <a href="#">
+                        <a target="_blank" href="https://kjtimes.jp/">
                             <picture class="image">
                                 <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.png 2x">
                                 <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.png 2x">
