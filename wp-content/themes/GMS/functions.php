@@ -41,10 +41,10 @@ function add_acf_fields_to_menu_items($items, $args) {
             // Thêm HTML chứa hình ảnh vào title
             $item->title = '<span class="icon"><img src="' . $icon_url . '" alt="' . esc_attr($item->title) . '" class="menu-icon" /></span>' . '<span class="t-link">' . $item->title . '</span>';
         }
-        
+
         $target_blank = get_field('target_blank', $item);
 
-        if ($target_blank === 'yes') {
+        if ($target_blank === 'Yes') {
             $item->url = str_replace('<a ', '<a target="_blank" ', $item->url);
         }
     }
