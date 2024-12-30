@@ -42,13 +42,22 @@ function add_acf_fields_to_menu_items($items, $args) {
             $item->title = '<span class="icon"><img src="' . $icon_url . '" alt="' . esc_attr($item->title) . '" class="menu-icon" /></span>' . '<span class="t-link">' . $item->title . '</span>';
         }
 
-        $target_blank = get_field('target_blank', $item);
-
-        if ($target_blank === 'Yes') {
-            $item->url = str_replace('<a ', '<a target="_blank" ', $item->url);
-        }
     }
     return $items;
+}
+
+add_filter('walker_nav_menu_start_el', 'add_target_blank_to_menu_items', 10, 4);
+function add_target_blank_to_menu_items($item_output, $item, $depth, $args) {
+    // Lấy giá trị target_blank từ custom field
+    $target_blank = get_field('target_blank', $item);
+
+    // Kiểm tra nếu target_blank là mảng chứa "Yes" hoặc là chuỗi "Yes"
+    if ((is_array($target_blank) && in_array('Yes', $target_blank)) || $target_blank === 'Yes') {
+        // Thêm target="_blank" vào thẻ <a>
+        $item_output = str_replace('<a ', '<a target="_blank" ', $item_output);
+    }
+
+    return $item_output;
 }
 
 //ウィジェット
