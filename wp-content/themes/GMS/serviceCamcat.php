@@ -40,9 +40,12 @@ $slug = $post->post_name;
     <?php get_template_part("template-parts/service-aboutUs"); ?>
 
     <div class="camCat-feature">
-        <h2 class="heading-block center">
-            <span>FEATURE</span>
-        </h2>
+        <div class="heading-entry">
+            <h2 class="heading-block center">
+                <span>FEATURE</span>
+            </h2>
+            <p class="sub-ttl">特徴</p>
+        </div>
         <div class="feature-service">
             <div class="inner">
                 <div class="logo-top">

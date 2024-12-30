@@ -35,9 +35,12 @@
 
     <div class="immigration-feature">
         <div class="inner">
-            <h2 class="heading-block center">
-                <span>FEATURE</span>
-            </h2>
+            <div class="heading-entry">
+                <h2 class="heading-block center">
+                    <span>FEATURE</span>
+                </h2>
+                <p class="sub-ttl">特徴</p>
+            </div>
             <div class="feature-content">
                 <div class="feature-list">
                     <div class="feature-item">
@@ -88,7 +91,7 @@
                     <div class="feature-item">
                         <div class="box-number">
                             <p class="t1">Feature</p>
-                            <p class="t2">01</p>
+                            <p class="t2">02</p>
                         </div>
                         <div class="image-content">
                             <picture class="image">

@@ -178,8 +178,6 @@ $slug = $post->post_name;
 
     <?php get_template_part("template-parts/support"); ?>
 
-    <?php get_template_part("template-parts/banner-other"); ?>
-
     <?php get_template_part("template-parts/line-up"); ?>
 
     <?php get_template_part("template-parts/contact-bottom"); ?>

@@ -3,7 +3,7 @@ $post = get_post();
 $slug = $post->post_name;
 ?>
 
-<div class="support <?php echo $slug; ?> <?php if($slug == "life-support" || $slug == "edpoke"){echo 'item02';} ?>">
+<div class="support <?php echo $slug; ?>">
     <div class="inner">
         <div class="reason-content">
             <div class="reason-info">
@@ -19,7 +19,7 @@ $slug = $post->post_name;
                 </div>
             </div>
             <div class="reason-image">
-                <?php if($slug == "life-support" || $slug == "edpoke"): ?>
+                <?php if($slug == "life-support" || $slug == "edpoke" || $slug == "translate" || $slug == "consultation" || $slug == "camcat"): ?>
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/support_image02_pc.png 2x">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/support_image02_pc.png 2x">

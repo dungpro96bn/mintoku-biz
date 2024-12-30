@@ -41,9 +41,12 @@ $slug = $post->post_name;
 
     <div class="life-support-feature">
         <div class="inner">
-            <h2 class="heading-block center">
-                <span>FEATURE</span>
-            </h2>
+            <div class="heading-entry">
+                <h2 class="heading-block center">
+                    <span>FEATURE</span>
+                </h2>
+                <p class="sub-ttl">特徴</p>
+            </div>
             <div class="feature-content">
                 <div class="feature-list">
                     <div class="feature-item">
