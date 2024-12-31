@@ -11,7 +11,7 @@
         <div class="banner-service">
             <div class="image-content">
                 <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-pc.png">
+                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner_sp.png">
                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-pc.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-pc.png" alt="">
                 </picture>
@@ -24,7 +24,7 @@
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-logo.png">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-logo.png" alt="">
                     </picture>
-                    <h2 class="heading">動画とAI翻訳で外国人との<br>
+                    <h2 class="heading">動画とAI翻訳で外国人との<br class="pc-br">
                         コミュニケーションをカンタンに！</h2>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                 <h3 class="title">よくあるお悩み</h3>
                 <div class="asked-question">
                     <picture class="image">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_asked.png">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_asked_sp.png">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_asked.png">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_asked.png" alt="">
                     </picture>
@@ -57,7 +57,7 @@
                     <h2 class="heading-block">
                         <span class="uppercase">SOLUTION</span>
                     </h2>
-                    <p class="sub-ttl">前トレは、動画やVRを使ってそんなお悩みを解決いたします</p>
+                    <p class="sub-ttl">前トレは、動画やVRを<br class="sp-br">使ってそんなお悩みを<br class="sp-br">解決いたします</p>
                 </div>
                 <div class="solution-content">
                     <div class="solution-list">
@@ -100,14 +100,14 @@
                                 </picture>
                             </div>
                             <div class="info-content">
-                                <h4 class="title">前トレ with edupoke</h4>
+                                <h4 class="title">前トレ with edpoke</h4>
                                 <p class="t1">外国人材の教育プラットフォーム</p>
                                 <p class="text">
                                     前トレwith日本語は日本で働く外国人材のための教育プラットフォームです。<br>
                                     日本語教育に加え、業界初となる【Employability(雇用可能力、雇用されうる力）】を習得させるプログラムを提供し、本当に職場で活躍できる人材育成のお手伝いをします。
                                 </p>
                                 <div class="link-page">
-                                    <a href="/service/cloud/maetra/edupoke/">詳しく見る ＞</a>
+                                    <a href="/service/cloud/maetra/edpoke/">詳しく見る ＞</a>
                                 </div>
                             </div>
                         </div>

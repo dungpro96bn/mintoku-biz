@@ -11,7 +11,7 @@
         <div class="banner-service">
             <div class="image-content">
                 <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloud_vr_banner-pc.png">
+                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloud_vr_banner_sp.png">
                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloud_vr_banner-pc.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloud_vr_banner-pc.png" alt="">
                 </picture>
@@ -25,7 +25,7 @@
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/cloudvr_banner_logo.png" alt="">
                     </picture>
                     <h2 class="heading">前トレ with VRが<br>
-                        事業者の業績UPに貢献</h2>
+                        事業者の業績<br class="sp-br">UPに貢献</h2>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
                         <span class="uppercase">SOLUTION</span>
                     </h2>
                     <p class="sub-ttl">はじめての方でも<br>
-                        30分程度でVRコンテンツが完成します。</p>
+                        30分程度で<br class="sp-br">VRコンテンツが<br class="sp-br">完成します。</p>
                 </div>
                 <div class="solution-content">
                     <div class="solution-list">
@@ -133,10 +133,10 @@
         <div class="step video">
             <div class="inner">
                 <div class="heading-entry">
-                    <p class="sub-ttl">高品質360°パノラマVRを体験</p>
+                    <p class="sub-ttl">高品質360°<br class="sp-br">パノラマVRを体験</p>
                 </div>
                 <picture>
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videovr.png">
+                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videovr_sp.png">
                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videovr.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/videovr.png" alt="">
                 </picture>
@@ -183,7 +183,7 @@
                                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/why-vr03.png" alt="">
                                 </div>
                                 <div class="box-text">
-                                    <p class="ttl">安心・安全のセキュリティ対策対策</p>
+                                    <p class="ttl">安心・安全の<br class="sp-br">セキュリティ対策対策</p>
                                     <p class="text">パスワード設定機能・IP 制限機能・SSO（シングルサインオン）機能の利用も可能であり、「スペースリー」はセキュリティ対策にも力を入れています。</p>
                                 </div>
                             </dt>
@@ -201,10 +201,10 @@
                     <h2 class="heading-block">
                         <span class="uppercase">STEP</span>
                     </h2>
-                    <p class="sub-ttl">依頼は簡単、3ステップで作成します。</p>
+                    <p class="sub-ttl">依頼は簡単、<br class="sp-br">3ステップで作成します。</p>
                 </div>
                 <picture>
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep_step_vr.png">
+                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep_step_vr_sp.png">
                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep_step_vr.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/videostep_step_vr.png" alt="">
                 </picture>
