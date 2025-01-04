@@ -1,11 +1,21 @@
-@use "../_var";
+@use "../_var" as *;
+
 //SERVICE CLOUD TEMPLATE
 //DUNG CHUNG - MAC DINH LA TRANG VIDEO STEP
 .serviceCloudMaetra{
+  .pc-br{
+    display: inline;
+  }
+  .sp-br{
+    display: none;
+  }
   picture{
     display: block;
     width: 100%;
   }
+  //picture img{
+  //  width: 100%;
+  //}
   
   .fl{
     display: flex;
@@ -17,6 +27,7 @@
     picture{
       height: 100%;
     }
+
     .banner-info{
       .banner-inner{
         .sub-title{
@@ -39,7 +50,7 @@
     }
   }
   .banner-top{
-    background-color: #1c264d;
+    background-color: #3164AA;
     background-image: url(../images/service-cloud-bgt.jpg);
     background-position: 100% 100%;
     padding-bottom: 124px;
@@ -73,7 +84,7 @@
       border-radius: 40px;
       font-size: 16px;
       line-height: 26px;
-      color: #173c49;
+      color: #3164AA;
     }
     .link-page {
       position: absolute;
@@ -95,13 +106,13 @@
         opacity: .8;
       }
       flex-direction: row-reverse;
-      background: #1c264d;
+      background: #3164AA;
       border-radius: 20px;
       margin-left: 0px;
       min-height: 449px;
       margin-bottom: 80px;
       .box-number{
-        background: #1c264d;
+        background: #E48121;
       }
       .image-content{
         border-radius: 0px 20px 20px 0px;
@@ -212,7 +223,7 @@
     }
   }
   .step{
-    background-color: #95a4a9;
+    background-color: #F3F3F3;
     padding:83px 0 144px 0;
     .inner{
       .heading-entry{
@@ -223,7 +234,7 @@
           margin-bottom: 9px;
         }
         .sub-ttl{
-          color: #fff;
+          color: #2A4852;
           font-weight: 600;
           letter-spacing: normal;
         }
@@ -237,17 +248,17 @@
   .banner-other{
     margin-bottom: 0;
   }
-  .support{
-    padding-top: 74px;
-    padding-bottom: 42px;
-    margin-bottom: 118px;
-    .reason-info {
-      width: 44%;
-    }
-    .reason-image {
-      width: 48%;
-    }
-  }
+  //.support{
+  //  padding-top: 74px;
+  //  padding-bottom: 42px;
+  //  margin-bottom: 118px;
+  //  .reason-info {
+  //    width: 44%;
+  //  }
+  //  .reason-image {
+  //    width: 48%;
+  //  }
+  //}
 }
 
 //TRANG VR
@@ -287,6 +298,7 @@
           font-size: 36px;
           position: relative;
           left: 11px;
+          color:#E48121;
         }
       }
       picture {
@@ -378,8 +390,8 @@
 #serviceCloudMaetramain{
 
   .banner-top{
-    padding-bottom: 0px;
-    background-image: unset;
+    background-image: url(../images/maetra-line.png);
+    padding-bottom: 152px;
     .about-content{
       .title{
         margin-bottom: 8px;
@@ -389,12 +401,12 @@
   }
   .normal-qa{
 
-    background-color: #1c264d;
+    background-color: #3164AA;
     background-repeat: no-repeat;
     background-image: url(../images/serviceCloudMaetramain_rec.jpg);
     background-position: 100% 100%;
     background-size:100%;
-    padding-top:191px;
+    padding-top:78px;
     padding-bottom: 222px;
     .normal-qa-inner{
       max-width: 1072px;
@@ -418,7 +430,7 @@
       color:#fff;
     }
     .asked-question{
-      margin-top: 108px;
+      margin-top: 71px;
     }
   }
   .solution{
@@ -443,9 +455,607 @@
   }
 }
 
-
-@media(max-width:1281px){
+@include md{
   .serviceCloudMaetra .banner-service .banner-info {
     top: calc(50% + 99px);
+  }
+}
+
+//TABLET
+@media(max-width: 1201px){
+  .serviceCloudMaetra{
+    .inner{
+      padding: 0 50px;
+    }
+    .heading-entry .sub-ttl{
+      font-size: 30px;
+    }
+    //BANNER
+    .banner-service .banner-info {
+      top: calc(50% + 49px);
+    }
+    .banner-service .banner-info .banner-inner .banner-logo{
+      margin: 13px 0 30px 0;
+    }
+
+    //BANNER TOP
+    .banner-top{
+      padding-bottom: 88px;
+      .about-content{
+        left:0;
+        width: calc(100% - 50px);
+        .about-info{
+          .heading-block{
+            span{
+              font-size: 37px;
+            }
+          }
+          .info {
+            font-size: 14px;
+          }
+          .title {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+
+    //SOLUTION
+    .solution{
+      .heading-entry{
+        margin-bottom: 55px;
+        .sub-ttl{
+          font-size: 30px;
+        }
+      }
+      .solution-item{
+        min-height: 280px;
+        margin-bottom: 45px;
+        .box-number {
+          left:-47px;
+        }
+        .info-content{
+          padding-top: 50px;
+          .title {
+            font-size: 24px;
+            line-height: 1.4;
+          }
+          .t1 {
+            font-size: 15px;
+          }
+          .text{
+            font-size: 14px;
+          }
+        }
+        .image-content .play-button{
+          bottom: 115px;
+        }
+      }
+      .solution-item.col-style{
+        .info-content{
+          padding: 44px 40px 27px;
+          .training-list{
+            margin-top: 26.5px;
+            .training-item{
+              padding: 20px 0;
+              .box-text {
+                width: 64.09%;
+              }
+              .box-img {
+                width: calc(100% - 64.09% - 70px);
+              }
+            }
+          }
+          .edu-list{
+            .edu-item{
+              padding-bottom: 100px;
+              padding-top: 10.5px;
+              .edu-item-inner{
+                left:0;
+                .label{
+                  margin: 20px 0 20px;
+                }
+              }
+              .text.fl{
+                flex-direction: column;
+                span{
+                  max-width: 253px;
+                }
+              }
+            }
+            .edu-item:first-child .edu-item-inner{
+              padding-right: 40px;
+            }
+            .edu-item:first-child .link-page{
+              left: 0px;
+            }
+            .edu-item:last-child .edu-item-inner{
+              .text{
+                font-size: 13px;
+              }
+              left: 42px;
+              .link-page{
+                left: 27px;
+              }
+            }
+          }
+          .text {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    //STEP
+    .step {
+      padding: 40px 0 70px 0;
+    }
+  }
+  #serviceCloudVR .support.why {
+    padding-top: 7px;
+    .reason-content{
+      row-gap: 50px;
+      flex-direction: column;
+      .reason-info, .reason-image{
+        width: 100%;
+      }
+    }
+  }
+  #serviceCloudMaetramain{
+    .solution .solution-item {
+      min-height: 375px;
+    }
+  }
+}
+
+
+//MOBILE
+@include xs{
+  .serviceCloudMaetra{
+    .inner{
+      padding:0 13px;
+    }
+    .pc-br{
+      display: none;
+    }
+    .sp-br{
+      display: inline;
+    }
+    //BANNER SERVICES
+    .banner-service{
+      .banner-info{
+        top: unset;
+        bottom: 0;
+        transform: translateY(0);
+        .banner-inner{
+          padding: 0 24px 0 30px;
+          .banner-logo{
+            max-width: 314px;
+            margin: 23px 0 181px 0;
+          }
+          .heading{
+            font-size: 38px;
+            line-height: 1.47;
+            left:0;
+          }
+        }
+      }
+    }
+
+    //BANNER TOP
+    .banner-top{
+      border-radius: 10px 10px 0 0;
+      padding-bottom: 102px;
+      padding-top: 25px;
+      background-image: url(../images/service-cloud-bgt_sp.jpg);
+      .about-content{
+        width: calc(100% - 34px);
+        row-gap: 53px;
+        .about-info{
+          width: 100%;
+          .heading-block span{
+            font-size: 45px;
+            line-height: 1.2;
+          }
+          .title{
+            font-size: 32px;
+            line-height: 1.38;
+            margin-bottom: 18px;
+            margin-top: -14px;
+          }
+          .info{
+            font-size: 16px;
+            line-height: 1.75;
+            padding-right: 0;
+          }
+        }
+        .about-image{
+          width: 100%;
+        }
+      }
+    }
+
+    //SOLUTION
+    .solution{
+      overflow: hidden;
+      padding-top: 66px;
+      padding-bottom: 40px;
+      .inner{
+        padding:0;
+      }
+      .link-page {
+        bottom: 28px;
+        left: 18px;
+      }
+      .heading-entry{
+        margin-bottom: 60px;
+        .sub-ttl{
+          font-size: 32px;
+          line-height: 1.44;
+          padding-left: 0px;
+          margin-top: 15px;
+        }
+      }
+      .solution-content{
+        .solution-list{
+          max-width: calc(100% - 30px);
+          margin:0 auto;
+          .solution-item{
+            margin-bottom: 56px;
+            border-radius: 30px;
+            flex-direction: column-reverse;
+            .image-content{
+              border-radius: 0 0px 30px 30px;
+              position: relative;
+              width: 100%;
+              .image img{
+                position: static;
+              }
+              .play-button {
+                bottom: 130px;
+                width: 80px;
+                height: 41px;
+              }
+            }
+            .box-number {
+              left: 50%;
+              transform: translateX(-50%);
+              top: -29px;
+              width: 52px;
+              height: 52px;
+              padding-top: 6px;
+              .t1 {
+                font-size: 7px;
+              }
+              .t2 {
+                font-size: 21px;
+                line-height: 8px;
+              }
+            }
+            .info-content{
+              width: 100%;
+              padding-top: 31.2px;
+              padding-left: 14px;
+              padding-right: 7px;
+              padding-bottom: 88px;
+              .title {
+                font-size: 27px;
+                line-height: 1.63;
+                margin-bottom: 32px;
+              }
+              .t1 {
+                font-size: 16px;
+                line-height: 1.38;
+              }
+              .text{
+                font-size: 16px;
+                line-height: 1.75;
+              }
+            }
+          }
+          .solution-item.col-style{
+            .title{
+              line-height: 1.15;
+            }
+            .info-content{
+              padding-bottom: 30px;
+              .training-list{
+                .training-item{
+                  row-gap: 13px;
+                  padding: 20px 0 42px 0;
+                  .box-text {
+                    width: 100%;
+                    .t1{
+                      margin-bottom: 22px;
+                    }
+                  }
+                  .box-img {
+                    width: 100%;
+                    picture{
+                      margin:0 auto;
+                    }
+                  }
+                }
+              }
+              .edu-list{
+                .edu-item{
+                  width: 100%;
+                  padding-bottom: 139px;
+                  min-height: unset;
+                  .t1 {
+                    font-size: 20px;
+                    line-height: 1.7;
+                    margin-bottom: 10px;
+                  }
+                  .text {
+                    font-size: 18px;
+                    line-height: 1.56;
+                  }
+                  .label {
+                    margin: 17px 0 5px;
+                  }
+                  .link-page {
+                    bottom: 60px;
+                  }
+                }
+                .edu-item:first-child{
+                  border-bottom:1px solid #fff;
+                  border-right:none;
+                  .edu-item-inner {
+                    padding-right: 0px;
+                    .text.fl{
+                      flex-direction: row;
+                    }
+                    .text.fl span {
+                      max-width: 50%;
+                    }
+                  }
+                }
+                .edu-item:last-child{
+                  padding-bottom: 72px;
+                  .link-page{
+                    left:0;
+                    bottom: 16px;
+                  }
+                  .edu-item-inner{
+                    left:0;
+                    padding-top: 30px;
+                    .t1{
+                      font-size: 24px;
+                    }
+
+                  }
+
+                }
+              }
+            }
+          }
+          .solution-item:last-child{
+            margin-bottom:0 !important;
+          }
+        }
+      }
+    }
+
+    //STEP
+    .step{
+      padding: 53px 0 69px 0;
+      .inner{
+        padding:0 13px;
+        .heading-entry{
+          margin-bottom: 73px;
+          .heading-block{
+            margin-bottom:3px;
+          }
+          .sub-ttl{
+            line-height: 1.73;
+            padding-left:0;
+          }
+        }
+        picture {
+          max-width: 285px;
+        }
+      }
+
+    }
+  }
+
+
+
+  #serviceCloudVideostep{
+    .solution .heading-entry{
+      overflow: hidden;
+    }
+    .solution .heading-entry .sub-ttl{
+      width: 384px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  #serviceCloudVR{
+    .banner-service .banner-logo {
+      margin: 0px 0 151px 0;
+    }
+    .solution {
+      padding-bottom: 40px;
+      padding-top: 40px;
+      .heading-entry {
+        margin-bottom: 69px;
+      }
+      .solution-content{
+        .solution-list{
+          .solution-item{
+            margin-bottom: 58px;
+            .info-content{
+              padding-top: 59.2px;
+              padding-left: 17px;
+              padding-right: 7px;
+              padding-bottom: 25px;
+              .title{
+                margin-bottom: 10px;
+              }
+            }
+            .image-content{
+              .image {
+                max-width: 298px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .step.video{
+      padding: 45px 0 81px 0;
+      .inner{
+        .heading-entry{
+          margin-bottom: 80px;
+          .sub-ttl{
+            line-height: 44px;
+            left:0;
+          }
+        }
+        picture img{
+          width: 100%;
+        }
+      }
+
+    }
+
+    .support.why{
+      padding-bottom: 69px;
+      .reason-content{
+        row-gap: 23px;
+        .reason-info{
+          padding-top: 28px;
+          padding-left: 15px;
+        }
+        .reason-image{
+          .why-list{
+            .why-item{
+              padding: 37.5px 4px 37.5px 8px;
+              row-gap: 20px;
+              .box-img {
+                width: 100%;
+                img{
+                  max-width: 118px;
+                  margin:0 auto;
+                  display: block;
+                }
+              }
+              .box-text {
+                width: 100%;
+                .ttl {
+                  font-size: 24px;
+                  line-height: 44px;
+                }
+                .text {
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 28px;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    .step {
+      padding: 64px 0 67px 0;
+      .inner{
+        .heading-entry{
+          margin-bottom: 36px;
+        }
+        picture {
+          max-width: 259px;
+          left: 0;
+        }
+      }
+
+    }
+
+  }
+
+
+  #serviceCloudMaetramain{
+    .banner-service .banner-info .banner-inner .banner-logo {
+      margin: 5px 0 118px 0;
+    }
+    .banner-top {
+      background-image: url(../images/maetra-line_sp.png);
+      padding-bottom: 105px;
+    }
+    .normal-qa{
+      background-image: url(../images/serviceCloudMaetramain_rec_sp.jpg);
+      padding-top: 66px;
+      padding-bottom: 205px;
+      .heading-block span{
+        letter-spacing: normal;
+      }
+      .title {
+        font-size: 32px;
+        margin-top: 7px;
+        padding-left: 20px;
+      }
+      .asked-question {
+        margin-top: 52px;
+        max-width: calc(100% - 16px);
+        margin-left: auto;
+        margin-right: auto;
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+
+    .solution {
+      padding-top: 29px;
+      padding-bottom: 67px;
+      padding-bottom: 22px;
+      .heading-entry {
+        margin-bottom: 61px;
+        .sub-ttl {
+          margin-top: 20px;
+          padding-left: 0;
+          padding-right: 0;
+          line-height: 34px;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+@media(max-width:350px){
+  .serviceCloudMaetra{
+    .banner-top .about-content .about-info .heading-block span {
+      font-size: 40px;
+    }
+    .banner-service .banner-info .banner-inner {
+      padding: 0 ;
+    }
+    .solution .solution-content .solution-list .solution-item .info-content .title {
+      font-size: 22px;
+    }
+    .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item:first-child .edu-item-inner .text.fl span {
+      max-width: 100%;
+    }
+
+  }
+  #serviceCloudVideostep{
+    .solution .heading-entry .sub-ttl{
+      width: 100%;
+      font-size:25px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

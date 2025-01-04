@@ -11,7 +11,7 @@
         <div class="banner-service">
             <div class="image-content">
                 <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudvideostep_banner_pc.png">
+                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep_banner_sp.png">
                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudvideostep_banner_pc.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudvideostep_banner_pc.png" alt="">
                 </picture>
@@ -25,7 +25,7 @@
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png" alt="">
                     </picture>
                     <h2 class="heading">母国語の動画で、<br>
-                        “伝える”から“伝わる”へ</h2>
+                        “伝える”から<br class="sp-br">“伝わる”へ</h2>
                 </div>
             </div>
         </div>
@@ -41,8 +41,8 @@
                     <h2 class="heading-block">
                         <span class="uppercase">SOLUTION</span>
                     </h2>
-                    <p class="sub-ttl">現場作業の動画や入社前後の教育動画を<br>
-                        いつでもどこでも母国語で説明できるサービス</p>
+                    <p class="sub-ttl">現場作業の動画や<br class="sp-br">入社前後の教育動画を<br>
+                        いつでもどこでも母国語で<br class="sp-br">説明できるサービス</p>
                 </div>
                 <div class="solution-content">
                     <div class="solution-list">
@@ -127,7 +127,7 @@
                                         <div class="box-text">
                                             <p class="t1">現場で動画が確認可能！<br>
                                                 場所を選びません。</p>
-                                            <p class="text">動画はQRコードで見れるので、現場で動画確認可能！
+                                            <p class="text">動画はQRコードで見れるので、現場で動画確認可能！<br class="sp-br">
                                                 説明のための会議や、場所を用意する必要はありません。</p>
                                         </div>
                                         <div class="box-img">
@@ -164,13 +164,13 @@
                                 <p class="t2">04</p>
                             </div>
                             <div class="info-content">
-                                <h4 class="title">前トレ with ビデオステップは<br>
-                                    よく使う教育動画コンテンツも実装しております。</h4>
+                                <h4 class="title">前トレ with ビデオ<br class="sp-br">ステップは<br class="pc-br">
+                                    よく使う<br class="sp-br">教育動画コンテンツも<br class="sp-br">実装しております。</h4>
                                 <dl class="edu-list fl">
                                     <dt class="edu-item">
                                         <div class="edu-item-inner">
                                             <p class="t1">生活オリエンテーションパッケージ</p>
-                                            <p class="text">日常生活で困ることを45本の短編動画にまとめまし<br>た。</p>
+                                            <p class="text">日常生活で困ることを45本の<br class="sp-br">短編動画にまとめました。</p>
                                             <p class="label text">プラン内容</p>
                                             <p class="text fl">
                                                 <span>・食事<br>
@@ -193,7 +193,7 @@
                                     <dt class="edu-item">
                                         <div class="edu-item-inner">
                                             <p class="t1">入国パッケージ</p>
-                                            <p class="text">入管が推奨している「生活・就労ガイドブック」<br>
+                                            <p class="text">入管が推奨している「生活・就労ガイドブック」<br class="sp-br">
                                                 の内容をまとめて多言語化しました。</p>
                                             <p class="label text">プラン内容</p>
                                             <p class="text fl">
@@ -207,7 +207,7 @@
                                                     第７章　年金・福祉<br>
                                                     第８章　税金<br>
                                                     第９章　交通<br>
-                                                    第１０章　緊急・<br>
+                                                    第１０章　緊急・災害<br>
                                                     第１１章　住居<br>
                                                     第１２章　日常におけるルール
                                                     　　　　　習慣
@@ -235,10 +235,10 @@
                     <h2 class="heading-block">
                         <span class="uppercase">STEP</span>
                     </h2>
-                    <p class="sub-ttl">依頼は簡単、3ステップで作成します。</p>
+                    <p class="sub-ttl">依頼は簡単、<br class="sp-br">3ステップで作成します。</p>
                 </div>
                 <picture>
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep_step.png">
+                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep_step_sp.png">
                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep_step.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/videostep_step.png" alt="">
                 </picture>

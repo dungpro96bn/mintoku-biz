@@ -3,6 +3,12 @@
   font-family: "Josefin Sans", serif;
 }
 
+.serviceCloudMaetra .pc-br {
+  display: inline;
+}
+.serviceCloudMaetra .sp-br {
+  display: none;
+}
 .serviceCloudMaetra picture {
   display: block;
   width: 100%;
@@ -37,7 +43,7 @@
   left: -11px;
 }
 .serviceCloudMaetra .banner-top {
-  background-color: #1c264d;
+  background-color: #3164AA;
   background-image: url(../images/service-cloud-bgt.jpg);
   background-position: 100% 100%;
   padding-bottom: 124px;
@@ -70,7 +76,7 @@
   border-radius: 40px;
   font-size: 16px;
   line-height: 26px;
-  color: #173c49;
+  color: #3164AA;
 }
 .serviceCloudMaetra .solution .link-page {
   position: absolute;
@@ -89,7 +95,7 @@
 }
 .serviceCloudMaetra .solution .solution-item {
   flex-direction: row-reverse;
-  background: #1c264d;
+  background: #3164AA;
   border-radius: 20px;
   margin-left: 0px;
   min-height: 449px;
@@ -99,7 +105,7 @@
   opacity: 0.8;
 }
 .serviceCloudMaetra .solution .solution-item .box-number {
-  background: #1c264d;
+  background: #E48121;
 }
 .serviceCloudMaetra .solution .solution-item .image-content {
   border-radius: 0px 20px 20px 0px;
@@ -203,7 +209,7 @@
   left: 42px;
 }
 .serviceCloudMaetra .step {
-  background-color: #95a4a9;
+  background-color: #F3F3F3;
   padding: 83px 0 144px 0;
 }
 .serviceCloudMaetra .step .inner .heading-entry {
@@ -215,7 +221,7 @@
   margin-bottom: 9px;
 }
 .serviceCloudMaetra .step .inner .heading-entry .sub-ttl {
-  color: #fff;
+  color: #2A4852;
   font-weight: 600;
   letter-spacing: normal;
 }
@@ -225,17 +231,6 @@
 }
 .serviceCloudMaetra .banner-other {
   margin-bottom: 0;
-}
-.serviceCloudMaetra .support {
-  padding-top: 74px;
-  padding-bottom: 42px;
-  margin-bottom: 118px;
-}
-.serviceCloudMaetra .support .reason-info {
-  width: 44%;
-}
-.serviceCloudMaetra .support .reason-image {
-  width: 48%;
 }
 
 #serviceCloudVR .banner-service .banner-logo {
@@ -267,6 +262,7 @@
   font-size: 36px;
   position: relative;
   left: 11px;
+  color: #E48121;
 }
 #serviceCloudVR .step.video .inner picture {
   max-width: 1040px;
@@ -340,19 +336,19 @@
 }
 
 #serviceCloudMaetramain .banner-top {
-  padding-bottom: 0px;
-  background-image: unset;
+  background-image: url(../images/maetra-line.png);
+  padding-bottom: 152px;
 }
 #serviceCloudMaetramain .banner-top .about-content .title {
   margin-bottom: 8px;
 }
 #serviceCloudMaetramain .normal-qa {
-  background-color: #1c264d;
+  background-color: #3164AA;
   background-repeat: no-repeat;
   background-image: url(../images/serviceCloudMaetramain_rec.jpg);
   background-position: 100% 100%;
   background-size: 100%;
-  padding-top: 191px;
+  padding-top: 78px;
   padding-bottom: 222px;
 }
 #serviceCloudMaetramain .normal-qa .normal-qa-inner {
@@ -377,7 +373,7 @@
   color: #fff;
 }
 #serviceCloudMaetramain .normal-qa .asked-question {
-  margin-top: 108px;
+  margin-top: 71px;
 }
 #serviceCloudMaetramain .solution {
   padding-top: 51px;
@@ -398,8 +394,515 @@
   margin-bottom: 19px;
 }
 
-@media (max-width: 1281px) {
+@media (max-width: 1280px) {
   .serviceCloudMaetra .banner-service .banner-info {
     top: calc(50% + 99px);
+  }
+}
+@media (max-width: 1201px) {
+  .serviceCloudMaetra .inner {
+    padding: 0 50px;
+  }
+  .serviceCloudMaetra .heading-entry .sub-ttl {
+    font-size: 30px;
+  }
+  .serviceCloudMaetra .banner-service .banner-info {
+    top: calc(50% + 49px);
+  }
+  .serviceCloudMaetra .banner-service .banner-info .banner-inner .banner-logo {
+    margin: 13px 0 30px 0;
+  }
+  .serviceCloudMaetra .banner-top {
+    padding-bottom: 88px;
+  }
+  .serviceCloudMaetra .banner-top .about-content {
+    left: 0;
+    width: calc(100% - 50px);
+  }
+  .serviceCloudMaetra .banner-top .about-content .about-info .heading-block span {
+    font-size: 37px;
+  }
+  .serviceCloudMaetra .banner-top .about-content .about-info .info {
+    font-size: 14px;
+  }
+  .serviceCloudMaetra .banner-top .about-content .about-info .title {
+    font-size: 28px;
+  }
+  .serviceCloudMaetra .solution .heading-entry {
+    margin-bottom: 55px;
+  }
+  .serviceCloudMaetra .solution .heading-entry .sub-ttl {
+    font-size: 30px;
+  }
+  .serviceCloudMaetra .solution .solution-item {
+    min-height: 280px;
+    margin-bottom: 45px;
+  }
+  .serviceCloudMaetra .solution .solution-item .box-number {
+    left: -47px;
+  }
+  .serviceCloudMaetra .solution .solution-item .info-content {
+    padding-top: 50px;
+  }
+  .serviceCloudMaetra .solution .solution-item .info-content .title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .serviceCloudMaetra .solution .solution-item .info-content .t1 {
+    font-size: 15px;
+  }
+  .serviceCloudMaetra .solution .solution-item .info-content .text {
+    font-size: 14px;
+  }
+  .serviceCloudMaetra .solution .solution-item .image-content .play-button {
+    bottom: 115px;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content {
+    padding: 44px 40px 27px;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .training-list {
+    margin-top: 26.5px;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .training-list .training-item {
+    padding: 20px 0;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .training-list .training-item .box-text {
+    width: 64.09%;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .training-list .training-item .box-img {
+    width: calc(35.91% - 70px);
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .edu-list .edu-item {
+    padding-bottom: 100px;
+    padding-top: 10.5px;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .edu-list .edu-item .edu-item-inner {
+    left: 0;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .edu-list .edu-item .edu-item-inner .label {
+    margin: 20px 0 20px;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .edu-list .edu-item .text.fl {
+    flex-direction: column;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .edu-list .edu-item .text.fl span {
+    max-width: 253px;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .edu-list .edu-item:first-child .edu-item-inner {
+    padding-right: 40px;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .edu-list .edu-item:first-child .link-page {
+    left: 0px;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .edu-list .edu-item:last-child .edu-item-inner {
+    left: 42px;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .edu-list .edu-item:last-child .edu-item-inner .text {
+    font-size: 13px;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .edu-list .edu-item:last-child .edu-item-inner .link-page {
+    left: 27px;
+  }
+  .serviceCloudMaetra .solution .solution-item.col-style .info-content .text {
+    font-size: 14px;
+  }
+  .serviceCloudMaetra .step {
+    padding: 40px 0 70px 0;
+  }
+  #serviceCloudVR .support.why {
+    padding-top: 7px;
+  }
+  #serviceCloudVR .support.why .reason-content {
+    row-gap: 50px;
+    flex-direction: column;
+  }
+  #serviceCloudVR .support.why .reason-content .reason-info, #serviceCloudVR .support.why .reason-content .reason-image {
+    width: 100%;
+  }
+  #serviceCloudMaetramain .solution .solution-item {
+    min-height: 375px;
+  }
+}
+@media (max-width: 767px) {
+  .serviceCloudMaetra .inner {
+    padding: 0 13px;
+  }
+  .serviceCloudMaetra .pc-br {
+    display: none;
+  }
+  .serviceCloudMaetra .sp-br {
+    display: inline;
+  }
+  .serviceCloudMaetra .banner-service .banner-info {
+    top: unset;
+    bottom: 0;
+    transform: translateY(0);
+  }
+  .serviceCloudMaetra .banner-service .banner-info .banner-inner {
+    padding: 0 24px 0 30px;
+  }
+  .serviceCloudMaetra .banner-service .banner-info .banner-inner .banner-logo {
+    max-width: 314px;
+    margin: 23px 0 181px 0;
+  }
+  .serviceCloudMaetra .banner-service .banner-info .banner-inner .heading {
+    font-size: 38px;
+    line-height: 1.47;
+    left: 0;
+  }
+  .serviceCloudMaetra .banner-top {
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 102px;
+    padding-top: 25px;
+    background-image: url(../images/service-cloud-bgt_sp.jpg);
+  }
+  .serviceCloudMaetra .banner-top .about-content {
+    width: calc(100% - 34px);
+    row-gap: 53px;
+  }
+  .serviceCloudMaetra .banner-top .about-content .about-info {
+    width: 100%;
+  }
+  .serviceCloudMaetra .banner-top .about-content .about-info .heading-block span {
+    font-size: 45px;
+    line-height: 1.2;
+  }
+  .serviceCloudMaetra .banner-top .about-content .about-info .title {
+    font-size: 32px;
+    line-height: 1.38;
+    margin-bottom: 18px;
+    margin-top: -14px;
+  }
+  .serviceCloudMaetra .banner-top .about-content .about-info .info {
+    font-size: 16px;
+    line-height: 1.75;
+    padding-right: 0;
+  }
+  .serviceCloudMaetra .banner-top .about-content .about-image {
+    width: 100%;
+  }
+  .serviceCloudMaetra .solution {
+    overflow: hidden;
+    padding-top: 66px;
+    padding-bottom: 40px;
+  }
+  .serviceCloudMaetra .solution .inner {
+    padding: 0;
+  }
+  .serviceCloudMaetra .solution .link-page {
+    bottom: 28px;
+    left: 18px;
+  }
+  .serviceCloudMaetra .solution .heading-entry {
+    margin-bottom: 60px;
+  }
+  .serviceCloudMaetra .solution .heading-entry .sub-ttl {
+    font-size: 32px;
+    line-height: 1.44;
+    padding-left: 0px;
+    margin-top: 15px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list {
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item {
+    margin-bottom: 56px;
+    border-radius: 30px;
+    flex-direction: column-reverse;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item .image-content {
+    border-radius: 0 0px 30px 30px;
+    position: relative;
+    width: 100%;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item .image-content .image img {
+    position: static;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item .image-content .play-button {
+    bottom: 130px;
+    width: 80px;
+    height: 41px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item .box-number {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -29px;
+    width: 52px;
+    height: 52px;
+    padding-top: 6px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item .box-number .t1 {
+    font-size: 7px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item .box-number .t2 {
+    font-size: 21px;
+    line-height: 8px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item .info-content {
+    width: 100%;
+    padding-top: 31.2px;
+    padding-left: 14px;
+    padding-right: 7px;
+    padding-bottom: 88px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item .info-content .title {
+    font-size: 27px;
+    line-height: 1.63;
+    margin-bottom: 32px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item .info-content .t1 {
+    font-size: 16px;
+    line-height: 1.38;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item .info-content .text {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .title {
+    line-height: 1.15;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content {
+    padding-bottom: 30px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .training-list .training-item {
+    row-gap: 13px;
+    padding: 20px 0 42px 0;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .training-list .training-item .box-text {
+    width: 100%;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .training-list .training-item .box-text .t1 {
+    margin-bottom: 22px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .training-list .training-item .box-img {
+    width: 100%;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .training-list .training-item .box-img picture {
+    margin: 0 auto;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item {
+    width: 100%;
+    padding-bottom: 139px;
+    min-height: unset;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item .t1 {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item .text {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item .label {
+    margin: 17px 0 5px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item .link-page {
+    bottom: 60px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item:first-child {
+    border-bottom: 1px solid #fff;
+    border-right: none;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item:first-child .edu-item-inner {
+    padding-right: 0px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item:first-child .edu-item-inner .text.fl {
+    flex-direction: row;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item:first-child .edu-item-inner .text.fl span {
+    max-width: 50%;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item:last-child {
+    padding-bottom: 72px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item:last-child .link-page {
+    left: 0;
+    bottom: 16px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item:last-child .edu-item-inner {
+    left: 0;
+    padding-top: 30px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item:last-child .edu-item-inner .t1 {
+    font-size: 24px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item:last-child {
+    margin-bottom: 0 !important;
+  }
+  .serviceCloudMaetra .step {
+    padding: 53px 0 69px 0;
+  }
+  .serviceCloudMaetra .step .inner {
+    padding: 0 13px;
+  }
+  .serviceCloudMaetra .step .inner .heading-entry {
+    margin-bottom: 73px;
+  }
+  .serviceCloudMaetra .step .inner .heading-entry .heading-block {
+    margin-bottom: 3px;
+  }
+  .serviceCloudMaetra .step .inner .heading-entry .sub-ttl {
+    line-height: 1.73;
+    padding-left: 0;
+  }
+  .serviceCloudMaetra .step .inner picture {
+    max-width: 285px;
+  }
+  #serviceCloudVideostep .solution .heading-entry {
+    overflow: hidden;
+  }
+  #serviceCloudVideostep .solution .heading-entry .sub-ttl {
+    width: 384px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #serviceCloudVR .banner-service .banner-logo {
+    margin: 0px 0 151px 0;
+  }
+  #serviceCloudVR .solution {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  #serviceCloudVR .solution .heading-entry {
+    margin-bottom: 69px;
+  }
+  #serviceCloudVR .solution .solution-content .solution-list .solution-item {
+    margin-bottom: 58px;
+  }
+  #serviceCloudVR .solution .solution-content .solution-list .solution-item .info-content {
+    padding-top: 59.2px;
+    padding-left: 17px;
+    padding-right: 7px;
+    padding-bottom: 25px;
+  }
+  #serviceCloudVR .solution .solution-content .solution-list .solution-item .info-content .title {
+    margin-bottom: 10px;
+  }
+  #serviceCloudVR .solution .solution-content .solution-list .solution-item .image-content .image {
+    max-width: 298px;
+  }
+  #serviceCloudVR .step.video {
+    padding: 45px 0 81px 0;
+  }
+  #serviceCloudVR .step.video .inner .heading-entry {
+    margin-bottom: 80px;
+  }
+  #serviceCloudVR .step.video .inner .heading-entry .sub-ttl {
+    line-height: 44px;
+    left: 0;
+  }
+  #serviceCloudVR .step.video .inner picture img {
+    width: 100%;
+  }
+  #serviceCloudVR .support.why {
+    padding-bottom: 69px;
+  }
+  #serviceCloudVR .support.why .reason-content {
+    row-gap: 23px;
+  }
+  #serviceCloudVR .support.why .reason-content .reason-info {
+    padding-top: 28px;
+    padding-left: 15px;
+  }
+  #serviceCloudVR .support.why .reason-content .reason-image .why-list .why-item {
+    padding: 37.5px 4px 37.5px 8px;
+    row-gap: 20px;
+  }
+  #serviceCloudVR .support.why .reason-content .reason-image .why-list .why-item .box-img {
+    width: 100%;
+  }
+  #serviceCloudVR .support.why .reason-content .reason-image .why-list .why-item .box-img img {
+    max-width: 118px;
+    margin: 0 auto;
+    display: block;
+  }
+  #serviceCloudVR .support.why .reason-content .reason-image .why-list .why-item .box-text {
+    width: 100%;
+  }
+  #serviceCloudVR .support.why .reason-content .reason-image .why-list .why-item .box-text .ttl {
+    font-size: 24px;
+    line-height: 44px;
+  }
+  #serviceCloudVR .support.why .reason-content .reason-image .why-list .why-item .box-text .text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  #serviceCloudVR .step {
+    padding: 64px 0 67px 0;
+  }
+  #serviceCloudVR .step .inner .heading-entry {
+    margin-bottom: 36px;
+  }
+  #serviceCloudVR .step .inner picture {
+    max-width: 259px;
+    left: 0;
+  }
+  #serviceCloudMaetramain .banner-service .banner-info .banner-inner .banner-logo {
+    margin: 5px 0 118px 0;
+  }
+  #serviceCloudMaetramain .banner-top {
+    background-image: url(../images/maetra-line_sp.png);
+    padding-bottom: 105px;
+  }
+  #serviceCloudMaetramain .normal-qa {
+    background-image: url(../images/serviceCloudMaetramain_rec_sp.jpg);
+    padding-top: 66px;
+    padding-bottom: 205px;
+  }
+  #serviceCloudMaetramain .normal-qa .heading-block span {
+    letter-spacing: normal;
+  }
+  #serviceCloudMaetramain .normal-qa .title {
+    font-size: 32px;
+    margin-top: 7px;
+    padding-left: 20px;
+  }
+  #serviceCloudMaetramain .normal-qa .asked-question {
+    margin-top: 52px;
+    max-width: calc(100% - 16px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #serviceCloudMaetramain .normal-qa .asked-question img {
+    width: 100%;
+  }
+  #serviceCloudMaetramain .solution {
+    padding-top: 29px;
+    padding-bottom: 67px;
+    padding-bottom: 22px;
+  }
+  #serviceCloudMaetramain .solution .heading-entry {
+    margin-bottom: 61px;
+  }
+  #serviceCloudMaetramain .solution .heading-entry .sub-ttl {
+    margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 34px;
+  }
+}
+@media (max-width: 350px) {
+  .serviceCloudMaetra .banner-top .about-content .about-info .heading-block span {
+    font-size: 40px;
+  }
+  .serviceCloudMaetra .banner-service .banner-info .banner-inner {
+    padding: 0;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item .info-content .title {
+    font-size: 22px;
+  }
+  .serviceCloudMaetra .solution .solution-content .solution-list .solution-item.col-style .info-content .edu-list .edu-item:first-child .edu-item-inner .text.fl span {
+    max-width: 100%;
+  }
+  #serviceCloudVideostep .solution .heading-entry .sub-ttl {
+    width: 100%;
+    font-size: 25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
