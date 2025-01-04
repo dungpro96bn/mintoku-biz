@@ -9,7 +9,7 @@ $slug = $post->post_name;
             <h2 class="heading-block">
                 <span>LINE UP</span>
             </h2>
-            <p class="sub-ttl">外国人労働者の採用から帰国まで、<br/>全てをカバーするトータルサポート</p>
+            <p class="sub-ttl">外国人労働者の採用から帰国まで、<br class="pc-br"/>全てをカバーするトータルサポート</p>
         </div>
         <div class="line-up-content">
             <ul class="lineUp-list">

@@ -5,9 +5,6 @@
 
         <div class="homepage-banner">
             <div class="banner-content">
-                <h2 class="heading">
-                    <span>もっとスムーズに<br/>外国人パートナーと、<br/>共に安心して働ける社会を。</span>
-                </h2>
                 <div class="image-content">
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image01_pc.png 2x">
@@ -15,6 +12,9 @@
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image01_pc.png" alt="">
                     </picture>
                 </div>
+                <h2 class="heading">
+                    <span>もっとスムーズに<br/>外国人パートナーと、<br/>共に安心して<br class="sp-br"/>働ける社会を。</span>
+                </h2>
             </div>
         </div>
 
@@ -102,8 +102,7 @@
                             <span>REASON</span>
                         </h2>
                         <h3 class="title">選ばれる理由</h3>
-                        <p class="text">大企業から中小企業までさまざまな<br/>
-                            業種の企業にご活用いただいています。</p>
+                        <p class="text">大企業から中小企業までさまざまな<br class="pc-br"/>業種の企業にご活用いただいています。</p>
                         <div class="link-page">
                             <a href="#"><span>資料ダウンロード</span><span class="icon">＞</span></a>
                             <a href="#"><span>お問い合わせ</span><span class="icon">＞</span></a>
@@ -126,7 +125,7 @@
                     <h2 class="heading-block">
                         <span>REFERENCE CASE Q&A</span>
                     </h2>
-                    <p class="sub-ttl">よくあるご質問や問題事例</p>
+                    <p class="sub-ttl">よくあるご質問や<br class="sp-br"/>問題事例</p>
                 </div>
                 <div class="qa-content">
                     <div class="qa-list">
@@ -134,7 +133,7 @@
                             <div class="qa-question">
                                 <div class="title is-active">
                                     <span class="en">Q.</span>
-                                    <p class="ttl">鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
+                                    <p class="ttl"><span class="en">Q.</span>鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
                                     <span class="icon-toggle">
                                         <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                                             <line id="Line_3" data-name="Line 3" x2="30" transform="translate(0 15)" fill="none" stroke="#0f3745" stroke-width="3"/>
@@ -156,7 +155,7 @@
                             <div class="qa-question">
                                 <div class="title">
                                     <span class="en">Q.</span>
-                                    <p class="ttl">鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
+                                    <p class="ttl"><span class="en">Q.</span>鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
                                     <span class="icon-toggle">
                                         <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                                             <line id="Line_3" data-name="Line 3" x2="30" transform="translate(0 15)" fill="none" stroke="#0f3745" stroke-width="3"/>
@@ -178,7 +177,7 @@
                             <div class="qa-question">
                                 <div class="title">
                                     <span class="en">Q.</span>
-                                    <p class="ttl">鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
+                                    <p class="ttl"><span class="en">Q.</span>鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
                                     <span class="icon-toggle">
                                         <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                                             <line id="Line_3" data-name="Line 3" x2="30" transform="translate(0 15)" fill="none" stroke="#0f3745" stroke-width="3"/>
@@ -200,7 +199,7 @@
                             <div class="qa-question">
                                 <div class="title">
                                     <span class="en">Q.</span>
-                                    <p class="ttl">鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
+                                    <p class="ttl"><span class="en">Q.</span>鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
                                     <span class="icon-toggle">
                                         <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                                             <line id="Line_3" data-name="Line 3" x2="30" transform="translate(0 15)" fill="none" stroke="#0f3745" stroke-width="3"/>
@@ -222,7 +221,7 @@
                             <div class="qa-question">
                                 <div class="title">
                                     <span class="en">Q.</span>
-                                    <p class="ttl">鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
+                                    <p class="ttl"><span class="en">Q.</span>鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
                                     <span class="icon-toggle">
                                         <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                                             <line id="Line_3" data-name="Line 3" x2="30" transform="translate(0 15)" fill="none" stroke="#0f3745" stroke-width="3"/>

@@ -141,6 +141,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="toggle-menu">
+                    <div class="icon">
+                        <span></span>
+                    </div>
+                </div>
             </div><!-- .header-nav -->
         </header><!-- #header-menu -->
         <main role="main">

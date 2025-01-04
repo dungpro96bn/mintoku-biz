@@ -64,8 +64,10 @@ jQuery(function ($) {
     });
 
     //Open Menu
-    $("#header-menu .btn-openMenu").click(function () {
-        $("#header-popup").addClass("is-open").addClass("is-menu");
+    $("#header-menu .toggle-menu").click(function () {
+        $(this).toggleClass("is-active");
+        $("#header-menu .right-header").toggleClass("is-open");
+        $("#header-menu .header-action-right").toggleClass("is-openMenu");
     });
 
     $(".header-action-right .searchForm form, .searchForm .toggle-form").click(function () {

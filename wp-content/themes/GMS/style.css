@@ -278,12 +278,21 @@ body:not(.home){
 #wpadminbar{
 	position: fixed !important;
 }
-
+.sp-br{
+	display: none;
+}
 
 @media (max-width: 767px) {
 
 	.inner {
 		padding: 0 12px;
+	}
+
+	.sp-br{
+		display: block;
+	}
+	.pc-br{
+		display: none;
 	}
 
 }
