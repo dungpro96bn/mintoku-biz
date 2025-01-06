@@ -24,6 +24,17 @@
   z-index: -1;
   opacity: 0;
 }
+.heading-block span.sp-br {
+  display: none;
+}
+@media (max-width: 767px) {
+  .heading-block span.sp-br {
+    display: block;
+  }
+  .heading-block span.pc-br {
+    display: none;
+  }
+}
 @media (max-width: 1023px) {
   .heading-block span {
     font-size: 36px;
@@ -40,6 +51,11 @@
 body:not(.home) .banner-top .heading-block span {
   color: #fff;
   letter-spacing: -1px;
+}
+@media (max-width: 767px) {
+  body:not(.home) .banner-top .heading-block span {
+    letter-spacing: 0;
+  }
 }
 
 .heading-entry .sub-ttl {
@@ -384,6 +400,12 @@ body:not(.home) .banner-top .heading-block span {
 .line-up.assistant {
   margin-bottom: 174px;
   padding-bottom: 110px;
+}
+@media (max-width: 767px) {
+  .line-up.assistant {
+    margin-bottom: 120px;
+    padding-bottom: 60px;
+  }
 }
 .line-up:before {
   content: "";
@@ -774,20 +796,6 @@ body:not(.home) .banner-top .heading-block span {
     font-size: 18px;
     line-height: 1.65;
   }
-  .reason .reason-info .link-page {
-    margin-top: 12px;
-    row-gap: 28px;
-    padding-right: 4px;
-  }
-  .reason .reason-info .link-page a {
-    width: 100%;
-    height: 58px;
-    font-size: 25px;
-    padding-right: 10px;
-  }
-  .reason .reason-info .link-page a .icon {
-    right: 18px;
-  }
 }
 @media (max-width: 767px) {
   .reason .reason-info {
@@ -803,6 +811,20 @@ body:not(.home) .banner-top .heading-block span {
   .reason .reason-info .text {
     font-size: 23px;
     line-height: 38px;
+  }
+  .reason .reason-info .link-page {
+    margin-top: 12px;
+    row-gap: 28px;
+    padding-right: 4px;
+  }
+  .reason .reason-info .link-page a {
+    width: 100%;
+    height: 58px;
+    font-size: 25px;
+    padding-right: 10px;
+  }
+  .reason .reason-info .link-page a .icon {
+    right: 18px;
   }
 }
 
@@ -1019,6 +1041,11 @@ body:not(.home) .banner-top .heading-block span {
 .banner-other.assistant {
   margin-bottom: 140px;
 }
+@media (max-width: 767px) {
+  .banner-other.assistant {
+    margin-bottom: 90px;
+  }
+}
 .banner-other.translate {
   background: rgba(42, 72, 82, 0.5);
   margin-bottom: 0;
@@ -1168,6 +1195,11 @@ body:not(.home) .banner-top .heading-block span {
 
 body:not(.home) .contact-bottom {
   margin-top: 130px;
+}
+@media (max-width: 767px) {
+  body:not(.home) .contact-bottom {
+    margin-top: 60px;
+  }
 }
 
 .contact-bottom {

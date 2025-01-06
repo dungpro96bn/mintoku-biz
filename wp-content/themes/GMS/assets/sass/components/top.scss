@@ -23,6 +23,20 @@
       opacity: 0;
     }
 
+    &.sp-br{
+      display: none;
+    }
+
+    @include var.xs{
+      &.sp-br{
+        display: block;
+      }
+
+      &.pc-br{
+        display: none;
+      }
+    }
+
   }
 
   @include var.sm{
@@ -49,6 +63,11 @@ body:not(.home){
       span{
         color: #fff;
         letter-spacing: -1px;
+
+        @include var.xs{
+          letter-spacing: 0;
+        }
+
       }
     }
   }
@@ -429,6 +448,12 @@ body:not(.home){
   &.assistant{
     margin-bottom: 174px;
     padding-bottom: 110px;
+
+    @include var.xs{
+      margin-bottom: 120px;
+      padding-bottom: 60px;
+    }
+
   }
 
   &:before{
@@ -896,24 +921,6 @@ body:not(.home){
         font-size: 18px;
         line-height: 1.65;
       }
-      .link-page{
-        margin-top: 12px;
-        row-gap: 28px;
-        padding-right: 4px;
-
-        a{
-          width: 100%;
-          height: 58px;
-          font-size: 25px;
-          padding-right: 10px;
-
-          .icon{
-            right: 18px;
-          }
-
-        }
-
-      }
 
     }
 
@@ -931,6 +938,25 @@ body:not(.home){
       .text{
         font-size: 23px;
         line-height: 38px;
+      }
+
+      .link-page{
+        margin-top: 12px;
+        row-gap: 28px;
+        padding-right: 4px;
+
+        a{
+          width: 100%;
+          height: 58px;
+          font-size: 25px;
+          padding-right: 10px;
+
+          .icon{
+            right: 18px;
+          }
+
+        }
+
       }
 
     }
@@ -1206,6 +1232,11 @@ body:not(.home){
 
   &.assistant{
     margin-bottom: 140px;
+
+    @include var.xs{
+      margin-bottom: 90px;
+    }
+
   }
 
   &.translate{
@@ -1383,6 +1414,11 @@ body:not(.home){
 body:not(.home){
   .contact-bottom{
     margin-top: 130px;
+
+    @include var.xs{
+      margin-top: 60px;
+    }
+
   }
 }
 

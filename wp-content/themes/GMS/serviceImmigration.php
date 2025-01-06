@@ -33,7 +33,7 @@
 
     <?php get_template_part("template-parts/service-aboutUs"); ?>
 
-    <div class="immigration-feature">
+    <div class="immigration-feature feature-allPage">
         <div class="inner">
             <div class="heading-entry">
                 <h2 class="heading-block center">
@@ -50,7 +50,7 @@
                         </div>
                         <div class="image-content">
                             <picture class="image">
-                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/immigration_feature_image01_pc.png">
+                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/immigration_feature_image01_sp.png">
                                 <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/immigration_feature_image01_pc.png">
                                 <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/immigration_feature_image01_pc.png" alt="">
                             </picture>
@@ -58,8 +58,7 @@
                         <div class="feature-info">
                             <div class="info-item">
                                 <h4 class="ttl">国内空港斡旋</h4>
-                                <p class="sub-ttl">到着空港でのお出迎えから<br/>
-                                    交通手段の斡旋をお手伝いいたします。</p>
+                                <p class="sub-ttl">到着空港でのお出迎えから<br/>交通手段の斡旋をお手伝い<br class="sp-br"/>いたします。</p>
                                 <dl>
                                     <dt>■入国時PCR検査・お出迎え</dt>
                                     <dd>入国時の検査の案内補助をおこないます。</dd>
@@ -95,7 +94,7 @@
                         </div>
                         <div class="image-content">
                             <picture class="image">
-                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/immigration_feature_image02_pc.png">
+                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/immigration_feature_image02_sp.png">
                                 <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/immigration_feature_image02_pc.png">
                                 <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/immigration_feature_image02_pc.png" alt="">
                             </picture>
@@ -171,7 +170,7 @@
                         </div>
                         <div class="info-item">
                             <p class="t1">オプション希望言語による</p>
-                            <h4 class="ttl">入国時案内資料 作成・配布</h4>
+                            <h4 class="ttl">入国時案内資料 <br class="sp-br"/>作成・配布</h4>
                             <p class="price">月額<span class="price-number">5,000</span>円/10名様まで</p>
                             <p class="text">※11名様以上は応相談になります。</p>
                         </div>

@@ -48,7 +48,7 @@
                         <p class="t2">01</p>
                     </div>
                     <h3 class="title">入管提出書類</h3>
-                    <h4 class="sub-ttl">各行政提出書類作成への相談も受け付けます</h4>
+                    <h4 class="sub-ttl">各行政提出書類作成への相談も<br class="sp-br"/>受け付けます</h4>
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png">
@@ -68,7 +68,7 @@
                         <p class="t2">02</p>
                     </div>
                     <h3 class="title">翻訳通訳サポート</h3>
-                    <h4 class="sub-ttl">対応言語30ヵ国語以上！ 通訳派遣もご相談ください</h4>
+                    <h4 class="sub-ttl">対応言語30ヵ国語以上！ <br class="sp-br"/>通訳派遣もご相談ください</h4>
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png">
@@ -88,7 +88,7 @@
                         <p class="t2">03</p>
                     </div>
                     <h3 class="title">給与計算や保険手続の代行</h3>
-                    <h4 class="sub-ttl">企業形態や課題に合わせたペイロールプラン提案</h4>
+                    <h4 class="sub-ttl">企業形態や課題に合わせ<br class="sp-br"/>たペイロールプラン提案</h4>
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png">
@@ -129,7 +129,7 @@
                         <p class="t2">05</p>
                     </div>
                     <h3 class="title">専門家無料相談サービス</h3>
-                    <h4 class="sub-ttl">プロのアドバイスで、外国人採用に安心と信頼を</h4>
+                    <h4 class="sub-ttl">プロのアドバイスで、<br class="sp-br"/>外国人採用に安心と信頼を</h4>
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png">
@@ -148,9 +148,8 @@
                         <p class="t1">Feature</p>
                         <p class="t2">06</p>
                     </div>
-                    <h3 class="title">外国人雇用管理クラウドサービス</h3>
-                    <h4 class="sub-ttl">外国人雇用における煩雑な書類管理、クラウドサービス<br/>
-                        ならではの情報共有とペーパーレス保管を実現</h4>
+                    <h3 class="title">外国人雇用管理<br class="sp-br"/>クラウドサービス</h3>
+                    <h4 class="sub-ttl">外国人雇用における煩雑な書類管理、クラウドサービス<br class="pc-br"/>ならではの情報共有とペーパーレス保管を実現</h4>
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png">
@@ -170,7 +169,7 @@
                         <p class="t2">07</p>
                     </div>
                     <h3 class="title">WEB勤怠管理システム</h3>
-                    <h4 class="sub-ttl">プロパー・派遣関係なく、クラウドでの勤怠管理が可能</h4>
+                    <h4 class="sub-ttl">プロパー・派遣関係なく、<br class="sp-br"/>クラウドでの勤怠管理が可能</h4>
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png">

@@ -11,8 +11,7 @@ $slug = $post->post_name;
                     <span>SUPPORT</span>
                 </h2>
                 <h3 class="title">導入後のサポート</h3>
-                <p class="text">スムーズにご利用いただくために、<br/>
-                    各種サポートをご用意しております</p>
+                <p class="text">スムーズにご利用いただくために、<br/>各種サポートを<br class="sp-br"/>ご用意しております</p>
                 <div class="link-page">
                     <a href="#"><span>資料ダウンロード</span><span class="icon">＞</span></a>
                     <a href="#"><span>お問い合わせ</span><span class="icon">＞</span></a>

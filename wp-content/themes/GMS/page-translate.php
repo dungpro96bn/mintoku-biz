@@ -26,7 +26,7 @@
 
     <?php get_template_part("template-parts/service-aboutUs"); ?>
 
-    <div class="translate-feature">
+    <div class="translate-feature feature-allPage">
         <div class="inner">
             <div class="heading-entry">
                 <h2 class="heading-block center">
@@ -42,7 +42,7 @@
                     </div>
                     <div class="image-content">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/translate-feature-image.png">
+                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/translate-feature-image-sp.png">
                             <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/translate-feature-image.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/translate-feature-image.png" alt="">
                         </picture>

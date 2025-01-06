@@ -17,7 +17,12 @@ $image = get_field('banner_image', $page_id);
         <div class="about-content">
             <div class="about-info">
                 <h2 class="heading-block en">
-                    <span class="uppercase"><?php echo $heading; ?></span>
+                    <?php if ($slug == "translate"): ?>
+                        <span class="uppercase pc-br"><?php echo $heading; ?></span>
+                        <span class="uppercase sp-br">Translation<br/>&<br/>interpreta-<br/>tion support</span>
+                    <?php else: ?>
+                        <span class="uppercase"><?php echo $heading; ?></span>
+                    <?php endif; ?>
                 </h2>
                 <h3 class="title"><?php echo $sub_title; ?></h3>
                 <div class="info"><?php echo $description; ?></div>
