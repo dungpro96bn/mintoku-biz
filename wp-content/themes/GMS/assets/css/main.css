@@ -4423,6 +4423,7 @@ body:not(.home) .partners {
     font-size: 38px;
     line-height: 1.47;
     left: 0;
+    padding: 0;
   }
   .serviceCloudMaetra .banner-top {
     border-radius: 10px 10px 0 0;
@@ -4436,6 +4437,7 @@ body:not(.home) .partners {
   }
   .serviceCloudMaetra .banner-top .about-content .about-info {
     width: 100%;
+    margin-bottom: 0px;
   }
   .serviceCloudMaetra .banner-top .about-content .about-info .heading-block span {
     font-size: 45px;
@@ -4997,4 +4999,109 @@ body:not(.home) .partners {
 }
 .life-support-feature .feature-item .feature-details .info-list .info-item:nth-child(3) {
   width: calc(35.9% - 20px);
+}
+
+#privacy picture {
+  display: block;
+}
+#privacy p, #privacy h3 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2a4852;
+}
+#privacy a:hover {
+  opacity: 0.8;
+}
+#privacy .h12 {
+  height: 12px;
+}
+#privacy .privacy-banner {
+  position: relative;
+}
+#privacy .privacy-banner picture {
+  height: 417px;
+}
+#privacy .privacy-banner picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#privacy .privacy-banner .ttl {
+  font-size: 40px;
+  line-height: 1.5;
+  width: calc(100% - 160px);
+  max-width: 1120px;
+  height: fit-content;
+  position: absolute;
+  bottom: 127.6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#privacy .privacy-content .inner {
+  width: calc(100% - 40px);
+  max-width: 960px;
+  padding: 78px 0 142px 0;
+}
+#privacy .privacy-content .inner .heading-entry .heading-block span {
+  text-align: center;
+  display: block;
+}
+#privacy .privacy-content .inner .heading-entry .sub-ttl {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+}
+#privacy .privacy-content .inner .privacy-list {
+  margin-top: 56.7px;
+}
+#privacy .privacy-content .inner .privacy-list .privacy-item {
+  margin-bottom: 44px;
+}
+#privacy .privacy-content .inner .privacy-list .privacy-item h3 {
+  margin-bottom: 16px;
+}
+#privacy .privacy-content .inner .privacy-list .privacy-item .text {
+  padding-left: 18px;
+}
+#privacy .privacy-content .inner .privacy-list .privacy-item a {
+  color: #3737de;
+}
+#privacy .privacy-content .inner .privacy-list .privacy-item .logo {
+  margin-top: 22px;
+  width: 103px;
+}
+#privacy .privacy-content .inner .privacy-list .privacy-item:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  #privacy .privacy-banner picture {
+    height: 415px;
+  }
+  #privacy .privacy-banner .ttl {
+    font-size: 36px;
+    width: calc(100% - 10px);
+    max-width: 1120px;
+    bottom: 113px;
+  }
+  #privacy .privacy-content .inner {
+    width: calc(100% - 34px);
+    padding: 45px 0 237px 0;
+  }
+  #privacy .privacy-content .inner .privacy-list {
+    margin-top: 30px;
+  }
+  #privacy .privacy-content .inner .privacy-list .privacy-item {
+    margin-bottom: 36px;
+  }
+  #privacy .privacy-content .inner .privacy-list .privacy-item .text {
+    padding-left: 23px;
+  }
+  #privacy .privacy-content .inner .privacy-list .privacy-item a {
+    line-break: anywhere;
+  }
 }

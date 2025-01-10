@@ -455,6 +455,9 @@
   }
 }
 
+
+
+
 @include md{
   .serviceCloudMaetra .banner-service .banner-info {
     top: calc(50% + 99px);
@@ -637,6 +640,7 @@
             font-size: 38px;
             line-height: 1.47;
             left:0;
+            padding:0;
           }
         }
       }
@@ -653,6 +657,7 @@
         row-gap: 53px;
         .about-info{
           width: 100%;
+          margin-bottom: 0px;
           .heading-block span{
             font-size: 45px;
             line-height: 1.2;
