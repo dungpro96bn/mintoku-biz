@@ -3939,6 +3939,9 @@ body:not(.home) .partners {
 .serviceCloudMaetra .solution {
   padding-top: 73px;
   padding-bottom: 40px;
+  background: #fff;
+  margin-top: -2px;
+  position: relative;
 }
 .serviceCloudMaetra .solution .link-page a {
   display: flex;
@@ -4224,6 +4227,8 @@ body:not(.home) .partners {
   background-size: 100%;
   padding-top: 78px;
   padding-bottom: 222px;
+  position: relative;
+  top: -1px;
 }
 #serviceCloudMaetramain .normal-qa .normal-qa-inner {
   max-width: 1072px;

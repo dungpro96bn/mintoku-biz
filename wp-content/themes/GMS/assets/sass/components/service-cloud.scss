@@ -74,6 +74,9 @@
   .solution {
     padding-top: 73px;
     padding-bottom: 40px;
+    background: #fff;
+    margin-top: -2px;
+    position: relative;
     .link-page a {
       display: flex;
       width: 146px;
@@ -272,6 +275,7 @@
   //SOLUTION
   .solution{
     padding-bottom: 56px;
+
     .heading-entry {
       margin-bottom: 120px;
     }
@@ -408,6 +412,8 @@
     background-size:100%;
     padding-top:78px;
     padding-bottom: 222px;
+    position: relative;
+    top: -1px;
     .normal-qa-inner{
       max-width: 1072px;
       margin: 0px auto 0 auto;
