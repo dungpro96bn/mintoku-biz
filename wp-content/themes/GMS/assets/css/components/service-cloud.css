@@ -549,6 +549,7 @@
     font-size: 38px;
     line-height: 1.47;
     left: 0;
+    padding: 0;
   }
   .serviceCloudMaetra .banner-top {
     border-radius: 10px 10px 0 0;
@@ -562,6 +563,7 @@
   }
   .serviceCloudMaetra .banner-top .about-content .about-info {
     width: 100%;
+    margin-bottom: 0px;
   }
   .serviceCloudMaetra .banner-top .about-content .about-info .heading-block span {
     font-size: 45px;
