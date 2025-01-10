@@ -62,9 +62,9 @@ $slug = $post->post_name;
                             </div>
                             <div class="image-content">
                                 <picture class="image">
-                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image03_pc.png">
+                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image03_sp.png">
                                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image03_pc.png">
-                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image03_pc.png" alt="">
+                                    <img class="sizes img-radius" src="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image03_pc.png" alt="">
                                 </picture>
                             </div>
                         </div>
@@ -86,7 +86,7 @@ $slug = $post->post_name;
                             </div>
                             <div class="image-content">
                                 <picture class="image">
-                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image04_pc.png">
+                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image04_sp.png">
                                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image04_pc.png">
                                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image04_pc.png" alt="">
                                 </picture>
@@ -148,7 +148,7 @@ $slug = $post->post_name;
                             </div>
                             <div class="image-content">
                                 <picture class="image">
-                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image05_pc.png">
+                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image05_sp.png">
                                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image05_pc.png">
                                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image05_pc.png" alt="">
                                 </picture>
@@ -220,9 +220,9 @@ $slug = $post->post_name;
                             </div>
                             <div class="image-content">
                                 <picture class="image">
-                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image06_pc.png">
+                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image06_sp.png">
                                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image06_pc.png">
-                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image06_pc.png" alt="">
+                                    <img class="sizes img-radius" src="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image06_pc.png" alt="">
                                 </picture>
                             </div>
                         </div>
@@ -244,7 +244,7 @@ $slug = $post->post_name;
             <div class="price-table">
                 <div class="price-list">
                     <picture class="image">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image07_pc.png">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image07_sp.png">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image07_pc.png">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image07_pc.png" alt="">
                     </picture>

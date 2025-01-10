@@ -82,7 +82,7 @@ $slug = $post->post_name;
                         </div>
                         <div class="image-content">
                             <picture class="image">
-                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/translate-feature-image.png">
+                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/translate-feature-image-sp.png">
                                 <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/translate-feature-image.png">
                                 <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/translate-feature-image.png" alt="">
                             </picture>
@@ -102,7 +102,7 @@ $slug = $post->post_name;
                         </div>
                         <div class="image-content">
                             <picture class="image">
-                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/translate-feature-image.png">
+                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/translate-feature-image-sp.png">
                                 <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/translate-feature-image.png">
                                 <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/translate-feature-image.png" alt="">
                             </picture>

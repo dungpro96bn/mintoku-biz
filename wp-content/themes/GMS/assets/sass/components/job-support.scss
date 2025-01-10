@@ -8,18 +8,44 @@
     .banner-info{
       top: 65%;
 
+      @include var.xs{
+        top: 0;
+      }
+
       .logo-job-support{
         margin-bottom: 20px;
+
+        @include var.xs{
+          max-width: 240px;
+        }
+
       }
 
       .sub-title{
         margin-bottom: 12px;
         line-height: 60px;
+
+        @include var.xs{
+          line-height: 53px;
+          margin-bottom: 5px;
+        }
+
       }
 
       .heading{
         font-size: 60px;
         line-height: 89px;
+
+        @include var.sm{
+          font-size: 50px;
+          line-height: 70px;
+        }
+
+        @include var.xs{
+          font-size: 38px;
+          line-height: 51px;
+        }
+
       }
     }
   }
@@ -45,6 +71,10 @@
     left: 0;
     z-index: 2;
     transform: translateY(-50%);
+
+    @include var.sm{
+      top: calc(50% + 80px);
+    }
 
     @include var.xs{
       height: 100%;
@@ -115,14 +145,13 @@
   padding-bottom: 96px;
   background-image: url("../images/job-support-bg-aboutUs.png");
   background-size: 100%;
-  background-position: 100% 101%;
+  background-position: 100% calc(100% + 2px);
   background-repeat: no-repeat;
 
   @include var.xs{
     padding-top: 32px;
     border-radius: 12px 12px 0 0;
     padding-bottom: 95px;
-    background-position: 100% 100%;
 
     .heading-block{
       span{
@@ -188,10 +217,17 @@
     padding-bottom: 126px;
     background-color: #D05620;
     background-image: url("../images/life_support_bg-aboutUs.jpg");
+    background-position: 100% calc(100% + 2px);
 
     .about-info{
       .title{
         padding-right: 10px;
+
+        @include var.xs{
+          padding: 0;
+          max-width: 290px;
+        }
+
       }
 
       .info{
@@ -1411,6 +1447,11 @@ body:not(.home){
 
   &.camcat{
     padding-bottom: 62px;
+
+    @include var.xs{
+      padding-top: 80px;
+    }
+
   }
 
   &.price-item02{
@@ -1477,6 +1518,12 @@ body:not(.home){
       color: #2A4852;
       text-align: center;
       margin-top: 39px;
+
+      @include var.xs{
+        margin-top: 10px;
+        padding: 0 20px;
+      }
+
     }
 
   }
@@ -1487,6 +1534,11 @@ body:not(.home){
 
     .price-list{
       margin-bottom: 64px;
+
+      @include var.xs{
+        max-width: 360px;
+        margin: 0 auto 36px;
+      }
     }
 
     .note{
@@ -1727,6 +1779,15 @@ body:not(.home){
     transform: translateX(-50%);
   }
 
+  @include var.xs{
+    padding-bottom: 60px;
+
+    &:after{
+      bottom: -24px;
+      border-top: 24px solid #147b2b;
+    }
+  }
+
   .heading-block{
     span{
       letter-spacing: -1.2px;
@@ -1745,6 +1806,15 @@ body:not(.home){
 
     .title{
       padding: 0;
+
+      @include var.xs{
+        text-align: center;
+      }
+
+    }
+
+    @include var.xs{
+      text-align: left;
     }
 
   }
@@ -1753,6 +1823,14 @@ body:not(.home){
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 22px;
+
+    @include var.xs{
+      grid-template-columns: repeat(1,1fr);
+      column-gap: 0px;
+      row-gap: 62px;
+      max-width: 328px;
+      margin: auto;
+    }
 
     .image{
       display: block;
@@ -1770,6 +1848,16 @@ body:not(.home){
 .solution{
   padding-top: 136px;
   padding-bottom: 60px;
+
+  @include var.xs{
+    padding-top: 105px;
+    padding-bottom: 92px;
+
+    .inner{
+      padding: 0 15px;
+    }
+
+  }
 
   .heading-entry{
     text-align: center;
@@ -1797,6 +1885,17 @@ body:not(.home){
     margin-bottom: 32px;
     min-height: 360px;
 
+    @include var.xs{
+      margin-left: 0;
+      border-radius: 34px;
+      margin-bottom: 61px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+    }
+
     .box-number {
       position: absolute;
       width: 83px;
@@ -1823,6 +1922,28 @@ body:not(.home){
         color: #fff;
       }
 
+      @include var.xs{
+        width: 52px;
+        height: 52px;
+        top: -33px;
+        padding-left: 3px;
+        padding-top: 9px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        .t1{
+          font-size: 7px;
+          line-height: 10px;
+          margin-bottom: 0;
+        }
+
+        .t2{
+          font-size: 20px;
+          line-height: 21px;
+        }
+
+      }
+
     }
 
     .image-content{
@@ -1844,7 +1965,24 @@ body:not(.home){
           object-position: center;
         }
 
+        @include var.xs{
+          display: flex;
+          position: relative;
+          height: 100%;
+
+          img{
+            position: static;
+          }
+
+        }
+
       }
+
+      @include var.xs{
+        width: 100%;
+        border-radius: 34px 34px 0 0;
+      }
+
     }
 
     .info-content{
@@ -1895,6 +2033,12 @@ body:not(.home){
         }
       }
 
+      @include var.xs{
+        width: 100%;
+        padding: 13px 15px 35px 15px;
+
+      }
+
     }
 
   }
@@ -1906,6 +2050,11 @@ body:not(.home){
   background: #F3F3F3;
   padding-top: 97px;
   padding-bottom: 121px;
+
+  @include var.xs{
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 
   .heading-entry{
     text-align: center;
@@ -1920,6 +2069,19 @@ body:not(.home){
       margin-top: 8px;
     }
 
+    @include var.xs {
+      .heading-block{
+        span{
+          font-size: 34px;
+        }
+      }
+
+      .sub-ttl{
+        font-size: 26px;
+        margin-top: 0;
+      }
+
+    }
 
   }
 
@@ -1929,6 +2091,17 @@ body:not(.home){
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 40px;
+
+    @include var.sm{
+      column-gap: 20px;
+    }
+
+    @include var.xs{
+      grid-template-columns: repeat(1,1fr);
+      column-gap: 0px;
+      row-gap: 45px;
+      padding: 0 18px;
+    }
   }
 
   .introduction-item{
@@ -1956,6 +2129,11 @@ body:not(.home){
 
     .info{
       padding: 21px 20px 11px;
+
+      @include var.xs{
+        padding: 17px 20px 35px;
+      }
+
       .name{
         border-bottom: 1px solid #707070;
         padding-bottom: 19px;
@@ -1966,18 +2144,51 @@ body:not(.home){
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 4px;
+
+        @include var.sm{
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        @include var.xs{
+          font-size: 20px;
+          line-height: 24px;
+        }
+
       }
 
       .name-en{
         font-size: 18px;
         line-height: 20px;
         font-weight: 300;
+
+        @include var.sm{
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        @include var.xs{
+          font-size: 18px;
+          line-height: 24px;
+        }
+
       }
 
       .text{
         font-size: 18px;
         line-height: 24px;
         font-weight: 300;
+
+        @include var.sm{
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        @include var.xs{
+          font-size: 18px;
+          line-height: 24px;
+        }
+
       }
 
     }
@@ -1990,6 +2201,10 @@ body:not(.home){
 
 .camCat-feature{
   padding-top: 97px;
+
+  @include var.xs{
+    padding-top: 84px;
+  }
 
   .heading-entry{
     margin-bottom: 5px;
@@ -2051,6 +2266,14 @@ body:not(.home){
       column-gap: 4px;
       margin-bottom: 26px;
 
+      @include var.xs{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        column-gap: 0;
+        margin-bottom: 14px;
+      }
+
       img{
         max-width: 216px;
       }
@@ -2062,6 +2285,12 @@ body:not(.home){
         color: #173C49;
         position: relative;
         bottom: -4px;
+
+        @include var.xs{
+          display: block;
+          bottom: 0;
+        }
+
       }
 
     }
@@ -2077,11 +2306,17 @@ body:not(.home){
   .feature-content{
     padding-top: 75px;
     padding-bottom: 50px;
+
+    @include var.xs{
+      padding-bottom: 110px;
+    }
+
   }
 
   .feature-list{
-    max-width: 1040px;
+    max-width: 1080px;
     margin: auto;
+    padding: 0 20px;
   }
 
   .feature-item{
@@ -2094,6 +2329,17 @@ body:not(.home){
     margin-bottom: 32px;
     min-height: 360px;
 
+    @include var.xs{
+      margin-left: 0;
+      border-radius: 34px;
+      margin-bottom: 61px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+    }
+
     .box-number {
       position: absolute;
       width: 83px;
@@ -2103,7 +2349,7 @@ body:not(.home){
       top: 50%;
       left: -42px;
       transform: translateY(-50%);
-      z-index: 1;
+      z-index: 9;
       text-align: center;
       padding-top: 15px;
 
@@ -2120,6 +2366,28 @@ body:not(.home){
         color: #fff;
       }
 
+      @include var.xs{
+        width: 52px;
+        height: 52px;
+        top: -33px;
+        padding-left: 3px;
+        padding-top: 9px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        .t1{
+          font-size: 7px;
+          line-height: 10px;
+          margin-bottom: 0;
+        }
+
+        .t2{
+          font-size: 20px;
+          line-height: 21px;
+        }
+
+      }
+
     }
 
     .image-content{
@@ -2127,6 +2395,11 @@ body:not(.home){
       border-radius: 40px 0 0 40px;
       overflow: hidden;
       position: relative;
+
+      @include var.xs{
+        width: 100%;
+        border-radius: 34px 34px 0 0;
+      }
 
       .image{
         display: flex;
@@ -2139,6 +2412,11 @@ body:not(.home){
           height: 100%;
           object-fit: cover;
           object-position: center;
+
+          @include var.xs{
+            position: static;
+          }
+
         }
 
       }
@@ -2156,6 +2434,11 @@ body:not(.home){
         font-size: 27px;
         line-height: 32px;
         margin-bottom: 60px;
+
+        @include var.xs{
+          margin-bottom: 32px;
+        }
+
       }
 
       .text{
@@ -2186,12 +2469,21 @@ body:not(.home){
         }
       }
 
+      @include var.xs{
+        width: 100%;
+        padding: 13px 15px 65px 15px;
+      }
+
     }
 
   }
 
   .feature-functions{
     padding: 0 30px 52px;
+
+    @include var.xs{
+      padding: 30px 20px 42px;
+    }
 
     .title{
       font-size: 27px;
@@ -2201,6 +2493,12 @@ body:not(.home){
       width: 100%;
       padding-top: 39px;
       padding-left: 42px;
+
+      @include var.xs{
+        text-align: left;
+        padding-left: 0;
+      }
+
     }
 
     .functions-list{
@@ -2210,6 +2508,13 @@ body:not(.home){
       display: grid;
       grid-template-columns: repeat(3,1fr);
       gap: 20px;
+
+      @include var.xs{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        max-width: 360px;
+        margin: auto;
+      }
 
       .functions-item{
         border: 1px solid #707070;

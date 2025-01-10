@@ -189,7 +189,7 @@ $slug = $post->post_name;
             <div class="price-table">
                 <div class="price-list">
                     <picture class="image">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cam_cat_image06_pc.png">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cam_cat_image06_sp.png">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cam_cat_image06_pc.png">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/cam_cat_image06_pc.png" alt="">
                     </picture>
