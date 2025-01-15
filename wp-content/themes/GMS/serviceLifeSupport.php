@@ -216,7 +216,7 @@ $slug = $post->post_name;
                             <div class="info-content">
                                 <h4 class="title">フルパッケージプラン</h4>
                                 <h3 class="sub-title">初めての外国人材採用も安心と充実</h3>
-                                <p class="text">外国人材活用に必要なあらゆる業務をお引き受けし、<br/>日本で生活する全ての外国人材の安全な生活をサポート。</p>
+                                <p class="text">外国人材活用に必要なあらゆる業務をお引き受けし、<br class="pc-br"/>日本で生活する全ての外国人材の安全な生活をサポート。</p>
                             </div>
                             <div class="image-content">
                                 <picture class="image">
@@ -251,7 +251,7 @@ $slug = $post->post_name;
                 </div>
             </div>
             <div class="description">
-                <p class="t1">プランの組み合わせは自由にカスタマイズ可能です。</p>
+                <p class="t1">プランの組み合わせは<br class="sp-br"/>自由にカスタマイズ可能です。</p>
                 <p class="t2">※契約機関に応じて、料金体系が変わります。表記されている金額は3年契約の場合です。</p>
             </div>
         </div>

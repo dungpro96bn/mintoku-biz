@@ -389,6 +389,35 @@ body:not(.home){
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='375' height='847.214' viewBox='0 0 375 847.214'%3E%3Cg id='Group_358' data-name='Group 358' transform='translate(10051 452) rotate(90)'%3E%3Cpath id='Path_122' data-name='Path 122' d='M0,0H786.214V375H0Z' transform='translate(-391 9676)' fill='%23e48121'/%3E%3Cpath id='Path_123' data-name='Path 123' d='M0,0H489L442.981,375H0Z' transform='translate(-452 9676)' fill='%232a4852'/%3E%3C/g%3E%3C/svg%3E%0A");
     background-position: bottom;
 
+    &.price-item02{
+      background-image: url("data:image/svg+xml,%3Csvg id='Group_508' data-name='Group 508' xmlns='http://www.w3.org/2000/svg' width='375' height='852.617' viewBox='0 0 375 852.617'%3E%3Cpath id='Path_81' data-name='Path 81' d='M0,0H375V852.617H0Z' fill='%23e48121'/%3E%3Cpath id='Path_82' data-name='Path 82' d='M0,0H375V391.787L0,493.175Z' fill='%232a4852'/%3E%3C/svg%3E%0A");
+      background-position: center;
+      padding-bottom: 26px;
+
+      .reason-info{
+        margin-bottom: 166px;
+
+        .text{
+          font-size: 20px;
+          line-height: 34px;
+
+          br.sp-br{
+            display: none;
+          }
+        }
+
+        .link-page{
+          row-gap: 15px;
+
+          a{
+            font-size: 20px;
+          }
+        }
+
+      }
+
+    }
+
     .inner{
       padding: 0 15px;
     }
@@ -1457,8 +1486,17 @@ body:not(.home){
   &.price-item02{
     padding-bottom: 147px;
 
+    @include var.xs{
+      padding-top: 50px;
+      padding-bottom: 76px;
+    }
+
     .header-entry {
       margin-bottom: 52px;
+
+      @include var.xs{
+        margin-bottom: 46px;
+      }
     }
 
     .price-table{
@@ -1466,11 +1504,20 @@ body:not(.home){
 
       .price-list{
         margin-bottom: 0;
+
+        @include var.xs{
+          max-width: 260px;
+        }
+
       }
     }
 
     .description{
       margin-top: 58px;
+
+      @include var.xs{
+        margin-top: 36px;
+      }
 
       .t1{
         font-size: 32px;
@@ -1478,6 +1525,13 @@ body:not(.home){
         color: #2A4852;
         text-align: center;
         margin-bottom: 5px;
+
+        @include var.xs{
+          font-size: 21px;
+          line-height: 30px;
+          margin-bottom: 21px;
+        }
+
       }
 
       .t2{
@@ -1485,6 +1539,15 @@ body:not(.home){
         line-height: 38px;
         color: #2A4852;
         text-align: center;
+
+        @include var.xs{
+          font-size: 16px;
+          line-height: 26px;
+          text-align: left;
+          max-width: 335px;
+          margin: auto;
+        }
+
       }
 
     }

@@ -117,6 +117,7 @@ jQuery(function ($) {
     $(".feature-top .info-content .see-more").on('click', function (){
         $(this).parents(".feature-item").find(".feature-details").slideToggle();
         $(this).toggleClass("is-active");
+        $(this).parents(".feature-item").find(".image-content").toggleClass("is-active");
     })
 
 

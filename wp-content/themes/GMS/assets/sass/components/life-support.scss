@@ -15,6 +15,7 @@
 
     @include var.xs{
       padding-top: 55px;
+      padding-bottom: 50px;
     }
 
   }
@@ -254,6 +255,7 @@
 
       .image-content{
         overflow: hidden;
+        transition: .4s;
 
         img{
           width: 100%;
@@ -270,6 +272,15 @@
           }
         }
 
+        @include var.xs{
+          border-radius: 0 0 27px 27px;
+
+          &.is-active{
+            border-radius: 0;
+          }
+
+        }
+
       }
 
     }
@@ -282,6 +293,11 @@
       .details-content{
         color: #fff;
         padding: 0px 40px 31px;
+
+        @include var.xs{
+          padding: 23px 12px 40px;
+        }
+
       }
 
       .title{
@@ -310,6 +326,12 @@
             line-height: 30px;
           }
 
+          @include var.xs{
+            font-size: 21px;
+            line-height: 32px;
+            padding-right: 10px;
+          }
+
         }
       }
 
@@ -326,6 +348,11 @@
 
       .details-list{
         margin-top: 28px;
+
+        @include var.xs{
+          margin-top: 40px;
+        }
+
       }
 
       .details-item{
@@ -347,6 +374,11 @@
             line-height: 24px;
           }
 
+          @include var.xs{
+            width: 100%;
+            margin-bottom: 12px;
+          }
+
         }
 
         .details-info{
@@ -363,7 +395,22 @@
               line-height: 22px;
             }
 
+            @include var.xs{
+              font-size: 16px;
+              line-height: 26px;
+            }
+
           }
+
+          @include var.xs{
+            width: 100%;
+            padding: 0;
+          }
+
+        }
+
+        @include var.xs{
+          margin-bottom: 26px;
         }
 
       }
@@ -371,6 +418,10 @@
       .link-page{
         display: flex;
         margin-top: 40px;
+
+        @include var.xs{
+          margin-top: 56px;
+        }
 
         a{
           font-size: 16px;
@@ -402,6 +453,12 @@
         column-gap: 10px;
         padding-bottom: 24px;
 
+        @include var.xs{
+          flex-direction: column;
+          margin: 0;
+          padding-bottom: 0;
+        }
+
         .info-item{
           &:nth-child(1){
             width: 31.1%;
@@ -413,6 +470,10 @@
 
           &:nth-child(3){
             width: calc(35.9% - 20px);
+          }
+
+          @include var.xs{
+            width: 100% !important;
           }
 
         }

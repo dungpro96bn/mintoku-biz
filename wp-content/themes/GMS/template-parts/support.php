@@ -3,7 +3,7 @@ $post = get_post();
 $slug = $post->post_name;
 ?>
 
-<div class="support <?php echo $slug; ?>">
+<div class="support <?php echo $slug; ?> <?php if($slug == "life-support" || $slug == "edpoke"){echo 'price-item02';} ?>"">
     <div class="inner">
         <div class="reason-content">
             <div class="reason-info">
