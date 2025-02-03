@@ -1251,7 +1251,9 @@ body:not(.home){
   &.camcat,
   &.life-support,
   &.edpoke,
-  &.qa{
+  &.qa,
+  &.contact,
+  &.confirm{
     margin-bottom: 0;
   }
 

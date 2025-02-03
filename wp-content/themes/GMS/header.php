@@ -137,7 +137,7 @@
                             <a class="download-btn" href="#">資料ダウンロード</a>
                         </div>
                         <div class="contact">
-                            <a class="contact-btn" href="#">お問い合わせ</a>
+                            <a class="contact-btn" href="/contact/">お問い合わせ</a>
                         </div>
                     </div>
                 </div>
