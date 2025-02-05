@@ -1253,7 +1253,8 @@ body:not(.home){
   &.edpoke,
   &.qa,
   &.contact,
-  &.confirm{
+  &.confirm,
+  &.download{
     margin-bottom: 0;
   }
 

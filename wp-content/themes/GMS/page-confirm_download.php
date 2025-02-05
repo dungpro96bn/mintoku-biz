@@ -3,7 +3,7 @@
     * Template Name: confirmDownload
     * Template Post Type: page
     */
-	get_header('thanks');
+	get_header();
 ?>
 
 <main class="main">
@@ -35,6 +35,6 @@
         </div>
     </section>
 </main>
-<?php get_footer('simple'); ?>
+<?php get_footer(); ?>
 
 

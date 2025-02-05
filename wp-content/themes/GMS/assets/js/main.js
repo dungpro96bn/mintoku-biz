@@ -118,7 +118,27 @@ jQuery(function ($) {
         $(this).parents(".feature-item").find(".feature-details").slideToggle();
         $(this).toggleClass("is-active");
         $(this).parents(".feature-item").find(".image-content").toggleClass("is-active");
-    })
+    });
+
+    $('.tab-action').click(function (event) {
+        $(".tab-action").removeClass("is-active");
+        $(this).addClass("is-active");
+    });
+
+    $(".tabs-list input").change(function (){
+        $("#filter-form").submit();
+    });
+
+    $('.post-list').slick({
+        infinite: true,
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 4000,
+    });
 
 
 });

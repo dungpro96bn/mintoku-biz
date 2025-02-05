@@ -4,160 +4,169 @@
 ?>
 
 <div id="allDownload" class="columns-container">
-    <div class="pageTitle">
-        <h2><span class="en montserrat">REPORT DOWNLOAD</span>外国人採用に関する資料ダウンロード</h2>
-    </div>
-    <div id="breadcrumb" class="breadcrumb">
-        <ol>
-            <li>
-                <a href="<?php echo home_url(); ?>">トップページ</a>&nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
-            </li>
-            <li>
-                <span>資料ダウンロード</span>
-            </li>
-        </ol>
-    </div>
 
-    <section class="dowload">
+    <div class="postBanner-top">
         <div class="inner">
-            <div class="content-dowload">
-                <dl class="title-page-dowload">
-                    <dt class="dt-title-page">ホワイトペーパー・調査<br class="sp-br">レポート資料</dt>
-                   <dd class="dd-title-page">外国人材に関するサービス活用方法や、<br class="sp-br">特定技能在留外国人推移などの資料を<br class="sp-br">ご用意しました。<br>サービスご検討や調査を<br class="sp-br">無料でダウンロードいただけます。</đ>
-                </dl>
-                <div class="tab_box">
-                    <div class="btn_area">
-                        <p class="tab_btn active">ホワイトペーパー</p>
-                        <p class="tab_btn">調査レポート</p>
-                    </div>
-                    <div class="panel_area">
-                        <div class="tab_panel active">
-                            <form method="POST" action="<?php bloginfo('url');?>/confirm_download">
-                                <ul class="download-list flex">
-                                    <?php
-                                    if (isset($_COOKIE['ids'])) {
-                                        unset($_COOKIE['ids']);
-                                        setcookie('ids', '', time() - 3600, '/'); // empty value and old timestamp
-                                    }
+            <div class="slider-post">
+                <ul class="post-list">
+                    <?php
+                    $args = array(
+                        'post_type'      => 'download',
+                        'post_status'    => 'publish',
+                        'order'          => 'DESC',
+                        'posts_per_page' => 5,
+//                    'meta_query'     => array(
+//                        array(
+//                            'key'     => 'slider_banner',
+//                            'value'   => 'Yes',
+//                            'compare' => 'LIKE'
+//                        )
+//                    ),
+                    );
 
-                                    $args = array(
-                                        'post_type' => array( 'download'),
-                                        'posts_per_page' => -1,
-                                        'tax_query' => array(
-                                            array(
-                                                'taxonomy' => 'download_cat',
-                                                'field'    => 'slug',
-                                                'terms'    => 'white_paper',
-                                            ),
-                                        ),
-                                    );
-                                    $posts = get_posts($args);
-            
-
-                                    foreach($posts as $post) {
-                                        $post_id = $post->ID;
-                                        $post_link = get_the_permalink($post_id);
-                                        $post_title = get_the_title($post_id);
-                                        $post_texts = apply_filters( 'the_content', $post->post_content );
-                                        $str = strip_tags($post_texts);
-                                        $count =50;
-                                        $length = mb_strlen($str,'utf-8');
-                                        if ($length>$count) {
-                                            $post_texts = mb_substr($str,0,$count,'utf-8').'...';
-                                        } else{
-                                            $post_texts = $str;
-                                        }
-                                        if (has_post_thumbnail($post_id)) {  
-                                            $post_thumbnail = get_the_post_thumbnail($post_id, 'post-thumbnail', array( 'class' => 'sizes' ));
-                                        } else {
-                                            $post_thumbnail = '<img src="'.bloginfo('template_url').'/images/no_image_download.jpg" alt="" class="sizes">';
-                                        }
-                                        ?>
-                                        <li class="download-item">                                            
-                                            <a href="<?= esc_html( $post_link ); ?>" title="<?= esc_html( $post_title ); ?>">
-                                                <div class="box-img"><?= $post_thumbnail; ?></div>
-                                                <dl class="dl-download">
-                                                    <dt class="dt-download"><span><?= esc_html( $post_title ); ?></span></dt>
-                                                    <dd class="dd-download"><?= esc_html( $post_texts ); ?></dd>
-                                                </dl>
-                                            </a>
-                                            <p class="check">
-                                              <input type="checkbox" id="<?= esc_html( $post_id ); ?>" class="download_id" name="download_id[]" value="<?= $post_id; ?>" autocomplete="off" />
-                                              <label for="<?= esc_html( $post_id ); ?>"> 選択する</label>
-                                            </p>
-                                        </li>
-							            <?php
-                                    }
-                                    ?>
-                                </ul>
-                                <div class="download-selected-bulk">
-                                    <input type="submit" id="download-selected" name="download-selected" class="btn-submit" value="選択した資料を一括ダウンロードする" disabled="disabled"/>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="tab_panel">
-                            <form method="POST" action="<?php bloginfo('url');?>/confirm_download">
-                                <ul class="download-list flex">
-                                    <?php
-                                    $args = array(
-                                        'post_type' => array( 'download'),
-                                        'posts_per_page' => -1,
-                                        'tax_query' => array(
-                                            array(
-                                                'taxonomy' => 'download_cat',
-                                                'field'    => 'slug',
-                                                'terms'    => 'report',
-                                            ),
-                                        ),
-                                    );
-                                    $posts = get_posts($args);
-
-                                    foreach($posts as $post) {
-                                        $post_id = $post->ID;
-                                        $post_link = get_the_permalink($post_id);
-                                        $post_title = get_the_title($post_id);
-                                        $post_texts = apply_filters( 'the_content', $post->post_content );
-                                        $str = strip_tags($post_texts);
-                                        $count = 60;
-                                        $length = mb_strlen($str,'utf-8');
-                                        if ($length>$count) {
-                                            $post_texts = mb_substr($str,0,$count,'utf-8').'...';
-                                        } else{
-                                            $post_texts = $str;
-                                        }
-                                        if (has_post_thumbnail($post_id)) {
-                                            $post_thumbnail = get_the_post_thumbnail($post_id, 'post-thumbnail', array( 'class' => 'sizes' ));
-                                        } else {
-                                            $post_thumbnail = '<img src="'.bloginfo('template_url').'/images/no_image_download.jpg" alt="" class="sizes">';
-                                        }
-                                        ?>
-                                        <li class="download-item">
-                                            <a href="<?= esc_html( $post_link ); ?>" title="<?= esc_html( $post_title ); ?>">
-                                                <div class="box-img"><?= $post_thumbnail; ?></div>
-                                                <dl class="dl-download">
-                                                    <dt class="dt-download"><span><?= esc_html( $post_title ); ?></span></dt>
-                                                    <dd class="dd-download"><?= esc_html( $post_texts ); ?></dd>
-                                                </dl>
-                                            </a>
-                                            <p class="check">
-                                            <input type="checkbox" id="<?= esc_html( $post_id ); ?>" class="download_id" name="download_id[]" value="<?= $post_id; ?>" autocomplete="off" />
-                                              <label for="<?= esc_html( $post_id ); ?>"> 選択する</label>
-                                            </p>
-                                        </li>
+                    $result = new WP_Query ( $args );
+                    if ( $result-> have_posts() ) : ?>
+                        <?php while ( $result->have_posts() ) : $result->the_post(); ?>
+                            <li class="article-item">
+                                <a class="link-post" href="<?php the_permalink(); ?>">
+                                    <div class="image-post">
                                         <?php
-                                    }
-                                    ?>
-                                </ul>
-                                <div class="download-selected-bulk">
-                                    <input type="submit" id="download-selected" name="download-selected" class="btn-submit" value="選択した資料を一括ダウンロードする" disabled="disabled" />
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                                        $image = get_the_post_thumbnail_url();
+                                        if($image):?>
+                                            <img src="<?php echo get_the_post_thumbnail_url(); ?>">
+                                        <?php else: ?>
+                                            <img src="<?php bloginfo('template_url'); ?>/images/no_image_download.jpg">
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="post-info">
+                                        <div class="cate-date">
+                                            <div class="category">
+                                                <?php
+                                                $country_lists = wp_get_post_terms($post->ID, 'download_cat', array("fields" => "all"));
+                                                foreach ($country_lists as $country_list) { ?>
+                                                    <span href="<?php echo get_category_link($country_list->term_id); ?>"><?php echo $country_list->name; ?></span>
+                                                <?php } ?>
+                                            </div>
+                                            <p class="date"><?php echo get_the_date(); ?></p>
+                                        </div>
+                                        <h2 class="title-post"><?php echo get_the_title(); ?></h2>
+                                        <div class="excerpt">
+                                            <?php
+                                            $content = get_the_content();
+                                            echo wp_trim_words($content, 50, '...');
+                                            ?>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="download-tabs">
+        <div class="inner">
+            <form id="filter-form" method="GET" action="/report_download/">
+                <div class="tabs-list">
+                    <label class="tab-action <?php echo (isset($_GET['category']) && $_GET['category'] == 'all' || !$_GET['category']) ? 'is-active' : ''; ?>" >
+                        <input type="radio" name="category" value="all" <?php echo (!isset($_GET['category']) || $_GET['category'] == 'all') ? 'checked' : ''; ?>> ALL
+                    </label>
+                    <label class="tab-action <?php echo (isset($_GET['category']) && $_GET['category'] == 'white_paper') ? 'is-active' : ''; ?>" >
+                        <input type="radio" name="category" value="white_paper" <?php echo (isset($_GET['category']) && $_GET['category'] == 'white_paper') ? 'checked' : ''; ?>> お役⽴ち資料
+                    </label>
+                    <label class="tab-action <?php echo (isset($_GET['category']) && $_GET['category'] == 'report') ? 'is-active' : ''; ?>" >
+                        <input type="radio" name="category" value="report" <?php echo (isset($_GET['category']) && $_GET['category'] == 'report') ? 'checked' : ''; ?>> 調査レポート
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="download-list">
+        <div class="inner">
+            <div class="download-post is-active" id="download-all">
+                <ul class="article-list article-col-3">
+                    <?php
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                    $category = isset($_GET['category']) ? sanitize_text_field($_GET['category']) : 'all';
+
+                    $args = array(
+                        'post_type'      => 'download',
+                        'post_status'    => 'publish',
+                        'order'          => 'DESC',
+                        'paged'          => $paged,
+                        'posts_per_page' => 9,
+                    );
+
+                    if ($category !== 'all') {
+                        $args['tax_query'] = array(
+                            array(
+                                'taxonomy' => 'download_cat',
+                                'field'    => 'slug',
+                                'terms'    => $category,
+                            ),
+                        );
+                    }
+
+                    $result = new WP_Query ( $args );
+                    if ( $result-> have_posts() ) : ?>
+                        <?php while ( $result->have_posts() ) : $result->the_post(); ?>
+                            <li class="article-item">
+                                <a class="link-post" href="<?php the_permalink(); ?>">
+                                    <p class="image-post">
+                                        <?php
+                                        $image = get_the_post_thumbnail_url();
+                                        if($image):?>
+                                            <img src="<?php echo get_the_post_thumbnail_url(); ?>">
+                                        <?php else: ?>
+                                            <img src="<?php bloginfo('template_url'); ?>/images/no_image_download.jpg">
+                                        <?php endif; ?>
+                                    </p>
+                                </a>
+                                <div class="category">
+                                    <?php
+                                    $country_lists = wp_get_post_terms($post->ID, 'download_cat', array("fields" => "all"));
+                                    foreach ($country_lists as $country_list) { ?>
+                                        <a href="<?php echo get_category_link($country_list->term_id); ?>"><?php echo $country_list->name; ?></a>
+                                    <?php } ?>
+                                </div>
+                                <h2 class="title-post">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <?php echo get_the_title(); ?>
+                                    </a>
+                                </h2>
+                                <div class="excerpt">
+                                    <?php
+                                    $content = get_the_content();
+                                    echo wp_trim_words($content, 50, '...');
+                                    ?>
+                                </div>
+                                <div class="link-page">
+                                    <a href="<?php the_permalink(); ?>">ダウンロードはこちら<span>＞</span></a>
+                                </div>
+                            </li>
+                        <?php endwhile; ?>
+                    <?php endif;
+                    wp_reset_postdata();
+                    ?>
+                </ul>
+                <?php if ($result->max_num_pages > 1): ?>
+                    <?php echo wp_pagenavi(['query' => $result]); ?>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+
+    <?php get_template_part("template-parts/banner-other"); ?>
+
+    <?php get_template_part("template-parts/support"); ?>
+
+    <?php get_template_part("template-parts/line-up"); ?>
+
+    <?php get_template_part("template-parts/contact-bottom"); ?>
+
 </div>
+
 <?php get_footer(); ?>
