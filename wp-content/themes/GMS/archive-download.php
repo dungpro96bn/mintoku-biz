@@ -144,7 +144,9 @@
                                     ?>
                                 </div>
                                 <div class="link-page">
-                                    <a href="<?php the_permalink(); ?>">ダウンロードはこちら<span>＞</span></a>
+                                    <form method="POST" action="/confirm_download/?id=<?php echo get_the_ID(); ?>">
+                                        <button class="download-link link-single">ダウンロードはこちら<span>＞</span></button>
+                                    </form>
                                 </div>
                             </li>
                         <?php endwhile; ?>

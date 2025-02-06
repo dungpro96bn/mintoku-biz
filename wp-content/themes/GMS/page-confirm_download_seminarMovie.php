@@ -3,7 +3,7 @@
     * Template Name: confirmDownloadSeminarMovie
     * Template Post Type: page
     */
-    get_header('thanks');
+    get_header();
 ?>
 <style>
 .text-alart01,.text-alart02 {
@@ -213,4 +213,4 @@ jQuery(document).ready(function($) {
 	
 		
 </script>
-<?php get_footer('simple'); ?>
+<?php get_footer(); ?>

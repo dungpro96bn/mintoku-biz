@@ -1064,6 +1064,11 @@ body:not(.home) .banner-top .heading-block span {
   right: 10px;
 }
 
+.single .banner-other,
+.archive .banner-other {
+  margin-bottom: 0;
+}
+
 .banner-other {
   background: #BEDEE8;
   padding-top: 79px;
@@ -1092,7 +1097,7 @@ body:not(.home) .banner-top .heading-block span {
 .banner-other.immigration {
   margin-bottom: 130px;
 }
-.banner-other.camcat, .banner-other.life-support, .banner-other.edpoke, .banner-other.qa, .banner-other.contact, .banner-other.confirm, .banner-other.download {
+.banner-other.camcat, .banner-other.life-support, .banner-other.edpoke, .banner-other.qa, .banner-other.contact, .banner-other.confirm, .banner-other.download, .banner-other.seminar {
   margin-bottom: 0;
 }
 .banner-other .banner-list {

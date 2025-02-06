@@ -43,7 +43,7 @@
 
     <!-- css file-->
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/all.min.css">
-    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/aos.css" rel="stylesheet">
+<!--    <link rel="stylesheet" media="all" href="--><?php //bloginfo('template_directory'); ?><!--/assets/css/aos.css" rel="stylesheet">-->
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/slick.css">
     <link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>?ver=<?php echo rand(); ?>">
        <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
@@ -57,8 +57,9 @@
     ?>
 
      <!--file js-->
-    <script src="<?php bloginfo('template_directory'); ?>/assets/js/aos.js"></script>
+<!--    <script src="--><?php //bloginfo('template_directory'); ?><!--/assets/js/aos.js"></script>-->
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/slick.min.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/main-old.js?ver=<?php echo rand(); ?>"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js?ver=<?php echo rand(); ?>"></script>
 
     <?php if (is_admin_bar_showing()): ?>

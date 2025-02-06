@@ -1217,6 +1217,12 @@ body:not(.home){
 
 }
 
+.single,
+.archive{
+  .banner-other{
+    margin-bottom: 0;
+  }
+}
 
 .banner-other{
   background: #BEDEE8;
@@ -1254,7 +1260,8 @@ body:not(.home){
   &.qa,
   &.contact,
   &.confirm,
-  &.download{
+  &.download,
+  &.seminar{
     margin-bottom: 0;
   }
 

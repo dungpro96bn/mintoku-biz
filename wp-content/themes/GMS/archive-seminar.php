@@ -3,20 +3,28 @@ get_header();
 global $post, $wp_query;
 $today = date('Y-m-d H:i');
 ?>
-<div id="allSeminar" class="columns-container">
-	<div class="pageTitle">
-		<h2><span class="en montserrat">SEMINAR INFORMATION</span>外国人採用に関する<br class="sp-br">セミナー情報</h2>
-	</div>
-	<div id="breadcrumb" class="breadcrumb">
-		<ol>
-			<li>
-				<a href="<?php echo home_url(); ?>">トップページ</a>&nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
-			</li>
-			<li>
-				<span>外国人採用に関するセミナー情報</span>
-			</li>
-		</ol>
-	</div>
+<div id="seminar-archive" class="columns-container">
+
+    <div class="banner-page">
+        <div class="banner-main">
+            <div class="inner">
+                <div class="heading-banner">
+                    <h1>セミナー情報</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-header">
+        <div class="inner">
+            <div class="header-entry">
+                <h2 class="heading-block center">
+                    <span class="uppercase">SEMINAR INFORMATION</span>
+                </h2>
+                <p class="sub-ttl">外国人採用に関するセミナー情報</p>
+            </div>
+        </div>
+    </div>
 
 	<div class="inner">
 		<div class="seminar-special">
@@ -110,21 +118,21 @@ $today = date('Y-m-d H:i');
 							<a href="<?php echo $post_link ?>">
 								<?php echo $post_thumbnail ?>
 							</a>
-							<a href="<?php echo $post_link ?>" class="accept">受付中</a>
 						</div>
 						<div class="info-item">
 							<a class="item-link" href="<?php echo $post_link ?>" title="<?php echo $post_title ?>">
 								<p class="title"><?php echo $post_title ?></p>
 							</a>
+                            <div class="list-tag-column flex">
+                                <?php echo $cat_list ?>
+                            </div>
 							<div class="date-time flex">
-								<a href="<?php echo $post_link ?>" class="accept-down">受付中</a>
 								<p class="date"><?php echo $seminar_date_apply ?></p>
 								<p class="time"><?php echo $seminar_time_apply ?></p>
 							</div>
-							<div class="list-tag-column flex">
-								<?php echo $cat_list ?>
-							</div>
-							<a href="<?php echo $post_link ?>" class="application">申し込む</a>
+                            <div class="link-page">
+                                <a href="<?php echo $post_link ?>">申込はこちら<span>＞</span></a>
+                            </div>
 						</div>
 					</div>
 				</li>
@@ -136,38 +144,9 @@ $today = date('Y-m-d H:i');
 		</div>
 
 		<div class="content-main">
-			<h3 class="title-seminar">開催済みセミナーを<br class="sp-br">カテゴリーで探す <span
-																				class="note-title">開催済みのセミナーは資料ダウンロード可能です</span></h3>
-			<div class="block-main flex">
-				<div class="category-seminar">
-					<?php
-					$args = array(
-						'taxonomy' => 'seminar_tag',
-						'hide_empty' => false,
-						'parent' => 0
-					);
-					?>
-					<div class="subMenu">
-						<ul class="sub-listMenu">
-							<li class="sub-itemMenu is-active all">
-								<a href="<?php echo home_url(); ?>/seminar" title="すべて">すべて</a>
-							</li>
-							<?php
-							$cats = get_categories($args);
-							ob_start();
-							foreach ($cats as $cat) {
-								$cat_link = get_category_link($cat->term_id);
-								echo '<li class="sub-itemMenu"><a href="'.$cat_link.'" title="'.$cat->name.'">'.$cat->name.'</a></li>';
-							}
-							$cat_list = ob_get_contents();
-							ob_end_clean();
-							echo $cat_list;
-							?>
-						</ul>
-					</div>
-				</div>
-
+			<div class="seminar-main">
 				<div class="all-seminar">
+                    <h4 class="seminar-main-title">開催済みのセミナーは資料ダウンロード可能です</h4>
 					<ul class="list-columns flex">
 						<?php
 						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -219,11 +198,9 @@ $today = date('Y-m-d H:i');
 									</div>
 								</a>
 								<div class="info-item">
-									<p class="title"><?php echo $post_title ?></p>
-									<div class="date-time flex">
-										<p class="date"><?php echo $seminar_date_apply; ?></p>
-										<p class="time"><?php echo $seminar_time_apply; ?></p>
-									</div>
+                                    <a class="item-link" href="<?php echo $post_link; ?>">
+                                        <p class="title"><?php echo $post_title ?></p>
+                                    </a>
 									<div class="list-tag-column flex">
 										<?php
 										$list_cats = get_the_terms($post->ID, 'seminar_tag' );
@@ -249,71 +226,47 @@ $today = date('Y-m-d H:i');
 						wp_pagenavi( array( 'query' => $result ) );
 					}
 					?>
-					<div id="breadcrumb-footer" class="breadcrumb">
-						<ol>
-							<li>
-								<a href="<?php echo home_url(); ?>">トップページ</a>&nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
-							</li>
-							<li>
-								<span>外国人採用に関するセミナー情報</span>
-							</li>
-						</ol>
-					</div>
 				</div>
-			</div>
-			<div class="page-top">
-				<a href="#" class="page-top-anchor">
-					<picture>
-						<img src="<?php bloginfo('template_url');?>/images/common/page-top-anchor.png" alt="">
-					</picture>
-				</a>
+                <div class="sidebar-seminar">
+                    <?php
+                    $args = array(
+                        'taxonomy' => 'seminar_tag',
+                        'hide_empty' => false,
+                        'parent' => 0
+                    );
+                    ?>
+                    <div class="subMenu">
+                        <h4 class="sidebar-title">カテゴリーで探す</h4>
+                        <ul class="sub-listMenu">
+                            <li class="sub-itemMenu is-active all">
+                                <a href="<?php echo home_url(); ?>/seminar" title="すべて">すべて</a>
+                            </li>
+                            <?php
+                            $cats = get_categories($args);
+                            ob_start();
+                            foreach ($cats as $cat) {
+                                $cat_link = get_category_link($cat->term_id);
+                                echo '<li class="sub-itemMenu"><a href="'.$cat_link.'" title="'.$cat->name.'">'.$cat->name.'</a></li>';
+                            }
+                            $cat_list = ob_get_contents();
+                            ob_end_clean();
+                            echo $cat_list;
+                            ?>
+                        </ul>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>
 
-	<div id="bock-sevice">
-		<div class="contact-page">
-			<div class="inner">
-				<h3 class="title-home" data-aos="fade-up">
-					<span class="text-es montserrat">CONTACT</span><br>
-					<span class="text-jp">サービスに関する<br class="sp-br">お問い合わせ・ご相談</span><br>
-					<span class="text-des">お気軽にご連絡ください。</span>
-				</h3>
-				<div class="box-contact allseminar" data-aos="fade-up">
-					<a href="" class="a-box flex">
-						<div class="left-contact">
-							<p class="text-01">外国人材採用の注意点や、<br class="sp-br">トラブルなど学べるセミナーを<br class="sp-br">ご視聴できます。</p>
-							<p class="link-contact destop" target="_blank">各種セミナー申し込みや、ご質問はこちら</p>
-							<p class="link-contact mobi" target="_blank">契約やトラブル相談はこちら</p>
-							<div class="phone flex">
-								<div class="phone-left">
-									<div class="top">
-										<picture class="box-img">
-											<source
-													srcset="<?php bloginfo('template_url');?>/images/top_icon_contact.png">
-											<img class="sizes"
-												 src="<?php bloginfo('template_url');?>/images/top_icon_contact.png"
-												 alt="">
-										</picture>
-										<span class="text-phone">お問合せ</span>
-									</div>
-									<p class="time">営業時間:10時〜18時（月〜金）</p>
-								</div>
-								<p class="number-phone montserrat">03-6738-9686</p>
-							</div>
-						</div>
-						<div class="right-contact">
-							<p class="title">外国人の雇用方法や<br class="sp-br">注意点が学べるセミナー</p>
-							<picture class="box-img">
-								<source srcset="<?php bloginfo('template_url');?>/images/top_seminar_04.png">
-								<img class="sizes" src="<?php bloginfo('template_url');?>/images/top_seminar_04.png" alt="">                            
-							</picture>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <?php get_template_part("template-parts/banner-other"); ?>
+
+    <?php get_template_part("template-parts/support"); ?>
+
+    <?php get_template_part("template-parts/line-up"); ?>
+
+    <?php get_template_part("template-parts/contact-bottom"); ?>
+
 </div>
 
 <?php get_footer(); ?>

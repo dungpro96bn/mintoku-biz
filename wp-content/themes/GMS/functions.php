@@ -388,59 +388,99 @@ function custom_get_url_download_video_shortcode_handler() {
 
 wpcf7_add_form_tag('download_item', 'custom_download_item_shortcode_handler');
 
-function custom_download_item_shortcode_handler() {
-	ob_start();
-	if (is_page('confirm_download')) { ?>
-<p class="download-list-heading">
-	<span class="span-es">REPORT DOWNLOAD</span><br><span>資料ダウンロード</span>
-</p>
-<div class="download-selected">
-	<p class="selected-ttl">選択した資料</p>
-	<ul class="selected-list">
-		<?php
-		if ($_POST['download_id']) {
-			$list_id = $_POST['download_id'];
-			if ($_POST['submitConfirm']) {
-				$list_id = explode(',', $_POST['download_id']);
-			}
-		}
-		else {                          
-			$list_id = explode(',', $_GET['id']);                    
-		}  
+function custom_download_item_shortcode_handler()
+{
+    ob_start();
+    if (is_page('confirm_download')) { ?>
+        <div class="dl-inner">
+            <div class="download-list-heading">
+                <div class="header-entry">
+                    <h2 class="heading-block center">
+                        <span class="uppercase">REPORT DOWNLOAD</span>
+                    </h2>
+                    <p class="sub-ttl">外国人採用に関する資料ダウンロード</p>
+                </div>
+            </div>
+            <div class="download-selected">
+                <div class="selected-list">
+                    <?php
+                    if ($_POST['download_id']) {
+                        $list_id = $_POST['download_id'];
+                        if ($_POST['submitConfirm']) {
+                            $list_id = explode(',', $_POST['download_id']);
+                        }
+                    } else {
+                        $list_id = explode(',', $_GET['id']);
+                    }
 
-		$args = array(
-			'post_type'      => 'download',
-			'posts_per_page' => -1,
-			'post__in'		 => $list_id
-		);
+                    $args = array(
+                        'post_type' => 'download',
+                        'posts_per_page' => -1,
+                        'post__in' => $list_id
+                    );
 
-		//die($list_id.'');
+                    $posts = get_posts($args); // Lấy danh sách bài viết
+                    $arr_link = array(); // Khởi tạo mảng lưu liên kết
 
-		$post = get_posts($args);
+                    foreach ($posts as $single_post) {
+                        $post_id = $single_post->ID;
+                        $post_link = get_permalink($post_id); // Lấy liên kết bài viết
+                        $post_title = get_the_title($post_id); // Lấy tiêu đề bài viết
+                        $post_content = $single_post->post_content; // Lấy nội dung bài viết
 
-		foreach($post as $post) {
-			$post_id = $post->ID;
-			$post_link = get_the_permalink($post_id);
-			$post_title = get_the_title($post_id);
-			$arr_link[] = $post_title.PHP_EOL.$post_link.PHP_EOL; 
-		?>
-		<li class="selected-list-item">
-			<input type="checkbox" id="download_id_selected" class="download_id_selected" name="download_id_selected[]" value="<?= $post_id; ?>" checked disabled />
-			<span><?= esc_html( $post_title ); ?></span>
-		</li>
-		<?php
-		}
-		if($arr_link ) {
-			$arr_link = implode(PHP_EOL, $arr_link);
-		}
+                        // Lấy tên danh mục (category name)
+                        $categories = wp_get_post_terms($post_id, 'download_cat'); // Lấy danh sách danh mục
+                        $category_name = '';
+                        if (!is_wp_error($categories) && !empty($categories)) {
+                            $category_name = $categories[0]->name; // Lấy tên danh mục đầu tiên
+                        }
 
+                        // Lấy URL của ảnh đại diện (thumbnail)
+                        $thumbnail_url = get_the_post_thumbnail_url($post_id, 'full'); // Lấy URL ảnh đại diện
 
-		?> <input type="hidden" name="download_item_link" value="<?= $arr_link; ?>"><?php
-		?>
-	</ul>
-</div>
-<?php }	
-	return ob_get_clean();
+                        // Thêm tiêu đề, liên kết, danh mục và URL ảnh đại diện vào mảng
+                        $arr_link[] = $post_title . PHP_EOL . $post_link . PHP_EOL . 'Category: ' . $category_name . PHP_EOL . 'Thumbnail URL: ' . $thumbnail_url . PHP_EOL;
+
+                        ?>
+                        <div class="selected-list-item">
+                            <div class="image-post">
+                                <?php if ($thumbnail_url) : ?>
+                                    <img src="<?= esc_url($thumbnail_url); ?>" alt="<?= esc_attr($post_title); ?>"
+                                         style="max-width: 100%; height: auto;"/>
+                                <?php endif; ?>
+                            </div>
+                            <div class="post-info">
+                                <div class="category">
+                                    <span><?= esc_html($category_name); ?></span>
+                                </div>
+                                <h4 class="title-post">
+                                    <?= esc_html($post_title); ?>
+                                </h4>
+                                <div class="excerpt">
+                                    <?php
+                                    $content = apply_filters('the_content', $post_content);
+                                    echo wp_trim_words($content, 50, '...');
+                                    ?>
+                                </div>
+                                <input type="checkbox" hidden="hidden" id="download_id_selected"
+                                       class="download_id_selected" name="download_id_selected[]" value="<?= $post_id; ?>"
+                                       checked disabled/>
+                            </div>
+                        </div>
+                        <?php
+                    }
+
+                    // Nối các phần tử trong mảng thành chuỗi
+                    if (!empty($arr_link)) {
+                        $arr_link = implode(PHP_EOL, $arr_link);
+                    }
+                    ?>
+                    <input type="hidden" name="download_item_link" value="<?= $arr_link; ?>">
+                </div>
+            </div>
+        </div>
+    <?php }
+    return ob_get_clean();
 }
 
 wpcf7_add_form_tag('download_item_upgrade', 'custom_download_item_upgrade_shortcode_handler');
