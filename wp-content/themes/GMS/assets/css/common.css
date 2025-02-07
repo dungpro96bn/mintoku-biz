@@ -178,6 +178,9 @@
   padding-top: 45px;
   padding-bottom: 60px;
 }
+.contactForm.confirm_download_seminar_movie {
+  padding-top: 0;
+}
 .contactForm.confirm_download {
   padding-top: 0;
 }
@@ -1257,6 +1260,11 @@
   font-weight: 400;
   border-radius: 8px;
   height: 30px;
+  transition: 0.3s;
+}
+.all-seminar .item-column .list-tag-column a:hover {
+  background: #2A4852;
+  color: #fff;
 }
 
 .seminar-special {
@@ -1380,6 +1388,33 @@
   margin: auto;
 }
 .seminar-special .list-columns .link-page a:hover {
+  background: #fff;
+  color: #e48121;
+}
+
+#single-seminar .link-contact {
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+#single-seminar .link-contact button {
+  background: #e48121;
+  border: 1px solid #e48121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: 700;
+  height: 40px;
+  border-radius: 40px;
+  column-gap: 12px;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 240px;
+  margin: auto;
+}
+#single-seminar .link-contact button:hover {
   background: #fff;
   color: #e48121;
 }

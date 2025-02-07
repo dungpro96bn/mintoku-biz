@@ -504,6 +504,12 @@ body:not(.home) .partners {
   justify-content: center;
   align-items: center;
   background: #E48121;
+  border: 1px solid #E48121;
+  transition: 0.3s;
+}
+.support .reason-info .link-page a:hover {
+  background: #fff;
+  color: #E48121;
 }
 .support .reason-info .link-page a .icon {
   position: absolute;
@@ -513,6 +519,11 @@ body:not(.home) .partners {
 }
 .support .reason-info .link-page a:nth-child(2) {
   background: #1AA1D5;
+  border: 1px solid #1AA1D5;
+}
+.support .reason-info .link-page a:nth-child(2):hover {
+  background: #fff;
+  color: #1AA1D5;
 }
 @media (max-width: 767px) {
   .support .reason-info .link-page {

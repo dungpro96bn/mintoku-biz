@@ -1261,7 +1261,8 @@ body:not(.home){
   &.contact,
   &.confirm,
   &.download,
-  &.seminar{
+  &.seminar,
+  &.confirm_download_seminar_movie{
     margin-bottom: 0;
   }
 

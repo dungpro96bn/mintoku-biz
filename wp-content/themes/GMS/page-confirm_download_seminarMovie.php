@@ -4,6 +4,22 @@
     * Template Post Type: page
     */
     get_header();
+
+$current_object = get_queried_object();
+$slug = '';
+
+if (is_page() || is_single()) {
+    $slug = $current_object->post_name;
+} elseif (is_category() || is_tag() || is_tax()) {
+    $slug = $current_object->slug;
+} elseif (is_post_type_archive()) {
+    $slug = get_query_var('post_type');
+} elseif (is_author()) {
+    $slug = $current_object->user_nicename;
+} elseif (is_date()) {
+    $slug = get_query_var('year') . '-' . get_query_var('monthnum') . '-' . get_query_var('day');
+}
+
 ?>
 <style>
 .text-alart01,.text-alart02 {
@@ -15,105 +31,141 @@
 
 </style>
 <main class="main">
-    <section id="download">
-        <div class="inner movie-seminar">
-            <p class="header-logo">
-                <a href="<?php bloginfo('url');?>">
-                    <picture>
-                        <source id="changeMe01" srcset="<?php bloginfo('template_url');?>/images/common/Img_logo_download.svg">
-                        <img class="sizes" id="changeMe" src="<?php bloginfo('template_url');?>/images/common/Img_logo_download.svg" alt="<?php bloginfo( 'name' ); ?>">
-                    </picture>
-                </a>
-            </p><!-- .header-logo -->
-            <p class="download-list-heading">
-                <span class="span-es">MOVIE DOWNLOAD</span><br><span>動画ダウンロード</span>
-            </p>
-            <p class="title-form">
-<!--                 動画の名前が入ります<br> -->
-                <?php
-                    $post = get_post($_GET['id']); 
-                    $post_title = $post->post_title;
-                    $post_link = get_the_permalink($post->ID);
-                ?>
-                <a href="<?php echo $post_link ?>" title="<?php echo $post_title ?>"><?php echo $post_title ?></a>
-            </p>
-            
-            
-			<div class="contact-form">
-				<div id="response-message"></div>
-				 <form id="contact-form">
-					 <div class="content-download">
-						 <div class="home-form download-form">
-						 	<?php                   
-							$id = $_GET['id'];
-							$post = get_post($id); 
-							$post_title = $post->post_title;
-							$post_link = get_the_permalink($post->ID);
-							$post_movie_url = get_field('seminar_movie_url', $post_id);
-						?>
-						<?php $count = 1;?>
-							 <input type="hidden" class="download_id_selected_video" name="hidden_field" value="<?php echo count($post_movie_url) ;?>" />
-							 <?php
+    <div id="download">
 
-							 foreach ($post_movie_url as $key => $value) {
-							?>
-								 <input type="hidden" class="download_id_selected_video" name="hidden_field_<?php echo $key + 1 ;?>" value="<?php echo $value['seminar_movie_item'] ;?>" />
-							 <?php
-							}
-
-							 ?>
-							  <input type="hidden" class="wpcf7-form-control wpcf7-text" name="title_post" value="<?php echo $post_title; ?>">
-							 <ul class="table table-contact">
-								 <li>
-									 <p class="title-input">会社名<span class="text-reque">必須</span></p>
-									 <div class="input-item">
-									 <input type="text" class="wpcf7-form-control wpcf7-text" name="your_com" placeholder="会社名を入力してください" required>
-									 </div>
-								 </li>
-								 <li>
-									 <p class="title-input">お名前<span class="text-reque">必須</span></p>
-									  <div class="input-item">
-									 <input type="text" class="wpcf7-form-control wpcf7-text" name="your_name" placeholder="苗字　名前" required>
-									 </div>
-								 </li>
-								 <li>
-									 <p class="title-input">メール<br>アドレス<span class="text-reque">必須</span></p>
-									 <div class="input-item">
-									 <input type="email" class="wpcf7-form-control wpcf7-text" name="your_mail" placeholder="CG@camtechglobal.com" required>
-									 </div>
-								 </li>
-							 </ul>
-							 <div class="check_agree" id="check_vld">
-								 <label for="check_agree">
-									 <input type="checkbox" name="agree" value="1" id="check_agree" required>
-									 <span><a href="https://gms.ca-m.co.jp/privacy/">プライバシーポリシー</a> と上記の確認事項に同意する。</span>
-								 </label>
-							 </div>
-							 <div class="btn_submit" id="btn_submit">
-							 	<input type="submit" value="送信する" id="input_submit">
-								 <div class="modal" id="modal_spin"></div>
-							 </div>
-							
-						 </div>
-					 </div>
-				</form>
-			</div>
-            <div class="contact-download">
-                <p class="text-01">上記のフォームから送信できない場合は、<a href="mailto:contact@ca-m.com">contact@ca-m.com</a>までメールをお送りください。<br>お電話でのお問い合わせも承っております。</p>
-                <div class="dl-phone">
-                    <div class="dt-phone flex">
-                        <picture class="box-img">
-                            <source srcset="<?php bloginfo('template_url');?>/images/top_icon_contact.png">
-                            <img class="sizes" src="<?php bloginfo('template_url');?>/images/top_icon_contact.png" alt="">
-                        </picture>
-                        <p class="text-phone">お問合せフリーダイアル</p>
-                        <p class="number-phone montserrat">0120-530-451</p>
+        <div class="banner-page">
+            <div class="banner-main">
+                <div class="inner">
+                    <div class="heading-banner">
+                        <h1>セミナー情報</h1>
                     </div>
-                    <p class="time">営業:10時-18時（月-金）</p>
                 </div>
             </div>
         </div>
-    </section>
+
+        <div class="movie-seminar">
+
+            <div class="download-form-header">
+                <div class="header-entry">
+                    <h2 class="heading-block center">
+                        <span class="uppercase">MOVIE DOWNLOAD</span>
+                    </h2>
+                    <p class="sub-ttl">動画ダウンロード</p>
+                </div>
+                <div class="dl-inner">
+                    <div class="download-selected">
+                        <div class="selected-list">
+                            <?php
+                            if ($_POST['download_id']) {
+                                $list_id = $_POST['download_id'];
+                                if ($_POST['submitConfirm']) {
+                                    $list_id = explode(',', $_POST['download_id']);
+                                }
+                            } else {
+                                $list_id = explode(',', $_GET['id']);
+                            }
+
+                            $args = array(
+                                'post_type' => 'seminar',
+                                'posts_per_page' => -1,
+                                'post__in' => $list_id
+                            );
+
+                            $posts = get_posts($args); // Lấy danh sách bài viết
+                            $arr_link = array(); // Khởi tạo mảng lưu liên kết
+
+                            foreach ($posts as $single_post) {
+                                $post_id = $single_post->ID;
+                                $post_link = get_permalink($post_id); // Lấy liên kết bài viết
+                                $post_title = get_the_title($post_id); // Lấy tiêu đề bài viết
+                                $post_content = $single_post->post_content; // Lấy nội dung bài viết
+
+                                // Lấy tên danh mục (category name)
+                                $categories = wp_get_post_terms($post_id, 'seminar_featured'); // Lấy danh sách danh mục
+                                $category_name = '';
+                                if (!is_wp_error($categories) && !empty($categories)) {
+                                    $category_name = $categories[0]->name; // Lấy tên danh mục đầu tiên
+                                }
+
+                                // Lấy URL của ảnh đại diện (thumbnail)
+                                $thumbnail_url = get_the_post_thumbnail_url($post_id, 'full'); // Lấy URL ảnh đại diện
+
+                                // Thêm tiêu đề, liên kết, danh mục và URL ảnh đại diện vào mảng
+                                $arr_link[] = $post_title . PHP_EOL . $post_link . PHP_EOL . 'Category: ' . $category_name . PHP_EOL . 'Thumbnail URL: ' . $thumbnail_url . PHP_EOL;
+
+                                ?>
+                                <div class="selected-list-item">
+                                    <div class="image-post">
+                                        <?php if ($thumbnail_url) : ?>
+                                            <img src="<?= esc_url($thumbnail_url); ?>" alt="<?= esc_attr($post_title); ?>"
+                                                 style="max-width: 100%; height: auto;"/>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="post-info">
+                                        <div class="category">
+                                            <span><?= esc_html($category_name); ?></span>
+                                        </div>
+                                        <h4 class="title-post">
+                                            <?= esc_html($post_title); ?>
+                                        </h4>
+<!--                                        <div class="excerpt">-->
+<!--                                            --><?php
+//                                            $content = apply_filters('the_content', $post_content);
+//                                            echo wp_trim_words($content, 50, '...');
+//                                            ?>
+<!--                                        </div>-->
+                                        <input type="checkbox" hidden="hidden" id="download_id_selected"
+                                               class="download_id_selected" name="download_id_selected[]" value="<?= $post_id; ?>"
+                                               checked disabled/>
+                                    </div>
+                                </div>
+                                <?php
+                            }
+
+                            // Nối các phần tử trong mảng thành chuỗi
+                            if (!empty($arr_link)) {
+                                $arr_link = implode(PHP_EOL, $arr_link);
+                            }
+                            ?>
+                            <input type="hidden" name="download_item_link" value="<?= $arr_link; ?>">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactForm <?php echo $slug; ?>">
+                <div class="inner">
+                    <div class="form-main">
+                         <?php echo do_shortcode('[contact-form-7 id="5ec942c" title="お問い合わせフォーム Seminar download movie"]'); ?>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-banner">
+                <div class="inner">
+                    <div class="info-banner">
+                        <p class="title">お電話からの<br/>ご質問・ご相談はこちら</p>
+                        <div class="mid-content">
+                            <p class="t1"><img class="sizes" width="33" src="<?php bloginfo('template_directory'); ?>/assets/images/top_icon_contact.png" alt=""><span>お問合せ</span></p>
+                            <p class="text">営業:10時-18時（月-金)</p>
+                        </div>
+                        <div class="tel-info">
+                            <p>03-6738-9686</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <?php get_template_part("template-parts/banner-other"); ?>
+
+            <?php get_template_part("template-parts/support"); ?>
+
+            <?php get_template_part("template-parts/line-up"); ?>
+
+            <?php get_template_part("template-parts/contact-bottom"); ?>
+
+        </div>
+    </div>
 </main>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>

@@ -1721,7 +1721,7 @@ body:not(.home) .banner-top .heading-block span {
 .banner-other.immigration {
   margin-bottom: 130px;
 }
-.banner-other.camcat, .banner-other.life-support, .banner-other.edpoke, .banner-other.qa, .banner-other.contact, .banner-other.confirm, .banner-other.download, .banner-other.seminar {
+.banner-other.camcat, .banner-other.life-support, .banner-other.edpoke, .banner-other.qa, .banner-other.contact, .banner-other.confirm, .banner-other.download, .banner-other.seminar, .banner-other.confirm_download_seminar_movie {
   margin-bottom: 0;
 }
 .banner-other .banner-list {
@@ -2483,6 +2483,12 @@ body:not(.home) .partners {
   justify-content: center;
   align-items: center;
   background: #E48121;
+  border: 1px solid #E48121;
+  transition: 0.3s;
+}
+.support .reason-info .link-page a:hover {
+  background: #fff;
+  color: #E48121;
 }
 .support .reason-info .link-page a .icon {
   position: absolute;
@@ -2492,6 +2498,11 @@ body:not(.home) .partners {
 }
 .support .reason-info .link-page a:nth-child(2) {
   background: #1AA1D5;
+  border: 1px solid #1AA1D5;
+}
+.support .reason-info .link-page a:nth-child(2):hover {
+  background: #fff;
+  color: #1AA1D5;
 }
 @media (max-width: 767px) {
   .support .reason-info .link-page {
@@ -5751,6 +5762,9 @@ body:not(.home) .partners {
   padding-top: 45px;
   padding-bottom: 60px;
 }
+.contactForm.confirm_download_seminar_movie {
+  padding-top: 0;
+}
 .contactForm.confirm_download {
   padding-top: 0;
 }
@@ -6830,6 +6844,11 @@ body:not(.home) .partners {
   font-weight: 400;
   border-radius: 8px;
   height: 30px;
+  transition: 0.3s;
+}
+.all-seminar .item-column .list-tag-column a:hover {
+  background: #2A4852;
+  color: #fff;
 }
 
 .seminar-special {
@@ -6953,6 +6972,33 @@ body:not(.home) .partners {
   margin: auto;
 }
 .seminar-special .list-columns .link-page a:hover {
+  background: #fff;
+  color: #e48121;
+}
+
+#single-seminar .link-contact {
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+#single-seminar .link-contact button {
+  background: #e48121;
+  border: 1px solid #e48121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: 700;
+  height: 40px;
+  border-radius: 40px;
+  column-gap: 12px;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 240px;
+  margin: auto;
+}
+#single-seminar .link-contact button:hover {
   background: #fff;
   color: #e48121;
 }

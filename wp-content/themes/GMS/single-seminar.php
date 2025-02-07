@@ -39,25 +39,6 @@ $report_seminar = get_field('seminar_report');
                         <?php echo $post_thumbnail; ?>
                     </picture>
                 <?php endif; ?>
-                <dl class="info-post">
-                    <?php if ($post_key) : ?>
-                        <dt class="ttl">【<?php echo $post_key ?>】</dt>
-                    <?php endif; ?>
-                    <dd class="sub-ttl">
-                        <?php echo $post_title ?>
-                    </dd>
-                    <dd class="date-time">
-                        <?php echo $seminar_year_apply ?>.<span
-                                class="month-day"><?php echo $seminar_month_apply . '.' . $seminar_day_apply ?></span>
-                        <?php echo $seminar_day_locale ?><span class="time"><?php echo $seminar_time_apply ?></span>
-                    </dd>
-                </dl>
-                <div class="logo-seminar">
-                    <picture class="box-img">
-                        <source srcset="<?php bloginfo('template_url'); ?>/images/common/Img_logo.svg">
-                        <img class="sizes" src="<?php bloginfo('template_url'); ?>/images/common/Img_logo.svg" alt="">
-                    </picture>
-                </div>
             </div>
         </div>
 
@@ -305,6 +286,18 @@ $report_seminar = get_field('seminar_report');
                         <?php endif; ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
+
+                <?php
+                $movie_url = get_field('seminar_movie_url');
+                $first_row = $movie_url[0]['seminar_movie_item'];
+                if ($first_row): ?>
+                    <div class="link-contact">
+                        <form method="POST" action="/confirm_download_seminar_movie/?id=<?php echo get_the_ID(); ?>">
+                            <button class="download-link link-single">セミナーに申し込む<span>＞</span></button>
+                        </form>
+                    </div>
+                <?php endif; ?>
+
             </div>
         </div>
 

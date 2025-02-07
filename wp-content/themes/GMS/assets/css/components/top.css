@@ -1097,7 +1097,7 @@ body:not(.home) .banner-top .heading-block span {
 .banner-other.immigration {
   margin-bottom: 130px;
 }
-.banner-other.camcat, .banner-other.life-support, .banner-other.edpoke, .banner-other.qa, .banner-other.contact, .banner-other.confirm, .banner-other.download, .banner-other.seminar {
+.banner-other.camcat, .banner-other.life-support, .banner-other.edpoke, .banner-other.qa, .banner-other.contact, .banner-other.confirm, .banner-other.download, .banner-other.seminar, .banner-other.confirm_download_seminar_movie {
   margin-bottom: 0;
 }
 .banner-other .banner-list {
