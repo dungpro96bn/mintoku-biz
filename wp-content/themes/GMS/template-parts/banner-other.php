@@ -49,7 +49,7 @@ if (is_page() || is_single()) {
                         過去セミナーの動画もダウンロード可能</p>
                 </div>
                 <div class="link-page">
-                    <a href="#">詳しく見る ＞</a>
+                    <a href="/seminar/">詳しく見る ＞</a>
                 </div>
             </div>
         </div>

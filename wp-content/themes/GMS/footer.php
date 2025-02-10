@@ -27,16 +27,16 @@
                     <div class="footer-link-page">
                         <ul class="footer-menu-list">
                             <li class="footer-menu-item">
-                                <a href="#">外国人材Q&A</a>
+                                <a href="/qa/">外国人材Q&A</a>
                             </li>
                             <li class="footer-menu-item">
-                                <a href="#">セミナー情報</a>
+                                <a href="/seminar/">セミナー情報</a>
                             </li>
                             <li class="footer-menu-item">
                                 <a href="#">お知らせ</a>
                             </li>
                             <li class="footer-menu-item">
-                                <a href="#">お問い合わせ</a>
+                                <a href="/contact/">お問い合わせ</a>
                             </li>
                         </ul>
                         <ul class="footer-menu-list">

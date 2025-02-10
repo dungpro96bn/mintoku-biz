@@ -241,7 +241,7 @@
                         </div>
                     </div>
                     <div class="link-page">
-                        <a href="#">Q&A一覧を見る<span class="icon-arrow">＞</span></a>
+                        <a href="/qa/">Q&A一覧を見る<span class="icon-arrow">＞</span></a>
                     </div>
                 </div>
             </div>
