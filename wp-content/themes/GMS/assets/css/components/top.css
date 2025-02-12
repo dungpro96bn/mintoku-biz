@@ -938,7 +938,7 @@ body:not(.home) .banner-top .heading-block span {
   color: #173C49;
   font-weight: 700;
   position: relative;
-  bottom: -3px;
+  bottom: -1px;
 }
 .reference-qa .qa-item .qa-question .ttl {
   font-size: 23px;
@@ -1058,10 +1058,16 @@ body:not(.home) .banner-top .heading-block span {
   font-weight: 600;
   color: #fff;
   position: relative;
+  border: 1px solid #0F3745;
+  transition: 0.3s;
 }
 .reference-qa .link-page a .icon-arrow {
   position: absolute;
   right: 10px;
+}
+.reference-qa .link-page a:hover {
+  background: #fff;
+  color: #0F3745;
 }
 
 .single .banner-other,

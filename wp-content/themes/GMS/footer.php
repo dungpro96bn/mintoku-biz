@@ -18,8 +18,8 @@
                             <p>〒163-0638<br/>東京都新宿区西新宿1-25-1</p>
                         </div>
                         <div class="privacy">
-                            <p>プライバシーポリシー</p>
-                            <p>運営会社</p>
+                            <a href="/privacy/">プライバシーポリシー</a>
+                            <a href="#">運営会社</a>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                         <h4 class="title en">SERVICE</h4>
                         <ul class="menu-service-list">
                             <li class="menu-service-item">
-                                <a target="_blank" href="https://mintoku.work/">mintoku work</a>
+                                <a class="link-target" target="_blank" href="https://mintoku.work/">mintoku work</a>
                             </li>
                             <li class="menu-service-item">
                                 <a href="/service/assistant/">労務代行サービス</a>
@@ -64,13 +64,13 @@
                                 <a href="/service/life-support/">生活支援サービス</a>
                             </li>
                             <li class="menu-service-item">
-                                <a target="_blank" href="https://edu-poke.jp/global">mintoku study</a>
+                                <a class="link-target" target="_blank" href="https://edu-poke.jp/global">mintoku study</a>
                             </li>
                             <li class="menu-service-item">
                                 <a href="/service/cloud/maetra/">前トレ</a>
                             </li>
                             <li class="menu-service-item">
-                                <a target="_blank" href="https://camtech-ea.net/">エデュックアカデミー</a>
+                                <a class="link-target" target="_blank" href="https://camtech-ea.net/">エデュックアカデミー</a>
                             </li>
                         </ul>
                     </div>

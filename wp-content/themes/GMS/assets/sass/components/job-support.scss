@@ -66,11 +66,12 @@
   .banner-info{
     position: absolute;
     width: 100%;
-    top: 62.8%;
-    top: calc(50% + 40px);
+    //top: 62.8%;
+    //top: calc(50% + 40px);
+    bottom: 76px;
     left: 0;
     z-index: 2;
-    transform: translateY(-50%);
+    //transform: translateY(-50%);
 
     @include var.sm{
       top: calc(50% + 80px);
@@ -103,7 +104,7 @@
       font-size: 40px;
       line-height: 52px;
       color: #fff;
-      margin-bottom: 23px;
+      margin-bottom: 25px;
       //text-shadow: 1px 1px 0 #444, 2px 2px 0 #333, 3px 3px 0 #222, 4px 4px 0 #111;
 
       @include var.xs{
@@ -116,6 +117,7 @@
       font-size: 50px;
       line-height: 71px;
       color: #fff;
+      min-height: 142px;
       //text-shadow: 1px 1px 0 #444, 2px 2px 0 #333, 3px 3px 0 #222, 4px 4px 0 #111;
 
       @include var.xs{

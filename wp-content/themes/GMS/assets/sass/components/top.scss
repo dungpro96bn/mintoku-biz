@@ -1055,7 +1055,7 @@ body:not(.home){
         color: #173C49;
         font-weight: 700;
         position: relative;
-        bottom: -3px;
+        bottom: -1px;
       }
 
       .ttl{
@@ -1206,10 +1206,17 @@ body:not(.home){
       font-weight: 600;
       color: #fff;
       position: relative;
+      border: 1px solid #0F3745;
+      transition: .3s;
 
       .icon-arrow{
         position: absolute;
         right: 10px;
+      }
+
+      &:hover{
+        background: #fff;
+        color: #0F3745;
       }
 
     }

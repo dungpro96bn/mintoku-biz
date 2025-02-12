@@ -14,22 +14,17 @@ $slug = $post->post_name;
 
 <div id="maetra" class ="edpoke">
 
-    <div class="banner-service <?php if($slug == "life-support" || $slug == "edpoke"){echo 'banner-item02';} ?>">
+    <div class="banner-service">
         <div class="image-content">
             <picture class="image">
-                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image01_pc.png">
-                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image01_pc.png">
-                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/life_support_image01_pc.png" alt="">
+                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/edpoke_mainImg_pc.png">
+                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/edpoke_mainImg_pc.png">
+                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/edpoke_mainImg_pc.png" alt="">
             </picture>
         </div>
         <div class="banner-info">
             <div class="banner-inner">
                 <h3 class="sub-title">日本語教育</h3>
-                <picture class="logo-job-support">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo-life-support.svg">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo-life-support.svg">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/logo-life-support.svg" alt="">
-                </picture>
                 <h2 class="heading">新たな外国人雇用の生活に、<br/>充実とバランスを</h2>
             </div>
         </div>

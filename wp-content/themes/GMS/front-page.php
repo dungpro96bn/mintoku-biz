@@ -131,30 +131,7 @@
                     <div class="qa-list">
                         <div class="qa-item">
                             <div class="qa-question">
-                                <div class="title is-active">
-                                    <span class="en">Q.</span>
-                                    <p class="ttl"><span class="en">Q.</span>鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
-                                    <span class="icon-toggle">
-                                        <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-                                            <line id="Line_3" data-name="Line 3" x2="30" transform="translate(0 15)" fill="none" stroke="#0f3745" stroke-width="3"/>
-                                            <line id="Line_4" data-name="Line 4" x2="30" transform="translate(15) rotate(90)" fill="none" stroke="#0f3745" stroke-width="3"/>
-                                        </svg>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="answer-content is-active">
-                                <div class="qa-answer">
-                                    <span class="en">A.</span>
-                                    <div class="info">
-                                        <p class="text">鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="qa-item">
-                            <div class="qa-question">
                                 <div class="title">
-                                    <span class="en">Q.</span>
                                     <p class="ttl"><span class="en">Q.</span>鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
                                     <span class="icon-toggle">
                                         <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
@@ -176,7 +153,6 @@
                         <div class="qa-item">
                             <div class="qa-question">
                                 <div class="title">
-                                    <span class="en">Q.</span>
                                     <p class="ttl"><span class="en">Q.</span>鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
                                     <span class="icon-toggle">
                                         <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
@@ -198,7 +174,6 @@
                         <div class="qa-item">
                             <div class="qa-question">
                                 <div class="title">
-                                    <span class="en">Q.</span>
                                     <p class="ttl"><span class="en">Q.</span>鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
                                     <span class="icon-toggle">
                                         <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
@@ -220,7 +195,27 @@
                         <div class="qa-item">
                             <div class="qa-question">
                                 <div class="title">
-                                    <span class="en">Q.</span>
+                                    <p class="ttl"><span class="en">Q.</span>鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
+                                    <span class="icon-toggle">
+                                        <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                            <line id="Line_3" data-name="Line 3" x2="30" transform="translate(0 15)" fill="none" stroke="#0f3745" stroke-width="3"/>
+                                            <line id="Line_4" data-name="Line 4" x2="30" transform="translate(15) rotate(90)" fill="none" stroke="#0f3745" stroke-width="3"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="answer-content">
+                                <div class="qa-answer">
+                                    <span class="en">A.</span>
+                                    <div class="info">
+                                        <p class="text">鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa-item">
+                            <div class="qa-question">
+                                <div class="title">
                                     <p class="ttl"><span class="en">Q.</span>鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</p>
                                     <span class="icon-toggle">
                                         <svg id="Group_22" data-name="Group 22" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">

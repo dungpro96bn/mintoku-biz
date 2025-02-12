@@ -17,9 +17,9 @@ $slug = $post->post_name;
     <div class="banner-service">
         <div class="image-content">
             <picture class="image">
-                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_mainImg_pc.png">
-                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_mainImg_pc.png">
-                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/assistant_mainImg_pc.png" alt="">
+                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/camcat_mainImg_pc.png">
+                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/camcat_mainImg_pc.png">
+                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/camcat_mainImg_pc.png" alt="">
             </picture>
         </div>
         <div class="banner-info">

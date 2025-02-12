@@ -11,18 +11,13 @@
     <div class="banner-service">
         <div class="image-content">
             <picture class="image">
-                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_mainImg_pc.png">
-                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_mainImg_pc.png">
-                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/assistant_mainImg_pc.png" alt="">
+                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/immigration_mainImg_pc.png">
+                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/immigration_mainImg_pc.png">
+                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/immigration_mainImg_pc.png" alt="">
             </picture>
         </div>
         <div class="banner-info">
             <div class="banner-inner">
-                <picture class="logo-job-support">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo-job-support.svg">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo-job-support.svg">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/logo-job-support.svg" alt="">
-                </picture>
                 <h3 class="sub-title">労務代行サービス</h3>
                 <h2 class="heading">出入国サポート</h2>
             </div>

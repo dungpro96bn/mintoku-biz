@@ -240,18 +240,6 @@ jQuery(function ($) {
         $(this).addClass('active');
         $('.tab_box .tab_panel').eq(index).addClass('active');
     });
-
-    $("#qa .faq-title").click(function() {
-        $(this).toggleClass("open");
-        $(this).siblings('.dl-faq ').stop().slideToggle(600);
-        $(this).find('.q-es').toggleClass("open");
-		$(this).parents('.item-faq').toggleClass("open");
-    });
-	
-
-   if( $("#qa .faq-title").siblings().not('.open')) {
-        $(this).next(".dl-faq").find(".a-es").addClass("close")
-   }
 	
    $("#pwd").keyup(function() {
 	let valueIput = $('#pwd').val();
