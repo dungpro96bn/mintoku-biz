@@ -18,7 +18,6 @@
             </div>
             <div class="banner-info">
                 <div class="banner-inner">
-                    <h3 class="sub-title">クラウドサービス</h3>
                     <picture class="banner-logo">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png">

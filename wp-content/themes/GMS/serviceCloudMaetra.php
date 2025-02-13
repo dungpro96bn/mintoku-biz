@@ -18,14 +18,12 @@
             </div>
             <div class="banner-info">
                 <div class="banner-inner">
-                    <h3 class="sub-title">クラウドサービス</h3>
                     <picture class="banner-logo">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-logo.png">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-logo.png">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-logo.png" alt="">
                     </picture>
-                    <h2 class="heading">動画とAI翻訳で外国人との<br class="pc-br">
-                        コミュニケーションをカンタンに！</h2>
+                    <h2 class="heading">動画とAI翻訳で外国人との<br class="pc-br">コミュニケーションをカンタンに！</h2>
                 </div>
             </div>
         </div>

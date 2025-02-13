@@ -36,7 +36,7 @@
         }
         .banner-logo{
           max-width: 413px;
-          margin:13px 0 85px 0;
+          margin:13px 0 60px 0;
         }
         .heading{
           font-size: 60px;
@@ -309,6 +309,10 @@
         max-width: 1040px;
         position: relative;
         left: 0px;
+        display: block;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid #707070;
       }
     }
 
