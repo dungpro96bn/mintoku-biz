@@ -14,7 +14,7 @@ $slug = $post->post_name;
 
 <div id="cloud">
 
-    <div class="banner-service">
+    <div class="banner-service banner-cloud">
         <div class="image-content">
             <picture class="image">
                 <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/camcat_mainImg_pc.png">
@@ -25,9 +25,8 @@ $slug = $post->post_name;
         <div class="banner-info">
             <div class="banner-inner">
                 <picture class="logo-job-support">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo_cam_cat.svg">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo_cam_cat.svg">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/logo_cam_cat.svg" alt="">
+                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo_cam_cat.png 2x">
+                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/logo_cam_cat.png" alt="">
                 </picture>
                 <h3 class="sub-title">専門家無料相談サービス</h3>
                 <h2 class="heading">CAMCAT外国人<br/>雇用管理サービス</h2>

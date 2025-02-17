@@ -134,7 +134,7 @@
                         <p>外国人材を受け入れるにはどうしたらいい？などの基礎的な質問から、業務に関するお悩み、法律やルール改正に伴う変更点など、弊社所属の社労士・行政書士が無料でお答えいたします。</p>
                     </div>
                     <div class="link-page">
-                        <a href="/service/consultation/" target="_blank">詳しく見る ＞</a>
+                        <a href="/service/consultation/">詳しく見る ＞</a>
                     </div>
                 </div>
 
@@ -154,7 +154,7 @@
                         <p>技能実習や特定技能にとどまらず、全てのビザに対応！！無制限のストレージ機能とチャート式のスケジュール管理が魅力です！</p>
                     </div>
                     <div class="link-page">
-                        <a href="https://biz.ca-m.co.jp/hr/t-rex" target="_blank">詳しく見る ＞</a>
+                        <a href="/service/cloud/camcat/">詳しく見る ＞</a>
                     </div>
                 </div>
 
@@ -175,7 +175,7 @@
                             管理者様は日別・月間での勤務状況の確認が可能。超過残業者の一覧・勤務実績一覧等の抽出を行うことで働き方改革のリスクヘッジ・工数削減にも繋がります。</p>
                     </div>
                     <div class="link-page">
-                        <a href="/service/cloud/camcat/">詳しく見る ＞</a>
+                        <a href="https://biz.ca-m.co.jp/hr/t-rex" target="_blank">詳しく見る ＞</a>
                     </div>
                 </div>
 

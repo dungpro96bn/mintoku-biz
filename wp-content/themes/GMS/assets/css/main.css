@@ -2049,6 +2049,18 @@ body:not(.home) .contact-bottom {
 .banner-service {
   position: relative;
 }
+.banner-service.banner-cloud .image-content:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 60, 73, 0.2);
+}
+.banner-service.banner-cloud .banner-info {
+  text-shadow: 3px 3px 3px rgba(23, 60, 73, 0.3);
+}
 .banner-service.banner-item02 .banner-info {
   top: 65%;
 }
@@ -2107,11 +2119,6 @@ body:not(.home) .contact-bottom {
   bottom: 76px;
   left: 0;
   z-index: 2;
-}
-@media (max-width: 1023px) {
-  .banner-service .banner-info {
-    top: calc(50% + 80px);
-  }
 }
 @media (max-width: 767px) {
   .banner-service .banner-info {

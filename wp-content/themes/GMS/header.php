@@ -3,7 +3,8 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=0.5">
+<!--    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=0.5">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php if (is_home() || is_front_page()) { ?>
     <meta name="description" content="【外国人雇用の課題をまとめて解決】技能実習生・特定技能の活用に携わる企業・監理団体のご担当者様。 ＧＭＳ外国人材マネジメントサービスは外国人雇用の課題をまとめてサポート。外国人材の採用・入国・生活までを全面で支援いたします。">
     <?php }else if (is_404()) { ?>
