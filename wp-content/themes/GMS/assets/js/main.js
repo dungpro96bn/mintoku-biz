@@ -140,5 +140,9 @@ jQuery(function ($) {
         autoplaySpeed: 4000,
     });
 
+    $(".qa-item .title").click(function (){
+        $(this).toggleClass("is-open");
+        $(this).next().slideToggle();
+    })
 
 });

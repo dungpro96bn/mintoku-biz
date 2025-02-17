@@ -42,6 +42,21 @@ $image = get_field('banner_image', $page_id);
                     </picture>
                 <?php endif; ?>
             </div>
+            <?php if($slug == "edpoke"):?>
+                <div class="edpoke-contact">
+                    <div class="btn-contact">
+                        <a href="#">資料請求もお問い合わせください<span>＞</span></a>
+                    </div>
+                    <div class="time">
+                        <div class="icon-ttl">
+                            <img width="39" src="<?php bloginfo('template_directory'); ?>/assets/images/top_icon_contact.png" alt="">
+                            <p>お問合せフリーダイアル</p>
+                        </div>
+                        <p class="t2">営業時間:10時〜18時（月〜金）</p>
+                    </div>
+                    <p class="tel">0120-530-451</p>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 

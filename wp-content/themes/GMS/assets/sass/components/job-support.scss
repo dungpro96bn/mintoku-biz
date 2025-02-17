@@ -133,6 +133,21 @@
 
     }
 
+    @include var.xs{
+      .banner-edpoke{
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        padding: 0 20px;
+        width: 100%;
+
+        img{
+          max-width: 280px;
+        }
+
+      }
+    }
+
   }
 
 }
@@ -246,22 +261,34 @@
 
   &.edpoke{
     padding-bottom: 126px;
-    background-color: #B93636;
+    background-color: #3164AA;
     background-image: url("../images/edpoke_bg_aboutUs.jpg");
 
+    @include var.xs{
+      background-position: 100% calc(100% - 2px);
+      padding-bottom: 80px;
+    }
+
     .about-info{
+      width: 100%;
+
+      @include var.xs{
+        margin-bottom: 40px;
+      }
+
       .title{
-        padding-right: 10px;
+        padding-right: 0px;
       }
 
       .info{
-        padding-right: 10px;
+        padding-right: 0px;
+        max-width: 100%;
       }
 
     }
 
     .about-image{
-      padding-top: 15px;
+      display: none;
     }
 
   }
@@ -360,6 +387,93 @@
 
     img{
       width: 100%;
+    }
+
+  }
+
+  .edpoke-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 28px;
+    margin-top: 42px;
+    margin-bottom: 45px;
+
+    @include var.sm{
+      margin-bottom: 0;
+    }
+
+    @include var.xs{
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .btn-contact{
+
+      @include var.xs{
+        width: 100%;
+      }
+
+      a{
+        display: flex;
+        height: 52px;
+        background: #E48121;
+        border-radius: 40px;
+        font-size: 23px;
+        line-height: 30px;
+        font-weight: bold;
+        column-gap: 15px;
+        align-items: center;
+        color: #fff;
+        padding: 0 20px;
+
+        @include var.xs{
+          font-size: 16px;
+          line-height: 28px;
+          padding: 0 10px;
+          column-gap: 10px;
+          width: 100%;
+          max-width: 320px;
+          margin: auto;
+          justify-content: center;
+        }
+
+      }
+    }
+
+    .icon-ttl{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      column-gap: 10px;
+      margin-bottom: 4px;
+
+      p{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: bold;
+      }
+    }
+
+    .t2{
+      font-size: 15px;
+      line-height: 23px;
+      font-weight: bold;
+    }
+
+    .tel{
+      font-size: 32px;
+      line-height: 54px;
+      font-weight: bold;
+
+      @include var.sm{
+        font-size: 38px;
+      }
+
     }
 
   }
