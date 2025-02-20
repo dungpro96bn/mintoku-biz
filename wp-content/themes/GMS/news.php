@@ -10,28 +10,21 @@
   
 </style>
 <div id="allNews" class="columns-container">
-    <div class="pageTitle">
-        <h2><span class="en montserrat">NEWS</span>お知らせ一覧</h2>
-    </div>
-    <div id="breadcrumb" class="breadcrumb">
-        <ol>
-            <li>
-                <a href="<?php echo home_url(); ?>">トップページ</a>&nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
-            </li>
-            <li>
-                <span>お知らせ一覧</span>
-            </li>
-        </ol>
+
+    <div class="banner-page">
+        <div class="banner-main">
+            <div class="inner">
+                <div class="heading-banner">
+                    <h1>お知らせ一覧</h1>
+                </div>
+            </div>
+        </div>
     </div>
 
     <section id="news">
         <div class="inner">
             <div class="content-news flex">
                 <div class="tab_box">
-                    <div class="btn_area">
-                        <p class="tab_btn active">お知らせ</p>
-                        <p class="tab_btn">セミナー</p>
-                    </div>
                     <div class="panel_area">
                         <div class="tab_panel active">
                             <ul class="new-content">

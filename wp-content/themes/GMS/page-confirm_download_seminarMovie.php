@@ -102,9 +102,11 @@ if (is_page() || is_single()) {
                                         <?php endif; ?>
                                     </div>
                                     <div class="post-info">
-                                        <div class="category">
-                                            <span><?= esc_html($category_name); ?></span>
-                                        </div>
+                                        <?php if($category_name) :?>
+                                            <div class="category">
+                                                <span><?= esc_html($category_name); ?></span>
+                                            </div>
+                                        <?php endif; ?>
                                         <h4 class="title-post">
                                             <?= esc_html($post_title); ?>
                                         </h4>

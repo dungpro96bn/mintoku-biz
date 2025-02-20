@@ -33,7 +33,7 @@
                                 <a href="/seminar/">セミナー情報</a>
                             </li>
                             <li class="footer-menu-item">
-                                <a href="#">お知らせ</a>
+                                <a href="/news/">お知らせ</a>
                             </li>
                             <li class="footer-menu-item">
                                 <a href="/contact/">お問い合わせ</a>
