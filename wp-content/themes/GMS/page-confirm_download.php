@@ -37,7 +37,7 @@ if (is_page() || is_single()) {
         <div class="contactForm <?php echo $slug; ?>">
             <div class="inner">
                 <div class="form-main">
-                    <?php echo do_shortcode('[contact-form-7 id="2113" title="ダウンロード資料 Multiple Download"]'); ?>
+                    <?php echo do_shortcode('[contact-form-7 id="3b67e72" title="ダウンロード資料 Multiple Download"]'); ?>
                 </div>
             </div>
         </div>

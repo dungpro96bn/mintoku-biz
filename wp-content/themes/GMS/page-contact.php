@@ -29,7 +29,7 @@
         <div class="contactForm">
             <div class="inner">
                 <div class="form-main">
-                    <?php echo apply_shortcodes( '[contact-form-7 id="644456b" title="お問い合わせフォーム Step 1"]' ); ?>
+                    <?php echo apply_shortcodes( '[contact-form-7 id="19ae758" title="お問い合わせフォーム Step 1"]' ); ?>
                 </div>
             </div>
         </div>

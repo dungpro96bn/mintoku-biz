@@ -31,7 +31,7 @@ if (is_page() || is_single()) {
                     <p>外国人材に関するサービス活用方法や、<br/>特定技能在留外国人推移などの資料が無料でダウンロード可能。</p>
                 </div>
                 <div class="link-page">
-                    <a href="#">詳しく見る ＞</a>
+                    <a href="/report_download/?category=white_paper">詳しく見る ＞</a>
                 </div>
             </div>
             <div class="banner-item">

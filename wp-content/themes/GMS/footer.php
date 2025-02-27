@@ -19,7 +19,7 @@
                         </div>
                         <div class="privacy">
                             <a href="/privacy/">プライバシーポリシー</a>
-                            <a href="#">運営会社</a>
+                            <a href="https://cam-global.co.jp/" target="_blank">運営会社</a>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                                 <a href="#">オンライン展示会</a>
                             </li>
                             <li class="footer-menu-item">
-                                <a href="#">海外人材タイムズ</a>
+                                <a target="_blank" href="https://kjtimes.jp/">海外人材タイムズ</a>
                             </li>
                             <li class="footer-menu-item">
                                 <a href="#">動画コンテンツ一覧</a>

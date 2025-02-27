@@ -18,8 +18,6 @@
             </div>
         </div>
 
-        <?php get_template_part("template-parts/partners"); ?>
-
         <?php get_template_part("template-parts/about-us"); ?>
 
         <div class="feature">

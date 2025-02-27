@@ -30,7 +30,7 @@ $slug = $post->post_name;
         </div>
     </div>
 
-    <?php get_template_part("template-parts/partners"); ?>
+
 
     <div class="banner-top green <?php echo $slug; ?>">
         <div class="about-content">
