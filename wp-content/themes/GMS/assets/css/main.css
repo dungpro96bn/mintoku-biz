@@ -2933,6 +2933,7 @@ body:not(.home) .partners {
 .assistant-feature .feature-item .info p {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 300;
 }
 .assistant-feature .feature-item .link-page {
   position: absolute;
@@ -2963,9 +2964,10 @@ body:not(.home) .partners {
   color: #147B2B;
   border: 2px solid #fff;
 }
-.assistant-feature .feature-item .link-page a:hover {
-  background: transparent;
-  color: #fff;
+.assistant-feature .feature-item .link-page a svg {
+  position: relative;
+  top: -1px;
+  margin-left: 8px;
 }
 
 .translate-feature {
@@ -6427,6 +6429,7 @@ body:not(.home) .partners {
 .life-support-feature .feature-item .feature-top .image-content {
   overflow: hidden;
   transition: 0.4s;
+  border-radius: 0 20px 20px 0;
 }
 .life-support-feature .feature-item .feature-top .image-content img {
   width: 100%;

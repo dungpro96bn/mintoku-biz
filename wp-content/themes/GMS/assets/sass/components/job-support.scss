@@ -885,6 +885,7 @@ body:not(.home){
       p{
         font-size: 16px;
         line-height: 24px;
+        font-weight: 300;
       }
     }
 
@@ -916,9 +917,10 @@ body:not(.home){
         color: #147B2B;
         border: 2px solid #fff;
 
-        &:hover{
-          background: transparent;
-          color: #fff;
+        svg{
+          position: relative;
+          top: -1px;
+          margin-left: 8px;
         }
 
       }

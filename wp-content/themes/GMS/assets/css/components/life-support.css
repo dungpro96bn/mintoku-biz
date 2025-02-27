@@ -256,6 +256,7 @@
 .life-support-feature .feature-item .feature-top .image-content {
   overflow: hidden;
   transition: 0.4s;
+  border-radius: 0 20px 20px 0;
 }
 .life-support-feature .feature-item .feature-top .image-content img {
   width: 100%;

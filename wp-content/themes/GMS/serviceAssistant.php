@@ -53,7 +53,20 @@
                         <p>技能実習や特定技能をはじめとして入管提出書類は複雑かつ多岐にわたります。専門のスタッフや提携の社労士・行政書士より無料相談や（一部有料の）添削などを受けることができます。お気軽にお問い合わせください！</p>
                     </div>
                     <div class="link-page">
-                        <a href="https://camt-gyousei.jp/" target="_blank">詳しく見る ＞</a>
+                        <a href="https://camt-gyousei.jp/" target="_blank">詳しく見る
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.028" height="17.897" viewBox="0 0 19.028 17.897">
+                              <defs>
+                                <clipPath id="clip-path">
+                                  <rect id="Rectangle_189" data-name="Rectangle 189" width="19.028" height="17.897" fill="#28893e"/>
+                                </clipPath>
+                              </defs>
+                              <g id="Group_457" data-name="Group 457" clip-path="url(#clip-path)">
+                                <path id="Path_192" data-name="Path 192" d="M11.478,52.968H2.444A2.446,2.446,0,0,1,0,50.525V41.491a2.446,2.446,0,0,1,2.444-2.444h9.034a2.446,2.446,0,0,1,2.444,2.444v9.034a2.446,2.446,0,0,1-2.444,2.444M2.444,40.88a.612.612,0,0,0-.611.611v9.034a.612.612,0,0,0,.611.611h9.034a.612.612,0,0,0,.611-.611V41.491a.612.612,0,0,0-.611-.611Z" transform="translate(0 -35.071)" fill="#28893e"/>
+                                <path id="Path_193" data-name="Path 193" d="M60.282,11.852a.916.916,0,0,1-.613-1.6l9.373-8.422H65.857a.916.916,0,0,1,0-1.833h5.576a.916.916,0,0,1,.612,1.6L60.894,11.617a.913.913,0,0,1-.612.235" transform="translate(-53.321 0.001)" fill="#28893e"/>
+                                <path id="Path_194" data-name="Path 194" d="M169.805,6.843a.916.916,0,0,1-.916-.916V.916a.916.916,0,1,1,1.833,0v5.01a.916.916,0,0,1-.916.916" transform="translate(-151.693)" fill="#28893e"/>
+                              </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
@@ -94,7 +107,20 @@
                             勤怠管理・保険手続き・年末調整・人事管理・WEB給与明細・賞与支給・住民税特別徴収など。各種社労士業務もお気軽にご相談ください。</p>
                     </div>
                     <div class="link-page">
-                        <a href="https://biz.ca-m.co.jp/payroll" target="_blank">詳しく見る ＞</a>
+                        <a href="https://biz.ca-m.co.jp/payroll" target="_blank">詳しく見る
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.028" height="17.897" viewBox="0 0 19.028 17.897">
+                              <defs>
+                                <clipPath id="clip-path">
+                                  <rect id="Rectangle_189" data-name="Rectangle 189" width="19.028" height="17.897" fill="#28893e"/>
+                                </clipPath>
+                              </defs>
+                              <g id="Group_457" data-name="Group 457" clip-path="url(#clip-path)">
+                                <path id="Path_192" data-name="Path 192" d="M11.478,52.968H2.444A2.446,2.446,0,0,1,0,50.525V41.491a2.446,2.446,0,0,1,2.444-2.444h9.034a2.446,2.446,0,0,1,2.444,2.444v9.034a2.446,2.446,0,0,1-2.444,2.444M2.444,40.88a.612.612,0,0,0-.611.611v9.034a.612.612,0,0,0,.611.611h9.034a.612.612,0,0,0,.611-.611V41.491a.612.612,0,0,0-.611-.611Z" transform="translate(0 -35.071)" fill="#28893e"/>
+                                <path id="Path_193" data-name="Path 193" d="M60.282,11.852a.916.916,0,0,1-.613-1.6l9.373-8.422H65.857a.916.916,0,0,1,0-1.833h5.576a.916.916,0,0,1,.612,1.6L60.894,11.617a.913.913,0,0,1-.612.235" transform="translate(-53.321 0.001)" fill="#28893e"/>
+                                <path id="Path_194" data-name="Path 194" d="M169.805,6.843a.916.916,0,0,1-.916-.916V.916a.916.916,0,1,1,1.833,0v5.01a.916.916,0,0,1-.916.916" transform="translate(-151.693)" fill="#28893e"/>
+                              </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
@@ -175,7 +201,20 @@
                             管理者様は日別・月間での勤務状況の確認が可能。超過残業者の一覧・勤務実績一覧等の抽出を行うことで働き方改革のリスクヘッジ・工数削減にも繋がります。</p>
                     </div>
                     <div class="link-page">
-                        <a href="https://biz.ca-m.co.jp/hr/t-rex" target="_blank">詳しく見る ＞</a>
+                        <a href="https://biz.ca-m.co.jp/hr/t-rex" target="_blank">詳しく見る
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.028" height="17.897" viewBox="0 0 19.028 17.897">
+                              <defs>
+                                <clipPath id="clip-path">
+                                  <rect id="Rectangle_189" data-name="Rectangle 189" width="19.028" height="17.897" fill="#28893e"/>
+                                </clipPath>
+                              </defs>
+                              <g id="Group_457" data-name="Group 457" clip-path="url(#clip-path)">
+                                <path id="Path_192" data-name="Path 192" d="M11.478,52.968H2.444A2.446,2.446,0,0,1,0,50.525V41.491a2.446,2.446,0,0,1,2.444-2.444h9.034a2.446,2.446,0,0,1,2.444,2.444v9.034a2.446,2.446,0,0,1-2.444,2.444M2.444,40.88a.612.612,0,0,0-.611.611v9.034a.612.612,0,0,0,.611.611h9.034a.612.612,0,0,0,.611-.611V41.491a.612.612,0,0,0-.611-.611Z" transform="translate(0 -35.071)" fill="#28893e"/>
+                                <path id="Path_193" data-name="Path 193" d="M60.282,11.852a.916.916,0,0,1-.613-1.6l9.373-8.422H65.857a.916.916,0,0,1,0-1.833h5.576a.916.916,0,0,1,.612,1.6L60.894,11.617a.913.913,0,0,1-.612.235" transform="translate(-53.321 0.001)" fill="#28893e"/>
+                                <path id="Path_194" data-name="Path 194" d="M169.805,6.843a.916.916,0,0,1-.916-.916V.916a.916.916,0,1,1,1.833,0v5.01a.916.916,0,0,1-.916.916" transform="translate(-151.693)" fill="#28893e"/>
+                              </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
