@@ -79,6 +79,9 @@
                     <label class="tab-action <?php echo (isset($_GET['category']) && $_GET['category'] == 'report') ? 'is-active' : ''; ?>" >
                         <input type="radio" name="category" value="report" <?php echo (isset($_GET['category']) && $_GET['category'] == 'report') ? 'checked' : ''; ?>> 調査レポート
                     </label>
+                    <label class="tab-action <?php echo (isset($_GET['category']) && $_GET['category'] == 'manual_video') ? 'is-active' : ''; ?>" >
+                        <input type="radio" name="category" value="manual_video" <?php echo (isset($_GET['category']) && $_GET['category'] == 'manual_video') ? 'checked' : ''; ?>> 調査レポート
+                    </label>
                 </div>
             </form>
         </div>
@@ -87,77 +90,98 @@
     <div class="download-list">
         <div class="inner">
             <div class="download-post is-active" id="download-all">
-                <ul class="article-list article-col-3">
-                    <?php
-                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                    $category = isset($_GET['category']) ? sanitize_text_field($_GET['category']) : 'all';
+                <?php
+                $category = isset($_GET['category']) ? sanitize_text_field($_GET['category']) : 'all';
 
-                    $args = array(
+                if ($category == 'manual_video'):
+                    $args = [
+                        'post_type'      => 'manual_video',
+                        'post_status'    => 'publish',
+                        'posts_per_page' => -1,
+                        'order'          => 'DESC',
+                    ];
+                    $posts = new WP_Query($args);
+                    ?>
+                    <ul class="article-list article-col-3">
+                        <?php while ($posts->have_posts()) : $posts->the_post();
+                            $video_link  = get_field('link-video');
+                            $img_video   = get_field('_img-video');
+                            $file_video  = get_field('video_camcat_pdf');
+                        ?>
+                            <li class="article-item article-item-video">
+                                <div class="img-video">
+                                    <picture class="box-img">
+                                        <source srcset="<?= esc_url($img_video); ?>">
+                                        <img class="sizes" src="<?= esc_url($img_video); ?>" alt="">
+                                    </picture>
+                                </div>
+                                <p class="title-video"><?= get_the_title(); ?></p>
+                                <div class="modal01">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <div id="video-container"><?= $video_link; ?></div>
+                                    </div>
+                                </div>
+                                <a href="<?= esc_url($file_video['url']); ?>" class="link-page camlink" target="_blank">ダウンロードはこちら<span>＞</span></a>
+                            </li>
+                        <?php endwhile; wp_reset_postdata(); ?>
+                    </ul>
+                <?php else:
+                    $paged = get_query_var('paged') ?: 1;
+                    $args = [
                         'post_type'      => 'download',
                         'post_status'    => 'publish',
                         'order'          => 'DESC',
                         'paged'          => $paged,
                         'posts_per_page' => 9,
-                    );
+                    ];
 
                     if ($category !== 'all') {
-                        $args['tax_query'] = array(
-                            array(
-                                'taxonomy' => 'download_cat',
-                                'field'    => 'slug',
-                                'terms'    => $category,
-                            ),
-                        );
+                        $args['tax_query'] = [[
+                            'taxonomy' => 'download_cat',
+                            'field'    => 'slug',
+                            'terms'    => $category,
+                        ]];
                     }
 
-                    $result = new WP_Query ( $args );
-                    if ( $result-> have_posts() ) : ?>
-                        <?php while ( $result->have_posts() ) : $result->the_post(); ?>
+                    $result = new WP_Query($args);
+                    ?>
+                    <ul class="article-list article-col-3">
+                        <?php while ($result->have_posts()) : $result->the_post();
+                            $image = get_the_post_thumbnail_url() ?: get_template_directory_uri() . '/images/no_image_download.jpg';
+                            $categories = wp_get_post_terms(get_the_ID(), 'download_cat');
+                        ?>
                             <li class="article-item">
-                                <a class="link-post" href="<?php the_permalink(); ?>">
+                                <a class="link-post" href="<?= get_permalink(); ?>">
                                     <p class="image-post">
-                                        <?php
-                                        $image = get_the_post_thumbnail_url();
-                                        if($image):?>
-                                            <img src="<?php echo get_the_post_thumbnail_url(); ?>">
-                                        <?php else: ?>
-                                            <img src="<?php bloginfo('template_url'); ?>/images/no_image_download.jpg">
-                                        <?php endif; ?>
+                                        <img src="<?= esc_url($image); ?>">
                                     </p>
                                 </a>
                                 <div class="category">
-                                    <?php
-                                    $country_lists = wp_get_post_terms($post->ID, 'download_cat', array("fields" => "all"));
-                                    foreach ($country_lists as $country_list) { ?>
-                                        <a href="<?php echo get_category_link($country_list->term_id); ?>"><?php echo $country_list->name; ?></a>
-                                    <?php } ?>
+                                    <?php foreach ($categories as $cat): ?>
+                                        <a href="<?= get_category_link($cat->term_id); ?>"><?= esc_html($cat->name); ?></a>
+                                    <?php endforeach; ?>
                                 </div>
                                 <h2 class="title-post">
-                                    <a href="<?php the_permalink(); ?>">
-                                        <?php echo get_the_title(); ?>
-                                    </a>
+                                    <a href="<?= get_permalink(); ?>"><?= get_the_title(); ?></a>
                                 </h2>
-                                <div class="excerpt">
-                                    <?php
-                                    $content = get_the_content();
-                                    echo wp_trim_words($content, 50, '...');
-                                    ?>
-                                </div>
+                                <div class="excerpt"><?= wp_trim_words(get_the_content(), 50, '...'); ?></div>
                                 <div class="link-page">
-                                    <form method="POST" action="/confirm_download/?id=<?php echo get_the_ID(); ?>">
+                                    <form method="POST" action="/confirm_download/?id=<?= get_the_ID(); ?>">
                                         <button class="download-link link-single">ダウンロードはこちら<span>＞</span></button>
                                     </form>
                                 </div>
                             </li>
                         <?php endwhile; ?>
-                    <?php endif;
+                    </ul>
+
+                    <?php if ($result->max_num_pages > 1) {
+                        echo wp_pagenavi(['query' => $result]);
+                    }
                     wp_reset_postdata();
-                    ?>
-                </ul>
-                <?php if ($result->max_num_pages > 1): ?>
-                    <?php echo wp_pagenavi(['query' => $result]); ?>
-                <?php endif; ?>
+                endif; ?>
             </div>
+
         </div>
     </div>
 

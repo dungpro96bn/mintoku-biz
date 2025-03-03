@@ -92,16 +92,20 @@ jQuery(function ($) {
 	});
 	// Bắt sự kiện click cho từng video
 
-	$('#camcat  .img-video').click(function() {
-		$(this).parents('.video-manual').find('.modal01').show();
-		$(this).parents('.video-manual').find('.btn-play').trigger('click');
+	$('.article-item .img-video').click(function() {
+		$(this).parents('.article-item').find('.modal01').addClass("is-open");
+		$(this).parents('.article-item').find('.btn-play').trigger('click');
 	});
 
 	// Bắt sự kiện click vào nút đóng modal
-	$('#camcat  .close').click(function(event) {
-		// Dừng video và ẩn modal
-		$(this).parents('.modal-content').find('.btn-play').trigger('click');
-		$(this).parents('.modal01').hide();
+	$('.article-item .close').click(function(event) {
+		var btn = $(".btn-play");
+		if(!btn.hasClass("pause")){
+			$(this).parents('.modal01').removeClass("is-open");
+		} else {
+			$(this).parents('.modal-content').find('.btn-play').trigger('click');
+			$(this).parents('.modal01').removeClass("is-open");
+		}
 	});
 
 

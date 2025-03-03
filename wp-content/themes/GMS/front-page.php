@@ -3,22 +3,25 @@
 
     <div id="homepage">
 
-        <div class="homepage-banner">
-            <div class="banner-content">
-                <div class="image-content">
-                    <picture class="image">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image01_pc.png 2x">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image01_pc.png 2x">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image01_pc.png" alt="">
-                    </picture>
+        <div class="homepageBanner-bg">
+            <div class="homepage-banner">
+                <div class="banner-content">
+                    <div class="image-content">
+                        <picture class="image">
+                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image01_pc.png 2x">
+                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image01_pc.png 2x">
+                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image01_pc.png" alt="">
+                        </picture>
+                    </div>
+                    <h2 class="heading">
+                        <span>もっとスムーズに<br/>外国人パートナーと、<br/>共に安心して<br class="sp-br"/>働ける社会を。</span>
+                    </h2>
                 </div>
-                <h2 class="heading">
-                    <span>もっとスムーズに<br/>外国人パートナーと、<br/>共に安心して<br class="sp-br"/>働ける社会を。</span>
-                </h2>
             </div>
+
+            <?php get_template_part("template-parts/about-us"); ?>
         </div>
 
-        <?php get_template_part("template-parts/about-us"); ?>
 
         <div class="feature">
             <div class="inner">

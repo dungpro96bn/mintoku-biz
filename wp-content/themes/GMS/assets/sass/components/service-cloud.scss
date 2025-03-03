@@ -832,6 +832,12 @@
       font-size: 16px;
       line-height: 26px;
       color: #3164AA;
+
+      svg{
+        position: relative;
+        top: -1px;
+        margin-left: 8px;
+      }
     }
     .link-page {
       position: absolute;
