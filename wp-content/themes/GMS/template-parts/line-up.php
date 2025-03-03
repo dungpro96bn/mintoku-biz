@@ -36,21 +36,7 @@ if (is_page() || is_single()) {
                         <p class="text">国内外様々な求人を掲載可能な「mintoku work」の運営や、採用プランを一から構築いたします。</p>
                     </div>
                     <div class="link-info">
-                        <a target="_blank" href="https://mintoku.work/">詳しく見る
-                            <svg id="Group_500" data-name="Group 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.716" height="15.722" viewBox="0 0 16.716 15.722">
-                              <defs>
-                                <clipPath id="clip-path">
-                                  <rect id="Rectangle_185" data-name="Rectangle 185" width="16.716" height="15.722" fill="none"/>
-                                </clipPath>
-                              </defs>
-                              <g id="Group_447" data-name="Group 447" clip-path="url(#clip-path)">
-                                <path id="Path_176" data-name="Path 176" d="M18.278,58.667H10.342A1.342,1.342,0,0,1,9,57.325V49.389a1.342,1.342,0,0,1,1.342-1.342h7.936a1.342,1.342,0,0,1,1.342,1.342v7.936a1.342,1.342,0,0,1-1.342,1.342" transform="translate(-8.195 -43.749)" fill="#fff"/>
-                                <path id="Path_177" data-name="Path 177" d="M10.083,51.277H2.147A2.149,2.149,0,0,1,0,49.13V41.194a2.149,2.149,0,0,1,2.147-2.147h7.936a2.149,2.149,0,0,1,2.147,2.147V49.13a2.149,2.149,0,0,1-2.147,2.147M2.147,40.657a.537.537,0,0,0-.537.537V49.13a.537.537,0,0,0,.537.537h7.936a.537.537,0,0,0,.537-.537V41.194a.537.537,0,0,0-.537-.537Z" transform="translate(0 -35.554)" fill="#187b9f"/>
-                                <path id="Path_178" data-name="Path 178" d="M60.17,10.412a.8.8,0,0,1-.538-1.4l8.234-7.4h-2.8a.805.805,0,0,1,0-1.61h4.9A.805.805,0,0,1,70.5,1.4l-9.8,8.8a.8.8,0,0,1-.538.206" transform="translate(-54.055 0.001)" fill="#187b9f"/>
-                                <path id="Path_179" data-name="Path 179" d="M169.694,6.011a.8.8,0,0,1-.805-.805V.805a.805.805,0,1,1,1.61,0v4.4a.8.8,0,0,1-.8.805" transform="translate(-153.783 0)" fill="#187b9f"/>
-                              </g>
-                            </svg>
-                        </a>
+                        <a href="/service/recuit-support/">詳しく見る ＞</a>
                     </div>
                 </li>
                 <li class="lineUp-item">
