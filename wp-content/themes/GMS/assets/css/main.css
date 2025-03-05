@@ -1362,7 +1362,7 @@ body:not(.home) .banner-top .heading-block span {
 .line-up .lineUp-list .lineUp-item .text {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 300;
 }
 .line-up .lineUp-list .lineUp-item .link-info {
   position: absolute;
@@ -1954,7 +1954,7 @@ body:not(.home) .banner-top .heading-block span {
   font-size: 23px;
   line-height: 33px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: 1.1px;
 }
 @media (max-width: 1023px) {
@@ -2709,7 +2709,7 @@ body:not(.home) .partners {
 .support .reason-info .text {
   font-size: 23px;
   line-height: 38px;
-  font-weight: 600;
+  font-weight: 300;
   color: #fff;
 }
 @media (max-width: 1023px) {
@@ -3061,6 +3061,7 @@ body:not(.home) .partners {
 .translate-feature .feature-top .info-content .text {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 300;
 }
 .translate-feature .feature-top .info-content .service-list {
   display: flex;
@@ -3097,6 +3098,7 @@ body:not(.home) .partners {
 .translate-feature .feature-top .info-content .service-item p {
   font-size: 20px;
   line-height: 41px;
+  font-weight: 300;
 }
 @media (max-width: 1023px) {
   .translate-feature .feature-top .info-content .service-item p {
@@ -3191,6 +3193,7 @@ body:not(.home) .partners {
   line-height: 24px;
   max-width: 492px;
   margin-bottom: 8px;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   .translate-feature .feature-bottom .info-content .text {
@@ -3201,6 +3204,7 @@ body:not(.home) .partners {
 .translate-feature .feature-bottom .info-content .t1 {
   font-size: 20px;
   line-height: 30px;
+  font-weight: 300;
 }
 .translate-feature .feature-bottom .step {
   color: #fff;
@@ -3209,6 +3213,7 @@ body:not(.home) .partners {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 26px;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   .translate-feature .feature-bottom .step .ttl {
@@ -3319,6 +3324,7 @@ body:not(.home) .partners {
   transform: translateX(-50%);
   width: auto;
   white-space: nowrap;
+  font-weight: 300;
 }
 @media (max-width: 1023px) {
   .translate-feature .feature-bottom .step .step-list .text {
@@ -3519,6 +3525,7 @@ body:not(.home) .partners {
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 23px;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   .immigration-feature .feature-item .feature-info .info-item .sub-ttl {
@@ -3535,6 +3542,7 @@ body:not(.home) .partners {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 7px;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   .immigration-feature .feature-item .feature-info .info-item dt {
@@ -3545,10 +3553,12 @@ body:not(.home) .partners {
   font-size: 16px;
   line-height: 24px;
   padding-left: 21px;
+  font-weight: 300;
 }
 .immigration-feature .feature-item .feature-info .info-item .text {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 300;
 }
 .immigration-feature .feature-item .feature-info .info-item:nth-child(2) dl {
   margin-bottom: 23px;
@@ -3637,6 +3647,7 @@ body:not(.home) .partners {
   line-height: 38px;
   color: #2A4852;
   text-align: center;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   .plan-price.price-item02 .description .t2 {
@@ -3697,6 +3708,7 @@ body:not(.home) .partners {
   font-size: 16px;
   line-height: 28px;
   color: #2A4852;
+  font-weight: 300;
 }
 .plan-price .plan-list {
   max-width: 1040px;
@@ -3822,6 +3834,7 @@ body:not(.home) .partners {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 15px;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   .plan-price .plan-item .info .info-item .t1 {
@@ -3833,6 +3846,7 @@ body:not(.home) .partners {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 5px;
+  font-weight: 300;
 }
 .plan-price .plan-item .info .info-item .price span {
   font-size: 24px;
@@ -3856,6 +3870,7 @@ body:not(.home) .partners {
 .plan-price .plan-item .info .info-item .text {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 300;
 }
 .plan-price .plan-item .info .info-item dl {
   margin-bottom: 10px;
@@ -4093,11 +4108,13 @@ body:not(.home) .partners {
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 25px;
+  font-weight: 300;
 }
 .solution .solution-item .info-content .text {
   font-size: 16px;
   line-height: 24px;
   max-width: 490px;
+  font-weight: 300;
 }
 .solution .solution-item .info-content .service-list {
   display: flex;
@@ -4478,6 +4495,7 @@ body:not(.home) .partners {
   font-size: 16px;
   line-height: 24px;
   max-width: 490px;
+  font-weight: 300;
 }
 .camCat-feature .feature-item .info-content .service-list {
   display: flex;
@@ -4659,7 +4677,7 @@ body:not(.home) .partners {
 .edpoke-program .program-item .text {
   font-size: 18px;
   line-height: 28px;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 20px;
 }
 @media (max-width: 1023px) {
@@ -4672,7 +4690,7 @@ body:not(.home) .partners {
   position: relative;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 18px;
   padding-left: 26px;
 }
@@ -4759,7 +4777,7 @@ body:not(.home) .partners {
 .edpoke-process .process-item .text {
   font-size: 16px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 300;
 }
 .edpoke-process .process-item .box-number {
   position: absolute;
@@ -6349,6 +6367,7 @@ body:not(.home) .partners {
   font-size: 24px;
   line-height: 34px;
   margin-bottom: 29px;
+  font-weight: 300;
 }
 .life-support-feature .feature-item .feature-top .info-content .text {
   font-size: 18px;
@@ -6359,6 +6378,7 @@ body:not(.home) .partners {
   font-size: 16px;
   line-height: 24px;
   margin-top: 9px;
+  font-weight: 300;
 }
 @media (max-width: 1280px) {
   .life-support-feature .feature-item .feature-top .info-content {
@@ -6412,6 +6432,7 @@ body:not(.home) .partners {
   padding-right: 22px;
   cursor: pointer;
   transition: 0.3s;
+  font-weight: 300;
 }
 .life-support-feature .feature-item .feature-top .info-content .see-more p:hover {
   text-decoration: underline;
@@ -7553,6 +7574,7 @@ body:not(.home) .partners {
   font-size: 16px;
   line-height: 24px;
   max-width: 540px;
+  font-weight: 300;
 }
 .recuitSupport-list .recuitSupport-item .link-page {
   margin-top: 40px;
@@ -8709,7 +8731,7 @@ body:not(.home) .partners {
   color: #2A4852;
   font-size: 18px;
   line-height: 28px;
-  font-weight: 400;
+  font-weight: 300;
   transition: 0.3s;
 }
 .qa-page .container-qa .all-qa .item-faq a:hover {

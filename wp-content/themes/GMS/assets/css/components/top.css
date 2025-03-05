@@ -719,7 +719,7 @@ body:not(.home) .banner-top .heading-block span {
 .line-up .lineUp-list .lineUp-item .text {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 300;
 }
 .line-up .lineUp-list .lineUp-item .link-info {
   position: absolute;
@@ -1311,7 +1311,7 @@ body:not(.home) .banner-top .heading-block span {
   font-size: 23px;
   line-height: 33px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: 1.1px;
 }
 @media (max-width: 1023px) {

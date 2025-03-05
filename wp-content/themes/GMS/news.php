@@ -114,16 +114,6 @@
                 </div>
             </div>
         </div>
-        <div id="breadcrumb-footer" class="breadcrumb">
-            <ol>
-                <li>
-                    <a href="<?php echo home_url(); ?>">トップページ</a>&nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
-                </li>
-                <li>
-                    <span>お知らせ一覧</span>
-                </li>
-            </ol>
-       </div>
     </section>
 </div>
 <?php get_footer(); ?>

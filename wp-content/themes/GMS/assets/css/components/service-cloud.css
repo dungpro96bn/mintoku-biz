@@ -136,7 +136,7 @@
 .edpoke-program .program-item .text {
   font-size: 18px;
   line-height: 28px;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 20px;
 }
 @media (max-width: 1023px) {
@@ -149,7 +149,7 @@
   position: relative;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 18px;
   padding-left: 26px;
 }
@@ -236,7 +236,7 @@
 .edpoke-process .process-item .text {
   font-size: 16px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 300;
 }
 .edpoke-process .process-item .box-number {
   position: absolute;

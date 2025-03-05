@@ -639,7 +639,7 @@ body:not(.home){
     .text{
       font-size: 23px;
       line-height: 38px;
-      font-weight: 600;
+      font-weight: 300;
       color: #fff;
 
       @include var.sm{
@@ -1033,6 +1033,7 @@ body:not(.home){
       .text{
         font-size: 16px;
         line-height: 24px;
+        font-weight: 300;
       }
 
       .service-list{
@@ -1074,6 +1075,7 @@ body:not(.home){
         p{
           font-size: 20px;
           line-height: 41px;
+          font-weight: 300;
 
           @include var.sm{
             font-size: 14px;
@@ -1174,6 +1176,7 @@ body:not(.home){
         line-height: 24px;
         max-width: 492px;
         margin-bottom: 8px;
+        font-weight: 300;
 
         @include var.xs{
           margin-bottom: 3px;
@@ -1185,6 +1188,7 @@ body:not(.home){
       .t1{
         font-size: 20px;
         line-height: 30px;
+        font-weight: 300;
       }
 
     }
@@ -1196,6 +1200,7 @@ body:not(.home){
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 26px;
+        font-weight: 300;
 
         @include var.xs{
           margin-bottom: 22px;
@@ -1314,6 +1319,7 @@ body:not(.home){
           transform: translateX(-50%);
           width: auto;
           white-space: nowrap;
+          font-weight: 300;
 
           @include var.sm{
             font-size: 14px;
@@ -1545,6 +1551,7 @@ body:not(.home){
           font-size: 20px;
           line-height: 32px;
           margin-bottom: 23px;
+          font-weight: 300;
 
           @include var.xs{
             margin-bottom: 10px;
@@ -1564,6 +1571,7 @@ body:not(.home){
           font-size: 18px;
           line-height: 24px;
           margin-bottom: 7px;
+          font-weight: 300;
 
           @include var.xs{
             margin-bottom: 9px;
@@ -1575,11 +1583,13 @@ body:not(.home){
           font-size: 16px;
           line-height: 24px;
           padding-left: 21px;
+          font-weight: 300;
         }
 
         .text{
           font-size: 16px;
           line-height: 24px;
+          font-weight: 300;
         }
 
         &:nth-child(2){
@@ -1692,6 +1702,7 @@ body:not(.home){
         line-height: 38px;
         color: #2A4852;
         text-align: center;
+        font-weight: 300;
 
         @include var.xs{
           font-size: 16px;
@@ -1761,6 +1772,7 @@ body:not(.home){
       font-size: 16px;
       line-height: 28px;
       color: #2A4852;
+      font-weight: 300;
     }
   }
 
@@ -1899,6 +1911,7 @@ body:not(.home){
           font-size: 18px;
           line-height: 24px;
           margin-bottom: 15px;
+          font-weight: 300;
 
           @include var.xs{
             margin-bottom: 9px;
@@ -1911,6 +1924,7 @@ body:not(.home){
           font-size: 18px;
           line-height: 24px;
           margin-bottom: 5px;
+          font-weight: 300;
 
           span{
             font-size: 24px;
@@ -1938,6 +1952,7 @@ body:not(.home){
         .text{
           font-size: 16px;
           line-height: 24px;
+          font-weight: 300;
         }
 
         dl{
@@ -2219,12 +2234,14 @@ body:not(.home){
         font-size: 20px;
         line-height: 32px;
         margin-bottom: 25px;
+        font-weight: 300;
       }
 
       .text{
         font-size: 16px;
         line-height: 24px;
         max-width: 490px;
+        font-weight: 300;
       }
 
       .service-list{
@@ -2661,6 +2678,7 @@ body:not(.home){
         font-size: 16px;
         line-height: 24px;
         max-width: 490px;
+        font-weight: 300;
       }
 
       .service-list{

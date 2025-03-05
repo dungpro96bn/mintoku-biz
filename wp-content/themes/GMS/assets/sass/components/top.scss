@@ -768,7 +768,7 @@ body:not(.home){
       .text{
         font-size: 16px;
         line-height: 24px;
-        font-weight: 600;
+        font-weight: 300;
       }
 
       .link-info{
@@ -1491,7 +1491,7 @@ body:not(.home){
         font-size: 23px;
         line-height: 33px;
         color: #fff;
-        font-weight: 600;
+        font-weight: 300;
         letter-spacing: 1.1px;
 
         @include var.sm{

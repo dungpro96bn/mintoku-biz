@@ -959,6 +959,7 @@
   font-size: 16px;
   line-height: 24px;
   max-width: 540px;
+  font-weight: 300;
 }
 .recuitSupport-list .recuitSupport-item .link-page {
   margin-top: 40px;
