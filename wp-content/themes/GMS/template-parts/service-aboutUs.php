@@ -45,7 +45,7 @@ $image = get_field('banner_image', $page_id);
             <?php if($slug == "edpoke"):?>
                 <div class="edpoke-contact">
                     <div class="btn-contact">
-                        <a href="#">資料請求もお問い合わせください<span>＞</span></a>
+                        <a href="/report_download/">資料請求もお問い合わせください<span>＞</span></a>
                     </div>
                     <div class="time">
                         <div class="icon-ttl">

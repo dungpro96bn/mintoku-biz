@@ -6455,12 +6455,28 @@ body:not(.home) .partners {
 .life-support-feature .feature-item .feature-top .image-content {
   overflow: hidden;
   transition: 0.4s;
-  border-radius: 0 20px 20px 0;
+  border-radius: 20px;
+  padding: 50px 30px;
+}
+@media (max-width: 767px) {
+  .life-support-feature .feature-item .feature-top .image-content {
+    padding: 40px 12px;
+  }
+}
+.life-support-feature .feature-item .feature-top .image-content .video-inner {
+  overflow: hidden;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.life-support-feature .feature-item .feature-top .image-content #eviry-poster_6,
+.life-support-feature .feature-item .feature-top .image-content .eviry-screen {
+  overflow: hidden;
+  border-radius: 20px;
+  background: transparent !important;
 }
 .life-support-feature .feature-item .feature-top .image-content img {
   width: 100%;
-  border: 1px solid #707070;
-  border-radius: 0 20px 20px 0;
+  border-radius: 20px;
 }
 @media (max-width: 767px) {
   .life-support-feature .feature-item .feature-top .image-content img {

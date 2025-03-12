@@ -129,17 +129,6 @@ jQuery(function ($) {
         $("#filter-form").submit();
     });
 
-    $('.post-list').slick({
-        infinite: true,
-        arrows: false,
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        speed: 500,
-        autoplay: true,
-        autoplaySpeed: 4000,
-    });
-
     $(".qa-item .title").click(function (){
         $(this).toggleClass("is-open");
         $(this).next().slideToggle();

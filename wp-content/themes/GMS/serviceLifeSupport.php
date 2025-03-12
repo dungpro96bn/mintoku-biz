@@ -24,7 +24,7 @@ $slug = $post->post_name;
         </div>
         <div class="banner-info">
             <div class="banner-inner">
-                <h3 class="sub-title">外国人生活支援サービス</h3>
+                <h3 class="sub-title">生活支援サービス</h3>
                 <h2 class="heading">新たな外国人雇用の生活に、<br/>充実とバランスを</h2>
             </div>
         </div>
@@ -56,15 +56,17 @@ $slug = $post->post_name;
                                 <p class="text">配属前に必要な社宅や生活備品、インターネット環境などの準備、契約代行を弊社が行うことで支払先の一本化が可能になり、経理工数の削減ができるプランとなっています。</p>
                             </div>
                             <div class="image-content">
-                                <div class="div-play"></div>
-                                <script type="text/javascript">
-                                var Eviry = Eviry || {};
-                                Eviry.Player || (Eviry.Player = {});
-                                Eviry.Player.embedkey =
-                                    "EK1rASWDyyOFgkRG0Xu03mKkgr2xWD23fw1OyAXkDwcN7yNUVjP1FlNRVdoKBu8R9ePmxD8CmQ9b9Wc4QPYuXzJsLbxGTyas5lvF70eFSHD3yA.";
-                                </script>
-                                <script type="text/javascript"
-                                src="https://d1euehvbqdc1n9.cloudfront.net/001/eviry/js/eviry.player.min.js"></script>
+                                <div class="video-inner">
+                                    <div class="div-play"></div>
+                                    <script type="text/javascript">
+                                        var Eviry = Eviry || {};
+                                        Eviry.Player || (Eviry.Player = {});
+                                        Eviry.Player.embedkey =
+                                            "EK1rASWDyyOFgkRG0Xu03mKkgr2xWD23fw1OyAXkDwcN7yNUVjP1FlNRVdoKBu8R9ePmxD8CmQ9b9Wc4QPYuXzJsLbxGTyas5lvF70eFSHD3yA.";
+                                    </script>
+                                    <script type="text/javascript"
+                                            src="https://d1euehvbqdc1n9.cloudfront.net/001/eviry/js/eviry.player.min.js"></script>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -84,9 +86,11 @@ $slug = $post->post_name;
                                 </div>
                             </div>
                             <div class="image-content">
-                                <div class="div-play"></div>
-                                                        <script type="text/javascript">var Eviry=Eviry||{};Eviry.Player||(Eviry.Player={});Eviry.Player.embedkey="EK1A-1z6iLhoLaJ0LuzHHMHbI-6TAsb7BAjyyVuG_ySmqwwAPIZUuP1GY7_zNz_w-zQ9dzDRzN5X3P9HSB1GDcRkHRULoWlosGpZG1uej5mxgSScgLSrWO_HA..";</script>
-                                <script type="text/javascript" src="https://d1euehvbqdc1n9.cloudfront.net/001/eviry/js/eviry.player.min.js"></script>
+                                <div class="video-inner">
+                                    <div class="div-play"></div>
+                                                            <script type="text/javascript">var Eviry=Eviry||{};Eviry.Player||(Eviry.Player={});Eviry.Player.embedkey="EK1A-1z6iLhoLaJ0LuzHHMHbI-6TAsb7BAjyyVuG_ySmqwwAPIZUuP1GY7_zNz_w-zQ9dzDRzN5X3P9HSB1GDcRkHRULoWlosGpZG1uej5mxgSScgLSrWO_HA..";</script>
+                                    <script type="text/javascript" src="https://d1euehvbqdc1n9.cloudfront.net/001/eviry/js/eviry.player.min.js"></script>
+                                </div>
                             </div>
                         </div>
                         <div class="feature-details">
@@ -122,7 +126,7 @@ $slug = $post->post_name;
                                     </li>
                                 </ul>
                                 <div class="link-page">
-                                    <a href="#">edupoke global ></a>
+                                    <a href="https://edu-poke.jp/global" target="_blank">edupoke global ></a>
                                 </div>
                             </div>
                         </div>
@@ -144,9 +148,11 @@ $slug = $post->post_name;
                                 </div>
                             </div>
                             <div class="image-content">
-                                <div class="div-play"></div>
-                                    <script type="text/javascript">var Eviry=Eviry||{};Eviry.Player||(Eviry.Player={});Eviry.Player.embedkey="EK1UURofUndnDE7YBtTaSViYFZtAPBuaFRrh7zuAmbLXV51FoK6yHdqkAVqGh1-sikCF60PlmWJITSEDhEnqeozDRs7IMg8_VDnRgOwbxU6Yng.";</script>
-                                <script type="text/javascript" src="https://d1euehvbqdc1n9.cloudfront.net/001/eviry/js/eviry.player.min.js"></script>
+                                <div class="video-inner">
+                                    <div class="div-play"></div>
+                                        <script type="text/javascript">var Eviry=Eviry||{};Eviry.Player||(Eviry.Player={});Eviry.Player.embedkey="EK1UURofUndnDE7YBtTaSViYFZtAPBuaFRrh7zuAmbLXV51FoK6yHdqkAVqGh1-sikCF60PlmWJITSEDhEnqeozDRs7IMg8_VDnRgOwbxU6Yng.";</script>
+                                    <script type="text/javascript" src="https://d1euehvbqdc1n9.cloudfront.net/001/eviry/js/eviry.player.min.js"></script>
+                                </div>
                             </div>
                         </div>
                         <div class="feature-details">
@@ -214,15 +220,17 @@ $slug = $post->post_name;
                                 <p class="text">外国人材活用に必要なあらゆる業務をお引き受けし、<br class="pc-br"/>日本で生活する全ての外国人材の安全な生活をサポート。</p>
                             </div>
                             <div class="image-content">
-                                <div class="div-play"></div>
-                                                        <script type="text/javascript">
-                                                        var Eviry = Eviry || {};
-                                                        Eviry.Player || (Eviry.Player = {});
-                                                        Eviry.Player.embedkey =
-                                                            "EK1UGzO6SrVy1E53tx-U2CrI1DOgXfGaslZccClwDy-z74rxWupWVb-AhvkNRxaDRqdR_khf7EQ98tqJJ9pfBe--5lijnzcYSB46kqFPTAyBkI.";
-                                                        </script>
-                                                        <script type="text/javascript"
-                                                            src="https://d1euehvbqdc1n9.cloudfront.net/001/eviry/js/eviry.player.min.js"></script>
+                                <div class="video-inner">
+                                    <div class="div-play"></div>
+                                                            <script type="text/javascript">
+                                                            var Eviry = Eviry || {};
+                                                            Eviry.Player || (Eviry.Player = {});
+                                                            Eviry.Player.embedkey =
+                                                                "EK1UGzO6SrVy1E53tx-U2CrI1DOgXfGaslZccClwDy-z74rxWupWVb-AhvkNRxaDRqdR_khf7EQ98tqJJ9pfBe--5lijnzcYSB46kqFPTAyBkI.";
+                                                            </script>
+                                                            <script type="text/javascript"
+                                                                src="https://d1euehvbqdc1n9.cloudfront.net/001/eviry/js/eviry.player.min.js"></script>
+                                </div>
                             </div>
                         </div>
                     </div>

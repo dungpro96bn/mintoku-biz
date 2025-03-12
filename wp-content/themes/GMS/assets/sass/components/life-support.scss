@@ -259,12 +259,28 @@
       .image-content{
         overflow: hidden;
         transition: .4s;
-        border-radius: 0 20px 20px 0;
+        border-radius: 20px;
+        padding: 50px 30px;
+        @include var.xs{
+          padding: 40px 12px;
+        }
+
+        .video-inner{
+          overflow: hidden;
+          transition: .4s;
+          border-radius: 20px;
+        }
+
+        #eviry-poster_6,
+        .eviry-screen{
+          overflow: hidden;
+          border-radius: 20px;
+          background: transparent !important;
+        }
 
         img{
           width: 100%;
-          border: 1px solid #707070;
-          border-radius: 0 20px 20px 0;
+          border-radius: 20px;
 
           @include var.xs{
             border-radius: 0;

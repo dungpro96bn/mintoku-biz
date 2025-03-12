@@ -28,7 +28,7 @@ if (is_page() || is_single()) {
             <div class="banner-main">
                 <div class="inner">
                     <div class="heading-banner">
-                        <h1>お問い合わせ</h1>
+                        <h1>お役立ち資料</h1>
                     </div>
                 </div>
             </div>

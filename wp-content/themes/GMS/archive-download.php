@@ -66,6 +66,19 @@
         </div>
     </div>
 
+    <script>
+        $('.post-list').slick({
+            infinite: true,
+            arrows: false,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500,
+            autoplay: true,
+            autoplaySpeed: 4000,
+        });
+    </script>
+
     <div class="download-tabs">
         <div class="inner">
             <form id="filter-form" method="GET" action="/report_download/">
@@ -80,7 +93,7 @@
                         <input type="radio" name="category" value="report" <?php echo (isset($_GET['category']) && $_GET['category'] == 'report') ? 'checked' : ''; ?>> 調査レポート
                     </label>
                     <label class="tab-action <?php echo (isset($_GET['category']) && $_GET['category'] == 'manual_video') ? 'is-active' : ''; ?>" >
-                        <input type="radio" name="category" value="manual_video" <?php echo (isset($_GET['category']) && $_GET['category'] == 'manual_video') ? 'checked' : ''; ?>> 調査レポート
+                        <input type="radio" name="category" value="manual_video" <?php echo (isset($_GET['category']) && $_GET['category'] == 'manual_video') ? 'checked' : ''; ?>> マニュアル動画
                     </label>
                 </div>
             </form>
