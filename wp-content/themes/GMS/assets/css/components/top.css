@@ -1131,7 +1131,7 @@ body:not(.home) .banner-top .heading-block span {
   position: relative;
   bottom: -1px;
 }
-.reference-qa .qa-item .answer-content .qa-answer .text {
+.reference-qa .qa-item .answer-content .qa-answer p {
   font-size: 23px;
   line-height: 38px;
   font-weight: 300;
@@ -1161,6 +1161,15 @@ body:not(.home) .banner-top .heading-block span {
     line-height: 38px;
     letter-spacing: 0;
   }
+}
+.reference-qa .qa-item .answer-content .link-page {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.reference-qa .qa-item .answer-content .link-page a {
+  margin: 0;
+  max-width: 170px;
 }
 .reference-qa .link-page {
   padding-top: 20px;

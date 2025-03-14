@@ -1269,7 +1269,7 @@ body:not(.home){
           bottom: -1px;
         }
 
-        .text{
+        p{
           font-size: 23px;
           line-height: 38px;
           font-weight: 300;
@@ -1307,6 +1307,17 @@ body:not(.home){
 
         }
 
+      }
+
+      .link-page{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-end;
+
+        a{
+          margin: 0;
+          max-width: 170px;
+        }
       }
 
     }
