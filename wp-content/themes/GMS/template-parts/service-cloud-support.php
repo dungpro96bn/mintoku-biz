@@ -20,8 +20,8 @@ if (is_page()) {
                 <p class="text">スムーズにご利用いただくために、<br/>
                     各種サポートをご用意しております</p>
                 <div class="link-page">
-                    <a href="/report_download/"><span>資料ダウンロード</span><span class="icon">＞</span></a>
-                    <a href="/contact/"><span>お問い合わせ</span><span class="icon">＞</span></a>
+                    <a href="<?php echo home_url(); ?>/report_download/"><span>資料ダウンロード</span><span class="icon">＞</span></a>
+                    <a href="<?php echo home_url(); ?>/contact/"><span>お問い合わせ</span><span class="icon">＞</span></a>
                 </div>
             </div>
             <div class="reason-image">

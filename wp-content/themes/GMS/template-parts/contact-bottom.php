@@ -28,7 +28,7 @@ if (is_page() || is_single()) {
         </div>
     </div>
     <div class="box-btn">
-        <a href="/report_download/">
+        <a href="<?php echo home_url(); ?>/report_download/">
             <picture class="image">
                 <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image17_pc.png">
                 <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image17_pc.png">
@@ -38,7 +38,7 @@ if (is_page() || is_single()) {
         </a>
     </div>
     <div class="box-btn">
-        <a href="/contact/"><picture class="image">
+        <a href="<?php echo home_url(); ?>/contact/"><picture class="image">
                 <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image18_pc.png">
                 <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image18_pc.png">
                 <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image18_pc.png" alt="">

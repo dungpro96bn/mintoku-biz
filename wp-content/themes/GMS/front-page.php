@@ -173,7 +173,7 @@
                         <?php endforeach; ?>
                     </ul>
                     <div class="link-page">
-                        <a href="/qa/">Q&A一覧を見る<span class="icon-arrow">＞</span></a>
+                        <a href="<?php echo home_url(); ?>/qa/">Q&A一覧を見る<span class="icon-arrow">＞</span></a>
                     </div>
                 </div>
             </div>

@@ -25,8 +25,8 @@ if (is_page() || is_single()) {
                 <h3 class="title">導入後のサポート</h3>
                 <p class="text">スムーズにご利用いただくために、<br/>各種サポートを<br class="sp-br"/>ご用意しております</p>
                 <div class="link-page">
-                    <a href="/report_download/"><span>資料ダウンロード</span><span class="icon">＞</span></a>
-                    <a href="/contact/"><span>お問い合わせ</span><span class="icon">＞</span></a>
+                    <a href="<?php echo home_url(); ?>/report_download/"><span>資料ダウンロード</span><span class="icon">＞</span></a>
+                    <a href="<?php echo home_url(); ?>/contact/"><span>お問い合わせ</span><span class="icon">＞</span></a>
                 </div>
             </div>
             <div class="reason-image">

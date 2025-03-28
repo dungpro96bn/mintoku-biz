@@ -86,7 +86,7 @@
                         <p>外国人採用・受入の際、各種契約書や入社オリエンテーション資料・安全教育資料など、採用者の母国語併記義務もあります。外国人とのコミュニケーションに、必要最低限の業務指示書や作業マニュアルをご用意することが推奨されています。</p>
                     </div>
                     <div class="link-page">
-                        <a href="/translate/">詳しく見る ＞</a>
+                        <a href="<?php echo home_url(); ?>/translate/">詳しく見る ＞</a>
                     </div>
                 </div>
 
@@ -140,7 +140,7 @@
                         <p>海外での出国時斡旋、 国内での空港斡旋までを一貫してサポートし、外国人が初めての出入国であっても、安心・安全に入国して頂けるプランをご用意しました。</p>
                     </div>
                     <div class="link-page">
-                        <a href="/service/immigration/">詳しく見る ＞</a>
+                        <a href="<?php echo home_url(); ?>/service/immigration/">詳しく見る ＞</a>
                     </div>
                 </div>
 
@@ -160,7 +160,7 @@
                         <p>外国人材を受け入れるにはどうしたらいい？などの基礎的な質問から、業務に関するお悩み、法律やルール改正に伴う変更点など、弊社所属の社労士・行政書士が無料でお答えいたします。</p>
                     </div>
                     <div class="link-page">
-                        <a href="/service/consultation/">詳しく見る ＞</a>
+                        <a href="<?php echo home_url(); ?>/service/consultation/">詳しく見る ＞</a>
                     </div>
                 </div>
 
@@ -180,7 +180,7 @@
                         <p>技能実習や特定技能にとどまらず、全てのビザに対応！！無制限のストレージ機能とチャート式のスケジュール管理が魅力です！</p>
                     </div>
                     <div class="link-page">
-                        <a href="/service/cloud/camcat/">詳しく見る ＞</a>
+                        <a href="<?php echo home_url(); ?>/service/cloud/camcat/">詳しく見る ＞</a>
                     </div>
                 </div>
 

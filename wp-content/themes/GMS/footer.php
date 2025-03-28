@@ -18,7 +18,7 @@
                             <p>〒163-0638<br/>東京都新宿区西新宿1-25-1</p>
                         </div>
                         <div class="privacy">
-                            <a href="/privacy/">プライバシーポリシー</a>
+                            <a href="<?php echo home_url(); ?>/privacy/">プライバシーポリシー</a>
                             <a href="https://cam-global.co.jp/" target="_blank">運営会社</a>
                         </div>
                     </div>
@@ -27,16 +27,16 @@
                     <div class="footer-link-page">
                         <ul class="footer-menu-list">
                             <li class="footer-menu-item">
-                                <a href="/qa/">外国人材Q&A</a>
+                                <a href="<?php echo home_url(); ?>/qa/">外国人材Q&A</a>
                             </li>
                             <li class="footer-menu-item">
-                                <a href="/seminar/">セミナー情報</a>
+                                <a href="<?php echo home_url(); ?>/seminar/">セミナー情報</a>
                             </li>
                             <li class="footer-menu-item">
-                                <a href="/news/">お知らせ</a>
+                                <a href="<?php echo home_url(); ?>/news/">お知らせ</a>
                             </li>
                             <li class="footer-menu-item">
-                                <a href="/contact/">お問い合わせ</a>
+                                <a href="<?php echo home_url(); ?>/contact/">お問い合わせ</a>
                             </li>
                         </ul>
                         <ul class="footer-menu-list">
@@ -58,16 +58,16 @@
                                 <a class="link-target" target="_blank" href="https://mintoku.work/">mintoku work</a>
                             </li>
                             <li class="menu-service-item">
-                                <a href="/service/assistant/">労務代行サービス</a>
+                                <a href="<?php echo home_url(); ?>/service/assistant/">労務代行サービス</a>
                             </li>
                             <li class="menu-service-item">
-                                <a href="/service/life-support/">生活支援サービス</a>
+                                <a href="<?php echo home_url(); ?>/service/life-support/">生活支援サービス</a>
                             </li>
                             <li class="menu-service-item">
                                 <a class="link-target" target="_blank" href="https://edu-poke.jp/global">mintoku study</a>
                             </li>
                             <li class="menu-service-item">
-                                <a href="/service/cloud/maetra/">前トレ</a>
+                                <a href="<?php echo home_url(); ?>/service/cloud/maetra/">前トレ</a>
                             </li>
                             <li class="menu-service-item">
                                 <a class="link-target" target="_blank" href="https://camtech-ea.net/">エデュックアカデミー</a>

@@ -136,10 +136,10 @@
                     </div>
                     <div class="header-action-right">
                         <div class="download">
-                            <a class="download-btn" href="/report_download/">資料ダウンロード</a>
+                            <a class="download-btn" href="<?php echo home_url(); ?>/report_download/">資料ダウンロード</a>
                         </div>
                         <div class="contact">
-                            <a class="contact-btn" href="/contact/">お問い合わせ</a>
+                            <a class="contact-btn" href="<?php echo home_url(); ?>/contact/">お問い合わせ</a>
                         </div>
                     </div>
                 </div>

@@ -151,8 +151,8 @@
                         <p class="text">大企業から中小企業までさまざまな<br>
                             業種の企業にご活用いただいています。</p>
                         <div class="link-page">
-                            <a href="/report_download/"><span>資料ダウンロード</span><span class="icon">＞</span></a>
-                            <a href="/contact/"><span>お問い合わせ</span><span class="icon">＞</span></a>
+                            <a href="<?php echo home_url(); ?>/report_download/"><span>資料ダウンロード</span><span class="icon">＞</span></a>
+                            <a href="<?php echo home_url(); ?>/contact/"><span>お問い合わせ</span><span class="icon">＞</span></a>
                         </div>
                     </div>
                     <div class="reason-image">

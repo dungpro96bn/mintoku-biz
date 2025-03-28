@@ -36,7 +36,7 @@ if (is_page() || is_single()) {
                         <p class="text">国内外様々な求人を掲載可能な「mintoku work」の運営や、採用プランを一から構築いたします。</p>
                     </div>
                     <div class="link-info">
-                        <a href="/service/recuit-support/">詳しく見る ＞</a>
+                        <a href="<?php echo home_url(); ?>/service/recuit-support/">詳しく見る ＞</a>
                     </div>
                 </li>
                 <li class="lineUp-item">
@@ -50,7 +50,7 @@ if (is_page() || is_single()) {
                         <p class="text">勤怠管理/年末調整/翻訳/通訳など煩雑な作業を依頼できます。</p>
                     </div>
                     <div class="link-info">
-                        <a href="/service/assistant/">詳しく見る ＞</a>
+                        <a href="<?php echo home_url(); ?>/service/assistant/">詳しく見る ＞</a>
                     </div>
                 </li>
                 <li class="lineUp-item">
@@ -64,7 +64,7 @@ if (is_page() || is_single()) {
                         <p class="text">安心・安全な生活インフラの準備<br/>緊急対応や緊急の連絡対応など要望に応じて幅広く対応できます！完全成果報酬制で余計なコストはかかりません。</p>
                     </div>
                     <div class="link-info">
-                        <a href="/service/life-support/">詳しく見る ＞</a>
+                        <a href="<?php echo home_url(); ?>/service/life-support/">詳しく見る ＞</a>
                     </div>
                 </li>
                 <li class="lineUp-item">
@@ -106,7 +106,7 @@ if (is_page() || is_single()) {
                         <p class="text">「伝える」と「伝わる」は違います！<br/>多言語対応のカンタン動画でわかりやすく伝わります！</p>
                     </div>
                     <div class="link-info">
-                        <a href="/service/cloud/maetra/">詳しく見る ＞</a>
+                        <a href="<?php echo home_url(); ?>/service/cloud/maetra/">詳しく見る ＞</a>
                     </div>
                 </li>
                 <li class="lineUp-item">
