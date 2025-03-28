@@ -2,6 +2,11 @@
 	global $post, $wp_query;
 ?>
 <style>
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     #singNews .pageTitle {
         min-height: 150px;
     } 
@@ -20,45 +25,17 @@
      
 </style>
 <div id="singNews" class="columns-container">
-    <div class="pageTitle">
-        <h2 class="h2-single"><span class="en montserrat">NEWS</span>お知らせ一覧</h2>
-    </div>
-    <div id="breadcrumb" class="breadcrumb">
-        <ol>
-            <li>
-                <a href="<?php echo home_url(); ?>">トップページ</a>&nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
-            </li>
-            <li>
-                <span>お知らせ一覧</span>&nbsp;&nbsp;<i
-                        class="fa-solid fa-chevron-right"></i>
-            </li>
-            <li>
-              <?php
-                    $category = get_the_category();
-                    $cat      = $category[0];
-                ?>
-                   <span><?php echo $cat->name; ?>&nbsp;<?php echo get_the_date('Y.m.d'); ?></span>
-            </li>
-        </ol>
-    </div>
-    <div id="breadcrumb-news" class="breadcrumb">
-         <ol>
-            <li>
-              <a href="<?php echo home_url(); ?>"><i class="fa-sharp fa-solid fa-house"></i></a>&nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
-            </li>
-            <li>
-                <span>お知らせ一覧</span>&nbsp;&nbsp;<i
-                        class="fa-solid fa-chevron-right"></i>
-            </li>
-            <li>
-              <?php
-                    $category = get_the_category();
-                    $cat      = $category[0];
-                ?>
-                   <span><?php echo $cat->name; ?>&nbsp;<?php echo get_the_date('Y.m.d'); ?></span>
-            </li>
-        </ol>
+
+    <div class="banner-page">
+        <div class="banner-main">
+            <div class="inner">
+                <div class="heading-banner">
+                    <h1>お知らせ一覧</h1>
+                </div>
+            </div>
         </div>
+    </div>
+
     <section id="news">
         <div class="inner">
             <div class="content-news">
@@ -173,21 +150,7 @@
                 <a href="<?php bloginfo('url');?>/news">一覧へ戻る</a>
             </div>
         </div>
-        <div id="breadcrumb-footer" class="breadcrumb">  
-           
-            <ol>
-                <li>
-                    <a href="<?php echo home_url(); ?>">トップページ</a>&nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
-                </li>
-                <li>
-                    <a href="<?php bloginfo('url');?>/seminar">お知らせ一覧</a>&nbsp;&nbsp;<i
-                        class="fa-solid fa-chevron-right"></i>
-                </li>
-                <li>
-                   <span><?php echo $cat->name; ?>&nbsp;<?php echo get_the_date('Y.m.d'); ?></span>
-                </li>
-            </ol>
-       </div>
+
     </section>
 
 </div>

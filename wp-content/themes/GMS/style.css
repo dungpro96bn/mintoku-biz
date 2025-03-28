@@ -518,7 +518,7 @@ table tr td:first-child {
 	cursor: pointer;
 	transition: all 0.2s ease 0s;
 	font-size: 20px;
-	border-radius: 30px;
+	border-radius: 40px;
 	max-width: 280px;
 	margin-bottom: 30px;
 }
@@ -613,7 +613,7 @@ table tr td:first-child {
 	color: #0b54f7;
 	font-size: 17px;
 	font-weight: 500;
-	width: 110px;
+	width: 120px;
 	letter-spacing: 1px;
 }
 
@@ -668,10 +668,11 @@ table tr td:first-child {
 	border: 1.5px solid #0b54f7;
 	border-radius: 10px;
 }
-#singNews .content-news .single-content .seminar-info .heading-block {
+#singNews .content-news .single-content .seminar-info .heading-block span{
 	font-size: 22px;
 	color: #0b54f7;
 	width: 150px;
+	font-family: hiragino-kaku-gothic-pron, sans-serif;
 }
 #singNews .content-news .single-content .seminar-info .list-point {
 	font-size: 20px;
@@ -733,6 +734,7 @@ table tr td:first-child {
 	}
 	#singNews .content-news .single-content .top-content .date {
 		font-size: 18px;
+		width: 120px;
 	}
 	#singNews .content-news .single-content .top-content .cat {
 		font-size: 16px;
