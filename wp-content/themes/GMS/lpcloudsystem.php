@@ -5,9 +5,6 @@
  **/
 ?>
 <?php
-	get_header();
-?>
-<?php
 	get_header('lp');
 ?>
 <div id="cloudsystem">
@@ -250,7 +247,7 @@
                 </div>
 
                 <div class="block-inner">
-				<a href="https://gms.ca-m.co.jp/report_download/" class="contact two">外国人採用に関する<br>
+				<a href="<?php echo home_url(); ?>/report_download/" class="contact two">外国人採用に関する<br>
 					資料ダウンロード</a>
 				<a href="#lp-contact" class="contact scroll">お問い合わせはこちら</a>
 			</div>
@@ -396,7 +393,7 @@
 
             </div>
              <div class="block-inner">
-				<a href="https://gms.ca-m.co.jp/report_download/" class="contact two">外国人採用に関する<br>
+				<a href="<?php echo home_url(); ?>/report_download/" class="contact two">外国人採用に関する<br>
 					資料ダウンロード</a>
 				<a href="#lp-contact" class="contact scroll">お問い合わせはこちら</a>
 			</div>
@@ -446,9 +443,6 @@
     </section>
 </div>
 <?php get_footer('lp'); ?>
-<?php get_footer(); ?>
-
-
 
 <script type="text/javascript">  
 	  

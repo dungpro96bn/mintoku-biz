@@ -19,11 +19,6 @@
 #header-menu.lp .inner-header {
     max-width: 1080px;
 }
-#header-menu {
-    width: 100%;
-    top: 22px !important;
-
-}
 #header-menu .header-logo {
     width: 100%;
 }
@@ -2216,8 +2211,14 @@ input::placeholder,textarea::placeholder {
 	background:#0022E4
 }
 
-#header-menu,#footer {
-	display:none
+#header-menu .header-inner{
+    justify-content: space-between;
+}
+#header-menu{
+    z-index: 9999 !important;
+}
+#header-menu .header-nav .toggle-menu{
+    display: none !important;
 }
 #header-menu.lp {
 	display:block !important
