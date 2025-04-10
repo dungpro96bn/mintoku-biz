@@ -81,7 +81,7 @@
 
     <div class="download-tabs">
         <div class="inner">
-            <form id="filter-form" method="GET" action="/report_download/">
+            <form id="filter-form" method="GET" action="<?php echo home_url(); ?>/report_download/">
                 <div class="tabs-list">
                     <label class="tab-action <?php echo (isset($_GET['category']) && $_GET['category'] == 'all' || !$_GET['category']) ? 'is-active' : ''; ?>" >
                         <input type="radio" name="category" value="all" <?php echo (!isset($_GET['category']) || $_GET['category'] == 'all') ? 'checked' : ''; ?>> ALL
@@ -180,7 +180,7 @@
                                 </h2>
                                 <div class="excerpt"><?= wp_trim_words(get_the_content(), 50, '...'); ?></div>
                                 <div class="link-page">
-                                    <form method="POST" action="/confirm_download/?id=<?= get_the_ID(); ?>">
+                                    <form method="POST" action="<?php echo home_url(); ?>/confirm_download/?id=<?= get_the_ID(); ?>">
                                         <button class="download-link link-single">ダウンロードはこちら<span>＞</span></button>
                                     </form>
                                 </div>

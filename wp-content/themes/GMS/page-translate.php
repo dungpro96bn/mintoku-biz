@@ -62,9 +62,9 @@
                                 <p>インドネシア語：16.5円/1文字</p>
                             </div>
                         </div>
-                        <div class="link-page">
+                        <!--div class="link-page">
                             <a href="#">詳しく見る ＞</a>
-                        </div>
+                        </div-->
                     </div>
                 </div>
                 <div class="feature-bottom">

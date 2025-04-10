@@ -70,17 +70,17 @@
         <div class="banner-block">
             <div class="inner">
                 <div class="banner-list">
-                    <div class="banner-item">
-                        <a href="#">
+                    <div class="banner-item comming-soon">
+                        <div>
                             <picture class="image">
                                 <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image12_pc.png 2x">
                                 <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image12_pc.png 2x">
                                 <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image12_pc.png" alt="">
                             </picture>
-                            <div class="title">
+                            <!--<div class="title">
                                 <p>オンライン展示会</p>
-                            </div>
-                        </a>
+                            </div>-->
+                        </div>
                     </div>
                     <div class="banner-item">
                         <a target="_blank" href="https://kjtimes.jp/">
@@ -105,8 +105,8 @@
                         <h3 class="title">選ばれる理由</h3>
                         <p class="text">大企業から中小企業までさまざまな<br class="pc-br"/>業種の企業にご活用いただいています。</p>
                         <div class="link-page">
-                            <a href="#"><span>資料ダウンロード</span><span class="icon">＞</span></a>
-                            <a href="#"><span>お問い合わせ</span><span class="icon">＞</span></a>
+                            <a href="https://stg.mintoku.com/biz/report_download/"><span>資料ダウンロード</span><span class="icon">＞</span></a>
+                            <a href="https://stg.mintoku.com/biz/contact/"><span>お問い合わせ</span><span class="icon">＞</span></a>
                         </div>
                     </div>
                     <div class="reason-image">

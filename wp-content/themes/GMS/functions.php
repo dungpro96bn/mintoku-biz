@@ -15,7 +15,7 @@ function homePath() { return home_url() . '/'; }
 add_shortcode('homePath', 'homePath');
 
 function enqueue_styles() {
-    wp_enqueue_style('style main.min', get_template_directory_uri() . '/assets/css/main.min.css', true, rand());
+    wp_enqueue_style('style main.min', get_template_directory_uri() . '/assets/css/main.css', true, rand());
 }
 add_action('wp_enqueue_scripts', 'enqueue_styles');
 

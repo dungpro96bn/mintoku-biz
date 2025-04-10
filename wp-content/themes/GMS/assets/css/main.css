@@ -5283,8 +5283,8 @@ body:not(.home) .partners {
   margin-bottom: 0;
 }
 .serviceCloudMaetra .banner-service .banner-info .banner-inner .banner-logo {
-  max-width: 413px;
-  margin: 13px 0 60px 0;
+/*   max-width: 413px; */
+  margin: 15px 0 0px 0;
 }
 .serviceCloudMaetra .banner-service .banner-info .banner-inner .heading {
   font-size: 60px;
@@ -5500,7 +5500,7 @@ body:not(.home) .partners {
 }
 
 #serviceCloudVR .banner-service .banner-logo {
-  margin: 0px 0 52px 0;
+/*   margin: 0px 0 52px 0; */
 }
 #serviceCloudVR .solution {
   padding-bottom: 56px;
@@ -5873,8 +5873,8 @@ body:not(.home) .partners {
     padding: 0 24px 0 30px;
   }
   .serviceCloudMaetra .banner-service .banner-info .banner-inner .banner-logo {
-    max-width: 314px;
-    margin: 23px 0 181px 0;
+	  margin: 15px auto 90px auto;
+	  text-align: center;
   }
   .serviceCloudMaetra .banner-service .banner-info .banner-inner .heading {
     font-size: 38px;
@@ -5883,7 +5883,6 @@ body:not(.home) .partners {
     padding: 0;
   }
   .serviceCloudMaetra .banner-top {
-    border-radius: 10px 10px 0 0;
     padding-bottom: 102px;
     padding-top: 25px;
     background-image: url(../images/service-cloud-bgt_sp.jpg);
@@ -6101,7 +6100,7 @@ body:not(.home) .partners {
     transform: translateX(-50%);
   }
   #serviceCloudVR .banner-service .banner-logo {
-    margin: 0px 0 151px 0;
+    margin: 0px 0 95px 0;
   }
   #serviceCloudVR .solution {
     padding-bottom: 40px;
@@ -6183,7 +6182,7 @@ body:not(.home) .partners {
     left: 0;
   }
   #serviceCloudMaetramain .banner-service .banner-info .banner-inner .banner-logo {
-    margin: 5px 0 118px 0;
+    margin: 5px auto 118px auto;
   }
   #serviceCloudMaetramain .banner-top {
     background-image: url(../images/maetra-line_sp.png);

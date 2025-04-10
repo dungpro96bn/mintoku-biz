@@ -74,7 +74,7 @@ if (is_page() || is_single()) {
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image09_pc.jpg" alt="">
                     </picture>
                     <div class="info">
-                        <h4 class="title">mintoku study</h4>
+                        <h4 class="title">edupoke global</h4>
                         <p class="text">読む・聞くだけでなく、話すというコミュニケーションに向けた専門アプリが利用できます。<br/>試験対策もバッチリ</p>
                     </div>
                     <div class="link-info">
@@ -102,7 +102,7 @@ if (is_page() || is_single()) {
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image10_pc.jpg" alt="">
                     </picture>
                     <div class="info">
-                        <h4 class="title">前トレ</h4>
+                        <h4 class="title">マエトレ</h4>
                         <p class="text">「伝える」と「伝わる」は違います！<br/>多言語対応のカンタン動画でわかりやすく伝わります！</p>
                     </div>
                     <div class="link-info">

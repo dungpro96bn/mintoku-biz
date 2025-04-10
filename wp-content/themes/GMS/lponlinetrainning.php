@@ -10,6 +10,7 @@
 <?php
 	get_header('lp');
 ?>
+<link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/style-old.css">
 
 <div id="cloudsystem">
 
@@ -404,5 +405,3 @@
 </div>
 <?php get_footer('lp'); ?>
 <?php get_footer(); ?>
-
-

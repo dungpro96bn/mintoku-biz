@@ -18,12 +18,13 @@
             </div>
             <div class="banner-info">
                 <div class="banner-inner">
+                	<h3 class="sub-title">クラウドサービス</h3>
                     <picture class="banner-logo">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvr_banner_logo.png">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvr_banner_logo.png">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvr_banner_logo.png 2x">
+                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvr_banner_logo.png 2x">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/cloudvr_banner_logo.png" alt="">
                     </picture>
-                    <h2 class="heading">前トレ with VRが<br>
+                    <h2 class="heading">マエトレ with VR が<br>
                         事業者の業績<br class="sp-br">UPに貢献</h2>
                 </div>
             </div>
@@ -134,11 +135,9 @@
                 <div class="heading-entry">
                     <p class="sub-ttl">高品質360°<br class="sp-br">パノラマVRを体験</p>
                 </div>
-                <picture>
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videovr_sp.png">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videovr.png">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/videovr.png" alt="">
-                </picture>
+                <div class="video-container">
+					  <div class="pera1-editable" data-pera1-type="embed_html" data-pera1-embed_block_id="8629dc98-f52b-4097-b428-337da709038e"><iframe height="500px" width="100%" style="max-width:100%;" src="https://spacely.co.jp/spacely_sample/kanagatatejun_picture" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+					</div>	
             </div>
         </div>
 
@@ -214,7 +213,7 @@
 
 
         <?php get_template_part("template-parts/banner-other"); ?>
-        <?php get_template_part("template-parts/service-cloud-support"); ?>
+        <!--<?php get_template_part("template-parts/service-cloud-support"); ?>-->
         <?php get_template_part("template-parts/line-up"); ?>
         <?php get_template_part("template-parts/contact-bottom"); ?>
 

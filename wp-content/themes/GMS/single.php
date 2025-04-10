@@ -146,8 +146,8 @@
                 </div> -->
             </div>
             <?php endif; ?>
-            <div class="back-link">
-                <a href="<?php bloginfo('url');?>/news">一覧へ戻る</a>
+            <div class="link-page">
+                <a href="<?php bloginfo('url');?>/news">お知らせ</a>
             </div>
         </div>
 

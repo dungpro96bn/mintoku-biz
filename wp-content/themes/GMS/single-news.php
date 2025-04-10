@@ -152,9 +152,7 @@
                 </div> -->
             </div>
             <?php endif; ?>
-            <div class="back-link">
-                <a href="<?php bloginfo('url');?>/news">一覧へ戻る</a>
-            </div>
+           
         </div>
         <div id="breadcrumb-footer" class="breadcrumb">  
            

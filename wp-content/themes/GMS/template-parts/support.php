@@ -13,9 +13,11 @@ if (is_page() || is_single()) {
 } elseif (is_date()) {
     $slug = get_query_var('year') . '-' . get_query_var('monthnum') . '-' . get_query_var('day');
 }
+
+$slugs = ["translate", "camcat", "life-support", "maetra", "videostep", "edpoke", "vr"];
 ?>
 
-<div class="support <?php echo $slug; ?> <?php if($slug == "life-support" || $slug == "edpoke"){echo 'price-item02';} ?>">
+<div class="support <?php echo $slug; ?> <?php if($slug == "life-support" || $slug == "edpoke"){echo 'price-item02';} ?>" <?php if (in_array($slug, $slugs)) { echo 'style="display:none;"';} ?>>
     <div class="inner">
         <div class="reason-content">
             <div class="reason-info">
@@ -38,8 +40,7 @@ if (is_page() || is_single()) {
                     </picture>
                 <?php else: ?>
                     <picture class="image">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png 2x">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png 2x">
+                        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png 2x">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png" alt="">
                     </picture>
                 <?php endif; ?>

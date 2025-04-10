@@ -5,7 +5,7 @@
 
 <style>
 #allDownload .dowload-single {
-    padding: 100px 0px 150px
+    padding: 120px 0px 150px
 }
 
 #allDownload .content-single .box-img {
@@ -89,7 +89,7 @@
 
 @media (max-width: 768px) {
     #allDownload .dowload-single {
-        padding: 50px 0px;
+        padding: 200px 0px 60px;
     }
 
     #allDownload .content-single .type {
@@ -142,66 +142,7 @@
 </style>
 <div id="allDownload" class="columns-container">
 
-    <div class="postBanner-top">
-        <div class="inner">
-            <div class="slider-post">
-                <ul class="post-list">
-                    <?php
-                    $args = array(
-                        'post_type'      => 'download',
-                        'post_status'    => 'publish',
-                        'order'          => 'DESC',
-                        'posts_per_page' => 5,
-//                    'meta_query'     => array(
-//                        array(
-//                            'key'     => 'slider_banner',
-//                            'value'   => 'Yes',
-//                            'compare' => 'LIKE'
-//                        )
-//                    ),
-                    );
-
-                    $result = new WP_Query ( $args );
-                    if ( $result-> have_posts() ) : ?>
-                        <?php while ( $result->have_posts() ) : $result->the_post(); ?>
-                            <li class="article-item">
-                                <a class="link-post" href="<?php the_permalink(); ?>">
-                                    <div class="image-post">
-                                        <?php
-                                        $image = get_the_post_thumbnail_url();
-                                        if($image):?>
-                                            <img src="<?php echo get_the_post_thumbnail_url(); ?>">
-                                        <?php else: ?>
-                                            <img src="<?php bloginfo('template_url'); ?>/images/no_image_download.jpg">
-                                        <?php endif; ?>
-                                    </div>
-                                    <div class="post-info">
-                                        <div class="cate-date">
-                                            <div class="category">
-                                                <?php
-                                                $country_lists = wp_get_post_terms($post->ID, 'download_cat', array("fields" => "all"));
-                                                foreach ($country_lists as $country_list) { ?>
-                                                    <span href="<?php echo get_category_link($country_list->term_id); ?>"><?php echo $country_list->name; ?></span>
-                                                <?php } ?>
-                                            </div>
-                                            <p class="date"><?php echo get_the_date(); ?></p>
-                                        </div>
-                                        <h2 class="title-post"><?php echo get_the_title(); ?></h2>
-                                        <div class="excerpt">
-                                            <?php
-                                            $content = get_the_content();
-                                            echo wp_trim_words($content, 50, '...');
-                                            ?>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        <?php endwhile; ?>
-                    <?php endif; ?>
-                </ul>
-            </div>
-        </div>
-    </div>
+    
 
     <?php 
         $post_link = get_the_permalink();

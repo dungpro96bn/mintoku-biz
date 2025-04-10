@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/aos.css"> 
+<link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/style-old.css"> 
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/aos.js"></script>
 <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/driver.css"> 
 
@@ -273,11 +273,3 @@
 		</section> 
 
 <?php get_footer(); ?>
-
-
-
-
-
-
-
-

@@ -3,6 +3,14 @@
 	global $post, $wp, $wp_query;
 ?>
 
+<script>
+    $(document).ready(function() {
+        $('html, body').animate({
+            scrollTop: $(".content-main").offset().top - 100
+        }, 0);
+    });
+</script>
+
 <div id="seminar-archive" class="columns-container">
 
     <div class="banner-page">
@@ -28,7 +36,7 @@
 
     <div class="inner">
 
-        <div class="seminar-special">
+        <div id="seminar-id" class="seminar-special">
             <h4 class="title-special">開催予定セミナーピックアップ</h4>
             <ul class="list-columns flex">
                 <?php

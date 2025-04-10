@@ -13,9 +13,10 @@ if (is_page() || is_single()) {
 } elseif (is_date()) {
     $slug = get_query_var('year') . '-' . get_query_var('monthnum') . '-' . get_query_var('day');
 }
+$slugs = ["translate", "camcat", "life-support", "maetra", "videostep", "edpoke", "vr"];
 ?>
 
-<div class="banner-other <?php echo $slug; ?>">
+<div class="banner-other <?php echo $slug; ?>" <?php if (in_array($slug, $slugs)) { echo 'style="margin-bottom:100px;"';} ?>>
     <div class="inner">
         <div class="banner-list">
             <div class="banner-item">

@@ -18,9 +18,10 @@
             </div>
             <div class="banner-info">
                 <div class="banner-inner">
+                	<h3 class="sub-title">クラウドサービス</h3>
                     <picture class="banner-logo">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png 2x">
+                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png 2x">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png" alt="">
                     </picture>
                     <h2 class="heading">母国語の動画で、<br>
@@ -129,7 +130,7 @@
                                 <p class="t2">03</p>
                             </div>
                             <div class="info-content">
-                                <h4 class="title">前トレ with VideoStepでできること</h4>
+                                <h4 class="title">マエトレ with VideoStepでできること</h4>
                                 <dl class="training-list">
                                     <dt class="training-item fl">
                                         <div class="box-text">
@@ -189,7 +190,7 @@
                                 <p class="t2">04</p>
                             </div>
                             <div class="info-content">
-                                <h4 class="title">前トレ with ビデオ<br class="sp-br">ステップは<br class="pc-br">
+                                <h4 class="title">マエトレ with ビデオ<br class="sp-br">ステップは<br class="pc-br">
                                     よく使う<br class="sp-br">教育動画コンテンツも<br class="sp-br">実装しております。</h4>
                                 <dl class="edu-list fl">
                                     <dt class="edu-item">
@@ -209,9 +210,6 @@
                                                 </span>
                                             </p>
 
-                                        </div>
-                                        <div class="link-page">
-                                            <a href="#" >詳しく見る ＞</a>
                                         </div>
                                     </dt>
 
@@ -240,8 +238,6 @@
                                             </p>
 
                                         </div>
-                                        <div class="link-page">
-                                            <a href="#" >詳しく見る ＞</a>
                                         </div>
                                     </dt>
                                 </dl>
@@ -271,7 +267,7 @@
         </div>
 
         <?php get_template_part("template-parts/banner-other"); ?>
-        <?php get_template_part("template-parts/service-cloud-support"); ?>
+       <!-- <?php get_template_part("template-parts/service-cloud-support"); ?>-->
         <?php get_template_part("template-parts/line-up"); ?>
         <?php get_template_part("template-parts/contact-bottom"); ?>
 

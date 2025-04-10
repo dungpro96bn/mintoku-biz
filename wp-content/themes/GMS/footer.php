@@ -41,13 +41,13 @@
                         </ul>
                         <ul class="footer-menu-list">
                             <li class="footer-menu-item">
-                                <a href="#">オンライン展示会</a>
+                                <a href="#" class="note-link">オンライン展示会</a>
                             </li>
                             <li class="footer-menu-item">
                                 <a target="_blank" href="https://kjtimes.jp/">海外人材タイムズ</a>
                             </li>
                             <li class="footer-menu-item">
-                                <a href="#">動画コンテンツ一覧</a>
+                                <a href="https://stg.mintoku.com/biz/report_download/?category=manual_video">動画コンテンツ一覧</a>
                             </li>
                         </ul>
                     </div>
@@ -55,7 +55,7 @@
                         <h4 class="title en">SERVICE</h4>
                         <ul class="menu-service-list">
                             <li class="menu-service-item">
-                                <a class="link-target" target="_blank" href="https://mintoku.work/">mintoku work</a>
+                                <a href="<?php echo home_url(); ?>/service/recuit-support/">採用サポート</a>
                             </li>
                             <li class="menu-service-item">
                                 <a href="<?php echo home_url(); ?>/service/assistant/">労務代行サービス</a>
@@ -64,10 +64,10 @@
                                 <a href="<?php echo home_url(); ?>/service/life-support/">生活支援サービス</a>
                             </li>
                             <li class="menu-service-item">
-                                <a class="link-target" target="_blank" href="https://edu-poke.jp/global">mintoku study</a>
+                                <a class="link-target" target="_blank" href="https://edu-poke.jp/global">edupoke global</a>
                             </li>
                             <li class="menu-service-item">
-                                <a href="<?php echo home_url(); ?>/service/cloud/maetra/">前トレ</a>
+                                <a href="<?php echo home_url(); ?>/service/cloud/maetra/">マエトレ</a>
                             </li>
                             <li class="menu-service-item">
                                 <a class="link-target" target="_blank" href="https://camtech-ea.net/">エデュックアカデミー</a>

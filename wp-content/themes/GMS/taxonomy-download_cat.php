@@ -123,7 +123,7 @@ global $post, $wp_query;
                                         ?>
                                     </div>
                                     <div class="link-page">
-                                        <form method="POST" action="/confirm_download/?id=<?php echo get_the_ID(); ?>">
+                                        <form method="POST" action="<?php echo home_url(); ?>/confirm_download/?id=<?php echo get_the_ID(); ?>">
                                             <button class="download-link link-single">ダウンロードはこちら<span>＞</span></button>
                                         </form>
                                     </div>
