@@ -8,61 +8,55 @@
                 <div class="banner-content">
                     <div class="image-content">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image01_pc.png 2x">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image01_pc.png 2x">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image01_pc.png" alt="">
+                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/main.png 2x">
+                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/main.png 2x">
+                            <img class="sizes" data-aos="zoom-in" src="<?php bloginfo('template_directory'); ?>/assets/images/main/main.png" alt="">
                         </picture>
                     </div>
-                    <h2 class="heading">
-                        <span>もっとスムーズに<br/>外国人パートナーと、<br/>共に安心して<br class="sp-br"/>働ける社会を。</span>
-                    </h2>
+                    <div class="banner-info">
+                        <p>もっとスムーズに<br class="sp-br"/>外国人パートナーと、</p>
+                        <h2>共に安心して<br/>働ける社会を。</h2>
+                    </div>
                 </div>
             </div>
+
+            <picture class="icon-pos image-icon01">
+                <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/pink_a.png 2x">
+                <img class="sizes" data-aos="fade-up-right" src="<?php bloginfo('template_directory'); ?>/assets/images/main/pink_a.png" alt="">
+            </picture>
+            <picture class="icon-pos image-icon02">
+                <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/yellow.png 2x">
+                <img class="sizes" data-aos="fade-left" src="<?php bloginfo('template_directory'); ?>/assets/images/main/yellow.png" alt="">
+            </picture>
+            <picture class="icon-pos image-icon03">
+                <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/green_a.png 2x">
+                <img class="sizes" data-aos="fade-up-right" src="<?php bloginfo('template_directory'); ?>/assets/images/main/green_a.png" alt="">
+            </picture>
+            <picture class="icon-pos image-icon04">
+                <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/blue.png 2x">
+                <img class="sizes" data-aos="fade-down-right" src="<?php bloginfo('template_directory'); ?>/assets/images/main/blue.png" alt="">
+            </picture>
+            <picture class="icon-pos image-icon05">
+                <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/perple.png 2x">
+                <img class="sizes" data-aos="fade-down-left" src="<?php bloginfo('template_directory'); ?>/assets/images/main/perple.png" alt="">
+            </picture>
+            <picture class="icon-pos image-icon06">
+                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/yellow.png 2x">
+                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/orange.png 2x">
+                <img class="sizes" data-aos="fade-up-left" src="<?php bloginfo('template_directory'); ?>/assets/images/main/orange.png" alt="">
+            </picture>
+            <div class="icon-pos image-icon07">
+                <picture class="image">
+                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/green_b.png 2x">
+                    <img class="sizes" data-aos="fade-up-left" src="<?php bloginfo('template_directory'); ?>/assets/images/main/green_b.png" alt="">
+                </picture>
+            </div>
+            <picture class="icon-pos image-icon08">
+                <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/pink_b.png 2x">
+                <img class="sizes" data-aos="fade-right" src="<?php bloginfo('template_directory'); ?>/assets/images/main/pink_b.png" alt="">
+            </picture>
 
             <?php get_template_part("template-parts/about-us"); ?>
-        </div>
-
-
-        <div class="feature">
-            <div class="inner">
-                <div class="heading-entry">
-                    <h2 class="heading-block">
-                        <span>FEATURE</span>
-                    </h2>
-                    <p class="sub-ttl">特徴</p>
-                </div>
-                <div class="feature-content">
-                    <ul class="feature-list">
-                        <li class="feature-item">
-                            <picture class="image">
-                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image03_pc.png 2x">
-                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image03_pc.png 2x">
-                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image03_pc.png" alt="">
-                            </picture>
-                            <p class="number en">01</p>
-                            <p class="text">一元化により<br/>中間労務コストをカット</p>
-                        </li>
-                        <li class="feature-item">
-                            <picture class="image">
-                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image04_pc.png 2x">
-                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image04_pc.png 2x">
-                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image04_pc.png" alt="">
-                            </picture>
-                            <p class="number en">02</p>
-                            <p class="text">採用効率を<br/>最大化</p>
-                        </li>
-                        <li class="feature-item">
-                            <picture class="image">
-                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image05_pc.png 2x">
-                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image05_pc.png 2x">
-                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image05_pc.png" alt="">
-                            </picture>
-                            <p class="number en">03</p>
-                            <p class="text">作業効率・生産性を<br/>UP</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
 
         <?php get_template_part("template-parts/line-up"); ?>
@@ -70,24 +64,24 @@
         <div class="banner-block">
             <div class="inner">
                 <div class="banner-list">
-                    <div class="banner-item comming-soon">
-                        <div>
+                    <div class="banner-item">
+                        <a target="_blank" href="https://mintoku.com/messe/">
                             <picture class="image">
-                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image12_pc.png 2x">
-                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image12_pc.png 2x">
-                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image12_pc.png" alt="">
+                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image12_pc.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image12_pc.jpg 2x">
+                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image12_pc.jpg" alt="">
                             </picture>
-                            <!--<div class="title">
+                            <div class="title">
                                 <p>オンライン展示会</p>
-                            </div>-->
-                        </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="banner-item">
                         <a target="_blank" href="https://kjtimes.jp/">
                             <picture class="image">
-                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.png 2x">
-                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.png 2x">
-                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.png" alt="">
+                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.jpg 2x">
+                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.jpg" alt="">
                             </picture>
                         </a>
                     </div>
@@ -103,18 +97,41 @@
                             <span>REASON</span>
                         </h2>
                         <h3 class="title">選ばれる理由</h3>
-                        <p class="text">大企業から中小企業までさまざまな<br class="pc-br"/>業種の企業にご活用いただいています。</p>
+                        <p class="text">大企業から中小企業までさまざまな<br/>業種の企業にご活用いただいています。</p>
                         <div class="link-page">
                             <a href="https://stg.mintoku.com/biz/report_download/"><span>資料ダウンロード</span><span class="icon">＞</span></a>
                             <a href="https://stg.mintoku.com/biz/contact/"><span>お問い合わせ</span><span class="icon">＞</span></a>
                         </div>
                     </div>
                     <div class="reason-image">
-                        <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png 2x">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png 2x">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image14_pc.png" alt="">
-                        </picture>
+                        <div class="reasonInfo-list">
+                            <div class="reasonInfo-item">
+                                <div class="title">
+                                    <p class="t1 icon">導入社数</p>
+                                    <p class="note">※2025年2月時点</p>
+                                </div>
+                                <div class="number-info">
+                                    <p class="text"><span class="number">2,000</span>社</p>
+                                    <p class="note sp-br">※2025年2月時点</p>
+                                </div>
+                            </div>
+                            <div class="reasonInfo-item">
+                                <div class="title">
+                                    <p class="t1">事務対応時間</p>
+                                </div>
+                                <div class="number-info">
+                                    <p class="text"><span class="number">55</span>%削減</p>
+                                </div>
+                            </div>
+                            <div class="reasonInfo-item">
+                                <div class="title">
+                                    <p class="t1">対応可能言語数</p>
+                                </div>
+                                <div class="number-info">
+                                    <p class="text"><span class="number">24</span>言語</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

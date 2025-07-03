@@ -1,20 +1,12 @@
 @use "../_var";
 
 .life-support-feature{
-  padding-top: 73px;
-
-  .heading-entry{
-    .heading-block{
-      margin-bottom: 2px;
-    }
-  }
+  padding-top: 102px;
 
   .feature-content{
-    padding-top: 34px;
     padding-bottom: 101px;
 
     @include var.xs{
-      padding-top: 55px;
       padding-bottom: 50px;
     }
 
@@ -217,6 +209,7 @@
 
         .see-more{
           margin-top: 22px;
+          display: none;
 
           p{
             font-size: 18px;

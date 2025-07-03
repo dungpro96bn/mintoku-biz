@@ -62,8 +62,9 @@
                         <?php the_content(); ?>
 
                         <?php
+						$catName = $cat->name;
                         $program = get_field( 'seminar_info' );
-                        if ( $program ) { ?>
+                        if ( $program && $catName == "セミナー") { ?>
                         <div class="seminar-info flex">
                             <h3 class="heading-block">
                                 <span class="ttl02">セミナー<br>開催情報</span>

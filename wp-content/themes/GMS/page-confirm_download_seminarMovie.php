@@ -87,6 +87,8 @@ if (is_page() || is_single()) {
                                     $category_name = $categories[0]->name; // Lấy tên danh mục đầu tiên
                                 }
 
+
+
                                 // Lấy URL của ảnh đại diện (thumbnail)
                                 $thumbnail_url = get_the_post_thumbnail_url($post_id, 'full'); // Lấy URL ảnh đại diện
 
@@ -94,6 +96,47 @@ if (is_page() || is_single()) {
                                 $arr_link[] = $post_title . PHP_EOL . $post_link . PHP_EOL . 'Category: ' . $category_name . PHP_EOL . 'Thumbnail URL: ' . $thumbnail_url . PHP_EOL;
 
                                 ?>
+
+<!--                                --><?php
+//                                $movie_links = '';
+//                                $number = 1;
+//                                if( have_rows('seminar_movie_url', $post_id) ):
+//                                    while ( have_rows('seminar_movie_url', $post_id) ) : the_row($post_id);
+//                                        $numMovie = $number++;
+//                                        $movie_url = get_sub_field('seminar_movie_item');
+//                                        if ($movie_url) {
+//                                            $movie_links .= '-第'.$numMovie.'部: ' . esc_html($movie_url) . "\n";
+//                                        }
+//                                    endwhile;
+//                                endif;
+//                                ?>
+
+                                <?php
+                                $movie_data = [];
+                                $number = 1;
+
+                                if (have_rows('seminar_movie_url', $post_id)) :
+                                    while (have_rows('seminar_movie_url', $post_id)) : the_row();
+                                        $url = get_sub_field('seminar_movie_item');
+                                        if ($url) {
+                                            $movie_data[] = [
+                                                'title' => '第' . $number++ . '部',
+                                                'url' => esc_url($url)
+                                            ];
+                                        }
+                                    endwhile;
+                                endif;
+
+// Đưa dữ liệu vào JS
+                                wp_register_script('custom-form-script', get_template_directory_uri() . '/js/custom-form.js', [], null, true);
+                                wp_enqueue_script('custom-form-script');
+                                wp_localize_script('custom-form-script', 'movieLinksData', $movie_data);
+                                ?>
+
+                                <div style="display: none">
+                                    <input type="hidden" name="field_title_post" value="<?= esc_attr($post_title); ?>">
+                                </div>
+
                                 <div class="selected-list-item">
                                     <div class="image-post">
                                         <?php if ($thumbnail_url) : ?>
@@ -110,12 +153,6 @@ if (is_page() || is_single()) {
                                         <h4 class="title-post">
                                             <?= esc_html($post_title); ?>
                                         </h4>
-<!--                                        <div class="excerpt">-->
-<!--                                            --><?php
-//                                            $content = apply_filters('the_content', $post_content);
-//                                            echo wp_trim_words($content, 50, '...');
-//                                            ?>
-<!--                                        </div>-->
                                         <input type="checkbox" hidden="hidden" id="download_id_selected"
                                                class="download_id_selected" name="download_id_selected[]" value="<?= $post_id; ?>"
                                                checked disabled/>
@@ -138,7 +175,7 @@ if (is_page() || is_single()) {
             <div class="contactForm <?php echo $slug; ?>">
                 <div class="inner">
                     <div class="form-main">
-                         <?php echo do_shortcode('[contact-form-7 id="5ec942c" title="お問い合わせフォーム Seminar download movie"]'); ?>
+                         <?php echo do_shortcode('[contact-form-7 id="8f7f692" title="お問い合わせフォーム Seminar download movie - step 1"]'); ?>
                     </div>
                 </div>
             </div>
@@ -171,6 +208,29 @@ if (is_page() || is_single()) {
 </main>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($){
+            $titlePost = $('input[name="field_title_post"]').val();
+            $('input[name="title_post"]').val($titlePost);
+        })
+
+        document.addEventListener('DOMContentLoaded', function () {
+            if (!Array.isArray(movieLinksData)) return;
+
+            movieLinksData.forEach((item, index) => {
+                const input = document.querySelector(`input[name="link_seminar_${index + 1}"]`);
+                const title = document.querySelector(`input[name="title_seminar_${index + 1}"]`);
+                if (input) {
+                    input.value = `${item.url}`;
+                }
+                if (title) {
+                    title.value = `${item.title}: `;
+                }
+            });
+        });
+
+    </script>
 
 <script>
 jQuery(document).ready(function($) {

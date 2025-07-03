@@ -14,27 +14,6 @@ $slug = $post->post_name;
 
 <div id="maetra" class ="edpoke">
 
-    <div class="banner-service">
-        <div class="image-content">
-            <picture class="image">
-                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/edpoke_mainImg_pc.png">
-                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/edpoke_mainImg_pc.png">
-                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/edpoke_mainImg_pc.png" alt="">
-            </picture>
-        </div>
-        <div class="banner-info">
-            <div class="banner-inner">
-                <picture class="banner-logo banner-edpoke">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/edpoke_logo_banner_img.png 2x">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/edpoke_logo_banner_img.png 2x">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/edpoke_logo_banner_img.png" alt="">
-                </picture>
-            </div>
-        </div>
-    </div>
-
-
-
     <?php get_template_part("template-parts/service-aboutUs"); ?>
 
     <div id="#maetra">

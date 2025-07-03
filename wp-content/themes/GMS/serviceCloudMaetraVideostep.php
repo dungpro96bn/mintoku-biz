@@ -7,30 +7,6 @@
 <?php get_header();?>
 
     <div id="serviceCloudVideostep" class="serviceCloudMaetra">
-        <!--        BANNER SERVICE-->
-        <div class="banner-service">
-            <div class="image-content">
-                <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/videostep_banner_sp.png">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudvideostep_banner_pc.png">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudvideostep_banner_pc.png" alt="">
-                </picture>
-            </div>
-            <div class="banner-info">
-                <div class="banner-inner">
-                	<h3 class="sub-title">クラウドサービス</h3>
-                    <picture class="banner-logo">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png 2x">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png 2x">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/cloudvideostep_banner_logo.png" alt="">
-                    </picture>
-                    <h2 class="heading">母国語の動画で、<br>
-                        “伝える”から<br class="sp-br">“伝わる”へ</h2>
-                </div>
-            </div>
-        </div>
-
-
 
         <?php get_template_part("template-parts/service-aboutUs"); ?>
 
@@ -250,9 +226,9 @@
         </div>
 
         <!--        STEP-->
-        <div class="step">
+        <div class="step-maetra">
             <div class="inner">
-                <div class="heading-entry">
+                <div class="heading-entry center">
                     <h2 class="heading-block">
                         <span class="uppercase">STEP</span>
                     </h2>
@@ -267,8 +243,9 @@
         </div>
 
         <?php get_template_part("template-parts/banner-other"); ?>
-       <!-- <?php get_template_part("template-parts/service-cloud-support"); ?>-->
+
         <?php get_template_part("template-parts/line-up"); ?>
+
         <?php get_template_part("template-parts/contact-bottom"); ?>
 
     </div>

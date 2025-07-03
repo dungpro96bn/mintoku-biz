@@ -41,7 +41,7 @@
                         </ul>
                         <ul class="footer-menu-list">
                             <li class="footer-menu-item">
-                                <a href="#" class="note-link">オンライン展示会</a>
+                                <a target="_blank" href="https://mintoku.com/messe/" >オンライン展示会</a>
                             </li>
                             <li class="footer-menu-item">
                                 <a target="_blank" href="https://kjtimes.jp/">海外人材タイムズ</a>
@@ -64,7 +64,7 @@
                                 <a href="<?php echo home_url(); ?>/service/life-support/">生活支援サービス</a>
                             </li>
                             <li class="menu-service-item">
-                                <a class="link-target" target="_blank" href="https://edu-poke.jp/global">edupoke global</a>
+                                <a class="link-target" target="_blank" href="https://edu-poke.jp/global">mintoku study</a>
                             </li>
                             <li class="menu-service-item">
                                 <a href="<?php echo home_url(); ?>/service/cloud/maetra/">マエトレ</a>

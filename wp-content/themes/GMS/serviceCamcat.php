@@ -14,36 +14,14 @@ $slug = $post->post_name;
 
 <div id="cloud">
 
-    <div class="banner-service banner-cloud">
-        <div class="image-content">
-            <picture class="image">
-                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/camcat_mainImg_pc.png">
-                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/camcat_mainImg_pc.png">
-                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/camcat_mainImg_pc.png" alt="">
-            </picture>
-        </div>
-        <div class="banner-info">
-            <div class="banner-inner">
-                <picture class="logo-job-support">
-                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo_cam_cat.png 2x">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/logo_cam_cat.png" alt="">
-                </picture>
-                <h3 class="sub-title">専門家無料相談サービス</h3>
-                <h2 class="heading">CAMCAT外国人<br/>雇用管理サービス</h2>
-            </div>
-        </div>
-    </div>
-
-
-
     <?php get_template_part("template-parts/service-aboutUs"); ?>
 
     <div class="camCat-feature">
-        <div class="heading-entry">
-            <h2 class="heading-block center">
-                <span>FEATURE</span>
+        <div class="heading-feature">
+            <h2 class="center">
+                <span class="ttl-ja">特徴</span>
+                <span class="ttl-en">FEATURE</span>
             </h2>
-            <p class="sub-ttl">特徴</p>
         </div>
         <div class="feature-service">
             <div class="inner">

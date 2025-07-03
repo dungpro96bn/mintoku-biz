@@ -7,43 +7,32 @@
 <?php get_header();?>
 
     <div id="serviceCloudMaetramain" class="serviceCloudMaetra">
-        <!--        BANNER SERVICE-->
-        <div class="banner-service">
-            <div class="image-content">
-                <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner_sp.png">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-pc.png">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-pc.png" alt="">
-                </picture>
-            </div>
-            <div class="banner-info">
-                <div class="banner-inner">
-                	<h3 class="sub-title">クラウドサービス</h3>
-                    <picture class="banner-logo">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-logo.png 2x">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-logo.png 2x">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_banner-logo.png" alt="">
-                    </picture>
-                    <h2 class="heading">動画とAI翻訳で外国人との<br class="pc-br">コミュニケーションをカンタンに！</h2>
-                </div>
-            </div>
-        </div>
-
-
 
         <?php get_template_part("template-parts/service-aboutUs"); ?>
-        <!--                CAU HOI THUONG GAP-->
+
         <div class="normal-qa">
             <div class="normal-qa-inner">
-                <h2 class="heading-block en">
-                    <span class="uppercase">Frequently asked questions</span>
-                </h2>
-                <h3 class="title">よくあるお悩み</h3>
-                <div class="asked-question">
+                <div class="about-info">
+                    <h2 class="heading-block en">
+                        <span class="uppercase">Frequently <br class="sp-br"/>asked questions</span>
+                    </h2>
+                    <h3 class="title">よくあるお悩み</h3>
+                </div>
+                <div class="image-list">
                     <picture class="image">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_asked_sp.png">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_asked.png">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloudmaetra_asked.png" alt="">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/maetra_image01_pc.png">
+                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/maetra_image01_pc.png">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/maetra_image01_pc.png" alt="">
+                    </picture>
+                    <picture class="image">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/maetra_image02_pc.png">
+                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/maetra_image02_pc.png">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/maetra_image02_pc.png" alt="">
+                    </picture>
+                    <picture class="image">
+                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/maetra_image03_pc.png">
+                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/maetra_image03_pc.png">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/maetra_image03_pc.png" alt="">
                     </picture>
                 </div>
             </div>

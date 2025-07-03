@@ -7,33 +7,8 @@
 <?php get_header();?>
 
     <div id="serviceCloudVR" class="serviceCloudMaetra">
-        <!--        BANNER SERVICE-->
-        <div class="banner-service">
-            <div class="image-content">
-                <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloud_vr_banner_sp.png">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/servicecloud_vr_banner-pc.png">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/servicecloud_vr_banner-pc.png" alt="">
-                </picture>
-            </div>
-            <div class="banner-info">
-                <div class="banner-inner">
-                	<h3 class="sub-title">クラウドサービス</h3>
-                    <picture class="banner-logo">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvr_banner_logo.png 2x">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/cloudvr_banner_logo.png 2x">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/cloudvr_banner_logo.png" alt="">
-                    </picture>
-                    <h2 class="heading">マエトレ with VR が<br>
-                        事業者の業績<br class="sp-br">UPに貢献</h2>
-                </div>
-            </div>
-        </div>
-
-
 
         <?php get_template_part("template-parts/service-aboutUs"); ?>
-
 
         <!--        SOLUTION-->
         <div class="solution">
@@ -191,7 +166,6 @@
             </div>
         </div>
 
-
         <!--        STEP-->
         <div class="step">
             <div class="inner">
@@ -209,12 +183,10 @@
             </div>
         </div>
 
-
-
-
         <?php get_template_part("template-parts/banner-other"); ?>
-        <!--<?php get_template_part("template-parts/service-cloud-support"); ?>-->
+
         <?php get_template_part("template-parts/line-up"); ?>
+
         <?php get_template_part("template-parts/contact-bottom"); ?>
 
     </div>

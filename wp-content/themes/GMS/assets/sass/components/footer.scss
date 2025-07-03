@@ -2,7 +2,11 @@
 
 #footer{
   background: #F3F3F3;
-  padding-top: 80px;
+  padding-top: 60px;
+
+  @include var.xs{
+    padding-top: 78px;
+  }
 
   .footer-content{
     display: flex;
@@ -10,10 +14,10 @@
     max-width: 1120px;
     margin: auto;
     justify-content: space-between;
-    padding-bottom: 78px;
+    padding-bottom: 67px;
 
     @include var.xs{
-      padding-bottom: 50px;
+      padding-bottom: 40px;
     }
 
   }
@@ -46,6 +50,10 @@
 
     .address{
       margin-bottom: 12px;
+
+      @include var.xs{
+        margin-bottom: 13px;
+      }
       p{
         font-size: 16px;
         line-height: 28px;
@@ -71,8 +79,8 @@
         }
 
         @include var.xs{
-          font-size: 16px;
-          line-height: 28px;
+          font-size: 14px;
+          line-height: 21px;
         }
 
       }
@@ -146,21 +154,21 @@
     }
 
     .footer-link-page{
-      margin-bottom: 83px;
+      margin-bottom: 72px;
 
       @include var.sm{
         margin-bottom: 60px;
       }
 
       @include var.xs{
-        margin-bottom: 28px;
+        margin-bottom: 16px;
       }
 
       .footer-menu-list{
         display: flex;
         flex-wrap: wrap;
         max-width: 520px;
-        margin: 0 auto 13px 0;
+        margin: 0;
         justify-content: space-between;
 
         a{
@@ -187,8 +195,13 @@
 
         @include var.xs{
           flex-direction: column;
-          margin-bottom: 12px;
-          row-gap: 12px;
+          margin-bottom: 0px;
+          row-gap: 0px;
+
+          .footer-menu-item{
+            display: flex;
+            margin-bottom: 12px;
+          }
         }
 
       }
@@ -212,6 +225,7 @@
         @include var.xs{
           font-size: 25px;
           line-height: 30px;
+          margin-bottom: 4px;
         }
 
       }
@@ -219,7 +233,7 @@
       .menu-service-list{
         display: flex;
         flex-wrap: wrap;
-        row-gap: 35px;
+        row-gap: 18px;
 
         .menu-service-item{
           width: 33.33%;
@@ -308,7 +322,7 @@
         @include var.xs{
           flex-direction: column;
           padding-left: 13px;
-          row-gap: 17px;
+          row-gap: 3px;
         }
 
       }
@@ -322,7 +336,7 @@
   }
 
   .copyright{
-    padding-bottom: 7px;
+    padding-bottom: 22px;
     p{
       font-size: 12px;
       line-height: 18px;

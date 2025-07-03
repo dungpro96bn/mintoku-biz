@@ -14,33 +14,29 @@ $slug = $post->post_name;
 
 <div id="consultation">
 
-    <div class="banner-service">
+    <div class="banner-top green <?php echo $slug; ?>">
+
         <div class="image-content">
             <picture class="image">
-                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/consultation_mainImg_pc.png">
-                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/consultation_mainImg_pc.png">
-                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/consultation_mainImg_pc.png" alt="">
+                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/main_consultation_mainImg_sp.jpg">
+                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/main_consultation_mainImg_pc.jpg">
+                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/main/main_consultation_mainImg_pc.jpg" alt="">
             </picture>
+            <h2 class="heading green">
+                <span>プロのアドバイスで、</span><br>
+                <span>外国人採用に安心と信頼を</span>
+            </h2>
+            <h3 class="sub-title color-green">専門家無料相談サービス</h3>
         </div>
-        <div class="banner-info">
-            <div class="banner-inner">
-                <h3 class="sub-title">専門家無料相談サービス</h3>
-                <h2 class="heading">プロのアドバイスで、<br/>外国人採用に安心と信頼を</h2>
-            </div>
-        </div>
-    </div>
 
-
-
-    <div class="banner-top green <?php echo $slug; ?>">
         <div class="about-content">
-            <div class="about-info">
+            <div class="about-info el-consultation">
                 <h2 class="heading-block en">
-                    <span class="uppercase">Frequently asked questions</span>
+                    <span class="uppercase">Frequently asked <br class="sp-br"/>questions</span>
                 </h2>
                 <h3 class="title">よくあるお悩み</h3>
             </div>
-            <div class="image-list">
+            <div class="image-list er-consultation">
                 <picture class="image">
                     <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/consultation_about_image01_pc.png">
                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/consultation_about_image01_pc.png">
@@ -170,8 +166,6 @@ $slug = $post->post_name;
             </div>
         </div>
     </div>
-
-    <?php get_template_part("template-parts/support"); ?>
 
     <?php get_template_part("template-parts/line-up"); ?>
 

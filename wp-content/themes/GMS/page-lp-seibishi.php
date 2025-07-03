@@ -27,8 +27,8 @@
 			<p class="text-description">日本における自動車の定期点検や車検等による整備作業は、<br class="pc-br"/>
 				路上故障の未然防止など自動車の安全確保等に重要な役割を果たしています。<br/>
 				一方で、アジア地域をはじめとする諸外国では自動車の保有台数が大幅に伸びている中、車 検等の制度整備や、<br class="pc-br"/>故障の未然防止に繋がる点検整備に関する技能、技術の習得ニーズが高まっています。<br class="sp-br"/>このニーズに対応するため、<br class="pc-br"/>平成28年4月に外国人を日本で一定期間に限り受け入れ、OJTを通じて技能、<br class="pc-br"/>技術又は知識の開発途上地域等への移転を図ることを目的とする外国人技能実習制度の職種に自動車整備が追加されるとともに、<br class="sp-br"/>一般社団法人日本自動車整備振興会連合会において外国人自動車整備技能実習評価試験を創設されました。</p>
-<!-- 			<p class="text-description">2019年4月に施行された特定技能の対象職種は14分野でしたが、2022年4月26日に<br class="pc-br"/>製造分野（素形材産業、産業機械製造業、電気・電子情報関連産業）が統合され、12分野となっています。<br/>
-				中小・小規模事業者をはじめとした人手不足は深刻化しており、我が国の経済・社会基盤の持続可能性を<br class="pc-br"/>阻害する可能性が出てきているため、生産性向上や国内人材確保のための取組を行ってもなお人材を確保することが<br class="pc-br"/>困難な状況にある産業上の分野において、一定の専門性技能を有し即戦力となる<br class="pc-br"/>外国人を受け入れていく仕組みを構築するために特定技能制度が創設されました。</p> -->
+			<!-- 			<p class="text-description">2019年4月に施行された特定技能の対象職種は14分野でしたが、2022年4月26日に<br class="pc-br"/>製造分野（素形材産業、産業機械製造業、電気・電子情報関連産業）が統合され、12分野となっています。<br/>
+中小・小規模事業者をはじめとした人手不足は深刻化しており、我が国の経済・社会基盤の持続可能性を<br class="pc-br"/>阻害する可能性が出てきているため、生産性向上や国内人材確保のための取組を行ってもなお人材を確保することが<br class="pc-br"/>困難な状況にある産業上の分野において、一定の専門性技能を有し即戦力となる<br class="pc-br"/>外国人を受け入れていく仕組みを構築するために特定技能制度が創設されました。</p> -->
 			<div class="text-bottom">
 				<picture class="image">
 					<source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/images/driver-upgrade/driver_image01_sp.png 2x">
@@ -101,36 +101,36 @@
 								<p class="text">日本語や文化を学ぶ自己啓発への奨学金で、企業様と実習生を<br class="sp-br"/>サポートします。</p>
 							</div>
 						</div>
-<!-- 						<div class="top-title">
-							<p class="t1">SUPPORT</p>
-							<p class="title_c">サポート体制</p>
-							<p class="desc_r">JOE協同組合では、様々なサポートプランをご用意しております。</br>
-						監理団体組合が本来やるべき項目のほか、多彩なサポートをアレンジ。</br>
-								提携会社によるリモートコンテンツの提供も豊富で、企業様のご要望をしっかりバックアップいたします。</p>
-						</div> -->
+						<!-- 						<div class="top-title">
+<p class="t1">SUPPORT</p>
+<p class="title_c">サポート体制</p>
+<p class="desc_r">JOE協同組合では、様々なサポートプランをご用意しております。</br>
+監理団体組合が本来やるべき項目のほか、多彩なサポートをアレンジ。</br>
+提携会社によるリモートコンテンツの提供も豊富で、企業様のご要望をしっかりバックアップいたします。</p>
+</div> -->
 						<div class="support_c">
-					
+
 							<picture class="image">
 								<source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/images/driver-upgrade/seibishi_support.png">
 								<source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/images/driver-upgrade/seibishi_support.png">
 								<img class="sizes" src="<?php bloginfo('template_directory'); ?>/images/driver-upgrade/seibishi_support.png" alt="">
 							</picture>
-						
+
 						</div>
-<!-- 						<div class="training">
-							<div class="training-info">
-								<h2 class="title">国内トップレベルのハイクオリティ・<br class="pc-br"/>ローコスト・実習生育成奨学金制度</h2>
-								<p class="text">技能実習生受入事業の優良な実務運営・徹底的な<br class="pc-br"/>コスト削減を図る一方で、<strong>実習生奨学金制度を確立</strong><br class="tb-sp"/>
-									企業様と共に国際貢献を実現し、<br class="sp-br"/>CSRに寄与いたします！</p>
-							</div>
-							<div class="training-image">
-								<picture class="image">
-									<source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/images/driver-upgrade/seibishi_image01_sp.png">
-									<source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/images/driver-upgrade/seibishi_image01_pc.png">
-									<img class="sizes" src="<?php bloginfo('template_directory'); ?>/images/driver-upgrade/seibishi_image01_pc.png" alt="">
-								</picture>
-							</div>
-						</div> -->
+						<!-- 						<div class="training">
+<div class="training-info">
+<h2 class="title">国内トップレベルのハイクオリティ・<br class="pc-br"/>ローコスト・実習生育成奨学金制度</h2>
+<p class="text">技能実習生受入事業の優良な実務運営・徹底的な<br class="pc-br"/>コスト削減を図る一方で、<strong>実習生奨学金制度を確立</strong><br class="tb-sp"/>
+企業様と共に国際貢献を実現し、<br class="sp-br"/>CSRに寄与いたします！</p>
+</div>
+<div class="training-image">
+<picture class="image">
+<source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/images/driver-upgrade/seibishi_image01_sp.png">
+<source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/images/driver-upgrade/seibishi_image01_pc.png">
+<img class="sizes" src="<?php bloginfo('template_directory'); ?>/images/driver-upgrade/seibishi_image01_pc.png" alt="">
+</picture>
+</div>
+</div> -->
 						<div class="operation">
 							<div class="operation-info">
 								<h2 class="title">外国人技能実習制度の適切かつ<br class="pc-br"/>クリーンな事業運営と<br class="pc-br"/>企業様コンプライアンスの遵守　</h2>
@@ -422,6 +422,9 @@
 	<div id="lp-contact" class="contact contact-lp">
 		<div class="inner">
 			<h2 class="title">ぜひお気軽に<br class="sp-br"/>お問合せください。<br/>いつでもご説明致します</h2>
+			<h4 class="lp-form-title" style="display: none;">
+				<?php the_title(); ?>
+			</h4>
 			<div class="contact-block">
 				<?php echo do_shortcode('[contact-form-7 id="3981" title="lpdriverstep1"]'); ?>
 			</div>
@@ -430,13 +433,23 @@
 
 </div>
 
+<script>
+	jQuery(function ($) {
+
+		window.onload = function() {
+			setTimeout(function() {
+				var titleText = $('.lp-form-title').text().trim();
+				var titleInput = $('input[name="lp-title"]').val();
+
+				if(titleInput !== titleText){
+					$('input[name="lp-title"]').val(titleText);
+				} else{
+					$('input[name="lp-title"]').val(titleText);
+				}
+			}, 1000); 
+		};
+
+	})
+</script>
 
 <?php get_footer(); ?>
-
-
-
-
-
-
-
-

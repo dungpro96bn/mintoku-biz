@@ -1,32 +1,4 @@
 <div class="raking-main">
-    <h3 class="title-qa">Q&Aランキング</h3>
-    <ul class="raking-list">
-        <?php
-        $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
-        $args = array(
-            'taxonomy' => 'rankinqa',
-            'hide_empty' => false,
-            'parent' => 0,
-            'posts_per_page' => "5",
-        );
-        $cats = get_categories($args);
-        $count03;
-        ?>
-        <?php foreach ($cats as $cat) :
-            $nameRanking = $cat->name;
-            $nameRankingchoice = substr($nameRanking, 3);
-            $idRanking = $cat->slug;
-            ?>
-            <li class="item-rank flex">
-                <span class="number-rank"><?php echo '0' . ($count03 = $count03 + 1) ?></span>
-                <a class="item-link"
-                   href="<?php bloginfo('url'); ?>/qa_detail/<?= esc_html($idRanking); ?>"><?= esc_html($nameRankingchoice); ?></a>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-</div>
-
-<div class="raking-main">
     <h3 class="title-qa">新着Q＆A</h3>
     <ul class="raking-list">
         <?php
@@ -56,5 +28,3 @@
         <?php endwhile; endif; ?>
     </ul>
 </div>
-
-

@@ -8,33 +8,15 @@
 
 <div id="assistant">
 
-    <div class="banner-service">
-        <div class="image-content">
-            <picture class="image">
-                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_mainImg_pc.png">
-                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_mainImg_pc.png">
-                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/assistant_mainImg_pc.png" alt="">
-            </picture>
-        </div>
-        <div class="banner-info">
-            <div class="banner-inner">
-                <h3 class="sub-title">労務代行サービス</h3>
-                <h2 class="heading">採用契約業務は<br/>プロに任せて<br class="sp-br"/>解放されよう</h2>
-            </div>
-        </div>
-    </div>
-
-
-
     <?php get_template_part("template-parts/service-aboutUs"); ?>
 
     <div class="assistant-feature">
         <div class="inner">
-            <div class="heading-entry">
-                <h2 class="heading-block center">
-                    <span>FEATURE</span>
+            <div class="heading-feature">
+                <h2 class="center">
+                    <span class="ttl-ja">特徴</span>
+                    <span class="ttl-en">FEATURE</span>
                 </h2>
-                <p class="sub-ttl">特徴</p>
             </div>
             <div class="feature-list">
                 <div class="feature-item">

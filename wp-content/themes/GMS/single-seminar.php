@@ -318,6 +318,8 @@ $report_seminar = get_field('seminar_report');
 
     </div>
 
+	<?php get_template_part('block-common/form_register'); ?>
+
     <div class="contact-banner">
         <div class="inner">
             <div class="info-banner">

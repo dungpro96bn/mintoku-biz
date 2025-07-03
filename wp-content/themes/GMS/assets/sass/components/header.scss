@@ -42,6 +42,11 @@
         justify-content: center;
         z-index: 9;
 
+        @include var.xs{
+          justify-content: flex-end;
+          padding-right: 8px;
+        }
+
         .icon{
           width: 33px;
           height: 26px;
@@ -119,15 +124,25 @@
 
       .logo{
         display: flex;
+
+        @include var.xs{
+          padding-bottom: 7px;
+        }
+
       }
 
       @include var.md{
-        width: 22%;
+        width: 23.5%;
       }
 
       @include var.sm{
         width: auto;
         max-width: 240px;
+      }
+
+      @include var.xs{
+        padding-left: 16px;
+        max-width: 256px;
       }
 
     }
@@ -137,8 +152,8 @@
       padding-right: 22px;
 
       @include var.md{
-        width: calc(78% - 280px);
-        padding-right: 15px;
+        width: calc(76.5% - 304px);
+        padding-right: min(1.72vw, 22px);
       }
 
       @include var.sm{
@@ -150,6 +165,7 @@
         padding: 20px 0 40px;
         display: none;
         overflow: auto;
+        z-index: 9;
 
         &.is-open{
           display: block;
@@ -207,6 +223,10 @@
           justify-content: center;
           padding: 0 16px;
           position: relative;
+
+          @include var.md{
+            padding: 0 min(1.25vw, 16px);
+          }
 
           &:before{
             content: "";
@@ -389,6 +409,11 @@
         line-height: 21px;
         color: #fff;
         font-weight: 600;
+        padding-bottom: 5px;
+
+        @include var.sm{
+          height: 77px;
+        }
 
         &.download-btn{
           background: #E48121;
@@ -401,7 +426,7 @@
       }
 
       @include var.md{
-        width: 280px;
+        width: 304px;
       }
 
       @include var.sm{
@@ -411,14 +436,29 @@
         left: 0;
         border-top: 3px solid #173C49;
 
-        &.is-openMenu{
-          display: none;
-        }
-
       }
 
     }
   }
 
+}
+
+.home {
+  #header-menu{
+    background: transparent;
+    box-shadow: unset;
+
+    .header-nav{
+      background: transparent;
+
+      @include var.sm{
+        background: #fff;
+      }
+
+      &.scroll-header{
+        background: #fff;
+      }
+    }
+  }
 }
 

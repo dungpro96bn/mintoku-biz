@@ -16,38 +16,30 @@ if (is_page() || is_single()) {
 $slugs = ["translate", "camcat", "life-support", "maetra", "videostep", "edpoke", "vr"];
 ?>
 
-<div class="banner-other <?php echo $slug; ?>" <?php if (in_array($slug, $slugs)) { echo 'style="margin-bottom:100px;"';} ?>>
+<div class="banner-other <?php echo $slug; ?>">
     <div class="inner">
         <div class="banner-list">
             <div class="banner-item">
-                <div class="image-banner">
-                    <picture class="image">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image15_pc.png">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image15_pc.png">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image15_pc.png" alt="">
-                    </picture>
-                </div>
                 <div class="info">
-                    <h4 class="title"><span>お役立ち資料</span></h4>
-                    <p>外国人材に関するサービス活用方法や、<br/>特定技能在留外国人推移などの資料が無料でダウンロード可能。</p>
+                    <picture class="image">
+                        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/banner-orther-icon01.png 2x">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/banner-orther-icon01.png" alt="">
+                    </picture>
+                    <h4 class="title">お役立ち資料</h4>
+                    <p>外国人材に関するサービス活用方法や、<br/>特定技能在留外国人推移などの資料が<br class="sp-br"/>無料でダウンロード可能。</p>
                 </div>
                 <div class="link-page">
                     <a href="<?php echo home_url(); ?>/report_download/?category=white_paper">詳しく見る ＞</a>
                 </div>
             </div>
             <div class="banner-item">
-                <div class="image-banner">
-                    <picture class="image">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image16_pc.png">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image16_pc.png">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image16_pc.png" alt="">
-                    </picture>
-                </div>
                 <div class="info">
-                    <h4 class="title"><span>セミナー</span></h4>
-                    <p>外国人採用に関するセミナーを<br/>
-                        様々なテーマで開催<br/>
-                        過去セミナーの動画もダウンロード可能</p>
+                    <picture class="image">
+                        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/banner-orther-icon02.png 2x">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/banner-orther-icon02.png" alt="">
+                    </picture>
+                    <h4 class="title">セミナー</h4>
+                    <p>外国人採用に関するセミナーを<br class="sp-br"/>様々なテーマで開催<br/>過去セミナーの動画もダウンロード可能</p>
                 </div>
                 <div class="link-page">
                     <a href="<?php echo home_url(); ?>/seminar/">詳しく見る ＞</a>

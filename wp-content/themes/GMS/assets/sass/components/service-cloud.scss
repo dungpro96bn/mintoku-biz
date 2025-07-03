@@ -693,6 +693,7 @@
       color: #2A4852;
       font-weight: bold;
       margin-bottom: 40px;
+      letter-spacing: -1px;
 
       @include sm{
         font-size: 26px;
@@ -703,6 +704,7 @@
         font-size: 22px;
         line-height: 1.5;
         margin-bottom: 25px;
+        letter-spacing: 0;
       }
 
     }
@@ -794,19 +796,17 @@
     }
   }
   .banner-top{
-    background-color: #3164AA;
-    background-image: url(../images/service-cloud-bgt.jpg);
-    background-position: 100% 100%;
-    padding-bottom: 124px;
-    padding-top: 76px;
+
     .about-content{
-      max-width: 999px;
       position: relative;
-      left: 6px;
       .about-info{
         .heading-block span{
-          letter-spacing: -1.35px;
           margin-bottom: 3px;
+
+          @include xs{
+            letter-spacing: 0;
+          }
+
         }
         .title{
           margin-bottom: 23px;
@@ -816,10 +816,8 @@
     }
   }
   .solution {
-    padding-top: 73px;
     padding-bottom: 40px;
     background: #fff;
-    margin-top: -2px;
     position: relative;
     .link-page a {
       display: flex;
@@ -1034,7 +1032,7 @@
   }
   //SOLUTION
   .solution{
-    padding-bottom: 56px;
+
 
     .heading-entry {
       margin-bottom: 120px;
@@ -1213,7 +1211,7 @@
         margin-bottom: 22px;
       }
       picture{
-        max-width: 805px;
+        max-width: 860px;
         position: relative;
         left: 10px;
       }
@@ -1224,38 +1222,54 @@
 //page PARENT MAETRA
 #serviceCloudMaetramain{
 
-  .banner-top{
-    background-image: url(../images/maetra-line.png);
-    padding-bottom: 152px;
-    .about-content{
-      .title{
-        margin-bottom: 8px;
+
+  .normal-qa{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='2088.172' viewBox='0 0 1280 2088.172'%3E%3Cg id='Group_1181' data-name='Group 1181' transform='translate(0 313.586)'%3E%3Cpath id='Path_77' data-name='Path 77' d='M37-750H1243c20.435,0,37,21.15,37,47.239v1917.62L0,1226.191V-702.761C0-728.85,16.565-750,37-750Z' transform='translate(0 436.414)' fill='%233164aa'/%3E%3Cpath id='Path_78' data-name='Path 78' d='M637.8-42.819l642.172,83.363V112c0,2.682-45.72,47.053-276.707,45.3S659.362,81.364,349.614,81.364,0,123.4,0,123.4V40.455Z' transform='translate(1280 1731.767) rotate(180)' fill='%233164aa'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    padding-bottom: min(11.33vw, 145px);
+    position: relative;
+
+    .normal-qa-inner{
+      max-width: 1090px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .about-info{
+      margin-bottom: 62px;
+
+      @include xs{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
       }
 
     }
-  }
-  .normal-qa{
 
-    background-color: #3164AA;
-    background-repeat: no-repeat;
-    background-image: url(../images/serviceCloudMaetramain_rec.jpg);
-    background-position: 100% 100%;
-    background-size:100%;
-    padding-top:78px;
-    padding-bottom: 222px;
-    position: relative;
-    top: -1px;
-    .normal-qa-inner{
-      max-width: 1072px;
-      margin: 0px auto 0 auto;
-    }
     .heading-block{
       text-align: center;
-      margin-bottom: -4px;
+
+      @include xs{
+        order: 2;
+        justify-content: center;
+        display: flex;
+      }
+
       span{
-        letter-spacing: -1.35px;
-        line-height: 1.4;
-        color:#fff;
+        font-size: min(3.52vw, 45px);
+        line-height: 1;
+        color: #fff;
+        margin-bottom: 8px;
+
+        @include xs{
+          font-size: min(5.33vw, 20px);
+          line-height: 1.4;
+          text-align: center;
+          letter-spacing: 0;
+        }
+
       }
       span:after{
         bottom: 17px;
@@ -1265,20 +1279,54 @@
       text-align: center;
       font-size:40px;
       color:#fff;
+
+      @include sm{
+        font-size: 24px;
+      }
+
+      @include xs{
+        text-align: center;
+        order: 1;
+        font-size: min(8.53vw, 32px);
+        line-height: 1.375;
+        margin-bottom: 8px;
+        padding: 0;
+        margin-top: 0;
+      }
+
     }
     .asked-question{
       margin-top: 71px;
     }
+
+    .image-list{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 48px;
+
+      @include sm{
+        column-gap: 22px;
+      }
+
+      @include xs{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 40px;
+        max-width: min(70.4vw, 400px);
+        margin: auto;
+      }
+
+    }
+
   }
   .solution{
-    padding-top: 51px;
+    padding-top: 105px;
     padding-bottom: 22px;
     .heading-entry{
       margin-bottom: 104px;
       .sub-ttl{
-        margin-top: 11px;
+        margin-top: -6px;
         padding-left: 0;
-        padding-right: 16px;
       }
     }
     .solution-item{
@@ -1320,19 +1368,9 @@
 
     //BANNER TOP
     .banner-top{
-      padding-bottom: 88px;
+      padding-bottom: 80px;
       .about-content{
-        left:0;
-        width: calc(100% - 50px);
         .about-info{
-          .heading-block{
-            span{
-              font-size: 37px;
-            }
-          }
-          .info {
-            font-size: 14px;
-          }
           .title {
             font-size: 28px;
           }
@@ -1485,34 +1523,21 @@
 
     //BANNER TOP
     .banner-top{
-      border-radius: 10px 10px 0 0;
-      padding-bottom: 102px;
-      padding-top: 25px;
-      background-image: url(../images/service-cloud-bgt_sp.jpg);
+      padding-bottom: 60px;
+      padding-top: 98px;
       .about-content{
-        width: calc(100% - 34px);
-        row-gap: 53px;
         .about-info{
           width: 100%;
           margin-bottom: 0px;
-          .heading-block span{
-            font-size: 45px;
-            line-height: 1.2;
-          }
           .title{
             font-size: 32px;
             line-height: 1.38;
             margin-bottom: 18px;
             margin-top: -14px;
           }
-          .info{
-            font-size: 16px;
-            line-height: 1.75;
-            padding-right: 0;
-          }
         }
         .about-image{
-          width: 100%;
+          //width: 100%;
         }
       }
     }
@@ -1520,8 +1545,7 @@
     //SOLUTION
     .solution{
       overflow: hidden;
-      padding-top: 66px;
-      padding-bottom: 40px;
+
       .inner{
         padding:0;
       }
@@ -1532,7 +1556,7 @@
       .heading-entry{
         margin-bottom: 60px;
         .sub-ttl{
-          font-size: 32px;
+          font-size: min(8.53vw, 32px);
           line-height: 1.44;
           padding-left: 0px;
           margin-top: 15px;
@@ -1579,7 +1603,7 @@
               }
               .t2 {
                 font-size: 21px;
-                line-height: 8px;
+                line-height: 1.2;
               }
             }
             .info-content{
@@ -1729,8 +1753,6 @@
       margin: 0px 0 151px 0;
     }
     .solution {
-      padding-bottom: 40px;
-      padding-top: 40px;
       .heading-entry {
         margin-bottom: 69px;
       }
@@ -1835,22 +1857,15 @@
     .banner-service .banner-info .banner-inner .banner-logo {
       margin: 5px 0 118px 0;
     }
-    .banner-top {
-      background-image: url(../images/maetra-line_sp.png);
-      padding-bottom: 105px;
-    }
     .normal-qa{
-      background-image: url(../images/serviceCloudMaetramain_rec_sp.jpg);
-      padding-top: 66px;
-      padding-bottom: 205px;
+      padding-top: 88px;
+      padding-bottom: 122px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='376' height='1923.172' viewBox='0 0 376 1923.172'%3E%3Cg id='Group_1236' data-name='Group 1236' transform='translate(1 -280)'%3E%3Cpath id='Path_184' data-name='Path 184' d='M10.869,0H365.131C371.134,0,376,27.094,376,60.517V1799.741L.975,1813.961,0,60.517C0,27.094,4.866,0,10.869,0Z' transform='translate(-1 280)' fill='%233164aa'/%3E%3Cpath id='Path_185' data-name='Path 185' d='M189.254,0,375.005,83.3V153.74c0,2.682-8.767,48.136-77.307,46.381s-102.047-75.938-193.958-75.938S0,166.22,0,166.22V83.273Z' transform='translate(375 2203.172) rotate(180)' fill='%233164aa'/%3E%3C/g%3E%3C/svg%3E%0A");
+
       .heading-block span{
         letter-spacing: normal;
       }
-      .title {
-        font-size: 32px;
-        margin-top: 7px;
-        padding-left: 20px;
-      }
+
       .asked-question {
         margin-top: 52px;
         max-width: calc(100% - 16px);
@@ -1864,9 +1879,8 @@
 
 
     .solution {
-      padding-top: 29px;
-      padding-bottom: 67px;
-      padding-bottom: 22px;
+      padding-top: 76px;
+      padding-bottom: 60px;
       .heading-entry {
         margin-bottom: 61px;
         .sub-ttl {

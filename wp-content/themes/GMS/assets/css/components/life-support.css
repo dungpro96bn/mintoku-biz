@@ -43,18 +43,13 @@
 }
 
 .life-support-feature {
-  padding-top: 73px;
-}
-.life-support-feature .heading-entry .heading-block {
-  margin-bottom: 2px;
+  padding-top: 102px;
 }
 .life-support-feature .feature-content {
-  padding-top: 34px;
   padding-bottom: 101px;
 }
 @media (max-width: 767px) {
   .life-support-feature .feature-content {
-    padding-top: 55px;
     padding-bottom: 50px;
   }
 }
@@ -227,6 +222,7 @@
 }
 .life-support-feature .feature-item .feature-top .info-content .see-more {
   margin-top: 22px;
+  display: none;
 }
 .life-support-feature .feature-item .feature-top .info-content .see-more p {
   font-size: 18px;
