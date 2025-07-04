@@ -135,7 +135,7 @@ $templateDir = get_template_directory_uri();
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="<?php echo esc_url($image['url']); ?> 2x">
                         <source media="(min-width: 768px)" srcset="<?php echo esc_url($image['url']); ?> 2x">
-                        <img class="sizes" data-aos="fade-up" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <img class="sizes" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                     </picture>
                 <?php endif; ?>
             </div>
