@@ -271,6 +271,10 @@
                             Tel：03-6738-9686（受け付け時間 9:00～18:00、土・日・祝日、他当社休業日を除く）<br/>
                             Email：privacy_cg@cam-com.jp
                         </p>
+                        <picture class="image">
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/privacy-logo.png">
+                            <img class="sizes" width="103" src="<?php bloginfo('template_directory'); ?>/assets/images/privacy-logo.png" alt="">
+                        </picture>
                     </div>
 
                 </div>
@@ -281,9 +285,8 @@
 </div>
 <?php get_template_part("template-parts/banner-other"); ?>
 
-<?php get_template_part("template-parts/service-cloud-support"); ?>
-
 <?php get_template_part("template-parts/line-up"); ?>
 
 <?php get_template_part("template-parts/contact-bottom"); ?>
+
 <?php get_footer(); ?>
