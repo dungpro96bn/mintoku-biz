@@ -63,8 +63,8 @@
                         </picture>
                     </div>
                     <div class="list-page">
-                        <a target="_blank" href="/biz/lp-seibishi/">ドライバー</a>
-                        <a target="_blank" href="/biz/lp-driver/">整備士</a>
+                        <a target="_blank" href="/biz/lp-driver/">ドライバー</a>
+                        <a target="_blank" href="/biz/lp-seibishi/">整備士</a>
                         <p class="coming-soon">Coming soon</p>
                         <p class="coming-soon">Coming soon</p>
                         <p class="coming-soon">Coming soon</p>
