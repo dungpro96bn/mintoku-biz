@@ -222,6 +222,17 @@
     margin-bottom: 12px;
   }
 }
+@media (max-width: 767px) {
+  #footer .footer-right .footer-link-page .footer-menu-list:nth-child(2) .footer-menu-item:nth-child(1) {
+    order: 1;
+  }
+  #footer .footer-right .footer-link-page .footer-menu-list:nth-child(2) .footer-menu-item:nth-child(2) {
+    order: 3;
+  }
+  #footer .footer-right .footer-link-page .footer-menu-list:nth-child(2) .footer-menu-item:nth-child(3) {
+    order: 2;
+  }
+}
 #footer .footer-right .footer-service {
   padding-left: 3px;
 }

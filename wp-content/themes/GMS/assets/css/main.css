@@ -628,6 +628,17 @@
     margin-bottom: 12px;
   }
 }
+@media (max-width: 767px) {
+  #footer .footer-right .footer-link-page .footer-menu-list:nth-child(2) .footer-menu-item:nth-child(1) {
+    order: 1;
+  }
+  #footer .footer-right .footer-link-page .footer-menu-list:nth-child(2) .footer-menu-item:nth-child(2) {
+    order: 3;
+  }
+  #footer .footer-right .footer-link-page .footer-menu-list:nth-child(2) .footer-menu-item:nth-child(3) {
+    order: 2;
+  }
+}
 #footer .footer-right .footer-service {
   padding-left: 3px;
 }
@@ -3057,6 +3068,9 @@ body:not(.home) .line-up {
   .banner-top.bannerBg-blue-2.videostep {
     padding-bottom: 134px;
   }
+  .banner-top.bannerBg-blue-2.vr {
+    padding-bottom: 95px;
+  }
 }
 .banner-top.bannerBg-orange {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='1247.045' viewBox='0 0 1280 1247.045'%3E%3Cpath id='Path_364' data-name='Path 364' d='M37-689.213H1243c20.435,0,36.766.221,37,0V515.813c0,2.489-41.75,43.6-273.484,41.973S661.5,487.32,350.746,487.32,0,526.327,0,526.327V-689.213C0-689.084,16.565-689.213,37-689.213Z' transform='translate(0 689.213)' fill='%23d05620'/%3E%3C/svg%3E%0A");
@@ -3716,6 +3730,17 @@ body:not(.home) .line-up {
   padding-left: 8px;
   margin-top: max(-4.22vw, -54px);
 }
+@media (max-width: 767px) {
+  .banner-top .about-image.er-vr {
+    position: absolute;
+    bottom: -116px;
+    right: 10px;
+    padding-left: 0;
+    width: min(58.4vw, 219px);
+    top: unset;
+    display: flex;
+  }
+}
 .banner-top .about-image.er-vr img {
   width: min(32.27vw, 413px);
 }
@@ -3754,7 +3779,6 @@ body:not(.home) .line-up {
 @media (max-width: 767px) {
   .banner-top .edpoke-contact {
     flex-direction: column;
-    align-items: center;
     row-gap: 20px;
     width: 100%;
     margin-top: 0;
@@ -3787,7 +3811,7 @@ body:not(.home) .line-up {
     column-gap: min(2.67vw, 10px);
     width: 100%;
     max-width: 380px;
-    margin: auto;
+    margin: 0;
     justify-content: center;
   }
 }
