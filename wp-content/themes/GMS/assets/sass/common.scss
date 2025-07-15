@@ -1094,7 +1094,7 @@
 
 
 .recuitSupport-list{
-  margin-bottom: 72px;
+  margin-bottom: 90px;
   padding-right: 24px;
 
   @include var.sm{
@@ -1103,7 +1103,7 @@
 
   @include var.xs{
     padding: 0 3px;
-    margin-bottom: 24px;
+    margin-bottom: 62px;
   }
 
   .recuitSupport-item{
@@ -1115,10 +1115,15 @@
     padding: 45px 40px 50px 65px;
     color: #fff;
     max-width: 1140px;
-    margin: auto;
+    margin: 0 auto 58px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
 
     @include var.sm{
       padding: 50px 30px;
+      margin-bottom: 37px;
     }
 
     @include var.xs{

@@ -74,7 +74,35 @@
                         <p class="coming-soon">Coming soon</p>
                         <p class="coming-soon">Coming soon</p>
                     </div>
+                </div>
 
+                <div class="recuitSupport-item">
+                    <div class="recuitSupport-content">
+                        <div class="title">
+                            <h2>技人国ビザ採用</h2>
+                        </div>
+                        <div class="info">
+                            <p>IT、マーケティング、海外事業展開など、新たなビジネスチャンスを掴むためには、これまでにない視点や専門性が必要です。私たちは、アジア全域に広がる独自のネットワークから、貴社に新しい風を吹き込む優秀なグローバル人材を発掘します。</p>
+                        </div>
+                    </div>
+                    <div class="image-content">
+                        <picture class="image">
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support-image03.jpg">
+                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support-image03.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="list-page">
+                        <p class="coming-soon">Coming soon</p>
+                        <p class="coming-soon">Coming soon</p>
+                        <p class="coming-soon">Coming soon</p>
+                        <p class="coming-soon">Coming soon</p>
+                        <p class="coming-soon">Coming soon</p>
+                        <p class="coming-soon">Coming soon</p>
+                        <p class="coming-soon">Coming soon</p>
+                        <p class="coming-soon">Coming soon</p>
+                        <p class="coming-soon">Coming soon</p>
+                        <p class="coming-soon">Coming soon</p>
+                    </div>
                 </div>
 
             </div>

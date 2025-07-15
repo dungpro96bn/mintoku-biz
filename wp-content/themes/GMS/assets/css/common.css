@@ -996,7 +996,7 @@
 }
 
 .recuitSupport-list {
-  margin-bottom: 72px;
+  margin-bottom: 90px;
   padding-right: 24px;
 }
 @media (max-width: 1023px) {
@@ -1007,7 +1007,7 @@
 @media (max-width: 767px) {
   .recuitSupport-list {
     padding: 0 3px;
-    margin-bottom: 24px;
+    margin-bottom: 62px;
   }
 }
 .recuitSupport-list .recuitSupport-item {
@@ -1019,11 +1019,15 @@
   padding: 45px 40px 50px 65px;
   color: #fff;
   max-width: 1140px;
-  margin: auto;
+  margin: 0 auto 58px;
+}
+.recuitSupport-list .recuitSupport-item:last-child {
+  margin-bottom: 0;
 }
 @media (max-width: 1023px) {
   .recuitSupport-list .recuitSupport-item {
     padding: 50px 30px;
+    margin-bottom: 37px;
   }
 }
 @media (max-width: 767px) {
