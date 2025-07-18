@@ -171,7 +171,7 @@ body #lp-inshoku * {
 }
 #lp-inshoku .main-banner .news-top .news-info .text-news{
     font-size: 34px;
-    line-height: 40px;
+    line-height: 1.2;
     color: #E48121;
     font-weight: bold;
     position: relative;
@@ -308,11 +308,16 @@ body #lp-inshoku * {
     position: absolute;
     width: 71px;
     height: 7px;
-    background: #fff;
+    background: #FFF000;
     top: 15px;
     left: -98px;
 }
-
+#lp-inshoku .business .top-title .t1{
+    color: #FFF000;
+}
+#lp-inshoku .benefits-service .top-title .t1:before{
+    background: #fff;
+}
 .seibishi-page .top-title .t1:before {
     content: "";
     position: absolute;
@@ -763,6 +768,7 @@ body #lp-inshoku * {
 .support .box-text {
     flex: 1;
 }
+
 @media (max-width: 600px) {
     .box {
         flex: 1 1 100%;
@@ -1765,6 +1771,14 @@ body #lp-inshoku * {
 
 .page-id-4460 #footer {
     background: #2A4852;
+}
+
+@media (max-width: 1440px) {
+
+    #lp-inshoku .main-banner .news-top .news-info .text-news{
+        font-size: 32px;
+    }
+
 }
 
 
@@ -3475,6 +3489,8 @@ body #lp-inshoku * {
 .contact-lp input[type="checkbox"] {
     width: 0px;
     height: 0px;
+    opacity: 0;
+    position: absolute;
 }
 .box-check {
     text-align: center;
