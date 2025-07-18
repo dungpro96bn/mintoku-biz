@@ -1,0 +1,435 @@
+@charset "UTF-8";
+body {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 16px;
+}
+.sp-only {
+	display: none;
+}
+.pc-only {
+	display: block;
+}
+.txt-right {
+	text-align: right;
+}
+.txt-center {
+	text-align: center;
+}
+.inner {
+	width: 100%;
+	max-width: 1000px;
+}
+
+header {
+	width: 100%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+}
+.header {
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+}
+.header img.logo {
+	width: 40%;
+	max-width: 400px;
+}
+nav ul {
+	display: flex;
+	align-items: center;
+}
+nav ul li p {
+	padding: 0 10px 0 0;
+	font-size: 14px;
+}
+nav ul li p span {
+	font-size: 25px;
+	line-height: 1.6;
+}
+nav ul li {
+	width: 80px;
+}
+nav ul li.pc-only {
+	width: auto;
+}
+
+.fv {
+	position: relative;
+	height: calc(100vh - 80px);
+}
+.fv picture.kv img {
+	height: calc(100vh - 80px);
+	object-fit: cover;
+	object-position: top;
+}
+.fv .heading1 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 50px 0;
+	background-image: linear-gradient(0deg, #ffffff 50%, transparent);
+}
+.fv .heading1 h1 {
+	width: 100%;
+	max-width: 1000px;
+}
+
+.worry {
+	padding: 100px 20px 0;
+	display: flex;
+	justify-content: center;
+	background: #0079b9;
+}
+.worry .inner {
+	position: relative;
+}
+.worry p {
+	font-size: min(3.1vw,30px);
+	line-height: 2;
+	color: #fff;
+}
+.worry img.introduce {
+	width: 38.8%;
+	max-width: 388px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.worry .worry-illust {
+	margin: 100px 0 0;
+}
+
+.cta {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background: #0079b9;
+	padding: 50px 20px 100px;
+}
+.cta h2 {
+	margin: 0 0 30px;
+}
+.cta p {
+	font-size: min(2.7vw,30px);
+	line-height: 2;
+	color: #fff;
+	text-align: center;
+}
+.cta .cta-btn {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 50px 0 0;
+}
+.cta .cta-btn .cta-contact {
+	width: 56%;
+	margin: 0 2% 0 0; 
+}
+.cta .cta-btn .cta-tel {
+	width: 40%;
+	margin: 0 0 0 2%; 
+}
+.cta .cta-btn .cta-dl {
+	width: 40%;
+	margin: 30px 2% 0 0; 
+}
+.cta .cta-btn .cta-seminar {
+	width: 40%;
+	margin: 30px 0 0 2%; 
+}
+.cta .cta-btn .cta-contact:hover,
+.cta .cta-btn .cta-dl:hover,
+.cta .cta-btn .cta-seminar:hover {
+	transform: scale(1.05, 1.05);
+	transition: ease-in .1s;
+}
+
+.point {
+	padding: 100px 20px;
+	background: #f2f2f2;
+	display: flex;
+	justify-content: center;
+}
+.point h2 {
+	width: 100%;
+	max-width: 1000px;
+}
+.point ul li {
+	margin: 50px 0 0;
+}
+
+.value {
+	padding: 100px 20px 0;
+	display: flex;
+	justify-content: center;
+	background: url("../img/value-bg-pc.jpg") no-repeat bottom center / cover;
+}
+.value h2 {
+	font-size: 50px;
+	margin: 0 0 30px;
+	text-align: center;
+	color: #0079b9;
+}
+.value p {
+	font-size: min(3vw,30px);
+	line-height: 2;
+	text-align: center;
+}
+.value ul.value-point {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0 0;
+}
+.value ul.value-point li {
+	width: 31%;
+}
+.value ul {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	margin: 30px 0 50px;
+}
+.value ul.result li {
+	width: 65%;
+	margin: 10px 0;
+}
+
+.faq {
+	padding: 100px 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.faq h2 {
+	font-size: 30px;
+	margin: 0 0 30px;
+	text-align: center;
+}
+.faq dt {
+	font-size: 25px;
+	line-height: 2;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 50px 0 10px;
+	padding: 0 70px 10px 0;
+	border-bottom: solid 3px dodgerblue;
+	position: relative;
+	color: dodgerblue;
+	width: 100%;
+}
+.faq dt:after {
+	content: "+";
+	position: absolute;
+	right: 0;
+    top: calc(50% - 50px);
+    font-size: 40px;
+    font-weight: normal;
+	text-align: center;
+	width: 40px;
+}
+.faq dt.is-active:after {
+	content: "-";
+}
+.faq dd {
+	display: none;
+	font-size: 20px;
+	line-height: 2;
+}
+.faq dd ul li {
+	line-height: 2;
+	padding: 0 0 0 20px;
+}
+.faq dd a.pdflink {
+	color: dodgerblue;
+	text-decoration: underline;
+}
+.faq dd a.pdflink:hover {
+	text-decoration: none;
+}
+.faq dd a.more {
+	background: dodgerblue;
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 16px;
+	border-radius: 18px;
+}
+.faq dd a.more:hover {
+	background: #0640B1;
+	transition: ease .3s;
+}
+.faq dd.is-open {
+	display: block;
+}
+
+
+footer {
+	padding: 30px 20px;
+	display: flex;
+	justify-content: center;
+	font-size: 14px;
+}
+footer .inner {
+	display: flex;
+	justify-content: space-between;
+}
+footer a {
+	text-decoration: underline;
+	margin: 0 20px 0 0;
+}
+footer a:hover {
+	text-decoration: none;
+}
+
+
+
+@media screen and (max-width:767px) {
+	.sp-only {
+		display: block;
+	}
+	.pc-only {
+		display: none;
+	}
+	nav ul li {
+		max-width: 55px;
+	}
+	.fv {
+		height: auto;
+	}
+	.fv picture.kv img {
+		height: auto;
+		object-fit: cover;
+		object-position: top;
+	}
+	.fv .heading1 {
+		padding: 50px 0 20px;
+	}
+	
+	.worry {
+		padding: 50px 10px 0;
+	}
+	.worry p {
+		font-size: 5vw;
+	}
+	.worry img.introduce {
+		position: relative;
+		margin: 30px auto 0;
+		display: block;
+		width: 50%;
+		min-width: 250px;
+		z-index: 1;
+	}
+	.worry .worry-illust {
+		margin: -30px 0 0;
+	}
+	
+	.cta {
+		padding: 50px 20px;
+	}
+	.cta p {
+		font-size: 3.7vw;
+	}
+	.cta .cta-btn {
+		margin: 5% 0 0;
+	}
+	.cta .cta-btn .cta-contact {
+		width: 100%;
+		margin: 0 0 5%;
+	}
+	.cta .cta-btn .cta-tel {
+		width: 80%;
+		margin: 0;
+	}
+	.cta .cta-btn .cta-dl {
+		width: 48%;
+		margin: 5% 2% 0 0;
+	}
+	.cta .cta-btn .cta-seminar {
+		width: 48%;
+		margin: 5% 0 0 2%;
+	}
+	
+	.point {
+		padding: 50px 20px;
+	}
+	
+	
+	.value {
+		padding: 50px 20px 0;
+		background: url("../img/value-bg-sp.jpg") no-repeat bottom center / cover;
+	}
+	.value h2 {
+		font-size: 6vw;
+		margin: 0 0 5%;
+	}
+	.value p {
+		font-size: 4vw;
+	}
+	.value ul {
+		margin: 0 0 5%;
+	}
+	.value ul.value-point {
+		flex-wrap: wrap;
+		margin: 7% 0 0;
+	}
+	.value ul.value-point li {
+		width: 100%;
+		margin: 0 0 5%;
+	}
+	.value ul.result li {
+		width: 54%;
+		margin: 2% 0;
+	}
+	.value img.result02 {
+		width: 75%;
+	}
+	.value img.result03 {
+		width: 77%;
+	}
+	
+	.faq {
+		padding: 50px 10px;
+	}
+	.faq h2 {
+		font-size: 20px;
+		margin: 0;
+	}
+	.faq dt {
+		font-size: 4.5vw;
+		line-height: 1.5;
+		margin: 10% 0 5%;
+		padding: 0 45px 5% 0;
+	}
+	.faq dd {
+		display: none;
+		font-size: 4vw;
+		line-height: 1.5;
+	}
+	.faq dd a.more {
+		padding: 5px 30px;
+		font-size: 12px;
+		border-radius: 14px;
+		display: block;
+		text-align: center;
+		margin: 3% auto 0;
+		width: 50%;
+	}
+	
+	footer {
+		font-size: 12px;
+	}
+	footer .inner {
+		display: block;
+	}
+	footer .privacypolicy {
+		margin: 0 0 10px;
+	}
+}
+@media screen and (max-width:374px) {
+	nav ul li {
+		max-width: 48px;
+	}
+}
+	
