@@ -35,7 +35,7 @@ $slug = $post->post_name;
                             <div class="info-content">
                                 <h4 class="title">インフラ代行プラン</h4>
                                 <h3 class="sub-title">生活インフラの<br/>契約・支払い一本化</h3>
-                                <p class="text">配属前に必要な社宅や生活備品、インターネット環境などの準備、契約代行を弊社が行うことで支払先の一本化が可能になり、経理工数の削減ができるプランとなっています。</p>
+                                <p class="text">配属前に必要な社宅や生活備品、インターネット環境などの準備、契約代行を弊社が行うことで支払先の一本化が可能になり、経理工数が削減ができます。</p>
                             </div>
                             <div class="image-content">
                                 <div class="video-inner">
@@ -61,7 +61,7 @@ $slug = $post->post_name;
                             <div class="info-content">
                                 <h4 class="title">教育プラン</h4>
                                 <h3 class="sub-title">日本語能力・生産性をレベルアップ</h3>
-                                <p class="text">日本で生活する外国人材の方の日本語力強化、個々の行動レベル向上・意識改革が可能です。リモート学習教材には大手教育会社の日本語教育コンテンツ、資質向上のため「LQプログラム」を取り入れフィードバックも充実。きちんとした教育が可能です。</p>
+                                <p class="text">日本で生活する外国人材の方の日本語力強化、個々の行動レベル向上・意識改革が可能です。リモート学習教材には大手教育会社の日本語教育コンテンツ、資質向上のため「LQプログラム」を取り入れフィードバックも充実。</p>
                                 <p class="note">サービス提供社；綜合キャリアオプション<br/>販売代行；キャムグローバル</p>
                                 <div class="see-more">
                                     <p>詳しく見る<span class="icon">＞</span></p>
@@ -121,10 +121,8 @@ $slug = $post->post_name;
                         <div class="feature-top">
                             <div class="info-content">
                                 <h4 class="title">24時間対応<br/>コンシェルプラン</h4>
-                                <h3 class="sub-title">多言語で24時間対応できる<br/>
-                                    コールセンターに帰国までの<br/>
-                                    生活サポートはおまかせ</h3>
-                                <p class="text">24時間＋多言語対応、困った時にいつでも頼れる存在として外国人材の方をしっかりサポートが可能。日常生活から災害時・緊急時まで丁寧に対応し、安心した暮らしをお約束します。監理団体様や登録支援機関様での対応とは別のサービスになります。</p>
+                                <h3 class="sub-title">多言語のコールセンターが<br/>帰国までの生活をサポート</h3>
+                                <p class="text">24時間＋多言語対応、困った時に頼れる存在として、外国人材をしっかりサポート。日常生活から災害時・緊急時まで丁寧に対応し、安心できる暮らしをお約束します。<br/>※監理団体、登録支援機関でのの対応とは別のサービスです。</p>
                                 <div class="see-more">
                                     <p>詳しく見る<span class="icon">＞</span></p>
                                 </div>
@@ -198,7 +196,7 @@ $slug = $post->post_name;
                         <div class="feature-top">
                             <div class="info-content">
                                 <h4 class="title">フルパッケージプラン</h4>
-                                <h3 class="sub-title">初めての外国人材採用も安心と充実</h3>
+                                <h3 class="sub-title">充実のサービスで<br/>初めての外国人材採用も安心</h3>
                                 <p class="text">外国人材活用に必要なあらゆる業務をお引き受けし、<br class="pc-br"/>日本で生活する全ての外国人材の安全な生活をサポート。</p>
                             </div>
                             <div class="image-content">
@@ -226,7 +224,7 @@ $slug = $post->post_name;
         <div class="inner">
             <div class="header-entry">
                 <h2 class="heading-block center">
-                    <span class="uppercase">Plan & Price</span>
+                    <span class="uppercase">PRICE LIST</span>
                 </h2>
                 <p class="sub-ttl">プランと月額料金</p>
             </div>
@@ -241,7 +239,7 @@ $slug = $post->post_name;
             </div>
             <div class="description">
                 <p class="t1">プランの組み合わせは<br class="sp-br"/>自由にカスタマイズ可能です。</p>
-                <p class="t2">※契約機関に応じて、料金体系が変わります。表記されている金額は3年契約の場合です。</p>
+                <p class="t2">※料金体系は、契約機関によって変わります。上記の金額は3年契約の場合です。</p>
             </div>
         </div>
     </div>

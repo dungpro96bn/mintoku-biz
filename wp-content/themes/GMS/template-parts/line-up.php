@@ -19,9 +19,9 @@ if (is_page() || is_single()) {
     <div class="inner">
         <div class="heading-entry">
             <h2 class="heading-block">
-                <span>LINE UP</span>
+                <span>SERVICES</span>
             </h2>
-            <p class="sub-ttl">外国人労働者の採用から帰国まで、全てをカバーするトータルサポート</p>
+            <p class="sub-ttl">外国人労働者の採用から帰国まで、すべてをカバーするトータルサポート</p>
         </div>
         <div class="line-up-content">
             <ul class="lineUp-list">
@@ -33,7 +33,7 @@ if (is_page() || is_single()) {
                     </picture>
                     <div class="info">
                         <h4 class="title">採用サポート</h4>
-                        <p class="text">国内外様々な求人を掲載可能な「mintoku work」の運営や、採用プランを一から構築いたします。</p>
+                        <p class="text">国内外さまざまな求人を掲載可能な「mintoku work」の運営や、採用プランを一から構築します。</p>
                         <div class="link-info">
                             <a href="<?php echo home_url(); ?>/service/recuit-support/">詳しく見る ＞</a>
                         </div>
@@ -47,7 +47,7 @@ if (is_page() || is_single()) {
                     </picture>
                     <div class="info">
                         <h4 class="title">労務代行サービス</h4>
-                        <p class="text">勤怠管理/年末調整/翻訳/通訳など煩雑な作業を依頼できます。</p>
+                        <p class="text">勤怠管理・年末調整・翻訳・通訳など煩雑な作業を代行します。</p>
                         <div class="link-info">
                             <a href="<?php echo home_url(); ?>/service/assistant/">詳しく見る ＞</a>
                         </div>
@@ -61,7 +61,7 @@ if (is_page() || is_single()) {
                     </picture>
                     <div class="info">
                         <h4 class="title">生活支援サービス</h4>
-                        <p class="text">安心・安全な生活インフラの準備<br/>緊急対応や緊急の連絡対応など要望に応じて幅広く対応できます！完全成果報酬制で余計なコストはかかりません。</p>
+                        <p class="text">安心・安全な生活インフラの準備、<br/>緊急時の連絡や対応など、要望に応じて幅広く支援します。完全成果報酬制で余計なコストはかかりません。</p>
                         <div class="link-info">
                             <a href="<?php echo home_url(); ?>/service/life-support/">詳しく見る ＞</a>
                         </div>
@@ -75,7 +75,7 @@ if (is_page() || is_single()) {
                     </picture>
                     <div class="info">
                         <h4 class="title">mintoku study</h4>
-                        <p class="text">読む・聞くだけでなく、話すというコミュニケーションに向けた専門アプリが利用できます。<br/>試験対策もバッチリ</p>
+                        <p class="text">「読む・聞く」だけでなく「書く・話す」も実践的にトレーニング。日本語コミュニケーションのための専門アプリで、試験対策もサポートします。</p>
                         <div class="link-info">
                             <a target="_blank" href="https://edu-poke.jp/global">詳しく見る
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.72" height="15.726" viewBox="0 0 16.72 15.726">
@@ -103,7 +103,7 @@ if (is_page() || is_single()) {
                     </picture>
                     <div class="info">
                         <h4 class="title">マエトレ</h4>
-                        <p class="text">「伝える」と「伝わる」は違います！<br/>多言語対応のカンタン動画でわかりやすく伝わります！</p>
+                        <p class="text">「伝える」と「伝わる」は違います。教育・研修から作業マニュアルまで、多言語対応のカンタン動画で直観的な理解を促します。</p>
                         <div class="link-info">
                             <a href="<?php echo home_url(); ?>/service/cloud/maetra/">詳しく見る ＞</a>
                         </div>

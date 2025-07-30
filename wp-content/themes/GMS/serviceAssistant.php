@@ -32,7 +32,7 @@
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image01_pc.png" alt="">
                     </picture>
                     <div class="info">
-                        <p>技能実習や特定技能をはじめとして入管提出書類は複雑かつ多岐にわたります。専門のスタッフや提携の社労士・行政書士より無料相談や（一部有料の）添削などを受けることができます。お気軽にお問い合わせください！</p>
+                        <p>技能実習や特定技能をはじめ、入管提出書類は複雑かつ多岐にわたります。専門のスタッフや提携の社労士・行政書士による無料相談や、添削（一部有料）などのサポートを用意していますので、お気軽にお問い合わせください。</p>
                     </div>
                     <div class="link-page">
                         <a href="https://camt-gyousei.jp/" target="_blank">詳しく見る
@@ -65,7 +65,7 @@
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image02_pc.png" alt="">
                     </picture>
                     <div class="info">
-                        <p>外国人採用・受入の際、各種契約書や入社オリエンテーション資料・安全教育資料など、採用者の母国語併記義務もあります。外国人とのコミュニケーションに、必要最低限の業務指示書や作業マニュアルをご用意することが推奨されています。</p>
+                        <p>外国人採用・受入の際、各種契約書や入社オリエンテーション資料・安全教育資料など、採用者には母国語併記義務があります。この他、業務指示書や作業マニュアルの作成など、外国人とのコミュニケーションをお手伝いします。</p>
                     </div>
                     <div class="link-page">
                         <a href="<?php echo home_url(); ?>/translate/">詳しく見る ＞</a>
@@ -85,8 +85,8 @@
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image03_pc.png" alt="">
                     </picture>
                     <div class="info">
-                        <p>Saas型サービスの課題である既存組織への導入の難しさをカスタムサービスで解決し、企業の形態や要望・課題に応じて、最適プランをご提案。<br/>
-                            勤怠管理・保険手続き・年末調整・人事管理・WEB給与明細・賞与支給・住民税特別徴収など。各種社労士業務もお気軽にご相談ください。</p>
+                        <p>Saas型サービスの課題である既存組織への導入の難しさを、きめ細かいカスタマイズによって解決し、企業の形態や要望・課題に応じて、最適プランをご提案。<br/>
+                            勤怠管理、保険手続き、年末調整、人事管理、WEB給与明細、賞与支給、住民税特別徴収の他、各種社労士業務もお気軽にご相談ください。</p>
                     </div>
                     <div class="link-page">
                         <a href="https://biz.ca-m.co.jp/payroll" target="_blank">詳しく見る
@@ -119,7 +119,7 @@
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image04_pc.png" alt="">
                     </picture>
                     <div class="info">
-                        <p>海外での出国時斡旋、 国内での空港斡旋までを一貫してサポートし、外国人が初めての出入国であっても、安心・安全に入国して頂けるプランをご用意しました。</p>
+                        <p>海外での出国時斡旋、 国内での空港斡旋までを一貫してサポートし、外国人が初めての出入国であっても、安心・安全に入国していただけるプランをご用意しました。</p>
                     </div>
                     <div class="link-page">
                         <a href="<?php echo home_url(); ?>/service/immigration/">詳しく見る ＞</a>
@@ -152,14 +152,14 @@
                         <p class="t2">06</p>
                     </div>
                     <h3 class="title">外国人雇用管理<br class="sp-br"/>クラウドサービス</h3>
-                    <h4 class="sub-ttl">外国人雇用における煩雑な書類管理、クラウドサービス<br class="pc-br"/>ならではの情報共有とペーパーレス保管を実現</h4>
+                    <h4 class="sub-ttl">書類管理、情報共有、ペーパーレス管理を実現</h4>
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image06_pc.png">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image06_pc.png">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image06_pc.png" alt="">
                     </picture>
                     <div class="info">
-                        <p>技能実習や特定技能にとどまらず、全てのビザに対応！！無制限のストレージ機能とチャート式のスケジュール管理が魅力です！</p>
+                        <p>技能実習や特定技能にとどまらず、すべてのビザに対応。無制限のストレージ機能とチャート式のスケジュール管理が魅力です！</p>
                     </div>
                     <div class="link-page">
                         <a href="<?php echo home_url(); ?>/service/cloud/camcat/">詳しく見る ＞</a>
@@ -179,8 +179,8 @@
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image07_pc.png" alt="">
                     </picture>
                     <div class="info">
-                        <p>パソコン・携帯・カードリーダー企業様環境に合わせてデジタルでの勤怠報告が可能。<br/>
-                            管理者様は日別・月間での勤務状況の確認が可能。超過残業者の一覧・勤務実績一覧等の抽出を行うことで働き方改革のリスクヘッジ・工数削減にも繋がります。</p>
+                        <p>パソコン、携帯、カードリーダーなど企業様それぞれの環境に合わせてデジタルでの勤怠報告が可能。<br/>
+                            日別/月別での勤務状況が確認できる他、超過残業者や勤務実績一覧などの抽出も可能。働き方改革のためのリスクヘッジ、工数削減にも繋がります。</p>
                     </div>
                     <div class="link-page">
                         <a href="https://biz.ca-m.co.jp/hr/t-rex" target="_blank">詳しく見る

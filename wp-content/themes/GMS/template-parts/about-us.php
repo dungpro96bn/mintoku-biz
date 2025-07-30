@@ -14,13 +14,13 @@ if (is_page()) {
     <div class="about-content">
         <div class="about-header">
             <h2 class="heading en">ALL IN ONE SOLUTION</h2>
-            <h4 class="ttl">全てのフェーズで企業と<br class="sp-br"/>人材をサポートする<br class="sp-br"/>オールインワンソリューション</h4>
+            <h4 class="ttl">すべてのフェーズで企業と<br class="sp-br"/>人材をサポートする<br class="sp-br"/>オールインワンソリューション</h4>
         </div>
         <div class="about-info">
             <div class="text-info">
                 <p class="text">私たちの“ ALL IN ONE SOLUTION”は、<br class="pc-br"/>外<br class="sp-br"/>国人労働者の入国から帰国までの<br class="pc-br"/>すべてのプロセスを一元化し、<br class="pc-br"/>スムーズで効率的な手続きを実現する<br class="pc-br"/>包括的なサポートです。<br/>
-                    ビザ申請や雇用契約、生活サポートまで、<br class="pc-br"/>あらゆる課題を一貫して解決し、<br class="pc-br"/>安心と信頼を提供します。<br/>
-                    これにより、企業が持つ<br class="pc-br"/>労働力不足の課題を解消し、<br class="pc-br"/>企業成長をサポートします。</p>
+                    ビザ申請から雇用契約、生活支援まで、<br class="pc-br"/>あらゆる課題を一貫して解決し、<br class="pc-br"/>安心と信頼を提供します。<br/>
+                    これにより、企業が持つ<br class="pc-br"/>労働力不足の課題を解消し、<br class="pc-br"/>安定した成長をサポートします。</p>
             </div>
             <div class="about-image">
                 <picture class="image">

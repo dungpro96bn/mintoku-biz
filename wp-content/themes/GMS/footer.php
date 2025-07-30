@@ -55,7 +55,7 @@
                         <h4 class="title en">SERVICE</h4>
                         <ul class="menu-service-list">
                             <li class="menu-service-item">
-                                <a class="link-target" target="_blank" href="https://mintoku.com/work/">mintoku work</a>
+                                <a href="<?php echo home_url(); ?>/service/recuit-support/">採用サポート</a>
                             </li>
                             <li class="menu-service-item">
                                 <a href="<?php echo home_url(); ?>/service/assistant/">労務代行サービス</a>

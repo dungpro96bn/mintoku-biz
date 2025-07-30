@@ -15,7 +15,7 @@ $bannerData = [
     ],
     'assistant' => [
         'color' => 'green',
-        'heading' => ['採用契約業務は', 'プロに任せて解放されよう'],
+        'heading' => ['採用契約業務は', 'プロにお任せください。'],
     ],
     'life-support' => [
         'color' => 'orange',

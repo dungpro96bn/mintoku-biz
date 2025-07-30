@@ -16,7 +16,7 @@
                         <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support-logo01.png 2x">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support-logo01.png" alt="">
                     </picture>
-                    <p class="text">外国人向けの求人情報掲載数、トップクラス。<br/>
+                    <p class="text">外国人向けの求人情報掲載数はトップクラス。<br/>
                         国内外さまざな求人を掲載可能です。<br/>
                         完全成果報酬制で余計なコストはかかりません。</p>
                     <div class="link-page">
@@ -51,7 +51,7 @@
                             <h2>職種別採用スキーム</h2>
                         </div>
                         <div class="info">
-                            <p>特定技能ビザでの各種専門職採用も当社の属するキャムコムグループにてご支援可能です。</br>
+                            <p>特定技能ビザでの各種専門職採用も、当社の属するキャムコムグループにてご支援可能です。</br>
                                アジア各国との強いパイプとグループリソースを活用した、</br>
                                ワンストップの採用を実現します。</p>
                         </div>
