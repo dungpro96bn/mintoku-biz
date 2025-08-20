@@ -16,7 +16,7 @@ $post_key = get_the_terms($post_id, 'seminar_featured')[0]->name;
 $seminar_date = get_field('seminar_date');
 $seminar_start_date = date_create($seminar_date['seminar_start_date'], wp_timezone());
 $seminar_close_date = date_create($seminar_date['seminar_close_date'], wp_timezone());
-$seminar_day_locale = gms_get_day_locale_en((int)$seminar_start_date->format('w'));
+$seminar_day_locale = gms_get_day_locale((int)$seminar_start_date->format('w'));
 
 $seminar_date_apply = $seminar_start_date->format('Y年n月j日') . '(' . $seminar_day_locale . ')';
 
@@ -24,8 +24,19 @@ $seminar_year_apply = $seminar_start_date->format('Y');
 $seminar_month_apply = $seminar_start_date->format('m');
 $seminar_day_apply = $seminar_start_date->format('d');
 
-$seminar_time_apply = $seminar_start_date->format('H:i') . '-' . $seminar_close_date->format('H:i');
+$seminar_time_apply = $seminar_start_date->format('H:i') . '〜' . $seminar_close_date->format('H:i');
+
 $report_seminar = get_field('seminar_report');
+
+$post_cats = get_the_terms($post_id, 'seminar_tag');
+ob_start();
+if ($post_cats) {
+    foreach ($post_cats as $cat) {
+        $cat_link = get_category_link($cat->term_id);
+        echo '<div class="item-tag-column"><a href="' . $cat_link . '" title="' . $cat->name . '">' . $cat->name . '</a></div>';
+    }
+    $cat_list = ob_get_contents();
+}
 ?>
 
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/seminar.css">
@@ -34,11 +45,27 @@ $report_seminar = get_field('seminar_report');
 
         <div class="banner-entry">
             <div class="banner-inner">
-                <?php if ($post_thumbnail) : ?>
-                    <picture class="img-feature">
-                        <?php echo $post_thumbnail; ?>
-                    </picture>
-                <?php endif; ?>
+                <div class="banner-single-top">
+                    <?php if ($post_thumbnail) : ?>
+                        <picture class="img-feature">
+                            <?php echo $post_thumbnail; ?>
+                        </picture>
+                    <?php endif; ?>
+                    <div class="info-banner-post">
+                        <div class="box-title flex">
+                            <span class="title-seminar"><?php echo $post_key ?></span>
+                        </div>
+                        <h4 class="title"><?php echo $post_title ?></h4>
+                        <div class="list-tag-column">
+                            <?php echo $cat_list ?>
+                        </div>
+                        <div class="date-time flex">
+                            <p class="date"><?php echo $seminar_date_apply ?></p>
+                            <p class="time"><?php echo $seminar_time_apply ?></p>
+                        </div>
+                        <?php get_template_part('block-common/form_register'); ?>
+                    </div>
+                </div>
             </div>
         </div>
 
