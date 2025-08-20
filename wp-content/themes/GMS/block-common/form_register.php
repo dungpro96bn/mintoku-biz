@@ -76,7 +76,7 @@ if ($seminar_date = get_field('seminar_date')) {
 
 </style>
 <div class="seminar-link-contact">
-    <div class="block-form" data-aos="fade-up">
+    <div class="block-form">
         <div class="inner">
             <?php if ($show_seminar_button): ?>
                 <div class="box-link-page flex">
