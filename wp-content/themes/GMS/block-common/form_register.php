@@ -84,7 +84,7 @@ if ($seminar_date = get_field('seminar_date')) {
                 </div>
             <?php else: ?>
                 <div class="box-link-page flex">
-                    <a class="link-page disable-url">申し込み受付　準備中</a>
+                    <a class="link-page disable-url">開催済</a>
                 </div>
             <?php endif; ?>
         </div>

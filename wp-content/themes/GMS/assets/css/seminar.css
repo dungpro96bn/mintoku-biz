@@ -325,6 +325,11 @@
 	transition: 0.3s;
 	padding: 0;
 }
+#single-seminar .banner-entry .info-banner-post .box-link-page a.disable-url{
+	background: #c3c4c7;
+	pointer-events: none;
+	border-color: #c3c4c7;
+}
 #single-seminar .banner-entry .info-banner-post .box-link-page a:hover{
 	background: #fff;
 	color: #0F3745;
