@@ -2005,9 +2005,26 @@
     margin: auto;
     padding: 0 20px;
 
+    @include var.sm{
+      max-width: 680px;
+    }
+
+    @include var.xs{
+      max-width: calc(100% - 80px);
+    }
+
+    .draggable{
+      overflow: visible !important;
+    }
+
     .item-column{
       margin: 0 10px;
       padding: 10px 0;
+
+      @include var.xs{
+        margin: 0 8px;
+      }
+
     }
 
     .col-content{
@@ -2130,6 +2147,11 @@
         font-weight: 400;
         border-radius: 8px;
         height: 30px;
+
+        @include var.xs{
+          font-size: 16px;
+          height: 24px;
+        }
       }
 
     }

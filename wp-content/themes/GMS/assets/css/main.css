@@ -9824,9 +9824,27 @@ body:not(.home) .partners {
   margin: auto;
   padding: 0 20px;
 }
+@media (max-width: 1023px) {
+  .seminar-special .list-columns {
+    max-width: 680px;
+  }
+}
+@media (max-width: 767px) {
+  .seminar-special .list-columns {
+    max-width: calc(100% - 80px);
+  }
+}
+.seminar-special .list-columns .draggable {
+  overflow: visible !important;
+}
 .seminar-special .list-columns .item-column {
   margin: 0 10px;
   padding: 10px 0;
+}
+@media (max-width: 767px) {
+  .seminar-special .list-columns .item-column {
+    margin: 0 8px;
+  }
 }
 .seminar-special .list-columns .col-content {
   display: grid;
@@ -9942,6 +9960,12 @@ body:not(.home) .partners {
   font-weight: 400;
   border-radius: 8px;
   height: 30px;
+}
+@media (max-width: 767px) {
+  .seminar-special .list-columns .list-tag-column a {
+    font-size: 16px;
+    height: 24px;
+  }
 }
 .seminar-special .list-columns .date-time {
   display: flex;

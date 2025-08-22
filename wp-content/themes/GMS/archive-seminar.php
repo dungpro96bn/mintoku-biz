@@ -13,7 +13,7 @@ $today = date('Y-m-d H:i');
                 </h2>
                 <p class="sub-ttl">外国人採用に関するセミナー情報</p>
             </div>
-
+        </div>
             <?php
             $today = date('Y-m-d H:i');
 
@@ -29,13 +29,13 @@ $today = date('Y-m-d H:i');
             $args = array(
                 'post_type' => 'seminar',
                 'post_status' => 'publish',
-                'posts_per_page' => 3,
-                'meta_key' => 'seminar_close_date_apply',
-                'orderby' => 'meta_value',
+                'posts_per_page' => 4,
+//                'meta_key' => 'seminar_close_date_apply',
+//                'orderby' => 'meta_value',
                 'order' => 'DESC',
                 'cache_results' => true,
-                'update_post_meta_cache' => true,
-                'update_post_term_cache' => true,
+//                'update_post_meta_cache' => true,
+//                'update_post_term_cache' => true,
                 /*
                 'tax_query' => array(
                     array(
@@ -46,14 +46,14 @@ $today = date('Y-m-d H:i');
                     ),
                 ),
                 */
-                'meta_query' => array(
-                    array(
-                        'key' => 'seminar_date_seminar_close_date',
-                        'value' => $today,
-                        'compare' => '>=',
-                        'type' => 'date',
-                    )
-                )
+//                'meta_query' => array(
+//                    array(
+//                        'key' => 'seminar_date_seminar_close_date',
+//                        'value' => $today,
+//                        'compare' => '>=',
+//                        'type' => 'date',
+//                    )
+//                )
             );
 
             $posts = new WP_Query($args);
@@ -132,7 +132,7 @@ $today = date('Y-m-d H:i');
                     ?>
                 </ul>
             </div>
-        </div>
+
     </div>
 
     <?php
@@ -142,9 +142,20 @@ $today = date('Y-m-d H:i');
             dots: true,
             infinite: true,
             arrows: false,
-            speed: 500,
+            speed: 600,
             slidesToShow: 1,
-            adaptiveHeight: true
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            adaptiveHeight: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        adaptiveHeight: false,
+                    }
+                }
+            ]
         });
     </script>
     <?php endif;?>
@@ -156,22 +167,27 @@ $today = date('Y-m-d H:i');
                     <h4 class="seminar-main-title">開催済みのセミナーは資料ダウンロード可能です</h4>
 					<ul class="list-columns flex">
 						<?php
-						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-						$args = array(
-							'post_type'=> 'seminar',
-							'post_status' => 'publish',
-							'order'    => 'DESC',
-							'paged'  => $paged,
-							'posts_per_page' => "9",
-							'meta_query' => array(
-								array(
-									'key' => 'seminar_date_seminar_close_date',
-									'value' => $today,
-									'compare' => '<',
-									'type' => 'date',
-								)
-							)
-						);
+                        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                        $posts_per_page = 9;
+
+                        $offset = ($paged - 1) * $posts_per_page + 4;
+
+                        $args = array(
+                            'post_type'      => 'seminar',
+                            'post_status'    => 'publish',
+                            'order'          => 'DESC',
+                            'posts_per_page' => $posts_per_page,
+                            'paged'          => $paged,
+                            'offset'         => $offset,
+//                            'meta_query'     => array(
+//                                array(
+//                                    'key'     => 'seminar_date_seminar_close_date',
+//                                    'value'   => $today,
+//                                    'compare' => '<',
+//                                    'type'    => 'date',
+//                                )
+//                            )
+                        );
 						$result = new WP_Query( $args );
 						if ( $result-> have_posts() ) : ?>
 						<?php while ( $result->have_posts() ) : $result->the_post() ; ?>

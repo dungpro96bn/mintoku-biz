@@ -21,126 +21,126 @@
                 </h2>
                 <p class="sub-ttl">外国人採用に関するセミナー情報</p>
             </div>
+        </div>
+        <?php
+        $today = date('Y-m-d H:i');
 
-            <?php
-            $today = date('Y-m-d H:i');
+        /*
+        $terms = get_terms('seminar_featured');
+        $seminar_featured_slug = array();
 
+        foreach( $terms as $term ) {
+            $seminar_featured_slug[] = $term->slug;
+        }
+        */
+
+        $args = array(
+            'post_type' => 'seminar',
+            'post_status' => 'publish',
+            'posts_per_page' => 4,
+//                'meta_key' => 'seminar_close_date_apply',
+//                'orderby' => 'meta_value',
+            'order' => 'DESC',
+            'cache_results' => true,
+//                'update_post_meta_cache' => true,
+//                'update_post_term_cache' => true,
             /*
-            $terms = get_terms('seminar_featured');
-            $seminar_featured_slug = array();
-
-            foreach( $terms as $term ) {
-                $seminar_featured_slug[] = $term->slug;
-            }
-            */
-
-            $args = array(
-                'post_type' => 'seminar',
-                'post_status' => 'publish',
-                'posts_per_page' => 3,
-                'meta_key' => 'seminar_close_date_apply',
-                'orderby' => 'meta_value',
-                'order' => 'DESC',
-                'cache_results' => true,
-                'update_post_meta_cache' => true,
-                'update_post_term_cache' => true,
-                /*
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'seminar_featured',
-                        'field' => 'slug',
-                        'terms' => $seminar_featured_slug,
-                        'operator' => 'IN',
-                    ),
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'seminar_featured',
+                    'field' => 'slug',
+                    'terms' => $seminar_featured_slug,
+                    'operator' => 'IN',
                 ),
-                */
-                'meta_query' => array(
-                    array(
-                        'key' => 'seminar_date_seminar_close_date',
-                        'value' => $today,
-                        'compare' => '>=',
-                        'type' => 'date',
-                    )
-                )
-            );
+            ),
+            */
+//                'meta_query' => array(
+//                    array(
+//                        'key' => 'seminar_date_seminar_close_date',
+//                        'value' => $today,
+//                        'compare' => '>=',
+//                        'type' => 'date',
+//                    )
+//                )
+        );
 
-            $posts = new WP_Query($args);
-            $counts = $posts->post_count;
-            ?>
-            <div class="seminar-special <?php if($counts <= 1){echo "slick-no-action";} ?>">
-                <ul class="list-columns flex">
-                    <?php if ($posts->have_posts()) : ?><?php while ($posts->have_posts()) : $posts->the_post(); ?>
-                        <?php
-                        $post_id = $post->ID;
-                        $post_link = get_the_permalink($post_id);
-                        $post_title = get_the_title($post_id);
+        $posts = new WP_Query($args);
+        $counts = $posts->post_count;
+        ?>
+        <div class="seminar-special <?php if($counts <= 1){echo "slick-no-action";} ?>">
+            <ul class="list-columns flex">
+                <?php if ($posts->have_posts()) : ?><?php while ($posts->have_posts()) : $posts->the_post(); ?>
+                    <?php
+                    $post_id = $post->ID;
+                    $post_link = get_the_permalink($post_id);
+                    $post_title = get_the_title($post_id);
 
-                        $post_key = get_the_terms($post_id, 'seminar_featured')[0]->name;
+                    $post_key = get_the_terms($post_id, 'seminar_featured')[0]->name;
 
-                        $seminar_date = get_field('seminar_date');
-                        $seminar_start_date = date_create($seminar_date['seminar_start_date'], wp_timezone());
-                        $seminar_close_date = date_create($seminar_date['seminar_close_date'], wp_timezone());
-                        $seminar_day_locale = gms_get_day_locale((int)$seminar_start_date->format('w'));
+                    $seminar_date = get_field('seminar_date');
+                    $seminar_start_date = date_create($seminar_date['seminar_start_date'], wp_timezone());
+                    $seminar_close_date = date_create($seminar_date['seminar_close_date'], wp_timezone());
+                    $seminar_day_locale = gms_get_day_locale((int)$seminar_start_date->format('w'));
 
-                        $seminar_date_apply = $seminar_start_date->format('Y年n月j日') . '(' . $seminar_day_locale . ')';
+                    $seminar_date_apply = $seminar_start_date->format('Y年n月j日') . '(' . $seminar_day_locale . ')';
 
-                        $seminar_time_apply = $seminar_start_date->format('H:i') . '〜' . $seminar_close_date->format('H:i');
+                    $seminar_time_apply = $seminar_start_date->format('H:i') . '〜' . $seminar_close_date->format('H:i');
 
-                        if (has_post_thumbnail($post_id)) {
-                            $post_thumbnail = get_the_post_thumbnail($post_id, 'post-thumbnail', array('class' => 'sizes'));
-                        } else {
-                            $post_thumbnail = '<img src="' . bloginfo('template_url') . '/img/noimage.jpg" alt="" class="sizes">';
+                    if (has_post_thumbnail($post_id)) {
+                        $post_thumbnail = get_the_post_thumbnail($post_id, 'post-thumbnail', array('class' => 'sizes'));
+                    } else {
+                        $post_thumbnail = '<img src="' . bloginfo('template_url') . '/img/noimage.jpg" alt="" class="sizes">';
+                    }
+                    $post_cats = get_the_terms($post_id, 'seminar_tag');
+                    ob_start();
+                    if ($post_cats) {
+                        foreach ($post_cats as $cat) {
+                            $cat_link = get_category_link($cat->term_id);
+                            echo '<div class="item-tag-column"><a href="' . $cat_link . '" title="' . $cat->name . '">' . $cat->name . '</a></div>';
                         }
-                        $post_cats = get_the_terms($post_id, 'seminar_tag');
-                        ob_start();
-                        if ($post_cats) {
-                            foreach ($post_cats as $cat) {
-                                $cat_link = get_category_link($cat->term_id);
-                                echo '<div class="item-tag-column"><a href="' . $cat_link . '" title="' . $cat->name . '">' . $cat->name . '</a></div>';
-                            }
-                            $cat_list = ob_get_contents();
-                        }
+                        $cat_list = ob_get_contents();
+                    }
 
-                        ob_end_clean();
-                        ?>
+                    ob_end_clean();
+                    ?>
 
-                        <li class="item-column top">
-                            <div class="col-content">
-                                <div class="img-post">
-                                    <a href="<?php echo $post_link ?>">
-                                        <?php echo $post_thumbnail ?>
-                                    </a>
+                    <li class="item-column top">
+                        <div class="col-content">
+                            <div class="img-post">
+                                <a href="<?php echo $post_link ?>">
+                                    <?php echo $post_thumbnail ?>
+                                </a>
+                            </div>
+                            <div class="info-item">
+                                <div class="box-title flex">
+                                    <span class="title-seminar"><?php echo $post_key ?></span>
                                 </div>
-                                <div class="info-item">
-                                    <div class="box-title flex">
-                                        <span class="title-seminar"><?php echo $post_key ?></span>
-                                    </div>
-                                    <a class="item-link title" href="<?php echo $post_link ?>"
-                                       title="<?php echo $post_title ?>">
-                                        <?php echo $post_title ?>
-                                    </a>
-                                    <div class="description">
+                                <a class="item-link title" href="<?php echo $post_link ?>"
+                                   title="<?php echo $post_title ?>">
+                                    <?php echo $post_title ?>
+                                </a>
+                                <div class="description">
 
-                                    </div>
-                                    <div class="list-tag-column flex">
-                                        <?php echo $cat_list ?>
-                                    </div>
-                                    <div class="date-time flex">
-                                        <p class="date"><?php echo $seminar_date_apply ?></p>
-                                        <p class="time"><?php echo $seminar_time_apply ?></p>
-                                    </div>
-                                    <div class="link-page">
-                                        <a href="<?php echo $post_link ?>">申込はこちら<span>＞</span></a>
-                                    </div>
+                                </div>
+                                <div class="list-tag-column flex">
+                                    <?php echo $cat_list ?>
+                                </div>
+                                <div class="date-time flex">
+                                    <p class="date"><?php echo $seminar_date_apply ?></p>
+                                    <p class="time"><?php echo $seminar_time_apply ?></p>
+                                </div>
+                                <div class="link-page">
+                                    <a href="<?php echo $post_link ?>">申込はこちら<span>＞</span></a>
                                 </div>
                             </div>
-                        </li>
-                    <?php endwhile; ?>
-                    <?php endif;
-                    ?>
-                </ul>
-            </div>
+                        </div>
+                    </li>
+                <?php endwhile; ?>
+                <?php endif;
+                ?>
+            </ul>
         </div>
+
     </div>
 
     <?php
@@ -150,9 +150,20 @@
                 dots: true,
                 infinite: true,
                 arrows: false,
-                speed: 500,
+                speed: 600,
                 slidesToShow: 1,
-                adaptiveHeight: true
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                adaptiveHeight: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            adaptiveHeight: false,
+                        }
+                    }
+                ]
             });
         </script>
     <?php endif;?>
