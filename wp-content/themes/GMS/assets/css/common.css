@@ -1724,6 +1724,15 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.all-seminar .info-item .date-time {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  line-height: 24px;
+  color: #173c49;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
 .all-seminar .item-link {
   display: block;
   margin-bottom: 10px;
@@ -1988,6 +1997,14 @@
   width: 100%;
   max-width: 240px;
   margin: auto;
+}
+.seminar-special .list-columns .link-page a.disable-url {
+  background: #c3c4c7;
+  pointer-events: none;
+  border-color: #c3c4c7;
+}
+.seminar-special .list-columns .link-page a.disable-url span {
+  display: none;
 }
 .seminar-special .list-columns .link-page a:hover {
   background: #fff;
