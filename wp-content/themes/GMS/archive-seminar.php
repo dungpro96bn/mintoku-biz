@@ -98,18 +98,18 @@ $today = date('Y-m-d H:i');
                         $link_page_class = 'link-page disable';
                         $show_seminar_button = false;
 
-                        if ($seminar_date = get_field('seminar_date')) {
-                            date_default_timezone_set("Asia/Bangkok");
-                            $seminar_start_date = $seminar_date['seminar_start_date'];
-                            $seminar_close_date = $seminar_date['seminar_close_date'];
-
-                            if (strtotime($seminar_close_date) > time()) {
-                                $link_page_class = 'link-page';
-                                if ($seminar_zoom) {
-                                    $show_seminar_button = true;
-                                }
-                            }
-                        }
+//                        if ($seminar_date = get_field('seminar_date')) {
+//                            date_default_timezone_set("Asia/Bangkok");
+//                            $seminar_start_date = $seminar_date['seminar_start_date'];
+//                            $seminar_close_date = $seminar_date['seminar_close_date'];
+//
+//                            if (strtotime($seminar_close_date) > time()) {
+//                                $link_page_class = 'link-page';
+//                                if ($seminar_zoom) {
+//                                    $show_seminar_button = true;
+//                                }
+//                            }
+//                        }
 
                         ob_end_clean();
                         ?>
@@ -169,8 +169,8 @@ $today = date('Y-m-d H:i');
             speed: 600,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 4000,
+            // autoplay: true,
+            // autoplaySpeed: 4000,
             adaptiveHeight: true,
             responsive: [
                 {
@@ -194,23 +194,12 @@ $today = date('Y-m-d H:i');
                         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                         $posts_per_page = 9;
 
-                        $offset = ($paged - 1) * $posts_per_page + 4;
-
                         $args = array(
                             'post_type'      => 'seminar',
                             'post_status'    => 'publish',
                             'order'          => 'DESC',
                             'posts_per_page' => $posts_per_page,
                             'paged'          => $paged,
-                            'offset'         => $offset,
-//                            'meta_query'     => array(
-//                                array(
-//                                    'key'     => 'seminar_date_seminar_close_date',
-//                                    'value'   => $today,
-//                                    'compare' => '<',
-//                                    'type'    => 'date',
-//                                )
-//                            )
                         );
 						$result = new WP_Query( $args );
 						if ( $result-> have_posts() ) : ?>
@@ -231,6 +220,7 @@ $today = date('Y-m-d H:i');
 						$seminar_time_apply = $seminar_start_date->format('H:i')
 							. '〜' . $seminar_close_date->format('H:i');
 
+
 						if (has_post_thumbnail($post_id)) {
 							$post_thumbnail = get_the_post_thumbnail($post_id, 'post-thumbnail', array( 'class' => 'sizes' ));
 						} else {
@@ -246,8 +236,8 @@ $today = date('Y-m-d H:i');
 								</a>
 								<div class="info-item">
                                     <div class="date-time">
-                                        <p class="date"><?php echo $seminar_date_apply ?></p>
-                                        <p class="time"><?php echo $seminar_time_apply ?></p>
+                                        <p class="date"><?php echo esc_html( $seminar_date_apply ); ?></p>
+                                        <p class="time"><?php echo esc_html( $seminar_time_apply ); ?></p>
                                     </div>
                                     <a class="item-link" href="<?php echo $post_link; ?>">
                                         <p class="title"><?php echo $post_title ?></p>

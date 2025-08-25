@@ -106,19 +106,6 @@
                     $link_page_class = 'link-page disable';
                     $show_seminar_button = false;
 
-                    if ($seminar_date = get_field('seminar_date')) {
-                        date_default_timezone_set("Asia/Bangkok");
-                        $seminar_start_date = $seminar_date['seminar_start_date'];
-                        $seminar_close_date = $seminar_date['seminar_close_date'];
-
-                        if (strtotime($seminar_close_date) > time()) {
-                            $link_page_class = 'link-page';
-                            if ($seminar_zoom) {
-                                $show_seminar_button = true;
-                            }
-                        }
-                    }
-
                     ob_end_clean();
                     ?>
 
@@ -251,7 +238,6 @@
                                     <div class="info-item">
                                         <div class="date-time">
                                             <p class="date"><?php echo $seminar_date_apply ?></p>
-                                            <p class="time"><?php echo $seminar_time_apply ?></p>
                                         </div>
                                         <a class="item-link" href="<?php echo $post_link; ?>">
                                             <p class="title"><?php echo $post_title ?></p>
