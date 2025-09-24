@@ -1858,12 +1858,13 @@
   }
 }
 .seminar-special .list-columns .info-item {
-  padding: 37px 27px 35px;
-  min-height: min(28.91vw, 370px);
+  padding: 32px 27px 70px;
+  min-height: 370px;
+  position: relative;
 }
 @media (max-width: 767px) {
   .seminar-special .list-columns .info-item {
-    padding: 25px 22px;
+    padding: 25px 22px 70px;
   }
 }
 @media (max-width: 767px) {
@@ -1903,32 +1904,27 @@
   object-fit: cover;
 }
 .seminar-special .list-columns .title {
-  font-size: min(2.5vw, 32px);
-  line-height: 1.3;
+  font-size: 20px;
+  line-height: 1.5;
   color: #173C49;
   font-weight: bold;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+.seminar-special .list-columns .title br {
+  display: none;
 }
 .seminar-special .list-columns .title:hover {
   text-decoration: underline;
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .seminar-special .list-columns .title {
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 20px;
+    font-size: 18px;
   }
 }
 .seminar-special .list-columns .title-seminar {
-  font-size: 18px;
-  line-height: 26px;
-  padding: 7px 15px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 6px 15px;
   background: #E48121;
   border-radius: 10px;
   color: #fff;
@@ -1947,8 +1943,8 @@
   margin-bottom: 10px;
 }
 .seminar-special .list-columns .list-tag-column a {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1957,7 +1953,7 @@
   color: #2a4852;
   font-weight: 400;
   border-radius: 8px;
-  height: 30px;
+  height: 26px;
 }
 @media (max-width: 767px) {
   .seminar-special .list-columns .list-tag-column a {
@@ -1969,7 +1965,7 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 15px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   color: #2a4852;
   font-weight: 400;
@@ -1977,7 +1973,18 @@
 }
 @media (max-width: 1023px) {
   .seminar-special .list-columns .date-time {
-    font-size: 16px;
+    font-size: 14px;
+  }
+}
+.seminar-special .list-columns .link-page {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 30px;
+}
+@media (max-width: 767px) {
+  .seminar-special .list-columns .link-page {
+    bottom: 25px;
   }
 }
 .seminar-special .list-columns .link-page a {

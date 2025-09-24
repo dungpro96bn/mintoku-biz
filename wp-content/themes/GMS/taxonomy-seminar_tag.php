@@ -101,11 +101,6 @@
                         $cat_list = ob_get_contents();
                     }
 
-
-                    $seminar_zoom = get_field('seminar_url');
-                    $link_page_class = 'link-page disable';
-                    $show_seminar_button = false;
-
                     ob_end_clean();
                     ?>
 
@@ -134,15 +129,25 @@
                                     <p class="date"><?php echo $seminar_date_apply ?></p>
                                     <p class="time"><?php echo $seminar_time_apply ?></p>
                                 </div>
-                                <?php if ($show_seminar_button): ?>
-                                    <div class="link-page">
-                                        <a href="<?php echo $post_link ?>">申込はこちら<span>＞</span></a>
-                                    </div>
-                                <?php else: ?>
-                                    <div class="link-page">
-                                        <a class="disable-url" href="">開催済<span>＞</span></a>
-                                    </div>
-                                <?php endif; ?>
+                                <?php
+                                $seminar_zoom = get_field('seminar_url');
+                                $link_page_class = 'link-page disable';
+
+                                if ($seminar_date = get_field('seminar_date')) {
+                                    $seminar_start_date = strtotime($seminar_date['seminar_start_date']);
+                                    $seminar_close_date = strtotime($seminar_date['seminar_close_date']);
+
+                                    if ($seminar_close_date > time()):?>
+                                        <div class="link-page">
+                                            <a href="<?php echo $post_link ?>">申込はこちら<span>＞</span></a>
+                                        </div>
+                                    <?php else: ?>
+                                        <div class="link-page">
+                                            <a class="disable-url" href="">開催済<span>＞</span></a>
+                                        </div>
+                                    <?php endif;
+                                }
+                                ?>
                             </div>
                         </div>
                     </li>

@@ -37,7 +37,21 @@ if (is_page() || is_single()) {
         <div class="contactForm <?php echo $slug; ?>">
             <div class="inner">
                 <div class="form-main">
-                    <?php echo do_shortcode('[contact-form-7 id="3b67e72" title="ダウンロード資料 Multiple Download Step 1"]'); ?>
+
+                    <?php
+                    if(isset($_POST['download-mutil'])){
+                        $ids = $_POST['download'];
+                        foreach ($ids as $id) {
+                            $acf_file = get_field('file', $id);
+                            echo $acf_file['url'];
+                        }
+                    }
+                    ?>
+
+                    <script src="https://js.hsforms.net/forms/embed/50394137.js" defer></script>
+                    <div class="hs-form-frame" data-region="na1" data-form-id="fdd58338-3b04-493f-91f3-e754027a24b0" data-portal-id="50394137"></div>
+
+<!--                    --><?php //echo do_shortcode('[contact-form-7 id="3b67e72" title="ダウンロード資料 Multiple Download Step 1"]'); ?>
                 </div>
             </div>
         </div>
