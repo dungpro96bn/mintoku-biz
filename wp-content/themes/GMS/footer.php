@@ -47,7 +47,7 @@
                                 <a target="_blank" href="https://kjtimes.jp/">海外人材タイムズ</a>
                             </li>
                             <li class="footer-menu-item">
-                                <a href="https://stg.mintoku.com/biz/report_download/?category=manual_video">動画コンテンツ一覧</a>
+                                <a href="<?php echo home_url(); ?>/report_download/?category=manual_video">動画コンテンツ一覧</a>
                             </li>
                         </ul>
                     </div>
