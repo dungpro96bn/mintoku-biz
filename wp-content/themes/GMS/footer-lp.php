@@ -83,6 +83,62 @@
 </footer><!-- #footer -->
 </div><!-- .outer -->
 
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('wpcf7submit', function(event) {
+            if(event.detail.status !== 'mail_sent') return;
+
+            const redirectMap = {
+                3981: 'confirmation',
+                3982: 'thankyou'
+            };
+
+            const formId = event.detail.contactFormId;
+            const targetSlug = redirectMap[formId];
+
+            if(!targetSlug) return;
+
+            let lp = 'default';
+
+            if(targetSlug === 'confirmation') {
+                lp = window.location.pathname.replace(/^\/|\/$/g, '');
+            }
+            else if(targetSlug === 'thankyou') {
+                const urlParams = new URLSearchParams(window.location.search);
+                lp = urlParams.get('landing') || 'default';
+                localStorage.setItem("sendMail", "Yes");
+            }
+
+            const redirectUrl = '/' + targetSlug + '/?landing=' + encodeURIComponent(lp);
+            window.location.href = redirectUrl;
+        }, false);
+
+    });
+
+    $(".contact-block .contact-form .btn-submit.btn-back input").click(function (){
+        const urlParams = new URLSearchParams(window.location.search);
+        const lp = urlParams.get('landing');
+        const redirectUrl = '/' + lp;
+        window.location.href = redirectUrl;
+    });
+
+    checkBackForm = localStorage.getItem("backForm");
+    if(checkBackForm){
+        window.scrollTo(0, document.getElementById('lp-contact').offsetTop - 70);
+
+        setTimeout(function (){
+            localStorage.removeItem("backForm");
+        }, 5000)
+    }
+
+    $(".btn-submit.btn-send input").click(function (){
+        localStorage.removeItem("backForm");
+        localStorage.setItem("formSubmit", "Yes");
+    });
+
+</script>
+
 
 <?php if (is_home() || is_front_page()) { ?>
     <script type="text/javascript">

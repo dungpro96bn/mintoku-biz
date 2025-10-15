@@ -63,12 +63,12 @@
                         </picture>
                     </div>
                     <div class="list-page">
-                        <a target="_blank" href="/biz/lp-driver/">ドライバー</a>
-                        <a target="_blank" href="/biz/lp-seibishi/">整備士</a>
-                        <p class="coming-soon">Coming soon</p>
-                        <p class="coming-soon">Coming soon</p>
-                        <p class="coming-soon">Coming soon</p>
-                        <p class="coming-soon">Coming soon</p>
+                        <a target="_blank" href="<?php echo home_url(); ?>/lp-driver/">ドライバー</a>
+                        <a target="_blank" href="<?php echo home_url(); ?>/lp-seibishi/">整備士</a>
+                        <a target="_blank" href="<?php echo home_url(); ?>/lp-gaishoku/">外食業</a>
+                        <a target="_blank" href="<?php echo home_url(); ?>/lp-kaigo/">介護</a>
+                        <a target="_blank" href="<?php echo home_url(); ?>/lp-shukuhaku/">ホテル業</a>
+                        <a target="_blank" href="<?php echo home_url(); ?>/lp-inshokuseizo/">ホテル業</a>
                         <p class="coming-soon">Coming soon</p>
                         <p class="coming-soon">Coming soon</p>
                         <p class="coming-soon">Coming soon</p>

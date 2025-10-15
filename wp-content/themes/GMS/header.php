@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MGNP3866');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <?php if (is_home() || is_front_page()) { ?>
-    <meta name="description" content="mintoku for biz は外国人労働者外の雇用にまつわる課題をまとめてサポート。外国人労働者や特定技能実習生の採用・入国・生活までを全面で支援いたします。">
-    <?php }else if (is_404()) { ?>
-    <meta name="description" content="mintoku for biz は外国人労働者外の雇用にまつわる課題をまとめてサポート。外国人労働者や特定技能実習生の採用・入国・生活までを全面で支援いたします。">
-    <?php }else{ ?>
-    <meta name="description" content="mintoku for biz は外国人労働者外の雇用にまつわる課題をまとめてサポート。外国人労働者や特定技能実習生の採用・入国・生活までを全面で支援いたします。">
-    <?php } ?>
-    <meta name="keywords" content="mintoku for biz,外国人材,外国人材マネジメントサービス">
     <?php if (is_404()) { ?>
     <title>404 | mintoku for biz | 外国人労働者支援サービス</title>
     <?php }else{ ?>
@@ -40,6 +41,8 @@
       })(document);
     </script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- css file-->
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/all.min.css">
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/aos.css" rel="stylesheet">
@@ -56,6 +59,7 @@
     ?>
 
      <!--file js-->
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/source-han-sans-jp.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/aos.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/slick.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/main-old.js?ver=<?php echo rand(); ?>"></script>
@@ -105,6 +109,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGNP3866"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
     <div class="outer">
         <header id="header-menu" class="header-menu">

@@ -113,4 +113,20 @@ jQuery(function ($) {
         $(this).toggleClass('is-open').next().slideToggle();
     });
 
+    $(document).ready(function () {
+        var checkFormReset = localStorage.getItem("formReset");
+        if(checkFormReset){
+            setTimeout(function (){
+                const $form = $(".wpcf7-form");
+                $form.each(function () {
+                    this.reset();
+                });
+            }, 1200)
+        }
+    });
+
+    setTimeout(function (){
+        localStorage.removeItem("formReset");
+    }, 5000);
+
 });

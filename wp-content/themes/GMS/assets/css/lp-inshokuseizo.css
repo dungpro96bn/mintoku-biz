@@ -1,0 +1,3900 @@
+body main div, body main span, body main applet, body main object, body main iframe, body main h1, body main h2, body main h3, body main h4, body main h5, body main h6, body main p, body main blockquote, body main pre, body main a, body main abbr, body main acronym, body main address, body main big, body main cite, body main code, body main del, body main dfn, body main em, body main font, body main ins, body main kbd, body main q, body main s, body main samp, body main small, body main strike, body main strong, body main sub, body main sup, body main tt, body main var, body main dl, body main dt, body main dd, body main ol, body main ul, body main li, body main fieldset, body main form, body main label, body main legend, body main table, body main caption, body main tbody, body main tfoot, body main thead, body main tr, body main th, body main td{
+    font-family: source-han-sans-japanese, sans-serif !important;
+}
+body #lp-inshoku{
+    color: #181818;
+}
+body .kaigo #lp-inshoku{
+    color: #000;
+}
+#driver.inshokuseizo .top-title{
+    border-radius: 23px 23px 0 0;
+    min-height: 100px;
+}
+#driver.inshokuseizo .skills-recruitment .top-title{
+    border-radius: 10px 10px 0 0;
+    justify-content: flex-start;
+    padding-left: min(23.91vw, 306px);
+}
+#driver.inshokuseizo .top-title .title.color-w{
+    color: #fff;
+    font-size: 46px;
+    letter-spacing: 0;
+}
+#driver.inshokuseizo .top-title .title.yellow{
+    color: #FFF100;
+}
+#driver.inshokuseizo .inner{
+    max-width: 1360px;
+}
+#driver.inshokuseizo .skills-recruitment .top-title .t1{
+    font-size: 28px;
+    padding-left: 5px;
+    letter-spacing: 2px;
+}
+#driver.inshokuseizo .top-title .t1:before{
+    width: 70px;
+}
+#driver.inshokuseizo .skills-recruitment .top-title .title{
+    padding-right: 0;
+    font-size: min(4.06vw, 52px);
+    letter-spacing: 4.3px;
+}
+
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .referral-eligibility{
+    width: 100%;
+    padding: 0;
+}
+#driver.inshokuseizo .skills-recruitment .referral-eligibility .referral-eligibility-item{
+    width: auto !important;
+}
+#driver.inshokuseizo .benefits-service .benefits-service-content{
+    padding: 35px min(4.01vw, 77px) 70px;
+    margin-bottom: 76px;
+}
+#driver.inshokuseizo .benefits-service .benefits-service-container{
+    margin-bottom: 0;
+}
+#driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item .text{
+    letter-spacing: 0px;
+    min-height: 131px;
+}
+#driver.inshokuseizo .main-banner .banner-inner img{
+    aspect-ratio: 1575 / 498;
+    width: 100%;
+}
+#driver.inshokuseizo #lp-inshoku .main-banner .banner-inner img{
+    aspect-ratio: 1545 / 459;
+    width: 100%;
+}
+
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .title{
+    display: flex;
+    height: 44px;
+    border: 1px solid #2A4852;
+    border-radius: 30px;
+    background: #fff;
+    align-items: center;
+    padding: 0 16px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+    color: #2A4852;
+    margin-bottom: 22px;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom{
+    padding: 0 40px;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .referral-eligibility-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .item-01{
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .item-01 .image{
+    width: 45.5%;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .item-01 .info{
+    width: 54.5%;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .info p{
+    font-size: 18px;
+    line-height: 26px;
+    color: #2A4852;
+    font-weight: 400;
+    display: block;
+    letter-spacing: 1.5px;
+    padding-left: 33px;
+    text-indent: -14px;
+    margin-bottom: 5px;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .item-01 .image img{
+    width: 100%;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .item-02{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .item-02 .image{
+    width: 46.6%;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .item-02 .info{
+    width: 53.4%;
+}
+#driver.inshokuseizo .skills-recruitment .content{
+    padding-bottom: 38px;
+}
+
+
+.accepted-fields{
+    margin-bottom: 62px;
+    position: relative;
+    z-index: 1;
+}
+.accepted-fields .accepted-fields-content{
+    background: #fff;
+    padding: 45px 50px 45px 40px;
+    border-radius: 0 0 24px 24px;
+}
+.accepted-fields .accepted-fields-container{
+    border: 5px solid #E48120;
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 20px 25px 38px;
+}
+.accepted-fields .accepted-fields-container .image-content{
+    overflow: hidden;
+    border-radius: 21px;
+    margin-bottom: 31px;
+}
+.accepted-fields .accepted-fields-container .image-content img{
+    width: 100%;
+}
+.accepted-fields .accepted-fields-container .accepted-fields-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: min(3.54vw, 86px);
+    padding: 0 min(4.79vw, 92px);
+}
+.accepted-fields .accepted-fields-container .accepted-fields-info li{
+    font-size: 23px;
+    line-height: 1.82;
+    font-weight: bold;
+}
+
+
+.flow-of-acceptance{
+    margin-bottom: 78px;
+}
+.flow-of-acceptance .flow-of-acceptance-content{
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+}
+.flow-of-acceptance .flow-of-acceptance-item{
+    position: relative;
+}
+.flow-of-acceptance .flow-of-acceptance-item:nth-child(1):after{
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140.198' height='35.822' viewBox='0 0 140.198 35.822'%3E%3Cg id='Group_1741' data-name='Group 1741' transform='translate(2.198)'%3E%3Cg id='Group_1742' data-name='Group 1742' transform='translate(-52.96 0)'%3E%3Cpath id='Path_14018' data-name='Path 14018' d='M30.344,16.3,14.672.628a2.239,2.239,0,0,0-3.166,3.166l11.851,11.85H-106.959a2.239,2.239,0,0,0-2.239,2.239,2.239,2.239,0,0,0,2.239,2.239H23.357L11.506,31.973a2.239,2.239,0,0,0,3.111,3.221l.055-.055L30.344,19.466A2.239,2.239,0,0,0,30.344,16.3Z' transform='translate(159.96 0)' fill='%23e48121'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    width: min(10.29vw, 140px);
+    height: min(2.65vw, 36px);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 63px;
+    right: max(-6.47vw, -88px);
+}
+.flow-of-acceptance .flow-of-acceptance-item .title{
+    font-size: 26px;
+    line-height: 37px;
+    color: #E48121;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.flow-of-acceptance .list-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+}
+.flow-of-acceptance .flow-of-acceptance-item .text-bor{
+    border: 1px solid #E48120;
+    border-radius: 17px;
+    display: inline-block;
+    padding: 10px 11px;
+    font-size: 26px;
+    line-height: 1.23;
+    font-weight: bold;
+    min-height: 53px;
+}
+.flow-of-acceptance .flow-of-acceptance-item .text-bor span{
+    font-size: 22px;
+    display: block;
+    margin-top: 4px;
+}
+.flow-of-acceptance .flow-of-acceptance-item:nth-child(1) .text-bor{
+    min-width: min(32.35vw, 440px);
+}
+.flow-of-acceptance .flow-of-acceptance-item:nth-child(2) .text-bor{
+    min-width: min(29.41vw, 400px);
+}
+.flow-of-acceptance .flow-of-acceptance-item .text-item{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+.flow-of-acceptance .flow-of-acceptance-item .text-item:after{
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg id='Group_1739' data-name='Group 1739' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='37.908' height='21.609' viewBox='0 0 37.908 21.609'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_727' data-name='Rectangle 727' width='37.908' height='21.609' fill='%23e48121'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_1735' data-name='Group 1735' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_14017' data-name='Path 14017' d='M18.954,21.608a2.647,2.647,0,0,1-1.877-.777L.777,4.531A2.655,2.655,0,1,1,4.532.777L18.954,15.2,33.376.777A2.655,2.655,0,1,1,37.13,4.532l-16.3,16.3a2.647,2.647,0,0,1-1.877.777' transform='translate(0 0)' fill='%23e48121'/%3E%3C/g%3E%3C/svg%3E%0A");
+    width: min(2.79vw, 38px);
+    height: min(1.62vw, 22px);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: -33px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.flow-of-acceptance .flow-of-acceptance-item .text-item:last-child:after{
+    display: none;
+}
+.flow-of-acceptance .flow-of-acceptance-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 39px 57px 48px;
+}
+.flow-of-acceptance .flow-of-acceptance-item .text-note{
+    font-size: 18px;
+    line-height: 1.77;
+    font-weight: 400;
+    max-width: 510px;
+    margin: auto;
+    padding-left: 64px;
+    text-indent: -17px;
+}
+.flow-of-acceptance .flow-of-acceptance-item:nth-child(2){
+    padding-left: 30px;
+}
+.flow-of-acceptance .flow-of-acceptance-item:nth-child(2) .list-text{
+    margin-bottom: 20px;
+}
+.flow-of-acceptance .flow-of-acceptance-item:nth-child(1) .text-item:nth-child(4) .text-bor,
+.flow-of-acceptance .flow-of-acceptance-item:nth-child(1) .text-item:last-child .text-bor{
+    width: min(40.15vw, 546px);
+}
+
+
+.strengths{
+    margin-bottom: 80px;
+}
+.strengths .strengths-content{
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+    padding-left: min(6.3vw, 121px);
+    padding-top: 39px;
+    padding-right: 46px;
+    padding-bottom: 70px;
+}
+.strengths .strengths-content .strengths-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.strengths .strengths-content .strengths-item .image-content{
+    width: 31.2%;
+    text-align: center;
+}
+.strengths .strengths-content .strengths-item .image-content img{
+    border-radius: 18px;
+}
+.strengths .strengths-content .strengths-item .text-content{
+    width: calc(100% - 31.2%);
+}
+.strengths .strengths-content .strengths-item:nth-child(1) .text-content{
+    padding-bottom: 20px;
+}
+.strengths .strengths-content .strengths-item:nth-child(2) .text-content{
+    padding-top: 25px;
+}
+.strengths .strengths-content .strengths-item .text-content .title{
+    font-size: 36px;
+    line-height: 1.44;
+    color: #E48121;
+    font-weight: bold;
+    margin-bottom: 11px;
+    letter-spacing: 1px;
+}
+.strengths .strengths-content .strengths-item .text-content .text{
+    font-size: 23px;
+    line-height: 1.48;
+    font-weight: bold;
+    margin-bottom: 8px;
+    letter-spacing: 0.7px;
+}
+.strengths .strengths-content .strengths-item .text-content .text:last-child{
+    margin-bottom: 0;
+}
+
+
+.support-services .support-services-content{
+    background: #fff;
+    border-radius: 24px;
+    padding-top: 77px;
+    padding-left: min(5.21vw, 100px);
+    padding-right: min(5.94vw, 114px);
+    padding-bottom: 78px;
+}
+.support-services .image-header{
+    text-align: center;
+    padding-right: 16px;
+    margin-bottom: 49px;
+}
+.support-services .image-header .image{
+    margin-bottom: 23px;
+    display: block;
+}
+.support-services .image-header img{
+    border-radius: 18px;
+}
+.support-services .image-header .ttl{
+    font-size: 28px;
+    line-height: 40px;
+    color: #2A4852;
+    font-weight: bold;
+}
+.support-services .t1{
+    font-size: 28px;
+    line-height: 1.43;
+    color: #2A4852;
+    font-weight: bold;
+    padding-left: 3px;
+    margin-bottom: 17px;
+}
+.support-services .title{
+    font-size: 28px;
+    line-height: 1.43;
+    color: #E48120;
+    font-weight: bold;
+    padding-left: 1px;
+    margin-bottom: 51px;
+}
+.support-services .support-services-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 25px;
+    row-gap: 32px;
+}
+.support-services .support-services-item .image-content{
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+.support-services .support-services-item .image-content img{
+    width: 100%;
+}
+.support-services .support-services-item .image-content .ttl-image{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+    font-size: 23px;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg,rgba(0, 58, 149, 1) 0%, rgba(0, 147, 217, 1) 100%);
+}
+.support-services .support-services-item .text{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.inshokuseizo .benefits-service{
+    padding-bottom: 200px;
+    padding-top: 262px;
+    position: relative;
+}
+.inshokuseizo .benefits-service:before{
+    content: "";
+    position: absolute;
+    background-image: url("../images/bg01_pc.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    width: 100%;
+    height: 180px;
+    top: 0;
+    left: 0;
+}
+#driver.inshokuseizo .driver-main{
+    padding-bottom: 0;
+    background: #fff;
+}
+#driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item{
+    padding-top: 140px;
+}
+#driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item .image{
+    top: -30px;
+}
+#driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item:last-child .image{
+    padding-right: 50px;
+    top: -40px;
+}
+
+#driver.inshokuseizo .main-banner .banner-inner{
+    max-width: 1680px;
+    padding-left: min(4.43vw, 85px);
+}
+#driver.inshokuseizo .main-banner .banner-inner img{
+    max-width: 100%;
+}
+#driver.inshokuseizo .main-banner{
+    padding-top: 156px;
+    padding-bottom: 83px;
+}
+#driver.inshokuseizo .main-banner .news-top .news-info .text-news{
+    font-size: 40px;
+    letter-spacing: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    padding-right: min(3.8vw, 73px);
+}
+#driver.inshokuseizo .main-banner .news-top .news-info{
+    padding: 0;
+    margin-bottom: 30px;
+}
+#driver.inshokuseizo .main-banner .news-top{
+    max-width: 1360px;
+    padding-top: 53px;
+}
+#driver.inshokuseizo .main-banner .text-description{
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-align: left;
+}
+#driver.inshokuseizo .main-banner .text-bottom .info .title{
+    font-size: 40px;
+    line-height: 58px;
+    letter-spacing: 0;
+    margin-bottom: 7px;
+}
+#driver.inshokuseizo .main-banner .text-bottom{
+    padding-left: 0;
+    padding-right: 0;
+}
+#driver.inshokuseizo .main-banner .text-bottom .image{
+    width: 318px;
+}
+#driver.inshokuseizo .main-banner .text-bottom .info{
+    width: calc(100% - 318px);
+    padding-left: 44px;
+    padding-top: 0;
+}
+#driver.inshokuseizo .main-banner .text-bottom .info .text{
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: bold;
+    letter-spacing: 0;
+    padding: 0;
+    padding-left: 8px;
+}
+
+#driver.inshokuseizo .driver-main{
+    padding-top: 100px;
+}
+
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .referral-eligibility .referral-eligibility-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+}
+#driver.inshokuseizo .skills-recruitment .referral-eligibility .referral-eligibility-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#driver.inshokuseizo .country .country-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 66px;
+}
+#driver.inshokuseizo .country .country-item{
+    width: calc(50% - 37.5px);
+    margin: 0 !important;
+}
+#driver.inshokuseizo .country .country-list:before{
+    display: none;
+}
+#driver.inshokuseizo .country{
+    padding-top: 30px;
+    padding-bottom: 56px;
+    position: relative;
+    z-index: 2;
+}
+#driver.inshokuseizo .country .title{
+    font-size: 35.6px;
+    letter-spacing: 0.2px;
+    padding-left: 0;
+    margin-bottom: 32px;
+}
+#driver.inshokuseizo .country .country-content{
+    padding: 40px 42px 43px 59px;
+}
+#driver.inshokuseizo .country .country-item .image img{
+    width: 100%;
+}
+#driver.inshokuseizo .country .country-item{
+    width: calc(50% - 30px);
+    border-bottom: 0;
+    padding: 0;
+    align-items: flex-start;
+}
+#driver.inshokuseizo .country .country-item .image {
+    width: 32%;
+    padding: 0;
+}
+#driver.inshokuseizo .country .country-item .country-info {
+    width: 68%;
+    position: relative;
+    padding-left: 39px;
+    padding-right: 18px;
+}
+#driver.inshokuseizo .country .country-item:nth-child(1) .country-info{
+    padding-top: 12px;
+}
+#driver.inshokuseizo .country .country-item .country-info:before{
+    height: 100%;
+    top: 0;
+}
+#driver.inshokuseizo .country .country-item .country-info .ttl{
+    font-size: 27px;
+}
+#driver.inshokuseizo .country .country-item .country-info .t1{
+    font-size: 22px;
+    letter-spacing: 0.8px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+#driver.inshokuseizo .country .country-item .country-info .text{
+    margin-bottom: 2px;
+    max-width: 100%;
+}
+#driver.inshokuseizo .country .country-content{
+    position: relative;
+}
+#driver.inshokuseizo .country .country-content:after{
+    content: "";
+    position: absolute;
+    width: calc(100% - 80px);
+    height: 3px;
+    top: calc(50% + 12px);
+    left: 40px;
+    border-top: 3px solid #E48120;
+}
+#driver.inshokuseizo .skills-recruitment .merit .merit-border span{
+    top: -8px;
+    font-size: 20px;
+    font-weight: 400;
+}
+#driver.inshokuseizo .skills-recruitment .merit .ttl{
+    width: 330px;
+    font-size: min(2.81vw, 36px);
+    line-height: 1.5;
+    padding-top: min(0.47vw, 9px);
+    letter-spacing: 0.8px;
+}
+#driver.inshokuseizo .skills-recruitment .merit .recruitment-list{
+    width: calc(100% - 330px);
+    padding-top: min(0.52vw, 10px);
+    padding-right: min(1.77vw, 34px);
+}
+#driver.inshokuseizo .skills-recruitment .merit .recruitment-item p{
+    font-size: min(2.66vw, 34px);
+    line-height: 1.3;
+    padding-top: min(0.42vw, 8px);
+}
+#driver.inshokuseizo .skills-recruitment .merit{
+    margin-bottom: 34px;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-main{
+    padding: 19px 40px 0;
+    margin-bottom: 19px;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-main .ttl{
+    font-size: 44px;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-main .text{
+    line-height: 38px;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    padding-left: 31px;
+    padding-top: 4px;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-main .price .t1{
+    font-size: 24px;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-main .price .number{
+    /*font-family: "Montserrat", serif !important;*/
+    font-weight: bold;
+}
+#driver.inshokuseizo .skills-recruitment .skills-recruitment-main .price .t2{
+    line-height: 17px;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+}
+
+
+#driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item{
+    border-width: 4px;
+    border-radius: 28px;
+    width: calc(33.33% - 28px);
+}
+#driver .benefits-service .benefits-service-container .benefits-service-list{
+    column-gap: 42px;
+    row-gap: 64px;
+}
+#driver .benefits-service .benefits-service-container .benefits-service-item .ttl{
+    font-size: 48px;
+    letter-spacing: 0;
+    min-height: 80px;
+}
+#driver .benefits-service .benefits-service-container .benefits-service-item .ttl span{
+    font-size: 52px;
+}
+
+
+
+.shukuhaku #lp-inshoku .main-banner .banner-inner .image{
+    width: 100%;
+    padding-left: min(1.46vw, 28px);
+}
+.shukuhaku #lp-inshoku .main-banner .banner-heading{
+    left: 114px;
+    top: 50%;
+}
+#driver.shukuhaku .inner{
+    max-width: 1376px;
+}
+#driver.shukuhaku .main-banner .news-top .news-info .text-news{
+    letter-spacing: 1.8px;
+    padding-right: 0;
+    color: #FF7E00;
+    font-size: 35.6px;
+    padding-left: 7px;
+}
+#driver.shukuhaku .main-banner .news-top{
+    padding-top: 22px;
+}
+#driver.shukuhaku .main-banner .text-description{
+    line-height: 2;
+    margin-bottom: 11px;
+}
+#driver.shukuhaku .main-banner .news-top .news-info {
+    padding: 0;
+    margin-bottom: 17px;
+}
+.shukuhaku #lp-inshoku .main-banner .text-bottom-inner{
+    max-width: 1360px;
+}
+#driver.shukuhaku .main-banner .text-bottom .image{
+    width: 175px;
+}
+#driver.shukuhaku .main-banner .text-bottom .info{
+    width: calc(100% - 175px);
+    padding-left: 41px;
+}
+#driver.shukuhaku .main-banner .text-bottom .info .title{
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0.8px;
+    padding-top: 9px;
+    margin-bottom: 17px;
+}
+#driver.shukuhaku .main-banner .text-bottom .info .text{
+    line-height: 2;
+    max-width: 1020px;
+    padding-left: 4px;
+}
+#driver.shukuhaku .main-banner .text-bottom .info .t1{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #2A4852;
+    padding-left: 4px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+#driver.shukuhaku .main-banner .text-list-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 21px;
+    padding: 0 21px;
+}
+#driver.shukuhaku .main-banner .item-content .ttl-bg{
+    background: #FF7E00;
+    font-size: 21px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    padding-right: 12px;
+    margin-bottom: 9px;
+}
+#driver.shukuhaku .main-banner .text-bottom{
+    margin-bottom: 24px;
+}
+#driver.shukuhaku .main-banner .item-content .info{
+    background: #fff;
+    border: 3px solid #FF7E00;
+    padding: 13px 73px;
+}
+#driver.shukuhaku .main-banner .item-content .info p{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    display: flex;
+}
+#driver.shukuhaku .main-banner .item-content .info p:last-child{
+    margin-bottom: 0;
+}
+#driver.shukuhaku .main-banner .item-content .info p strong{
+    font-weight: bold;
+    padding-right: 13px;
+    display: inline-block;
+    min-width: 125px;
+}
+#driver.shukuhaku .main-banner{
+    padding-bottom: 78px;
+}
+#driver.shukuhaku .driver-main {
+    padding-top: 62px;
+}
+#driver.shukuhaku .skills-recruitment .content{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#driver.shukuhaku .skills-recruitment .skills-recruitment-main .price .t1{
+    padding-left: 0;
+    margin-bottom: 13px;
+}
+.shukuhaku #lp-inshoku .skills-recruitment .skills-recruitment-main .price .number{
+    font-size: min(5.7vw, 73px);
+    letter-spacing: 0.6px;
+    padding-top: 0;
+}
+.shukuhaku #lp-inshoku .skills-recruitment .skills-recruitment-main .price{
+    padding-left: 18px;
+    position: relative;
+}
+#driver.shukuhaku .skills-recruitment .skills-recruitment-main .price .t2{
+    position: absolute;
+    font-size: min(0.9vw, 12px);
+    line-height: 1.4;
+    color: #2A4852;
+    width: auto;
+    right: min(0.9vw, 12px);
+    bottom: min(0.75vw, 10px);
+    letter-spacing: 0;
+}
+.shukuhaku #lp-inshoku .skills-recruitment .merit .merit-border:before{
+    top: 12px;
+}
+#driver.shukuhaku .skills-recruitment .content {
+    padding-bottom: 55px;
+}
+#driver.shukuhaku .country {
+    padding-top: 41px;
+    padding-bottom: 65px;
+}
+#driver.shukuhaku .country .title{
+    margin-bottom: 26px;
+}
+#driver.shukuhaku .country .country-content{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.shukuhaku #lp-inshoku .country .country-item .country-info .text{
+    font-weight: 400;
+}
+#driver.shukuhaku .country .country-item{
+    width: calc(50% - 40px);
+}
+#driver.shukuhaku .country .country-list{
+    column-gap: 80px;
+}
+#driver.shukuhaku .country .country-item:nth-child(2){
+    padding-left: 12px;
+}
+#driver.shukuhaku .country .country-content {
+    padding: 40px 67px 30px 59px;
+}
+#driver.shukuhaku .country .country-item .image{
+    width: 33.2%;
+}
+#driver.shukuhaku .country .country-item .country-info{
+    width: calc(100% - 33.2%);
+}
+#driver.shukuhaku .country .country-item:nth-child(1) .country-info{
+    padding-right: 30px;
+}
+#driver.shukuhaku .country .country-content:after{
+    top: 50%;
+}
+#driver.shukuhaku .country .country-item:nth-child(3){
+    position: relative;
+    left: -36px;
+    align-items: center;
+}
+#driver.shukuhaku .country .country-item .country-info:before{
+    height: calc(100% + 20px);
+    top: -10px;
+}
+.shukuhaku #lp-inshoku .bg-content{
+    background: #F3F3F3;
+    position: relative;
+    padding-top: 203px;
+    padding-bottom: 128px;
+}
+.shukuhaku #lp-inshoku .bg-content:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/bg01_pc.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    width: 100%;
+    height: 180px;
+    top: 0;
+    left: 0;
+}
+.shukuhaku #lp-inshoku .business{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 48px;
+}
+#driver.shukuhaku .top-title{
+    border-radius: 10px 10px 0 0;
+}
+.shukuhaku #lp-inshoku .business .top-title .t1{
+    left: 85px;
+}
+.shukuhaku #lp-inshoku .business .top-title .title{
+    padding-left: 207px;
+}
+.shukuhaku #lp-inshoku .top-title .t1:before{
+    left: -85px;
+}
+.shukuhaku #lp-inshoku .top-title .title{
+    font-size: 46px;
+    line-height: 1.4;
+}
+.shukuhaku #lp-inshoku .business .business-list{
+    column-gap: 30px;
+    padding: 40px 53px 60px 37px;
+    row-gap: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0 0 24px 24px;
+}
+.shukuhaku #lp-inshoku .business .business-item{
+    padding: 19px 0 30px;
+    width: calc(33.33% - 20px);
+}
+.shukuhaku #lp-inshoku .business .business-item .ttl {
+    font-size: 36px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    padding-left: 0;
+    margin-bottom: 16px;
+}
+.shukuhaku #lp-inshoku .business .business-item .image{
+    padding: 0 29px;
+    margin-bottom: 21px;
+}
+.shukuhaku #lp-inshoku .business .business-item .text {
+    font-size: 18px;
+    line-height: 1.77;
+    padding: 0 29px;
+    min-height: 95px;
+}
+.shukuhaku #lp-inshoku .top-title .t1{
+    left: 85px;
+}
+.shukuhaku #lp-inshoku .top-title .t1:before{
+    left: -85px;
+}
+.shukuhaku #lp-inshoku .strengths .top-title .t1{
+    color: #FFF100;
+}
+.shukuhaku #lp-inshoku .strengths .sub-ttl{
+    font-size: 28px;
+    line-height: 1.64;
+    text-align: center;
+    color: #2A4852;
+    font-weight: bold;
+    padding-right: 10px;
+    margin-bottom: 43px;
+}
+.shukuhaku #lp-inshoku .strengths .strengths-content{
+    padding: 58px 52px 74px;
+}
+.shukuhaku #lp-inshoku .strengths .strengths-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 14px;
+    row-gap: 20px;
+}
+.shukuhaku #lp-inshoku .strengths .strengths-item{
+    border-radius: 16px;
+    border: 3px solid #E48120;
+    padding: 14px 28px 37px;
+    display: block;
+}
+.shukuhaku #lp-inshoku .strengths .strengths-item h4{
+    font-size: 26px;
+    line-height: 1.54;
+    color: #181818;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.shukuhaku #lp-inshoku .strengths .strengths-item h4 span{
+    background-image: -webkit-linear-gradient(left, #FFFF00 100%, #FFFF00 100%);
+    background-position: 200% 21px;
+    background: linear-gradient(transparent 78%, #FFFF00 78%);
+    display: inline;
+    background-position-y: 0px;
+
+}
+.shukuhaku #lp-inshoku .strengths .strengths-item .text{
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: bold;
+    position: relative;
+    margin-right: -10px;
+}
+.shukuhaku #lp-inshoku .strengths .strengths-item:nth-child(n+2) .text{
+    max-width: 315px;
+}
+.shukuhaku #lp-inshoku .strengths .strengths-item .image{
+    display: block;
+    margin-bottom: 20px;
+}
+.shukuhaku #lp-inshoku .strengths {
+    margin-bottom: 50px;
+}
+
+.shukuhaku .recruitment-flow-up{
+    margin-bottom: 71px;
+}
+.shukuhaku .recruitment-flow-content{
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+    padding: 45px min(2.71vw, 52px) 70px;
+}
+.shukuhaku .recruitment-flow-content .title-bor{
+    display: flex;
+    padding-right: 21px;
+}
+.shukuhaku .recruitment-flow-content .title-item{
+    margin-bottom: 28px;
+}
+.shukuhaku .recruitment-flow-content .title-bor span{
+    font-size: min(2.09vw, 28px);
+    line-height: 1.4;
+    color: #fff;
+    font-weight: bold;
+    background: #E48120;
+    display: flex;
+    height: min(4.7vw, 63px);
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 0 min(2.09vw, 28px);
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: min(2.98vw, 40px);
+    padding-left: 7px;
+    padding-right: min(1.19vw, 16px);
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item{
+    border-radius: 22px;
+    border: 2px solid #E48120;
+    min-height: min(13.66vw, 183px);
+    text-align: center;
+    width: calc((100% - min(25.6vw, 343px)) / 4 );
+    position: relative;
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item:after{
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg id='Group_1761' data-name='Group 1761' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22.268' height='28.814' viewBox='0 0 22.268 28.814'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_741' data-name='Rectangle 741' width='22.268' height='28.814' fill='%23e48120'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_1760' data-name='Group 1760' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_14001' data-name='Path 14001' d='M21.932,13.532,10.144.435A1.311,1.311,0,0,0,9.17,0H1.311A1.309,1.309,0,0,0,.337,2.185l11,12.223-11,12.22a1.311,1.311,0,0,0,.974,2.187H9.17a1.327,1.327,0,0,0,.974-.432l11.788-13.1a1.311,1.311,0,0,0,0-1.752' transform='translate(0)' fill='%23e48120'/%3E%3C/g%3E%3C/svg%3E%0A");
+    width: min(1.15vw, 22px);
+    height: min(1.51vw, 29px);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 50%;
+    right: max(-2.39vw, -32px);
+    transform: translateY(-50%);
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item:last-child:after{
+    display: none;
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item:last-child{
+    border-radius: 50%;
+    background: #E48120;
+    height: min(13.66vw, 183px);
+    width: min(13.66vw, 183px);
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item .ttl{
+    font-size: min(1.49vw, 20px);
+    line-height: 1.4;
+    font-weight: bold;
+    padding-top: min(1.19vw, 16px);
+    margin-bottom: min(1.19vw, 16px);
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item:nth-child(3) .ttl{
+    margin-bottom: min(0.67vw, 9px);
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item .note{
+    font-size: min(1.04vw, 14px);
+    line-height: 1.4;
+    font-weight: bold;
+    margin-top: min(0.75vw, 10px);
+    padding-right: min(1.49vw, 20px);
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item:last-child .ttl{
+    font-size: min(1.79vw, 24px);
+    line-height: 1.625;
+    color: #fff;
+    padding-top: min(1.79vw, 24px);
+    padding-right: 5px;
+    margin-bottom: 9px;
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item:last-child img{
+    width: min(5.15vw, 69px);
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item:nth-child(1) img{
+    width: min(5.45vw, 73px);
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item:nth-child(2) img{
+    width: min(4.48vw, 60px);
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item:nth-child(3) img{
+    width: min(7.16vw, 96px);
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item:nth-child(4) img{
+    width: min(6.12vw, 82px);
+}
+.shukuhaku .recruitment-flow-content .job-offer{
+    margin-bottom: 52px;
+}
+
+.shukuhaku .recruitment-flow-content .follow-up{
+    padding-left: 7px;
+}
+.shukuhaku .recruitment-flow-content .follow-up .title-bor span{
+    padding: 0 min(1.27vw, 17px);
+}
+.shukuhaku .recruitment-flow-content .follow-up .title-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.shukuhaku .recruitment-flow-content .follow-up .title-item .ttl-note{
+    font-size: min(1.79vw, 24px);
+    line-height: 1.625;
+    font-weight: 400;
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: min(3.58vw, 48px);
+    padding-right: min(3.28vw, 44px);
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item{
+    border-radius: 22px;
+    border: 2px solid #E48120;
+    min-height: min(17.16vw, 230px);
+    text-align: center;
+    width: calc((100% - min(27.91vw, 374px)) / 3);
+    position: relative;
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item:after{
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg id='Group_1761' data-name='Group 1761' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22.268' height='28.814' viewBox='0 0 22.268 28.814'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_741' data-name='Rectangle 741' width='22.268' height='28.814' fill='%23e48120'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_1760' data-name='Group 1760' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_14001' data-name='Path 14001' d='M21.932,13.532,10.144.435A1.311,1.311,0,0,0,9.17,0H1.311A1.309,1.309,0,0,0,.337,2.185l11,12.223-11,12.22a1.311,1.311,0,0,0,.974,2.187H9.17a1.327,1.327,0,0,0,.974-.432l11.788-13.1a1.311,1.311,0,0,0,0-1.752' transform='translate(0)' fill='%23e48120'/%3E%3C/g%3E%3C/svg%3E%0A");
+    width: min(1.15vw, 22px);
+    height: min(1.51vw, 29px);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 50%;
+    right: max(-2.69vw, -36px);
+    transform: translateY(-50%);
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item:last-child:after{
+    display: none;
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item:last-child{
+    border-radius: 50%;
+    background: #E48120;
+    height: min(17.16vw, 230px);
+    width: min(17.16vw, 230px);
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item:nth-child(1) img{
+    width: min(6.94vw, 93px);
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item:nth-child(2) img{
+    width: min(6.94vw, 93px);
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item:nth-child(3) img{
+    width: min(6.34vw, 85px);
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item:last-child img{
+    width: min(6.42vw, 86px);
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item .ttl{
+    font-size: min(1.49vw, 20px);
+    line-height: 1.4;
+    font-weight: bold;
+    padding-top: min(1.19vw, 16px);
+    margin-bottom: min(1.79vw, 24px);
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item:nth-child(2) .ttl{
+    margin-bottom: min(2.61vw, 35px);
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item:nth-child(3) .ttl{
+    margin-bottom: min(1.19vw, 16px);
+}
+.shukuhaku .recruitment-flow-content .follow-up .title-item{
+    margin-bottom: 32px;
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item:last-child .ttl{
+    font-size: min(1.79vw, 24px);
+    line-height: 1.625;
+    color: #fff;
+    padding-top: min(2.24vw, 30px);
+    padding-right: min(0.37vw, 5px);
+    margin-bottom: min(0.9vw, 12px);
+}
+.shukuhaku .support-services .support-services-content{
+    border-radius: 36px;
+}
+.shukuhaku .support-services .support-services-list{
+    row-gap: 21px;
+}
+.shukuhaku .support-services .support-services-list{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.shukuhaku .support-services .support-services-item .image-content{
+    margin-bottom: 0;
+}
+.shukuhaku .support-services .support-services-item .image-content .ttl-image{
+    font-size: 25px;
+}
+.shukuhaku #lp-inshoku .recruitment-flow .title{
+    font-size: 46px;
+    letter-spacing: 0.2px;
+    padding: 0;
+}
+#driver.shukuhaku .recruitment-flow .top-title{
+    border-radius: 17px 17px 0 0;
+}
+.shukuhaku #lp-inshoku .recruitment-flow .recruitment-item .text-info{
+    font-weight: bold;
+}
+
+
+.kaigo #lp-inshoku .main-banner .image{
+    width: 100%;
+}
+#driver.kaigo #lp-inshoku .main-banner .banner-inner img{
+    aspect-ratio: 1572 / 498;
+}
+#driver.kaigo .main-banner .news-top .news-info .text-news{
+    letter-spacing: 0px;
+    padding-right: 0;
+    color: #FF7E00;
+    font-size: 35.6px;
+    padding-left: 0px;
+}
+#driver.kaigo .main-banner .news-top{
+    padding-top: 26px;
+}
+#driver.kaigo .main-banner .text-description{
+    line-height: 2.375;
+    margin-bottom: 16px;
+}
+#driver.kaigo .main-banner .news-top .news-info{
+    margin-bottom: 14px;
+}
+.kaigo #lp-inshoku .main-banner .text-bottom-inner{
+    max-width: 1420px;
+}
+#driver.kaigo .main-banner .text-bottom .image{
+    width: min(23.94vw, 340px);
+    padding-top: min(2.54vw, 36px);
+}
+#driver.kaigo .main-banner .text-bottom .info{
+    width: calc(100% - min(23.94vw, 340px));
+    padding-left: min(5.21vw, 74px);
+}
+#driver.kaigo .main-banner .text-bottom .info .title{
+    font-size: 35px;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+    padding-top: 9px;
+    margin-bottom: 10px;
+}
+#driver.kaigo .main-banner .text-bottom .info .text{
+    padding-left: 3px;
+    line-height: 2;
+}
+#driver.kaigo .main-banner .text-bottom .info .t2{
+    font-size: 35px;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    color: #2A4852;
+    margin-top: 27px;
+    margin-bottom: 18px;
+}
+#driver.kaigo .driver-main{
+    padding-top: 85px;
+}
+#driver.kaigo .skills-recruitment .skills-recruitment-main .price .t1{
+    padding-left: 0;
+    margin-bottom: 12px;
+}
+.kaigo #lp-inshoku .skills-recruitment .skills-recruitment-main .price .number {
+    font-size: min(5.7vw, 73px);
+    letter-spacing: 0.6px;
+    padding-top: 0;
+    font-weight: bold;
+}
+#driver.kaigo .skills-recruitment .skills-recruitment-main .price .t2 {
+    position: absolute;
+    font-size: min(0.9vw, 12px);
+    line-height: 1.4;
+    color: #2A4852;
+    width: auto;
+    right: min(0.9vw, 12px);
+    bottom: min(0.75vw, 10px);
+    letter-spacing: 0;
+}
+.kaigo #lp-inshoku .skills-recruitment .skills-recruitment-main .price {
+    padding-left: 16px;
+    position: relative;
+}
+.kaigo #lp-inshoku .skills-recruitment .merit .merit-border:before{
+    top: 11px;
+}
+#driver.kaigo .skills-recruitment .content {
+    padding-bottom: 54px;
+}
+.kaigo .skills-recruitment{
+    margin-bottom: 36px;
+}
+#driver.kaigo .country-kaigo .top-title{
+    min-height: 116px;
+    padding-right: 33px;
+}
+.kaigo .country-content{
+    background: #F3F3F3;
+    border-radius: 0 0 24px 24px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 38px 60px 78px;
+}
+.kaigo .country-kaigo .logo-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: min(2.43vw, 33px);
+    row-gap: min(2.94vw, 40px);
+    padding-right: min(4.41vw, 60px);
+    padding-left: 30px;
+    position: relative;
+}
+.kaigo .country-kaigo .logo-list:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: #E48121;
+    top: 0;
+    left: 0;
+}
+.kaigo .country-kaigo .logo-item{
+    width: calc(49% - min(2.43vw, 33px));
+    max-width: 185px;
+}
+.kaigo .country-kaigo .logo-item img{
+    width: 100%;
+}
+.kaigo .country-kaigo .country-info{
+    padding-left: min(3.97vw, 54px);
+    padding-top: 10px;
+}
+.kaigo .country-kaigo .country-info .ttl{
+    font-size: min(2.79vw, 38px);
+    line-height: 1.56;
+    font-weight: bold;
+    margin-bottom: 19px;
+}
+.kaigo .country-kaigo .country-info .text{
+    font-size: min(1.69vw, 23px);
+    line-height: 2;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.kaigo .country-kaigo .country-info .text-b{
+    font-size: min(1.91vw, 26px);
+    line-height: 1.38;
+    color: #E48121;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 23px;
+}
+.kaigo .country-kaigo .country-info .text-b-2{
+    font-size: min(1.62vw, 22px);
+    line-height: 1.6;
+    color: #E48121;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding-top: 3px;
+}
+.kaigo .country-kaigo{
+    margin-bottom: 40px;
+}
+.kaigo #lp-inshoku .bg-content{
+    background: #F3F3F3;
+    position: relative;
+    padding-top: 248px;
+    padding-bottom: 140px;
+}
+.kaigo #lp-inshoku .bg-content:before{
+    content: "";
+    position: absolute;
+    background-image: url("../images/bg01_pc.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    width: 100%;
+    height: 180px;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.kaigo .nursing-care-content{
+    background: #fff;
+    padding: 43px min(2.94vw, 40px) 40px;
+}
+.kaigo .nursing-care-content .skills-work-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: min(2.57vw, 35px);
+}
+.kaigo .nursing-care-content .skills-work-item{
+    border-radius: 24px;
+    border: min(0.37vw, 5px) solid #E48120;
+    padding: min(1.54vw, 21px) min(1.18vw, 16px) 16px;
+}
+.kaigo .nursing-care-content .skills-work-item img{
+    width: 100%;
+}
+.kaigo .nursing-care-content .skills-work-item .ttl{
+    font-size: min(2.65vw, 36px);
+    line-height: 1.6;
+    font-weight: bold;
+    color: #E48121;
+    text-align: center;
+    letter-spacing: 0.6px;
+    margin-bottom: 10px;
+}
+.kaigo .nursing-care-content .skills-work-item .image{
+    display: block;
+    margin-bottom: 16px;
+}
+.kaigo .nursing-care-content .skills-work-item .text{
+    font-size: min(1.18vw, 16px);
+    line-height: 2;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 min(0.74vw, 10px);
+}
+
+.kaigo #lp-inshoku .technical-training{
+    margin-bottom: 97px;
+}
+.kaigo #lp-inshoku .technical-training .top-title{
+    background: #4DAEFF;
+    min-height: 94px;
+    border-radius: 0;
+}
+.kaigo .technical-training .technical-training-content{
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+    padding: 29px min(2.94vw, 40px) 40px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: min(1.47vw, 20px);
+}
+.kaigo .technical-training .title-top{
+    background: #00B3BE;
+    height: min(4.71vw, 64px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: min(2.35vw, 32px);
+    line-height: 1.4;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: min(1.91vw, 26px);
+}
+.kaigo .technical-training .related-work .title-top{
+    background: #4DAEFF;
+    margin-bottom: min(1.1vw, 15px);
+}
+.kaigo .technical-training .essential-work{
+    width: 55%;
+}
+.kaigo .technical-training .related-work{
+    width: calc(45% - min(1.47vw, 20px));
+}
+.kaigo .technical-training .essential-work-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: min(1.18vw, 16px);
+}
+.kaigo .technical-training .essential-work .ttl-bor{
+    background: #00B3BE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - min(1.76vw, 24px));
+    font-size: min(1.54vw, 21px);
+    line-height: 1.4;
+    color: #fff;
+    font-weight: bold;
+    height: min(4.41vw, 60px);
+    position: relative;
+    margin-bottom: min(1.47vw, 20px);
+}
+.kaigo .technical-training .essential-work .ttl-bor:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: min(2.21vw, 30px) solid transparent;
+    border-bottom: min(2.21vw, 30px) solid transparent;
+    border-left: min(1.76vw, 24px) solid #00B3BE;
+    top: 0;
+    right: max(-1.65vw, -23px);
+}
+.kaigo .technical-training .essential-work .description{
+    background: rgba(0, 179, 190, .23);
+    padding: min(1.03vw, 14px) min(1.47vw, 20px);
+}
+.kaigo .technical-training .essential-work .description .t1{
+    font-size: min(1.54vw, 21px);
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: center;
+    padding-right: min(0.74vw, 10px);
+    margin-bottom: min(0.44vw, 6px);
+}
+.kaigo .technical-training .essential-work .description .t2{
+    font-size: min(1.03vw, 14px);
+    line-height: 1.7;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: min(0.88vw, 12px);
+}
+.kaigo .technical-training .essential-work .description .text-info{
+    background: #fff;
+    text-align: center;
+    padding: min(0.74vw, 10px) 0 min(1.54vw, 21px);
+}
+.kaigo .technical-training .essential-work .description .text-info p{
+    font-size: min(1.03vw, 14px);
+    line-height: 1.7;
+    font-weight: 400;
+}
+.kaigo .technical-training .essential-work .description .text-info strong{
+    display: block;
+    font-weight: bold;
+}
+.kaigo .technical-training .essential-work .t1-box{
+    background: rgba(0, 179, 190, .23);
+    height: min(5.44vw, 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: min(1.54vw, 21px);
+    line-height: 1.4;
+    font-weight: bold;
+    margin-bottom: min(9.04vw, 123px);
+    position: relative;
+}
+.kaigo .technical-training .essential-work .t1-box:after{
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='61.64' height='61.64' viewBox='0 0 61.64 61.64'%3E%3Cpath id='Path_13691' data-name='Path 13691' d='M155.82-27.552V-36.12H130.284V-61.656h-8.568V-36.12H96.18v8.568h25.536V-2.016h8.568V-27.552Z' transform='translate(-95.18 62.656)' fill='%2300b3be' stroke='%2300b4be' stroke-width='2'/%3E%3C/svg%3E%0A");
+    width: min(4.56vw, 62px);
+    height: min(4.56vw, 62px);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: max(-6.84vw, -93px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.kaigo .technical-training .essential-work .description.item02 .text-info{
+    min-height: min(19.63vw, 267px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kaigo .technical-training .related-work-content{
+    background: rgba(77, 174, 255, .23);
+    padding: min(0.59vw, 8px) min(2.06vw, 28px) min(1.32vw, 18px);
+}
+.kaigo .technical-training .related-work-content p{
+    font-size: min(1.32vw, 18px);
+    line-height: 1.55;
+    font-weight: 400;
+}
+.kaigo .technical-training .related-work-content p.ttl{
+    font-size: min(1.47vw, 20px);
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.kaigo .facilities{
+    margin-bottom: 75px;
+}
+.kaigo .facilities .facilities-content{
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+    padding: 50px min(6.32vw, 86px) 64px;
+}
+.kaigo .facilities .facilities-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: min(5.15vw, 70px);
+    row-gap: min(2.6vw, 36px);
+    width: 100%;
+}
+.kaigo .facilities .facilities-item{
+    background: #E48120;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    width: calc(25% - min(3.9vw, 52.5px));
+    height: min(17.21vw, 234px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.kaigo .facilities .facilities-item .ttl{
+    font-size: min(1.91vw, 26px);
+    font-weight: bold;
+    line-height: 1.2;
+    width: 100%;
+}
+.kaigo .facilities .facilities-item .image{
+    margin-bottom: min(0.59vw, 8px);
+    display: block;
+    width: 100%;
+}
+.kaigo .facilities .facilities-item:nth-child(1) img{
+    width: min(4.34vw, 59px);
+}
+.kaigo .facilities .facilities-item:nth-child(2) img{
+    width: min(5.07vw, 69px);
+}
+.kaigo .facilities .facilities-item:nth-child(3) img{
+    width: min(5.37vw, 73px);
+}
+.kaigo .facilities .facilities-item:nth-child(4) img{
+    width: min(6.03vw, 82px);
+}
+.kaigo .facilities .facilities-item:nth-child(5) img{
+    width: min(5.07vw, 69px);
+}
+.kaigo .facilities .facilities-item:nth-child(6) img{
+    width: min(6.03vw, 82px);
+}
+.kaigo .facilities .facilities-item:nth-child(7) img{
+    width: min(4.78vw, 65px);
+}
+
+.kaigo .benefits-service:before{
+    display: none;
+}
+.kaigo #lp-inshoku .benefits-service{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#driver.kaigo .benefits-service .benefits-service-content{
+    margin-bottom: 0;
+}
+.kaigo .service-different .title{
+    background: #E48121;
+    display: flex;
+    min-height: 93px;
+    font-size: 52px;
+    line-height: 1.5;
+    color: #FFF100;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    letter-spacing: -0.6px;
+}
+.kaigo .service-different .service-different-content{
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 114px min(5.74vw, 78px) 90px;
+    column-gap: min(4.12vw, 56px);
+    row-gap: min(4.04vw, 55px);
+    border-radius: 0 0 24px 24px;
+}
+.kaigo .service-different .service-different-item{
+    border: min(0.37vw, 5px) solid #E48121;
+    border-radius: 32px;
+    min-height: min(26.84vw, 365px);
+    width: calc(33.33% - min(2.79vw, 38px));
+    position: relative;
+}
+.kaigo .service-different .service-different-item .ttl{
+    font-size: min(1.69vw, 23px);
+    line-height: 1.5;
+    color: #E48120;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    bottom: min(1.32vw, 18px);
+    left: 0;
+    width: 100%;
+    padding: 0 min(0.74vw, 10px);
+}
+.kaigo .service-different .service-different-item .image{
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.kaigo .service-different .service-different-item:nth-child(1) .image{
+    margin-top: max(-2.21vw, -30px);
+    padding-right: min(0.96vw, 13px);
+}
+.kaigo .service-different .service-different-item:nth-child(1) .image img{
+    width: min(15.22vw, 207px);
+}
+.kaigo .service-different .service-different-item:nth-child(2) .image{
+    margin-top: max(-2.94vw, -40px);
+}
+.kaigo .service-different .service-different-item:nth-child(2) .image img{
+    width: min(19.85vw, 270px);
+}
+.kaigo .service-different .service-different-item:nth-child(3) .image img{
+    width: min(19.63vw, 267px);
+}
+.kaigo .service-different .service-different-item:nth-child(4) .image{
+    padding-top: min(1.69vw, 23px);
+}
+.kaigo .service-different .service-different-item:nth-child(4) .image img{
+    width: min(12.65vw, 172px);
+}
+.kaigo .service-different .service-different-item:nth-child(5) .image{
+    margin-top: max(-1.54vw, -21px);
+    padding-left: min(2.94vw, 40px);
+}
+.kaigo .service-different .service-different-item:nth-child(5) .image img{
+    width: min(10.96vw, 149px);
+}
+.kaigo .service-different{
+    margin-bottom: 80px;
+}
+
+
+.strengths-camcom .content{
+    background: #fff;
+    border-radius: 24px;
+    padding: 75px 48px 83px;
+}
+.strengths-camcom .content .title{
+    display: flex;
+    margin-bottom: 48px;
+}
+.strengths-camcom .content .title span{
+    display: flex;
+    align-items: center;
+    height: 94px;
+    font-size: 42px;
+    line-height: 1.2;
+    background: #E48121;
+    border-radius: 60px;
+    color: #fff;
+    padding: 0 56px;
+    font-weight: bold;
+}
+.strengths-camcom .content .t1{
+    font-size: 42px;
+    line-height: 59px;
+    color: #E48121;
+    font-weight: bold;
+    padding-left: 21px;
+    margin-bottom: 38px;
+}
+.strengths-camcom .content dl{
+    padding-left: 21px;
+    margin-bottom: 38px;
+}
+.strengths-camcom .content dt{
+    font-size: 42px;
+    line-height: 59px;
+    color: #E48121;
+    font-weight: bold;
+    margin-bottom: 21px;
+}
+.strengths-camcom .content dd{
+    font-size: 27px;
+    line-height: 38px;
+    color: #E48121;
+    font-weight: bold;
+}
+.strengths-camcom .content .logo-list{
+    padding-left: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 55px;
+    padding-top: 22px;
+    align-items: center;
+}
+
+.kaigo #lp-inshoku .recruitment-flow{
+    padding-top: 102px;
+    padding-bottom: 112px;
+}
+.kaigo #lp-inshoku .recruitment-flow h2.title{
+    font-size: 46px;
+    line-height: 1.2;
+    letter-spacing: 0.1px;
+    padding-left: 0;
+    padding-right: 48px;
+    font-weight: 800;
+    margin-bottom: 53px;
+}
+.kaigo #lp-inshoku .recruitment-flow .content-box{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#driver.kaigo .recruitment-flow .top-title{
+    min-height: 134px;
+}
+.kaigo #lp-inshoku .recruitment-flow .top-title .t1{
+    color: #fff;
+}
+.kaigo #lp-inshoku .recruitment-flow .top-title .t1:before{
+    background: #fff;
+}
+.kaigo #lp-inshoku .recruitment-flow .top-title .title{
+    font-size: 46px;
+    padding-left: 0;
+    padding-right: 34px;
+    letter-spacing: 0;
+}
+.kaigo .recruitment-flow .recruitment-description{
+    background: #fff;
+    border-radius: 0 0 32px 32px;
+    padding: 31px 42px 48px;
+}
+.kaigo .recruitment-flow .info-item{
+    display: flex;
+    flex-wrap: wrap;
+    background: #C7E6FF;
+    border-bottom: 1px solid #707070;
+    border-right: 1px solid #707070;
+    border-left: 1px solid #707070;
+}
+.kaigo .recruitment-flow .info-item:first-child{
+    border-top: 1px solid #707070;
+}
+.kaigo .recruitment-flow .info-item .title-item{
+    width: 257px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-right: 1px solid #707070;
+}
+.kaigo .recruitment-flow .info-item .title-item p{
+    font-size: 32px;
+    line-height: 1.4;
+    font-weight: bold;
+    color: #000000;
+}
+.kaigo .recruitment-flow .info-item .info{
+    width: calc(100% - 257px);
+    padding: 14px 35px;
+}
+.kaigo .recruitment-flow .info-item .info p{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: bold;
+}
+.kaigo .recruitment-flow .info-table{
+    margin-bottom: 26px;
+}
+.kaigo .recruitment-flow .step-list{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    column-gap: min(1.84vw, 25px);
+}
+.kaigo .recruitment-flow .step-list .step-item{
+    display: flex;
+    background: #4DAEFF;
+    position: relative;
+    font-size: min(1.62vw, 22px);
+    line-height: 1.45;
+    font-weight: bold;
+    color: #fff;
+    min-height: min(12.06vw, 164px);
+    align-items: center;
+    justify-content: center;
+}
+.kaigo .recruitment-flow .step-list .step-item.orange{
+    background: #E48121;
+}
+.kaigo .recruitment-flow .step-list .step-item:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: min(1.18vw, 16px) solid transparent;
+    border-bottom: min(1.18vw, 16px) solid transparent;
+    border-left: min(1.4vw, 19px) solid #4DAEFF;
+    right: max(-1.32vw, -18px);
+}
+.kaigo .recruitment-flow .step-list .step-item.orange:after{
+    border-left: min(1.4vw, 19px) solid #E48121;
+}
+.kaigo .recruitment-flow .step-list .step-item:last-child:after{
+    display: none;
+}
+
+
+/*honyaku*/
+#driver.honyaku #lp-inshoku .main-banner .banner-inner img{
+    aspect-ratio: 1507 / 498;
+}
+.honyaku #lp-inshoku .main-banner .banner-inner .image{
+    padding-left: min(3.44vw, 66px);
+}
+#driver.honyaku .main-banner .news-top .news-info .text-news{
+    font-size: 36px;
+    text-align: left;
+    padding: 0;
+    letter-spacing: 0;
+    margin-right: -30px;
+    position: relative;
+    width: calc(100% + 30px);
+}
+#driver.honyaku .main-banner .news-top{
+    padding-right: 0;
+    padding-top: 38px;
+}
+#driver.honyaku .main-banner .text-description{
+    line-height: 2.125;
+    margin-bottom: 23px;
+}
+#driver.honyaku .main-banner .news-top .news-info{
+    margin-bottom: 29px;
+}
+.honyaku #lp-inshoku .main-banner .text-bottom-inner{
+    max-width: 1420px;
+}
+#driver.honyaku .main-banner .text-bottom .image{
+    width: min(25vw, 355px);
+}
+#driver.honyaku .main-banner .text-bottom .info{
+    width: calc(100% - min(25vw, 355px));
+    padding-left: 38px;
+    padding-top: 25px;
+}
+#driver.honyaku .main-banner .text-bottom .info .title{
+    font-size: 40px;
+    letter-spacing: 0;
+    margin-bottom: 24px;
+}
+#driver.honyaku .main-banner .text-bottom .info .text{
+    line-height: 1.75;
+    padding-left: 5px;
+}
+#driver.honyaku .main-banner .text-bottom .info .t1{
+    margin-top: 24px;
+    padding-left: 6px;
+    font-size: 23px;
+    margin-bottom: 0;
+}
+#driver.honyaku .main-banner .text-list-content{
+    padding: 0 30px;
+    column-gap: 63px;
+}
+#driver.honyaku .main-banner .item-content .ttl-bg{
+    margin-bottom: 0;
+    border-radius: 23px 23px 0 0;
+    font-size: 28px;
+    line-height: 1;
+    padding-right: 0;
+    height: 47px;
+}
+#driver.honyaku .main-banner .item-content .info{
+    border: 0;
+    border-radius: 0 0 24px 24px;
+    padding: 36px 8px 52px 36px;
+}
+#driver.honyaku .main-banner .text-bottom{
+    margin-bottom: 42px;
+}
+#driver.honyaku .main-banner .item-content .info p{
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #2A4852;
+    margin-bottom: 11px;
+}
+#driver.honyaku .main-banner .item-content .info p strong{
+    padding-right: 20px;
+    min-width: 160px;
+}
+#driver.honyaku .main-banner{
+    padding-bottom: 118px;
+}
+
+#driver.honyaku .country .title{
+    font-size: 46px;
+    margin-bottom: 64px;
+}
+#driver.honyaku .country{
+    padding-top: 22px;
+    padding-bottom: 28px;
+}
+#driver.honyaku .country .country-content {
+    padding: 44px 42px 40px 58px;
+    margin: auto;
+}
+#driver.honyaku .country .country-item:nth-child(3){
+    left: unset;
+}
+#driver.honyaku .country .country-item:nth-child(1) .country-info{
+    padding-right: 0;
+    padding-top: 0;
+}
+#driver.honyaku .country .country-list{
+    column-gap: 72px;
+    row-gap: 83px;
+}
+#driver.honyaku .country .country-item:nth-child(2n-1) {
+    width: calc(50.5% - 36px);
+}
+#driver.honyaku .country .country-item:nth-child(2n) {
+    width: calc(49.5% - 36px);
+    padding-left: 0;
+}
+#driver.honyaku .country .country-item .image{
+    width: min(14.02vw, 185px);
+}
+#driver.honyaku .country .country-item .country-info {
+    width: calc(100% - min(14.02vw, 185px));
+}
+#driver.honyaku .country .country-item:nth-child(2) .country-info{
+    padding-right: 0;
+    padding-top: 14px;
+}
+#driver.honyaku .country .country-item:nth-child(3) .country-info{
+    padding-top: 14px;
+    padding-right: 30px;
+}
+#driver.honyaku .country .country-item:nth-child(2) .country-info .t1{
+    letter-spacing: 0;
+}
+#driver.honyaku .country .country-item{
+    align-items: center;
+}
+#driver.honyaku .country .country-item:nth-child(1) .country-info .t1{
+    letter-spacing: 0.8px;
+}
+#driver.honyaku .country .country-item .country-info .t1{
+    letter-spacing: 0;
+}
+#driver.honyaku .country .country-item .country-info.item-full{
+    width: 100%;
+    padding-left: 45px;
+    padding-top: 27px;
+    padding-right: 0;
+}
+#driver.honyaku .country .country-item .country-info.item-full .info-text{
+    background: #fff;
+    border-radius: 18px;
+    font-size: min(1.44vw, 19px);
+    line-height: 1.47;
+    color: #FF7E00;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 16px 20px 20px 14px;
+}
+#driver.honyaku .country .country-item:nth-child(4){
+    align-items: flex-start;
+}
+#driver.honyaku .country .country-content:after {
+    top: 52%;
+}
+#driver.honyaku .country .country-item:nth-child(2) .country-info:before{
+    top: -12px;
+    height: calc(100% + 35px);
+}
+#driver.honyaku .country .country-item:nth-child(3) .country-info:before{
+    top: -16px;
+    height: calc(100% + 35px);
+}
+#driver.honyaku .country .country-item:nth-child(4) .country-info:before{
+    top: 0px;
+    height: 100%;
+}
+
+.honyaku #lp-inshoku .bg-content{
+    padding-top: 238px;
+    padding-bottom: 200px;
+}
+#driver.honyaku .strengths .inner{
+    max-width: 1360px;
+}
+#driver.honyaku .top-title{
+    border-radius: 23px 23px 0 0;
+}
+.honyaku #lp-inshoku .strengths .sub-ttl{
+    font-size: 26px;
+    padding-left: 10px;
+    color: #FF7E00;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+.honyaku #lp-inshoku .strengths .strengths-content {
+    padding: 41px 40px 60px;
+}
+.honyaku #lp-inshoku .strengths .strengths-list {
+    column-gap: 35px;
+}
+.honyaku #lp-inshoku .strengths .strengths-item{
+    border-width: 5px;
+    border-radius: 24px;
+    padding: 20px 16px 36px;
+}
+.honyaku #lp-inshoku .strengths .strengths-item h4{
+    color: #FF7E00;
+    line-height: 1.38;
+    margin-bottom: 12px;
+    letter-spacing: 0.8px;
+}
+.honyaku #lp-inshoku .strengths .strengths-item .image{
+    margin-bottom: 15px;
+}
+.honyaku #lp-inshoku .strengths .strengths-item .text{
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    padding: 0 10px;
+    margin-right: 0;
+}
+.honyaku #lp-inshoku .strengths .strengths-item:nth-child(2) .text{
+    margin: auto;
+    max-width: 300px;
+}
+.honyaku #lp-inshoku .strengths .strengths-item:nth-child(3) .text{
+    margin: auto;
+    max-width: 300px;
+}
+.honyaku .benefits-service:before{
+    display: none;
+}
+
+.honyaku #lp-inshoku .benefits-service{
+    padding-top: 8px;
+    padding-bottom: 57px;
+}
+#driver.honyaku .benefits-service .inner{
+    max-width: 1360px;
+}
+#driver.honyaku .benefits-service .benefits-service-content{
+    border-radius: 0 0 24px 24px;
+    margin-bottom: 0;
+}
+.honyaku .support-services .support-services-item .image-content{
+    margin-bottom: 10px;
+}
+.honyaku .support-services .support-services-list{
+    column-gap: 37px;
+    row-gap: 32px;
+}
+.honyaku .support-services .support-services-item .image-content .ttl-image{
+    font-size: 23px;
+}
+#driver.honyaku .inner{
+    max-width: 1360px;
+}
+.honyaku .recruitment-flow-content .job-offer .job-offer-list{
+    padding-right: 0;
+}
+.honyaku .recruitment-flow-content .follow-up .follow-up-list{
+    padding-right: min(2.27vw, 30px);
+}
+.honyaku .support-services .support-services-content{
+    padding-left: min(4.79vw, 92px);
+    padding-right: min(4.95vw, 95px);
+}
+.honyaku .recruitment-flow-up {
+    margin-bottom: 78px;
+}
+.honyaku .support-services .t1{
+    padding-left: 11px;
+}
+.honyaku .support-services .title{
+    padding-left: 10px;
+}
+
+
+
+
+
+
+@media (max-width: 1440px) {
+
+    .shukuhaku #lp-inshoku .main-banner .banner-inner .image{
+        padding-left: 0;
+    }
+    #driver.shukuhaku .skills-recruitment .skills-recruitment-main .price .t2{
+        font-size: 10px;
+        position: static;
+    }
+    #driver.kaigo .skills-recruitment .skills-recruitment-main .price .t2{
+        position: static;
+        font-size: 10px;
+    }
+
+
+    #driver.honyaku .main-banner .banner-inner{
+        padding-left: 20px;
+    }
+    #driver.honyaku .main-banner .item-content .info p{
+        font-size: 18px;
+    }
+    #driver.honyaku .main-banner .item-content .info p strong{
+        min-width: 150px;
+    }
+    #driver.honyaku .main-banner .text-list-content{
+        column-gap: 40px;
+        padding: 0 10px;
+    }
+
+
+
+}
+
+
+
+
+@media (max-width: 1280px) {
+
+    #driver.inshokuseizo .main-banner .news-top .news-info .text-news{
+        font-size: 32px;
+    }
+    #driver.inshokuseizo .main-banner .text-bottom .info .title{
+        font-size: 34px;
+    }
+    #driver.inshokuseizo .main-banner .banner-inner{
+        padding-left: 20px;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-main .ttl{
+        font-size: 36px;
+    }
+    #driver.inshokuseizo .skills-recruitment .merit .ttl{
+        font-size: min(2.54vw, 26px);
+        width: 260px;
+    }
+    #driver.inshokuseizo .skills-recruitment .merit .recruitment-list{
+        width: calc(100% - 260px);
+    }
+    #driver.inshokuseizo .skills-recruitment .merit .recruitment-item p{
+        font-size: min(2.15vw, 22px);
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .info p{
+        font-size: min(1.27vw, 13px);
+    }
+    #driver.inshokuseizo .skills-recruitment .top-title .title{
+        font-size: min(3.52vw, 36px);
+    }
+    #driver.inshokuseizo .skills-recruitment .top-title .t1{
+        font-size: 22px;
+    }
+    #driver.inshokuseizo .skills-recruitment .top-title{
+        padding-left: min(26.37vw, 270px);
+    }
+    #driver.inshokuseizo .country .country-content{
+        padding: 40px 40px 43px;
+    }
+    .inshokuseizo .benefits-service{
+        padding-top: 180px;
+    }
+    .accepted-fields .accepted-fields-container .accepted-fields-info li{
+        font-size: 18px;
+    }
+    .flow-of-acceptance .flow-of-acceptance-item .text-bor{
+        font-size: 20px;
+    }
+    .flow-of-acceptance .flow-of-acceptance-item .text-bor span{
+        font-size: 16px;
+    }
+    .flow-of-acceptance .flow-of-acceptance-item .text-note{
+        font-size: 14px;
+        text-indent: -14px;
+    }
+    .flow-of-acceptance .flow-of-acceptance-content{
+        padding: 39px 40px 48px;
+    }
+    .strengths .strengths-content .strengths-item .text-content .title{
+        font-size: min(2.34vw, 24px);
+    }
+    .strengths .strengths-content .strengths-item .text-content .text{
+        font-size: min(1.56vw, 16px);
+    }
+    .strengths .strengths-content{
+        padding-left: 50px;
+    }
+    #driver .benefits-service .benefits-service-container .benefits-service-list{
+        column-gap: 30px;
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item{
+        width: calc(33.33% - 20px);
+    }
+    #driver .benefits-service .benefits-service-container .benefits-service-item .ttl{
+        font-size: 40px;
+        min-height: 70px;
+    }
+    .support-services .title,
+    .support-services .t1{
+        font-size: 24px;
+    }
+
+    .shukuhaku #lp-inshoku .main-banner .banner-heading{
+        left: 85px;
+    }
+    .shukuhaku #lp-inshoku .business .business-list{
+        padding: 40px 25px 60px;
+    }
+    .shukuhaku #lp-inshoku .business .business-item .ttl{
+        font-size: 24px;
+    }
+    .shukuhaku #lp-inshoku .business .business-item .text{
+        font-size: 14px;
+        min-height: 75px;
+        padding: 0 20px;
+    }
+    .shukuhaku #lp-inshoku .business .business-item .image{
+        padding: 0 20px;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-content{
+        padding: 58px 40px 74px;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-item h4{
+        font-size: 18px;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-item .text{
+        font-size: 14px;
+        margin-right: 0;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-item{
+        padding: 14px 20px 37px;
+    }
+    .shukuhaku #lp-inshoku .top-title .t1{
+        font-size: 22px;
+    }
+    .shukuhaku #lp-inshoku .top-title .title{
+        font-size: 36px;
+    }
+    #driver.shukuhaku .country .country-list{
+        column-gap: 60px;
+    }
+    #driver.shukuhaku .country .country-item:nth-child(2){
+        padding-left: 0;
+    }
+    #driver.shukuhaku .country .country-item{
+        width: calc(50% - 30px);
+    }
+    .shukuhaku #lp-inshoku .recruitment-flow .title{
+        font-size: 36px;
+    }
+
+    #driver.shukuhaku .main-banner .item-content .info{
+        padding: 13px 30px;
+    }
+    #driver.inshokuseizo .top-title .title.color-w{
+        font-size: 36px;
+    }
+    .shukuhaku #lp-inshoku .skills-recruitment .skills-recruitment-main .price .number{
+        font-size: 70px;
+    }
+    #driver.inshokuseizo .country .country-item .country-info .t1{
+        font-size: 18px;
+    }
+    #driver.inshokuseizo .country .country-item .country-info .ttl{
+        font-size: 20px;
+    }
+    #driver.inshokuseizo .main-banner .news-top .news-info .text-news{
+        font-size: 28px;
+    }
+    #driver.inshokuseizo .main-banner .text-bottom .info .title,
+    #driver.kaigo .main-banner .text-bottom .info .t2{
+        font-size: 30px;
+    }
+    .kaigo .country-kaigo{
+        margin-bottom: 80px;
+    }
+    .kaigo #lp-inshoku .bg-content{
+        padding-top: 180px;
+    }
+    .kaigo .service-different .title{
+        font-size: 40px;
+    }
+    .strengths-camcom .content .t1,
+    .strengths-camcom .content dt{
+        font-size: min(2.73vw, 28px);
+        line-height: 1.4;
+    }
+    .strengths-camcom .content dd{
+        font-size: min(2.15vw, 22px);
+    }
+    .strengths-camcom .content .title span{
+        font-size: min(3.52vw, 36px);
+        height: min(7.81vw, 80px);
+    }
+    .strengths-camcom .content .logo-list .image:nth-child(1) img{
+        width: min(31.99vw, 435px);
+    }
+    .strengths-camcom .content .logo-list .image:nth-child(2) img{
+        width: min(16.4vw, 223px);
+    }
+    .kaigo #lp-inshoku .recruitment-flow h2.title{
+        font-size: 30px;
+    }
+
+    #driver.honyaku .main-banner .news-top .news-info .text-news{
+        font-size: 26px;
+    }
+    #driver.honyaku .main-banner .text-description{
+        font-size: 14px;
+    }
+    #driver.honyaku .main-banner .text-bottom .info .text{
+        font-size: 15px;
+    }
+    #driver.honyaku .main-banner .text-list-content{
+        column-gap: 21px;
+    }
+    #driver.honyaku .main-banner .item-content .info p{
+        font-size: 16px;
+    }
+    #driver.honyaku .main-banner .item-content .info p strong{
+        padding-right: 13px;
+        min-width: 125px;
+    }
+    #driver.honyaku .main-banner .item-content .ttl-bg{
+        font-size: 21px;
+    }
+    #driver.honyaku .main-banner{
+        padding-bottom: 78px;
+    }
+    #driver.honyaku .country .title{
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+    #driver.honyaku .country{
+        padding-bottom: 60px;
+    }
+    #driver.honyaku .country .country-item:nth-child(2n-1) {
+        width: calc(50.5% - 30px);
+    }
+    #driver.honyaku .country .country-item:nth-child(2n) {
+        width: calc(49.5% - 30px);
+    }
+    #driver.honyaku .country .country-item:nth-child(3) .country-info:before{
+        top: 0;
+        height: 100%;
+    }
+    #driver.honyaku .country .country-content:after{
+        top: 50%;
+    }
+    .honyaku #lp-inshoku .bg-content{
+        padding-top: 160px;
+    }
+    .honyaku #lp-inshoku .strengths .strengths-list{
+        column-gap: 15px;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-item{
+        border-width: 4px;
+        padding-bottom: 30px;
+    }
+    .honyaku #lp-inshoku .strengths .strengths-item .text{
+        padding: 0;
+    }
+    .honyaku .support-services .support-services-list{
+        column-gap: 25px;
+    }
+    #driver.honyaku .country .country-item:nth-child(3) .country-info{
+        padding-right: 10px;
+    }
+    #driver.honyaku .country .country-item:nth-child(1) .country-info{
+        padding-right: 5px;
+    }
+
+}
+
+
+@media (max-width: 1023px) {
+
+    #driver.inshokuseizo .main-banner .text-bottom .image{
+        width: 200px;
+    }
+    #driver.inshokuseizo .main-banner .text-bottom .info{
+        width: calc(100% - 200px);
+        padding-left: 30px;
+    }
+    #driver.inshokuseizo .main-banner .text-bottom .info .text{
+        font-size: min(1.82vw, 14px);
+        line-height: 2.6;
+        padding-left: 0;
+    }
+    #driver.inshokuseizo .main-banner .text-bottom .info .title{
+        font-size: 26px;
+    }
+    #driver.inshokuseizo .main-banner .news-top .news-info .text-news{
+        line-height: 1.4;
+        font-size: 26px;
+    }
+    #driver.inshokuseizo .main-banner .text-description{
+        font-size: min(1.82vw, 14px);
+        line-height: 2.6;
+    }
+    #driver.inshokuseizo .skills-recruitment .top-title .title{
+        font-size: min(3.13vw, 48px);
+    }
+    #driver.inshokuseizo .skills-recruitment .top-title .t1{
+        font-size: 20px;
+        left: 60px;
+        padding-left: 0;
+    }
+    #driver.inshokuseizo .top-title .t1:before{
+        left: -60px;
+        width: 45px;
+        height: 5px;
+        top: 16px;
+    }
+    #driver.inshokuseizo .skills-recruitment .top-title{
+        padding-left: min(27.34vw, 300px);
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-main .price .t1{
+        font-size: 16px;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-main{
+        padding: 15px 20px 0;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-main .ttl{
+        font-size: 24px;
+        padding-top: 8px;
+        line-height: 30px;
+        width: 19%;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-main .text{
+        font-size: 14px;
+        line-height: 26px;
+        padding-left: 0;
+        letter-spacing: 0;
+        width: 49%;
+    }
+    #driver.inshokuseizo .skills-recruitment .merit .ttl{
+        width: 220px;
+        font-size: 22px;
+        line-height: 36px;
+    }
+    #driver.inshokuseizo .skills-recruitment .merit .recruitment-list{
+        column-gap: 10px;
+        width: calc(100% - 220px);
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom{
+        padding: 0 20px;
+    }
+
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .item-01{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .item-02{
+        width: 100%;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .image{
+        width: 45% !important;
+        max-width: 300px;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .image img{
+        width: 100%;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .info p{
+        font-size: 16px;
+    }
+    #driver.inshokuseizo .country .country-content{
+        padding: 40px 20px 43px;
+    }
+    #driver.inshokuseizo .country .country-list{
+        column-gap: 40px;
+    }
+    #driver.inshokuseizo .country .country-item .image{
+        width: 30%;
+    }
+    #driver.inshokuseizo .country .country-item .country-info{
+        width: 70%;
+        padding-left: 20px;
+    }
+    #driver.inshokuseizo .country .country-item .country-info .ttl{
+        font-size: 20px;
+    }
+    #driver.inshokuseizo .country .country-item .country-info .t1{
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    #driver.inshokuseizo .country .country-item{
+        width: calc(50% - 20px);
+        align-items: center;
+    }
+    #driver.inshokuseizo .country .country-content:after{
+        width: calc(100% - 40px);
+        left: 20px;
+        top: calc(50% + 20px);
+    }
+    .inshokuseizo .benefits-service:before{
+        height: 140px;
+    }
+    .inshokuseizo .benefits-service{
+        padding-top: 140px;
+    }
+    #driver .top-title{
+        padding-left: 0;
+    }
+    .accepted-fields .accepted-fields-container .accepted-fields-info{
+        padding: 0;
+    }
+    .accepted-fields .accepted-fields-container .accepted-fields-info li{
+        font-size: 14px;
+    }
+    #driver.inshokuseizo .top-title .title.color-w{
+        font-size: 38px;
+    }
+    .flow-of-acceptance .flow-of-acceptance-item .text-bor{
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    .flow-of-acceptance .flow-of-acceptance-item .text-bor span{
+        font-size: 12px;
+    }
+    .flow-of-acceptance .flow-of-acceptance-content {
+        padding: 39px 20px 48px;
+    }
+    .flow-of-acceptance .flow-of-acceptance-item:nth-child(2){
+        padding-left: 0;
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-content{
+        padding: 35px 20px 70px;
+    }
+    #driver .benefits-service .benefits-service-container .benefits-service-list {
+        column-gap: 20px;
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item {
+        width: calc(33.33% - 13.4px);
+        border-width: 3px;
+    }
+    #driver .benefits-service .benefits-service-container .benefits-service-item .ttl {
+        font-size: 24px;
+        min-height: 50px;
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item .text{
+        min-height: 90px;
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item{
+        padding-top: min(8.8vw, 90px);
+    }
+    .inshokuseizo .benefits-service{
+        padding-bottom: 120px;
+    }
+
+    .shukuhaku #lp-inshoku .skills-recruitment .skills-recruitment-main .price .number{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    #driver.shukuhaku .country .country-content:after{
+        top: 52%;
+    }
+    #driver.shukuhaku .main-banner .text-description{
+        line-height: 2;
+    }
+    #driver.shukuhaku .main-banner .text-bottom .info .text{
+        line-height: 2;
+    }
+    #driver.shukuhaku .main-banner .text-list-content{
+        padding: 0;
+    }
+    #driver.shukuhaku .main-banner .item-content .ttl-bg{
+        font-size: 18px;
+    }
+    #driver.shukuhaku .main-banner .item-content .info{
+        padding: 15px 20px;
+    }
+    #driver.shukuhaku .main-banner .item-content .info p{
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    #driver.shukuhaku .main-banner .item-content .info p strong{
+        padding-right: 10px;
+        min-width: 110px;
+    }
+    #driver.shukuhaku .main-banner .text-bottom .image{
+        width: 175px;
+    }
+    #driver.shukuhaku .main-banner .text-bottom .info {
+        width: calc(100% - 175px);
+        padding-left: 30px;
+    }
+    #driver.shukuhaku .country .country-item:nth-child(3){
+        left: 0;
+    }
+    .shukuhaku #lp-inshoku .bg-content{
+        padding-top: 180px;
+    }
+    .shukuhaku #lp-inshoku .business .top-title .t1{
+        left: 60px;
+    }
+    .shukuhaku #lp-inshoku .top-title .title {
+        font-size: 28px;
+    }
+    #driver.shukuhaku .strengths .top-title{
+        padding-left: 40px;
+    }
+    .shukuhaku #lp-inshoku .strengths .sub-ttl{
+        font-size: 22px;
+        padding-right: 0;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-content {
+        padding: 45px 20px 50px;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-item h4 {
+        font-size: 14px;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-item {
+        padding: 14px 15px 20px;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-item .text {
+        font-size: 13px;
+        margin-right: 0;
+    }
+    .shukuhaku #lp-inshoku .business .business-list{
+        padding: 40px 20px 60px;
+    }
+    .shukuhaku #lp-inshoku .business .business-list{
+        column-gap: 20px;
+    }
+    .shukuhaku #lp-inshoku .business .business-item {
+        padding: 19px 0 30px;
+        width: calc(33.33% - 14px);
+    }
+    .shukuhaku #lp-inshoku .business .business-item .ttl {
+        font-size: 20px;
+    }
+    .shukuhaku #lp-inshoku .business .business-item .text {
+        font-size: 13px;
+        min-height: 75px;
+        padding: 0 15px;
+    }
+    .shukuhaku #lp-inshoku .business .business-item .image {
+        padding: 0 15px;
+    }
+    .shukuhaku .recruitment-flow-content .job-offer .job-offer-list{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .shukuhaku .recruitment-flow-content .follow-up{
+        padding-left: 0;
+    }
+    #driver.shukuhaku .country .country-item .country-info:before{
+        height: 100%;
+        top: 0;
+    }
+    .shukuhaku .support-services .support-services-item .image-content .ttl-image{
+        font-size: 18px;
+        height: 50px;
+    }
+    .shukuhaku .support-services .support-services-list{
+        padding: 0;
+    }
+    .flow-of-acceptance .flow-of-acceptance-item:nth-child(1):after{
+        width: min(6.51vw, 50px);
+        height: min(2.08vw, 12px);
+        right: max(-5.73vw, -44px);
+        top: 73px;
+    }
+    .flow-of-acceptance .flow-of-acceptance-item .text-item:after{
+        bottom: -28px;
+    }
+    #driver.shukuhaku .skills-recruitment .content{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #driver.inshokuseizo .driver-main{
+        padding-top: 62px;
+    }
+
+
+    #driver.kaigo .main-banner .news-top .news-info .text-news{
+        padding: 0 20px;
+    }
+    #driver.kaigo .country-kaigo .top-title{
+        min-height: 100px;
+        padding-right: 0;
+    }
+    .kaigo .country-content{
+        padding: 38px 30px 78px;
+    }
+    .kaigo .nursing-care-content .skills-work-item .text{
+        padding: 0;
+    }
+    .kaigo .service-different .service-different-item{
+        border-radius: 24px;
+    }
+    .kaigo .service-different .title{
+        font-size: 30px;
+    }
+    #driver.inshokuseizo .top-title .title.color-w{
+        font-size: 28px;
+    }
+    .kaigo #lp-inshoku .skills-recruitment .skills-recruitment-main .price .number{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    #lp-inshoku .top-title .title,
+    .kaigo .service-different .title{
+        font-size: 28px;
+    }
+    .kaigo #lp-inshoku .recruitment-flow h2.title{
+        font-size: 26px;
+        line-height: 1.4;
+        padding: 0;
+    }
+    .kaigo .recruitment-flow .info-item .title-item{
+        width: 150px;
+    }
+    .kaigo .recruitment-flow .info-item .title-item p{
+        font-size: 22px;
+    }
+    .kaigo .recruitment-flow .info-item .info {
+        width: calc(100% - 150px);
+        padding: 14px 20px;
+    }
+    .kaigo .recruitment-flow .info-item .info p{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .kaigo .recruitment-flow .recruitment-description{
+        padding: 31px 20px 30px;
+    }
+    .kaigo #lp-inshoku .recruitment-flow .top-title .title{
+        font-size: 28px;
+        padding: 0;
+    }
+    #driver.kaigo .recruitment-flow .top-title{
+        min-height: 100px;
+    }
+    .kaigo .facilities .facilities-item{
+        height: min(16.6vw, 227px);
+    }
+    .honyaku #lp-inshoku .strengths .strengths-list{
+        column-gap: 14px;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-item h4{
+        letter-spacing: 0;
+    }
+    #driver.honyaku .main-banner .news-top{
+        padding-right: 20px;
+    }
+    #driver.honyaku .main-banner .text-bottom .info .text br{
+        display: none;
+    }
+    #driver.honyaku .main-banner .text-bottom .info{
+        padding-top: 0;
+    }
+    #driver.honyaku .main-banner .news-top .news-info .text-news{
+        width: 100%;
+        margin-right: 0;
+    }
+    #driver.honyaku .country .country-item .country-info.item-full{
+        padding-left: 20px;
+    }
+    .honyaku #lp-inshoku .bg-content {
+        padding-top: 160px;
+    }
+
+
+
+
+}
+
+
+@media (max-width: 767px) {
+
+    #driver.inshokuseizo .main-banner{
+        padding-top: 163px;
+        padding-bottom: 20px;
+    }
+    #driver.inshokuseizo .main-banner .banner-inner img{
+        aspect-ratio: auto;
+    }
+    #driver.inshokuseizo .main-banner .banner-inner{
+        padding-left: 0;
+    }
+    #driver.inshokuseizo .main-banner .news-top .news-info .text-news{
+        font-size: 20px;
+        padding: 0;
+    }
+    #driver.inshokuseizo .main-banner .news-top{
+        padding-top: 30px;
+    }
+    #driver.inshokuseizo .main-banner .text-description{
+        font-size: 14px;
+        line-height: 26px;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    #driver.inshokuseizo .main-banner .text-bottom .info{
+        width: 100%;
+        padding: 0;
+    }
+    #driver.inshokuseizo .main-banner .news-top .news-info{
+        margin-bottom: 15px;
+    }
+    #driver.inshokuseizo .main-banner .text-bottom .info .title{
+        font-size: 22px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+    #driver.inshokuseizo .main-banner .text-bottom .info .text{
+        font-size: 14px;
+        padding-right: 0;
+        line-height: 26px;
+        letter-spacing: 0.7px;
+        padding-left: 2px;
+    }
+    #driver.inshokuseizo .skills-recruitment .top-title .title{
+        width: 100%;
+        padding: 0;
+        position: relative;
+        font-size: min(4vw, 17px);
+        line-height: 1.5;
+        margin-left: -17px;
+        letter-spacing: 1.1px;
+        margin-right: -10px;
+    }
+    #driver.inshokuseizo .skills-recruitment .top-title{
+        flex-direction: column;
+        padding-left: 31px;
+        padding-top: 7px;
+        align-items: flex-start;
+        min-height: auto;
+        padding-bottom: 12px;
+    }
+    #driver.inshokuseizo .skills-recruitment .top-title .t1{
+        position: static;
+        width: 100%;
+        transform: unset;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 3px;
+    }
+    #driver.inshokuseizo .top-title .t1:before{
+        height: 5px;
+        width: 23px;
+        left: 0;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-main .text{
+        width: 100%;
+        padding: 0;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 7px;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-main .ttl{
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 0px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-main .price .t1{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        padding-right: 6px;
+        order: 1;
+    }
+    #driver.inshokuseizo .skills-recruitment .merit .merit-border span{
+        font-size: 16px;
+    }
+    #driver.inshokuseizo .skills-recruitment .merit .ttl{
+        width: 100%;
+        padding-top: 3px;
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 1px;
+        position: relative;
+        margin-left: -3px;
+        padding-right: 0;
+    }
+    #driver.inshokuseizo .skills-recruitment .merit .recruitment-list{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 17px;
+        justify-content: center;
+        padding-top: 9px;
+    }
+    #driver.inshokuseizo .skills-recruitment .merit .recruitment-item p{
+        padding: 0;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    #driver.inshokuseizo .inner{
+        max-width: 500px;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .image{
+        width: 35% !important;
+        padding-top: 6px;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .info{
+        width: 65% !important;
+        padding: 0 !important;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .info p{
+        font-size: min(3.06vw, 13px);
+        line-height: 1.6;
+        padding-left: 25px;
+        letter-spacing: 0;
+    }
+    #driver.inshokuseizo .skills-recruitment .skills-recruitment-bottom .referral-eligibility-item{
+        align-items: flex-start !important;
+    }
+    #driver.inshokuseizo .country .title{
+        font-size: min(5.18vw, 22px);
+        padding: 0;
+    }
+    #driver.inshokuseizo .country .country-list{
+        column-gap: 0;
+        row-gap: 20px;
+    }
+    #driver.inshokuseizo .country .country-item{
+        width: 100%;
+    }
+    #driver.inshokuseizo .country .country-item .image {
+        width: 95px;
+    }
+    #driver.inshokuseizo .country .country-item .country-info {
+        width: calc(100% - 95px);
+        padding-left: 13px;
+        padding-right: 10px;
+    }
+    #driver.inshokuseizo .country .country-content{
+        padding: 12px 17px 24px 13px;
+    }
+    #driver.inshokuseizo .country .country-item .country-info:before{
+        width: 4.5px;
+        top: 5px;
+        height: calc(100% - 8px);
+    }
+    #driver.inshokuseizo .country .country-item:nth-child(1) .country-info{
+        padding-top: 0;
+    }
+    #driver.inshokuseizo .country .country-content:after{
+        display: none;
+    }
+    .inshokuseizo .benefits-service{
+        padding-top: 100px;
+    }
+    #driver.inshokuseizo .top-title .title.color-w{
+        width: 100%;
+        text-align: center;
+        top: unset;
+        font-size: min(5.65vw, 24px);
+    }
+    #driver.inshokuseizo .top-title{
+        min-height: 60px;
+        align-items: center;
+        padding-top: 0;
+    }
+    .accepted-fields .accepted-fields-content{
+        padding: 30px 15px 30px;
+        border-radius: 0 0 24px 24px;
+    }
+    .accepted-fields .accepted-fields-container{
+        border-width: 3px;
+    }
+    .accepted-fields .accepted-fields-container .image-content img{
+        min-height: 160px;
+        object-fit: cover;
+    }
+    .accepted-fields .accepted-fields-container{
+        padding: 20px 15px 38px;
+    }
+    .accepted-fields .accepted-fields-container .accepted-fields-info{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 240px;
+        margin: auto;
+    }
+    .accepted-fields .accepted-fields-container .accepted-fields-info li{
+        font-size: 16px;
+    }
+    .flow-of-acceptance .flow-of-acceptance-content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 20px 30px;
+        row-gap: 50px;
+    }
+    .flow-of-acceptance .flow-of-acceptance-item .text-bor{
+        width: 100% !important;
+        font-size: min(4.71vw, 20px);
+    }
+    .flow-of-acceptance .flow-of-acceptance-item .text-note{
+        padding-left: 0;
+        font-size: 16px;
+    }
+    .flow-of-acceptance .flow-of-acceptance-item .text-bor span{
+        font-size: min(3.06vw, 13px);
+    }
+    .strengths .strengths-content{
+        padding: 30px 20px;
+    }
+    .strengths .strengths-content .strengths-item .image-content{
+        width: 100%;
+        order: 1;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .strengths .strengths-content .strengths-item .image-content img{
+        width: 200px;
+    }
+    .strengths .strengths-content .strengths-item .text-content{
+        width: 100%;
+        order: 2;
+    }
+    .strengths .strengths-content .strengths-item .text-content .title{
+        font-size: 18px;
+    }
+    .strengths .strengths-content .strengths-item .text-content .text{
+        font-size: 14px;
+    }
+    .strengths .strengths-content .strengths-item:nth-child(1) .text-content{
+        padding-bottom: 0;
+    }
+    .strengths .strengths-content .strengths-item:nth-child(2) .text-content{
+        padding-top: 0;
+    }
+    .strengths .strengths-content .strengths-item{
+        margin-bottom: 30px;
+    }
+    .strengths .strengths-content .strengths-item:last-child{
+        margin-bottom: 0;
+    }
+    .strengths .strengths-content .strengths-item:nth-child(1) .image-content img{
+        border: 1px solid #ccc;
+    }
+    #driver.inshokuseizo .top-title .title.yellow{
+        text-align: center;
+        width: 100%;
+        top: unset;
+        font-size: min(5.65vw, 24px);
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item{
+        width: 100%;
+        padding-top: 0;
+        min-height: 151px;
+        padding-bottom: 8px;
+        border-radius: 15px;
+    }
+    #driver .benefits-service .benefits-service-container .benefits-service-item .ttl{
+        min-height: auto;
+        height: 40px;
+        padding: 0;
+        width: min(36.94vw, 157px);
+        position: relative;
+        margin-top: -2px;
+        border-radius: 15px 0 0 0;
+        letter-spacing: 1.5px;
+        padding-right: 6px;
+        padding-bottom: 2px;
+        font-size: min(5.65vw, 24px);
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item .image{
+        padding: 0;
+        top: 0;
+        width: auto;
+        z-index: 3;
+        right: 0;
+        display: inline-block;
+        left: unset;
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item:nth-child(1) .image{
+        top: 10px;
+        right: 15px;
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item:nth-child(2) .image {
+        top: 13px;
+        right: 9px;
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item:nth-child(3) .image {
+        top: 11px;
+        right: 44px;
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item:nth-child(4) .image {
+        top: 13px;
+        right: 20px;
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item:nth-child(5) .image {
+        top: 8px;
+        right: 29px;
+    }
+    #driver .benefits-service .benefits-service-container .benefits-service-list{
+        row-gap: 10px;
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-content{
+
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-content {
+        padding: 20px 10px 30px;
+    }
+    .support-services .image-header{
+        padding-right: 0;
+    }
+    .support-services .support-services-content{
+        padding: 30px 20px 40px;
+    }
+    .support-services .image-header .ttl{
+        font-size: 22px;
+    }
+    .support-services .support-services-list {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+        row-gap: 35px;
+    }
+    .support-services .title, .support-services .t1 {
+        font-size: 18px;
+    }
+    .support-services .support-services-item .text{
+        font-size: 16px;
+    }
+    .support-services .support-services-item .image-content .ttl-image{
+        font-size: 20px;
+        height: 50px;
+    }
+    .support-services .image-header .image{
+        margin-bottom: 15px;
+    }
+    #driver .benefits-service .benefits-service-container .benefits-service-item .text{
+        font-size: min(4.24vw, 18px);
+        line-height: 1.55;
+    }
+    #driver.inshokuseizo .benefits-service .benefits-service-container .benefits-service-item:last-child .image{
+        padding-right: 15px;
+    }
+
+    #driver.inshokuseizo #lp-inshoku .main-banner .banner-inner img{
+        aspect-ratio: auto;
+    }
+    .shukuhaku #lp-inshoku .main-banner .image{
+        width: 100%;
+    }
+    #driver.shukuhaku .main-banner .news-top{
+        padding-bottom: 0;
+    }
+    #driver.shukuhaku .main-banner .text-bottom .info .title{
+        padding-top: 0;
+    }
+    #driver.shukuhaku .main-banner .text-list-content{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 25px;
+    }
+    #driver.shukuhaku .main-banner{
+        padding-bottom: 40px;
+    }
+    #driver.shukuhaku .skills-recruitment .skills-recruitment-main .price .t2{
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    #driver.shukuhaku .skills-recruitment .skills-recruitment-main .price .t1{
+        margin-bottom: 0;
+    }
+    .shukuhaku #lp-inshoku .skills-recruitment .skills-recruitment-main .price .number{
+        width: 100%;
+        order: 2;
+        text-align: center;
+        font-size: 60px;
+        line-height: 66px;
+        letter-spacing: 3px;
+        padding-top: 0;
+        margin-bottom: 3px;
+        padding-right: 0px;
+    }
+    .shukuhaku #lp-inshoku .skills-recruitment .skills-recruitment-main .price{
+        padding: 0;
+    }
+    .shukuhaku #lp-inshoku .bg-content:after{
+        height: 140px;
+    }
+    .shukuhaku #lp-inshoku .bg-content{
+        padding-top: 100px;
+    }
+    .shukuhaku #lp-inshoku .business .top-title .title{
+        padding-left: 0;
+    }
+    .shukuhaku #lp-inshoku .top-title .title{
+        width: 100%;
+        padding: 0;
+        position: relative;
+        font-size: 17px;
+        line-height: 26px;
+        margin-left: -17px;
+        letter-spacing: 1.1px;
+        margin-right: -10px;
+        text-align: center;
+        top: unset;
+    }
+    #driver.inshokuseizo .top-title{
+        flex-direction: column;
+        padding-left: 31px;
+        padding-top: 7px;
+        align-items: flex-start;
+        min-height: auto;
+        padding-bottom: 12px;
+        min-height: 60px;
+    }
+    .shukuhaku #lp-inshoku .top-title .t1{
+        position: static;
+        width: 100%;
+        transform: unset;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 3px;
+    }
+    .shukuhaku #lp-inshoku .top-title .t1:before{
+        height: 5px;
+        width: 23px;
+        left: 0;
+    }
+    .shukuhaku #lp-inshoku .business .business-list{
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 20px;
+        padding-bottom: 40px;
+    }
+    .shukuhaku #lp-inshoku .business .business-item{
+        width: 100%;
+        border-radius: 16px;
+    }
+    .shukuhaku #lp-inshoku .business .business-item .text {
+        font-size: min(3.76vw, 16px);
+        min-height: auto;
+        padding: 0 20px;
+    }
+    .shukuhaku #lp-inshoku .business .business-item .image {
+        padding: 0 20px;
+    }
+    #driver.shukuhaku .main-banner .text-bottom .info .title{
+        padding-left: 22px;
+    }
+    .shukuhaku #lp-inshoku .business .business-item .ttl {
+        font-size: min(6.12vw, 26px);
+    }
+    .shukuhaku #lp-inshoku .strengths .sub-ttl {
+        font-size: 20px;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-list{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+        row-gap: 20px;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-item {
+        padding: 15px 20px 20px;
+        margin-bottom: 0;
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-item h4{
+        font-size: min(5.18vw, 22px);
+    }
+    .shukuhaku #lp-inshoku .strengths .strengths-item .text{
+        font-size: min(3.76vw, 16px);
+    }
+    .shukuhaku .recruitment-flow-content{
+        padding: 40px 20px 50px;
+    }
+    .shukuhaku .recruitment-flow-content .title-bor span{
+        font-size: 16px;
+        height: 40px;
+        padding: 0 25px;
+    }
+    .shukuhaku .recruitment-flow-content .title-bor{
+        justify-content: center;
+        padding: 0;
+    }
+    .shukuhaku .recruitment-flow-content .title-item{
+        margin-bottom: 35px;
+    }
+    .shukuhaku .recruitment-flow-content .follow-up .title-item .ttl-note{
+        font-size: 15px;
+    }
+    .shukuhaku .recruitment-flow-content .follow-up .title-bor span{
+        padding: 0 25px;
+    }
+    .shukuhaku .recruitment-flow-content .job-offer .job-offer-list,
+    .shukuhaku .recruitment-flow-content .follow-up .follow-up-list{
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 50px;
+        align-items: center;
+        padding-right: 0;
+    }
+    .shukuhaku .recruitment-flow-content .job-offer .job-offer-item,
+    .shukuhaku .recruitment-flow-content .job-offer .job-offer-item:last-child{
+        width: 190px;
+        min-height: 190px;
+    }
+    .shukuhaku .recruitment-flow-content .follow-up .follow-up-item,
+    .shukuhaku .recruitment-flow-content .follow-up .follow-up-item:last-child{
+        width: 230px;
+        min-height: 230px;
+    }
+    .shukuhaku .recruitment-flow-content .job-offer .job-offer-item .ttl,
+    .shukuhaku .recruitment-flow-content .follow-up .follow-up-item .ttl{
+        font-size: min(4.71vw, 20px);
+        padding-top: 16px;
+        margin-bottom: 16px;
+    }
+    .shukuhaku .recruitment-flow-content .job-offer .job-offer-item img{
+        width: auto !important;
+    }
+    .shukuhaku .recruitment-flow-content .job-offer .job-offer-item .note{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .shukuhaku .recruitment-flow-content .job-offer .job-offer-item:last-child .ttl{
+        font-size: 24px;
+        padding-top: 24px;
+    }
+    .shukuhaku .recruitment-flow-content .job-offer .job-offer-item:after{
+        width: 22px;
+        height: 29px;
+        top: unset;
+        right: unset;
+        transform: translateX(-50%) rotate(90deg);
+        left: 50%;
+        bottom: -40px;
+    }
+    .shukuhaku .recruitment-flow-content .follow-up .follow-up-item img{
+        width: auto !important;
+    }
+    .shukuhaku .recruitment-flow-content .follow-up .follow-up-item:nth-child(2) .ttl{
+        margin-bottom: 35px;
+    }
+    .shukuhaku .recruitment-flow-content .follow-up .follow-up-item:nth-child(3) .ttl {
+        margin-bottom: 18px;
+    }
+    .shukuhaku .recruitment-flow-content .follow-up .follow-up-item:last-child .ttl{
+        font-size: 24px;
+        padding-top: 30px;
+        margin-bottom: 15px;
+    }
+    .shukuhaku .recruitment-flow-content .follow-up .follow-up-item:after{
+        width: 22px;
+        height: 29px;
+        top: unset;
+        right: unset;
+        transform: translateX(-50%) rotate(90deg);
+        left: 50%;
+        bottom: -40px;
+    }
+    .shukuhaku #lp-inshoku .recruitment-flow .title{
+        line-height: 1.4;
+        font-size: 24px;
+    }
+    .shukuhaku .recruitment-flow-content .follow-up .title-item{
+        justify-content: center;
+        row-gap: 9px;
+    }
+    .shukuhaku .support-services .support-services-content{
+        border-radius: 24px;
+    }
+    .shukuhaku .support-services .support-services-item .image-content .ttl-image{
+        font-size: min(4.71vw, 20px);
+    }
+    #driver.inshokuseizo .driver-main{
+        padding-top: 60px;
+    }
+    #driver.inshokuseizo .top-title{
+        justify-content: center;
+        /*padding-left: 0;*/
+    }
+    #driver.inshokuseizo .top-title .title.color-w{
+        padding-left: 0;
+    }
+    .flow-of-acceptance .flow-of-acceptance-item:nth-child(1):after{
+        display: none;
+    }
+    .flow-of-acceptance .flow-of-acceptance-item .text-item:after{
+        width: 38px;
+        height: 22px;
+        bottom: -33px;
+    }
+    #driver.kaigo .skills-recruitment .skills-recruitment-main .price .t2{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .kaigo #lp-inshoku .skills-recruitment .skills-recruitment-main .price .number{
+        width: 100%;
+        order: 2;
+        text-align: center;
+        font-size: 60px;
+        line-height: 66px;
+        letter-spacing: 3px;
+        padding-top: 0;
+        margin-bottom: 6px;
+        padding-right: 0px;
+    }
+    #driver.kaigo .skills-recruitment .skills-recruitment-main .price .t1{
+        margin-bottom: 0;
+    }
+    .kaigo #lp-inshoku .top-title .title{
+        text-align: center;
+        margin-left: -17px;
+    }
+    #driver.kaigo .country-kaigo .top-title{
+        min-height: 68px;
+    }
+    #driver.kaigo .top-title .title.color-w{
+        font-size: 24px;
+    }
+    .kaigo .country-content{
+        padding: 30px 20px 30px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+    .kaigo .country-kaigo .logo-list{
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
+    .kaigo .country-kaigo .logo-list:before{
+        display: none;
+    }
+    .kaigo .country-kaigo .logo-item{
+        width: 100%;
+    }
+    .kaigo .country-kaigo .country-info{
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .kaigo .country-kaigo .country-info .ttl{
+        font-size: min(5.18vw, 22px);
+    }
+    .kaigo .country-kaigo .country-info .text{
+        font-size: min(3.29vw, 14px);
+    }
+    .kaigo .country-kaigo .country-info .text-b{
+        font-size: min(3.76vw, 16px);
+    }
+    .kaigo .country-kaigo .country-info .text-b-2{
+        font-size: min(3.06vw, 13px);
+    }
+    .kaigo #lp-inshoku .bg-content{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .kaigo .nursing-care-content .skills-work-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .kaigo .nursing-care-content{
+        padding: 30px 20px 50px;
+    }
+    .kaigo .nursing-care-content .skills-work-item{
+        padding: 20px min(4.71vw, 20px);
+        border-width: 3px;
+        border-radius: 16px;
+    }
+    .kaigo .nursing-care-content .skills-work-item .ttl{
+        font-size: 20px;
+    }
+    .kaigo .nursing-care-content .skills-work-item .text{
+        font-size: min(3.29vw, 14px);
+    }
+    .kaigo .technical-training .essential-work{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .kaigo .technical-training .related-work{
+        width: 100%;
+    }
+    .kaigo .technical-training .essential-work-list {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+        row-gap: 25px;
+    }
+    .kaigo .technical-training .title-top{
+        font-size: 20px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+    .kaigo .technical-training .essential-work .ttl-bor{
+        font-size: 16px;
+        height: 40px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .kaigo #lp-inshoku .technical-training .top-title{
+        min-height: 68px;
+        padding-top: 10px;
+    }
+    .kaigo .technical-training .technical-training-content{
+        padding: 30px 15px;
+    }
+    .kaigo .technical-training .essential-work .ttl-bor:after{
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #00B3BE;
+        top: unset;
+        right: unset;
+        left: 50%;
+        bottom: -20px;
+        transform: translateX(-50%);
+    }
+    .kaigo .technical-training .essential-work .description .text-info p{
+        font-size: min(3.29vw, 14px);
+    }
+    .kaigo .technical-training .essential-work .description{
+        padding: 15px 10px;
+    }
+    .kaigo .technical-training .essential-work .description .t1{
+        font-size: min(3.76vw, 16px);
+        margin-bottom: 6px;
+    }
+    .kaigo .technical-training .essential-work .description .t2{
+        font-size: min(3.29vw, 14px);
+        margin-bottom: 8px;
+    }
+    .kaigo .technical-training .essential-work .t1-box{
+        font-size: min(3.76vw, 16px);
+        height: 40px;
+        margin-bottom: 80px;
+    }
+    .kaigo .technical-training .essential-work .t1-box:after{
+        width: 40px;
+        height: 40px;
+        bottom: -60px;
+    }
+    .kaigo .technical-training .essential-work .description.item02 .text-info{
+        min-height: 150px;
+    }
+    .kaigo .technical-training .related-work .title-top{
+        margin-bottom: 15px;
+    }
+    .kaigo .technical-training .related-work-content{
+        padding: 20px 10px;
+    }
+    .kaigo .technical-training .related-work-content p,
+    .kaigo .technical-training .related-work-content p.ttl{
+        font-size: min(3.29vw, 14px);
+    }
+    .kaigo #lp-inshoku .technical-training {
+        margin-bottom: 60px;
+    }
+    .kaigo .facilities .facilities-list{
+        column-gap: min(3.53vw, 15px);
+    }
+    .kaigo .facilities .facilities-item{
+        width: calc(33.33% - min(2.35vw, 10px));
+        min-height: auto;
+        position: relative;
+        padding-bottom: 30.5%;
+    }
+    .kaigo .facilities .facilities-content{
+        padding: 35px min(4.6vw, 20px);
+    }
+    .kaigo .facilities .facilities-item img{
+        width: auto !important;
+        margin-bottom: 5px;
+    }
+    .kaigo .facilities .facilities-item .ttl{
+        font-size: min(2.35vw, 10px);
+    }
+    .kaigo .facilities .facilities-item .item-inner{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+    }
+    .kaigo .facilities {
+        margin-bottom: 60px;
+    }
+    #driver.kaigo .top-title .title.yellow{
+        padding-left: 0;
+    }
+    #driver.kaigo .benefits-service .top-title{
+        border-radius: 10px 10px 0 0;
+    }
+    #driver.kaigo .top-title .title.yellow{
+        font-size: min(4vw, 17px);
+        line-height: 1.5;
+    }
+    #driver.kaigo .benefits-service .benefits-service-content{
+        padding-bottom: 50px;
+    }
+    .kaigo .service-different .title{
+        padding: 0;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.4;
+        min-height: 80px;
+    }
+    .kaigo .service-different .service-different-content{
+        padding: 60px min(4.71vw, 20px) 40px;
+        column-gap: min(4vw, 20px);
+    }
+    .kaigo .service-different .service-different-item{
+        width: calc(50% - min(2.2vw, 10px));
+        min-height: min(37.65vw, 160px);
+        border-width: 3px;
+        border-radius: 16px;
+    }
+    .kaigo .service-different .service-different-item .ttl{
+        font-size: min(2.82vw, 12px);
+        padding: 0 10px;
+    }
+    .strengths-camcom .content{
+        padding: 40px 20px 50px;
+    }
+    .strengths-camcom .content .title span{
+        padding: 0 30px;
+        height: 40px;
+    }
+    .strengths-camcom .content .title{
+        margin-bottom: 35px;
+    }
+    .strengths-camcom .content .t1, .strengths-camcom .content dt{
+        font-size: min(3.76vw, 16px);
+        padding: 0;
+    }
+    .strengths-camcom .content .t1, .strengths-camcom .content dl{
+        padding-left: 0;
+    }
+    .strengths-camcom .content dt{
+        margin-bottom: 10px;
+    }
+    .strengths-camcom .content .t1{
+        margin-bottom: 20px;
+    }
+    .strengths-camcom .content dd{
+        font-size: min(2.82vw, 12px);
+    }
+    .strengths-camcom .content dl{
+        margin-bottom: 20px;
+    }
+    .strengths-camcom .content .logo-list{
+        column-gap: 20px;
+        padding-left: 0;
+    }
+    .kaigo #lp-inshoku .recruitment-flow{
+        padding-top: 80px;
+    }
+    .kaigo #lp-inshoku .recruitment-flow h2.title{
+        font-size: 24px;
+    }
+    .kaigo #lp-inshoku .recruitment-flow .top-title .title{
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    #driver.kaigo .recruitment-flow .top-title{
+        min-height: 68px;
+        border-radius: 10px 10px 0 0;
+    }
+    .kaigo .recruitment-flow .recruitment-description{
+        border-radius: 0 0 24px 24px;
+    }
+    .kaigo #lp-inshoku .recruitment-flow{
+        padding-bottom: 80px;
+    }
+    .kaigo #lp-inshoku .recruitment-flow .content-box{
+        margin: 0;
+    }
+    .kaigo .recruitment-flow .recruitment-description{
+        padding: 25px 15px 40px;
+    }
+    .kaigo .recruitment-flow .info-item .title-item{
+        width: min(21.18vw, 90px);
+        padding: 0;
+    }
+    .kaigo .recruitment-flow .info-item .info{
+        width: calc(100% - min(21.18vw, 90px));
+        padding: 12px 12px;
+    }
+    .kaigo .recruitment-flow .info-item .title-item p{
+        font-size: min(4.24vw, 18px);
+    }
+    .kaigo .recruitment-flow .info-item .info p{
+        font-size: min(2.82vw, 12px);
+    }
+    .kaigo .recruitment-flow .info-item .info p:last-child{
+        margin-bottom: 0;
+    }
+    .kaigo .recruitment-flow .step-list {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 20px;
+    }
+    .kaigo .recruitment-flow .step-list .step-item br{
+        display: none;
+    }
+    .kaigo .recruitment-flow .step-list .step-item{
+        font-size: 16px;
+        line-height: 1.4;
+        height: 80px;
+    }
+    .kaigo .recruitment-flow .step-list .step-item:after{
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 18px solid #4DAEFF;
+        right: unset;
+        top: unset;
+        bottom: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .kaigo .recruitment-flow .step-list .step-item.orange:after{
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 18px solid #E48121;
+    }
+    .kaigo .recruitment-flow .step-list .step-item:last-child:after{
+        display: none;
+    }
+    #driver.kaigo .main-banner .text-bottom .info .t2{
+        font-size: 22px;
+    }
+    .kaigo #lp-inshoku .main-banner .news-top{
+        padding-bottom: 0;
+    }
+    #driver.kaigo .main-banner .text-bottom .info .title{
+        padding-top: 0;
+    }
+    #driver.kaigo .main-banner .text-bottom .info .title{
+        padding-left: 22px;
+    }
+
+    .kaigo .service-different .service-different-item:nth-child(1) .image img {
+        width: min(19.29vw, 82px);
+    }
+    .kaigo .service-different .service-different-item:nth-child(2) .image img {
+        width: min(25.41vw, 108px);
+    }
+    .kaigo .service-different .service-different-item:nth-child(3) .image img {
+        width: min(25.88vw, 110px);
+    }
+    .kaigo .service-different .service-different-item:nth-child(4) .image img {
+        width: min(16vw, 68px);
+    }
+    .kaigo .service-different .service-different-item:nth-child(5) .image img {
+        width: min(13.65vw, 58px);
+    }
+
+
+    #driver.honyaku .main-banner .text-bottom .info .text br{
+        display: block;
+    }
+    #driver.honyaku .main-banner .text-bottom .info .text br.pc-br{
+        display: none;
+    }
+    #driver.honyaku .country .country-item{
+        width: 100% !important;
+    }
+    #driver.honyaku .country .country-item .country-info:before{
+        width: 4.5px;
+        top: 5px !important;
+        height: calc(100% - 8px) !important;
+    }
+    #driver.honyaku .country .country-item .country-info.item-full .info-text{
+        font-size: min(3.06vw, 13px);
+    }
+    .honyaku #lp-inshoku .bg-content{
+        padding-bottom: 128px;
+    }
+    .honyaku .support-services .title,
+    .honyaku .support-services .t1{
+        padding-left: 0;
+    }
+    #driver.honyaku .main-banner .text-bottom .info .t1{
+        margin-bottom: 3px;
+    }
+    #driver.honyaku .country{
+        padding-top: 0;
+    }
+    #driver.shukuhaku .main-banner .item-content .info{
+        padding: 15px 18px;
+    }
+
+
+
+
+
+}

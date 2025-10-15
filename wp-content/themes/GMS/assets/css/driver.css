@@ -6,6 +6,13 @@ font-weight:600;
 #driver {
     color: black;
 }
+.contact-block .contact-form .form-submit .btn-submit .wpcf7-spinner{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin: 0;
+    transform: translateY(-50%);
+}
 
 #driver .h1-page {
     text-align: center;
@@ -929,7 +936,6 @@ max-width: 32%;
 .contact-block .contact-form{
     max-width: 810px;
     margin: auto;
-    border: 1px solid rgba(56,77,116,.75);
     border-radius: 10px;
     background: white;
     padding: 66px 100px;
@@ -1312,10 +1318,14 @@ input::placeholder,textarea::placeholder {
     line-height: 20px;
     width: 250px;
     height: 60px;
+    display: block !important;
 }
 .mw_wp_form_confirm {
-	background: #0022E4;
-    padding: 80px 0px
+    padding: 160px 0px 80px;
+    background-image: url(../../images/driver-upgrade/driver_bg01_pc.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 .form-complete {
 	background: #0022E4;

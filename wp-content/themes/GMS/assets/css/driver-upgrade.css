@@ -415,7 +415,7 @@ body #driver * {
 	color: #2A4852;
 	font-family: "Montserrat", serif;
 	letter-spacing: 0.8px;
-	background: #fff;
+	background: #F3F3F3;
 	padding-right: 38px;
 }
 #driver .skills-recruitment .merit .ttl{
@@ -3351,10 +3351,20 @@ body #driver * {
 	stroke: #fff;
 }
 .contact-block .contact-form .form-submit{
-	padding-top: 10px;
+	padding-top: 50px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+.contact-block .contact-form .form-submit .btn-submit > div{
+	display: block !important;
+}
+.contact-block .contact-form .form-submit .btn-submit .wpcf7-spinner{
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	margin: 0;
+	transform: translateY(-50%);
 }
 .contact-block .form-complete .title{
 	font-size: 20px;

@@ -99,8 +99,8 @@
                         <h3 class="title">選ばれる理由</h3>
                         <p class="text">大企業から中小企業までさまざまな<br/>業種の企業に対応。</p>
                         <div class="link-page">
-                            <a href="https://stg.mintoku.com/biz/report_download/"><span>資料ダウンロード</span><span class="icon">＞</span></a>
-                            <a href="https://stg.mintoku.com/biz/contact/"><span>お問い合わせ</span><span class="icon">＞</span></a>
+                            <a href="<?php echo home_url(); ?>/report_download/"><span>資料ダウンロード</span><span class="icon">＞</span></a>
+                            <a href="<?php echo home_url(); ?>/contact/"><span>お問い合わせ</span><span class="icon">＞</span></a>
                         </div>
                     </div>
                     <div class="reason-image">

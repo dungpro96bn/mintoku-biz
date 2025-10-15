@@ -1,13 +1,18 @@
+<?php
+
+/*
+Template Name: LP Seibishi
+*/
+
+?>
+
 <!--font Noto Sans and Montserrat-->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-<!-- <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/aos.css"> -->
-<!-- <script src="<?php bloginfo('template_directory'); ?>/assets/js/aos.js"></script> -->
+<link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/driver-upgrade.css">
 
-<link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/driver-upgrade.css"> 
-
-<?php get_header();?>
+<?php get_header(); ?>
 
 <div id="driver" class="seibishi seibishi-page">
 
@@ -419,37 +424,9 @@
 		</div>
 	</div>
 
-	<div id="lp-contact" class="contact contact-lp">
-		<div class="inner">
-			<h2 class="title">ぜひお気軽に<br class="sp-br"/>お問合せください。<br/>いつでもご説明致します</h2>
-			<h4 class="lp-form-title" style="display: none;">
-				<?php the_title(); ?>
-			</h4>
-			<div class="contact-block">
-				<?php echo do_shortcode('[contact-form-7 id="3981" title="lpdriverstep1"]'); ?>
-			</div>
-		</div>
-	</div>
+    <?php get_template_part("template-parts/form-contact-lp"); ?>
 
 </div>
 
-<script>
-	jQuery(function ($) {
-
-		window.onload = function() {
-			setTimeout(function() {
-				var titleText = $('.lp-form-title').text().trim();
-				var titleInput = $('input[name="lp-title"]').val();
-
-				if(titleInput !== titleText){
-					$('input[name="lp-title"]').val(titleText);
-				} else{
-					$('input[name="lp-title"]').val(titleText);
-				}
-			}, 1000); 
-		};
-
-	})
-</script>
 
 <?php get_footer(); ?>

@@ -72,8 +72,8 @@
 							<p class="text">2023年11月をもって特定技能在留人数が20万人を突破しました。<br class="pc-br"/>日本国内で急速に活用が広がる「特定技能」を<br class="pc-br"/>貴社の求める理想を超えた質と利便性で提供します。</p>
 							<div class="price">
 								<p class="t1">登録支援 管理人数実績</p>
-								<p class="t2">※申請中含む／<br class="pc-br"/>2024年3月末時点</p>
-								<p class="number">4,057<span>名</span></p>
+								<p class="t2">※申請中含む／<br class="pc-br"/>2025年3月末時点</p>
+								<p class="number">6,175<span>名</span></p>
 							</div>
 						</div>
 
@@ -423,35 +423,9 @@
 		</div>
 	</div>
 
-	<div id="lp-contact" class="contact contact-lp">
-		<div class="inner">
-			<h2 class="title">ぜひお気軽に<br class="sp-br"/>お問合せください。<br/>いつでもご説明致します</h2>
-            <h4 style="display: none;" class="lp-form-title"><?php the_title(); ?></h4>
-			<div class="contact-block">
-				<?php echo do_shortcode('[contact-form-7 id="3981" title="lpdriverstep1"]'); ?>
-			</div>
-		</div>
-	</div>
+    <?php get_template_part("template-parts/form-contact-lp"); ?>
 
 </div>
 
-<script>
-	jQuery(function ($) {
-
-		window.onload = function() {
-			setTimeout(function() {
-				var titleText = $('.lp-form-title').text().trim();
-				var titleInput = $('input[name="lp-title"]').val();
-
-				if(titleInput !== titleText){
-					$('input[name="lp-title"]').val(titleText);
-				} else{
-					$('input[name="lp-title"]').val(titleText);
-				}
-			}, 1000); 
-		};
-
-	})
-</script>
 
 <?php get_footer(); ?>
