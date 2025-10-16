@@ -69,7 +69,7 @@
                         <a target="_blank" href="<?php echo home_url(); ?>/lp-kaigo/">介護</a>
                         <a target="_blank" href="<?php echo home_url(); ?>/lp-shukuhaku/">ホテル業</a>
                         <a target="_blank" href="<?php echo home_url(); ?>/lp-inshokuseizo/">ホテル業</a>
-                        <p class="coming-soon">Coming soon</p>
+                        <a target="_blank" href="<?php echo home_url(); ?>/lp-honyaku/">通訳・翻訳</a>
                         <p class="coming-soon">Coming soon</p>
                         <p class="coming-soon">Coming soon</p>
                         <p class="coming-soon">Coming soon</p>
