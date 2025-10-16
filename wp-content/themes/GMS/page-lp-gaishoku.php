@@ -5,7 +5,7 @@
  **/
 ?>
 
-<?php get_header(); ?>
+<?php get_header('lp'); ?>
 
     <script>
         (function(d) {

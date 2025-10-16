@@ -14,7 +14,7 @@
 
 <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/driver-upgrade.css"> 
 
-<?php get_header();?>
+<?php get_header('lp');?>
 
 <div id="driver">
 

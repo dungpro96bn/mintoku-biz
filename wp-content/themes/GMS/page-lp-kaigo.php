@@ -1,5 +1,5 @@
 
-<?php get_header(); ?>
+<?php get_header('lp'); ?>
 
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/lp-inshoku.css">
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/lp-inshokuseizo.css">

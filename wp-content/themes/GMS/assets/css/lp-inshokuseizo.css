@@ -163,13 +163,10 @@ body .kaigo #lp-inshoku{
     width: 100%;
 }
 .accepted-fields .accepted-fields-container .accepted-fields-info{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: min(3.54vw, 86px);
-    padding: 0 min(4.79vw, 92px);
+    padding: 0 min(4.41vw, 60px);
 }
-.accepted-fields .accepted-fields-container .accepted-fields-info li{
-    font-size: 23px;
+.accepted-fields .accepted-fields-container .accepted-fields-info p{
+    font-size: min(1.69vw, 23px);
     line-height: 1.82;
     font-weight: bold;
 }
@@ -2472,6 +2469,10 @@ body .kaigo #lp-inshoku{
     #driver.honyaku .country .country-item:nth-child(1) .country-info{
         padding-right: 5px;
     }
+    .accepted-fields .accepted-fields-container .accepted-fields-info p{
+        font-size: min(1.56vw, 16px);
+    }
+
 
 }
 
@@ -3077,13 +3078,11 @@ body .kaigo #lp-inshoku{
     .accepted-fields .accepted-fields-container{
         padding: 20px 15px 38px;
     }
-    .accepted-fields .accepted-fields-container .accepted-fields-info{
-        grid-template-columns: repeat(1, 1fr);
-        max-width: 240px;
-        margin: auto;
-    }
-    .accepted-fields .accepted-fields-container .accepted-fields-info li{
+    .accepted-fields .accepted-fields-container .accepted-fields-info p{
         font-size: 16px;
+    }
+    .accepted-fields .accepted-fields-container .image-content{
+        margin-bottom: 20px;
     }
     .flow-of-acceptance .flow-of-acceptance-content {
         grid-template-columns: repeat(1, 1fr);
