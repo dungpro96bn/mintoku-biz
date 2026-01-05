@@ -1,32 +1,31 @@
 <!doctype html>
 <html lang="ja">
 	<head>
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-NXNV9MBM');</script>
-		<!-- End Google Tag Manager -->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>外国人求人サイト - Mintoku Work｜“人手不足”に 世界から答えを。</title>
-		<meta name="description" content="外国人求人サイト - Mintoku Work｜“人手不足”に 世界から答えを。mintokuで始める、外国人採用のトータルサポート。">
-		<meta name="thumbnail" content="https://mintoku.com/work/images/header/banner_image.png">
-		<meta property="og:type" content="article">
-		<meta property="og:title" content="外国人求人サイト - Mintoku Work">
-		<meta property="og:site_name" content="外国人求人サイト - Mintoku Work">
-		<meta property="og:image" content="https://mintoku.com/work/images/header/banner_image.png">
-		<meta property="og:url" content="https://mintoku.com/work/">
-		<meta property="og:description" content="Mintoku Work (みんとくワーク)は、特定技能・技人国に特化した求人サイトです。">
-		<meta property="fb:app_id" content="387640167627398">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/reset.css">
-		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/style.css">
-		<link rel="icon" href="https://mintoku.com/work/favicon.ico">
-	</head>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>外国人求人サイト - mintoku for biz | 外国人労働者支援サービス</title>
+<meta name="description" content="外国人求人サイト - mintoku for biz | 外国人労働者支援サービスmintoku for bizで始める、外国人採用のトータルサポート。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="mintoku for biz | 外国人労働者支援サービス">
+<meta property="og:type" content="website">
+<meta property="og:title" content="mintoku for biz | 外国人労働者支援サービス">
+<meta property="og:description" content="mintoku for biz は外国人労働者外の雇用にまつわる課題をまとめてサポート。外国人労働者や特定技能実習生の採用・入国・生活までを全面で支援いたします。">
+<meta property="og:url" content="https://mintoku.com/biz/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="mintoku for biz | 外国人労働者支援サービス">
+<meta name="twitter:description" content="mintoku for biz は外国人労働者外の雇用にまつわる課題をまとめてサポート。外国人労働者や特定技能実習生の採用・入国・生活までを全面で支援いたします。">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://mintoku.com/biz/wp-content/themes/GMS/assets/css/reset.css">
+<link rel="stylesheet" href="https://mintoku.com/biz/wp-content/themes/GMS/assets/css/style.css">
+<link rel="icon" href="https://mintoku.com/work/favicon.ico">
+</head>
 	<body>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXNV9MBM"
@@ -41,17 +40,17 @@
 							<p><span>03-6738-9686</span><br>営業時間:10時-18時（月-金）</p>
 						</li>
 						<li>
-							<a href="https://mintoku.com/biz/seminar/">
+							<a href="/biz/seminar/">
 								<img src="<?php bloginfo('template_directory'); ?>/assets/img/header-icon01.svg" alt="セミナー">
 							</a>
 						</li>
 						<li>
-							<a href="https://mintoku.com/biz/report_download/?category=white_paper">
+							<a href="/biz/report_download/?category=white_paper">
 								<img src="<?php bloginfo('template_directory'); ?>/assets/img/header-icon02.svg" alt="資料DL">
 							</a>
 						</li>
 						<li>
-							<a href="https://mintoku.com/biz/contact/">
+							<a href="/biz/contact/">
 								<img src="<?php bloginfo('template_directory'); ?>/assets/img/header-icon03.svg" alt="問い合わせ">
 							</a>
 						</li>
@@ -102,7 +101,7 @@
 					<p>「mintoku」は、外国人採用に特化した<br class="sp-only">トータルサポートサービスです。<br>採用前の準備から、<br class="sp-only">入社後の定着・教育・トラブル対応まで、<br>一社ごとの課題に合わせた最適な支援を提供します。</p>
 					<div class="cta-btn">
 						<div class="cta-contact">
-							<a href="https://mintoku.com/biz/contact/">
+							<a href="/biz/contact/">
 								<img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-contact.svg" alt="お問い合わせはこちら">
 							</a>
 						</div>
@@ -112,12 +111,12 @@
 							</a>
 						</div>
 						<div class="cta-dl">
-							<a href="https://mintoku.com/biz/report_download/?category=white_paper">
+							<a href="/biz/report_download/?category=white_paper">
 								<img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-dl.svg" alt="資料ダウンロード">
 							</a>
 						</div>
 						<div class="cta-seminar">
-							<a href="https://mintoku.com/biz/seminar/">
+							<a href="/biz/seminar/">
 								<img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-seminar.svg" alt="セミナー情報">
 							</a>
 						</div>
@@ -205,10 +204,10 @@
 					<h2>よくある質問</h2>
 					<dl class="faq-wrap">
 						<dt>Q.鉄道運転士には免許が必要かと思いますが、試験内容はどのようなものですか？</dt>
-						<dd>A.鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。<br><a href="https://mintoku.com/biz/qa_detail/3544" class="more">詳しく見る&raquo;</a></dd>
+						<dd>A.鉄道運転士になるための動力車操縦者試験は、身体検査・適性検査・筆記試験・技能試験によって行われます。<br><a href="/biz/qa_detail/3544" class="more">詳しく見る&raquo;</a></dd>
 						
 						<dt>Q.「特定技能1号」で在留できる期間は通算5年以内とされていますが、海外にいる間も期間に含まれますか？</dt>
-						<dd>A.再入国許可により出国していた期間は「通算」期間に含まれます。ただし、例外の場合もございます。<br><a href="https://mintoku.com/biz/qa_detail/1349" class="more">詳しく見る&raquo;</a></dd>
+						<dd>A.再入国許可により出国していた期間は「通算」期間に含まれます。ただし、例外の場合もございます。<br><a href="/biz/qa_detail/1349" class="more">詳しく見る&raquo;</a></dd>
 						
 						<dt>Q.外国人がトラックドライバーとして働くには免許が必要かと思いますが、外国の運転免許でも運転可能ですか？</dt>
 						<dd>A.免許の種類によって扱いが異なります。<br>以下にまとめましたので、ご確認ください。<br>
@@ -218,10 +217,10 @@
 								<li>➂外国の運転免許証から国内運転免許へ切り替える場合＜外免切替＞</li>
 								<li>➃日本で運転免許証を取得する場合<br>の４パターンがあります。</li>
 							</ul>
-							ただし、「特定技能」の場合には、➀国際運転免許証　➁外国運転免許証<br>は資格対象外になりますので、お気をつけください。<br><a href="https://mintoku.com/biz/qa_detail/3852" class="more">詳しく見る&raquo;</a></dd>
+							ただし、「特定技能」の場合には、➀国際運転免許証　➁外国運転免許証<br>は資格対象外になりますので、お気をつけください。<br><a href="/biz/qa_detail/3852" class="more">詳しく見る&raquo;</a></dd>
 						
 						<dt>Q.外国人労働者を雇用した場合に特別に必要な届出はありますか？</dt>
-						<dd>A.基本的には<a href="https://www.mhlw.go.jp/content/001059771.pdf" target="_blank">「外国人雇用状況届出書（様式第3号）」</a>が必要です。<br>また、外国人労働者が雇用保険被保険者である場合には、<a href="https://www.mhlw.go.jp/file/06-Seisakujouhou-11600000-Shokugyouanteikyoku/0000088973.pdf" target="_blank" class="pdflink">「雇用保険被保険者資格取得届（様式第２号・第4号）」</a>の提出を持って、「雇用状況届出書」に替えることも可能です。<br><a href="https://mintoku.com/biz/qa_detail/4068" class="more">詳しく見る&raquo;</a></dd>
+						<dd>A.基本的には<a href="https://www.mhlw.go.jp/content/001059771.pdf" target="_blank">「外国人雇用状況届出書（様式第3号）」</a>が必要です。<br>また、外国人労働者が雇用保険被保険者である場合には、<a href="https://www.mhlw.go.jp/file/06-Seisakujouhou-11600000-Shokugyouanteikyoku/0000088973.pdf" target="_blank" class="pdflink">「雇用保険被保険者資格取得届（様式第２号・第4号）」</a>の提出を持って、「雇用状況届出書」に替えることも可能です。<br><a href="/biz/qa_detail/4068" class="more">詳しく見る&raquo;</a></dd>
 						
 						<dt>Q.外国に家族がおり、日本から仕送りをしています。令和5年1月より、年間38万円以上支払っていないと所得税の扶養控除が受けられないと聞きましたが、本当ですか？</dt>
 						<dd>A.扶養控除の対象となるか否かは、ご家族（扶養親族）の方の年齢等によります。
@@ -235,7 +234,7 @@
 									</ul>
 								</li>
 							</ul>
-							のいずれかでなければ、扶養控除の対象となる親族に該当しないこととなりました。<br>（下記の図をご参照ください）<br><a href="https://mintoku.com/biz/qa_detail/3299" class="more">詳しく見る&raquo;</a></dd>
+							のいずれかでなければ、扶養控除の対象となる親族に該当しないこととなりました。<br>（下記の図をご参照ください）<br><a href="/biz/qa_detail/3299" class="more">詳しく見る&raquo;</a></dd>
 					</dl>
 				</div>
 			</section>
@@ -250,7 +249,7 @@
 					<p>「mintoku」は、外国人採用に特化した<br class="sp-only">トータルサポートサービスです。<br>採用前の準備から、<br class="sp-only">入社後の定着・教育・トラブル対応まで、<br>一社ごとの課題に合わせた最適な支援を提供します。</p>
 					<div class="cta-btn">
 						<div class="cta-contact">
-							<a href="https://mintoku.com/biz/contact/">
+							<a href="/biz/contact/">
 								<img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-contact.svg" alt="お問い合わせはこちら">
 							</a>
 						</div>
@@ -260,12 +259,12 @@
 							</a>
 						</div>
 						<div class="cta-dl">
-							<a href="https://mintoku.com/biz/report_download/?category=white_paper">
+							<a href="/biz/report_download/?category=white_paper">
 								<img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-dl.svg" alt="資料ダウンロード">
 							</a>
 						</div>
 						<div class="cta-seminar">
-							<a href="https://mintoku.com/biz/seminar/">
+							<a href="/biz/seminar/">
 								<img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-seminar.svg" alt="セミナー情報">
 							</a>
 						</div>
@@ -274,16 +273,16 @@
 			</section>
 		</main>
 		<footer>
-			<div class="inner">
-				<div class="privacypolicy">
-					<a target="_blank" href="/work/term-of-use/">利用規約</a>
-					<a target="_blank" href="https://cam-global.co.jp/privacypolicy/">プライバシーポリシー</a>
-				</div>
-				<div class="copyright">
-					<p>&copy; 2025 CAMGLOBAL Inc. All Rights Reserved.</p>
-				</div>
-			</div>
-		</footer>
+<div class="inner">
+<div class="privacypolicy">
+					運営会社：<a target="_blank" href="https://cam-global.co.jp/">株式会社キャムグローバル</a>
+<a href="https://mintoku.com/biz/privacy/">プライバシーポリシー</a>
+</div>
+<div class="copyright">
+<p>&copy; 2025 CAMGLOBAL Inc. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
 				const dts = document.querySelectorAll(".faq-wrap dt");

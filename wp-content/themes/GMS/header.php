@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <?php if (is_404()) { ?>
-    <title>404 | mintoku for biz | 外国人労働者支援サービス</title>
+    <title>404 | Mintoku | 外国人労働者支援サービス</title>
     <?php }else{ ?>
     <title>
         <?php

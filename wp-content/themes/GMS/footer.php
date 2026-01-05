@@ -64,7 +64,7 @@
                                 <a href="<?php echo home_url(); ?>/service/life-support/">生活支援サービス</a>
                             </li>
                             <li class="menu-service-item">
-                                <a class="link-target" target="_blank" href="https://edu-poke.jp/global">mintoku study</a>
+                                <a href="<?php echo home_url(); ?>/study/">Mintoku study</a>
                             </li>
                             <li class="menu-service-item">
                                 <a href="<?php echo home_url(); ?>/service/cloud/maetra/">マエトレ</a>

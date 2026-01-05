@@ -1910,9 +1910,6 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
-.seminar-special .list-columns .title br {
-  display: none;
-}
 .seminar-special .list-columns .title:hover {
   text-decoration: underline;
 }

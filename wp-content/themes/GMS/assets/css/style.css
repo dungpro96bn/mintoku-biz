@@ -87,7 +87,7 @@ nav ul li.pc-only {
 	position: relative;
 }
 .worry p {
-	font-size: min(3.1vw,30px);
+	font-size: min(2.7vw,28px);
 	line-height: 2;
 	color: #fff;
 }
@@ -113,7 +113,7 @@ nav ul li.pc-only {
 	margin: 0 0 30px;
 }
 .cta p {
-	font-size: min(2.7vw,30px);
+	font-size: min(2.6vw,27px);
 	line-height: 2;
 	color: #fff;
 	text-align: center;
@@ -168,13 +168,13 @@ nav ul li.pc-only {
 	background: url("../img/value-bg-pc.jpg") no-repeat bottom center / cover;
 }
 .value h2 {
-	font-size: 50px;
+	font-size: min(5.3vw,50px);
 	margin: 0 0 30px;
 	text-align: center;
 	color: #0079b9;
 }
 .value p {
-	font-size: min(3vw,30px);
+	font-size: min(2.7vw,27px);
 	line-height: 2;
 	text-align: center;
 }
@@ -311,7 +311,7 @@ footer a:hover {
 		padding: 50px 10px 0;
 	}
 	.worry p {
-		font-size: 5vw;
+		font-size: 4.2vw;
 	}
 	.worry img.introduce {
 		position: relative;
@@ -363,6 +363,7 @@ footer a:hover {
 	.value h2 {
 		font-size: 6vw;
 		margin: 0 0 5%;
+		line-height: 1.5;
 	}
 	.value p {
 		font-size: 4vw;
@@ -418,13 +419,18 @@ footer a:hover {
 	}
 	
 	footer {
-		font-size: 12px;
+		font-size: 3.2vw;
+		padding: 30px 10px;
 	}
 	footer .inner {
 		display: block;
 	}
 	footer .privacypolicy {
 		margin: 0 0 10px;
+	}
+	footer a {
+		text-decoration: underline;
+		margin: 0 10px 0 0;
 	}
 }
 @media screen and (max-width:374px) {

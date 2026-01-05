@@ -159,7 +159,7 @@
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/assistant_image06_pc.png" alt="">
                     </picture>
                     <div class="info">
-                        <p>技能実習や特定技能にとどまらず、すべてのビザに対応。無制限のストレージ機能とチャート式のスケジュール管理が魅力です！</p>
+                        <p>技能実習や特定技能にとどまらず、すべてのビザに対応。無制限のストレージ機能とチャート式のスケジュール管理が魅力です。</p>
                     </div>
                     <div class="link-page">
                         <a href="<?php echo home_url(); ?>/service/cloud/camcat/">詳しく見る ＞</a>

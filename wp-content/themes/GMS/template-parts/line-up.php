@@ -33,7 +33,7 @@ if (is_page() || is_single()) {
                     </picture>
                     <div class="info">
                         <h4 class="title">採用サポート</h4>
-                        <p class="text">国内外さまざまな求人を掲載可能な「mintoku work」の運営や、採用プランを一から構築します。</p>
+                        <p class="text">国内外さまざまな求人を掲載可能な「Mintoku work」の運営や、採用プランを一から構築します。</p>
                         <div class="link-info">
                             <a href="<?php echo home_url(); ?>/service/recuit-support/">詳しく見る ＞</a>
                         </div>
@@ -74,10 +74,10 @@ if (is_page() || is_single()) {
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image09_pc.jpg" alt="">
                     </picture>
                     <div class="info">
-                        <h4 class="title">mintoku study</h4>
+                        <h4 class="title">Mintoku study</h4>
                         <p class="text">「読む・聞く」だけでなく「書く・話す」も実践的にトレーニング。日本語コミュニケーションのための専門アプリで、試験対策もサポートします。</p>
                         <div class="link-info">
-                            <a target="_blank" href="https://edu-poke.jp/global">詳しく見る
+                            <a target="_blank" href="https://mintoku.com/study/">詳しく見る
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.72" height="15.726" viewBox="0 0 16.72 15.726">
                                     <defs>
                                         <clipPath id="clip-path">

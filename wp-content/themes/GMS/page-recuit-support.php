@@ -67,9 +67,9 @@
                         <a target="_blank" href="<?php echo home_url(); ?>/lp-seibishi/">整備士</a>
                         <a target="_blank" href="<?php echo home_url(); ?>/lp-gaishoku/">外食業</a>
                         <a target="_blank" href="<?php echo home_url(); ?>/lp-kaigo/">介護</a>
-                        <a target="_blank" href="<?php echo home_url(); ?>/lp-shukuhaku/">ホテル業</a>
-                        <a target="_blank" href="<?php echo home_url(); ?>/lp-inshokuseizo/">ホテル業</a>
-                        <a target="_blank" href="<?php echo home_url(); ?>/lp-honyaku/">通訳・翻訳</a>
+                        <a target="_blank" href="<?php echo home_url(); ?>/lp-inshokuseizo/">飲食製造業</a>
+                        <p class="coming-soon">Coming soon</p>
+                        <p class="coming-soon">Coming soon</p>
                         <p class="coming-soon">Coming soon</p>
                         <p class="coming-soon">Coming soon</p>
                         <p class="coming-soon">Coming soon</p>
@@ -92,8 +92,8 @@
                         </picture>
                     </div>
                     <div class="list-page">
-                        <p class="coming-soon">Coming soon</p>
-                        <p class="coming-soon">Coming soon</p>
+                        <a target="_blank" href="<?php echo home_url(); ?>/lp-shukuhaku/">ホテル業</a>
+                        <a target="_blank" href="<?php echo home_url(); ?>/lp-honyaku/">通訳・翻訳</a>
                         <p class="coming-soon">Coming soon</p>
                         <p class="coming-soon">Coming soon</p>
                         <p class="coming-soon">Coming soon</p>

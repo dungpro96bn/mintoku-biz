@@ -388,6 +388,10 @@ body:not(.home){
 		display: none;
 	}
 
+    .plan-price.price-item02 .description .t2 {
+        text-align: center !important;
+	}
+
 }
 
 
