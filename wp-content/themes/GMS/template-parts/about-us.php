@@ -13,20 +13,21 @@ if (is_page()) {
 <div class="about-us <?php echo $slug; ?>">
     <div class="about-content">
         <div class="about-header">
-            <h2 class="heading en">ALL IN ONE SOLUTION</h2>
-            <h4 class="ttl">すべてのフェーズで企業と<br class="sp-br"/>人材をサポートする<br class="sp-br"/>オールインワンソリューション</h4>
+            <p class="title-box">ミントクの一括サポート</p>
         </div>
         <div class="about-info">
-            <div class="text-info">
-                <p class="text">私たちの“ ALL IN ONE SOLUTION”は、<br class="pc-br"/>外<br class="sp-br"/>国人労働者の入国から帰国までの<br class="pc-br"/>すべてのプロセスを一元化し、<br class="pc-br"/>スムーズで効率的な手続きを実現する<br class="pc-br"/>包括的なサポートです。<br/>
-                    ビザ申請から雇用契約、生活支援まで、<br class="pc-br"/>あらゆる課題を一貫して解決し、<br class="pc-br"/>安心と信頼を提供します。<br/>
-                    これにより、企業が持つ<br class="pc-br"/>労働力不足の課題を解消し、<br class="pc-br"/>安定した成長をサポートします。</p>
-            </div>
             <div class="about-image">
                 <picture class="image">
                     <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image02_pc.png 2x">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image02_pc.png" alt="">
                 </picture>
+            </div>
+            <div class="text-info">
+                <p class="text">外国人労働者の入国から帰国まで、<br/>
+                    ビザ申請・雇用契約・生活支援を<br/>
+                    一括サポートできます。</p>
+                <p class="text">企業の労働力不足を解消し、<br/>
+                    安心と効率を提供します。</p>
             </div>
             <div class="about-item item01">
                 <picture class="image">
@@ -63,4 +64,21 @@ if (is_page()) {
             </div>
         </div>
     </div>
+
+    <picture class="icon-pos image-icon06">
+        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/yellow.png 2x">
+        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/orange.png 2x">
+        <img class="sizes" data-aos="fade-up-left" src="<?php bloginfo('template_directory'); ?>/assets/images/main/orange.png" alt="">
+    </picture>
+    <div class="icon-pos image-icon07">
+        <picture class="image">
+            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/green_b.png 2x">
+            <img class="sizes" data-aos="fade-up-left" src="<?php bloginfo('template_directory'); ?>/assets/images/main/green_b.png" alt="">
+        </picture>
+    </div>
+    <picture class="icon-pos image-icon08">
+        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/pink_b.png 2x">
+        <img class="sizes" data-aos="fade-right" src="<?php bloginfo('template_directory'); ?>/assets/images/main/pink_b.png" alt="">
+    </picture>
+
 </div>

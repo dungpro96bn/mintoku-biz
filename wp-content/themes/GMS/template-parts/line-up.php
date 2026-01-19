@@ -49,7 +49,7 @@ if (is_page() || is_single()) {
                         <h4 class="title">労務代行サービス</h4>
                         <p class="text">勤怠管理・年末調整・翻訳・通訳など煩雑な作業を代行します。</p>
                         <div class="link-info">
-                            <a href="<?php echo home_url(); ?>/service/assistant/">詳しく見る ＞</a>
+                            <a href="<?php echo home_url(); ?>/service/administrative-support/">詳しく見る ＞</a>
                         </div>
                     </div>
                 </li>

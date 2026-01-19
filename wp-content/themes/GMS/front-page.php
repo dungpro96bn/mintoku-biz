@@ -8,14 +8,34 @@
                 <div class="banner-content">
                     <div class="image-content">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/main.png 2x">
+                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/main_sp.png 2x">
                             <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/main.png 2x">
                             <img class="sizes" data-aos="zoom-in" src="<?php bloginfo('template_directory'); ?>/assets/images/main/main.png" alt="">
                         </picture>
                     </div>
                     <div class="banner-info">
-                        <p>もっとスムーズに<br class="sp-br"/>外国人パートナーと、</p>
-                        <h2>共に安心して<br/>働ける社会を。</h2>
+                        <p class="t1">外国人雇用の不安を</p>
+                        <h2>ゼロ<span>に。</span></h2>
+                        <div class="text-box">
+                            <p class="text-box01">ミントクで、外国人採用を</p>
+                            <p class="text-box02">もっとシンプルに、もっと安心に。</p>
+                        </div>
+                        <div class="description-list">
+                            <div class="description-item">
+                                <p class="ttl">外国人材紹介数</p>
+                                <div class="inner-sp">
+                                    <p class="number">10,000<span>名以上</span></p>
+                                    <p class="note">（2024／12月末時点）</p>
+                                </div>
+                            </div>
+                            <div class="description-item">
+                                <p class="ttl">ライフサポート</p>
+                                <div class="inner-sp">
+                                    <p class="number">4,000<span>名以上</span></p>
+                                    <p class="note">（2024／3月末時点）</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -40,54 +60,174 @@
                 <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/perple.png 2x">
                 <img class="sizes" data-aos="fade-down-left" src="<?php bloginfo('template_directory'); ?>/assets/images/main/perple.png" alt="">
             </picture>
-            <picture class="icon-pos image-icon06">
+            <picture class="icon-pos image-icon06-new">
+                <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/yellow.png 2x">
+                <img class="sizes" data-aos="fade-left" src="<?php bloginfo('template_directory'); ?>/assets/images/main/yellow.png" alt="">
+            </picture>
+
+            <picture class="icon-pos hide-pc image-icon06">
                 <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/yellow.png 2x">
                 <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/orange.png 2x">
                 <img class="sizes" data-aos="fade-up-left" src="<?php bloginfo('template_directory'); ?>/assets/images/main/orange.png" alt="">
             </picture>
-            <div class="icon-pos image-icon07">
+            <div class="icon-pos hide-pc image-icon07">
                 <picture class="image">
                     <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/green_b.png 2x">
                     <img class="sizes" data-aos="fade-up-left" src="<?php bloginfo('template_directory'); ?>/assets/images/main/green_b.png" alt="">
                 </picture>
             </div>
-            <picture class="icon-pos image-icon08">
+            <picture class="icon-pos hide-pc image-icon08">
                 <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/main/pink_b.png 2x">
                 <img class="sizes" data-aos="fade-right" src="<?php bloginfo('template_directory'); ?>/assets/images/main/pink_b.png" alt="">
             </picture>
 
-            <?php get_template_part("template-parts/about-us"); ?>
-        </div>
-
-        <?php get_template_part("template-parts/line-up"); ?>
-
-        <div class="banner-block">
-            <div class="inner">
-                <div class="banner-list">
-                    <div class="banner-item">
-                        <a target="_blank" href="https://mintoku.com/messe/">
-                            <picture class="image">
-                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image12_pc.jpg 2x">
-                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image12_pc.jpg 2x">
-                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image12_pc.jpg" alt="">
-                            </picture>
-                            <div class="title">
-                                <p>オンライン展示会</p>
-                            </div>
-                        </a>
+            <div class="what-is-mintoku">
+                <div class="text-content">
+                    <div class="title">
+                        <picture>
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-01.png 2x">
+                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-01.png" alt="">
+                        </picture>
+                        <p class="ttl">「ミントク」とは？</p>
                     </div>
-                    <div class="banner-item">
-                        <a target="_blank" href="https://kjtimes.jp/">
-                            <picture class="image">
-                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.jpg 2x">
-                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.jpg 2x">
-                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.jpg" alt="">
-                            </picture>
-                        </a>
-                    </div>
+                    <p class="text">日本の現場は、もはや日本人だけでは<br class="pc-br"/>回らない時代に突入しています。<br/>
+                        しかし、外国人採用は文化や制度の違いから<br class="pc-br"/>不安を感じる企業も少なくありません。<br/>
+                        採用だけ、教育だけといった部分的な支援では、<br class="pc-br"/>真の戦力化は難しいのが現実です。<br/>
+                        Mintokuは、採用から定着、教育、業務設計まで<br class="pc-br"/>包括的にサポートし、<br class="pc-br"/>企業と外国人双方が安心して働ける環境づくりを<br class="pc-br"/>お手伝いします。</p>
+                </div>
+                <div class="image-content">
+                    <picture>
+                        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-02.png 2x">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-02.png" alt="">
+                    </picture>
                 </div>
             </div>
         </div>
+
+        <div class="service">
+            <div class="inner">
+                <div class="title-box">
+                    <p>サービス</p>
+                </div>
+                <div class="serviceList">
+                    <a href="<?php echo home_url(); ?>/service/recuit-support/" class="serviceItem full">
+                        <div class="title blue">
+                            <p class="ttl">採用サポート</p>
+                        </div>
+                        <div class="image">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-03-sp.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-03.jpg 2x">
+                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-03.jpg" alt="">
+                            </picture>
+                            <div class="text">
+                                <p>外国人採用をもっと気軽に</p><br/>
+                                <p><span>初期費用0円</span>でスタート</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="serviceItem">
+                        <div class="title green">
+                            <p class="ttl">管理サポート</p>
+                            <ul>
+                                <li>手続・申請</li>
+                                <li>通訳</li>
+                                <li>生活支援</li>
+                            </ul>
+                        </div>
+                        <div class="image">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-04-sp.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-04.jpg 2x">
+                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-04.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="serviceItem">
+                        <div class="title yellow">
+                            <p class="ttl">教育サポート</p>
+                            <ul>
+                                <li>研修</li>
+                                <li>動画</li>
+                                <li>マニュアル</li>
+                            </ul>
+                        </div>
+                        <div class="image">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-05-sp.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-05.jpg 2x">
+                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-05.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-contact">
+                    <a href="<?php echo home_url(); ?>/contact/"><span>お問い合わせ</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="recruitment-support">
+            <div class="inner">
+                <div class="title-box">
+                    <p>職種別採用支援</p>
+                </div>
+                <div class="recruitment-support-list">
+                   <div class="recruitment-support-item">
+                       <picture>
+                           <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-06-sp.png 2x">
+                           <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-06.png 2x">
+                           <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-06.png" alt="">
+                       </picture>
+                   </div>
+                    <div class="recruitment-support-item">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-07-sp.png 2x">
+                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-07.png 2x">
+                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-07.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="recruitment-support-item">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-08-sp.png 2x">
+                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-08.png 2x">
+                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-08.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="recruitment-support-item">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-09-sp.png 2x">
+                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-09.png 2x">
+                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-09.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="recruitment-support-item">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-10-sp.png 2x">
+                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-10.png 2x">
+                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-10.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="recruitment-support-item">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-11-sp.png 2x">
+                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-11.png 2x">
+                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-11.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="see-more">
+                    <a href="#">
+                        <span>もっと見る</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15.903" height="9.366" viewBox="0 0 15.903 9.366">
+                            <path id="Path_1260" data-name="Path 1260" d="M155.7,364.725l7.244,7.244-7.244,7.244" transform="translate(379.921 -154.994) rotate(90)" fill="none" stroke="#173c49" stroke-miterlimit="10" stroke-width="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <?php get_template_part("template-parts/about-us"); ?>
 
         <div class="reason">
             <div class="inner">
@@ -97,7 +237,7 @@
                             <span>REASON</span>
                         </h2>
                         <h3 class="title">選ばれる理由</h3>
-                        <p class="text">大企業から中小企業までさまざまな<br/>業種の企業に対応。</p>
+                        <p class="text">大企業から中小企業までさまざまな<br/>業種の企業にご活用いただいています。</p>
                         <div class="link-page">
                             <a href="<?php echo home_url(); ?>/report_download/"><span>資料ダウンロード</span><span class="icon">＞</span></a>
                             <a href="<?php echo home_url(); ?>/contact/"><span>お問い合わせ</span><span class="icon">＞</span></a>
@@ -191,6 +331,22 @@
                     </ul>
                     <div class="link-page">
                         <a href="<?php echo home_url(); ?>/qa/">Q&A一覧を見る<span class="icon-arrow">＞</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-block">
+            <div class="inner">
+                <div class="banner-list">
+                    <div class="banner-item">
+                        <a target="_blank" href="https://kjtimes.jp/">
+                            <picture class="image">
+                                <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_sp.png 2x">
+                                <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.png 2x">
+                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image13_pc.png" alt="">
+                            </picture>
+                        </a>
                     </div>
                 </div>
             </div>

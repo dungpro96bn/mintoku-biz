@@ -58,10 +58,10 @@
                             <a href="<?php echo home_url(); ?>/service/recuit-support/">採用サポート</a>
                         </li>
                         <li class="menu-service-item">
-                            <a href="<?php echo home_url(); ?>/service/assistant/">労務代行サービス</a>
+                            <a href="<?php echo home_url(); ?>/service/administrative-support/">労務代行サービス</a>
                         </li>
                         <li class="menu-service-item">
-                            <a href="<?php echo home_url(); ?>/service/life-support/">生活支援サービス</a>
+                            <a href="<?php echo home_url(); ?>/service/administrative-support/life-support/">生活支援サービス</a>
                         </li>
                         <li class="menu-service-item">
                             <a href="<?php echo home_url(); ?>/study/">Mintoku study</a>

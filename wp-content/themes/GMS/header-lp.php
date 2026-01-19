@@ -49,7 +49,7 @@
         })(document);
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- css file-->
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/all.min.css">
@@ -135,7 +135,8 @@
                 <div class="header-logo">
                     <a class="link-logo" href="<?php echo home_url(); ?>">
                         <picture class="logo">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo.svg">
+                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo_sp.svg">
+                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo.svg">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/logo.svg" alt="<?php bloginfo('name'); ?>">
                         </picture>
                     </a>
@@ -152,7 +153,10 @@
                 </div>
                 <div class="header-action-right">
                     <div class="download">
-                        <a class="download-btn" href="<?php echo home_url(); ?>/report_download/">資料ダウンロード</a>
+                        <a class="download-btn" href="<?php echo home_url(); ?>/report_download/">資料<br class="sp-br"/>ダウンロード</a>
+                    </div>
+                    <div class="foreigners">
+                        <a class="foreigners-btn" href="<?php echo home_url(); ?>/work">働きたい<br class="sp-br"/>外国人の方</a>
                     </div>
                     <div class="contact">
                         <a class="contact-btn" href="<?php echo home_url(); ?>/contact/">お問い合わせ</a>
