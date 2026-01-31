@@ -18,7 +18,8 @@ if (is_page()) {
         <div class="about-info">
             <div class="about-image">
                 <picture class="image">
-                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image02_pc.png 2x">
+                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image02_sp.png 2x">
+                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image02_pc.png 2x">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image02_pc.png" alt="">
                 </picture>
             </div>

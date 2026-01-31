@@ -579,7 +579,7 @@ body:not(.home) .banner-top .heading-block span {
   }
 }
 .homepage-banner .banner-info .t1 {
-  font-size: min(2.66vw, 34px);
+  font-size: min(2.58vw, 33px);
   line-height: 1.4;
   display: block;
   text-align: center;
@@ -588,13 +588,13 @@ body:not(.home) .banner-top .heading-block span {
 }
 @media (max-width: 767px) {
   .homepage-banner .banner-info .t1 {
-    font-size: min(6.93vw, 26px);
+    font-size: min(5.87vw, 22px);
     margin-bottom: 0;
   }
 }
 .homepage-banner .banner-info h2 {
   color: #173C49;
-  font-size: min(8.75vw, 112px);
+  font-size: min(6.95vw, 89px);
   line-height: 1;
   font-weight: 600;
   text-align: center;
@@ -610,11 +610,11 @@ body:not(.home) .banner-top .heading-block span {
 }
 @media (max-width: 767px) {
   .homepage-banner .banner-info h2 {
-    font-size: min(20vw, 75px);
+    font-size: min(15.47vw, 58px);
     line-height: 1.268;
     white-space: nowrap;
     padding-left: min(5.33vw, 20px);
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 }
 .homepage-banner .banner-info .text-box {
@@ -648,9 +648,7 @@ body:not(.home) .banner-top .heading-block span {
   color: #fff;
   background: linear-gradient(110deg, rgb(208, 140, 45) 0%, rgb(222, 77, 23) 100%);
   display: inline-block;
-  width: 100%;
-  max-width: min(33.21vw, 360px);
-  padding: 3.5px 10px;
+  padding: 3.5px 30px;
 }
 @media (max-width: 767px) {
   .homepage-banner .banner-info .text-box .text-box02 {
@@ -743,8 +741,8 @@ body:not(.home) .banner-top .heading-block span {
   content: "";
   position: absolute;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60.469' height='1' viewBox='0 0 60.469 1'%3E%3Cline id='Line_333' data-name='Line 333' x2='60.469' transform='translate(0 0.5)' fill='none' stroke='%23173c49' stroke-miterlimit='10' stroke-width='1'/%3E%3C/svg%3E%0A");
-  height: 0.5px;
-  width: calc(50% - 10px);
+  height: 1px;
+  width: 50%;
   background-size: 100%;
   left: 0;
   top: calc(100% + 2px);
@@ -971,6 +969,10 @@ body:not(.home) .banner-top .heading-block span {
   flex-wrap: wrap;
   border-radius: min(3.88vw, 40px);
   overflow: hidden;
+  transition: 0.2s;
+}
+#homepage .service .serviceList .serviceItem:hover {
+  opacity: 0.7;
 }
 @media (max-width: 767px) {
   #homepage .service .serviceList .serviceItem {
@@ -1317,6 +1319,7 @@ body:not(.home) .banner-top .heading-block span {
   bottom: max(-7.38vw, -76px);
   left: 50%;
   transform: translateX(-50%);
+  display: none;
 }
 @media (max-width: 767px) {
   .about-us .title-box {
@@ -1340,11 +1343,11 @@ body:not(.home) .banner-top .heading-block span {
 }
 .about-us .about-header {
   text-align: center;
-  margin-bottom: min(9.13vw, 94px);
+  margin-bottom: min(2.58vw, 33px);
 }
 @media (max-width: 767px) {
   .about-us .about-header {
-    margin-bottom: 70px;
+    margin-bottom: 15px;
   }
 }
 .about-us .about-header .heading {
@@ -1375,8 +1378,8 @@ body:not(.home) .banner-top .heading-block span {
 }
 .about-us .text-info {
   position: absolute;
-  top: max(-3.2vw, -41px);
-  left: min(7.81vw, 100px);
+  top: 0;
+  left: min(3.13vw, 40px);
 }
 .about-us .text-info .text {
   font-size: min(1.41vw, 18px);
@@ -1442,8 +1445,8 @@ body:not(.home) .banner-top .heading-block span {
   }
 }
 .about-us .about-item.item01 {
-  top: 61.7%;
-  left: min(7.81vw, 100px);
+  top: 62%;
+  left: min(3.13vw, 40px);
 }
 @media (max-width: 767px) {
   .about-us .about-item.item01 {
@@ -1466,7 +1469,7 @@ body:not(.home) .banner-top .heading-block span {
 }
 .about-us .about-item.item02 {
   top: max(-2.97vw, -38px);
-  right: min(7.81vw, 100px);
+  right: min(3.91vw, 50px);
 }
 .about-us .about-item.item02 .image {
   margin-bottom: min(1.41vw, 18px);
@@ -1492,8 +1495,8 @@ body:not(.home) .banner-top .heading-block span {
   }
 }
 .about-us .about-item.item03 {
-  top: 61.7%;
-  right: min(7.81vw, 100px);
+  top: 62%;
+  right: min(3.91vw, 50px);
 }
 .about-us .about-item .image {
   display: block;
@@ -1550,9 +1553,9 @@ body:not(.home) .banner-top .heading-block span {
   }
 }
 .about-us .about-image picture {
-  aspect-ratio: 512/486;
+  aspect-ratio: 745/659;
   display: block;
-  max-width: min(40vw, 512px);
+  max-width: min(58.2vw, 745px);
   margin: auto;
 }
 @media (max-width: 767px) {
@@ -1561,7 +1564,7 @@ body:not(.home) .banner-top .heading-block span {
   }
 }
 .about-us .about-image img {
-  width: min(40vw, 512px);
+  width: min(58.2vw, 745px);
 }
 @media (max-width: 767px) {
   .about-us .about-image img {

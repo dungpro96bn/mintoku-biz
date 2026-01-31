@@ -168,7 +168,7 @@ if ($post_cats) {
                     <?php if ($post_key) : ?>
                         <p class="ttl">【<?php echo $post_key ?>】</p>
                     <?php endif; ?>
-                    <p class="sub-ttl"><?php echo $post_title ?></p>
+                    <h1 class="sub-ttl"><?php echo $post_title ?></h1>
                     <?php if (get_field('seminar_lead')) { ?>
                         <div class="text">
                             <?php the_field('seminar_lead'); ?>

@@ -99,7 +99,9 @@
                         <p class="t1">外国人雇用管理</p>
                         <p class="t1">書類情報</p>
                         <p class="t1">ストレージ</p>
-                        <p class="t1">準備中</p>
+                        <div class="info-t">
+                            <p class="text">（準備中）</p>
+                        </div>
                     </div>
                 </div>
                 <a target="_blank" href="https://biz.ca-m.co.jp/hr/t-rex/" class="support-item">

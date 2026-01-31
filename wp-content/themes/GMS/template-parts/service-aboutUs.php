@@ -120,14 +120,14 @@ $templateDir = get_template_directory_uri();
 
         <div class="about-content">
             <div class="about-info el-<?php echo esc_attr($slug); ?>">
-                <h2 class="heading-block en">
+                <h1 class="heading-block en">
                     <?php if ($slug === 'translate') : ?>
                         <span class="uppercase pc-br"><?php echo nl2br($heading); ?></span>
                         <span class="uppercase sp-br">Translation &<br />interpreta-<br />tion support</span>
                     <?php else : ?>
                         <span class="uppercase"><?php echo nl2br($heading); ?></span>
                     <?php endif; ?>
-                </h2>
+                </h1>
                 <div class="info"><?php echo wp_kses_post($description); ?></div>
             </div>
             <div class="about-image er-<?php echo esc_attr($slug); ?>">

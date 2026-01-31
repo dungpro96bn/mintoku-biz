@@ -169,10 +169,10 @@
                         <p class="type"><?php echo $term->name; ?></p>
                     <?php endforeach; ?>
                     
-                    <dl class="dl-text">
-                        <dt class="dt-title"><?php echo $post_title; ?></dt>
-                        <dd class="dd-content"><?php echo $post_content; ?></dd>                        
-                    </dl>
+                    <div class="dl-text">
+                        <h1 class="dt-title"><?php echo $post_title; ?></h1>
+                        <div class="dd-content"><?php echo $post_content; ?></div>
+                    </div>
                 </div>
             </div>
             <div class="box-link flex">

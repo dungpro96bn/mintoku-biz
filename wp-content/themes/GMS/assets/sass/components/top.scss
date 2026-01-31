@@ -579,7 +579,7 @@ body:not(.home){
     }
 
     .t1{
-      font-size: min(2.66vw, 34px);
+      font-size: min(2.58vw, 33px);
       line-height: 1.4;
       display: block;
       text-align: center;
@@ -587,14 +587,14 @@ body:not(.home){
       color: #173C49;
 
       @include var.xs{
-        font-size: min(6.93vw, 26px);
+        font-size: min(5.87vw, 22px);
         margin-bottom: 0;
       }
     }
 
     h2{
       color: #173C49;
-      font-size: min(8.75vw, 112px);
+      font-size: min(6.95vw, 89px);
       line-height: 1;
       font-weight: 600;
       text-align: center;
@@ -609,11 +609,11 @@ body:not(.home){
       }
 
       @include var.xs{
-        font-size: min(20vw, 75px);
+        font-size: min(15.47vw, 58px);
         line-height: 1.268;
         white-space: nowrap;
         padding-left: min(5.33vw, 20px);
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
 
     }
@@ -649,9 +649,7 @@ body:not(.home){
         color: #fff;
         background: linear-gradient(110deg,rgba(208, 140, 45, 1) 0%, rgba(222, 77, 23, 1) 100%);
         display: inline-block;
-        width: 100%;
-        max-width: min(33.21vw, 360px);
-        padding: 3.5px 10px;
+        padding: 3.5px 30px;
 
         @include var.xs{
           font-size: min(4.53vw, 17px);
@@ -746,8 +744,8 @@ body:not(.home){
           content: "";
           position: absolute;
           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60.469' height='1' viewBox='0 0 60.469 1'%3E%3Cline id='Line_333' data-name='Line 333' x2='60.469' transform='translate(0 0.5)' fill='none' stroke='%23173c49' stroke-miterlimit='10' stroke-width='1'/%3E%3C/svg%3E%0A");
-          height: 0.5px;
-          width: calc(50% - 10px);
+          height: 1px;
+          width: 50%;
           background-size: 100%;
           left: 0;
           top: calc(100% + 2px);
@@ -985,6 +983,11 @@ body:not(.home){
         flex-wrap: wrap;
         border-radius: min(3.88vw, 40px);
         overflow: hidden;
+        transition: .2s;
+
+        &:hover{
+          opacity: .7;
+        }
 
         @include var.xs{
           width: calc(50% - 6px);
@@ -1364,6 +1367,7 @@ body:not(.home){
       bottom: max(-7.38vw, -76px);
       left: 50%;
       transform: translateX(-50%);
+      display: none;
     }
 
     @include var.xs{
@@ -1388,10 +1392,10 @@ body:not(.home){
 
   .about-header{
     text-align: center;
-    margin-bottom: min(9.13vw, 94px);
+    margin-bottom: min(2.58vw, 33px);
 
     @include var.xs{
-      margin-bottom: 70px;
+      margin-bottom: 15px;
     }
 
     .heading{
@@ -1425,8 +1429,8 @@ body:not(.home){
 
   .text-info{
     position: absolute;
-    top: max(-3.2vw, -41px);
-    left: min(7.81vw, 100px);
+    top: 0;
+    left: min(3.13vw, 40px);
 
     .text{
       font-size: min(1.41vw, 18px);
@@ -1498,8 +1502,8 @@ body:not(.home){
     }
 
     &.item01{
-      top: 61.7%;
-      left: min(7.81vw, 100px);
+      top: 62%;
+      left: min(3.13vw, 40px);
 
       @include var.xs{
         text-align: center;
@@ -1525,7 +1529,7 @@ body:not(.home){
 
     &.item02{
       top: max(-2.97vw, -38px);
-      right: min(7.81vw, 100px);
+      right: min(3.91vw, 50px);
 
       .image{
         margin-bottom: min(1.41vw, 18px);
@@ -1553,8 +1557,8 @@ body:not(.home){
     }
 
     &.item03{
-      top: 61.7%;
-      right: min(7.81vw, 100px);
+      top: 62%;
+      right: min(3.91vw, 50px);
     }
 
     .image{
@@ -1617,9 +1621,9 @@ body:not(.home){
     }
 
     picture{
-      aspect-ratio: 512 / 486;
+      aspect-ratio: 745 / 659;
       display: block;
-      max-width: min(40vw, 512px);
+      max-width: min(58.2vw, 745px);
       margin: auto;
 
       @include var.xs{
@@ -1628,7 +1632,7 @@ body:not(.home){
     }
 
     img{
-      width: min(40vw, 512px);
+      width: min(58.2vw, 745px);
 
       @include var.xs{
         width: 100%;

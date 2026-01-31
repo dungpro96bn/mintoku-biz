@@ -1391,6 +1391,8 @@
 .recuitSupport-link .recuitSupport-item .image-item {
   position: relative;
   width: 46.8%;
+  height: 100%;
+  background: #cfd0d0;
 }
 .recuitSupport-link .recuitSupport-item .image-item .image-logo {
   position: relative;

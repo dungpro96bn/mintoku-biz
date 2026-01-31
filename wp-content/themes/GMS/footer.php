@@ -58,16 +58,10 @@
                                 <a href="<?php echo home_url(); ?>/service/recuit-support/">採用サポート</a>
                             </li>
                             <li class="menu-service-item">
-                                <a href="<?php echo home_url(); ?>/service/administrative-support/">労務代行サービス</a>
+                                <a href="<?php echo home_url(); ?>/service/administrative-support/">管理サポート</a>
                             </li>
                             <li class="menu-service-item">
-                                <a href="<?php echo home_url(); ?>/service/administrative-support/life-support/">生活支援サービス</a>
-                            </li>
-                            <li class="menu-service-item">
-                                <a href="<?php echo home_url(); ?>/study/">Mintoku study</a>
-                            </li>
-                            <li class="menu-service-item">
-                                <a href="<?php echo home_url(); ?>/service/cloud/maetra/">マエトレ</a>
+                                <a href="<?php echo home_url(); ?>/study/">教育サポート</a>
                             </li>
                             <li class="menu-service-item">
                                 <a class="link-target" target="_blank" href="https://camtech-ea.net/">エデュックアカデミー</a>

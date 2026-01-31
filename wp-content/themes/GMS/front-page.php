@@ -14,25 +14,25 @@
                         </picture>
                     </div>
                     <div class="banner-info">
-                        <p class="t1">外国人雇用の不安を</p>
-                        <h2>ゼロ<span>に。</span></h2>
+                        <h1 class="t1">外国人採用、迷ったら</h1>
+                        <h2>ミントク。</h2>
                         <div class="text-box">
-                            <p class="text-box01">ミントクで、外国人採用を</p>
-                            <p class="text-box02">もっとシンプルに、もっと安心に。</p>
+                            <p class="text-box01">採用・教育・現場支援まで、</p>
+                            <p class="text-box02">ミントクで解決。</p>
                         </div>
                         <div class="description-list">
                             <div class="description-item">
-                                <p class="ttl">外国人材紹介数</p>
+                                <p class="ttl">支援実績</p>
                                 <div class="inner-sp">
-                                    <p class="number">10,000<span>名以上</span></p>
-                                    <p class="note">（2024／12月末時点）</p>
+                                    <p class="number">13,000<span>名以上</span></p>
+                                    <p class="note">（2025年／6月時点）</p>
                                 </div>
                             </div>
                             <div class="description-item">
                                 <p class="ttl">ライフサポート</p>
                                 <div class="inner-sp">
-                                    <p class="number">4,000<span>名以上</span></p>
-                                    <p class="note">（2024／3月末時点）</p>
+                                    <p class="number">6,000<span>名以上</span></p>
+                                    <p class="note">（2025年／7月時点）</p>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="serviceItem">
+                    <a href="<?php echo home_url(); ?>/service/administrative-support/" class="serviceItem">
                         <div class="title green">
                             <p class="ttl">管理サポート</p>
                             <ul>
@@ -142,8 +142,8 @@
                                 <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-04.jpg" alt="">
                             </picture>
                         </div>
-                    </div>
-                    <div class="serviceItem">
+                    </a>
+                    <a href="<?php echo home_url(); ?>/study/" class="serviceItem">
                         <div class="title yellow">
                             <p class="ttl">教育サポート</p>
                             <ul>
@@ -159,7 +159,7 @@
                                 <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/image-05.jpg" alt="">
                             </picture>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="btn-contact">
                     <a href="<?php echo home_url(); ?>/contact/"><span>お問い合わせ</span></a>

@@ -8,9 +8,9 @@ $today = date('Y-m-d H:i');
     <div class="contact-header">
         <div class="inner">
             <div class="header-entry">
-                <h2 class="heading-block center">
+                <h1 class="heading-block center">
                     <span class="uppercase">SEMINAR INFORMATION</span>
-                </h2>
+                </h1>
                 <p class="sub-ttl">外国人採用に関するセミナー情報</p>
             </div>
         </div>

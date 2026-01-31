@@ -11,7 +11,7 @@ if (is_page() || is_single()) {
 $bannerData = [
     'recuit-support' => [
         'color' => 'blue',
-        'heading' => ['成果報酬型で安心', '新しい外国人採用の形'],
+        'heading' => ['採用後のサポートまで安心', '新しい外国人採用の形'],
     ],
     'assistant' => [
         'color' => 'green',
@@ -129,17 +129,17 @@ if(esc_attr($slug) == "administrative-support"){
         </div>
 
         <div class="about-content upgrade">
-            <div class="about-info el-<?php echo esc_attr($slug); ?>">
-                <h2 class="heading color-<?php echo esc_attr($colorBg); ?>">
+            <div class="about-info el-<?php echo $class; ?>">
+                <h1 class="heading color-<?php echo esc_attr($colorBg); ?>">
                     <?php if ($slug === 'translate') : ?>
                         <p class="uppercase pc-br"><?php echo nl2br($heading); ?></p>
                     <?php else : ?>
                         <p class="uppercase"><?php echo nl2br($heading); ?></p>
                     <?php endif; ?>
-                </h2>
+                </h1>
                 <div class="info"><?php echo wp_kses_post($description); ?></div>
             </div>
-            <div class="about-image er-<?php echo esc_attr($slug); ?>">
+            <div class="about-image er-<?php echo $class; ?>">
                 <?php if ($image) : ?>
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="<?php echo esc_url($image['url']); ?> 2x">

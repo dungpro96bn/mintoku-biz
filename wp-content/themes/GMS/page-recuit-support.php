@@ -45,7 +45,7 @@
                                     </g>
                                 </svg>
                             </a>
-                            <a class="btn-inquiry" target="_blank" href="https://mintoku.com/work/contact/"><span>お問い合わせ</span>
+                            <a class="btn-inquiry" target="_blank" href="https://mintoku.com/contact/"><span>お問い合わせ</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16.72" height="15.726" viewBox="0 0 16.72 15.726">
                                     <g id="Group_1180" data-name="Group 1180" transform="translate(-112 -10)">
                                         <g id="Group_452" data-name="Group 452" transform="translate(112 10)">
@@ -104,7 +104,7 @@
                                     </g>
                                 </svg>
                             </a>
-                            <a class="btn-inquiry" target="_blank" href="https://cam-global.co.jp/contact/?event=Mintoku%20Messe"><span>お問い合わせ</span>
+                            <a class="btn-inquiry" target="_blank" href="https://mintoku.com/contact/"><span>お問い合わせ</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16.72" height="15.726" viewBox="0 0 16.72 15.726">
                                     <g id="Group_1180" data-name="Group 1180" transform="translate(-112 -10)">
                                         <g id="Group_452" data-name="Group 452" transform="translate(112 10)">
@@ -219,7 +219,7 @@
                                 </picture>
                             </div>
                             <div class="info-item">
-                                <p class="">建設</p>
+                                <p class="">外食業</p>
                             </div>
                         </a>
                     </div>
@@ -251,18 +251,24 @@
                             </div>
                         </a>
                     </div>
-                    <div class="recuitSupport-item specific-skills">
-                        <a href="<?php echo home_url(); ?>" class="coming-soon">
-                            <div class="image-item">
-                                <p class="category cat-01">特定技能</p>
-                                <picture class="image-logo">
-                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/recuitSupport_06.jpg 2x">
-                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/recuitSupport_06.jpg" alt="">
-                                </picture>
-                            </div>
-                            <div class="info-item">
-                                <p class="">ビル<br/>クリーニング</p>
-                            </div>
+<!--                    <div class="recuitSupport-item specific-skills">-->
+<!--                        <a href="--><?php //echo home_url(); ?><!--" class="coming-soon">-->
+<!--                            <div class="image-item">-->
+<!--                                <p class="category cat-01">特定技能</p>-->
+<!--                                <picture class="image-logo">-->
+<!--                                    <source srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_06.jpg 2x">-->
+<!--                                    <img class="sizes" src="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_06.jpg" alt="">-->
+<!--                                </picture>-->
+<!--                            </div>-->
+<!--                            <div class="info-item">-->
+<!--                                <p class="">ビル<br/>クリーニング</p>-->
+<!--                            </div>-->
+<!--                        </a>-->
+<!--                    </div>-->
+                    <div class="recuitSupport-item">
+                        <a href="#" class="coming-soon">
+                            <p class="category cat-01">特定技能</p>
+                            <p class="text">Coming soon</p>
                         </a>
                     </div>
                     <div class="recuitSupport-item">
