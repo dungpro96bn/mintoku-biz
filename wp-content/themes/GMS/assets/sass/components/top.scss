@@ -11,6 +11,10 @@
     z-index: 1;
     color: #E48121;
 
+    &.text-ja{
+      font-family: hiragino-kaku-gothic-pron, sans-serif;
+    }
+
     &:after{
       content: "";
       position: absolute;

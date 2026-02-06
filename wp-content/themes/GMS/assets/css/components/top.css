@@ -53,6 +53,9 @@
   z-index: 1;
   color: #E48121;
 }
+.heading-block span.text-ja {
+  font-family: hiragino-kaku-gothic-pron, sans-serif;
+}
 .heading-block span:after {
   content: "";
   position: absolute;

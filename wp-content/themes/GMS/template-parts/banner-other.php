@@ -26,7 +26,7 @@ $slugs = ["translate", "camcat", "life-support", "maetra", "videostep", "edpoke"
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/banner-orther-icon01.png" alt="">
                     </picture>
                     <h4 class="title">お役立ち資料</h4>
-                    <p>外国人材に関するサービス活用方法や、<br/>特定技能在留外国人推移などの資料が<br class="sp-br"/>無料でダウンロード可能。</p>
+                    <p>外国人材に関するサービス活用方法や、<br/>特定技能在留外国人推移などの資料が<br class="sp-br"/>無料でダウンロード可能</p>
                 </div>
                 <div class="link-page">
                     <a href="<?php echo home_url(); ?>/report_download/?category=white_paper">詳しく見る ＞</a>
@@ -39,7 +39,7 @@ $slugs = ["translate", "camcat", "life-support", "maetra", "videostep", "edpoke"
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/banner-orther-icon02.png" alt="">
                     </picture>
                     <h4 class="title">セミナー</h4>
-                    <p>外国人採用に関するセミナーを<br class="sp-br"/>様々なテーマで開催<br/>過去セミナーの動画もダウンロード可能</p>
+                    <p>外国人採用に関するセミナーをさまざまななテーマで開催<br class="pc-br"/>過去セミナーの動画も無料でダウンロード可能</p>
                 </div>
                 <div class="link-page">
                     <a href="<?php echo home_url(); ?>/seminar/">詳しく見る ＞</a>

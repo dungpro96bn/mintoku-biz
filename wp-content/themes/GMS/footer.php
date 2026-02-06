@@ -36,7 +36,7 @@
                                 <a href="<?php echo home_url(); ?>/news/">お知らせ</a>
                             </li>
                             <li class="footer-menu-item">
-                                <a href="<?php echo home_url(); ?>/contact/">お問い合わせ</a>
+                                <a href="<?php echo home_url(); ?>/contact/">お問合せ</a>
                             </li>
                         </ul>
                         <ul class="footer-menu-list">
@@ -52,7 +52,7 @@
                         </ul>
                     </div>
                     <div class="footer-service">
-                        <h4 class="title en">SERVICE</h4>
+                        <h4 class="title en">SERVICES</h4>
                         <ul class="menu-service-list">
                             <li class="menu-service-item">
                                 <a href="<?php echo home_url(); ?>/service/recuit-support/">採用サポート</a>

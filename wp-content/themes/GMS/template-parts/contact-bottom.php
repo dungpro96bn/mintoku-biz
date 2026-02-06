@@ -22,10 +22,10 @@ if (is_page() || is_single()) {
                 <div class="info-text">
                     <p>お悩み・課題に合わせて<br/>
                         活用方法をご案内いたします。<br/>
-                        お気軽にお問い合わせください。</p>
+                        お気軽にお問合せください。</p>
                 </div>
                 <p class="tel">03-6738-9686</p>
-                <p class="time">（平日：10時〜18時）</p>
+                <p class="time">（受付時間：平日10～18時）</p>
             </div>
         </div>
         <div class="contact-btn-list">

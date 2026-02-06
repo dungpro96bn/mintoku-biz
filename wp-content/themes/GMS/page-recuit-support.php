@@ -29,7 +29,7 @@
                             <li>求人1名・1件から掲載可能</li>
                             <li>最短3営業日/原稿作成支援付き</li>
                         </ul>
-                        <p class="text-note">※株式会社海外人材タイムス調べ（2024年7-8月調べ）<br class="sp-br"/>※2024年8月時点</p>
+                        <p class="text-note">（2025年10-11月調べ）※2025年11月時点</p>
                         <div class="link-page">
                             <a target="_blank" href="https://mintoku.com/work"><span>詳しく見る</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16.72" height="15.726" viewBox="0 0 16.72 15.726">
@@ -45,7 +45,7 @@
                                     </g>
                                 </svg>
                             </a>
-                            <a class="btn-inquiry" target="_blank" href="https://mintoku.com/contact/"><span>お問い合わせ</span>
+                            <a class="btn-inquiry" target="_blank" href="https://mintoku.com/contact/"><span>お問合せ</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16.72" height="15.726" viewBox="0 0 16.72 15.726">
                                     <g id="Group_1180" data-name="Group 1180" transform="translate(-112 -10)">
                                         <g id="Group_452" data-name="Group 452" transform="translate(112 10)">
@@ -87,7 +87,7 @@
                         <ul>
                             <li>アジアトップレベル大学との連携</li>
                             <li>インターンからの採用支援が可能</li>
-                            <li>専門性もった学生が多数在籍</li>
+                            <li>専門性を持つ学生が多数在籍</li>
                         </ul>
                         <div class="link-page">
                             <a target="_blank" href="https://mintoku.com/messe/"><span>詳しく見る</span>
@@ -104,7 +104,7 @@
                                     </g>
                                 </svg>
                             </a>
-                            <a class="btn-inquiry" target="_blank" href="https://mintoku.com/contact/"><span>お問い合わせ</span>
+                            <a class="btn-inquiry" target="_blank" href="https://mintoku.com/contact/"><span>お問合せ</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16.72" height="15.726" viewBox="0 0 16.72 15.726">
                                     <g id="Group_1180" data-name="Group 1180" transform="translate(-112 -10)">
                                         <g id="Group_452" data-name="Group 452" transform="translate(112 10)">
@@ -172,7 +172,7 @@
                     </div>
                 </div>
                 <div class="countries-bottom">
-                        <p>ほか合計20カ国カバー</p>
+                        <p>ほか合計20カ国をカバー</p>
                     </div>
             </div>
 
@@ -380,7 +380,7 @@
                     </a>
                 </div>
                 <div class="service-item">
-                    <a target="_blank" href="https://mintoku.com/study/?_gl=1*33tjmz*_gcl_au*MTgwMTgyNzg0MC4xNzU5OTk0MDU4*_ga*NzAwNTQzNDE4LjE3NDg4MzI4ODk.*_ga_N63CY95E0F*czE3Njc3NjAyMTIkbzU3JGcxJHQxNzY3NzYwMjk0JGo1OSRsMCRoMzA1NTUwNjk4">
+                    <a href="<?php echo home_url(); ?>/study/">
                         <picture>
                             <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/service-image-02-sp.png 2x">
                             <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/service-image-02.png 2x">
@@ -389,7 +389,7 @@
                     </a>
                 </div>
                 <div class="service-item">
-                    <a href="<?php echo home_url(); ?>/service/assistant/">
+                    <a href="<?php echo home_url(); ?>/service/administrative-support/">
                         <picture>
                             <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/service-image-03-sp.png 2x">
                             <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/service-image-03.png 2x">

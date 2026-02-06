@@ -159,7 +159,7 @@
                         <a class="foreigners-btn" href="<?php echo home_url(); ?>/work">働きたい<br class="sp-br"/>外国人の方</a>
                     </div>
                     <div class="contact">
-                        <a class="contact-btn" href="<?php echo home_url(); ?>/contact/">お問い合わせ</a>
+                        <a class="contact-btn" href="<?php echo home_url(); ?>/contact/">お問合せ</a>
                     </div>
                 </div>
             </div>

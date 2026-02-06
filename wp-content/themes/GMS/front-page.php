@@ -91,7 +91,7 @@
                         <p class="ttl">「ミントク」とは？</p>
                     </div>
                     <p class="text">日本の現場は、もはや日本人だけでは<br class="pc-br"/>回らない時代に突入しています。<br/>
-                        しかし、外国人採用は文化や制度の違いから<br class="pc-br"/>不安を感じる企業も少なくありません。<br/>
+                        しかし、文化や制度の違いから、外国人採用に<br class="pc-br"/>不安を感じる企業も少なくありません。<br/>
                         採用だけ、教育だけといった部分的な支援では、<br class="pc-br"/>真の戦力化は難しいのが現実です。<br/>
                         Mintokuは、採用から定着、教育、業務設計まで<br class="pc-br"/>包括的にサポートし、<br class="pc-br"/>企業と外国人双方が安心して働ける環境づくりを<br class="pc-br"/>お手伝いします。</p>
                 </div>
@@ -162,7 +162,7 @@
                     </a>
                 </div>
                 <div class="btn-contact">
-                    <a href="<?php echo home_url(); ?>/contact/"><span>お問い合わせ</span></a>
+                    <a href="<?php echo home_url(); ?>/contact/"><span>お問合せ</span></a>
                 </div>
             </div>
         </div>
@@ -237,10 +237,10 @@
                             <span>REASON</span>
                         </h2>
                         <h3 class="title">選ばれる理由</h3>
-                        <p class="text">大企業から中小企業までさまざまな<br/>業種の企業にご活用いただいています。</p>
+                        <p class="text">大企業から中小企業まで、さまざまな<br/>業種の企業にご活用いただいています。</p>
                         <div class="link-page">
                             <a href="<?php echo home_url(); ?>/report_download/"><span>資料ダウンロード</span><span class="icon">＞</span></a>
-                            <a href="<?php echo home_url(); ?>/contact/"><span>お問い合わせ</span><span class="icon">＞</span></a>
+                            <a href="<?php echo home_url(); ?>/contact/"><span>お問合せ</span><span class="icon">＞</span></a>
                         </div>
                     </div>
                     <div class="reason-image">
@@ -281,9 +281,8 @@
             <div class="inner">
                 <div class="heading-entry">
                     <h2 class="heading-block">
-                        <span>REFERENCE CASE Q&A</span>
+                        <span class="text-ja">外国人材 Q&A</span>
                     </h2>
-                    <p class="sub-ttl">よくあるご質問や<br class="sp-br"/>問題事例</p>
                 </div>
                 <div class="qa-content">
                     <ul class="qa-list">
