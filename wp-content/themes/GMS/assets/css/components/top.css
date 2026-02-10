@@ -979,7 +979,11 @@ body:not(.home) .banner-top .heading-block span {
 }
 @media (max-width: 767px) {
   #homepage .service .serviceList .serviceItem {
-    width: calc(50% - 6px);
+    width: 100%;
+    border-radius: 20px;
+  }
+  #homepage .service .serviceList .serviceItem:nth-child(n+2) .title p {
+    margin-bottom: 10px;
   }
 }
 #homepage .service .serviceList .serviceItem .title {
@@ -988,36 +992,24 @@ body:not(.home) .banner-top .heading-block span {
 }
 @media (max-width: 767px) {
   #homepage .service .serviceList .serviceItem .title {
-    width: 100%;
-    order: 2;
-    display: flex;
-    align-items: center;
-    height: 42px;
-    padding: 0;
-    text-align: center;
-    justify-content: center;
+    padding: min(4.27vw, 16px) min(5.87vw, 22px) min(2.67vw, 10px) min(8vw, 30px);
   }
 }
 #homepage .service .serviceList .serviceItem .title ul {
   margin-top: min(1.26vw, 13px);
 }
-@media (max-width: 767px) {
-  #homepage .service .serviceList .serviceItem .title ul {
-    display: none;
-  }
-}
 #homepage .service .serviceList .serviceItem .title li {
-  font-size: min(1.55vw, 16px);
+  font-size: min(3.73vw, 14px);
   line-height: 1.875;
   font-weight: 600;
   color: #173C49;
   background: #fff;
   border-radius: 40px;
   display: flex;
-  height: min(3.79vw, 39px);
+  height: min(7.47vw, 28px);
   justify-content: center;
   align-items: center;
-  margin-bottom: min(0.78vw, 8px);
+  margin-bottom: min(1.6vw, 6px);
 }
 #homepage .service .serviceList .serviceItem .title li:last-child {
   margin-bottom: 0;
@@ -1031,7 +1023,8 @@ body:not(.home) .banner-top .heading-block span {
 }
 @media (max-width: 767px) {
   #homepage .service .serviceList .serviceItem .title p {
-    font-size: min(4.8vw, 18px);
+    font-size: min(5.07vw, 19px);
+    display: block;
   }
 }
 #homepage .service .serviceList .serviceItem .title.blue {
@@ -1047,32 +1040,20 @@ body:not(.home) .banner-top .heading-block span {
   width: 50%;
   position: relative;
 }
-@media (max-width: 767px) {
-  #homepage .service .serviceList .serviceItem .image {
-    width: 100%;
-    order: 1;
-    position: relative;
-    padding-bottom: 69%;
-    overflow: hidden;
-  }
-}
 #homepage .service .serviceList .serviceItem .image img {
   width: 100%;
   height: 100%;
   position: relative;
   object-fit: cover;
 }
-@media (max-width: 767px) {
-  #homepage .service .serviceList .serviceItem .image img {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-  }
-}
 #homepage .service .serviceList .serviceItem.full {
   width: 100%;
+  position: relative;
+}
+@media (max-width: 767px) {
+  #homepage .service .serviceList .serviceItem.full {
+    overflow: visible;
+  }
 }
 #homepage .service .serviceList .serviceItem.full .title {
   width: min(25.83vw, 266px);
@@ -1084,10 +1065,15 @@ body:not(.home) .banner-top .heading-block span {
   #homepage .service .serviceList .serviceItem.full .title {
     width: 100%;
     order: 2;
-    height: 50px;
+    height: min(16vw, 60px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 20px 20px 0 0;
   }
   #homepage .service .serviceList .serviceItem.full .title p {
-    font-size: min(5.33vw, 20px);
+    font-size: min(16vw, 24px);
   }
 }
 #homepage .service .serviceList .serviceItem.full .image {
@@ -1098,15 +1084,11 @@ body:not(.home) .banner-top .heading-block span {
     width: 100%;
     order: 1;
     position: relative;
-    padding-bottom: 50%;
-    overflow: hidden;
   }
-  #homepage .service .serviceList .serviceItem.full .image img {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
+  #homepage .service .serviceList .serviceItem.full .image picture {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
   }
 }
 #homepage .service .serviceList .serviceItem.full .image .text {
@@ -1117,7 +1099,8 @@ body:not(.home) .banner-top .heading-block span {
 }
 @media (max-width: 767px) {
   #homepage .service .serviceList .serviceItem.full .image .text {
-    display: none;
+    left: -10px;
+    line-height: 1;
   }
 }
 #homepage .service .serviceList .serviceItem.full .image .text p {
@@ -1131,6 +1114,14 @@ body:not(.home) .banner-top .heading-block span {
   display: inline-block;
   font-family: "Noto Sans JP", sans-serif;
   letter-spacing: -0.6px;
+}
+@media (max-width: 767px) {
+  #homepage .service .serviceList .serviceItem.full .image .text p {
+    font-size: min(4.27vw, 16px);
+    line-height: 1.375;
+    margin-bottom: 6px;
+    padding: 3px 10px;
+  }
 }
 #homepage .service .serviceList .serviceItem.full .image .text p span {
   color: #FFE200;

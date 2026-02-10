@@ -46,7 +46,7 @@ if (is_page() || is_single()) {
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image18_pc.jpg">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image18_pc.jpg" alt="">
                     </picture>
-                    <h4 class="title"><span class="blue">お問い合わせ</span></h4>
+                    <h4 class="title"><span class="blue">お問合せ</span></h4>
                 </a>
             </div>
         </div>

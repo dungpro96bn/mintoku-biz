@@ -994,7 +994,17 @@ body:not(.home){
         }
 
         @include var.xs{
-          width: calc(50% - 6px);
+          width: 100%;
+          border-radius: 20px;
+
+          &:nth-child(n+2){
+            .title {
+              p{
+                margin-bottom: 10px;
+              }
+            }
+          }
+
         }
 
         .title{
@@ -1002,37 +1012,28 @@ body:not(.home){
           padding: min(2.43vw, 25px) min(3.5vw, 36px);
 
           @include var.xs{
-            width: 100%;
-            order: 2;
-            display: flex;
-            align-items: center;
-            height: 42px;
-            padding: 0;
-
-            text-align: center;
-            justify-content: center;
+            padding: min(4.27vw, 16px) min(5.87vw, 22px) min(2.67vw, 10px) min(8vw, 30px);
           }
 
           ul{
             margin-top: min(1.26vw, 13px);
 
             @include var.xs{
-              display: none;
             }
           }
 
           li{
-            font-size: min(1.55vw, 16px);
+            font-size: min(3.73vw, 14px);
             line-height: 1.875;
             font-weight: 600;
             color: #173C49;
             background: #fff;
             border-radius: 40px;
             display: flex;
-            height: min(3.79vw, 39px);
+            height: min(7.47vw, 28px);
             justify-content: center;
             align-items: center;
-            margin-bottom: min(0.78vw, 8px);
+            margin-bottom: min(1.6vw, 6px);
 
             &:last-child{
               margin-bottom: 0;
@@ -1047,7 +1048,8 @@ body:not(.home){
             font-family: "Noto Sans JP", sans-serif;
 
             @include var.xs{
-              font-size: min(4.8vw, 18px);
+              font-size: min(5.07vw, 19px);
+              display: block;
             }
           }
 
@@ -1069,32 +1071,21 @@ body:not(.home){
           width: 50%;
           position: relative;
 
-          @include var.xs{
-            width: 100%;
-            order: 1;
-            position: relative;
-            padding-bottom: 69%;
-            overflow: hidden;
-          }
-
           img{
             width: 100%;
             height: 100%;
             position: relative;
             object-fit: cover;
-
-            @include var.xs{
-              position: absolute;
-              width: 100%;
-              height: auto;
-              top: 0;
-              left: 0;
-            }
           }
         }
 
         &.full{
           width: 100%;
+          position: relative;
+
+          @include var.xs{
+            overflow: visible;
+          }
 
           .title{
             width: min(25.83vw, 266px);
@@ -1105,10 +1096,15 @@ body:not(.home){
             @include var.xs{
               width: 100%;
               order: 2;
-              height: 50px;
+              height: min(16vw, 60px);
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 2;
+              border-radius: 20px 20px 0 0;
 
               p{
-                font-size: min(5.33vw, 20px);
+                font-size: min(16vw, 24px);
               }
             }
           }
@@ -1120,15 +1116,11 @@ body:not(.home){
               width: 100%;
               order: 1;
               position: relative;
-              padding-bottom: 50%;
-              overflow: hidden;
 
-              img{
-                position: absolute;
-                width: 100%;
-                height: auto;
-                top: 0;
-                left: 0;
+              picture{
+                border-radius: 20px;
+                overflow: hidden;
+                display: flex;
               }
             }
 
@@ -1139,7 +1131,8 @@ body:not(.home){
               bottom: min(2.91vw, 30px);
 
               @include var.xs{
-                display: none;
+                left: -10px;
+                line-height: 1;
               }
 
               p{
@@ -1153,6 +1146,13 @@ body:not(.home){
                 display: inline-block;
                 font-family: "Noto Sans JP", sans-serif;
                 letter-spacing: -0.6px;
+
+                @include var.xs{
+                  font-size: min(4.27vw, 16px);
+                  line-height: 1.375;
+                  margin-bottom: 6px;
+                  padding: 3px 10px;
+                }
 
                 span{
                   color: #FFE200;

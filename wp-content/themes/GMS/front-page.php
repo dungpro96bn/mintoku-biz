@@ -22,14 +22,14 @@
                         </div>
                         <div class="description-list">
                             <div class="description-item">
-                                <p class="ttl">支援実績</p>
+                                <p class="ttl">紹介数</p>
                                 <div class="inner-sp">
                                     <p class="number">13,000<span>名以上</span></p>
                                     <p class="note">（2025年／6月時点）</p>
                                 </div>
                             </div>
                             <div class="description-item">
-                                <p class="ttl">ライフサポート</p>
+                                <p class="ttl">支援実績</p>
                                 <div class="inner-sp">
                                     <p class="number">6,000<span>名以上</span></p>
                                     <p class="note">（2025年／7月時点）</p>

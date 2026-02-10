@@ -39,7 +39,7 @@ $slugs = ["translate", "camcat", "life-support", "maetra", "videostep", "edpoke"
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/banner-orther-icon02.png" alt="">
                     </picture>
                     <h4 class="title">セミナー</h4>
-                    <p>外国人採用に関するセミナーをさまざまななテーマで開催<br class="pc-br"/>過去セミナーの動画も無料でダウンロード可能</p>
+                    <p>外国人採用に関するセミナーをさまざまなテーマで開催<br class="pc-br"/>過去セミナーの動画も無料でダウンロード可能</p>
                 </div>
                 <div class="link-page">
                     <a href="<?php echo home_url(); ?>/seminar/">詳しく見る ＞</a>
