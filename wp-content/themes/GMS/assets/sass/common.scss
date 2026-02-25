@@ -1468,6 +1468,10 @@
       background: #189AA2;
     }
 
+    &.item-orange{
+      background: #f5ce73;
+    }
+
     a{
       display: flex;
       flex-wrap: wrap;
@@ -1577,6 +1581,10 @@
 
       &.cat-02{
         background: #189AA2;
+      }
+
+      &.cat-03{
+        background: #f5ce73;
       }
 
       @include var.xs{

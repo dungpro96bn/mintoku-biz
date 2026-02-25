@@ -176,7 +176,7 @@
                     </div>
             </div>
 
-            <div class="recuitSupport-link">
+            <div id="recuitSupport-link" class="recuitSupport-link">
                 <div class="title-box">
                     <p>対応職種</p>
                 </div>
@@ -224,20 +224,6 @@
                         </a>
                     </div>
                     <div class="recuitSupport-item specific-skills">
-                        <a href="<?php echo home_url(); ?>/lp-seibishi/">
-                            <div class="image-item">
-                                <p class="category cat-01">特定技能</p>
-                                <picture class="image-logo">
-                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/recuitSupport_04.jpg 2x">
-                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/recuitSupport_04.jpg" alt="">
-                                </picture>
-                            </div>
-                            <div class="info-item">
-                                <p class="">自動車整備</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="recuitSupport-item specific-skills">
                         <a href="<?php echo home_url(); ?>/lp-inshokuseizo/">
                             <div class="image-item">
                                 <p class="category cat-01">特定技能</p>
@@ -251,20 +237,6 @@
                             </div>
                         </a>
                     </div>
-<!--                    <div class="recuitSupport-item specific-skills">-->
-<!--                        <a href="--><?php //echo home_url(); ?><!--" class="coming-soon">-->
-<!--                            <div class="image-item">-->
-<!--                                <p class="category cat-01">特定技能</p>-->
-<!--                                <picture class="image-logo">-->
-<!--                                    <source srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_06.jpg 2x">-->
-<!--                                    <img class="sizes" src="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_06.jpg" alt="">-->
-<!--                                </picture>-->
-<!--                            </div>-->
-<!--                            <div class="info-item">-->
-<!--                                <p class="">ビル<br/>クリーニング</p>-->
-<!--                            </div>-->
-<!--                        </a>-->
-<!--                    </div>-->
                     <div class="recuitSupport-item">
                         <a href="#" class="coming-soon">
                             <p class="category cat-01">特定技能</p>
@@ -277,15 +249,30 @@
                             <p class="text">Coming soon</p>
                         </a>
                     </div>
+
+                    <div class="recuitSupport-item item-orange">
+                        <a href="<?php echo home_url(); ?>/lp-seibishi/">
+                            <div class="image-item">
+                                <p class="category cat-03">技能実習</p>
+                                <picture class="image-logo">
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/recuitSupport_04.jpg 2x">
+                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/recuitSupport_04.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="info-item">
+                                <p class="">自動車整備</p>
+                            </div>
+                        </a>
+                    </div>
                     <div class="recuitSupport-item">
                         <a href="#" class="coming-soon">
-                            <p class="category cat-01">特定技能</p>
+                            <p class="category cat-03">技能実習</p>
                             <p class="text">Coming soon</p>
                         </a>
                     </div>
                     <div class="recuitSupport-item">
                         <a href="#" class="coming-soon">
-                            <p class="category cat-01">特定技能</p>
+                            <p class="category cat-03">技能実習</p>
                             <p class="text">Coming soon</p>
                         </a>
                     </div>

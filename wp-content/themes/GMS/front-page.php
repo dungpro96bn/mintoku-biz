@@ -25,14 +25,14 @@
                                 <p class="ttl">紹介数</p>
                                 <div class="inner-sp">
                                     <p class="number">13,000<span>名以上</span></p>
-                                    <p class="note">（2025年／6月時点）</p>
+                                    <p class="note">（2025年6月時点）</p>
                                 </div>
                             </div>
                             <div class="description-item">
                                 <p class="ttl">支援実績</p>
                                 <div class="inner-sp">
                                     <p class="number">6,000<span>名以上</span></p>
-                                    <p class="note">（2025年／7月時点）</p>
+                                    <p class="note">（2025年7月時点）</p>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +217,7 @@
                     </div>
                 </div>
                 <div class="see-more">
-                    <a href="#">
+                    <a href="<?php echo home_url(); ?>/service/recuit-support/#recuitSupport-link">
                         <span>もっと見る</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="15.903" height="9.366" viewBox="0 0 15.903 9.366">
                             <path id="Path_1260" data-name="Path 1260" d="M155.7,364.725l7.244,7.244-7.244,7.244" transform="translate(379.921 -154.994) rotate(90)" fill="none" stroke="#173c49" stroke-miterlimit="10" stroke-width="2"/>

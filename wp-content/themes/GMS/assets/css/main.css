@@ -10802,6 +10802,9 @@ body:not(.home) .partners {
 .recuitSupport-link .recuitSupport-item.country-engineers {
   background: #189AA2;
 }
+.recuitSupport-link .recuitSupport-item.item-orange {
+  background: #f5ce73;
+}
 .recuitSupport-link .recuitSupport-item a {
   display: flex;
   flex-wrap: wrap;
@@ -10902,6 +10905,9 @@ body:not(.home) .partners {
 }
 .recuitSupport-link .recuitSupport-item .category.cat-02 {
   background: #189AA2;
+}
+.recuitSupport-link .recuitSupport-item .category.cat-03 {
+  background: #f5ce73;
 }
 @media (max-width: 767px) {
   .recuitSupport-link .recuitSupport-item .category {
