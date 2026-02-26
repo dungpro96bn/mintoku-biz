@@ -15,7 +15,11 @@
                     </div>
                     <div class="banner-info">
                         <h1 class="t1">外国人採用、迷ったら</h1>
-                        <h2>ミントク。</h2>
+                        <picture class="logo-banner-top">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/homepage/logo-banner-sp.png 2x">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/homepage/logo-banner-pc.png 2x">
+                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/homepage/logo-banner-pc.png" alt="">
+                        </picture>
                         <div class="text-box">
                             <p class="text-box01">採用・教育・現場支援まで、</p>
                             <p class="text-box02">ミントクで解決。</p>

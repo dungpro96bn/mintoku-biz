@@ -31,36 +31,18 @@ if (is_page()) {
                     安心と効率を提供します。</p>
             </div>
             <div class="about-item item01">
-                <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image03_sp.png 2x">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image03_pc.png 2x">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image03_pc.png" alt="">
-                </picture>
                 <div class="info">
-                    <p class="t1">採用効率を</p>
-                    <p class="t2">最大化</p>
+                    <p class="t1">採用効率を最大化</p>
                 </div>
             </div>
             <div class="about-item item02">
-                <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image04_sp.png 2x">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image04_pc.png 2x">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image04_pc.png" alt="">
-                </picture>
                 <div class="info">
-                    <p class="t1">一元化により</p>
-                    <p class="t2">中間労務コストを<br/>カット</p>
+                    <p class="t1">一元化により<br/>中間労務コストをカット</p>
                 </div>
             </div>
             <div class="about-item item03">
-                <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image05_sp.png 2x">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/top_image05_pc.png 2x">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/top_image05_pc.png" alt="">
-                </picture>
                 <div class="info">
-                    <p class="t1">作業効率・</p>
-                    <p class="t2">生産性をUP</p>
+                    <p class="t1">入社後の教育や<br/>定着もサポート</p>
                 </div>
             </div>
         </div>

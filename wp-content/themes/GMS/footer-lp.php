@@ -41,10 +41,10 @@
                     </ul>
                     <ul class="footer-menu-list">
                         <li class="footer-menu-item">
-                            <a href="#" class="note-link">オンライン展示会</a>
+                            <a href="#" class="note-link">Mintoku Messe</a>
                         </li>
                         <li class="footer-menu-item">
-                            <a target="_blank" href="https://kjtimes.jp/">海外人材タイムズ</a>
+                            <a target="_blank" href="https://kjtimes.jp/">海外人材タイムス</a>
                         </li>
                         <li class="footer-menu-item">
                             <a href="<?php echo home_url(); ?>/report_download/?category=manual_video">動画コンテンツ一覧</a>

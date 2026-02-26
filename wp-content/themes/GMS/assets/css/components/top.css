@@ -197,7 +197,7 @@ body:not(.home) .banner-top .heading-block span {
     display: block;
     left: max(-6.67vw, -50px);
     right: unset;
-    top: 32.6%;
+    top: 35.6%;
     width: min(21.33vw, 160px);
     animation: moveDiagonal 2s infinite ease-in-out;
   }
@@ -212,7 +212,7 @@ body:not(.home) .banner-top .heading-block span {
 @media (max-width: 767px) {
   .homepageBanner-bg .image-icon04 {
     width: min(24.27vw, 182px);
-    top: 29%;
+    top: 21%;
     left: unset;
     right: max(-1.33vw, -10px);
   }
@@ -579,6 +579,24 @@ body:not(.home) .banner-top .heading-block span {
     transform: unset;
     width: 100%;
     margin: auto;
+  }
+}
+.homepage-banner .banner-info .logo-banner-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .homepage-banner .banner-info .logo-banner-top {
+    margin-top: 10px;
+  }
+}
+.homepage-banner .banner-info .logo-banner-top img {
+  width: min(31.72vw, 406px);
+}
+@media (max-width: 767px) {
+  .homepage-banner .banner-info .logo-banner-top img {
+    width: min(74.67vw, 280px);
   }
 }
 .homepage-banner .banner-info .t1 {
@@ -1419,6 +1437,7 @@ body:not(.home) .banner-top .heading-block span {
 .about-us .about-item {
   text-align: center;
   position: absolute;
+  display: none;
 }
 @media (max-width: 767px) {
   .about-us .about-item {
@@ -1432,10 +1451,10 @@ body:not(.home) .banner-top .heading-block span {
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
     text-align: left;
+    min-height: 88px;
   }
   .about-us .about-item .info {
-    width: calc(100% - 111px);
-    padding-left: 17px;
+    width: 100%;
   }
 }
 .about-us .about-item.item01 {
@@ -1517,11 +1536,12 @@ body:not(.home) .banner-top .heading-block span {
   color: #173C49;
   font-weight: 600;
   margin-bottom: 2px;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .about-us .about-item .t1 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 17px;
+    line-height: 23px;
   }
 }
 .about-us .about-item .t2 {
@@ -1547,9 +1567,9 @@ body:not(.home) .banner-top .heading-block span {
   }
 }
 .about-us .about-image picture {
-  aspect-ratio: 745/659;
+  aspect-ratio: 930/685;
   display: block;
-  max-width: min(58.2vw, 745px);
+  max-width: min(72.66vw, 930px);
   margin: auto;
 }
 @media (max-width: 767px) {
@@ -1558,7 +1578,7 @@ body:not(.home) .banner-top .heading-block span {
   }
 }
 .about-us .about-image img {
-  width: min(58.2vw, 745px);
+  width: min(72.66vw, 930px);
 }
 @media (max-width: 767px) {
   .about-us .about-image img {
