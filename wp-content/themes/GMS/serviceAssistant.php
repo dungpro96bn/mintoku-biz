@@ -210,7 +210,7 @@
                 <p class="ttl">料金表</p>
             </div>
             <div class="link-price">
-                <a href="#"><span>準備中</span></a>
+                <a target="_blank" href="/wp-content/uploads/2026/02/price_20260226.pdf"><span>料金表を開く</span></a>
             </div>
         </div>
     </div>

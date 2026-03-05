@@ -210,6 +210,11 @@
     flex-direction: column;
   }
 }
+@media (max-width: 767px) {
+  #header-menu .header-inner #navList-menu .menu-item.menu-item-has-children > a {
+    pointer-events: none;
+  }
+}
 #header-menu .header-inner #navList-menu .menu-item.menu-item-has-children > a:before {
   width: calc(100% - 46px);
 }
@@ -10775,6 +10780,9 @@ body:not(.home) .partners {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
+}
+.service-sub-page .service-list .service-item a {
+  display: block;
 }
 @media (max-width: 767px) {
   .service-sub-page .service-list {

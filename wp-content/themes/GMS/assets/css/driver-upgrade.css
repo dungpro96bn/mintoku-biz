@@ -712,7 +712,7 @@ body #driver * {
     padding: 0 39px;
 }
 #driver .trainee {
-    padding: 0 39px;
+    padding: 0 min(9.18vw, 39px);
 }
 .support .content {
     display: flex;
@@ -802,7 +802,7 @@ body #driver * {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	column-gap: 8px;
+	column-gap: min(1.88vw, 8px);
 	height: 77px;
 }
 #driver .trainee .trainee-info .price-box{
@@ -2135,7 +2135,7 @@ body #driver * {
 
 
 	body{
-		min-width: 375px;
+		min-width: 425px;
 	}
 	#driver .inner{
 		max-width: 500px;
@@ -2774,7 +2774,7 @@ body #driver * {
 	}
 	#driver .trainee .trainee-info{
 		width: 100%;
-		padding-left: 18px;
+		padding-left: min(4.24vw, 18px);
 		padding-top: 0;
 		margin-bottom: 17px;
 	}
@@ -2815,17 +2815,17 @@ body #driver * {
 	}
 	#driver .trainee .trainee-info .price-item .ttl{
 		width: auto;
-		font-size: 15px;
+		font-size: min(3.53vw, 15px);
 		line-height: 24px;
 		margin: 0;
-		padding-left: 10px;
+		padding-left: min(2.35vw, 10px);
 		letter-spacing: 0.8px;
 	}
 	#driver .trainee .trainee-info .price-item .number{
 		width: auto;
-		font-size: 40px;
+		font-size: min(9.18vw, 39px);
 		line-height: 30px;
-		padding-right: 8px;
+		padding-right: min(1.88vw, 8px);
 		letter-spacing: 1.2px;
 	}
 	#driver .trainee .trainee-info .price-item .number span{

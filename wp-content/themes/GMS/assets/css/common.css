@@ -1293,6 +1293,9 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
 }
+.service-sub-page .service-list .service-item a {
+  display: block;
+}
 @media (max-width: 767px) {
   .service-sub-page .service-list {
     max-width: 400px;

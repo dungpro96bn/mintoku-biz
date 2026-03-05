@@ -1417,6 +1417,12 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
 
+    .service-item{
+      a{
+        display: block;
+      }
+    }
+
     @include var.xs{
       max-width: 400px;
       margin: auto;

@@ -191,6 +191,10 @@
         &.menu-item-has-children{
           > a{
 
+            @include var.xs{
+              pointer-events: none;
+            }
+
             &:before{
               width: calc(100% - 46px);
 

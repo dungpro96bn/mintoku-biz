@@ -210,6 +210,11 @@
     flex-direction: column;
   }
 }
+@media (max-width: 767px) {
+  #header-menu .header-inner #navList-menu .menu-item.menu-item-has-children > a {
+    pointer-events: none;
+  }
+}
 #header-menu .header-inner #navList-menu .menu-item.menu-item-has-children > a:before {
   width: calc(100% - 46px);
 }
