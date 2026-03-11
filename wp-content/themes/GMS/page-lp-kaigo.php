@@ -6,6 +6,7 @@
 
     <div id="driver" class="inshokuseizo kaigo">
 
+    
         <div id="lp-inshoku">
 
             <div class="main-banner">
