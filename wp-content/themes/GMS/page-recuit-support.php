@@ -237,10 +237,18 @@
                             </div>
                         </a>
                     </div>
-                    <div class="recuitSupport-item">
-                        <a href="#" class="coming-soon">
-                            <p class="category cat-01">特定技能</p>
-                            <p class="text">Coming soon</p>
+                    <div class="recuitSupport-item specific-skills">
+                        <a href="<?php echo home_url(); ?>/lp-kikaisekkei/">
+                            <div class="image-item">
+                                <p class="category cat-01">特定技能</p>
+                                <picture class="image-logo">
+<!--                                    <source srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_05.jpg 2x">-->
+<!--                                    <img class="sizes" src="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_05.jpg" alt="">-->
+                                </picture>
+                            </div>
+                            <div class="info-item">
+                                <p class="">機械設計</p>
+                            </div>
                         </a>
                     </div>
                     <div class="recuitSupport-item">
@@ -305,22 +313,46 @@
                             </div>
                         </a>
                     </div>
-                    <div class="recuitSupport-item">
-                        <a href="#" class="coming-soon">
-                            <p class="category cat-02">技人国</p>
-                            <p class="text">Coming soon</p>
+                    <div class="recuitSupport-item country-engineers">
+                        <a href="<?php echo home_url(); ?>/lp-handoutai/">
+                            <div class="image-item">
+                                <p class="category cat-02">技人国</p>
+                                <picture class="image-logo">
+<!--                                    <source srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_08.jpg 2x">-->
+<!--                                    <img class="sizes" src="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_08.jpg" alt="">-->
+                                </picture>
+                            </div>
+                            <div class="info-item">
+                                <p class="">半導体</p>
+                            </div>
                         </a>
                     </div>
-                    <div class="recuitSupport-item">
-                        <a href="#" class="coming-soon">
-                            <p class="category cat-02">技人国</p>
-                            <p class="text">Coming soon</p>
+                    <div class="recuitSupport-item country-engineers">
+                        <a href="<?php echo home_url(); ?>/lp-boeki/">
+                            <div class="image-item">
+                                <p class="category cat-02">技人国</p>
+                                <picture class="image-logo">
+                                    <!--                                    <source srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_08.jpg 2x">-->
+                                    <!--                                    <img class="sizes" src="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_08.jpg" alt="">-->
+                                </picture>
+                            </div>
+                            <div class="info-item">
+                                <p class="">経理・貿易事務</p>
+                            </div>
                         </a>
                     </div>
-                    <div class="recuitSupport-item">
-                        <a href="#" class="coming-soon">
-                            <p class="category cat-02">技人国</p>
-                            <p class="text">Coming soon</p>
+                    <div class="recuitSupport-item country-engineers">
+                        <a href="<?php echo home_url(); ?>/lp-his/">
+                            <div class="image-item">
+                                <p class="category cat-02">技人国</p>
+                                <picture class="image-logo">
+                                    <!--                                    <source srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_08.jpg 2x">-->
+                                    <!--                                    <img class="sizes" src="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_08.jpg" alt="">-->
+                                </picture>
+                            </div>
+                            <div class="info-item">
+                                <p class="">HIS</p>
+                            </div>
                         </a>
                     </div>
                     <div class="recuitSupport-item">
