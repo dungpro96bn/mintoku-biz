@@ -1,0 +1,95 @@
+
+#driver.kikaisekkei #lp-inshoku .main-banner .banner-inner img{
+    width: 100%;
+}
+#driver.kikaisekkei .main-banner .item-content .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#driver.kikaisekkei .main-banner .item-content:last-child .info p{
+    margin-bottom: 5px;
+}
+#driver.kikaisekkei .main-banner .text-bottom{
+    margin-bottom: 0;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#driver.kikaisekkei .main-banner .text-description{
+    margin-bottom: 0;
+    line-height: 2.375;
+}
+#driver.kikaisekkei .main-banner .text-bottom .info .text{
+    line-height: 2.375;
+}
+#driver.kikaisekkei .main-banner .text-bottom .info .text{
+    max-width: 100%;
+}
+.kikaisekkei #lp-inshoku .bg-content .no03 .bg-ttl{
+    font-size: 40px;
+}
+.kikaisekkei #lp-inshoku .bg-content .no03 .bg-ttl{
+    font-weight: 700;
+}
+.kikaisekkei #lp-inshoku .bg-content .no03 .bg-ttl span{
+    font-family: "Lexend Deca", sans-serif !important;
+    font-weight: 600;
+    font-size: 54px;
+}
+#driver.kikaisekkei .main-banner .text-bottom .image {
+    width: 260px;
+}
+#driver.kikaisekkei .main-banner .text-bottom .info{
+    width: calc(100% - 260px);
+    padding-left: 20px;
+}
+#driver.kikaisekkei .main-banner .news-top .news-info .text-news{
+    font-size: 40px;
+    line-height: 58px;
+}
+#driver.kikaisekkei .main-banner .banner-inner{
+    max-width: 1495px;
+    padding-left: min(3.13vw, 60px);
+}
+.kikaisekkei #lp-inshoku .bg-content .number.no01 .note{
+    letter-spacing: 0;
+}
+
+@media (max-width: 1280px) {
+
+    .kikaisekkei #lp-inshoku .bg-content .call{
+        margin-top: max(-12.5vw, -160px);
+    }
+    #driver.kikaisekkei .main-banner .item-content .info p strong{
+        min-width: 100px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #driver.kikaisekkei .main-banner .text-bottom .info{
+        width: 100%;
+        padding-left: 0;
+    }
+    .kikaisekkei #lp-inshoku .bg-content .number.no01 .note{
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 0 20px;
+    }
+    .boeki #lp-inshoku .bg-content .bg-ttl {
+        font-size: min(25px, 6.667vw);
+    }
+    .kikaisekkei #lp-inshoku .bg-content .no03 .bg-ttl{
+        font-size: min(25px, 6.667vw);
+    }
+    .kikaisekkei #lp-inshoku .bg-content .no03 .bg-ttl span{
+        font-size: 36px;
+    }
+    #driver.kikaisekkei .main-banner .banner-inner{
+        padding-left: 0;
+    }
+
+
+}
