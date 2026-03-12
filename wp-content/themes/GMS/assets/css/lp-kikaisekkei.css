@@ -69,6 +69,10 @@
 
 @media (max-width: 767px) {
 
+    #driver.kikaisekkei .main-banner{
+        padding-top: 163px;
+        padding-bottom: 20px;
+    }
     #driver.kikaisekkei .main-banner .text-bottom .info{
         width: 100%;
         padding-left: 0;
