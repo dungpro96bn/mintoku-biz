@@ -846,6 +846,22 @@ body .kaigo #lp-inshoku{
     top: 0;
     left: 0;
 }
+
+.shukuhaku #lp-inshoku .bg-content::before{
+    content: "";
+    position: absolute;
+    background-image: url("../../images/lp-handoutai/bg02_pc.png");
+    width: 151px;
+    height: 85px;
+    left: calc(50% - 75px);
+    top: 70px;  
+    z-index: 99;
+}
+
+
+
+
+
 .shukuhaku #lp-inshoku .business{
     position: relative;
     z-index: 2;
@@ -926,7 +942,7 @@ body .kaigo #lp-inshoku{
 }
 .shukuhaku #lp-inshoku .strengths .strengths-item{
     border-radius: 16px;
-    border: 3px solid #E48120;
+    border: 3px solid #FF7E00;
     padding: 14px 28px 37px;
     display: block;
 }
@@ -1010,7 +1026,10 @@ body .kaigo #lp-inshoku{
 .shukuhaku .recruitment-flow-content .job-offer .job-offer-item:after{
     content: "";
     position: absolute;
-    background-image: url("data:image/svg+xml,%3Csvg id='Group_1761' data-name='Group 1761' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22.268' height='28.814' viewBox='0 0 22.268 28.814'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_741' data-name='Rectangle 741' width='22.268' height='28.814' fill='%23e48120'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_1760' data-name='Group 1760' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_14001' data-name='Path 14001' d='M21.932,13.532,10.144.435A1.311,1.311,0,0,0,9.17,0H1.311A1.309,1.309,0,0,0,.337,2.185l11,12.223-11,12.22a1.311,1.311,0,0,0,.974,2.187H9.17a1.327,1.327,0,0,0,.974-.432l11.788-13.1a1.311,1.311,0,0,0,0-1.752' transform='translate(0)' fill='%23e48120'/%3E%3C/g%3E%3C/svg%3E%0A");
+    /* background-image: url("data:image/svg+xml,%3Csvg id='Group_1761' data-name='Group 1761' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22.268' height='28.814' viewBox='0 0 22.268 28.814'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_741' data-name='Rectangle 741' width='22.268' height='28.814' fill='%23e48120'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_1760' data-name='Group 1760' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_14001' data-name='Path 14001' d='M21.932,13.532,10.144.435A1.311,1.311,0,0,0,9.17,0H1.311A1.309,1.309,0,0,0,.337,2.185l11,12.223-11,12.22a1.311,1.311,0,0,0,.974,2.187H9.17a1.327,1.327,0,0,0,.974-.432l11.788-13.1a1.311,1.311,0,0,0,0-1.752' transform='translate(0)' fill='%23e48120'/%3E%3C/g%3E%3C/svg%3E%0A"); */
+
+
+    background-image: url("data:image/svg+xml,%3Csvg%20id%3D%22Group_1761%22%20data-name%3D%22Group%201761%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2222.268%22%20height%3D%2228.814%22%20viewBox%3D%220%200%2022.268%2028.814%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Crect%20id%3D%22Rectangle_741%22%20data-name%3D%22Rectangle%20741%22%20width%3D%2222.268%22%20height%3D%2228.814%22%20fill%3D%22%23ff7e00%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20id%3D%22Group_1760%22%20data-name%3D%22Group%201760%22%20clip-path%3D%22url(%23clip-path)%22%3E%3Cpath%20id%3D%22Path_14001%22%20data-name%3D%22Path%2014001%22%20d%3D%22M21.932%2C13.532%2C10.144.435A1.311%2C1.311%2C0%2C0%2C0%2C9.17%2C0H1.311A1.309%2C1.309%2C0%2C0%2C0%2C.337%2C2.185l11%2C12.223-11%2C12.22a1.311%2C1.311%2C0%2C0%2C0%2C.974%2C2.187H9.17a1.327%2C1.327%2C0%2C0%2C0%2C.974-.432l11.788-13.1a1.311%2C1.311%2C0%2C0%2C0%2C0-1.752%22%20transform%3D%22translate(0)%22%20fill%3D%22%23ff7e00%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
     width: min(1.15vw, 22px);
     height: min(1.51vw, 29px);
     background-size: 100%;
@@ -1105,7 +1124,7 @@ body .kaigo #lp-inshoku{
 .shukuhaku .recruitment-flow-content .follow-up .follow-up-item:after{
     content: "";
     position: absolute;
-    background-image: url("data:image/svg+xml,%3Csvg id='Group_1761' data-name='Group 1761' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22.268' height='28.814' viewBox='0 0 22.268 28.814'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_741' data-name='Rectangle 741' width='22.268' height='28.814' fill='%23e48120'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_1760' data-name='Group 1760' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_14001' data-name='Path 14001' d='M21.932,13.532,10.144.435A1.311,1.311,0,0,0,9.17,0H1.311A1.309,1.309,0,0,0,.337,2.185l11,12.223-11,12.22a1.311,1.311,0,0,0,.974,2.187H9.17a1.327,1.327,0,0,0,.974-.432l11.788-13.1a1.311,1.311,0,0,0,0-1.752' transform='translate(0)' fill='%23e48120'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg%20id%3D%22Group_1761%22%20data-name%3D%22Group%201761%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2222.268%22%20height%3D%2228.814%22%20viewBox%3D%220%200%2022.268%2028.814%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Crect%20id%3D%22Rectangle_741%22%20data-name%3D%22Rectangle%20741%22%20width%3D%2222.268%22%20height%3D%2228.814%22%20fill%3D%22%23ff7e00%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20id%3D%22Group_1760%22%20data-name%3D%22Group%201760%22%20clip-path%3D%22url(%23clip-path)%22%3E%3Cpath%20id%3D%22Path_14001%22%20data-name%3D%22Path%2014001%22%20d%3D%22M21.932%2C13.532%2C10.144.435A1.311%2C1.311%2C0%2C0%2C0%2C9.17%2C0H1.311A1.309%2C1.309%2C0%2C0%2C0%2C.337%2C2.185l11%2C12.223-11%2C12.22a1.311%2C1.311%2C0%2C0%2C0%2C.974%2C2.187H9.17a1.327%2C1.327%2C0%2C0%2C0%2C.974-.432l11.788-13.1a1.311%2C1.311%2C0%2C0%2C0%2C0-1.752%22%20transform%3D%22translate(0)%22%20fill%3D%22%23ff7e00%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
     width: min(1.15vw, 22px);
     height: min(1.51vw, 29px);
     background-size: 100%;
@@ -3889,7 +3908,24 @@ body .kaigo #lp-inshoku{
     margin-top: 17px;
 }
 
+#lp-inshoku .recruitment-flow-up .top-title,#lp-inshoku .top-title {
+	background: linear-gradient(270deg, rgba(245, 189, 63, 1) 0%, rgba(255, 109, 2, 1) 50%);
+}
+.shukuhaku .recruitment-flow-content .title-bor span{ 
+ background: linear-gradient(180deg, rgba(245, 189, 63, 1) 0%, rgba(255, 109, 2, 1) 100%);
+}
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item,
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item
+{
+    border: 2px solid #FF7E00;
+}
 
+.shukuhaku .recruitment-flow-content .job-offer .job-offer-item:last-child {
+    background: linear-gradient(180deg, rgba(245, 189, 63, 1) 0%, rgba(255, 109, 2, 1) 100%);
+}
+.shukuhaku .recruitment-flow-content .follow-up .follow-up-item:last-child {
+    background: linear-gradient(180deg, rgba(245, 189, 63, 1) 0%, rgba(255, 109, 2, 1) 100%); 
+}
 
 .solution {
     text-align: center;
@@ -4198,7 +4234,7 @@ body .kaigo #lp-inshoku{
         width: 89px;
         height: 90px;
         top: -69px;
-        left: 37%;
+        left: calc(50% - 44px);
         transform: scale(0.5);
     }
     .solution .es-title {
@@ -4300,5 +4336,11 @@ body .kaigo #lp-inshoku{
     .dl-contry.three::after {
         top: -30px;
         left: -20px;
+    }
+    .shukuhaku #lp-inshoku .bg-content::before {
+        left: calc(50% - 75px);
+        top: -29px;
+        z-index: 99;
+        transform: scale(0.5);
     }
 }
