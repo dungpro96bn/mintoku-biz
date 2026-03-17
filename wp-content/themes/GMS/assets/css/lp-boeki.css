@@ -761,7 +761,7 @@ body .kaigo #lp-inshoku{
 #driver.boeki .main-banner .item-content .info{
     background: #fff;
     border: 3px solid #FF7E00;
-    padding: 13px 12px;
+    padding: 13px 11px;
     flex: 1;
 }
 #driver.boeki .main-banner .item-content .info p{
@@ -782,13 +782,17 @@ body .kaigo #lp-inshoku{
 }
 
 #driver.boeki .main-banner .text-list-content .item-content{
-    width: 31%;
+    width: 32%;
     height: auto;
     flex-direction: column;
     display: flex;
 }
 #driver.boeki .main-banner .text-list-content .item-content:first-child{
-    width: 36%;
+    width: 34%;
+}
+
+#driver.boeki .main-banner .text-list-content .item-content:first-child .info p{
+    font-size: 14px;
 }
 #driver.boeki .main-banner{
     padding-bottom: 78px;
@@ -2699,6 +2703,10 @@ body .kaigo #lp-inshoku{
     }
     #driver.boeki .main-banner .item-content .info p {
         font-size: 11px;
+    }
+
+    #driver.boeki .main-banner .text-list-content .item-content:first-child .info p{
+        font-size: 10px;
     }
 
     #driver.boeki .driver-main .account h2 {
