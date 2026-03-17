@@ -955,9 +955,7 @@ body .kaigo #lp-inshoku{
     margin-bottom: 16px;
 }
 .shukuhaku #lp-inshoku .strengths .strengths-item h4 span{
-    background-image: -webkit-linear-gradient(left, #FFFF00 100%, #FFFF00 100%);
     background-position: 200% 21px;
-    background: linear-gradient(transparent 78%, #FFFF00 78%);
     display: inline;
     background-position-y: 0px;
 
