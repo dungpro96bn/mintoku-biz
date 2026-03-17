@@ -90,7 +90,7 @@
                             <p>・若手エンジニアの確保が困難</p>
                         </div>
                         <div class="account-item">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/images/lp-boeki/acc02.png" alt="">
+                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/images/lp-kikaisekkei/lp-kikaisekkei-image03-pc.png" alt="">
                             <h3 class="ttl">技術継承の危機</h3>
                             <p>・ベテラン技術者の退職</p>
                             <p>・シニア人材の知見が埋もれている</p>
