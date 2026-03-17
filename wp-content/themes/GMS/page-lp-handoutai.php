@@ -170,7 +170,7 @@
                             <dl class="dl-contry">
                                 <dt class="dt-contry">ベトナム</dt>
                                 <dt class="dt-contry02">即戦力経験者供給モデル</dt>
-                                <dd class="dd-contry">国内外で実務経験を持つ人材を中心に短期稼働。日本語教育＋事前評価済み人材により、<br>立ち上げ工程や繁忙期に柔軟に対応。</dd>
+                                <dd class="dd-contry">日本語力（N3〜N5）に応じた段階的教育＋日本シニア技術者によるハンズオン指導により、<br>量産工程に最適化された人材を長期的に安定供給。</dd>
                             </dl>
 
                             <div class="content-item">
@@ -247,38 +247,6 @@
 
        
        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                     <div class="strengths">
