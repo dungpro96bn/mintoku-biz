@@ -261,18 +261,10 @@
                             </div>
                             <div class="reasonInfo-item">
                                 <div class="title">
-                                    <p class="t1">事務対応時間</p>
-                                </div>
-                                <div class="number-info">
-                                    <p class="text"><span class="number">55</span>%削減</p>
-                                </div>
-                            </div>
-                            <div class="reasonInfo-item">
-                                <div class="title">
                                     <p class="t1">対応可能言語数</p>
                                 </div>
                                 <div class="number-info">
-                                    <p class="text"><span class="number">24</span>言語</p>
+                                    <p class="text"><span class="number">12</span>言語</p>
                                 </div>
                             </div>
                         </div>

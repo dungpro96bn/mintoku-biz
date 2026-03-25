@@ -172,7 +172,7 @@
                     </div>
                 </div>
                 <div class="countries-bottom">
-                        <p>ほか合計20カ国をカバー</p>
+                        <p>ほか合計12カ国をカバー</p>
                     </div>
             </div>
 
@@ -242,8 +242,8 @@
                             <div class="image-item">
                                 <p class="category cat-01">特定技能</p>
                                 <picture class="image-logo">
-<!--                                    <source srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_05.jpg 2x">-->
-<!--                                    <img class="sizes" src="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_05.jpg" alt="">-->
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/kikaisekkei.png 2x">
+                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/kikaisekkei.png" alt="">
                                 </picture>
                             </div>
                             <div class="info-item">
@@ -318,8 +318,8 @@
                             <div class="image-item">
                                 <p class="category cat-02">技人国</p>
                                 <picture class="image-logo">
-<!--                                    <source srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_08.jpg 2x">-->
-<!--                                    <img class="sizes" src="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_08.jpg" alt="">-->
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/handoutai.png 2x">
+                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/handoutai.png" alt="">
                                 </picture>
                             </div>
                             <div class="info-item">
@@ -332,8 +332,8 @@
                             <div class="image-item">
                                 <p class="category cat-02">技人国</p>
                                 <picture class="image-logo">
-                                    <!--                                    <source srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_08.jpg 2x">-->
-                                    <!--                                    <img class="sizes" src="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_08.jpg" alt="">-->
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/boeki.png 2x">
+                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/boeki.png" alt="">
                                 </picture>
                             </div>
                             <div class="info-item">
@@ -346,8 +346,8 @@
                             <div class="image-item">
                                 <p class="category cat-02">技人国</p>
                                 <picture class="image-logo">
-                                    <!--                                    <source srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_08.jpg 2x">-->
-                                    <!--                                    <img class="sizes" src="--><?php //bloginfo('template_directory'); ?><!--/assets/images/recuit-support/recuitSupport_08.jpg" alt="">-->
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/HIS.png 2x">
+                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/HIS.png" alt="">
                                 </picture>
                             </div>
                             <div class="info-item">
