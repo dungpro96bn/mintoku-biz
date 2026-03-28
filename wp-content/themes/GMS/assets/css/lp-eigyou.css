@@ -1,0 +1,1021 @@
+.eigyou #lp-inshoku .main-banner .image {
+	width: 100%;
+}
+
+.eigyou#driver.inshokuseizo .main-banner .news-top .news-info .text-news {
+	padding-right: 0;
+}
+
+.eigyou#driver.inshokuseizo #lp-inshoku .main-banner .banner-inner img {
+	aspect-ratio: initial;
+}
+
+/*  */
+.eigyou .define {
+	display: grid;
+	grid-template-columns: 373px 1fr;
+	gap: 18px;
+	padding-top: 7px;
+	align-items: end;
+}
+
+.eigyou .define .define-img {
+	margin-left: -125px;
+	margin-bottom: -7px;
+}
+
+.eigyou .define .define-content .title {
+	font-size: 40px;
+	font-weight: 700;
+	color: #2a4852;
+	line-height: 1.45;
+	margin-bottom: 9px;
+}
+
+.eigyou .define .define-content .text {
+	font-size: 16px;
+	font-weight: 700;
+	color: #2a4852;
+	line-height: 2;
+}
+
+.eigyou .define .define-content .row {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	gap: 16px;
+	padding-top: 47px;
+}
+
+.eigyou .define .define-content .row .col-title {
+	display: block;
+	background-color: #ff7e00;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 7px;
+	padding: 2px;
+}
+
+.eigyou .define .define-content .row .col-text {
+	display: block;
+	background-color: #fff;
+	font-size: 15px;
+	color: #181818;
+	border: 3px solid #ff7e00;
+	padding: 21px 22px;
+	line-height: 2.1;
+	font-weight: 400;
+}
+
+/*  */
+.eigyou .platforms {
+	padding-block: 107px 145px;
+	position: relative;
+}
+
+.eigyou .platforms .bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.eigyou .platforms .bg img {
+	object-fit: cover;
+	height: 100% !important;
+	width: 100%;
+}
+
+.eigyou .platforms .platform-container {
+	position: relative;
+	max-width: 1360px;
+	padding: 0 20px;
+	margin-inline: auto;
+}
+
+.eigyou .platforms .platform-title {
+	display: block;
+	border-radius: 40px;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+	font-size: 46px;
+	font-weight: 900;
+	color: #fff;
+	text-align: center;
+	line-height: 1.45;
+	padding-block: 51px;
+	margin-bottom: 61px;
+}
+
+.eigyou .platform-ja {
+	padding-bottom: 132px;
+}
+
+.eigyou .platform-ja .logo {
+	border-radius: 50px;
+	background-color: #fff;
+	display: grid;
+	grid-template-columns: 276px 1fr;
+	gap: 18px;
+	align-items: center;
+	padding: 76px 40px;
+	justify-content: space-between;
+	margin-inline: 23px;
+	margin-bottom: 44px;
+}
+
+.eigyou .platform-ja .logo-text {
+	font-size: 29px;
+	font-weight: 700;
+	line-height: 1.45;
+	color: #ff7e00;
+	padding-top: 25px;
+	letter-spacing: 1.4px;
+}
+
+.eigyou .platform-ja .logo-img {
+	max-width: 868px;
+	margin-left: auto;
+}
+
+.eigyou .platform-ja .desc {
+	margin-bottom: 45px;
+}
+
+.eigyou .platform-ja .desc-text {
+	font-size: 40px;
+	line-height: 1.55;
+	font-weight: 700;
+	color: #2f6686;
+	text-align: center;
+}
+
+.eigyou .platform-ja .desc-text + .desc-text {
+	margin-top: 24px;
+}
+
+.eigyou .platform-ja .desc-text.orange {
+	color: #ff7e00;
+}
+
+.eigyou .platform-ja .banner-img {
+	margin-inline: auto;
+	max-width: 1064px;
+	margin-bottom: 27px;
+}
+
+.eigyou .platform-ja .note {
+	font-size: 23px;
+	font-weight: 700;
+	color: #2f6686;
+	text-align: center;
+}
+
+.eigyou .platform-os .text {
+	font-size: 40px;
+	line-height: 1.55;
+	font-weight: 700;
+	color: #2f6686;
+	text-align: center;
+	margin-bottom: 46px;
+}
+
+.eigyou .platform-os .system {
+	background-color: #fff;
+	border-radius: 24px;
+	text-align: center;
+	padding-bottom: 63px;
+	margin-bottom: 76px;
+}
+
+.eigyou .platform-os .system .img {
+	border-radius: 28px;
+	overflow: hidden;
+	margin-bottom: 68px;
+}
+
+.eigyou .platform-os .system .desc {
+	padding-inline: 14px;
+}
+
+.eigyou .platform-os .system .desc .sub-title {
+	font-size: 46px;
+	font-weight: 700;
+	color: #2f6686;
+	line-height: 1.35;
+	letter-spacing: 2.2px;
+	margin-bottom: 46px;
+}
+
+.eigyou .platform-os .system .desc .title {
+	font-size: 40px;
+	font-weight: 700;
+	color: #ff7e00;
+	line-height: 1.55;
+	text-decoration: underline;
+	margin-bottom: 41px;
+	letter-spacing: 2px;
+}
+
+.eigyou .platform-os .system .desc .txt {
+	font-size: 31px;
+	font-weight: 700;
+	position: relative;
+	color: #2f6686;
+	line-height: 1.6;
+}
+
+.eigyou .platform-os .system .desc .txt + .txt {
+	margin-top: 70px;
+}
+
+.eigyou .platform-os .system .desc .txt + .txt::before {
+	content: "";
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2239.74%22%20height%3D%2222.353%22%20viewBox%3D%220%200%2039.74%2022.353%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22a%22%20x1%3D%22.5%22%20x2%3D%22.5%22%20y2%3D%221%22%20gradientUnits%3D%22objectBoundingBox%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23f77149%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f7bb49%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20data-name%3D%22Path%2014269%22%20d%3D%22M39%2018.123%2021.616.737a2.437%202.437%200%200%200-3.493%200L.737%2018.123a2.437%202.437%200%200%200%200%203.493%202.4%202.4%200%200%200%201.747.737h34.772A2.469%202.469%200%200%200%2039%2018.123%22%20fill%3D%22url(%23a)%22%2F%3E%3C%2Fsvg%3E");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 22px;
+	display: block;
+	position: absolute;
+	top: -45px;
+	left: 50%;
+	transform: translateX(-50%) scaleY(-1);
+}
+
+.eigyou .platform-os .note {
+	text-align: center;
+	color: #ff7e00;
+	font-size: 40px;
+	line-height: 1.55;
+	font-weight: 700;
+}
+
+/*  */
+.eigyou .others {
+	padding-block: 69px;
+}
+
+/*  */
+.eigyou .recruitment-flow-up {
+	position: relative;
+}
+.eigyou #lp-inshoku .recruitment-flow-up .top-title {
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+}
+
+.eigyou .recruitment-flow-content {
+	background: #fff;
+	border-radius: 0 0 24px 24px;
+	padding: 45px min(2.71vw, 52px) 70px;
+}
+.eigyou .recruitment-flow-content .title-bor {
+	display: flex;
+	padding-right: 21px;
+}
+.eigyou .recruitment-flow-content .title-item {
+	margin-bottom: 28px;
+}
+.eigyou .recruitment-flow-content .title-bor span {
+	font-size: min(2.09vw, 28px);
+	line-height: 1.4;
+	color: #fff;
+	font-weight: bold;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+	display: flex;
+	height: min(4.7vw, 63px);
+	align-items: center;
+	justify-content: center;
+	border-radius: 40px;
+	padding: 0 min(2.09vw, 28px);
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: min(2.98vw, 40px);
+	padding-left: 7px;
+	padding-right: min(1.19vw, 16px);
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item {
+	border-radius: 22px;
+	border: 2px solid #ff7e00;
+	min-height: min(13.66vw, 183px);
+	text-align: center;
+	width: calc((100% - min(25.6vw, 343px)) / 4);
+	position: relative;
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item:after {
+	content: "";
+	position: absolute;
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222.268%22%20height%3D%2228.814%22%20viewBox%3D%220%200%2022.268%2028.814%22%3E%3Cpath%20data-name%3D%22Path%2014001%22%20d%3D%22M21.932%2013.532%2010.144.435A1.3%201.3%200%200%200%209.17%200H1.311a1.309%201.309%200%200%200-.974%202.185l11%2012.223-11%2012.22a1.311%201.311%200%200%200%20.974%202.187H9.17a1.33%201.33%200%200%200%20.974-.432l11.788-13.1a1.31%201.31%200%200%200%200-1.752%22%20fill%3D%22%23ff7e00%22%2F%3E%3C%2Fsvg%3E");
+	width: min(1.15vw, 22px);
+	height: min(1.51vw, 29px);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	top: 50%;
+	right: max(-2.39vw, -32px);
+	transform: translateY(-50%);
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item:last-child:after {
+	display: none;
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item:last-child {
+	border: 0;
+	border-radius: 50%;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+	height: min(13.66vw, 183px);
+	width: min(13.66vw, 183px);
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item .ttl {
+	color: #2a4852;
+	font-size: min(1.49vw, 20px);
+	line-height: 1.4;
+	font-weight: bold;
+	padding-top: min(1.19vw, 16px);
+	margin-bottom: min(1.19vw, 16px);
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item:nth-child(3) .ttl {
+	margin-bottom: min(0.67vw, 9px);
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item .note {
+	font-size: min(1.04vw, 14px);
+	line-height: 1.4;
+	font-weight: bold;
+	margin-top: min(0.75vw, 10px);
+	padding-right: min(1.49vw, 20px);
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item:last-child .ttl {
+	font-size: min(1.79vw, 24px);
+	line-height: 1.625;
+	color: #fff;
+	padding-top: min(1.79vw, 24px);
+	padding-right: 5px;
+	margin-bottom: 9px;
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item:last-child img {
+	width: min(5.15vw, 69px);
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item:nth-child(1) img {
+	width: min(5.45vw, 73px);
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item:nth-child(2) img {
+	width: min(4.48vw, 60px);
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item:nth-child(3) img {
+	width: min(7.16vw, 96px);
+}
+.eigyou .recruitment-flow-content .job-offer .job-offer-item:nth-child(4) img {
+	width: min(6.12vw, 82px);
+}
+.eigyou .recruitment-flow-content .job-offer {
+	margin-bottom: 52px;
+}
+
+.eigyou .recruitment-flow-content .follow-up {
+	padding-left: 7px;
+}
+.eigyou .recruitment-flow-content .follow-up .title-bor span {
+	padding: 0 min(1.27vw, 17px);
+}
+.eigyou .recruitment-flow-content .follow-up .title-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.eigyou .recruitment-flow-content .follow-up .title-item .ttl-note {
+	color: #000;
+	font-size: min(1.79vw, 24px);
+	line-height: 1.625;
+	font-weight: 400;
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: min(3.58vw, 48px);
+	padding-right: min(3.28vw, 44px);
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-item {
+	border-radius: 22px;
+	border: 2px solid #ff7e00;
+	min-height: min(17.16vw, 230px);
+	text-align: center;
+	width: calc((100% - min(27.91vw, 374px)) / 3);
+	position: relative;
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-item:after {
+	content: "";
+	position: absolute;
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222.268%22%20height%3D%2228.814%22%20viewBox%3D%220%200%2022.268%2028.814%22%3E%3Cpath%20data-name%3D%22Path%2014001%22%20d%3D%22M21.932%2013.532%2010.144.435A1.3%201.3%200%200%200%209.17%200H1.311a1.309%201.309%200%200%200-.974%202.185l11%2012.223-11%2012.22a1.311%201.311%200%200%200%20.974%202.187H9.17a1.33%201.33%200%200%200%20.974-.432l11.788-13.1a1.31%201.31%200%200%200%200-1.752%22%20fill%3D%22%23ff7e00%22%2F%3E%3C%2Fsvg%3E");
+	width: min(1.15vw, 22px);
+	height: min(1.51vw, 29px);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	top: 50%;
+	right: max(-2.69vw, -36px);
+	transform: translateY(-50%);
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-item:last-child:after {
+	display: none;
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-item:last-child {
+	border: 0;
+	border-radius: 50%;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+	height: min(17.16vw, 230px);
+	width: min(17.16vw, 230px);
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-item:nth-child(1) img {
+	width: min(6.94vw, 93px);
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-item:nth-child(2) img {
+	width: min(6.94vw, 93px);
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-item:nth-child(3) img {
+	width: min(6.34vw, 85px);
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-item:last-child img {
+	width: min(6.42vw, 86px);
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-item .ttl {
+	color: #2a4852;
+	font-size: min(1.49vw, 20px);
+	line-height: 1.4;
+	font-weight: bold;
+	padding-top: min(1.19vw, 16px);
+	margin-bottom: min(1.79vw, 24px);
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-item:nth-child(2) .ttl {
+	margin-bottom: min(2.61vw, 35px);
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-item:nth-child(3) .ttl {
+	margin-bottom: min(1.19vw, 16px);
+}
+.eigyou .recruitment-flow-content .follow-up .title-item {
+	margin-bottom: 32px;
+}
+.eigyou .recruitment-flow-content .follow-up .follow-up-item:last-child .ttl {
+	font-size: min(1.79vw, 24px);
+	line-height: 1.625;
+	color: #fff;
+	padding-top: min(2.24vw, 30px);
+	padding-right: min(0.37vw, 5px);
+	margin-bottom: min(0.9vw, 12px);
+}
+
+.eigyou .pickup {
+	position: relative;
+	padding-block: 143px;
+	display: grid;
+	gap: 97px;
+}
+
+.eigyou .pickup .bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0.8;
+}
+
+.eigyou .pickup .pickup-container {
+	position: relative;
+	max-width: 1360px;
+	padding: 0 20px;
+	margin-inline: auto;
+	width: 100%;
+}
+
+.eigyou .pickup .bg img {
+	object-fit: cover;
+	height: 100% !important;
+	width: 100%;
+}
+
+.eigyou .pickup .pickup-title {
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+	border-radius: 40px;
+	color: #fff;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-block: 62px 45px;
+	gap: 14px 100px;
+}
+
+.eigyou .pickup .pickup-title .en {
+	display: block;
+	font-family: "Lexend Deca", sans-serif !important;
+	font-size: 54px;
+	font-weight: 600;
+	margin-bottom: 13px;
+	position: relative;
+}
+
+.eigyou .pickup .pickup-title .en::before {
+	content: "";
+	border-left: 4px solid #fff;
+	height: 50px;
+	top: 65%;
+	transform: translateY(-50%);
+	right: -66px;
+	position: absolute;
+}
+
+.eigyou .pickup .pickup-title .ja {
+	display: block;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.55;
+}
+
+.eigyou .pickup .support-services {
+	position: relative;
+}
+
+.eigyou .pickup .map {
+	border-radius: 24px;
+	background-color: #fff;
+	padding-inline: 34px;
+	padding-block: 52px 48px;
+}
+
+.eigyou .pickup .map .title {
+	font-size: 36px;
+	line-height: 1.67;
+	text-align: center;
+	font-weight: 700;
+	color: #2f6686;
+	letter-spacing: 1.8px;
+	margin-bottom: 17px;
+}
+
+.eigyou .pickup .map .text {
+	font-size: 26px;
+	line-height: 1.91;
+	font-weight: 400;
+	color: #2f6686;
+	width: fit-content;
+	margin-inline: auto;
+	letter-spacing: 1.3px;
+	margin-bottom: 42px;
+}
+
+.eigyou .pickup .forte {
+	position: relative;
+	background-color: #fff;
+	border-radius: 24px;
+	overflow: hidden;
+}
+
+.eigyou .pickup .forte .forte-title {
+	font-size: 46px;
+	color: #fff;
+	text-align: center;
+	padding: 18px;
+	font-weight: 700;
+	line-height: 1.4;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+}
+
+.eigyou .pickup .forte .content {
+	padding: 37px 40px 59px;
+}
+
+.eigyou .pickup .forte .note {
+	font-size: 26px;
+	text-align: center;
+	font-weight: 700;
+	line-height: 1.6;
+	color: #ff7e00;
+	margin-bottom: 28px;
+}
+
+.eigyou .pickup .forte .row {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+	gap: 35px;
+}
+
+.eigyou .pickup .forte .row .col {
+	border-radius: 24px;
+	border: 5px solid #ff7e00;
+	padding: 20px 17px 36px;
+	display: grid;
+	text-align: center;
+	font-weight: 700;
+	align-items: center;
+	gap: 14px;
+}
+
+.eigyou .pickup .forte .row .col .title {
+	font-size: 26px;
+	color: #ff7e00;
+	line-height: 1.4;
+	letter-spacing: 0.8px;
+	margin-bottom: 13px;
+}
+
+.eigyou .pickup .forte .row .col .text {
+	font-size: 16px;
+	color: #000;
+	line-height: 1.6;
+}
+
+.eigyou .pickup .mission {
+	position: relative;
+	background-color: #fff;
+	border-radius: 24px;
+	overflow: hidden;
+}
+
+.eigyou .pickup .mission .title {
+	font-size: 46px;
+	color: #fff100;
+	text-align: center;
+	padding: 18px;
+	font-weight: 700;
+	line-height: 1.4;
+	background-color: #ff7e00;
+}
+
+.eigyou .pickup .mission .content {
+	padding: 22px 60px 40px;
+}
+
+.eigyou .pickup .mission .content .text {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.6;
+	color: #e48121;
+	letter-spacing: 1px;
+	margin-bottom: 24px;
+}
+
+.eigyou .pickup .mission .content .text-list {
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #000000;
+	display: block;
+	border: 1px solid #ff7e00;
+	border-radius: 24px;
+	padding: 32px 5px 39px 17px;
+	letter-spacing: 0.9px;
+}
+
+.eigyou .pickup .mission .content .text-list + .text-list {
+	margin-top: 9px;
+}
+
+.eigyou .pickup .mission .content .note {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.6;
+	color: #000000;
+	letter-spacing: 0.7px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+@media (max-width: 1023px) {
+	.eigyou .recruitment-flow-content .follow-up {
+		padding-left: 0;
+	}
+
+	.eigyou .pickup .pickup-title {
+		flex-direction: column;
+		padding-inline: 14px;
+		text-align: center;
+	}
+
+	.eigyou .pickup .pickup-title .en::before {
+		display: none;
+	}
+}
+
+@media (max-width: 990px) {
+	.eigyou .define {
+		grid-template-columns: 1fr;
+	}
+
+	.eigyou .define .define-img {
+		max-width: 500px;
+		margin-inline: auto;
+		margin-bottom: 0;
+	}
+
+	.eigyou .define .define-content .row {
+		grid-template-columns: 1fr;
+	}
+
+	.eigyou .define .define-content .title {
+		font-size: 28px;
+	}
+
+	.eigyou .define .define-content .text,
+	.eigyou .define .define-content .row .col-text {
+		font-size: 14px;
+	}
+
+	.eigyou .define .define-content .row .col-title {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 767px) {
+	/*  */
+	.eigyou .platforms {
+		padding-block: 60px;
+	}
+
+	.eigyou .platforms .platform-container {
+		padding: 0 14px;
+	}
+
+	.eigyou .platforms .platform-title {
+		border-radius: 20px;
+		font-size: 28px;
+		padding-block: 20px;
+		margin-bottom: 30px;
+	}
+
+	.eigyou .platform-ja {
+		padding-bottom: 60px;
+	}
+
+	.eigyou .platform-ja .logo {
+		border-radius: 20px;
+		grid-template-columns: 1fr;
+		padding: 30px 20px;
+		margin-inline: 0;
+		margin-bottom: 26px;
+	}
+
+	.eigyou .platform-ja .logo-text {
+		font-size: 28px;
+		text-align: center;
+		padding-top: 0;
+	}
+
+	.eigyou .platform-ja .desc {
+		margin-bottom: 28px;
+	}
+
+	.eigyou .platform-ja .desc-text {
+		font-size: 25px;
+	}
+
+	.eigyou .platform-ja .note {
+		font-size: 20px;
+	}
+
+	.eigyou .platform-os .text {
+		font-size: 25px;
+		margin-bottom: 28px;
+	}
+
+	.eigyou .platform-os .system {
+		padding-bottom: 32px;
+		margin-bottom: 32px;
+		border-radius: 20px;
+	}
+
+	.eigyou .platform-os .system .img {
+		border-radius: 20px;
+		margin-bottom: 32px;
+	}
+
+	.eigyou .platform-os .system .desc .sub-title {
+		font-size: 28px;
+		margin-bottom: 28px;
+	}
+
+	.eigyou .platform-os .system .desc .title {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	.eigyou .platform-os .system .desc .txt {
+		font-size: 18px;
+	}
+
+	.eigyou .platform-os .system .desc .txt + .txt {
+		margin-top: 50px;
+	}
+
+	.eigyou .platform-os .system .desc .txt + .txt::before {
+		width: 28px;
+		height: 15px;
+		top: -30px;
+	}
+
+	.eigyou .platform-os .note {
+		font-size: 20px;
+	}
+
+	/*  */
+	.eigyou .others {
+		padding-block: 30px;
+	}
+
+	/*  */
+	.eigyou .recruitment-flow-content {
+		padding: 40px 20px 50px;
+	}
+	.eigyou .recruitment-flow-content .title-bor span {
+		font-size: 16px;
+		height: 40px;
+		padding: 0 25px;
+	}
+	.eigyou .recruitment-flow-content .title-bor {
+		justify-content: center;
+		padding: 0;
+	}
+	.eigyou .recruitment-flow-content .title-item {
+		margin-bottom: 35px;
+	}
+	.eigyou .recruitment-flow-content .follow-up .title-item .ttl-note {
+		font-size: 15px;
+	}
+	.eigyou .recruitment-flow-content .follow-up .title-bor span {
+		padding: 0 25px;
+	}
+	.eigyou .recruitment-flow-content .job-offer .job-offer-list,
+	.eigyou .recruitment-flow-content .follow-up .follow-up-list {
+		flex-direction: column;
+		column-gap: 0;
+		row-gap: 50px;
+		align-items: center;
+		padding-right: 0;
+	}
+	.eigyou .recruitment-flow-content .job-offer .job-offer-item,
+	.eigyou .recruitment-flow-content .job-offer .job-offer-item:last-child {
+		width: 190px;
+		min-height: 190px;
+	}
+	.eigyou .recruitment-flow-content .follow-up .follow-up-item,
+	.eigyou .recruitment-flow-content .follow-up .follow-up-item:last-child {
+		width: 230px;
+		min-height: 230px;
+	}
+	.eigyou .recruitment-flow-content .job-offer .job-offer-item .ttl,
+	.eigyou .recruitment-flow-content .follow-up .follow-up-item .ttl {
+		font-size: min(4.71vw, 20px);
+		padding-top: 16px;
+		margin-bottom: 16px;
+	}
+	.eigyou .recruitment-flow-content .job-offer .job-offer-item img {
+		width: auto !important;
+	}
+	.eigyou .recruitment-flow-content .job-offer .job-offer-item .note {
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	.eigyou .recruitment-flow-content .job-offer .job-offer-item:last-child .ttl {
+		font-size: 24px;
+		padding-top: 24px;
+	}
+	.eigyou .recruitment-flow-content .job-offer .job-offer-item:after {
+		width: 22px;
+		height: 29px;
+		top: unset;
+		right: unset;
+		transform: translateX(-50%) rotate(90deg);
+		left: 50%;
+		bottom: -40px;
+	}
+	.eigyou .recruitment-flow-content .follow-up .follow-up-item img {
+		width: auto !important;
+	}
+	.eigyou .recruitment-flow-content .follow-up .follow-up-item:nth-child(2) .ttl {
+		margin-bottom: 35px;
+	}
+	.eigyou .recruitment-flow-content .follow-up .follow-up-item:nth-child(3) .ttl {
+		margin-bottom: 18px;
+	}
+	.eigyou .recruitment-flow-content .follow-up .follow-up-item:last-child .ttl {
+		font-size: 24px;
+		padding-top: 30px;
+		margin-bottom: 15px;
+	}
+	.eigyou .recruitment-flow-content .follow-up .follow-up-item:after {
+		width: 22px;
+		height: 29px;
+		top: unset;
+		right: unset;
+		transform: translateX(-50%) rotate(90deg);
+		left: 50%;
+		bottom: -40px;
+	}
+	.eigyou #lp-inshoku .recruitment-flow .title {
+		line-height: 1.4;
+		font-size: 24px;
+	}
+	.eigyou .recruitment-flow-content .follow-up .title-item {
+		justify-content: center;
+		row-gap: 9px;
+	}
+
+	.eigyou .pickup {
+		padding-block: 70px;
+		gap: 40px;
+	}
+
+	.eigyou .pickup .pickup-title {
+		border-radius: 20px;
+		padding-block: 30px 30px;
+	}
+
+	.eigyou .pickup .pickup-title .en {
+		font-size: 36px;
+		margin-bottom: 0;
+	}
+
+	.eigyou .pickup .pickup-title .ja {
+		font-size: 22px;
+	}
+
+	.eigyou .pickup .map {
+		border-radius: 20px;
+		padding-inline: 14px;
+		padding-block: 30px;
+	}
+
+	.eigyou .pickup .map .title {
+		font-size: 22px;
+	}
+
+	.eigyou .pickup .map .text {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+
+	.eigyou .pickup .forte .forte-title {
+		font-size: 28px;
+		padding: 16px;
+	}
+
+	.eigyou .pickup .forte .note {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.eigyou .pickup .forte .content {
+		padding: 30px 14px;
+	}
+
+	.eigyou .pickup .forte .row {
+		grid-template-columns: 1fr;
+		gap: 28px;
+	}
+
+	.eigyou .pickup .forte .row .col {
+		border-radius: 20px;
+		border: 3px solid #ff7e00;
+		padding: 20px 16px 30px;
+		gap: 10px;
+	}
+
+	.eigyou .pickup .forte .row .col .title {
+		font-size: 20px;
+		margin-bottom: 12px;
+	}
+
+	.eigyou .pickup .forte .row .col .text {
+		font-size: 14px;
+	}
+
+	.eigyou .pickup .mission {
+		border-radius: 20px;
+	}
+
+	.eigyou .pickup .mission .title {
+		font-size: 28px;
+		padding: 16px;
+	}
+
+	.eigyou .pickup .mission .content {
+		padding: 30px 14px;
+	}
+
+	.eigyou .pickup .mission .content .text {
+		font-size: 24px;
+		margin-bottom: 22px;
+	}
+
+	.eigyou .pickup .mission .content .text-list {
+		font-size: 20px;
+		border-radius: 22px;
+		padding: 20px 10px;
+	}
+
+	.eigyou .pickup .mission .content .note {
+		font-size: 16px;
+		margin-top: 16px;
+	}
+}
