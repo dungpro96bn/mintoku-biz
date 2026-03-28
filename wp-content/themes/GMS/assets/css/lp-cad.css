@@ -1,0 +1,1324 @@
+.cad #lp-inshoku .main-banner .image {
+	width: 100%;
+}
+
+.cad#driver.inshokuseizo #lp-inshoku .main-banner .banner-inner img {
+	aspect-ratio: initial;
+}
+
+.cad#driver.inshokuseizo .main-banner .news-top .news-info .text-news {
+	padding-right: 0;
+}
+
+.cad#driver.inshokuseizo .main-banner .text-description {
+	text-align: center;
+}
+
+.cad .main-banner .text-list {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	color: #2a4852;
+	display: grid;
+	gap: 6px;
+	max-width: 510px;
+	margin-inline: auto;
+	line-height: 1.8;
+}
+
+.cad .main-banner .text-list .has-bg {
+	border-radius: 99px;
+	border: 2px solid #fff;
+	display: block;
+	background: linear-gradient(0deg, #ebebeb 0%, #fff 100%);
+}
+
+/*  */
+.cad .define {
+	display: grid;
+	grid-template-columns: 286px 1fr;
+	gap: 48px;
+	padding-top: 39px;
+	padding-left: 29px;
+}
+
+.cad .define .define-content .title {
+	font-size: 40px;
+	font-weight: 700;
+	color: #2a4852;
+	line-height: 1.45;
+	margin-bottom: 2px;
+}
+
+.cad .define .define-content .text {
+	font-size: 16px;
+	font-weight: 700;
+	color: #2a4852;
+	line-height: 2;
+}
+
+.cad .define .define-content .row {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	gap: 16px;
+	padding-top: 12px;
+}
+
+.cad .define .define-content .row .col-title {
+	display: block;
+	background-color: #ff7e00;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 7px;
+	padding: 2px;
+}
+
+.cad .define .define-content .row .col-text {
+	display: block;
+	background-color: #fff;
+	font-size: 15px;
+	color: #181818;
+	border: 3px solid #ff7e00;
+	padding: 21px 22px;
+	line-height: 2.1;
+	font-weight: 400;
+}
+
+/*  */
+.cad .platforms {
+	background-color: rgba(195, 195, 195, 0.2);
+	padding-top: 134px;
+}
+
+.cad .platforms .platform-container {
+	position: relative;
+	max-width: 1360px;
+	padding: 0 20px;
+	margin-inline: auto;
+}
+
+.cad .platforms .platform-title {
+	display: block;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+	font-size: 46px;
+	font-weight: 900;
+	color: #fff;
+	text-align: center;
+	line-height: 1.45;
+	padding-block: 18px;
+	margin-bottom: 39px;
+}
+
+.cad .platform-ja {
+	padding-bottom: 137px;
+}
+
+.cad .platform-ja .logo {
+	border-radius: 50px;
+	border: 1px solid #707070;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	padding-block: 21px 46px;
+	padding-inline: 14px;
+	margin-bottom: 26px;
+}
+
+.cad .platform-ja .logo-text {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.6;
+	color: #ff7e00;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.cad .platform-ja .logo-img {
+	max-width: 868px;
+}
+
+.cad .platform-ja .desc {
+	margin-bottom: 38px;
+}
+
+.cad .platform-ja .desc-text {
+	font-size: 40px;
+	line-height: 1.55;
+	font-weight: 700;
+	color: #2f6686;
+	text-align: center;
+}
+
+.cad .platform-ja .banner {
+	background-color: #fff;
+	border-radius: 50px;
+	padding: 38px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 27px;
+	margin-bottom: 35px;
+}
+
+.cad .platform-ja .banner-img {
+	max-width: 1064px;
+}
+
+.cad .platform-ja .banner-text {
+	font-size: 55px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.13;
+	color: #ff7e00;
+}
+
+.cad .platform-ja .note {
+	font-size: 23px;
+	font-weight: 700;
+	color: #2a4852;
+	text-align: center;
+}
+
+.cad .platform-os {
+	padding-bottom: 95px;
+}
+
+.cad .platform-os .platform-title {
+	background: linear-gradient(0deg, #1dc8fe 0%, #007aff 100%);
+}
+
+.cad .platform-os .text {
+	font-size: 40px;
+	line-height: 1.55;
+	font-weight: 400;
+	color: #2f6686;
+	text-align: center;
+	margin-bottom: 42px;
+}
+
+.cad .platform-os .text .bold {
+	font-size: 46px;
+	font-weight: 900;
+	line-height: 1.35;
+	letter-spacing: 2.3px;
+	margin-inline: -45px;
+}
+
+.cad .platform-os .system {
+	margin-bottom: 32px;
+}
+
+.cad .platform-os .system .img {
+	border-radius: 28px;
+	overflow: hidden;
+	margin-bottom: 52px;
+}
+
+.cad .platform-os .system .desc {
+	background-color: #fff;
+	text-align: center;
+	padding: 47px 53px 60px;
+}
+
+.cad .platform-os .system .desc .title {
+	font-size: 50px;
+	font-weight: 700;
+	color: #ff7e00;
+	line-height: 1.4;
+	text-decoration: underline;
+	margin-bottom: 50px;
+}
+
+.cad .platform-os .system .desc .txt {
+	border-radius: 99px;
+	border: 1px solid #707070;
+	font-size: 31px;
+	font-weight: 700;
+	position: relative;
+	text-align: center;
+	padding: 5px;
+	color: #2f6686;
+	line-height: 1.6;
+	padding: 21px;
+}
+
+.cad .platform-os .system .desc .txt + .txt {
+	margin-top: 48px;
+}
+
+.cad .platform-os .system .desc .txt + .txt::before {
+	content: "";
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2239.74%22%20height%3D%2222.353%22%20viewBox%3D%220%200%2039.74%2022.353%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22a%22%20x1%3D%22.5%22%20x2%3D%22.5%22%20y2%3D%221%22%20gradientUnits%3D%22objectBoundingBox%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23f77149%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f7bb49%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20data-name%3D%22Path%2014269%22%20d%3D%22M39%2018.123%2021.616.737a2.437%202.437%200%200%200-3.493%200L.737%2018.123a2.437%202.437%200%200%200%200%203.493%202.4%202.4%200%200%200%201.747.737h34.772A2.469%202.469%200%200%200%2039%2018.123%22%20fill%3D%22url(%23a)%22%2F%3E%3C%2Fsvg%3E");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 22px;
+	display: block;
+	position: absolute;
+	top: -35px;
+	left: 50%;
+	transform: translateX(-50%) scaleY(-1);
+}
+
+.cad .platform-os .note {
+	text-align: center;
+	color: #ff7e00;
+	font-size: 40px;
+	line-height: 1.55;
+	font-weight: 700;
+}
+
+/*  */
+.cad .pickup .pickup-inner {
+	position: relative;
+	padding-block: 128px 97px;
+}
+
+.cad .pickup .bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0.8;
+}
+
+.cad .pickup .bg img {
+	object-fit: cover;
+	height: 100% !important;
+	width: 100%;
+}
+
+.cad .pickup .pickup-container {
+	position: relative;
+	max-width: 1360px;
+	padding: 0 20px;
+	margin-inline: auto;
+}
+
+.cad .pickup .pickup-title {
+	display: block;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+	color: #fff;
+	text-align: center;
+	padding-block: 34px 21px;
+}
+
+.cad .pickup .pickup-title .en {
+	display: block;
+	font-family: "Lexend Deca", sans-serif !important;
+	font-size: 54px;
+	font-weight: 600;
+	margin-bottom: 13px;
+}
+
+.cad .pickup .pickup-title .ja {
+	display: block;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.55;
+}
+
+.cad .pickup .map {
+	border-radius: 24px;
+	background-color: #fff;
+	padding-inline: 34px;
+	padding-block: 52px 48px;
+	margin-bottom: 189px;
+}
+
+.cad .pickup .map .title {
+	font-size: 36px;
+	line-height: 1.67;
+	text-align: center;
+	font-weight: 700;
+	color: #2a4852;
+	letter-spacing: 1.8px;
+	margin-bottom: 17px;
+}
+
+.cad .pickup .map .text {
+	font-size: 26px;
+	line-height: 1.91;
+	font-weight: 400;
+	color: #2a4852;
+	width: fit-content;
+	margin-inline: auto;
+	letter-spacing: 1.3px;
+	margin-bottom: 42px;
+}
+
+.cad .pickup .duties {
+	border-radius: 23px 23px 50px 50px;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.cad .pickup .duties .title {
+	font-size: 46px;
+	color: #fff100;
+	text-align: center;
+	padding: 18px;
+	font-weight: 700;
+	line-height: 1.4;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+}
+
+.cad .pickup .duties .content {
+	color: #5e5e5e;
+	font-weight: 700;
+	padding-block: 55px 37px;
+	padding-inline: 14px;
+}
+
+.cad .pickup .duties .content .text {
+	font-size: 40px;
+	line-height: 1.45;
+	text-align: center;
+	margin-bottom: 47px;
+}
+
+.cad .pickup .duties .content .note {
+	font-size: 32px;
+	line-height: 1.62;
+	text-align: center;
+}
+
+.cad .pickup .duties .content .list {
+	display: flex;
+	flex-direction: column;
+	margin-inline: auto;
+	width: fit-content;
+	gap: 48px;
+	margin-bottom: 46px;
+}
+
+.cad .pickup .duties .content .list .item {
+	font-size: 36px;
+	line-height: 1.5;
+	width: fit-content;
+	display: flex;
+	gap: 3px;
+}
+
+.cad .pickup .duties .content .list .item::before {
+	content: "";
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2249.441%22%20height%3D%2227.81%22%20viewBox%3D%220%200%2049.441%2027.81%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22a%22%20x1%3D%22.5%22%20x2%3D%22.5%22%20y2%3D%221%22%20gradientUnits%3D%22objectBoundingBox%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23f77149%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f7bb49%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20data-name%3D%22Path%2014269%22%20d%3D%22M48.523%2022.547%2026.893.917a3.03%203.03%200%200%200-4.346%200L.917%2022.547a3.03%203.03%200%200%200%200%204.345%202.97%202.97%200%200%200%202.173.917h43.26a3.072%203.072%200%200%200%202.173-5.263%22%20fill%3D%22url(%23a)%22%2F%3E%3C%2Fsvg%3E");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 28px;
+	width: 50px;
+	display: block;
+	rotate: 90deg;
+	margin-top: 13px;
+	flex-shrink: 0;
+}
+
+/*  */
+.cad .recruitment-flow-up {
+	position: relative;
+}
+.cad #lp-inshoku .recruitment-flow-up .top-title {
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+}
+
+.cad .recruitment-flow-content {
+	background: #fff;
+	border-radius: 0 0 24px 24px;
+	padding: 45px min(2.71vw, 52px) 70px;
+}
+.cad .recruitment-flow-content .title-bor {
+	display: flex;
+	padding-right: 21px;
+}
+.cad .recruitment-flow-content .title-item {
+	margin-bottom: 28px;
+}
+.cad .recruitment-flow-content .title-bor span {
+	font-size: min(2.09vw, 28px);
+	line-height: 1.4;
+	color: #fff;
+	font-weight: bold;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+	display: flex;
+	height: min(4.7vw, 63px);
+	align-items: center;
+	justify-content: center;
+	border-radius: 40px;
+	padding: 0 min(2.09vw, 28px);
+}
+.cad .recruitment-flow-content .job-offer .job-offer-list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: min(2.98vw, 40px);
+	padding-left: 7px;
+	padding-right: min(1.19vw, 16px);
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item {
+	border-radius: 22px;
+	border: 2px solid #ff7e00;
+	min-height: min(13.66vw, 183px);
+	text-align: center;
+	width: calc((100% - min(25.6vw, 343px)) / 4);
+	position: relative;
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item:after {
+	content: "";
+	position: absolute;
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222.268%22%20height%3D%2228.814%22%20viewBox%3D%220%200%2022.268%2028.814%22%3E%3Cpath%20data-name%3D%22Path%2014001%22%20d%3D%22M21.932%2013.532%2010.144.435A1.3%201.3%200%200%200%209.17%200H1.311a1.309%201.309%200%200%200-.974%202.185l11%2012.223-11%2012.22a1.311%201.311%200%200%200%20.974%202.187H9.17a1.33%201.33%200%200%200%20.974-.432l11.788-13.1a1.31%201.31%200%200%200%200-1.752%22%20fill%3D%22%23ff7e00%22%2F%3E%3C%2Fsvg%3E");
+	width: min(1.15vw, 22px);
+	height: min(1.51vw, 29px);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	top: 50%;
+	right: max(-2.39vw, -32px);
+	transform: translateY(-50%);
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item:last-child:after {
+	display: none;
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item:last-child {
+	border: 0;
+	border-radius: 50%;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+	height: min(13.66vw, 183px);
+	width: min(13.66vw, 183px);
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item .ttl {
+	color: #2a4852;
+	font-size: min(1.49vw, 20px);
+	line-height: 1.4;
+	font-weight: bold;
+	padding-top: min(1.19vw, 16px);
+	margin-bottom: min(1.19vw, 16px);
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item:nth-child(3) .ttl {
+	margin-bottom: min(0.67vw, 9px);
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item .note {
+	font-size: min(1.04vw, 14px);
+	line-height: 1.4;
+	font-weight: bold;
+	margin-top: min(0.75vw, 10px);
+	padding-right: min(1.49vw, 20px);
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item:last-child .ttl {
+	font-size: min(1.79vw, 24px);
+	line-height: 1.625;
+	color: #fff;
+	padding-top: min(1.79vw, 24px);
+	padding-right: 5px;
+	margin-bottom: 9px;
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item:last-child img {
+	width: min(5.15vw, 69px);
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item:nth-child(1) img {
+	width: min(5.45vw, 73px);
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item:nth-child(2) img {
+	width: min(4.48vw, 60px);
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item:nth-child(3) img {
+	width: min(7.16vw, 96px);
+}
+.cad .recruitment-flow-content .job-offer .job-offer-item:nth-child(4) img {
+	width: min(6.12vw, 82px);
+}
+.cad .recruitment-flow-content .job-offer {
+	margin-bottom: 52px;
+}
+
+.cad .recruitment-flow-content .follow-up {
+	padding-left: 7px;
+}
+.cad .recruitment-flow-content .follow-up .title-bor span {
+	padding: 0 min(1.27vw, 17px);
+}
+.cad .recruitment-flow-content .follow-up .title-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.cad .recruitment-flow-content .follow-up .title-item .ttl-note {
+	color: #000;
+	font-size: min(1.79vw, 24px);
+	line-height: 1.625;
+	font-weight: 400;
+}
+.cad .recruitment-flow-content .follow-up .follow-up-list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: min(3.58vw, 48px);
+	padding-right: min(3.28vw, 44px);
+}
+.cad .recruitment-flow-content .follow-up .follow-up-item {
+	border-radius: 22px;
+	border: 2px solid #ff7e00;
+	min-height: min(17.16vw, 230px);
+	text-align: center;
+	width: calc((100% - min(27.91vw, 374px)) / 3);
+	position: relative;
+}
+.cad .recruitment-flow-content .follow-up .follow-up-item:after {
+	content: "";
+	position: absolute;
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222.268%22%20height%3D%2228.814%22%20viewBox%3D%220%200%2022.268%2028.814%22%3E%3Cpath%20data-name%3D%22Path%2014001%22%20d%3D%22M21.932%2013.532%2010.144.435A1.3%201.3%200%200%200%209.17%200H1.311a1.309%201.309%200%200%200-.974%202.185l11%2012.223-11%2012.22a1.311%201.311%200%200%200%20.974%202.187H9.17a1.33%201.33%200%200%200%20.974-.432l11.788-13.1a1.31%201.31%200%200%200%200-1.752%22%20fill%3D%22%23ff7e00%22%2F%3E%3C%2Fsvg%3E");
+	width: min(1.15vw, 22px);
+	height: min(1.51vw, 29px);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	top: 50%;
+	right: max(-2.69vw, -36px);
+	transform: translateY(-50%);
+}
+.cad .recruitment-flow-content .follow-up .follow-up-item:last-child:after {
+	display: none;
+}
+.cad .recruitment-flow-content .follow-up .follow-up-item:last-child {
+	border: 0;
+	border-radius: 50%;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+	height: min(17.16vw, 230px);
+	width: min(17.16vw, 230px);
+}
+.cad .recruitment-flow-content .follow-up .follow-up-item:nth-child(1) img {
+	width: min(6.94vw, 93px);
+}
+.cad .recruitment-flow-content .follow-up .follow-up-item:nth-child(2) img {
+	width: min(6.94vw, 93px);
+}
+.cad .recruitment-flow-content .follow-up .follow-up-item:nth-child(3) img {
+	width: min(6.34vw, 85px);
+}
+.cad .recruitment-flow-content .follow-up .follow-up-item:last-child img {
+	width: min(6.42vw, 86px);
+}
+.cad .recruitment-flow-content .follow-up .follow-up-item .ttl {
+	color: #2a4852;
+	font-size: min(1.49vw, 20px);
+	line-height: 1.4;
+	font-weight: bold;
+	padding-top: min(1.19vw, 16px);
+	margin-bottom: min(1.79vw, 24px);
+}
+.cad .recruitment-flow-content .follow-up .follow-up-item:nth-child(2) .ttl {
+	margin-bottom: min(2.61vw, 35px);
+}
+.cad .recruitment-flow-content .follow-up .follow-up-item:nth-child(3) .ttl {
+	margin-bottom: min(1.19vw, 16px);
+}
+.cad .recruitment-flow-content .follow-up .title-item {
+	margin-bottom: 32px;
+}
+.cad .recruitment-flow-content .follow-up .follow-up-item:last-child .ttl {
+	font-size: min(1.79vw, 24px);
+	line-height: 1.625;
+	color: #fff;
+	padding-top: min(2.24vw, 30px);
+	padding-right: min(0.37vw, 5px);
+	margin-bottom: min(0.9vw, 12px);
+}
+
+.cad .others {
+	position: relative;
+	padding-block: 145px 200px;
+	display: grid;
+	gap: 186px;
+}
+
+.cad .others .bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0.8;
+}
+
+.cad .others .bg img {
+	object-fit: cover;
+	height: 100% !important;
+	width: 100%;
+}
+
+.cad .others .support-services {
+	position: relative;
+}
+
+.cad .others .forte {
+	position: relative;
+	background-color: #fff;
+	border-radius: 24px;
+	overflow: hidden;
+}
+
+.cad .others .forte .forte-title {
+	font-size: 46px;
+	color: #fff100;
+	text-align: center;
+	padding: 18px;
+	font-weight: 700;
+	line-height: 1.4;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+}
+
+.cad .others .forte .content {
+	padding: 29px 40px 41px;
+}
+
+.cad .others .forte .note {
+	font-size: 26px;
+	text-align: center;
+	font-weight: 700;
+	line-height: 1.6;
+	color: #ff7e00;
+	margin-bottom: 24px;
+}
+
+.cad .others .forte .row {
+	display: grid;
+	gap: 10px;
+	max-width: 720px;
+	margin-inline: auto;
+}
+
+.cad .others .forte .row .col {
+	border-radius: 24px;
+	border: 5px solid #ff7e00;
+	padding: 20px 17px 25px;
+	display: grid;
+	grid-template-columns: 51.3% 1fr;
+	text-align: center;
+	font-weight: 700;
+	align-items: center;
+	gap: 10px;
+}
+
+.cad .others .forte .row .col .title {
+	font-size: 26px;
+	color: #ff7e00;
+	line-height: 1.4;
+	letter-spacing: 0.8px;
+	margin-bottom: 9px;
+	margin-right: -10px;
+}
+
+.cad .others .forte .row .col .text {
+	font-size: 16px;
+	color: #000;
+	line-height: 1.6;
+}
+
+/*  */
+.cad .challenges {
+	position: relative;
+	padding-block: 72px 245px;
+	overflow: hidden;
+}
+
+.cad .challenges .bg {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 145%;
+}
+
+.cad .challenges .bg img {
+	width: 100%;
+	object-position: top center;
+}
+
+.cad .challenges .challenges-inner {
+	width: 100%;
+	margin-inline: auto;
+	max-width: 1602px;
+	padding: 0 20px;
+	position: relative;
+}
+
+.cad .challenges .challenges-title {
+	font-size: 40px;
+	text-align: center;
+	font-weight: 700;
+	color: #ff7e00;
+	line-height: 1.45;
+	margin-bottom: 50px;
+}
+
+.cad .challenges .row {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+	gap: 16px;
+}
+
+.cad .challenges .row .col {
+	border-radius: 50px;
+	border: 1px solid #707070;
+	padding: 26px 10px 52px;
+}
+
+.cad .challenges .row .col .img {
+	max-width: 272px;
+	margin-inline: auto;
+	margin-bottom: 23px;
+}
+
+.cad .challenges .row .col .title {
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	width: fit-content;
+	margin-inline: auto;
+	background: linear-gradient(0deg, #f7bb49 0%, #f77149 100%);
+	border-radius: 99px;
+	padding: 12px 30px;
+	margin-bottom: 22px;
+	font-size: 29px;
+	line-height: 1.4;
+}
+
+.cad .challenges .row .col .text {
+	color: #2a4852;
+	font-weight: 700;
+	text-align: center;
+	font-size: 23px;
+	line-height: 1.4;
+}
+
+.cad .challenges svg {
+	scale: -1;
+	margin-block: 79px 38px;
+	margin-inline: auto;
+	max-width: 150px;
+	height: auto;
+	display: block;
+}
+
+.cad .challenges .note {
+	color: #2a4852;
+	font-weight: 700;
+	text-align: center;
+	font-size: 40px;
+	line-height: 1.55;
+	text-decoration: underline;
+}
+
+.cad .challenges .row .col .text + .text {
+	margin-top: 17px;
+}
+
+.cad .support-services .support-services-content {
+	display: grid;
+	grid-template-columns: 436px 1fr;
+	gap: 4px 38px;
+	padding-top: 53px;
+	padding-bottom: 90px;
+}
+
+.cad .support-services .image-header {
+	grid-row: 1 / span 2;
+	padding-right: 0;
+	margin-bottom: 0;
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 13px;
+	margin-left: -34px;
+}
+
+.cad .support-services .image-header .image {
+	margin-bottom: 0;
+}
+
+.cad .support-services .image-header .ttl {
+	border-radius: 99px;
+	border: 1px solid #707070;
+	padding: 9px;
+}
+
+.cad .support-services .title {
+	margin-bottom: 0;
+	padding-left: 0;
+	align-self: self-start;
+	margin-right: -68px;
+	line-height: 1.65;
+}
+
+.cad .support-services .t1 {
+	margin-bottom: 0;
+	padding-left: 0;
+	align-self: self-end;
+	padding-top: 76px;
+	margin-right: -68px;
+}
+
+.cad .support-services-list {
+	grid-column: 1 / -1;
+	padding-top: 42px;
+}
+
+.cad .support-services .support-services-item .image-content .ttl-image {
+	bottom: auto;
+	top: 0;
+}
+
+.cad .support-services .support-services-item {
+	display: grid;
+	align-items: end;
+}
+
+.cad .support-services .support-services-item .image-content {
+	margin-bottom: 0;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	padding-top: 44px;
+}
+
+.cad .support-services .support-services-item .image-content .ttl-image {
+	height: 73px;
+}
+
+.cad .support-services .support-services-item .text {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.76);
+	padding: 17px 5px;
+}
+
+@media (max-width: 1439px) {
+	.cad .platform-os .text .bold {
+		margin-inline: 0;
+	}
+
+	.cad .support-services .image-header {
+		margin-left: 0;
+	}
+
+	.cad .support-services .t1,
+	.cad .support-services .title {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 1023px) {
+	.cad .recruitment-flow-content .follow-up {
+		padding-left: 0;
+	}
+
+	.cad .support-services .support-services-content {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.cad .support-services .image-header .ttl {
+		padding: 4px;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 990px) {
+	.cad .define {
+		grid-template-columns: 1fr;
+		padding-left: 0;
+	}
+
+	.cad .define .define-img {
+		max-width: 286px;
+		margin-inline: auto;
+	}
+
+	.cad .define .define-content .row {
+		grid-template-columns: 1fr;
+	}
+
+	.cad .define .define-content .title {
+		font-size: 28px;
+	}
+
+	.cad .define .define-content .text,
+	.cad .define .define-content .row .col-text {
+		font-size: 14px;
+	}
+
+	.cad .define .define-content .row .col-title {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 767px) {
+	/*  */
+	.cad .platforms {
+		padding-top: 60px;
+	}
+
+	.cad .platforms .platform-container {
+		padding: 0 14px;
+	}
+
+	.cad .platforms .platform-title {
+		font-size: 28px;
+	}
+
+	.cad .platform-ja,
+	.cad .platform-os {
+		padding-bottom: 60px;
+	}
+
+	.cad .platform-ja .logo {
+		border-radius: 20px;
+		padding-block: 20px 30px;
+		margin-bottom: 20px;
+	}
+
+	.cad .platform-ja .logo-text {
+		font-size: 28px;
+	}
+
+	.cad .platform-ja .desc {
+		margin-bottom: 26px;
+	}
+
+	.cad .platform-ja .desc-text {
+		font-size: 28px;
+	}
+
+	.cad .platform-ja .banner-text {
+		font-size: 20px;
+		line-height: 1.3;
+	}
+
+	.cad .platform-ja .banner {
+		border-radius: 20px;
+		padding: 30px 20px;
+		gap: 20px;
+		margin-bottom: 25px;
+	}
+
+	.cad .platform-ja .note {
+		font-size: 20px;
+	}
+
+	.cad .platform-os .text {
+		font-size: 28px;
+		margin-bottom: 28px;
+	}
+
+	.cad .platform-os .text .bold {
+		font-size: 30px;
+	}
+
+	.cad .platform-os .system .desc {
+		padding: 30px 20px 40px;
+	}
+
+	.cad .platform-os .system .img {
+		border-radius: 20px;
+		margin-bottom: 32px;
+	}
+
+	.cad .platform-os .system .desc .title {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	.cad .platform-os .system .desc .txt {
+		font-size: 18px;
+		padding: 18px;
+	}
+
+	.cad .platform-os .system .desc .txt + .txt {
+		margin-top: 36px;
+	}
+
+	.cad .platform-os .system .desc .txt + .txt::before {
+		width: 28px;
+		height: 15px;
+		top: -25px;
+	}
+
+	.cad .platform-os .note {
+		font-size: 20px;
+	}
+
+	/*  */
+	.cad .pickup .pickup-inner {
+		padding-block: 60px;
+	}
+
+	.cad .pickup .map {
+		border-radius: 20px;
+		padding-inline: 14px;
+		padding-block: 30px;
+		margin-bottom: 70px;
+	}
+
+	.cad .pickup .map .title {
+		font-size: 22px;
+	}
+
+	.cad .pickup .map .text {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+
+	.cad .pickup .duties {
+		border-radius: 20px;
+	}
+
+	.cad .pickup .duties .title {
+		font-size: 28px;
+		padding: 16px;
+	}
+
+	.cad .pickup .duties .content {
+		padding-block: 30px;
+	}
+
+	.cad .pickup .duties .content .text {
+		font-size: 28px;
+		margin-bottom: 30px;
+	}
+
+	.cad .pickup .duties .content .list .item {
+		font-size: 22px;
+	}
+
+	.cad .pickup .duties .content .list .item::before {
+		height: 18px;
+		width: 32px;
+		margin-top: 9px;
+	}
+
+	.cad .pickup .duties .content .list {
+		gap: 20px;
+		margin-bottom: 30px;
+	}
+
+	.cad .pickup .duties .content .note {
+		font-size: 20px;
+	}
+
+	/*  */
+	.cad .recruitment-flow-content {
+		padding: 40px 20px 50px;
+	}
+	.cad .recruitment-flow-content .title-bor span {
+		font-size: 16px;
+		height: 40px;
+		padding: 0 25px;
+	}
+	.cad .recruitment-flow-content .title-bor {
+		justify-content: center;
+		padding: 0;
+	}
+	.cad .recruitment-flow-content .title-item {
+		margin-bottom: 35px;
+	}
+	.cad .recruitment-flow-content .follow-up .title-item .ttl-note {
+		font-size: 15px;
+	}
+	.cad .recruitment-flow-content .follow-up .title-bor span {
+		padding: 0 25px;
+	}
+	.cad .recruitment-flow-content .job-offer .job-offer-list,
+	.cad .recruitment-flow-content .follow-up .follow-up-list {
+		flex-direction: column;
+		column-gap: 0;
+		row-gap: 50px;
+		align-items: center;
+		padding-right: 0;
+	}
+	.cad .recruitment-flow-content .job-offer .job-offer-item,
+	.cad .recruitment-flow-content .job-offer .job-offer-item:last-child {
+		width: 190px;
+		min-height: 190px;
+	}
+	.cad .recruitment-flow-content .follow-up .follow-up-item,
+	.cad .recruitment-flow-content .follow-up .follow-up-item:last-child {
+		width: 230px;
+		min-height: 230px;
+	}
+	.cad .recruitment-flow-content .job-offer .job-offer-item .ttl,
+	.cad .recruitment-flow-content .follow-up .follow-up-item .ttl {
+		font-size: min(4.71vw, 20px);
+		padding-top: 16px;
+		margin-bottom: 16px;
+	}
+	.cad .recruitment-flow-content .job-offer .job-offer-item img {
+		width: auto !important;
+	}
+	.cad .recruitment-flow-content .job-offer .job-offer-item .note {
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	.cad .recruitment-flow-content .job-offer .job-offer-item:last-child .ttl {
+		font-size: 24px;
+		padding-top: 24px;
+	}
+	.cad .recruitment-flow-content .job-offer .job-offer-item:after {
+		width: 22px;
+		height: 29px;
+		top: unset;
+		right: unset;
+		transform: translateX(-50%) rotate(90deg);
+		left: 50%;
+		bottom: -40px;
+	}
+	.cad .recruitment-flow-content .follow-up .follow-up-item img {
+		width: auto !important;
+	}
+	.cad .recruitment-flow-content .follow-up .follow-up-item:nth-child(2) .ttl {
+		margin-bottom: 35px;
+	}
+	.cad .recruitment-flow-content .follow-up .follow-up-item:nth-child(3) .ttl {
+		margin-bottom: 18px;
+	}
+	.cad .recruitment-flow-content .follow-up .follow-up-item:last-child .ttl {
+		font-size: 24px;
+		padding-top: 30px;
+		margin-bottom: 15px;
+	}
+	.cad .recruitment-flow-content .follow-up .follow-up-item:after {
+		width: 22px;
+		height: 29px;
+		top: unset;
+		right: unset;
+		transform: translateX(-50%) rotate(90deg);
+		left: 50%;
+		bottom: -40px;
+	}
+	.cad #lp-inshoku .recruitment-flow .title {
+		line-height: 1.4;
+		font-size: 24px;
+	}
+	.cad .recruitment-flow-content .follow-up .title-item {
+		justify-content: center;
+		row-gap: 9px;
+	}
+
+	.cad .others {
+		padding-block: 60px;
+		gap: 60px;
+	}
+
+	.cad .others .forte {
+		border-radius: 20px;
+	}
+
+	.cad .others .forte .forte-title {
+		font-size: 28px;
+		padding: 16px;
+	}
+
+	.cad .others .forte .content {
+		padding: 30px 14px;
+	}
+
+	.cad .others .forte .note {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.cad .others .forte .row {
+		gap: 28px;
+	}
+
+	.cad .others .forte .row .col {
+		border-radius: 20px;
+		border: 3px solid #ff7e00;
+		padding: 20px 16px 30px;
+		gap: 10px;
+		grid-template-columns: 1fr;
+	}
+
+	.cad .others .forte .row .col .title {
+		font-size: 20px;
+		margin-bottom: 12px;
+	}
+
+	.cad .others .forte .row .col .text {
+		font-size: 14px;
+	}
+
+	/*  */
+	.cad .challenges {
+		padding-block: 60px 90px;
+	}
+	.cad .challenges .challenges-title {
+		font-size: 28px;
+		margin-bottom: 30px;
+	}
+
+	.cad .challenges .row {
+		grid-template-columns: 1fr;
+	}
+
+	.cad .challenges .row .col {
+		border-radius: 20px;
+		padding: 28px 14px;
+	}
+
+	.cad .challenges .row .col .img {
+		max-width: 230px;
+		margin-bottom: 23px;
+	}
+
+	.cad .challenges .row .col .title {
+		padding: 10px 18px;
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
+
+	.cad .challenges .row .col .text + .text {
+		margin-top: 10px;
+	}
+
+	.cad .challenges .row .col .text {
+		font-size: 16px;
+	}
+
+	.cad .challenges svg {
+		margin-block: 40px 20px;
+		max-width: 80px;
+	}
+
+	.cad .challenges .note {
+		font-size: 22px;
+	}
+
+	.cad .support-services .support-services-content {
+		grid-template-columns: 1fr;
+		padding: 30px 20px 40px;
+		gap: 20px;
+	}
+
+	.cad .support-services .image-header .ttl {
+		font-size: 18px;
+	}
+
+	.cad .support-services .t1 {
+		padding-top: 0;
+	}
+
+	.cad .support-services-list {
+		padding-top: 0;
+	}
+
+	.cad .support-services .support-services-item .image-content .ttl-image {
+		height: 50px;
+	}
+
+	.cad .support-services .support-services-item .text {
+		padding: 10px 5px;
+	}
+}
