@@ -267,7 +267,7 @@
                                 <div class="desc">
                                     <h2 class="title">企業ニーズにマッチした<br class="pc-br" />高度な優秀人材をご紹介</h2>
                                     <p class="text">
-                                        国内新卒の代替ではなく<br class="pc-br" />「新しい人材の確保チャンネル」<br class="pc-br" />として機能
+                                        理系・文系それぞれの<br class="pc-br" />専門性を持ったハイスキル人材の<br class="pc-br" />マッチングが可能
                                     </p>
                                 </div>
                             </div>
