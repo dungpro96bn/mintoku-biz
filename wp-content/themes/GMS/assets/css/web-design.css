@@ -1,0 +1,524 @@
+
+#driver.web-design .main-banner .banner-inner {
+    max-width: 1495px;
+    padding-left: min(3.13vw, 60px);
+}
+#driver.web-design #lp-inshoku .main-banner .banner-inner img{
+    width: 100%;
+}
+#driver.web-design .main-banner .item-content .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 26px 24px;
+}
+#driver.web-design .main-banner .news-top{
+    padding-top: 40px;
+}
+#driver.web-design .main-banner .text-description{
+    line-height: 2.25;
+    text-align: center;
+    margin-bottom: 38px;
+}
+#driver.web-design .main-banner .news-top ul{
+    max-width: 1100px;
+    margin: 0 auto 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 22px;
+}
+#driver.web-design .main-banner .news-top ul li{
+    font-size: min(1.4vw, 16px);
+    line-height: 1.4;
+    color: #2A4852;
+    font-weight: 700;
+    padding: 0 10px;
+    display: flex;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 30px;
+    text-align: center;
+}
+.web-design #lp-inshoku .main-banner .text-bottom-inner{
+    max-width: 1360px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.web-design #lp-inshoku .main-banner .text-bottom-inner .image-left{
+    width: min(24.63vw, 335px);
+}
+.web-design #lp-inshoku .main-banner .text-bottom-inner .text-lineMain{
+    width: calc(100% - min(24.63vw, 335px));
+    padding-left: min(2.06vw, 28px);
+}
+#driver.web-design .main-banner .text-bottom .info{
+    width: 100%;
+    padding-left: 0;
+}
+#driver.web-design .main-banner .text-bottom .info .title{
+    margin-bottom: 10px;
+}
+#driver.web-design .main-banner .text-list-content .item-content{
+    width: calc(50% - 8px) !important;
+}
+#driver.web-design .main-banner .text-list-content .item-content .info p,
+#driver.web-design .main-banner .text-list-content .item-content:first-child .info p{
+    font-size: 15px;
+}
+#driver.web-design .main-banner .item-content .ttl-bg{
+    font-size: 20px;
+    height: 41px;
+    margin-bottom: 7px;
+}
+#driver.web-design .main-banner .text-bottom{
+    margin-bottom: 24px;
+}
+#driver.web-design .main-banner .news-top .news-info .text-news{
+    padding-left: 0;
+    font-size: 37px;
+    line-height: 1.46;
+}
+#driver.web-design .main-banner{
+    padding-bottom: 70px;
+}
+
+#driver.web-design .inner{
+    max-width: 1360px;
+    width: 100%;
+}
+#driver.web-design .driver-main{
+    padding-top: 72px;
+}
+#driver.web-design .driver-main .account .inner{
+    max-width: 1520px;
+}
+
+.web-design #lp-inshoku .bg-content .bg-ttl{
+    max-width: 1320px;
+    margin: auto;
+    width: calc(100% - 40px);
+    border-radius: 200px;
+    background-image: linear-gradient(to bottom, #007AFF, #1DC8FE);
+}
+.web-design #lp-inshoku .bg-content .number.no01 .logo{
+    margin-top: 44px;
+    justify-content: center;
+    row-gap: 29px;
+    padding-top: 36px;
+    padding-bottom: 42px;
+    margin-bottom: 53px;
+}
+.web-design #lp-inshoku .bg-content .number.no01 .logo p{
+    top: 0;
+}
+.web-design #lp-inshoku .bg-content .number.no01 p.text{
+    max-width: 1360px;
+    padding: 0 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 47px;
+    font-size: min(2.94vw, 40px);
+}
+.web-design #lp-inshoku .bg-content .number.no01 p.ttl{
+    font-size: min(4.04vw, 55px);
+    line-height: 1.127;
+    margin-bottom: 40px;
+}
+.web-design #lp-inshoku .bg-content .number.no01{
+    padding-bottom: 94px;
+}
+
+.web-design #lp-inshoku .bg-content .number.no02 .sub-ttl{
+    margin-top: 38px;
+}
+.web-design #lp-inshoku .bg-content .number.no02 .global{
+    background: transparent;
+}
+.web-design #lp-inshoku .bg-content .number.no02 .global .info-box{
+    background: #fff;
+    border-radius: 72px;
+    padding: 60px;
+}
+.web-design #lp-inshoku .bg-content .number.no02 .global .text{
+    color: #2F6686;
+}
+.web-design #lp-inshoku .bg-content .number.no02 .global .ttl{
+    margin-bottom: 25px;
+}
+.web-design #lp-inshoku .bg-content .number.no02 .global .description{
+    color: #2F6686;
+    margin-top: 15px;
+    margin-bottom: 90px;
+}
+.web-design #lp-inshoku .bg-content .number.no02 .global .title-bot{
+    font-size: min(2.94vw, 40px);
+    font-weight: bold;
+    line-height: 1.55;
+    text-align: center;
+    color: #ff7e00;
+    margin-top: 120px;
+    margin-bottom: 98px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.web-design #lp-inshoku .bg-content .number.no02 .global{
+    padding-bottom: 0;
+}
+.web-design #lp-inshoku .bg-content .number.no02{
+    padding-bottom: 0;
+}
+
+.web-design #lp-inshoku .bg-content .no03 .bg-ttl span {
+    font-family: "Lexend Deca", sans-serif !important;
+    font-weight: 600;
+    font-size: 54px;
+}
+.web-design #lp-inshoku .bg-content .no03 .bg-ttl {
+    font-size: 40px;
+}
+
+
+.main-business-content .inner{
+    max-width: 1360px;
+}
+#driver.web-design #lp-inshoku .top-title{
+    background: linear-gradient(to bottom, #007AFF, #1DC8FE);
+}
+.web-design #lp-inshoku .top-title .title{
+    font-size: 46px;
+}
+.main-business-content .business-content{
+    padding: 52px 52px 77px;
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+    margin-bottom: 115px;
+}
+.main-business-content .business-content .t1{
+    font-size: min(3.13vw, 32px);
+    line-height: 2;
+    color: #575757;
+    font-weight: bold;
+    margin-bottom: 38px;
+    text-align: center;
+}
+.main-business-content .business-content ul{
+    width: 100%;
+    max-width: 804px;
+    margin: auto;
+}
+.main-business-content .business-content ul li{
+    font-size: min(3.13vw, 32px);
+    line-height: 1.5;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88px;
+    border-radius: 60px;
+    background: linear-gradient(180deg,rgba(88, 160, 255, 1) 0%, rgba(88, 136, 255, 1) 45%, rgba(89, 102, 255, 1) 100%);
+    margin-bottom: 17.5px;
+}
+.main-business-content .business-content ul li:last-child{
+    margin-bottom: 0;
+}
+
+.web-design #lp-inshoku .strengths .strengths-content{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.web-design #lp-inshoku .strengths .sub-ttl{
+    margin-bottom: 25px;
+}
+.web-design #lp-inshoku .strengths .strengths-list{
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    margin: auto;
+    row-gap: 10px;
+    column-gap: 0;
+}
+.web-design #lp-inshoku .strengths .strengths-item{
+    display: flex;
+    flex-wrap: wrap;
+    border-width: 5px;
+    border-radius: 24px;
+    padding: 20px 16px;
+}
+.web-design #lp-inshoku .strengths .strengths-item .image{
+    width: 51%;
+    margin: 0;
+}
+.web-design #lp-inshoku .strengths .strengths-item .info-item{
+    width: 49%;
+    padding-left: 16px;
+    text-align: center;
+}
+.web-design #lp-inshoku .strengths .strengths-item h4{
+    font-size: 24px;
+    line-height: 1.38;
+    margin-bottom: 8px;
+}
+.web-design #lp-inshoku .strengths .strengths-item .text{
+    font-size: 16px;
+    line-height: 1.625;
+}
+.web-design #lp-inshoku .strengths{
+    margin-bottom: 109px;
+}
+#driver.web-design .recruitment-flow-up {
+    margin-bottom: 196px;
+}
+#driver.web-design .driver-main:after{
+    display: none;
+}
+#driver.web-design .support-services{
+    margin-bottom: 0;
+}
+
+.web-design #lp-inshoku .account .call img{
+    width: min(11.03vw, 150px);
+    display: block;
+    margin: 0 auto 42px auto;
+}
+.web-design #lp-inshoku .account .call {
+    font-size: min(2.94vw, 40px);
+    line-height: 1.55;
+    text-align: center;
+    color: #2a4852;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 11;
+    text-decoration: underline;
+}
+.web-design #lp-inshoku .bg-content{
+    padding-top: 160px;
+}
+.web-design #lp-inshoku .bg-content .number.no01{
+    margin-top: 0;
+}
+.web-design .recruitment-flow-content .follow-up .follow-up-item:last-child,
+.web-design .recruitment-flow-content .job-offer .job-offer-item:last-child{
+    border: 0;
+    background: linear-gradient(to bottom, #F5BD3F, #FF6D02);
+}
+.web-design .recruitment-flow-content .title-bor span{
+    background: linear-gradient(to bottom, #F5BD3F, #FF6D02);
+}
+
+
+@media (max-width: 1280px) {
+
+    #driver.web-design .main-banner .text-list-content .item-content .info p,
+    #driver.web-design .main-banner .text-list-content .item-content:first-child .info p{
+        font-size: 12px;
+    }
+    #driver.web-design .driver-main .account .inner{
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+
+
+    .web-design #lp-inshoku .strengths .strengths-item h4{
+        font-size: 20px;
+    }
+    .web-design #lp-inshoku .strengths .strengths-item .text{
+        font-size: 14px;
+    }
+    .web-design #lp-inshoku .bg-content .number.no02 .global .title-bot{
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+    .web-design #lp-inshoku .bg-content .number.no02 .global .description{
+        margin-bottom: 60px;
+    }
+    .web-design #lp-inshoku .bg-content .number.no01{
+        padding-bottom: 65px;
+    }
+    #driver.web-design .driver-main .account .account-list .account-item p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    #driver.web-design .main-banner .item-content .info{
+        padding: 10px;
+    }
+    #driver.web-design .main-banner .news-top ul{
+        column-gap: 15px;
+    }
+    #driver.web-design .main-banner .news-top .news-info .text-news{
+        font-size: 26px;
+    }
+    .web-design #lp-inshoku .bg-content .number.no01 .note{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+
+
+
+}
+
+
+
+
+@media (max-width: 767px) {
+
+
+    #driver.web-design .main-banner .banner-inner{
+        padding-left: 0;
+    }
+    #driver.web-design .main-banner .news-top .news-info .text-news {
+        font-size: 20px;
+    }
+    #driver.web-design .main-banner .text-description{
+        font-size: 14px;
+        line-height: 26px;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    #driver.web-design .main-banner .news-top ul {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 15px;
+        max-width: 300px;
+    }
+    #driver.web-design .main-banner .news-top ul li{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .web-design #lp-inshoku .main-banner .text-bottom-inner .image-left{
+        display: none;
+    }
+    .web-design #lp-inshoku .main-banner .text-bottom-inner .text-lineMain{
+        width: 100%;
+    }
+    #driver.web-design .main-banner .text-list-content{
+        flex-direction: column;
+    }
+    #driver.web-design .main-banner .text-list-content .item-content{
+        width: 100% !important;
+    }
+    #driver.web-design .main-banner .text-list-content .item-content .info p,
+    #driver.web-design .main-banner .text-list-content .item-content:first-child .info p{
+        font-size: min(3.06vw, 13px);
+    }
+    #driver.web-design .main-banner{
+        padding-bottom: 36px;
+    }
+    #driver.web-design .driver-main .account .account-list .account-item img{
+        max-width: 230px;
+    }
+    #driver.web-design .driver-main .account .account-list .account-item p{
+        font-size: 15px;
+    }
+    .web-design #lp-inshoku .account .call{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .web-design #lp-inshoku .account .call br{
+        display: none;
+    }
+    .web-design #lp-inshoku .account .call img{
+        width: 80px;
+        margin-bottom: 30px;
+    }
+    .web-design #lp-inshoku .bg-content {
+        padding-top: 70px;
+    }
+    .web-design #lp-inshoku .bg-content .number.no01 .logo{
+        row-gap: 15px;
+    }
+    .web-design #lp-inshoku .bg-content .number.no01 .logo img{
+        width: 100%;
+        max-width: 320px;
+    }
+    .web-design #lp-inshoku .bg-content .number.no01 p.text{
+        font-size: 20px;
+    }
+    .web-design #lp-inshoku .bg-content .number.no01 p.ttl{
+        font-size: min(5.65vw, 24px);
+        line-height: 1.3;
+    }
+    .web-design #lp-inshoku .bg-content .number.no01 .note{
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
+    }
+
+    .web-design #lp-inshoku .bg-content .number.no02 .global .text{
+        font-size: 14px;
+        padding: 0;
+    }
+    .web-design #lp-inshoku .bg-content .number.no02 .global .info-box{
+        padding: 40px 20px;
+        border-radius: 40px;
+    }
+    .web-design #lp-inshoku .bg-content .number.no02 .global .title-bot{
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .web-design #lp-inshoku .bg-content .number.no02 .global .title-bot br{
+        display: none;
+    }
+    .web-design #lp-inshoku .bg-content .no03 .bg-ttl{
+        font-size: 20px;
+    }
+    .web-design #lp-inshoku .bg-content .no03 .bg-ttl span{
+        font-size: min(25px, 6.667vw);
+    }
+    .web-design #lp-inshoku .bg-content .number.no03 .country{
+        margin-bottom: 60px;
+    }
+    .web-design #lp-inshoku .top-title .title{
+        font-size: 20px;
+    }
+    .main-business-content .business-content{
+        padding: 20px 20px 40px;
+    }
+    .main-business-content .business-content ul li{
+        font-size: 14px;
+        height: 50px;
+    }
+    .main-business-content .business-content .t1{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .main-business-content .business-content{
+        margin-bottom: 60px;
+    }
+    .web-design #lp-inshoku .strengths .strengths-item .image{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .web-design #lp-inshoku .strengths .strengths-item .info-item{
+        width: 100%;
+        padding-left: 0;
+    }
+    #driver.web-design .recruitment-flow-up{
+        margin-bottom: 60px;
+    }
+    .web-design #lp-inshoku .strengths{
+        margin-bottom: 60px;
+    }
+
+
+
+}
+
+
+
+
+
+

@@ -1,0 +1,367 @@
+
+#driver.kougyouseihin .skills-recruitment .skills-recruitment-bottom .referral-eligibility{
+    width: 48%;
+    padding-left: 47px;
+}
+#driver.kougyouseihin .skills-recruitment .referral-eligibility .referral-eligibility-item{
+    width: 55% !important;
+}
+#driver.kougyouseihin .skills-recruitment .skills-recruitment-bottom .item-01 .image{
+    width: 100%;
+}
+#driver.kougyouseihin .skills-recruitment .skills-recruitment-bottom .item-01 .info{
+    width: 100%;
+    padding-top: 0;
+    padding-right: 0;
+}
+#driver.kougyouseihin .skills-recruitment .skills-recruitment-bottom .item-02{
+    width: 45% !important;
+}
+#driver.kougyouseihin .skills-recruitment .skills-recruitment-bottom .item-02 .image{
+    width: 100%;
+}
+#driver.kougyouseihin .skills-recruitment .skills-recruitment-bottom .item-02 .info{
+    width: 100%;
+}
+#driver.kougyouseihin .skills-recruitment .merit .merit-border span{
+    background: #fff;
+}
+
+#driver.kougyouseihin .support-services .top-title .title{
+    margin: 0;
+    font-size: 46px;
+}
+.kougyouseihin .support-services .content{
+    background: #fff;
+    border-radius: 0 0 16px 16px;
+    padding: 40px 60px 52px;
+}
+.kougyouseihin .support-services .ttl{
+    font-size: 26px;
+    line-height: 1.4;
+    color: #FF7E00;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.kougyouseihin .support-services .support-services-list{
+    max-width: 908px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 24px;
+    column-gap: 30px;
+}
+.kougyouseihin .support-services .support-services-item{
+    width: 45%;
+    max-width: 390px;
+    border-radius: 24px;
+    border: 5px solid #FF7E00;
+    overflow: hidden;
+    padding: 20px 15px 15px;
+}
+.kougyouseihin .support-services .support-services-item img{
+    width: 100%;
+}
+.kougyouseihin .support-services .support-services-item h4{
+    font-size: 26px;
+    line-height: 1.38;
+    color: #FF7E00;
+    text-align: center;
+}
+.kougyouseihin .support-services .support-services-item .image{
+    display: flex;
+    margin-bottom: 13px;
+}
+.kougyouseihin .support-services .support-services-item p{
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    font-weight: bold;
+}
+.kougyouseihin .benefits-service{
+    padding-bottom: 0;
+}
+
+.content-bg{
+    padding-bottom: 100px;
+    padding-top: 90px;
+    background-image: url("../../images/lp-kougyouseihin/kougyouseihin-bg.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+#driver.kougyouseihin .benefits-service .benefits-service-content{
+    margin-bottom: 140px;
+}
+#driver.kougyouseihin .top-title{
+    border-radius: 16px 16px 0 0;
+}
+#driver.kougyouseihin .top-title .t1{
+    font-size: 25px;
+}
+#driver.kougyouseihin .top-title .title{
+    font-weight: 900;
+}
+
+.kougyouseihin .businesses .content{
+    background: #fff;
+    border-radius: 24px;
+    padding: 70px min(4.41vw, 60px);
+}
+.kougyouseihin .businesses .content.item-margin{
+    border-radius: 0 0 24px 24px;
+    margin-bottom: 65px;
+}
+.kougyouseihin .businesses .businesses-item{
+    border: 1px solid #E48120;
+    border-radius: 17px;
+    margin-bottom: 20px;
+    color: #2A4852;
+    padding: 26px min(0.74vw, 10px) 45px min(2.21vw, 30px);
+}
+.kougyouseihin .businesses .businesses-item .ttl{
+    font-size: min(2.79vw, 38px);
+    line-height: 1.45;
+    font-weight: bold;
+    margin-bottom: 34px;
+    text-align: center;
+}
+.kougyouseihin .businesses .businesses-item .ttl span{
+    position: relative;
+    display: inline-block;
+}
+.kougyouseihin .businesses .businesses-item .ttl span:before{
+    content: "";
+    position: absolute;
+    width: min(2.65vw, 36px);
+    height: min(2.65vw, 36px);
+    background: #FF7E00;
+    top: min(0.81vw, 11px);
+    left: max(-5.29vw, -72px);
+}
+.kougyouseihin .businesses .businesses-item .info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.kougyouseihin .businesses .businesses-item .info .ttl-box{
+    width: min(10.29vw, 140px);
+    height: min(10.29vw, 140px);
+    background: #FF7E00;
+    border-radius: min(1.99vw, 27px);
+    font-size: min(1.91vw, 26px);
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.kougyouseihin .businesses .businesses-item .info .text-info{
+    width: calc(100% - min(10.29vw, 140px));
+    padding-left: min(2.5vw, 34px);
+    font-size: min(1.91vw, 26px);
+    line-height: 2;
+    font-weight: bold;
+}
+
+.kougyouseihin .businesses{
+    margin-bottom: 90px;
+}
+.kougyouseihin .flow-of-acceptance{
+    margin-bottom: 123px;
+}
+
+#driver.kougyouseihin .main-banner .text-description{
+    text-align: center;
+}
+#driver.kougyouseihin .main-banner .news-top{
+    padding-top: 63px;
+}
+#driver.kougyouseihin .main-banner .news-top .news-info{
+    margin-bottom: 15px;
+}
+#driver.kougyouseihin .main-banner .text-bottom .image{
+    width: 260px;
+}
+#driver.kougyouseihin .main-banner .text-bottom .info {
+    width: calc(100% - 260px);
+    padding-left: 24px;
+    padding-top: 48px;
+}
+#driver.kougyouseihin .main-banner .text-description{
+    margin-bottom: 0;
+}
+#driver.kougyouseihin .main-banner .text-bottom .info .text{
+    padding-left: 0;
+}
+#driver.kougyouseihin .main-banner{
+    padding-bottom: 130px;
+}
+#driver.kougyouseihin .country{
+    padding-top: 73px;
+}
+#driver.kougyouseihin .main-banner .banner-inner{
+    max-width: 1520px;
+}
+
+
+
+
+@media (max-width: 1280px) {
+
+
+    #driver.kougyouseihin .support-services .top-title .title{
+        font-size: 38px;
+    }
+
+}
+
+
+
+
+@media (max-width: 1023px) {
+
+    #driver.kougyouseihin .support-services .top-title .title{
+        font-size: 30px;
+    }
+    #driver.kougyouseihin .top-title .t1{
+        font-size: 20px;
+        left: 60px;
+    }
+    #driver.kougyouseihin .skills-recruitment .skills-recruitment-bottom .image{
+        width: 260px !important;
+    }
+    #driver.kougyouseihin .skills-recruitment .skills-recruitment-bottom .referral-eligibility{
+        width: 100%;
+        padding-left: 0;
+    }
+    #driver.kougyouseihin .skills-recruitment .skills-recruitment-bottom .image{
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+
+    #driver.kougyouseihin .main-banner .text-bottom .info{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    #driver.kougyouseihin .main-banner{
+        padding-bottom: 20px;
+    }
+    #driver.kougyouseihin .skills-recruitment .skills-recruitment-bottom .image{
+        width: 100% !important;
+        max-width: 275px;
+    }
+    #driver.kougyouseihin .skills-recruitment .skills-recruitment-bottom .introduction-support {
+        justify-content: center;
+    }
+    #driver.kougyouseihin .skills-recruitment .referral-eligibility .referral-eligibility-item{
+        width: 100% !important;
+    }
+    #driver.kougyouseihin .country .title{
+        font-size: 24px;
+        margin-bottom: 11px;
+    }
+    #driver.kougyouseihin .country{
+        padding-top: 31px;
+    }
+    #driver.kougyouseihin .top-title .title{
+        padding-left: 0;
+        padding-right: 30px;
+    }
+    .kougyouseihin .businesses .content.item-margin{
+        padding: 40px 15px;
+        margin-bottom: 40px;
+    }
+
+    .kougyouseihin .businesses .businesses-item .ttl{
+        font-size: 20px;
+    }
+    .kougyouseihin .businesses .businesses-item .ttl span:before{
+        width: 20px;
+        height: 20px;
+        top: 6px;
+        left: -32px;
+    }
+    .kougyouseihin .businesses .businesses-item .info .ttl-box{
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .kougyouseihin .businesses .businesses-item .info .ttl-box br{
+        display: none;
+    }
+    .kougyouseihin .businesses .businesses-item .info .text-info{
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 16px;
+        padding: 0;
+        text-align: center;
+    }
+    .kougyouseihin .businesses .businesses-item .info .text-info br{
+        display: none;
+    }
+    .kougyouseihin .businesses .businesses-item{
+        padding: 20px 15px;
+    }
+    .kougyouseihin .businesses .content{
+        padding: 40px 15px;
+    }
+    .kougyouseihin .businesses .businesses-item:last-child{
+        margin-bottom: 0;
+    }
+    .kougyouseihin .businesses{
+        margin-bottom: 60px;
+    }
+    .content-bg{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-position: top left;
+    }
+    .kougyouseihin .flow-of-acceptance {
+        margin-bottom: 60px;
+    }
+    #driver.kougyouseihin .benefits-service .benefits-service-content{
+        margin-bottom: 60px;
+    }
+    #driver.kougyouseihin .support-services .top-title .title{
+        font-size: 26px;
+        padding-right: 0;
+    }
+    #driver.kougyouseihin .support-services .top-title{
+        padding: 8px 10px;
+    }
+    .kougyouseihin .support-services .content{
+        padding: 40px 15px;
+    }
+    .kougyouseihin .support-services .ttl{
+        font-size: 20px;
+    }
+    .kougyouseihin .support-services .support-services-item{
+        width: 100%;
+        border-width: 3px;
+    }
+    .kougyouseihin .support-services .support-services-list{
+        row-gap: 15px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
