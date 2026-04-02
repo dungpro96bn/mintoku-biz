@@ -155,7 +155,7 @@
                                     <ul class="info">
                                         <li>●他企業での技能実習<br class="sp-br"/>終了予定者</li>
                                         <li>●特定技能外国人の<br class="sp-br"/>転職希望者</li>
-                                        <li>●特定技能試験合格者</li>　
+                                        <li>●特定技能試験合格者</li>
                                         <li>●留学生</li>
                                     </ul>
                                 </div>
