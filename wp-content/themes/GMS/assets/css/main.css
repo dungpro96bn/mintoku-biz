@@ -12108,6 +12108,9 @@ body:not(.home) .partners {
   color: #fff;
 }
 
+.qa_detail_single p {
+  font-weight: 500;
+}
 .qa_detail_single .single-title {
   font-size: 24px;
   line-height: 36px;
@@ -12139,7 +12142,7 @@ body:not(.home) .partners {
 .qa_detail_single .dt-single p {
   font-size: 24px;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000;
   width: calc(100% - 36px);
 }

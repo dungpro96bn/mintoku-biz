@@ -375,6 +375,20 @@ body:not(.home){
 	display: none;
 }
 
+.breadcrumb-container .aioseo-breadcrumbs{
+	padding: 10px 0;
+}
+.breadcrumb-container .aioseo-breadcrumbs .aioseo-breadcrumb-separator{
+	font-size: 22px;
+	font-weight: 300;
+	position: relative;
+	top: 1.5px;
+	padding: 0 5px;
+}
+.breadcrumb-container .aioseo-breadcrumbs a:hover{
+	text-decoration: underline;
+}
+
 @media (max-width: 767px) {
 
 	.inner {

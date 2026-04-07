@@ -1,5 +1,13 @@
 </main>
 
+<?php if (!is_home()) : ?>
+    <div class="breadcrumb-container">
+        <div class="inner">
+            <?php echo do_shortcode('[aioseo_breadcrumbs]'); ?>
+        </div>
+    </div>
+<?php endif; ?>
+
 <footer id="footer" class="footer">
     <div class="inner">
         <div class="footer-content">
