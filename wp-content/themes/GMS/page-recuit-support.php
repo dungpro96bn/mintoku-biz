@@ -251,10 +251,18 @@
                             </div>
                         </a>
                     </div>
-                    <div class="recuitSupport-item">
-                        <a href="#" class="coming-soon">
-                            <p class="category cat-01">特定技能</p>
-                            <p class="text">Coming soon</p>
+                    <div class="recuitSupport-item specific-skills">
+                        <a href="<?php echo home_url(); ?>/lp-kougyouseihin/">
+                            <div class="image-item">
+                                <p class="category cat-01">特定技能</p>
+                                <picture class="image-logo">
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/kougyouseihin.png 2x">
+                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/kougyouseihin.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="info-item">
+                                <p class="">工業製品製造</p>
+                            </div>
                         </a>
                     </div>
 
@@ -355,16 +363,74 @@
                             </div>
                         </a>
                     </div>
-                    <div class="recuitSupport-item">
-                        <a href="#" class="coming-soon">
-                            <p class="category cat-02">技人国</p>
-                            <p class="text">Coming soon</p>
+                    <div class="recuitSupport-item country-engineers">
+                        <a href="<?php echo home_url(); ?>/lp-cad/">
+                            <div class="image-item">
+                                <p class="category cat-02">技人国</p>
+                                <picture class="image-logo">
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/CAD.png 2x">
+                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/CAD.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="info-item">
+                                <p class="">CAD<br/>オペレーター</p>
+                            </div>
                         </a>
                     </div>
-                    <div class="recuitSupport-item">
-                        <a href="#" class="coming-soon">
-                            <p class="category cat-02">技人国</p>
-                            <p class="text">Coming soon</p>
+                    <div class="recuitSupport-item country-engineers">
+                        <a href="<?php echo home_url(); ?>/lp-eigyou/">
+                            <div class="image-item">
+                                <p class="category cat-02">技人国</p>
+                                <picture class="image-logo">
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/eigyou.png 2x">
+                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/eigyou.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="info-item">
+                                <p class="">営業職</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="recuitSupport-item country-engineers">
+                        <a href="<?php echo home_url(); ?>/lp-it/">
+                            <div class="image-item">
+                                <p class="category cat-02">技人国</p>
+                                <picture class="image-logo">
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/IT.png 2x">
+                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/IT.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="info-item">
+                                <p class="">IT<br/>エンジニア</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="recuitSupport-item country-engineers">
+                        <a href="<?php echo home_url(); ?>/lp-seisan-kanri/">
+                            <div class="image-item">
+                                <p class="category cat-02">技人国</p>
+                                <picture class="image-logo">
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/seisan-kanri.png 2x">
+                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/seisan-kanri.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="info-item">
+                                <p class="">生産管理</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="recuitSupport-item country-engineers">
+                        <a href="<?php echo home_url(); ?>/web-design/">
+                            <div class="image-item">
+                                <p class="category cat-02">技人国</p>
+                                <picture class="image-logo">
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/website.png 2x">
+                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/recuit-support/website.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="info-item">
+                                <p class="">WEB<br/>デザイナー</p>
+                            </div>
                         </a>
                     </div>
                     <div class="recuitSupport-item">
